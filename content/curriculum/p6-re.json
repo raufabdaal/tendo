@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Six (P.6)",
+    "subject": "Religious Education",
+    "examBody": "UNEB",
+    "source": "NCDC Primary Six Curriculum Set One, Religious Education Syllabus",
+    "lastReviewed": "2026-07-05"
+  },
+  "themes": [
+    {
+      "id": "p6-cre",
+      "name": "Part I: Christian Religious Education (CRE)",
+      "topics": [
+        {
+          "id": "p6-cre-gods-family",
+          "term": "Term I",
+          "title": "God's Creation and Human Relationships",
+          "subTopics": [
+            "God's care for humanity and nature",
+            "Living in peace and unity with neighbors"
+          ]
+        },
+        {
+          "id": "p6-cre-ten-commandments",
+          "term": "Term II",
+          "title": "The Ten Commandments in Daily Life",
+          "subTopics": [
+            "Honoring parents and respecting authority",
+            "Honesty, integrity, and avoiding theft"
+          ]
+        },
+        {
+          "id": "p6-cre-jesus-miracles",
+          "term": "Term III",
+          "title": "Miracles and Compassion of Jesus Christ",
+          "subTopics": [
+            "Healing miracles and compassion for the sick",
+            "Forgiveness and Christian reconciliation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p6-ire",
+      "name": "Part II: Islamic Religious Education (IRE)",
+      "topics": [
+        {
+          "id": "p6-ire-surahs",
+          "term": "Term I",
+          "title": "Selected Surahs and Moral Teachings",
+          "subTopics": [
+            "Recitation and translation of Surah Al-Qadr and Ad-Dhuha",
+            "Gratitude to Allah for His blessings"
+          ]
+        },
+        {
+          "id": "p6-ire-pillars-fasting",
+          "term": "Term II",
+          "title": "Pillars of Islam: Fasting and Prayer",
+          "subTopics": [
+            "Rules and spiritual benefits of Sawm during Ramadan",
+            "Maintaining punctuality and cleanliness in Salah"
+          ]
+        },
+        {
+          "id": "p6-ire-prophet-makkah",
+          "term": "Term III",
+          "title": "Life of Prophet Muhammad in Makkah",
+          "subTopics": [
+            "Early dawah and patience under persecution",
+            "Islamic ethics regarding kindness and honesty"
+          ]
+        }
+      ]
+    }
+  ]
+}

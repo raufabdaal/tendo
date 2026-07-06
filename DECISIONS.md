@@ -345,3 +345,97 @@
 **Reasoning:** The app now has four active subjects, guided practice for English/Science/SST, strong central question-bank totals, worksheet generation for all four subjects, audit documentation and a passing production build. Remaining work is enhancement, teacher feedback and future exam-paper/marking-rubric sophistication rather than core subject completion.
 
 **Tracked across:** `docs/ops/four-subject-core-closeout-audit-2026-07-01.md`, `STATUS.md`, `HANDOFF.md`, `CHECKLIST.md`, `CHANGELOG.md`.
+
+---
+
+## CONTENT-005 · 2026-07-02 · Study pages should use Lesson Structure v2
+
+**Context:** Founder/partner feedback identified that study pages can feel insufficiently structured for children and that many visuals/images feel off.
+
+**Decision:** Introduce Lesson Structure v2 as the standard for study pages: Big idea, key words, learn-it-in-parts sections, instructional visual brief, PLE tip, worked example, mistakes, try-this, guided practice and recap.
+
+**Reasoning:** P7 learners need concise, scaffolded lessons rather than long note blocks. Visuals should be instructional diagrams/maps/flows, not decorative images. The `note.study` field now powers the standard study flow across all four active P7 subjects.
+
+**Tracked across:** `docs/spec/tendo-lesson-structure-v2.md`, `app/lib/topics.ts`, `app/lib/english-topics.ts`, `app/lib/science-topics.ts`, `app/lib/social-topics.ts`, `app/components/TopicTabs.tsx`, `app/components/TopicDiagram.tsx`, `app/app/globals.css`.
+
+---
+
+## CONTENT-006 · 2026-07-02 · Lesson Structure v3: move from flat topics to hierarchical modules
+
+**Context:** The founder observed that AI-generated topic pages still compress content because the generation target (one whole topic) and the UI (one scrolling page) silently negotiate down to a summary. This is the "summary trap": a full NCDC topic is too broad for one generation or one page view.
+
+**Decision:** Introduce Lesson Structure v3, a hierarchical module architecture. A `Topic` becomes a directory of `Subtopic`s; each `Subtopic` maps to one NCDC sub-competency and contains small, paginated `Module`s. Content is generated one module at a time.
+
+**Reasoning:**
+- Smaller generation targets allow deeper explanations, more local context, fuller worked examples and step-by-step scaffolding.
+- The UI stops scrolling forever; learners see a subtopic directory and then focus on one module at a time.
+- The data model is backward-compatible: `subtopics` is optional, and topics without it keep rendering v2 or legacy content.
+- Migration is subject-by-subject, topic-by-topic, so the rest of the app stays stable.
+
+**Scope rule for the spike:** Only `location-of-africa` in Social Studies uses v3. All other SST topics and all other subjects remain on v2 until the modular flow is reviewed.
+
+**Tracked across:** `docs/spec/tendo-lesson-structure-v3-modular.md`, `app/lib/topics.ts`, `app/lib/social-topics.ts`, `app/components/TopicTabs.tsx`, `app/app/globals.css`.
+
+---
+
+## CONTENT-007 · 2026-07-03 · Modular v3 roll-out: Social Studies first, then other subjects
+
+**Context:** The founder approved the v3 modular architecture and wants it applied across all subjects and topics.
+
+**Decision:** Convert the remaining 9 Social Studies topics to v3 first, using `location-of-africa` as the exact template. Only after Social Studies is fully modular and reviewed should v3 be rolled to Mathematics, Integrated Science and English.
+
+**Reasoning:**
+- SST is the smallest active subject group after the pilot topic (10 topics total), so it is the cheapest place to prove the full-subject modular workflow.
+- Keeping one subject together makes cross-topic consistency easier to audit.
+- Other subjects can be converted using the same template once it has been stress-tested across a whole subject.
+
+**Tracked across:** `docs/ncdc-extracts/*`, `app/lib/social-topics.ts`, `STATUS.md`, `CHECKLIST.md`.
+
+---
+
+## CONTENT-008 · 2026-07-03 · NCDC sourcing is the hard requirement; no invented curriculum facts
+
+**Context:** As content expands to every topic, the risk of invented countries, capitals, definitions or competencies increases.
+
+**Decision:** Every modular conversion must be sourced from the NCDC PDF (`tmp/p7-set-one.pdf`) and the curriculum JSON (`content/curriculum/p7-social-studies.json`). Each converted topic gets its own deep-extract document under `docs/ncdc-extracts/` showing the exact NCDC sub-topics, competences and factual lists used.
+
+**Reasoning:**
+- Deep extracts create an auditable trail between the NCDC source and the app content.
+- They become the template for the agent when generating modules for other topics.
+- They make it easy for a human reviewer to verify that nothing was invented.
+
+**Tracked across:** `docs/ncdc-extracts/`, `app/lib/social-topics.ts`.
+
+---
+
+## DEV-020 · 2026-07-03 · Content issue reporting: no backend, GitHub issue + localStorage
+
+**Context:** The founder wants teachers or anyone using the live site to flag content problems, but does not want to build or maintain a backend yet.
+
+**Decision:** Add an in-app “Report an issue with this content” button on modular topic pages. Submitting the form:
+1. Saves the report to browser `localStorage` for on-device review.
+2. Opens a pre-filled GitHub issue in a new tab so developers see it in the repo.
+
+**Reasoning:**
+- No backend, no auth, no cost.
+- Developers can triage, discuss and fix issues through the existing GitHub workflow.
+- The localStorage copy gives teachers/reviewers an immediate record on their own device.
+
+**Tracked across:** `app/components/ReportContentIssue.tsx`, `app/app/teacher/content-reports/page.tsx`, `app/components/TopicTabs.tsx`, `app/app/teacher/page.tsx`.
+
+---
+
+## DEV-021 · 2026-07-05 · Primary Six (P6) Expansion Strategy & Grade Switcher
+
+**Context:** With all 5 official NCDC Primary Seven (P7) PLE subjects 100% complete, fully audited, and running on Lesson Structure v3, the platform is expanding to support Primary Six (P6).
+
+**Decision:**
+1. Create grade-specific curriculum JSONs under `content/curriculum/p6-*.json`.
+2. Implement a unified home grade switcher (`Primary 6` vs `Primary 7`) and grade-scoped routes (`/[subject]/p6/` and `/[subject]/p7/`).
+3. Author P6 content using the same proven Lesson Structure v3 modular architecture (`app/lib/p6-*.ts`), ensuring every module contains `bigIdea`, multi-paragraph `learnIt`, numerical/moral `workedExample`, and `tryThis`.
+
+**Reasoning:**
+- P6 is the foundational upper-primary grade preparing learners for PLE consolidation in P7.
+- Maintaining identical architectural structures across P6 and P7 maximizes UI component reuse (`TopicTabs`, `PracticeRunner`, `WorksheetGenerator`).
+
+**Tracked across:** `docs/spec/p6-expansion-milestones.md`, `content/curriculum/p6-*.json`, `app/app/page.tsx`.

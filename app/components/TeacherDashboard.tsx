@@ -3,7 +3,20 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { TOPICS } from "@/lib/topics";
+import { SCIENCE_TOPICS } from "@/lib/science-topics";
+import { SOCIAL_TOPICS } from "@/lib/social-topics";
+import { ENGLISH_TOPICS } from "@/lib/english-topics";
+import { RE_TOPICS } from "@/lib/re-topics";
+import { P6_MATH_TOPICS } from "@/lib/p6-math-topics";
+import { P6_SCIENCE_TOPICS } from "@/lib/p6-science-topics";
+import { P6_SOCIAL_TOPICS } from "@/lib/p6-social-topics";
+import { P6_ENGLISH_TOPICS } from "@/lib/p6-english-topics";
+import { P6_RE_TOPICS } from "@/lib/p6-re-topics";
 import { PAPERS } from "@/lib/papers";
+
+const ALL_P7_TOPICS = [...TOPICS, ...SCIENCE_TOPICS, ...SOCIAL_TOPICS, ...ENGLISH_TOPICS, ...RE_TOPICS].map(t => ({ ...t, grade: "P7" as const }));
+const ALL_P6_TOPICS = [...P6_MATH_TOPICS, ...P6_SCIENCE_TOPICS, ...P6_SOCIAL_TOPICS, ...P6_ENGLISH_TOPICS, ...P6_RE_TOPICS].map(t => ({ ...t, grade: "P6" as const }));
+const ALL_SUBJECT_TOPICS = [...ALL_P7_TOPICS, ...ALL_P6_TOPICS];
 import {
   generateDemoClass,
   saveDemoClass,
@@ -157,8 +170,9 @@ function DemoClassView({
   setSelectedStudentId: (s: string | null) => void;
   onClear: () => void;
 }) {
+  const [gradeFilter, setGradeFilter] = useState<"all" | "P7" | "P6">("all");
   // Compute class summary
-  const summary = useMemo(() => computeClassSummary(students), [students]);
+  const summary = useMemo(() => computeClassSummary(students, gradeFilter), [students, gradeFilter]);
 
   function openStudent(id: string) {
     setSelectedStudentId(id);
@@ -200,7 +214,14 @@ function DemoClassView({
         </div>
       </div>
 
-      <h2>Performance by topic</h2>
+      <div style={{ display: "flex", alignItems: "center", gap: 10, margin: "24px 0 12px", flexWrap: "wrap" }}>
+        <h2 style={{ margin: 0 }}>Performance by topic</h2>
+        <div className="subject-filter" style={{ marginLeft: "auto", display: "inline-flex", verticalAlign: "middle" }}>
+          <button type="button" className={"subject-filter-btn" + (gradeFilter === "all" ? " on" : "")} onClick={() => setGradeFilter("all")}>All Classes</button>
+          <button type="button" className={"subject-filter-btn" + (gradeFilter === "P7" ? " on" : "")} onClick={() => setGradeFilter("P7")}>P7 Topics</button>
+          <button type="button" className={"subject-filter-btn" + (gradeFilter === "P6" ? " on" : "")} onClick={() => setGradeFilter("P6")}>P6 Topics</button>
+        </div>
+      </div>
       <p className="dash-help">
         Each bar shows what proportion of your class scored high (green), middle (blue) or low (red) on that topic. Topics where the red bar is large need re-teaching.
       </p>
@@ -300,12 +321,12 @@ function StudentDrillDown({ student, onBack }: { student: DemoStudent; onBack: (
           <thead><tr><th>Topic</th><th>Best score</th><th>Attempts</th></tr></thead>
           <tbody>
             {topicEntries.map(([tid, p]) => {
-              const t = TOPICS.find((x) => x.id === tid);
+              const t = ALL_SUBJECT_TOPICS.find((x) => x.id === tid);
               const pct = Math.round((p.bestScore / p.lastTotal) * 100);
               const cls = pct >= 70 ? "high" : pct >= 40 ? "mid" : "low";
               return (
                 <tr key={tid}>
-                  <td>{t?.title ?? tid}</td>
+                  <td><strong>{t?.grade ?? "P7"}</strong> · {t?.title ?? tid}</td>
                   <td><span className={`dash-pct ${cls}`}>{p.bestScore}/{p.lastTotal} · {pct}%</span></td>
                   <td>{p.attempts}</td>
                 </tr>
@@ -362,7 +383,11 @@ function DeviceView({
   papers: Record<string, PaperProgress>;
   onClear: () => void;
 }) {
-  const topicEntries = Object.entries(topics);
+  const [gradeFilter, setGradeFilter] = useState<"all" | "P7" | "P6">("all");
+  const topicEntries = Object.entries(topics).filter(([id]) => {
+    const t = ALL_SUBJECT_TOPICS.find((x) => x.id === id);
+    return gradeFilter === "all" || (t?.grade ?? "P7") === gradeFilter;
+  });
   const paperEntries = Object.entries(papers);
   const avgPct = topicEntries.length === 0 ? null :
     Math.round((topicEntries.reduce((s, [, p]) => s + p.bestScore / p.lastTotal, 0) / topicEntries.length) * 100);
@@ -396,28 +421,36 @@ function DeviceView({
         </div>
       </div>
 
-      {topicEntries.length > 0 && (
-        <>
-          <h2>Topic activity</h2>
-          <table className="dash-table">
-            <thead><tr><th>Topic</th><th>Best score</th><th>Attempts</th><th>Last seen</th></tr></thead>
-            <tbody>
-              {topicEntries.map(([id, p]) => {
-                const t = TOPICS.find((x) => x.id === id);
-                const pct = Math.round((p.bestScore / p.lastTotal) * 100);
-                const cls = pct >= 70 ? "high" : pct >= 40 ? "mid" : "low";
-                return (
-                  <tr key={id}>
-                    <td>{t?.title ?? id}</td>
-                    <td><span className={`dash-pct ${cls}`}>{p.bestScore}/{p.lastTotal} · {pct}%</span></td>
-                    <td>{p.attempts}</td>
-                    <td>{formatDate(p.updatedAt)}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </>
+      <div style={{ display: "flex", alignItems: "center", gap: 10, margin: "24px 0 12px", flexWrap: "wrap" }}>
+        <h2 style={{ margin: 0 }}>Topic activity</h2>
+        <div className="subject-filter" style={{ marginLeft: "auto", display: "inline-flex", verticalAlign: "middle" }}>
+          <button type="button" className={"subject-filter-btn" + (gradeFilter === "all" ? " on" : "")} onClick={() => setGradeFilter("all")}>All Classes</button>
+          <button type="button" className={"subject-filter-btn" + (gradeFilter === "P7" ? " on" : "")} onClick={() => setGradeFilter("P7")}>P7 Topics</button>
+          <button type="button" className={"subject-filter-btn" + (gradeFilter === "P6" ? " on" : "")} onClick={() => setGradeFilter("P6")}>P6 Topics</button>
+        </div>
+      </div>
+
+      {topicEntries.length > 0 ? (
+        <table className="dash-table">
+          <thead><tr><th>Topic</th><th>Best score</th><th>Attempts</th><th>Last seen</th></tr></thead>
+          <tbody>
+            {topicEntries.map(([id, p]) => {
+              const t = ALL_SUBJECT_TOPICS.find((x) => x.id === id);
+              const pct = Math.round((p.bestScore / p.lastTotal) * 100);
+              const cls = pct >= 70 ? "high" : pct >= 40 ? "mid" : "low";
+              return (
+                <tr key={id}>
+                  <td><strong>{t?.grade ?? "P7"}</strong> · {t?.title ?? id}</td>
+                  <td><span className={`dash-pct ${cls}`}>{p.bestScore}/{p.lastTotal} · {pct}%</span></td>
+                  <td>{p.attempts}</td>
+                  <td>{formatDate(p.updatedAt)}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      ) : (
+        <div className="dash-empty" style={{ margin: "12px 0 24px" }}>No topic activity matches this class filter.</div>
       )}
 
       {paperEntries.length > 0 && (
@@ -506,7 +539,7 @@ interface ClassSummary {
   topicBreakdown: Array<{ topicId: string; title: string; high: number; mid: number; low: number }>;
 }
 
-function computeClassSummary(students: DemoStudent[]): ClassSummary {
+function computeClassSummary(students: DemoStudent[], gradeFilter: string = "all"): ClassSummary {
   const oneWeekAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
   let active = 0;
   let totalTopics = 0;
@@ -518,10 +551,13 @@ function computeClassSummary(students: DemoStudent[]): ClassSummary {
 
   for (const s of students) {
     const tEntries = Object.entries(s.topicActivity);
-    totalTopics += tEntries.length;
+    let matchedTopics = 0;
 
     let mostRecentTs = 0;
     for (const [tid, p] of tEntries) {
+      const t = ALL_SUBJECT_TOPICS.find((x) => x.id === tid);
+      if (gradeFilter !== "all" && (t?.grade ?? "P7") !== gradeFilter) continue;
+      matchedTopics += 1;
       const pct = (p.bestScore / p.lastTotal) * 100;
       pctSum += pct;
       pctCount += 1;
@@ -533,6 +569,7 @@ function computeClassSummary(students: DemoStudent[]): ClassSummary {
       else agg.low += 1;
       topicAggregates.set(tid, agg);
     }
+    totalTopics += matchedTopics;
 
     for (const [, p] of Object.entries(s.paperActivity)) {
       paperAttempts += p.attempts;
@@ -545,7 +582,7 @@ function computeClassSummary(students: DemoStudent[]): ClassSummary {
 
   const topicBreakdown = Array.from(topicAggregates.entries())
     .map(([tid, agg]) => {
-      const t = TOPICS.find((x) => x.id === tid);
+      const t = ALL_SUBJECT_TOPICS.find((x) => x.id === tid);
       return { topicId: tid, title: t?.title ?? tid, ...agg };
     })
     .sort((a, b) => (b.high + b.mid + b.low) - (a.high + a.mid + a.low));
@@ -636,7 +673,7 @@ function copyStudentReport(s: DemoStudent, stat: StudentStat) {
   lines.push("");
   lines.push("TOPICS");
   Object.entries(s.topicActivity).forEach(([tid, p]) => {
-    const t = TOPICS.find((x) => x.id === tid);
+    const t = ALL_SUBJECT_TOPICS.find((x) => x.id === tid);
     const pct = Math.round((p.bestScore / p.lastTotal) * 100);
     lines.push(`  ${t?.title ?? tid}: ${p.bestScore}/${p.lastTotal} (${pct}%) · ${p.attempts} attempt${p.attempts === 1 ? "" : "s"}`);
   });

@@ -1,16 +1,35 @@
 # STATUS — Tendo
 
-*Updated: 2026-07-01*
+*Updated: 2026-07-05*
 
-> **Current state:** P7 Mathematics, P7 Integrated Science, P7 Social Studies and P7 English are now complete enough for current product scope. The Social Studies + English grouped work has now been pushed successfully and is working in production.
+> **Current state:** Tendo is a child-friendly study platform (not just for revision) for Ugandan upper-primary learners. Both Primary Seven (P7 PLE) and Primary Six (P6) are live across all 5 official NCDC subjects (Mathematics, English Language, Integrated Science, Social Studies, and Religious Education—both CRE and IRE) on the proven Lesson Structure v3 modular architecture.
 
 ## Current focus
 
-### 1. P7 Mathematics is complete enough
-Mathematics has reached a founder-safe “done enough” state for current product scope.
+### 1. Primary Six (P6) Expansion Strategy & Roadmap
+With P7 completed and verified, Tendo expanded to Primary Six (P6) per `docs/spec/p6-expansion-milestones.md`:
+- Milestone 1: P6 NCDC Curriculum specifications (`content/curriculum/p6-*.json`) — **COMPLETED**
+- Milestone 2: Grade Switcher & Routing architecture (`/[subject]/p6/`, `/p6-home`) — **COMPLETED**
+- Milestone 3a: P6 Social Studies (*East Africa*) & P6 Integrated Science v3 content library — **COMPLETED & DEEPENED**
+- Milestone 3b: P6 Mathematics, English Language, and Religious Education v3 content library — **COMPLETED & DEEPENED**
+- Milestone 4: P6 practice banks and dashboard/worksheet class filtering (`P6` vs `P7`) — **COMPLETED**
+- Milestone 5: P6 visual roadmap and textbook illustrations — **COMPLETED (All P6 topics linked to verified visual assets)**
+
+**Recent P6 Expansion Achievements (Milestones 3b, 4 & Deep Content Overhaul):**
+- Authored deep Lesson Structure v3 topic data libraries across all 5 official P6 subjects: Social Studies (6 regional East Africa topics), Integrated Science (5 biological/physical topics), Mathematics (6 topics), English Language (5 functional grammar topics), and Religious Education (6 dual CRE/IRE topics).
+- Performed an exhaustive content overhaul across all P6 subjects: every subtopic specified in `content/curriculum/p6-*.json` is now fully represented as a modular subtopic with paginated `Module` steps containing `bigIdea`, exhaustive multi-paragraph `learnIt` in Ugandan teacher voice, numerical/analytical `workedExample`, multiple-choice `tryThis` checks, and relevant educational diagram/image links (`/images/social-studies/...`, `/images/science/...`, etc.).
+- Seeded central practice banks (`P6_MATHS_BANK`, `P6_ENGLISH_BANK`, `P6_SCIENCE_BANK`, `P6_SOCIAL_STUDIES_BANK`, `P6_RE_BANK`) in `app/lib/question-bank.ts`.
+- Connected class filtering (`P7`, `P6`, `All Classes`) on the Teacher Dashboard and Worksheet Generator.
+- Added practice CTAs and `/practice` endless practice routes across all P6 subjects.
+
+**Next:**
+1. Conduct school pilot readiness checks and demonstrations with teachers at Trainup a Child Uganda.
+
+### 2. P7 Mathematics is complete enough
+Mathematics has reached a founder-safe “done enough” state for current product scope and is calibrated to the official NCDC structure.
 
 That means:
-- 38 published P7 Mathematics topics exist
+- 11 published official NCDC P7 Mathematics topics exist across 6 themes, encapsulating all 38 previous micro-competencies as v3 modular subtopics
 - visible maths coming-soon backlog is clear
 - practice mode and worksheet generation support the subject
 - the maths landing page is structured by strand
@@ -37,7 +56,7 @@ Social Studies now has:
 - curriculum map at `content/curriculum/p7-social-studies.json`
 - completion audit at `docs/ops/p7-social-studies-first-wave-audit-2026-07-01.md`
 
-Honest status: **complete enough and now strengthened further**. Social Studies now has guided map/history/development tasks for all 10 topics and 20 practice questions per topic.
+Honest status: **complete enough and now strengthened further**. Social Studies now has guided map/history/development tasks for all 10 topics and 20 practice questions per topic. All 10 topics are now on Lesson Structure v3 modular — Social Studies v3 rollout is complete.
 
 ### 4. P7 English is complete enough
 English includes all 7 official NCDC Set One P7 English topics.
@@ -116,6 +135,23 @@ Operational notes should live under `docs/ops/` where useful.
 
 ---
 
+## Lesson Structure v2 restructuring has started
+
+A new child-friendly study-page structure has been introduced after founder/partner feedback that the current study content can feel insufficiently structured.
+
+Lesson Structure v2 is now live in workspace for all 10 Social Studies topics, all 8 Integrated Science topics, all 7 English topics and all 38 Mathematics topics.
+
+The new structure adds:
+- Big idea
+- Key words
+- Learn it in parts
+- Visual brief
+- PLE tip
+
+See: `docs/spec/tendo-lesson-structure-v2.md`
+
+The grouped Lesson Structure v2 milestone has been pushed and verified live. Maths is fully converted across all 38 topics, all four active P7 subjects use the new study flow, and the visual layer has been aligned so visual briefs and diagrams act more like instructional teaching aids.
+
 ## What still needs work right now
 
 ### 1. Post-push verification and cleanup
@@ -133,11 +169,9 @@ Possible future enhancements:
 
 ## Immediate next steps
 
-Recommended next move:
-1. Verify key live routes and teacher flows.
-2. Remove any stale docs that still talk about Social Studies + English as unpushed.
-3. Tighten teacher-facing usefulness next.
-4. Then deepen English, Science and Social Studies to the same fully-finished standard the founder wants.
+1. **Roll v3 structure to Integrated Science.** Structural migration first: wrap existing v2 content into NCDC-mapped subtopics/modules without losing content, then deepen module-by-module.
+2. Roll v3 structure to Mathematics.
+3. Continue collecting structured teacher/learner feedback on the modular flow.
 
 ---
 

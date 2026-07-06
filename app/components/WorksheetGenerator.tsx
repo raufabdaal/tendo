@@ -7,14 +7,16 @@ const LETTERS = ["A", "B", "C", "D"] as const;
 
 type Difficulty = "all" | "easy" | "medium" | "hard";
 type SubjectFilter = "all" | SubjectId;
+type ClassFilter = "all" | "P7" | "P6";
 
 interface SampledQ extends BankQuestion {
   topicId: string;
   topicTitle: string;
   subjectName: string;
+  grade: "P6" | "P7";
 }
 
-const SUBJECT_ORDER = ["Mathematics", "English", "Integrated Science", "Social Studies"] as const;
+const SUBJECT_ORDER = ["Mathematics", "English", "Integrated Science", "Social Studies", "Religious Education"] as const;
 
 export default function WorksheetGenerator() {
   const topics = useMemo(() => listBankTopics(), []);
@@ -29,12 +31,13 @@ export default function WorksheetGenerator() {
     return SUBJECT_ORDER.map((name) => ({ name, ...(stats.get(name) ?? { topics: 0, questions: 0 }) }));
   }, [topics]);
 
+  const [classFilter, setClassFilter] = useState<ClassFilter>("P7");
   const [subject, setSubject] = useState<SubjectFilter>("mathematics");
   const visibleTopics = useMemo(
-    () => topics.filter((topic) => subject === "all" || topic.subjectId === subject),
-    [topics, subject],
+    () => topics.filter((topic) => (classFilter === "all" || topic.grade === classFilter) && (subject === "all" || topic.subjectId === subject)),
+    [topics, subject, classFilter],
   );
-  const [selected, setSelected] = useState<Set<string>>(() => new Set(topics.filter((t) => t.subjectId === "mathematics").map((t) => t.topicId)));
+  const [selected, setSelected] = useState<Set<string>>(() => new Set(topics.filter((t) => t.grade === "P7" && t.subjectId === "mathematics").map((t) => t.topicId)));
   const [count, setCount] = useState(15);
   const [difficulty, setDifficulty] = useState<Difficulty>("all");
   const [includeAnswerKey, setIncludeAnswerKey] = useState(true);
@@ -50,19 +53,38 @@ export default function WorksheetGenerator() {
   const liveSelectedQuestionPool = topics.filter((topic) => selected.has(topic.topicId)).reduce((sum, topic) => sum + topic.count, 0);
   const totalMarks = worksheet ? worksheet.length * marksPerQuestion : count * marksPerQuestion;
 
-  function defaultTitleForSubject(nextSubject: SubjectFilter) {
-    if (nextSubject === "mathematics") return "P7 Mathematics worksheet";
-    if (nextSubject === "science") return "P7 Integrated Science worksheet";
-    if (nextSubject === "social-studies") return "P7 Social Studies worksheet";
-    if (nextSubject === "english") return "P7 English worksheet";
-    return "P7 mixed-subject worksheet";
+  function defaultTitleForSubject(nextSubject: SubjectFilter, nextGrade: string = "P7") {
+    const prefix = nextGrade === "all" ? "P6 & P7" : nextGrade;
+    if (nextSubject === "mathematics") return `${prefix} Mathematics worksheet`;
+    if (nextSubject === "science") return `${prefix} Integrated Science worksheet`;
+    if (nextSubject === "social-studies") return `${prefix} Social Studies worksheet`;
+    if (nextSubject === "english") return `${prefix} English worksheet`;
+    if (nextSubject === "religious-education") return `${prefix} Religious Education worksheet`;
+    return `${prefix} mixed-subject worksheet`;
+  }
+
+  function changeClassFilter(nextClass: ClassFilter) {
+    setClassFilter(nextClass);
+    const nextTopics = topics.filter((topic) => (nextClass === "all" || topic.grade === nextClass) && (subject === "all" || topic.subjectId === subject));
+    setSelected(new Set(nextTopics.map((topic) => topic.topicId)));
+    if (nextClass === "P6") {
+      setClassName("P.6");
+      setTitle(defaultTitleForSubject(subject, "P6"));
+    } else if (nextClass === "P7") {
+      setClassName("P.7");
+      setTitle(defaultTitleForSubject(subject, "P7"));
+    } else {
+      setClassName("P.6 & P.7");
+      setTitle(defaultTitleForSubject(subject, "all"));
+    }
+    setWorksheet(null);
   }
 
   function changeSubject(nextSubject: SubjectFilter) {
     setSubject(nextSubject);
-    const nextTopics = topics.filter((topic) => nextSubject === "all" || topic.subjectId === nextSubject);
+    const nextTopics = topics.filter((topic) => (classFilter === "all" || topic.grade === classFilter) && (nextSubject === "all" || topic.subjectId === nextSubject));
     setSelected(new Set(nextTopics.map((topic) => topic.topicId)));
-    setTitle(defaultTitleForSubject(nextSubject));
+    setTitle(defaultTitleForSubject(nextSubject, classFilter));
     setWorksheet(null);
   }
 
@@ -107,7 +129,7 @@ export default function WorksheetGenerator() {
     lines.push(`Instructions: Answer all ${worksheet.length} questions. ${instruction}`);
     lines.push("");
     worksheet.forEach((q, i) => {
-      lines.push(`${i + 1}. (${q.subjectName} · ${q.topicTitle}) ${q.q}`);
+      lines.push(`${i + 1}. (${q.grade} · ${q.subjectName} · ${q.topicTitle}) ${q.q}`);
       q.choices.forEach((c, j) => lines.push(`     ${LETTERS[j]}) ${c}`));
       lines.push("");
     });
@@ -178,11 +200,19 @@ export default function WorksheetGenerator() {
           </div>
 
           <h2>2. Subject and topics</h2>
+          <div style={{ marginBottom: 12 }}>
+            <div className="subject-filter" role="group" aria-label="Worksheet class level">
+              <button type="button" className={"subject-filter-btn" + (classFilter === "P7" ? " on" : "")} onClick={() => changeClassFilter("P7")}>Primary 7 (PLE)</button>
+              <button type="button" className={"subject-filter-btn" + (classFilter === "P6" ? " on" : "")} onClick={() => changeClassFilter("P6")}>Primary 6</button>
+              <button type="button" className={"subject-filter-btn" + (classFilter === "all" ? " on" : "")} onClick={() => changeClassFilter("all")}>Mixed Classes (P6 & P7)</button>
+            </div>
+          </div>
           <div className="subject-filter" role="group" aria-label="Worksheet subject">
             <button type="button" className={"subject-filter-btn" + (subject === "mathematics" ? " on" : "")} onClick={() => changeSubject("mathematics")}>Maths only</button>
             <button type="button" className={"subject-filter-btn" + (subject === "science" ? " on" : "")} onClick={() => changeSubject("science")}>Science only</button>
             <button type="button" className={"subject-filter-btn" + (subject === "social-studies" ? " on" : "")} onClick={() => changeSubject("social-studies")}>Social Studies only</button>
             <button type="button" className={"subject-filter-btn" + (subject === "english" ? " on" : "")} onClick={() => changeSubject("english")}>English only</button>
+            <button type="button" className={"subject-filter-btn" + (subject === "religious-education" ? " on" : "")} onClick={() => changeSubject("religious-education")}>RE only</button>
             <button type="button" className={"subject-filter-btn" + (subject === "all" ? " on" : "")} onClick={() => changeSubject("all")}>Mixed</button>
           </div>
           <div className="generator-toolbar">
@@ -196,7 +226,7 @@ export default function WorksheetGenerator() {
               return (
                 <button type="button" key={t.topicId} className={"topic-chip" + (on ? " on" : "")} onClick={() => toggle(t.topicId)}>
                   <span>{t.topicTitle}</span>
-                  <span className="topic-chip-subject">{t.subjectName}</span>
+                  <span className="topic-chip-subject">{t.grade} · {t.subjectName}</span>
                   <span className="topic-chip-count">{t.count}</span>
                 </button>
               );
@@ -286,7 +316,7 @@ export default function WorksheetGenerator() {
                 <li key={i} className="worksheet-q">
                   <div className="worksheet-q-text">
                     <strong>{i + 1}.</strong> {q.q}
-                    <span className="worksheet-q-topic">{q.subjectName} · {q.topicTitle}</span>
+                    <span className="worksheet-q-topic">{q.grade} · {q.subjectName} · {q.topicTitle}</span>
                   </div>
                   <ol className="worksheet-choices">
                     {q.choices.map((c, j) => (

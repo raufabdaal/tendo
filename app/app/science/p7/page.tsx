@@ -1,6 +1,6 @@
 import Link from "next/link";
 import ProgressBadge from "@/components/ProgressBadge";
-import { hasTopicDiagram } from "@/components/TopicDiagram";
+import { getTopicVisualPill } from "@/lib/topics";
 import { SCIENCE_TOPICS } from "@/lib/science-topics";
 
 const THEME_ORDER = [
@@ -48,7 +48,7 @@ export default function ScienceTopicListPage() {
   }
 
   const orderedGroups = sortThemeEntries(Array.from(groups.entries()));
-  const visualTopicCount = SCIENCE_TOPICS.filter((topic) => hasTopicDiagram(topic.id)).length;
+  const visualTopicCount = SCIENCE_TOPICS.filter((topic) => Boolean(getTopicVisualPill(topic))).length;
 
   return (
     <>
@@ -84,7 +84,7 @@ export default function ScienceTopicListPage() {
 
       {orderedGroups.map(([theme, topics]) => {
         const meta = THEME_META[theme];
-        const visualCount = topics.filter((topic) => hasTopicDiagram(topic.id)).length;
+        const visualCount = topics.filter((topic) => Boolean(getTopicVisualPill(topic))).length;
         return (
           <section key={theme} id={slugify(theme)} className="theme-group strand-section">
             <div className="strand-head">
@@ -106,7 +106,7 @@ export default function ScienceTopicListPage() {
                     <div>
                       <div className="card-title">{topic.title}</div>
                       <div className="card-sub">About {topic.estMinutes} minutes · {topic.quiz.length} questions</div>
-                      {hasTopicDiagram(topic.id) && <div className="visual-cue">Includes diagram</div>}
+                      {getTopicVisualPill(topic) && <div className="visual-cue">{getTopicVisualPill(topic)}</div>}
                     </div>
                     <ProgressBadge topicId={`science-${topic.id}`} />
                   </div>

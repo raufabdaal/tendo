@@ -1,21 +1,24 @@
 import Link from "next/link";
+import ClassSelector from "@/components/ClassSelector";
 
 export default function HomePage() {
   return (
     <>
       <div className="eyebrow">Welcome</div>
-      <h1>Revision that follows the syllabus.</h1>
+      <h1>Structured study that follows the syllabus.</h1>
       <p className="lead">
-        Pick a subject. Pick a topic. Read for two minutes. Take a quick quiz. Repeat. That is the entire app.
+        Pick a subject. Pick a topic. Read the modules. Take a practice quiz. Repeat. That is the entire app.
       </p>
 
-      <h2>Subjects</h2>
+      <ClassSelector activeLevel="P7" />
+
+      <h2>P7 Subjects</h2>
 
       <Link href="/math/p7" className="card">
         <div className="card-row">
           <div>
             <div className="card-title">Mathematics</div>
-            <div className="card-sub">P7 · 6 themes · 40 sub-topics</div>
+            <div className="card-sub">P7 · 6 themes · 11 study topics</div>
           </div>
           <span className="badge badge-math">Active</span>
         </div>
@@ -46,6 +49,16 @@ export default function HomePage() {
           <div>
             <div className="card-title">Social Studies</div>
             <div className="card-sub">P7 · Living Together in Africa</div>
+          </div>
+          <span className="badge badge-math">Active</span>
+        </div>
+      </Link>
+
+      <Link href="/re/p7" className="card">
+        <div className="card-row">
+          <div>
+            <div className="card-title">Religious Education</div>
+            <div className="card-sub">P7 · CRE (6 topics) & IRE (5 topics) options</div>
           </div>
           <span className="badge badge-math">Active</span>
         </div>

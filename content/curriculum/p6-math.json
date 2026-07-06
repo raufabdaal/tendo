@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Six (P.6)",
+    "subject": "Mathematics",
+    "examBody": "UNEB",
+    "exam": "PLE Foundation",
+    "source": "NCDC Primary Six Curriculum Set One, Mathematics Syllabus",
+    "lastReviewed": "2026-07-05"
+  },
+  "themes": [
+    {
+      "id": "p6-math-core",
+      "name": "Primary Six Core Mathematics",
+      "topics": [
+        {
+          "id": "p6-sets",
+          "term": "Term I",
+          "title": "Set Concepts up to Two Categories",
+          "periods": 12,
+          "subTopics": [
+            "Listing members, equal and equivalent sets",
+            "Intersection and union of two sets on Venn diagrams",
+            "Subsets and simple probability"
+          ]
+        },
+        {
+          "id": "p6-whole-numbers",
+          "term": "Term I",
+          "title": "Whole Numbers up to 10,000,000",
+          "periods": 14,
+          "subTopics": [
+            "Place values and values up to Ten Millions",
+            "Writing numbers in words and expanded form",
+            "Roman numerals up to M (1000) and Base Five conversions"
+          ]
+        },
+        {
+          "id": "p6-operations",
+          "term": "Term I",
+          "title": "Operations on Whole Numbers",
+          "periods": 16,
+          "subTopics": [
+            "Long addition, subtraction, multiplication, and division",
+            "BODMAS rules and number properties",
+            "Prime factorization, GCF, and LCM"
+          ]
+        },
+        {
+          "id": "p6-fractions-decimals",
+          "term": "Term II",
+          "title": "Fractions, Decimals and Percentages",
+          "periods": 18,
+          "subTopics": [
+            "Operations on proper and mixed fractions",
+            "Place values of decimals and conversions",
+            "Ratios, simple proportions, and percentage calculations"
+          ]
+        },
+        {
+          "id": "p6-geometry",
+          "term": "Term II",
+          "title": "Geometry and Angle Properties",
+          "periods": 16,
+          "subTopics": [
+            "Angles on a straight line and intersecting lines",
+            "Constructing 90\u00b0, 60\u00b0, and 30\u00b0 angles using ruler and compasses",
+            "Perimeter and area of rectangles, triangles, and parallelograms"
+          ]
+        },
+        {
+          "id": "p6-data-algebra",
+          "term": "Term III",
+          "title": "Data Handling and Simple Algebra",
+          "periods": 16,
+          "subTopics": [
+            "Bar graphs, line graphs, and simple pie charts",
+            "Mean, mode, median, and range",
+            "Forming and solving simple one-step linear equations"
+          ]
+        }
+      ]
+    }
+  ]
+}

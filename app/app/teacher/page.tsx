@@ -16,9 +16,12 @@ export default function TeacherPage() {
         At a glance: what your class has practiced, how they scored, and which topics need more attention.
       </p>
 
-      <div style={{ marginBottom: 18 }}>
+      <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 18 }}>
         <Link href="/teacher/worksheet" className="btn btn-secondary">
           → Generate a worksheet for class
+        </Link>
+        <Link href="/teacher/content-reports" className="btn btn-secondary">
+          → Review content reports
         </Link>
       </div>
 

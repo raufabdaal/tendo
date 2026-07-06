@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Six (P.6)",
+    "subject": "English Language",
+    "examBody": "UNEB",
+    "source": "NCDC Primary Six Curriculum Set One, English Syllabus",
+    "lastReviewed": "2026-07-05"
+  },
+  "themes": [
+    {
+      "id": "p6-english-functional",
+      "name": "Functional Grammar and Situational Vocabulary",
+      "topics": [
+        {
+          "id": "p6-safety-road",
+          "term": "Term I",
+          "title": "Safety on the Road",
+          "periods": 16,
+          "subTopics": [
+            "Road safety vocabulary (zebra crossing, pedestrian, traffic lights, pavement)",
+            "Modals of obligation and advice: must, should, ought to, must not"
+          ]
+        },
+        {
+          "id": "p6-debating",
+          "term": "Term I",
+          "title": "Debating and Expressing Opinions",
+          "periods": 14,
+          "subTopics": [
+            "Debate vocabulary (motion, proposer, opposer, chairperson, timekeeper)",
+            "Conjunctions of agreement and contrast: agree with, disagree with, in my opinion"
+          ]
+        },
+        {
+          "id": "p6-family-relationships",
+          "term": "Term II",
+          "title": "Family Relationships",
+          "periods": 16,
+          "subTopics": [
+            "Extended family vocabulary (niece, nephew, sibling, in-law, cousin)",
+            "Possessive pronouns and genitive apostrophes ('s vs s')"
+          ]
+        },
+        {
+          "id": "p6-occupations-crafts",
+          "term": "Term II",
+          "title": "Occupations and Crafts",
+          "periods": 16,
+          "subTopics": [
+            "Vocabulary of professions and artisan crafts (carpenter, plumber, tailor, surgeon)",
+            "Defining relative clauses using who, which, and where"
+          ]
+        },
+        {
+          "id": "p6-hotel-dining",
+          "term": "Term III",
+          "title": "Hotel and Dining Etiquette",
+          "periods": 16,
+          "subTopics": [
+            "Dining vocabulary (menu, waiter, bill, cutlery, reservation, beverage)",
+            "Countable and uncountable nouns with quantifiers (much, many, a few, some)"
+          ]
+        }
+      ]
+    }
+  ]
+}

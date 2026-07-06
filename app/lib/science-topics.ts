@@ -2,685 +2,1356 @@ import type { Topic } from "@/lib/topics";
 
 export const SCIENCE_TOPICS: Topic[] = [
   {
-    id: "muscular-skeletal-system",
-    themeId: "science-human-body",
-    themeName: "Human Body",
-    title: "Muscular-skeletal system",
-    estMinutes: 16,
-    status: "published",
-    reviewStatus: "verified",
-    note: {
-      intro: "Why this matters: The muscular-skeletal system helps the body stand, move, bend, lift and keep its shape. P7 learners need to name important bones, joints and muscles, and know how to care for them.",
-      learningObjectives: [
+    "id": "muscular-skeletal-system",
+    "themeId": "science-human-body",
+    "themeName": "Human Body",
+    "title": "Muscular-skeletal system",
+    "estMinutes": 20,
+    "status": "published",
+    "reviewStatus": "verified",
+    "note": {
+      "intro": "Why this matters: The muscular-skeletal system helps the body stand, move, bend, lift and keep its shape. P7 learners need to name important bones, joints and muscles, and know how to care for them.",
+      "learningObjectives": [
         "Name important bones and muscles in the human body.",
         "Explain the functions of the skeleton and muscles.",
         "Identify common types of joints.",
         "Describe health habits that keep bones and muscles strong.",
-        "Recognise common disorders of bones, muscles and joints and how some can be prevented.",
+        "Recognise common disorders of bones, muscles and joints and how some can be prevented."
       ],
-      whatYouNeedToKnow: [
+      "whatYouNeedToKnow": [
         "The skeleton is the framework of bones in the body. It gives the body shape, supports soft parts, protects delicate organs, and works with muscles to make movement possible.",
         "Important bones include the skull, backbone, ribs, humerus, radius, ulna, pelvis, femur, tibia and fibula. The skull protects the brain, the ribs protect the heart and lungs, and the backbone supports the body and protects the spinal cord.",
         "Muscles are body tissues that contract and relax to cause movement. Voluntary muscles are controlled by our will, such as muscles used for walking or writing. Involuntary muscles work without our direct control, such as muscles in the intestines and blood vessels.",
         "A joint is a place where two or more bones meet. Examples include hinge joints at the elbow and knee, ball-and-socket joints at the shoulder and hip, pivot joints in the neck, and gliding joints in the wrist and ankle.",
         "Bones and muscles can be affected by diseases and disorders such as rickets, fractures, sprains, dislocations, arthritis and poor posture. Some are caused by accidents, poor feeding, infection, or careless body use.",
-        "Good health habits include eating foods rich in calcium and proteins, exercising, sitting and standing correctly, avoiding dangerous play, and seeking medical help after serious injury.",
+        "Good health habits include eating foods rich in calcium and proteins, exercising, sitting and standing correctly, avoiding dangerous play, and seeking medical help after serious injury."
       ],
-      worked: {
-        problem: "A pupil says the ribs are not important because they do not help us write. Explain two important functions of the ribs.",
-        steps: [
+      "worked": {
+        "problem": "A pupil says the ribs are not important because they do not help us write. Explain two important functions of the ribs.",
+        "steps": [
           "Step 1. Identify where the ribs are found. They form a cage around the chest.",
           "Step 2. Think about the organs inside the chest. The heart and lungs are inside the rib cage.",
           "Step 3. State the protection function. Ribs protect the heart and lungs from injury.",
-          "Step 4. State the breathing support function. Ribs help the chest expand and contract during breathing.",
+          "Step 4. State the breathing support function. Ribs help the chest expand and contract during breathing."
         ],
-        answer: "Answer: The ribs protect the heart and lungs and help in breathing movements.",
+        "answer": "Answer: The ribs protect the heart and lungs and help in breathing movements."
       },
-      commonMistakes: [
-        "Thinking muscles alone cause movement without bones and joints.",
-        "Mixing up voluntary and involuntary muscles.",
-        "Calling every joint a hinge joint.",
-        "Forgetting that posture is part of caring for the muscular-skeletal system.",
-      ],
-      tryThis: {
-        question: "Which joint is found at the shoulder?",
-        choices: ["Hinge joint", "Ball-and-socket joint", "Pivot joint", "Fixed joint"],
-        correct: 1,
-        explanation: "The shoulder allows movement in many directions, so it is a ball-and-socket joint.",
-      },
-      writingTasks: [
-        {
-          title: "Observation task: Good posture and movement",
-          prompt: "Observe how a learner sits, stands and carries a school bag. Explain how posture affects muscles and bones.",
-          planningSteps: [
-            "Name the body parts involved, such as backbone, shoulders, joints and muscles.",
-            "Describe one good posture habit and one poor posture habit.",
-            "Explain one possible effect of poor posture.",
-            "Suggest a safe habit that protects the muscular-skeletal system.",
-          ],
-          checklist: [
-            "Bones, joints and muscles are mentioned correctly.",
-            "The explanation links posture to health.",
-            "The advice is practical for a P7 learner.",
-            "The answer avoids unsafe treatment advice and recommends adult help for injuries.",
-          ],
-          modelOpening: "Good posture helps the backbone and muscles support the body properly. A learner should sit upright and avoid carrying a heavy bag on one shoulder only.",
-        },
-      ],
-      recap: [
+      "recap": [
         "The skeleton gives shape, support and protection.",
         "Muscles contract and relax to cause movement.",
         "Joints are places where bones meet.",
-        "Good posture, exercise and balanced diet help keep bones and muscles healthy.",
-      ],
+        "Good posture, exercise and balanced diet help keep bones and muscles healthy."
+      ]
     },
-    quiz: [
-      { q: "What is the main function of the skull?", choices: ["To digest food", "To protect the brain", "To pump blood", "To produce urine"], correct: 1, why: "The skull is a hard bony structure that protects the brain." },
-      { q: "Which pair of bones is found in the forearm?", choices: ["Femur and tibia", "Radius and ulna", "Ribs and skull", "Pelvis and backbone"], correct: 1, why: "The radius and ulna are the two bones of the forearm." },
-      { q: "A joint that allows movement like opening and closing a door is a:", choices: ["Hinge joint", "Pivot joint", "Fixed joint", "Gliding joint"], correct: 0, why: "Hinge joints, such as the elbow and knee, move mainly backwards and forwards." },
-      { q: "Which of these is an involuntary muscle action?", choices: ["Writing", "Kicking a ball", "Movement of food in the intestines", "Clapping"], correct: 2, why: "Intestinal movement happens without direct control, so it is involuntary." },
-      { q: "Which habit helps keep the muscular-skeletal system healthy?", choices: ["Poor sitting posture", "Eating a balanced diet", "Avoiding all exercise", "Carrying very heavy loads badly"], correct: 1, why: "A balanced diet supplies nutrients needed for strong bones and muscles." },
-      { q: "What is a fracture?", choices: ["A broken bone", "A swollen muscle", "A type of joint", "A curved backbone only"], correct: 0, why: "A fracture is a break or crack in a bone." },
-      { q: "Why are muscles attached to bones important?", choices: ["They make urine", "They help bones move", "They digest fats", "They filter blood"], correct: 1, why: "Muscles contract and relax, pulling on bones to cause movement." },
+    "subtopics": [
+      {
+        "subtopicId": "skeleton-structure",
+        "title": "1. The Structure and Types of Skeleton",
+        "modules": [
+          {
+            "moduleId": "skeleton-basics",
+            "imageUrl": "/images/science/human-skeleton.png",
+            "imageCaption": "The human skeletal system framework showing major bones and joints.",
+            "title": "Types of Skeletons and Bone Basics",
+            "bigIdea": "Skeletons provide rigid structural support, give the body shape, and protect delicate vital organs.",
+            "learnIt": [
+              "Three main types of skeletons exist in living organisms: Endoskeleton (internal bony framework found in vertebrates such as humans, fish, birds, and cattle), Exoskeleton (hard outer shell found in invertebrates/arthropods such as insects, crabs, and snails), and Hydrostatic skeleton (fluid-supported body cavity found in soft-bodied animals such as earthworms and jellyfish).",
+              "Major bones of the human skeleton: Skull (cranium), Backbone (vertebral column made of 33 vertebrae protecting the spinal cord), Rib cage (12 pairs of ribs protecting heart and lungs), Collarbone (clavicle), Shoulder blade (scapula), Arm bones (Humerus in upper arm; Radius and Ulna in forearm), Pelvis (hip bone), Leg bones (Femur/thigh bone—the longest and strongest bone in the body; Tibia/shin bone and Fibula in lower leg; Patella/kneecap).",
+              "Four core functions of the human skeleton: gives the body its shape and support; protects delicate internal organs (brain, heart, lungs, spinal cord); works with attached muscles across joints to produce body movement; manufactures red and white blood cells inside the bone marrow of long bones."
+            ],
+            "tryThis": {
+              "question": "Which type of skeleton is found inside vertebrates such as humans and cattle?",
+              "choices": ["Exoskeleton", "Endoskeleton", "Hydrostatic skeleton", "Shell skeleton"],
+              "correct": 1,
+              "explanation": "An endoskeleton is an internal bony or cartilaginous framework located inside the body tissues of vertebrates."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "joints-muscles",
+        "title": "2. Joints, Muscles and Movement Mechanisms",
+        "modules": [
+          {
+            "moduleId": "joint-types",
+            "imageUrl": "/images/science/hinge-and-ball-joints.png",
+            "imageCaption": "Comparison of human hinge joints (elbow/knee) and ball-and-socket joints (shoulder/hip).",
+            "title": "Structure and Types of Joints",
+            "bigIdea": "A joint is the meeting point of two or more bones, held together by ligaments and lubricated by synovial fluid.",
+            "learnIt": [
+              "Classification of joints: Movable (synovial) joints allow free movement between bones; Immovable (fixed/fibrous) joints allow zero movement (e.g., sutures connecting the bones of the skull).",
+              "Hinge joint: allows movement in only one plane (backwards and forwards like a door). Examples: elbow joint, knee joint, and finger joints.",
+              "Ball-and-socket joint: allows rotational movement in all directions (360 degrees). Examples: shoulder joint and hip joint.",
+              "Other movable joints: Pivot joint (found in the neck between first and second vertebrae, allowing head rotation from side to side); Gliding joint (found in wrist and ankle bones sliding over one another).",
+              "Anatomy of a movable joint: Cartilage (smooth elastic tissue covering bone ends to cushion against shock and prevent bone-on-bone friction); Synovial fluid (slippery liquid inside the joint capsule that lubricates joint movement); Ligaments (tough fibrous bands that hold bone firmly to bone across a joint); Tendons (inelastic strong cords that attach muscle to bone)."
+            ],
+            "tryThis": {
+              "question": "What is the function of cartilage at a movable synovial joint?",
+              "choices": ["To attach muscle to bone", "To cushion bone ends and reduce friction during movement", "To produce blood cells", "To conduct nerve signals"],
+              "correct": 1,
+              "explanation": "Cartilage covers the articulating surfaces of bones to absorb mechanical shock and prevent grinding friction."
+            }
+          },
+          {
+            "moduleId": "muscle-action",
+            "title": "Types of Muscles and Antagonistic Action",
+            "bigIdea": "Muscles can only pull by contracting; therefore, body movements require antagonistic muscle pairs working in opposite directions.",
+            "learnIt": [
+              "Three types of muscles: Voluntary / Skeletal muscles (muscles attached to bones under direct conscious control, e.g., biceps and leg muscles); Involuntary / Smooth muscles (muscles operating automatically without conscious thought, e.g., walls of stomach, intestines, and blood vessels); Cardiac muscle (specialized involuntary muscle found ONLY in the heart that contracts rhythmically without ever getting tired).",
+              "Antagonistic muscle action: muscles work in opposing pairs where when one contracts (shortens and thickens), the other relaxes (lengthens).",
+              "Example at the elbow joint: To bend (flex) the arm, the Biceps muscle contracts while the Triceps muscle relaxes. To straighten (extend) the arm, the Triceps muscle contracts while the Biceps muscle relaxes."
+            ],
+            "tryThis": {
+              "question": "What happens to the biceps and triceps muscles when a person bends their arm upwards at the elbow?",
+              "choices": ["Both biceps and triceps contract", "Biceps contracts while triceps relaxes", "Triceps contracts while biceps relaxes", "Both muscles relax completely"],
+              "correct": 1,
+              "explanation": "In antagonistic action, the flexor muscle (biceps) contracts to pull the forearm up while the extensor (triceps) relaxes."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "health-posture",
+        "title": "3. Diseases, Disorders and Care of Bones and Muscles",
+        "modules": [
+          {
+            "moduleId": "system-diseases",
+            "title": "Diseases and Physical Disorders",
+            "bigIdea": "Nutritional deficiencies, viral infections, and mechanical accidents can damage bones, joints, and muscles.",
+            "learnIt": [
+              "Rickets: a nutritional deficiency disease in young children caused by lack of Vitamin D, Calcium, or Phosphorus, resulting in soft, bowed legs and knocked knees.",
+              "Osteoporosis: a disorder in older adults where bones lose calcium, becoming brittle and easily fractured.",
+              "Poliomyelitis (Polio): a highly infectious viral disease transmitted through contaminated food/water that destroys motor nerves, leading to permanent muscle paralysis and crippled limbs (prevented by oral polio vaccine OPV).",
+              "Mechanical joint and bone injuries: Fracture (a break or crack in a bone: Simple/closed fracture stays inside skin; Compound/open fracture pierces through skin; Greenstick fracture is a partial bending break in young elastic children's bones); Dislocation (when bone ends are forced out of their normal joint position); Sprain (tearing or overstretching of ligaments at a joint); Strain (tearing or overstretching of a muscle or tendon)."
+            ],
+            "tryThis": {
+              "question": "An injury where ligaments holding a joint together are overstretched or torn is called a:",
+              "choices": ["Strain", "Sprain", "Fracture", "Dislocation"],
+              "correct": 1,
+              "explanation": "A sprain affects ligaments at a joint, whereas a strain affects muscles or tendons."
+            }
+          },
+          {
+            "moduleId": "system-care",
+            "title": "Care and Proper Posture",
+            "bigIdea": "Maintaining upright posture and eating a diet rich in calcium and vitamin D ensures strong skeletal growth.",
+            "learnIt": [
+              "Balanced diet: regularly consume calcium-rich foods (milk, cheese, small fish with bones) and vitamin D sources (sunlight exposure, egg yolk, liver) to calcify and harden bone tissue.",
+              "Proper posture: posture is the correct carriage of the body when sitting, standing, walking, or lifting. Good sitting posture prevents spinal curvature (such as hunchback or scoliosis).",
+              "Regular physical exercise: strengthens skeletal muscles, increases joint flexibility, and improves blood circulation.",
+              "First Aid for skeletal injuries: immobilize broken limbs using clean wooden splints and bandages; apply cold ice compresses to sprains to reduce swelling; never attempt to massage or pull a compound fracture."
+            ],
+            "tryThis": {
+              "question": "Why is early morning sunlight exposure beneficial for bone health in young children?",
+              "choices": ["It kills skin bacteria", "It helps the skin manufacture Vitamin D required for calcium absorption", "It softens bones", "It relaxes cardiac muscles"],
+              "correct": 1,
+              "explanation": "Ultraviolet rays in sunlight stimulate human skin cells to synthesize Vitamin D, which is essential for depositing calcium into bones."
+            }
+          }
+        ]
+      }
     ],
+    "quiz": [
+      { "q": "Which joint is found at the shoulder?", "choices": ["Hinge joint", "Ball-and-socket joint", "Pivot joint", "Fixed joint"], "correct": 1, "why": "The shoulder allows movement in many directions, making it a ball-and-socket joint." },
+      { "q": "Which tissue attaches muscle to bone?", "choices": ["Ligament", "Tendon", "Cartilage", "Skin"], "correct": 1, "why": "Tendons attach muscle to bone, while ligaments attach bone to bone." },
+      { "q": "Which disease weakens bones due to lack of vitamin D?", "choices": ["Polio", "Rickets", "Malaria", "Scabies"], "correct": 1, "why": "Rickets causes soft bones in children due to lack of vitamin D and calcium." },
+      { "q": "What happens to triceps when the arm straightens?", "choices": ["It contracts", "It relaxes", "It breaks", "It turns into cartilage"], "correct": 0, "why": "To straighten the arm, triceps contracts while biceps relaxes." },
+      { "q": "Which skeleton type is found inside humans?", "choices": ["Exoskeleton", "Endoskeleton", "Hydrostatic skeleton", "Shell skeleton"], "correct": 1, "why": "Humans have an internal endoskeleton made of bones." },
+      { "q": "What cushions bone ends at a joint?", "choices": ["Cartilage", "Skin", "Hair", "Marrow"], "correct": 0, "why": "Cartilage covers bone ends to reduce friction and absorb shock." },
+      { "q": "Which muscle type works automatically in the intestines?", "choices": ["Voluntary muscle", "Involuntary muscle", "Cardiac muscle", "Skeletal muscle"], "correct": 1, "why": "Smooth/involuntary muscles control digestion automatically." },
+      { "q": "A sprain is an injury to:", "choices": ["A bone", "A ligament at a joint", "The skull", "The liver"], "correct": 1, "why": "Sprains occur when ligaments are torn or stretched." }
+    ]
   },
   {
-    id: "electricity-and-magnetism",
-    themeId: "science-matter-energy",
-    themeName: "Matter and Energy",
-    title: "Electricity and magnetism",
-    estMinutes: 18,
-    status: "published",
-    reviewStatus: "verified",
-    note: {
-      intro: "Why this matters: Electricity and magnetism are used in homes, schools, hospitals, transport and communication. P7 learners need to understand simple circuits, magnets, safety, and how electricity and magnetism are connected.",
-      learningObjectives: [
+    "id": "electricity-and-magnetism",
+    "themeId": "science-matter-energy",
+    "themeName": "Matter and Energy",
+    "title": "Electricity and magnetism",
+    "estMinutes": 22,
+    "status": "published",
+    "reviewStatus": "verified",
+    "note": {
+      "intro": "Why this matters: Electricity and magnetism power modern homes, schools, hospitals, transport, and communication networks.",
+      "learningObjectives": [
         "Identify sources and types of electricity.",
-        "Draw and explain a simple electric circuit.",
-        "Distinguish conductors and insulators.",
-        "Explain properties and uses of magnets.",
-        "Describe safety precautions when using electricity.",
+        "Draw and explain simple electric circuits in series and parallel.",
+        "Distinguish electrical conductors and insulators.",
+        "Explain properties, laws, and uses of magnets and electromagnets.",
+        "Describe home electrical safety precautions and first aid."
       ],
-      whatYouNeedToKnow: [
-        "Electricity is a form of energy. Current electricity flows through a complete circuit, while static electricity is caused by electric charges building up on a surface.",
-        "Sources of electricity include dry cells, accumulators, generators, dynamos, solar cells and mains electricity. In school circuits, dry cells are safer for demonstrations than mains electricity.",
-        "A simple circuit needs a source of electricity, connecting wires, a switch and a device such as a bulb. The circuit must be complete for current to flow and for the bulb to light. If any connection is loose, the switch is open, or the cell is weak, the bulb may not light.",
-        "Conductors allow electricity to pass through them easily. Most metals are good conductors. Insulators do not allow electricity to pass through them easily. Rubber, plastic and dry wood are common insulators. Insulators are used to cover wires and handles of electrical tools.",
-        "A short circuit happens when current follows an unintended path with little resistance. It may cause overheating, fire or damage to appliances. Fuses, circuit breakers, correct wiring and avoiding overloaded sockets help to reduce danger.",
-        "Magnets attract magnetic materials such as iron, steel, nickel and cobalt. A magnet has two poles, north and south. Like poles repel, while unlike poles attract. Magnetic force is strongest near the poles.",
-        "Temporary magnets can be made by stroking, induction or using electricity. An electromagnet is made by winding insulated wire around a soft iron core and passing current through the wire. It loses magnetism when current is switched off.",
-        "Electricity can be used to make temporary magnets, and magnetism can be used to generate electricity using a dynamo. This link is used in electric bells, generators, speakers, motors and many modern machines.",
+      "whatYouNeedToKnow": [
+        "Electricity is a form of energy. Current electricity flows through closed circuits, while static electricity builds up on insulated surfaces due to friction.",
+        "Sources of electricity include dry cells, accumulators, generators, dynamos, solar cells, and hydroelectric dams.",
+        "Magnets attract iron, steel, cobalt, and nickel. First Law of Magnetism: Like poles repel, unlike poles attract.",
+        "Electromagnets are temporary magnets made by passing electric current through a coil wound around a soft iron core."
       ],
-      worked: {
-        problem: "A bulb in a simple circuit does not light. Give three possible reasons.",
-        steps: [
-          "Step 1. Check whether the dry cell is working or placed correctly.",
-          "Step 2. Check whether the circuit is complete. A loose wire can stop current from flowing.",
-          "Step 3. Check whether the switch is open or closed. An open switch breaks the circuit.",
-          "Step 4. Check whether the bulb is damaged or burnt out.",
+      "worked": {
+        "problem": "Plan a simple experiment to make a temporary electromagnet using a dry cell, insulated wire, and an iron nail.",
+        "steps": [
+          "Wind insulated copper wire tightly around a soft iron nail many times.",
+          "Connect the two bare ends of the wire to the positive and negative terminals of a dry cell.",
+          "Bring iron paperclips near the tip of the nail to test attraction."
         ],
-        answer: "Answer: The bulb may fail to light because the cell is weak, the circuit is incomplete, the switch is open, or the bulb is damaged.",
+        "answer": "Answer: When current passes through the wire coil, the iron nail magnetizes instantly and attracts metal paperclips."
       },
-      commonMistakes: [
-        "Thinking a bulb can light in an open circuit.",
-        "Calling every material a conductor because it looks shiny.",
-        "Forgetting that magnets have two poles.",
-        "Thinking an electromagnet stays magnetic after current is switched off.",
-        "Handling electricity with wet hands or damaged wires.",
-      ],
-      tryThis: {
-        question: "Which material is the best electrical insulator?",
-        choices: ["Copper", "Iron", "Aluminium", "Rubber"],
-        correct: 3,
-        explanation: "Rubber is an insulator, so it does not allow electricity to pass through easily.",
-      },
-      writingTasks: [
-        {
-          title: "Experiment plan: Making an electromagnet",
-          prompt: "Plan a simple experiment to make a temporary magnet using a dry cell, insulated wire and an iron nail.",
-          planningSteps: [
-            "List the materials needed.",
-            "Describe how to wind the wire around the nail and connect the dry cell.",
-            "State what you will use to test whether the nail is magnetic.",
-            "Give two safety precautions for using electricity.",
-          ],
-          checklist: [
-            "The circuit is described as complete only during testing.",
-            "The iron nail/core is included.",
-            "The test uses small iron objects such as pins or paper clips.",
-            "Electrical safety is clearly mentioned.",
-          ],
-          modelOpening: "To make an electromagnet, I would wind insulated copper wire around an iron nail and connect the wire ends briefly to a dry cell.",
-        },
-      ],
-      recap: [
-        "A complete circuit is needed for current to flow.",
-        "Conductors allow current to pass; insulators do not.",
-        "Magnets attract magnetic materials and have two poles.",
-        "Electricity and magnetism are linked through electromagnets and dynamos.",
-        "Fuses, insulation and avoiding overloaded sockets help prevent electrical accidents.",
-        "Electrical safety is part of the topic, not an extra.",
-      ],
+      "recap": [
+        "Like magnetic poles repel, unlike poles attract.",
+        "Static charges build up by friction; lightning arresters protect buildings.",
+        "Parallel circuits keep other rooms lit if one bulb blows.",
+        "Fuses melt during short circuits or overloads to prevent fires."
+      ]
     },
-    quiz: [
-      { q: "Which item is needed to open and close an electric circuit?", choices: ["Switch", "Ruler", "Magnet only", "Thermometer"], correct: 0, why: "A switch opens or closes a circuit to control current flow." },
-      { q: "Which material is a good conductor of electricity?", choices: ["Plastic", "Rubber", "Copper", "Dry wood"], correct: 2, why: "Copper is a metal and a good electrical conductor." },
-      { q: "What happens when like poles of two magnets are brought together?", choices: ["They repel", "They attract", "They disappear", "They produce water"], correct: 0, why: "Like poles repel, while unlike poles attract." },
-      { q: "A complete path through which current flows is called a:", choices: ["Circuit", "Shadow", "Lens", "Joint"], correct: 0, why: "An electric circuit is a complete path for current." },
-      { q: "Which is a source of electricity in a simple torch?", choices: ["Bulb", "Dry cell", "Switch", "Wire covering"], correct: 1, why: "The dry cell supplies electrical energy to the torch circuit." },
-      { q: "Why are electric wires often covered with plastic?", choices: ["Plastic is a good conductor", "Plastic is an insulator", "Plastic makes current stronger", "Plastic is magnetic"], correct: 1, why: "Plastic insulates the wire and helps prevent electric shock." },
-      { q: "Which device can use magnetism to generate electricity?", choices: ["Dynamo", "Mirror", "Periscope", "Lever"], correct: 0, why: "A dynamo uses movement and magnetism to generate electricity." },
+    "subtopics": [
+      {
+        "subtopicId": "magnetism-basics",
+        "title": "1. Magnetism: Properties, Methods and Care",
+        "modules": [
+          {
+            "moduleId": "magnetic-materials",
+            "imageUrl": "/images/science/bar-magnet-field-lines.png",
+            "imageCaption": "Bar magnet showing North and South poles surrounded by looping magnetic field lines.",
+            "title": "Properties and Fields of Magnets",
+            "bigIdea": "Magnets exert unseen invisible magnetic force fields that attract magnetic substances and obey exact pole laws.",
+            "learnIt": [
+              "Magnetic vs Non-magnetic substances: Magnetic materials are attracted by a magnet (iron, steel, cobalt, nickel); Non-magnetic materials are not attracted (wood, plastic, copper, aluminium, glass, brass).",
+              "Basic properties of magnets: every magnet has two poles (North-seeking pole N and South-seeking pole S); magnetic force of attraction is strongest at the poles; a freely suspended bar magnet always comes to rest pointing in the Earth's North-South geographical direction.",
+              "First Law of Magnetism: Like poles repel each other (N repels N; S repels S), while Unlike poles attract each other (N attracts S). Repulsion is the only sure test for magnetism.",
+              "Magnetic field: the space or region surrounding a magnet where its magnetic force can be detected. Magnetic lines of force always loop from the North pole to the South pole outside the magnet."
+            ],
+            "tryThis": {
+              "question": "Why is repulsion considered the only sure test to confirm that a metal bar is a permanent magnet?",
+              "choices": ["Because a magnet attracts both unmagnetized iron and opposite poles, but only repels a like magnetic pole", "Because magnets never attract iron", "Because repulsion produces sparks", "Because magnets are heavy"],
+              "correct": 0,
+              "explanation": "An unmagnetized piece of iron will be attracted by either pole of a magnet, but true repulsion only occurs when two like magnetic poles face each other."
+            }
+          },
+          {
+            "moduleId": "making-demagnetizing-magnets",
+            "title": "Making, Demagnetizing and Storing Magnets",
+            "bigIdea": "Permanent magnets are made from steel by stroking or induction, while temporary electromagnets use electric current.",
+            "learnIt": [
+              "Methods of making magnets: Single touch stroking method (stroking a steel bar repeatedly in one direction using one pole of a permanent magnet); Double touch stroking method (stroking from center outward using opposite poles of two magnets); Electrical method (placing a steel bar inside a solenoid/coil carrying Direct Current DC to form a permanent magnet).",
+              "Electromagnets (Temporary magnets): made by coiling insulated copper wire around a soft iron core and connecting to a battery. They gain magnetism instantly when current flows and lose magnetism instantly when current is switched off.",
+              "Methods of Demagnetization (destroying magnetism): hammering or beating a magnet violently; heating a magnet until red hot and letting it cool pointing East-West; passing Alternating Current (AC) through a coil surrounding the magnet; dropping magnets repeatedly on hard concrete.",
+              "Care and storage: store bar magnets in pairs with unlike poles facing each other (N opposite S) with soft iron pieces called keepers placed across their ends to preserve their magnetic domains."
+            ],
+            "tryThis": {
+              "question": "Which metal is best suited for making the core of a temporary electromagnet used in electric bells?",
+              "choices": ["Hard steel", "Soft iron", "Copper", "Aluminium"],
+              "correct": 1,
+              "explanation": "Soft iron is easily magnetized when electric current flows and readily loses its magnetism as soon as current is switched off."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "static-electricity",
+        "title": "2. Static Electricity and Lightning Protection",
+        "modules": [
+          {
+            "moduleId": "static-charges-lightning",
+            "title": "Electric Charges and Lightning Arresters",
+            "bigIdea": "Friction transfers electrons between objects creating static charges that can discharge violently as atmospheric lightning.",
+            "learnIt": [
+              "Static electricity is stationary electrical charge built up on the surface of insulated objects by friction (rubbing).",
+              "Two types of electric charges exist: Positive charge (+) and Negative charge (−). Law of static charges: Like charges repel each other (+ repels +; − repels −), while Unlike charges attract (+ attracts −).",
+              "Formation of lightning: vigorous friction between rising warm air currents and water droplets inside storm clouds creates massive static charges (positive at cloud top, negative at cloud base). When electrostatic attraction between cloud charges and Earth surface becomes too high, a giant spark of electricity leaps to the ground as lightning, producing thunder by heating air instantly.",
+              "Lightning arrester (conductor): a thick copper strip mounted on top of tall buildings ending in sharp copper spikes pointing skywards, with the lower end buried deep in moist earth. Function: sharp spikes attract atmospheric static charges from clouds and conduct them safely down into the ground without striking or burning the building."
+            ],
+            "tryThis": {
+              "question": "What is the primary function of a lightning arrester installed on a multi-storied school building?",
+              "choices": ["To generate electricity for lighting classrooms", "To attract atmospheric static discharge and conduct it safely into the earth", "To stop rain from falling", "To measure wind speed"],
+              "correct": 1,
+              "explanation": "The copper conductor provides a low-resistance path that safely carries lightning electrical discharge directly into underground soil."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "current-electricity-circuits",
+        "title": "3. Current Electricity, Circuits and Electrical Quantities",
+        "modules": [
+          {
+            "moduleId": "sources-and-circuits",
+            "imageUrl": "/images/science/simple-electric-circuit.png",
+            "imageCaption": "Simple closed electric circuit with dry cell, closed switch, wires, and lit bulb.",
+            "title": "Sources of Electricity and Circuit Types",
+            "bigIdea": "Current electricity is the continuous flow of electric charges along a closed conducting path.",
+            "learnIt": [
+              "Sources of electric current: Chemical cells (Dry cells/Leclanche cells used in radios/torches; Wet secondary accumulators/lead-acid batteries used in cars); Dynamos and Generators (convert mechanical kinetic energy into electrical energy using rotating coils inside magnets); Solar panels (photovoltaic cells converting sunlight directly into electricity); Hydroelectric power plants (falling water spinning turbines connected to generators).",
+              "Series circuit: electrical components (bulbs or cells) connected end-to-end along a single single conducting loop. Characteristics: current is identical through all components; if one bulb blows or is removed, the entire circuit breaks and all bulbs go off; connecting dry cells in series increases total voltage and brightness.",
+              "Parallel circuit: components connected across separate branching loops so current divides. Characteristics: each bulb receives full supply voltage; if one bulb blows, the remaining parallel loops continue operating brightly; household wiring always uses parallel circuits."
+            ],
+            "tryThis": {
+              "question": "Why are electrical light bulbs in modern school buildings and homes wired in parallel rather than in series?",
+              "choices": ["To consume more wires", "So that if one bulb blows or is switched off, the other rooms continue lighting independently", "Because series wiring is illegal", "To reduce solar heat"],
+              "correct": 1,
+              "explanation": "In a parallel circuit, each appliance has its own complete independent path back to the electrical source."
+            }
+          },
+          {
+            "moduleId": "voltage-current-resistance",
+            "imageUrl": "/images/science/conductors-vs-insulators.png",
+            "imageCaption": "Comparison of copper metal conducting electricity vs rubber and wood acting as safety insulators.",
+            "title": "Current, Voltage, Resistance and Conductors",
+            "bigIdea": "Voltage pushes electric current through conductors against electrical resistance.",
+            "learnIt": [
+              "Electric Current (I): rate of flow of electric charges along a conductor. Measured in Amperes (Amps or A) using an Ammeter connected in series.",
+              "Voltage / Potential Difference (V): electrical pressure or pushing force provided by a battery or generator that drives current through a circuit. Measured in Volts (V) using a Voltmeter connected in parallel.",
+              "Resistance (R): opposition offered by a material to the flow of electric current. Measured in Ohms (Ω). Thin long wires offer higher resistance than thick short copper wires.",
+              "Conductors vs Insulators: Conductors allow electric current to flow through them easily (copper, silver, aluminium, graphite, wet human body, salty water); Insulators completely block electrical current flow (dry wood, rubber, plastic, porcelain, pure distilled water)."
+            ],
+            "tryThis": {
+              "question": "Which instrument is used to measure the rate of flow of electric current in a circuit?",
+              "choices": ["Voltmeter", "Ammeter", "Barometer", "Anemometer"],
+              "correct": 1,
+              "explanation": "An Ammeter measures electric current in Amperes and must be wired in series with the circuit components."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "appliances-and-safety",
+        "title": "4. Electrical Appliances and Home Safety Precautions",
+        "modules": [
+          {
+            "moduleId": "electric-bell-structure",
+            "imageUrl": "/images/science/electromagnet-nail-coil.png",
+            "imageCaption": "An electromagnet created by coiling insulated copper wire around an iron nail connected to a dry cell.",
+            "title": "Structure and Working of an Electric Bell",
+            "bigIdea": "The electric bell operates using an electromagnet that repeatedly pulls and releases a spring-loaded striker.",
+            "learnIt": [
+              "Core components of an electric bell: Electromagnet (U-shaped soft iron core wound with copper coils); Soft iron armature (iron bar suspended on a springy metal strip); Hammer / Striker (metal rod attached to armature); Gong (metal bell bowl); Contact adjustment screw.",
+              "Working mechanism: When the bell switch is pressed, circuit completes and current flows through coils; electromagnet magnetizes instantly and attracts the soft iron armature forward; hammer strikes the gong producing a loud ringing sound; as armature moves forward, it pulls away from the contact screw breaking the circuit; electromagnet demagnetizes instantly, allowing spring to pull armature back to touch contact screw; circuit completes again and rapid ringing repeats."
+            ],
+            "tryThis": {
+              "question": "Why does the hammer of an electric bell spring back away from the gong immediately after striking it?",
+              "choices": ["Because the gong pushes it away", "Because forward movement breaks contact at the screw, stopping current so the electromagnet loses magnetism", "Because dry cells run out of charge", "Because gravity pulls it down"],
+              "correct": 1,
+              "explanation": "When contact at the adjustment screw breaks, current stops flowing, turning off the electromagnet so the spring pulls the armature back."
+            }
+          },
+          {
+            "moduleId": "electrical-safety-precautions",
+            "title": "Electrical Safety, Fuses and First Aid",
+            "bigIdea": "Fuses and circuit breakers automatically cut off electricity during dangerous short circuits or overloads.",
+            "learnIt": [
+              "Electrical hazards: Electric shock (electricity passing through human body causing burns or cardiac arrest); Short circuit (accidental low-resistance connection causing sparks and house fires); Overloading sockets (plugging too many high-power heaters into one adapter socket).",
+              "Fuse: a safety device containing a short thin wire of low melting point inserted on the live wire. If excess current flows due to short circuit or overload, the fuse wire heats up and melts instantly (blows), breaking the circuit before appliances catch fire.",
+              "Safety precautions: switch off mains before replacing bulbs or repairing switches; never touch electrical switches or appliances with wet hands; insulate all bare exposed wires with electrical tape; insert sockets properly with 3-pin earth plugs.",
+              "First aid for electric shock victim: NEVER touch a victim who is still touching a live power wire with bare hands; immediately switch off mains power switch; if switch is out of reach, use a dry wooden stick or dry rubber rod to push the wire away from the victim; perform cardiopulmonary resuscitation (CPR) if victim stops breathing."
+            ],
+            "tryThis": {
+              "question": "What is the function of a fuse inside a 3-pin electrical plug?",
+              "choices": ["To generate extra voltage", "To melt and break the circuit if dangerous excess electric current flows", "To cool down the room", "To store static charges"],
+              "correct": 1,
+              "explanation": "A fuse wire has a low melting point so it blows instantly during an overload, protecting household appliances from electrical fires."
+            }
+          }
+        ]
+      }
     ],
+    "quiz": [
+      { "q": "Which item is needed to open and close an electric circuit?", "choices": ["Switch", "Ruler", "Magnet", "Thermometer"], "correct": 0, "why": "A switch opens or closes the conducting path." },
+      { "q": "Which metal is best for making the core of an electromagnet?", "choices": ["Soft iron", "Hard steel", "Aluminium", "Copper"], "correct": 0, "why": "Soft iron magnetizes and demagnetizes readily." },
+      { "q": "What happens when two North poles face each other?", "choices": ["They repel", "They attract", "They spark", "They stick together"], "correct": 0, "why": "Like magnetic poles repel." },
+      { "q": "Why are household lights wired in parallel?", "choices": ["So they work independently", "To save wire", "To increase heat", "To make them dimmer"], "correct": 0, "why": "Parallel circuits give each bulb independent voltage." },
+      { "q": "What is the function of a fuse?", "choices": ["To melt and cut current during overload", "To produce sparks", "To store electricity", "To measure voltage"], "correct": 0, "why": "A fuse wire melts during dangerous current overloads." },
+      { "q": "Which material is an electrical insulator?", "choices": ["Dry wood", "Copper", "Iron", "Salt water"], "correct": 0, "why": "Dry wood does not conduct electricity." },
+      { "q": "How does a lightning arrester protect a building?", "choices": ["Conducts static lightning charge safely into the earth", "Stops rain", "Reflects sunlight", "Generates mains electricity"], "correct": 0, "why": "Sharp copper spikes attract and ground atmospheric charges safely." },
+      { "q": "An ammeter is connected in:", "choices": ["Series", "Parallel", "Circle", "Reverse"], "correct": 0, "why": "An ammeter measures current flowing through the loop in series." }
+    ]
   },
   {
-    id: "energy-resources-environment",
-    themeId: "science-environment",
-    themeName: "The Environment",
-    title: "Energy resources in the environment",
-    estMinutes: 15,
-    status: "published",
-    reviewStatus: "verified",
-    note: {
-      intro: "Why this matters: People use energy every day for cooking, lighting, transport, farming and industry. Learners need to know different energy resources, their sources, and how to use them safely and sustainably.",
-      learningObjectives: [
-        "Name different energy resources and their sources.",
-        "Explain the importance of energy resources.",
-        "Distinguish renewable and non-renewable energy resources.",
-        "Describe safe and sustainable ways of using energy.",
+    "id": "excretory-system",
+    "themeId": "science-human-body",
+    "themeName": "Human Body",
+    "title": "Excretory system",
+    "estMinutes": 20,
+    "status": "published",
+    "reviewStatus": "verified",
+    "note": {
+      "intro": "Why this matters: The body produces metabolic wastes that must be removed to stay healthy. Learners need to know the excretory organs, products, kidney anatomy, skin structure, and system care.",
+      "learningObjectives": [
+        "Distinguish between excretion and egestion.",
+        "Name the four excretory organs and the wastes they excrete.",
+        "Describe the internal anatomy of the kidney and urinary system flow.",
+        "Explain the layers and functions of human skin.",
+        "Identify kidney, skin, lung, and liver diseases and their prevention."
       ],
-      whatYouNeedToKnow: [
-        "The sun is the major source of energy in the environment. Solar energy gives heat and light, helps plants make food, dries clothes and can be used by solar equipment.",
-        "Water can provide energy through hydro-electric power, steam engines and tidal energy. Moving water can turn turbines to generate electricity.",
-        "Fossil fuels include coal and petroleum. They are useful for transport, cooking, industry and electricity generation, but they can pollute the environment and can get finished because they take a very long time to form.",
-        "Plants provide energy as food, firewood, charcoal, biofuel and biogas from plant residues. Animals can provide animal power and biogas from animal waste.",
-        "Wind energy can be used to pump water, sail boats, dry things and generate electricity using wind turbines.",
-        "Sustainable energy use means using energy wisely without destroying the environment. Examples include planting trees after cutting them, using improved stoves, using solar energy, and avoiding waste.",
+      "whatYouNeedToKnow": [
+        "Excretion is the removal of cellular metabolic wastes, whereas egestion is the removal of undigested dietary faeces.",
+        "The kidneys filter blood to excrete urine (urea, excess water, salts). The skin excretes sweat. The lungs excrete carbon dioxide and water vapour. The liver deaminates excess amino acids into urea and excretes bile pigments.",
+        "The kidney has an outer cortex, inner medulla, and central pelvis collecting funnel."
       ],
-      worked: {
-        problem: "Classify these energy resources as renewable or non-renewable: solar energy, petroleum, wind energy and coal.",
-        steps: [
-          "Step 1. Renewable resources can be naturally replaced in a short time or continue to be available.",
-          "Step 2. Solar energy and wind energy are renewable because the sun and wind continue to be available naturally.",
-          "Step 3. Non-renewable resources take a very long time to form and can get finished.",
-          "Step 4. Petroleum and coal are non-renewable fossil fuels.",
+      "worked": {
+        "problem": "Explain the path followed by urine from where it is formed until it leaves the body.",
+        "steps": [
+          "Nephrons filter blood in the kidney cortex and medulla to form urine.",
+          "Urine collects in the funnel-shaped renal pelvis.",
+          "Urine flows down through the ureter tubes into the urinary bladder.",
+          "Urine leaves the body through the urethra during micturition."
         ],
-        answer: "Answer: Renewable: solar energy and wind energy. Non-renewable: petroleum and coal.",
+        "answer": "Answer: Kidney (Pelvis) -> Ureters -> Urinary Bladder -> Urethra."
       },
-      commonMistakes: [
-        "Mixing up an energy source with the energy resource itself.",
-        "Thinking all fuels are renewable.",
-        "Forgetting that energy use can harm the environment if not managed well.",
-        "Ignoring local examples such as firewood, biogas and animal power.",
-      ],
-      tryThis: {
-        question: "Which energy resource comes from animal waste?",
-        choices: ["Biogas", "Petroleum", "Coal", "Tidal energy"],
-        correct: 0,
-        explanation: "Biogas can be produced from animal waste and plant residues.",
-      },
-      writingTasks: [
-        {
-          title: "Community application: Choosing an energy resource",
-          prompt: "A rural school wants safer and cheaper energy for cooking or lighting. Recommend one energy resource and explain your choice.",
-          planningSteps: [
-            "Name the energy resource you recommend.",
-            "State whether it is renewable or non-renewable.",
-            "Explain two advantages for the school.",
-            "Mention one environmental precaution or limitation.",
-          ],
-          checklist: [
-            "The energy resource is correctly classified.",
-            "Advantages are practical and local.",
-            "Environmental effects are considered.",
-            "The recommendation is clear.",
-          ],
-          modelOpening: "I would recommend solar energy for lighting because sunlight is renewable and solar panels can help pupils read without using kerosene lamps.",
-        },
-      ],
-      recap: [
-        "The sun is a major source of energy.",
-        "Energy resources include solar, water, fossil fuels, plants, animals and wind.",
-        "Renewable resources can be replaced naturally; non-renewable resources can get finished.",
-        "Energy should be used safely and sustainably.",
-      ],
+      "recap": [
+        "Excretion removes metabolic waste; egestion removes undigested food.",
+        "Kidney filters urea; skin releases sweat; lungs exhale CO2; liver deaminates amino acids.",
+        "Drink safe water and maintain cleanliness to prevent nephritis and skin diseases."
+      ]
     },
-    quiz: [
-      { q: "Which is the major source of energy in the environment?", choices: ["The sun", "A dry cell", "A candle", "A switch"], correct: 0, why: "The sun gives heat and light and supports many energy processes on earth." },
-      { q: "Which of these is a fossil fuel?", choices: ["Wind", "Coal", "Solar energy", "Animal power"], correct: 1, why: "Coal is a fossil fuel formed from remains of ancient living things over a long time." },
-      { q: "Biogas can be made from:", choices: ["Clean stones only", "Animal waste and plant residues", "Glass and metal", "Dry sand"], correct: 1, why: "Biogas can be produced when animal waste and plant residues decompose without oxygen." },
-      { q: "Which energy resource is renewable?", choices: ["Petroleum", "Coal", "Wind", "Kerosene"], correct: 2, why: "Wind continues to be naturally available, so wind energy is renewable." },
-      { q: "What is one danger of careless use of firewood?", choices: ["It increases forests", "It may lead to deforestation", "It produces rain", "It makes soil deeper"], correct: 1, why: "Cutting trees without replacing them can cause deforestation." },
-      { q: "Hydro-electricity is produced using energy from:", choices: ["Moving water", "Dry paper", "A mirror", "A magnet alone"], correct: 0, why: "Moving water can turn turbines to generate hydro-electricity." },
-      { q: "Which practice shows sustainable energy use?", choices: ["Wasting fuel", "Planting trees after cutting them", "Leaving lights on all day", "Burning all bushes"], correct: 1, why: "Replacing trees helps protect the environment and maintain future wood fuel sources." },
+    "subtopics": [
+      {
+        "subtopicId": "excretory-organs-overview",
+        "title": "1. Excretion vs Egestion and the Four Excretory Organs",
+        "modules": [
+          {
+            "moduleId": "excretion-vs-egestion",
+            "title": "Excretion versus Egestion",
+            "bigIdea": "Excretion eliminates cellular metabolic wastes, while egestion discharges undigested food remains from the alimentary canal.",
+            "learnIt": [
+              "Excretion is the removal of harmful metabolic waste products produced by chemical chemical processes inside living body cells.",
+              "Egestion is the removal of undigested food materials (faeces) through the anus. Faeces have never taken part in cellular respiration or metabolism inside body cells.",
+              "Why excretion matters: toxic metabolic wastes such as urea, uric acid, and excess carbon dioxide poison body cells if allowed to accumulate in blood."
+            ],
+            "tryThis": {
+              "question": "How does biological excretion differ from egestion?",
+              "choices": [
+                "Excretion removes cellular metabolic wastes while egestion discharges undigested food remains",
+                "Excretion happens only in animals while egestion happens in plants",
+                "Excretion removes solid faeces while egestion removes liquid urine",
+                "There is no difference between them"
+              ],
+              "correct": 0,
+              "explanation": "Excretion removes cellular waste produced by metabolism, whereas egestion eliminates undigested dietary fiber from the gut."
+            }
+          },
+          {
+            "moduleId": "four-excretory-organs",
+            "imageUrl": "/images/science/urinary-system.png",
+            "imageCaption": "Anatomical diagram showing the human kidneys, ureters, and urinary bladder.",
+            "title": "The Four Excretory Organs and Their Wastes",
+            "bigIdea": "The kidneys, skin, lungs, and liver work together as the four primary excretory organs of the human body.",
+            "learnIt": [
+              "Kidneys: filter circulating blood to excrete excess water, mineral salts, and nitrogenous urea as liquid urine.",
+              "Skin: excretes sweat (a watery solution containing excess mineral salts and trace amounts of urea) through sweat pores.",
+              "Lungs: excrete gaseous carbon dioxide and water vapour during exhalation (breathing out).",
+              "Liver: detoxifies blood chemicals, excretes bile pigments (from broken-down red blood cells), and produces urea by breaking down excess amino acids (deamination)."
+            ],
+            "tryThis": {
+              "question": "Which organ converts excess poisonous amino acids into urea through deamination?",
+              "choices": ["Kidney", "Skin", "Liver", "Lungs"],
+              "correct": 2,
+              "explanation": "The liver performs deamination, converting surplus amino acids into urea which circulating blood then transports to the kidneys."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "urinary-system-kidneys",
+        "title": "2. The Urinary System and Internal Kidney Anatomy",
+        "modules": [
+          {
+            "moduleId": "kidney-structure-function",
+            "imageUrl": "/images/science/kidney-nephron-diagram.png",
+            "imageCaption": "Anatomical cross-section of the human kidney showing cortex, medulla, pelvis, and blood vessels.",
+            "title": "Internal Structure of the Kidney",
+            "bigIdea": "The kidney consists of an outer cortex, inner medulla, and central pelvis that filter blood and channel urine.",
+            "learnIt": [
+              "Gross internal structure of the kidney: Cortex (the dark reddish outer region containing millions of filtering nephrons/Malpighian bodies); Medulla (the lighter inner region containing striated renal pyramids that reabsorb water); Pelvis (the central white funnel-shaped cavity where urine collects before flowing down the ureter).",
+              "Renal blood circulation: Renal artery brings oxygenated blood rich in metabolic urea into the kidney; Renal vein carries filtered, deoxygenated blood away from the kidney toward the vena cava.",
+              "Urine pathway: Nephron filters in cortex/medulla -> Pelvis cavity -> Ureter tubes -> Urinary bladder (temporary storage sac) -> Urethra (muscular exit tube)."
+            ],
+            "tryThis": {
+              "question": "Which funnel-shaped central cavity inside the kidney collects formed urine before directing it into the ureter?",
+              "choices": ["Cortex", "Medulla", "Pelvis", "Nephron"],
+              "correct": 2,
+              "explanation": "The renal pelvis acts as the central collecting funnel for urine dripping from the medulla pyramids."
+            }
+          },
+          {
+            "moduleId": "kidney-disorders",
+            "title": "Major Disorders of the Urinary System",
+            "bigIdea": "Nephritis, kidney stones, and renal failure impair blood filtration but can be prevented by hydration and hygiene.",
+            "learnIt": [
+              "Nephritis: bacterial inflammation of the filtering glomeruli inside the kidney cortex, causing blood and protein to leak into urine.",
+              "Kidney stones: hard mineral crystals (calcium oxalate) that form inside the renal pelvis or ureter due to chronic dehydration or excessive dietary salts, causing severe abdominal pain.",
+              "Kidney failure: loss of kidney filtering capacity resulting in toxic uremia; treated by renal dialysis (artificial blood filtering machine) or kidney transplant.",
+              "Prevention: drink at least 2 to 3 litres of boiled safe water daily, limit excessive salt consumption, practice proper personal hygiene, and avoid self-medication with toxic painkillers."
+            ],
+            "tryThis": {
+              "question": "What hard mineral crystals form inside the renal pelvis due to chronic dehydration and excess dietary salt?",
+              "choices": ["Bile stones", "Kidney stones", "Gallstones", "Cortex stones"],
+              "correct": 1,
+              "explanation": "Kidney stones crystallize from concentrated mineral salts when fluid intake is inadequate."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "human-skin-excretion",
+        "title": "3. The Human Skin: Epidermis, Dermis and Conditions",
+        "modules": [
+          {
+            "moduleId": "skin-structure-layers",
+            "imageUrl": "/images/science/human-skin-cross-section.png",
+            "imageCaption": "Cross-section of human skin illustrating the epidermis, dermis, and sweat glands.",
+            "title": "Skin Layers and Temperature Regulation",
+            "bigIdea": "The skin protects underlying tissues and regulates body temperature through sweat evaporation and capillary action.",
+            "learnIt": [
+              "Epidermis (Outer layer): consists of the Horny layer (dead protective keratin cells on the surface), Granular layer, and Malpighian layer (contains living dividing cells and dark melanin pigment that filters harmful solar ultraviolet radiation).",
+              "Dermis (Inner layer): thick connective tissue containing coiled Sweat glands (absorb water, salts, and urea from surrounding capillaries and pump sweat out through pores), Hair follicles, Sebaceous oil glands (secrete sebum to waterproof skin), Blood vessels, and sensory nerve endings.",
+              "Functions: temperature regulation (when hot, sweat evaporates cooling the skin; skin capillaries dilate/vasodilation to radiate heat; when cold, hairs stand erect trapping insulating air), physical protection against bacterial invasion and mechanical impact, sensory reception of touch/heat/pain, and synthesis of Vitamin D under sunlight."
+            ],
+            "tryThis": {
+              "question": "Which specific layer of the epidermis contains the dark melanin pigment that protects underlying tissues from ultraviolet solar radiation?",
+              "choices": ["Horny layer", "Malpighian layer", "Subcutaneous layer", "Dermis layer"],
+              "correct": 1,
+              "explanation": "The Malpighian layer produces melanin pigment and continuously regenerates new skin cells."
+            }
+          },
+          {
+            "moduleId": "skin-diseases-hygiene",
+            "title": "Skin Conditions, Diseases and Hygiene",
+            "bigIdea": "Personal cleanliness prevents contagious parasitic and bacterial skin conditions.",
+            "learnIt": [
+              "Contagious skin diseases: Ringworm (a fungal infection forming circular itchy scaly patches); Scabies (caused by microscopic itch mites burrowing under skin); Leprosy (chronic bacterial infection attacking skin nerves and causing numbness/disfigurement); Boils (staphylococcal bacterial infection of hair follicles forming pus-filled swellings).",
+              "Hygiene and care: wash the entire body daily using clean warm water and antiseptic soap; never share bath towels, bed sheets, or clothes; dress clean open skin wounds immediately with sterile bandages."
+            ],
+            "tryThis": {
+              "question": "Which contagious skin disease is caused by microscopic itch mites burrowing into the upper layer of human skin?",
+              "choices": ["Ringworm", "Scabies", "Leprosy", "Boils"],
+              "correct": 1,
+              "explanation": "Scabies is caused by Sarcoptes scabiei mites tunneling into the skin to lay eggs."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "lungs-liver-excretion",
+        "title": "4. Lungs and Liver: Excretory Mechanisms and Disorders",
+        "modules": [
+          {
+            "moduleId": "lungs-liver-disorders",
+            "title": "Gas Exchange, Deamination and Associated Disorders",
+            "bigIdea": "Lungs excrete respiratory carbon dioxide while the liver detoxifies metabolic poisons and produces urea.",
+            "learnIt": [
+              "Lungs excretory mechanism: carbon dioxide produced during cellular respiration diffuses from blood capillaries into alveolar air sacs and is expelled through the windpipe and nostrils.",
+              "Liver excretory mechanism: performs Deamination (breaking down toxic surplus amino acids into urea and glucose) and breaks down old worn-out erythrocytes (red blood cells) to form greenish-yellow bile pigments excreted via the intestinal tract.",
+              "Liver disorders: Liver Cirrhosis (irreversible scarring and hardening of liver tissue caused by chronic alcoholism or hepatitis virus); Hepatitis (infectious viral inflammation of the liver causing jaundice/yellowness of eyes).",
+              "Care: avoid excessive alcohol intake, get vaccinated against Hepatitis B, avoid inhaling toxic chemical fumes or tobacco smoke, and exercise regularly."
+            ],
+            "tryThis": {
+              "question": "Which irreversible liver disease characterized by fibrous tissue scarring is primarily caused by chronic heavy alcohol drinking?",
+              "choices": ["Hepatitis A", "Liver Cirrhosis", "Nephritis", "Leprosy"],
+              "correct": 1,
+              "explanation": "Alcohol acts as a chemical toxin that gradually destroys functional liver hepatocytes, replacing them with scar tissue."
+            }
+          }
+        ]
+      }
     ],
+    "quiz": [
+      { "q": "What is excretion?", "choices": ["Removal of body waste products", "Eating food", "Breathing in oxygen only", "Breaking food by teeth"], "correct": 0, "why": "Excretion is the removal of waste products made by body activities." },
+      { "q": "Which organ forms urine?", "choices": ["Kidney", "Heart", "Stomach", "Eye"], "correct": 0, "why": "The kidneys filter blood and form urine." },
+      { "q": "What carries urine from the kidneys to the bladder?", "choices": ["Urethra", "Ureters", "Windpipe", "Intestine"], "correct": 1, "why": "The ureters carry urine from the kidneys to the urinary bladder." },
+      { "q": "Which waste is removed through the skin?", "choices": ["Sweat", "Faeces", "Oxygen", "Saliva"], "correct": 0, "why": "Sweat is removed through the skin and contains water, salts and small amounts of urea." },
+      { "q": "Which organ converts excess amino acids to urea?", "choices": ["Liver", "Kidneys", "Bladder", "Teeth"], "correct": 0, "why": "The liver performs deamination." },
+      { "q": "Which habit helps care for the kidneys?", "choices": ["Drinking enough safe water", "Taking unknown drugs", "Holding urine for very long", "Avoiding all liquids"], "correct": 0, "why": "Safe water helps the kidneys remove wastes properly." },
+      { "q": "What is the bladder's main function?", "choices": ["To form urine", "To store urine", "To pump blood", "To digest food"], "correct": 1, "why": "The urinary bladder stores urine before it leaves the body." },
+      { "q": "Which skin disease is caused by itch mites?", "choices": ["Scabies", "Ringworm", "Leprosy", "Boils"], "correct": 0, "why": "Scabies mites burrow under the skin." }
+    ]
   },
   {
-    id: "simple-machines-friction",
-    themeId: "science-matter-energy",
-    themeName: "Matter and Energy",
-    title: "Simple machines and friction",
-    estMinutes: 18,
-    status: "published",
-    reviewStatus: "verified",
-    note: {
-      intro: "Why this matters: Simple machines help people do work more easily. Friction can be useful or troublesome, so learners need to know when to increase it and when to reduce it.",
-      learningObjectives: [
-        "Identify common simple machines used in daily life.",
-        "Explain how simple machines make work easier.",
-        "Describe useful and nuisance friction.",
-        "Explain ways of increasing and reducing friction.",
+    "id": "light-energy",
+    "themeId": "science-matter-energy",
+    "themeName": "Matter and Energy",
+    "title": "Light energy",
+    "estMinutes": 24,
+    "status": "published",
+    "reviewStatus": "verified",
+    "note": {
+      "intro": "Why this matters: Light helps us see and understand natural phenomena. Learners need to know light sources, speed, rectilinear propagation, reflection, refraction, dispersion, lenses, and the human eye.",
+      "learningObjectives": [
+        "Distinguish luminous and non-luminous sources and state the speed of light.",
+        "Demonstrate rectilinear propagation and explain opaque, transparent, and translucent materials.",
+        "Describe shadow formation, solar eclipses, lunar eclipses, and pinhole camera action.",
+        "State the laws of reflection and explain periscopes and mirrors.",
+        "Explain refraction, dispersion (ROYGBIV rainbows), lenses, eye anatomy, and myopia/hypermetropia corrections."
       ],
-      whatYouNeedToKnow: [
-        "A machine is a device that makes work easier. Simple machines include levers, inclined planes, wedges, screws, pulleys, and wheels and axles. A machine may make work easier by reducing effort, changing the direction of effort, increasing speed, or helping work to be done more safely.",
-        "A lever is a rigid bar that turns about a fixed point called a fulcrum. Examples include a seesaw, crowbar, bottle opener, wheelbarrow and pair of scissors. In a lever, the load is the object being moved and the effort is the force applied to move it.",
-        "The principle of moments says that a lever balances when clockwise moment equals anticlockwise moment. Moment is found by multiplying force by distance from the fulcrum. A small effort can lift a bigger load if it acts farther from the fulcrum.",
-        "Mechanical advantage compares the load moved with the effort used. Mechanical advantage = load ÷ effort. If a machine has a high mechanical advantage, it helps a small effort move a larger load, although the effort may move through a longer distance.",
-        "An inclined plane is a sloping surface that helps move loads up or down more easily. Ramps and slopes are examples. A wedge is like two inclined planes joined together, such as an axe or knife edge. A screw is an inclined plane wound around a cylinder and is used in screws, bottle tops and some jacks.",
-        "A pulley uses a wheel and rope to lift loads or change the direction of effort. A fixed pulley mainly changes the direction of effort, while movable pulleys can reduce the effort needed. A wheel and axle helps movement, as seen in bicycles, cars, wheelbarrows and doorknobs.",
-        "Friction is a force that opposes motion between surfaces in contact. It can be useful, for example in walking, writing, lighting a match and braking. It can also be a nuisance because it causes wear, heat, noise and wasted energy in machines.",
-        "Friction can be increased by making surfaces rougher, adding treads, using grip material or pressing surfaces together. It can be reduced by lubrication, smoothing surfaces, using rollers or ball bearings, and streamlining objects moving through air or water.",
+      "whatYouNeedToKnow": [
+        "Light travels at 300,000 km/s in straight lines (rectilinear propagation).",
+        "Opaque objects block light casting umbra/penumbra shadows; solar eclipses happen when the Moon is between Sun and Earth.",
+        "Laws of reflection: angle of incidence equals angle of reflection (i = r). Refraction bends light across media.",
+        "Myopia is corrected by concave lenses; hypermetropia is corrected by convex lenses."
       ],
-      worked: {
-        problem: "A box is too heavy to lift directly into a truck. Which simple machine can help and why?",
-        steps: [
-          "Step 1. Identify the problem. The box needs to move from the ground to a higher level.",
-          "Step 2. Choose a simple machine for moving a load up to a height. An inclined plane can be used.",
-          "Step 3. Explain why it helps. A ramp allows the load to be pushed or pulled gradually instead of lifted straight up.",
+      "worked": {
+        "problem": "Explain why a stick placed halfway in a bucket of clean water visually appears bent at the water surface.",
+        "steps": [
+          "Identify the two transparent media involved: air and water.",
+          "State that light changes speed when crossing the water-air boundary.",
+          "Identify the optical bending phenomenon as Refraction of light.",
+          "Conclude that refracted light rays emerging from underwater make the stick look bent and shallower than its real depth."
         ],
-        answer: "Answer: Use an inclined plane or ramp because it makes it easier to move the heavy box into the truck.",
+        "answer": "Answer: Light refraction across the water-air boundary bends emerging rays, making the stick appear bent."
       },
-      commonMistakes: [
-        "Thinking simple machines remove work completely instead of making work easier.",
-        "Confusing load, effort and fulcrum in lever questions.",
-        "Forgetting that a fixed pulley mainly changes direction of effort.",
-        "Thinking friction is always bad.",
-        "Saying oil increases friction when it usually reduces friction.",
-      ],
-      tryThis: {
-        question: "Which simple machine is used in a flagpole to raise a flag?",
-        choices: ["Pulley", "Wedge", "Screw", "Inclined plane"],
-        correct: 0,
-        explanation: "A flagpole uses a pulley and rope to raise and lower the flag.",
-      },
-      writingTasks: [
-        {
-          title: "Application task: Choosing a simple machine",
-          prompt: "A pupil wants to lift a heavy box onto a veranda. Choose a simple machine that can help and explain how it works.",
-          planningSteps: [
-            "Name a suitable simple machine.",
-            "Identify the load and effort.",
-            "Explain how the machine makes work easier.",
-            "State one safety precaution.",
-          ],
-          checklist: [
-            "The chosen machine fits the problem.",
-            "Load and effort are identified correctly.",
-            "The explanation uses correct Science vocabulary.",
-            "Friction or safety is considered where relevant.",
-          ],
-          modelOpening: "An inclined plane can help lift the heavy box because the pupil can push it up a sloping plank instead of lifting it straight up.",
-        },
-      ],
-      recap: [
-        "Simple machines make work easier.",
-        "Examples include levers, ramps, wedges, screws, pulleys, wheels and axles.",
-        "Mechanical advantage compares load with effort.",
-        "Friction opposes motion between surfaces.",
-        "Friction can be useful or a nuisance depending on the situation.",
-      ],
+      "recap": [
+        "Light travels at 300,000 km/s in straight lines.",
+        "Solar eclipse = Sun-Moon-Earth; Lunar eclipse = Sun-Earth-Moon.",
+        "First law of reflection: angle i = angle r.",
+        "Short-sightedness needs concave lenses; long-sightedness needs convex lenses."
+      ]
     },
-    quiz: [
-      { q: "Which is an example of a lever?", choices: ["Seesaw", "Mirror", "Dry cell", "Lens"], correct: 0, why: "A seesaw is a lever because it turns about a fulcrum." },
-      { q: "A ramp is an example of a:", choices: ["Pulley", "Inclined plane", "Magnet", "Circuit"], correct: 1, why: "A ramp is a sloping surface, so it is an inclined plane." },
-      { q: "Which simple machine uses a wheel and rope?", choices: ["Wedge", "Pulley", "Screw", "Lever only"], correct: 1, why: "A pulley uses a wheel and rope to lift or move loads." },
-      { q: "Which situation shows useful friction?", choices: ["Machine parts wearing out", "Shoes gripping the ground while walking", "Engine overheating", "Door hinge squeaking"], correct: 1, why: "Friction between shoes and ground helps us walk without slipping." },
-      { q: "Which method reduces friction?", choices: ["Adding oil", "Making a tyre rougher", "Adding treads", "Walking on dry soil"], correct: 0, why: "Oil acts as a lubricant and reduces friction between moving parts." },
-      { q: "A knife edge is an example of a:", choices: ["Wedge", "Pulley", "Wheel and axle", "Circuit"], correct: 0, why: "A wedge has a sharp edge and is used for cutting or splitting." },
-      { q: "Why is friction sometimes called a nuisance force?", choices: ["It always helps movement", "It can cause wear and waste energy", "It produces food", "It removes gravity"], correct: 1, why: "Friction can cause wear, heat and wasted energy in machines." },
+    "subtopics": [
+      {
+        "subtopicId": "sources-beams-travel",
+        "title": "1. Light Sources, Rectilinear Propagation and Beams",
+        "modules": [
+          {
+            "moduleId": "natural-artificial-sources",
+            "title": "Luminous and Non-Luminous Sources",
+            "bigIdea": "Luminous bodies emit natural or artificial light at 300,000 km/s, enabling vision.",
+            "learnIt": [
+              "Speed of light: light travels through space and air at an immense speed of approximately 300,000 kilometers per second (much faster than sound).",
+              "Luminous objects generate their own light. Natural luminous sources: Sun, stars, fireflies, glow-worms, and lightning. Artificial luminous sources: electric bulbs, lit candles, kerosene lamps, and torches.",
+              "Non-luminous objects do not produce light (e.g., moon, mirrors, wood, water, planets); we see them when they reflect light from a luminous source into our eyes."
+            ],
+            "tryThis": {
+              "question": "What is the approximate speed at which light energy travels through air or vacuum?",
+              "choices": ["330 meters per second", "300,000 kilometers per second", "1,000 kilometers per hour", "100 meters per second"],
+              "correct": 1,
+              "explanation": "Light travels at 3x10^8 m/s (300,000 km/s), which explains why lightning is seen before thunder is heard."
+            }
+          },
+          {
+            "moduleId": "rectilinear-propagation-beams",
+            "title": "Rectilinear Propagation and Types of Beams",
+            "bigIdea": "Light always travels in straight lines and forms parallel, convergent, or divergent beams.",
+            "learnIt": [
+              "Rectilinear propagation of light is the biological and physical principle that light travels in straight lines through a uniform medium.",
+              "Experimental demonstration: view a lit candle flame through three cardboard screens with aligned pinholes; flame is clearly visible. Move one screen slightly out of line; vision is immediately blocked because light rays cannot curve around obstacles.",
+              "A ray is the direction of light path indicated by a straight line with an arrow. A beam is a collection of light rays.",
+              "Three types of light beams: Parallel beam (rays remain equidistant, e.g., searchlights); Convergent beam (rays direct inward to meet at a single focal point, e.g., through a convex lens); Divergent beam (rays spread outward from a single point source, e.g., light leaving a torch bulb)."
+            ],
+            "tryThis": {
+              "question": "A collection of light rays spreading outward from a single lit torch bulb is called a:",
+              "choices": ["Parallel beam", "Convergent beam", "Divergent beam", "Reflected beam"],
+              "correct": 2,
+              "explanation": "Divergent rays separate wider apart as they travel away from the point source."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "shadows-eclipses-pinhole",
+        "title": "2. Materials, Shadows, Eclipses and Pinhole Camera",
+        "modules": [
+          {
+            "moduleId": "opaque-transparent-translucent",
+            "title": "Opaque, Transparent and Translucent Materials",
+            "bigIdea": "Materials interact with light based on their optical transmission density.",
+            "learnIt": [
+              "Transparent materials transmit all light rays without scattering, allowing clear vision through them (clear window glass, clean water, spectacles).",
+              "Translucent materials allow partial light transmission but scatter rays irregularly so objects behind look blurred (frosted bathroom glass, tracing paper, oiled paper, fog).",
+              "Opaque materials completely absorb or reflect hitting light rays, allowing zero transmission (brick walls, wooden doors, iron sheets, human body)."
+            ],
+            "tryThis": {
+              "question": "Why is frosted glass installed in bathroom windows?",
+              "choices": ["It is opaque and blocks sunlight", "It is translucent, letting light inside while blurring internal shapes for privacy", "It acts as a magnifying mirror", "It produces artificial light"],
+              "correct": 1,
+              "explanation": "Translucent frosted glass scatters transmitted light, preventing clear visibility from outside."
+            }
+          },
+          {
+            "moduleId": "shadows-and-eclipses",
+            "title": "Shadows and Eclipses",
+            "bigIdea": "Because light travels in straight lines, opaque bodies cast shadows with dark umbra and lighter penumbra zones.",
+            "learnIt": [
+              "Shadow formation: when an opaque obstacle blocks rectilinear light rays, a dark silhouette shadow forms on a surface behind it.",
+              "Umbra: the central region of complete shadow where 100% of light rays are blocked. Penumbra: the outer surrounding zone of partial shadow.",
+              "Solar Eclipse (Eclipse of the Sun): occurs during daytime when the Moon moves directly between the Sun and the Earth along a straight line (S-M-E alignment). Moon blocks sunlight, casting an umbra shadow onto Earth.",
+              "Lunar Eclipse (Eclipse of the Moon): occurs at night when the Earth moves directly between the Sun and the Moon (S-E-M alignment). Earth blocks sunlight from illuminating the Moon."
+            ],
+            "tryThis": {
+              "question": "During a Lunar Eclipse (eclipse of the moon), which astronomical body lies precisely in the middle of the straight line?",
+              "choices": ["The Sun", "The Moon", "The Earth", "Mars"],
+              "correct": 2,
+              "explanation": "In a lunar eclipse, Earth blocks sunlight from reaching the full moon (Sun - Earth - Moon alignment)."
+            }
+          },
+          {
+            "moduleId": "pinhole-camera",
+            "imageUrl": "/images/science/pinhole-camera-ray-diagram.png",
+            "imageCaption": "Ray diagram of a pin-hole camera focusing straight light rays to form an inverted real image.",
+            "title": "Structure and Images of a Pinhole Camera",
+            "bigIdea": "Straight light rays crossing at a tiny pinhole aperture project a real inverted image onto a translucent screen.",
+            "learnIt": [
+              "Structure of a pinhole camera: a light-tight wooden or cardboard box with a tiny pinhole aperture punctured on the front face and a translucent greaseproof paper screen on the back face.",
+              "Characteristics of pinhole image: Real (formed on a screen), Inverted (upside down vertically and left-right horizontally), and maintains object colour.",
+              "Why inverted: light rays from the top of the object travel in straight lines obliquely down through the hole to strike the bottom of the screen.",
+              "Aperture effects: enlarging the pinhole makes the image brighter (more rays enter) but blurred/fuzzy (overlapping ray circles)."
+            ],
+            "tryThis": {
+              "question": "What happens to the image on the screen if the tiny pinhole of a pinhole camera is widened into a large hole?",
+              "choices": ["It becomes upside down", "It becomes brighter but blurred and out of focus", "It disappears completely", "It turns upside up"],
+              "correct": 1,
+              "explanation": "A wide hole admits multiple overlapping cones of light rays, causing sharpness to degrade."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "reflection-and-refraction",
+        "title": "3. Reflection, Mirrors, Refraction and Rainbows",
+        "modules": [
+          {
+            "moduleId": "reflection-plane-mirrors",
+            "title": "Laws of Reflection and Plane Mirrors",
+            "bigIdea": "Smooth shiny surfaces reflect light rays symmetrically according to the two fundamental laws of reflection.",
+            "learnIt": [
+              "Regular reflection occurs on polished flat mirrors producing sharp images; Diffuse (irregular) reflection occurs on rough surfaces scattering rays in all directions.",
+              "Laws of reflection: First Law states the angle of incidence equals the angle of reflection (i = r); Second Law states the incident ray, reflected ray, and normal perpendicular line at the point of incidence all lie in the same plane.",
+              "Plane mirror image characteristics: Upright (erect), Virtual (cannot be projected onto a screen), same size/distance as object, and Laterally inverted (left side appears as right side).",
+              "Periscope: optical instrument utilizing two parallel plane mirrors fixed at 45-degree angles inside a tube to observe objects over high walls or above water surface from submarines."
+            ],
+            "tryThis": {
+              "question": "If a light ray strikes a polished plane mirror at an angle of incidence of 40°, what is the angle of reflection?",
+              "choices": ["20°", "40°", "50°", "90°"],
+              "correct": 1,
+              "explanation": "According to the First Law of Reflection, the angle of reflection (r) always equals the angle of incidence (i)."
+            }
+          },
+          {
+            "moduleId": "refraction-dispersion-rainbow",
+            "imageUrl": "/images/science/light-refraction.png",
+            "imageCaption": "Refraction of light rays causes a stick or pencil to appear bent when partially submerged in water.",
+            "title": "Refraction, Apparent Depth and Dispersion",
+            "bigIdea": "Light bends when moving between media of different optical density and splits into seven spectrum colours.",
+            "learnIt": [
+              "Refraction is the bending of light rays as they pass obliquely across the boundary between two media of different optical densities (e.g., from air into glass or water) due to velocity change.",
+              "Real vs Apparent depth: refraction makes clear swimming pools and rivers look shallower than their real depth. A wooden stick placed at a slant in a water bucket visually appears bent upward at the water surface.",
+              "Dispersion of white light: the splitting of white sunlight into its seven constituent spectrum colours when passing through a triangular glass prism or raindrops.",
+              "Spectrum colours in order of decreasing wavelength: Red (bends least), Orange, Yellow, Green, Blue, Indigo, Violet (ROYGBIV—bends most).",
+              "Rainbow formation: naturally occurs when sunlight falls upon falling raindrops after a rain shower; raindrops act as tiny prisms that refract, internally reflect, and disperse white light into a colorful arc."
+            ],
+            "tryThis": {
+              "question": "Which colour of the visible light spectrum bends the most during dispersion through a glass prism?",
+              "choices": ["Red", "Yellow", "Green", "Violet"],
+              "correct": 3,
+              "explanation": "Violet light has the shortest optical wavelength and slows down most inside glass, bending at the steepest angle."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "lenses-camera-human-eye",
+        "title": "4. Lenses, Human Eye Cross-Section and Vision Defects",
+        "modules": [
+          {
+            "moduleId": "lenses-and-camera",
+            "title": "Convex and Concave Lenses",
+            "bigIdea": "Lenses refract passing light rays either converging them to a focal point or diverging them outward.",
+            "learnIt": [
+              "Convex (converging) lens: thicker at the center than at the edges. Converges parallel light rays inward to meet at a real Principal Focus. Applications: reading magnifying glasses, camera lenses, microscopes, and telescopes.",
+              "Concave (diverging) lens: thinner at the center and thicker at the edges. Spreads light rays outward away from a virtual focal point.",
+              "Comparing human eye and photographic camera: Eye Lens corresponds to Camera Lens; Iris controls pupil aperture just as Diaphragm controls Shutter Aperture; Retina captures real inverted image just as Photographic Film/Sensor captures camera image."
+            ],
+            "tryThis": {
+              "question": "Which optical component in a photographic camera controls the amount of light entering, exactly like the iris in a human eye?",
+              "choices": ["Shutter speed", "Diaphragm / Aperture", "Film sensor", "Focus ring"],
+              "correct": 1,
+              "explanation": "The adjustable diaphragm expands or constricts the aperture opening to regulate incoming light volume."
+            }
+          },
+          {
+            "moduleId": "human-eye-structure-care",
+            "imageUrl": "/images/science/human-eye-anatomy.png",
+            "imageCaption": "Anatomy of the human eye showing cornea, lens, retina, and optic nerve.",
+            "title": "Human Eye Anatomy, Vision Defects and Corrections",
+            "bigIdea": "Myopia and Hypermetropia occur when eye lenses fail to focus light onto the retina, but are corrected by spectacles.",
+            "learnIt": [
+              "Structural cross-section of the human eye: Cornea (transparent front protective window refracting light); Iris (coloured muscular ring controlling pupil size); Pupil (central dark aperture admitting light); Crystalline Lens (biconvex elastic lens focusing rays); Ciliary body/muscles (alter lens thickness for near/distant focusing—accommodation); Retina (internal back screen containing light-sensitive rods and cones where inverted real images form); Optic nerve (transmits electrical visual signals to the brain).",
+              "Short-sightedness (Myopia): individual sees close objects clearly but distant objects appear blurry because the eyeball is too long or lens too curved, causing light rays to focus IN FRONT of the retina. Correction: wear spectacles fitted with Concave (diverging) lenses to spread rays out before hitting the eye.",
+              "Long-sightedness (Hypermetropia): individual sees distant objects clearly but near reading objects look blurry because the eyeball is too short or lens too flat, causing rays to focus BEHIND the retina. Correction: wear spectacles fitted with Convex (converging) lenses to bend rays inward onto the retina.",
+              "Eye care: read in adequate balanced lighting, wash eyes with clean boiled water, consume Vitamin A rich foods (carrots, dark green leafy vegetables, mangoes), and never stare directly at solar eclipses or bright welding arcs."
+            ],
+            "tryThis": {
+              "question": "Which type of spectacle lenses must be prescribed to correct Short-sightedness (Myopia)?",
+              "choices": ["Convex (converging) lenses", "Concave (diverging) lenses", "Plane glass mirrors", "Opaque dark lenses"],
+              "correct": 1,
+              "explanation": "Concave lenses diverge incoming light rays slightly outward so the eye lens focuses the image precisely onto the retina rather than in front of it."
+            }
+          }
+        ]
+      }
     ],
+    "quiz": [
+      { "q": "Which is a natural source of light?", "choices": ["The sun", "Electric bulb", "Lit candle", "Mirror"], "correct": 0, "why": "The sun is a luminous natural object." },
+      { "q": "How does light travel?", "choices": ["In straight lines", "In circles", "In zigzag lines", "Only upwards"], "correct": 0, "why": "Light travels in straight lines." },
+      { "q": "What is formed when an opaque object blocks light?", "choices": ["A shadow", "A rainbow", "A mirror", "A lens"], "correct": 0, "why": "Opaque materials block light casting a shadow." },
+      { "q": "What is reflection of light?", "choices": ["Bouncing back of light from a surface", "Bending of light in water", "Splitting of white light", "Absorption of light"], "correct": 0, "why": "Reflection is bouncing back of light rays." },
+      { "q": "Why does a stick look bent in water?", "choices": ["Refraction of light", "Reflection of light", "Absorption of light", "Dispersion of light"], "correct": 0, "why": "Refraction bends light across media." },
+      { "q": "Which lens is thicker in the middle?", "choices": ["Convex lens", "Concave lens", "Plane lens", "Opaque lens"], "correct": 0, "why": "Convex lenses converge light." },
+      { "q": "Which habit cares for the human eye?", "choices": ["Reading in adequate light", "Rubbing eyes with dirty hands", "Looking directly at the sun", "Reading in pitch darkness"], "correct": 0, "why": "Adequate light prevents eye strain." },
+      { "q": "During a solar eclipse, which body is in the middle?", "choices": ["The Moon", "The Sun", "The Earth", "Mars"], "correct": 0, "why": "The Moon blocks sunlight during a solar eclipse." }
+    ]
   },
   {
-    id: "excretory-system",
-    themeId: "science-human-body",
-    themeName: "Human Body",
-    title: "Excretory system",
-    estMinutes: 16,
-    status: "published",
-    reviewStatus: "verified",
-    note: {
-      intro: "Why this matters: The body produces waste materials that must be removed to stay healthy. P7 learners need to know the excretory organs, what each removes, and how to care for them.",
-      learningObjectives: [
-        "Name the main excretory organs of the body.",
-        "Describe the functions of the skin, kidneys and lungs as excretory organs.",
-        "Explain how to care for the excretory system.",
-        "Identify common diseases and disorders linked to the skin, kidneys and lungs.",
+    "id": "interdependence-environment",
+    "themeId": "science-environment",
+    "themeName": "The Environment",
+    "title": "Interdependence of things in the environment",
+    "estMinutes": 20,
+    "status": "published",
+    "reviewStatus": "verified",
+    "note": {
+      "intro": "Why this matters: Living and non-living things depend on one another. Understanding biological interactions, food chains, and agroforestry helps learners protect the environment.",
+      "learningObjectives": [
+        "Identify biotic and abiotic components of the environment.",
+        "Explain plant-animal interdependence and oxygen/carbon dioxide exchange.",
+        "Construct food chains/webs and identify producers, consumers, and decomposers.",
+        "Describe agroforestry, nitrogen-fixing trees, coppicing/pollarding, and woodlot fire lines."
       ],
-      whatYouNeedToKnow: [
-        "Excretion is the removal of waste products made by body activities. It is different from egestion, which is removal of undigested food from the alimentary canal.",
-        "The main excretory organs include the kidneys, skin, lungs and liver. The kidneys remove excess water, salts and urea in urine. The skin removes sweat, which contains water, salts and small amounts of urea.",
-        "The lungs remove carbon dioxide and water vapour during breathing out. The liver helps remove harmful substances from the blood and changes excess amino acids into urea.",
-        "The urinary system includes the kidneys, ureters, urinary bladder and urethra. The kidneys filter blood to form urine. The ureters carry urine to the bladder, the bladder stores urine, and the urethra carries urine out of the body.",
-        "The skin protects the body, helps regulate body temperature, and removes sweat. Skin problems include ringworm, scabies, wounds and burns. Kidney problems may be caused by infection, too little clean water, or harmful substances.",
-        "Good habits include drinking enough safe water, eating a balanced diet, bathing regularly, avoiding drug abuse, using toilets properly, and seeking medical help when there is pain or blood in urine.",
+      "whatYouNeedToKnow": [
+        "An ecosystem has biotic (living) components like plants/animals and abiotic (non-living) components like sunlight/water/soil.",
+        "Food chains show trophic energy flow from producers to consumers and decomposers.",
+        "Agroforestry combines crops, trees, and animals; leguminous trees fix atmospheric nitrogen."
       ],
-      worked: {
-        problem: "Explain the path followed by urine from where it is formed until it leaves the body.",
-        steps: [
-          "Step 1. Urine is formed in the kidneys when blood is filtered.",
-          "Step 2. Urine moves from the kidneys through the ureters.",
-          "Step 3. It is stored in the urinary bladder.",
-          "Step 4. It leaves the body through the urethra.",
+      "worked": {
+        "problem": "Construct a four-stage food chain using grasshopper, grass, frog and snake.",
+        "steps": [
+          "Start with the producer: grass.",
+          "Identify the primary consumer: grasshopper.",
+          "Identify the secondary consumer: frog.",
+          "Identify the tertiary consumer: snake."
         ],
-        answer: "Answer: Kidneys → ureters → urinary bladder → urethra.",
+        "answer": "Answer: Grass -> Grasshopper -> Frog -> Snake."
       },
-      commonMistakes: [
-        "Confusing excretion with egestion.",
-        "Thinking only the kidneys excrete waste.",
-        "Forgetting that lungs remove carbon dioxide.",
-        "Calling ureters and urethra the same thing.",
-      ],
-      tryThis: {
-        question: "Which waste product is mainly removed by the lungs?",
-        choices: ["Urine", "Carbon dioxide", "Sweat", "Undigested food"],
-        correct: 1,
-        explanation: "The lungs remove carbon dioxide and water vapour during breathing out.",
-      },
-      writingTasks: [
-        {
-          title: "Explanation task: Keeping excretory organs healthy",
-          prompt: "Explain how a P7 learner can help keep the kidneys, skin and lungs healthy.",
-          planningSteps: [
-            "Name at least three excretory organs.",
-            "State the waste each organ removes.",
-            "Give one healthy habit for each organ.",
-            "Explain why drinking clean water and avoiding harmful substances matters.",
-          ],
-          checklist: [
-            "Organs are matched to correct wastes.",
-            "Habits are safe and age-appropriate.",
-            "Excretion is not confused with egestion.",
-            "The explanation is clear and practical.",
-          ],
-          modelOpening: "The kidneys, skin and lungs remove wastes from the body. We can help them work well by drinking clean water, bathing regularly and breathing clean air.",
-        },
-      ],
-      recap: [
-        "Excretion removes waste products made by body activities.",
-        "Kidneys form urine by filtering blood.",
-        "Skin removes sweat and helps control body temperature.",
-        "Lungs remove carbon dioxide and water vapour.",
-        "Safe water, cleanliness and medical care help protect the excretory system.",
-      ],
+      "recap": [
+        "Biotic = living; Abiotic = non-living.",
+        "Food chains show energy flow starting from green producers.",
+        "Coppicing and pollarding allow sustainable wood harvesting.",
+        "Fire lines stop accidental bushfires from destroying woodlots."
+      ]
     },
-    quiz: [
-      { q: "What is excretion?", choices: ["Removal of body waste products", "Eating food", "Breathing in oxygen only", "Breaking food by teeth"], correct: 0, why: "Excretion is the removal of waste products made by body activities." },
-      { q: "Which organ forms urine?", choices: ["Kidney", "Heart", "Stomach", "Eye"], correct: 0, why: "The kidneys filter blood and form urine." },
-      { q: "What carries urine from the kidneys to the bladder?", choices: ["Urethra", "Ureters", "Windpipe", "Intestine"], correct: 1, why: "The ureters carry urine from the kidneys to the urinary bladder." },
-      { q: "Which waste is removed through the skin?", choices: ["Sweat", "Faeces", "Oxygen", "Saliva"], correct: 0, why: "Sweat is removed through the skin and contains water, salts and small amounts of urea." },
-      { q: "Which organ removes carbon dioxide from the body?", choices: ["Lungs", "Kidneys", "Bladder", "Teeth"], correct: 0, why: "The lungs remove carbon dioxide during breathing out." },
-      { q: "Which habit helps care for the kidneys?", choices: ["Drinking enough safe water", "Taking unknown drugs", "Holding urine for very long", "Avoiding all liquids"], correct: 0, why: "Safe water helps the kidneys remove wastes properly." },
-      { q: "What is the bladder's main function?", choices: ["To form urine", "To store urine", "To pump blood", "To digest food"], correct: 1, why: "The urinary bladder stores urine before it leaves the body." },
+    "subtopics": [
+      {
+        "subtopicId": "environment-components-interdependence",
+        "title": "1. Biotic and Abiotic Ecosystem Components",
+        "modules": [
+          {
+            "moduleId": "living-nonliving-components",
+            "title": "Biotic and Abiotic Components",
+            "bigIdea": "An ecosystem consists of living biotic organisms interacting with physical abiotic factors.",
+            "learnIt": [
+              "Biotic (living) components: green plants (producers), animals (consumers), bacteria and fungi (decomposers).",
+              "Abiotic (non-living) components: sunlight (ultimate source of energy), water, atmospheric gases (oxygen and carbon dioxide), mineral soil, rocks, temperature, and wind.",
+              "Ecosystem interaction: biotic organisms cannot survive without abiotic physical factors. For instance, green plants require abiotic sunlight, carbon dioxide, water, and soil mineral nitrates to synthesize glucose during photosynthesis."
+            ],
+            "tryThis": {
+              "question": "Which of the following is an abiotic component of a forest ecosystem?",
+              "choices": ["Fungi decomposers", "Mineral soil nutrients", "Earthworms", "Acacia trees"],
+              "correct": 1,
+              "explanation": "Abiotic factors are non-living physical and chemical elements of the environment such as minerals, water, and air."
+            }
+          },
+          {
+            "moduleId": "plant-animal-interdependence",
+            "imageUrl": "/images/science/carbon-oxygen-cycle.png",
+            "imageCaption": "Gas exchange cycle between green plants releasing oxygen and animals exhaling carbon dioxide.",
+            "title": "Biological Plant-Animal Interdependence",
+            "bigIdea": "Plants and animals depend reciprocally on each other for respiratory gases, nutrition, and reproduction.",
+            "learnIt": [
+              "How animals depend on plants: herbivores depend on plants for dietary nutrition; animals inhale atmospheric oxygen (O2) released as a byproduct of plant photosynthesis; dense trees and bushes provide shelter and nesting habitats; medicinal plants provide herbal remedies.",
+              "How plants depend on animals: animals exhale carbon dioxide (CO2) required by green plants for photosynthesis; insects (bees, butterflies) and birds pollinate plant flowers; birds and grazing mammals disperse plant seeds through dung or fur attachment; animal droppings and carcasses decompose into nutrient-rich organic humus."
+            ],
+            "tryThis": {
+              "question": "During biological gas exchange between forest trees and forest animals, what gas do trees release during daytime that animals inhale?",
+              "choices": ["Carbon dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+              "correct": 1,
+              "explanation": "Green plants produce oxygen during sunlight photosynthesis, which animals require for aerobic cellular respiration."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "food-chains-and-webs",
+        "title": "2. Food Chains, Webs and Trophic Energy Flow",
+        "modules": [
+          {
+            "moduleId": "food-chains-webs",
+            "imageUrl": "/images/science/food-chain.png",
+            "imageCaption": "Energy transfer in a farm food chain from producers (plants) to primary and secondary consumers.",
+            "title": "Trophic Levels and Energy Flow",
+            "bigIdea": "Food chains trace the directional flow of solar energy from green producers through consumers and decomposers.",
+            "learnIt": [
+              "A food chain is a linear feeding relationship showing how nutritional energy is transferred from one organism to another.",
+              "Trophic levels: Producer (always a green plant or algae that traps solar energy); Primary consumer (herbivore feeding directly on plants, e.g., grasshopper, goat, zebra); Secondary consumer (carnivore feeding on herbivores, e.g., frog, lion, lizard); Tertiary consumer (top predator feeding on secondary consumers, e.g., eagle, hawk, python).",
+              "Decomposers: saprophytic bacteria and fungi that secrete enzymes to break down dead plant and animal matter, recycling mineral salts back into the soil.",
+              "Rule of energy flow: arrows in a food chain diagram MUST always point in the direction of energy transfer (from the organism being eaten toward the consumer)."
+            ],
+            "tryThis": {
+              "question": "In the ecological food chain: Grass -> Grasshopper -> Chicken -> Hawk, which organism occupies the trophic level of secondary consumer?",
+              "choices": ["Grass", "Grasshopper", "Chicken", "Hawk"],
+              "correct": 2,
+              "explanation": "The grasshopper is the primary consumer (herbivore), while the chicken that eats the grasshopper is the secondary consumer."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "agroforestry-wood-projects",
+        "title": "3. Agroforestry, Tree Harvesting and Woodlot Management",
+        "modules": [
+          {
+            "moduleId": "agroforestry-importance",
+            "title": "Agroforestry and Nitrogen-Fixing Trees",
+            "bigIdea": "Agroforestry combines tree planting with agriculture, using nitrogen-fixing species to enrich soil naturally.",
+            "learnIt": [
+              "Agroforestry is the agricultural practice of integrating trees and shrubs into crop fields or livestock pasture on the same piece of land.",
+              "Benefits: trees act as windbreaks shielding crops from violent storms; deep tree roots bind soil particles preventing soil erosion; tree leaf litter decomposes into fertilizing humus; trees provide shade, firewood, building poles, and livestock fodder.",
+              "Nitrogen-fixing leguminous trees (e.g., Calliandra, Leucaena, Sesbania): their roots house symbiotic root nodule bacteria that fix inert atmospheric nitrogen into soil nitrates, boosting soil fertility without synthetic chemical fertilizers."
+            ],
+            "tryThis": {
+              "question": "Why do agricultural extension officers encourage farmers to plant leguminous shrubs like Calliandra along terraces in agroforestry farms?",
+              "choices": ["To attract wild monkeys", "To fix atmospheric nitrogen into nitrates and improve soil fertility", "To dry up farm wetlands completely", "To poison soil insects"],
+              "correct": 1,
+              "explanation": "Leguminous root nodules contain Rhizobium bacteria that enrich soil nitrogen levels naturally."
+            }
+          },
+          {
+            "moduleId": "tree-harvesting-techniques",
+            "title": "Tree Harvesting Techniques and Woodlot Fire Lines",
+            "bigIdea": "Coppicing, pollarding, and lopping allow sustainable wood harvesting, while fire lines prevent forest fires.",
+            "learnIt": [
+              "Sustainable harvesting techniques: Coppicing (cutting a tree trunk close to ground level so multiple vigorous new stems shoot upward from the living stump); Pollarding (cutting off the top crown branches of a tree high above the ground out of reach of browsing cattle so dense shoots regrow); Lopping (cutting selected side branches for firewood or animal fodder while leaving the main trunk growing).",
+              "Managing school and home woodlots: plant fast-growing species during rainy seasons, water seedlings, and weed regularly.",
+              "Fire lines (firebreaks): wide strips of land around and through a forest plantation where all grass and vegetation are cleared to bare mineral soil. Function: halts spreading accidental bushfires from crossing into the woodlot."
+            ],
+            "tryThis": {
+              "question": "What is the primary purpose of clearing wide bare strips of soil called fire lines around a school timber woodlot?",
+              "choices": ["To serve as running tracks for students", "To prevent spreading bushfires from crossing into the timber trees", "To allow rainwater to collect into ponds", "To let sunlight reach grass"],
+              "correct": 1,
+              "explanation": "Clearing dry flammable grass creates a fuel gap that stops ground fires from reaching planted forest trees."
+            }
+          }
+        ]
+      }
     ],
+    "quiz": [
+      { "q": "Which is an abiotic component of the environment?", "choices": ["Soil minerals", "Grass", "Bacteria", "Insects"], "correct": 0, "why": "Soil minerals are non-living physical components." },
+      { "q": "What does the arrow in a food chain represent?", "choices": ["Direction of energy flow", "Size of animals", "Speed of movement", "Number of plants"], "correct": 0, "why": "Arrows point in the direction energy is transferred." },
+      { "q": "Which organism breaks down dead plants and animals?", "choices": ["Decomposer", "Producer", "Herbivore", "Carnivore"], "correct": 0, "why": "Decomposers break down dead matter into soil nutrients." },
+      { "q": "What is agroforestry?", "choices": ["Growing trees together with crops or livestock", "Cutting down all forest trees", "Growing crops in water only", "Keeping animals inside forests without trees"], "correct": 0, "why": "Agroforestry combines tree growing with farming." },
+      { "q": "Why do farmers mulch around young tree seedlings?", "choices": ["To retain soil moisture", "To attract insects", "To heat the tree roots", "To prevent leaves from growing"], "correct": 0, "why": "Mulch covers soil and reduces evaporation." },
+      { "q": "Which tree harvesting practice involves cutting stem near ground level for regrowth?", "choices": ["Coppicing", "Pollarding", "Lopping", "Overgrazing"], "correct": 0, "why": "Coppicing allows new stems to shoot from the stump." },
+      { "q": "What is the function of a fire line in a woodlot?", "choices": ["To stop spreading bushfires", "To collect rainwater", "To grow grass", "To shade trees"], "correct": 0, "why": "Cleared fire lines prevent bushfires from crossing." },
+      { "q": "Which trees fix atmospheric nitrogen into soil?", "choices": ["Leguminous trees like Calliandra", "Eucalyptus", "Pine trees", "Mango trees"], "correct": 0, "why": "Leguminous root nodules fix atmospheric nitrogen." }
+    ]
   },
   {
-    id: "light-energy",
-    themeId: "science-matter-energy",
-    themeName: "Matter and Energy",
-    title: "Light energy",
-    estMinutes: 18,
-    status: "published",
-    reviewStatus: "verified",
-    note: {
-      intro: "Why this matters: Light helps us see and understand many natural phenomena. P7 learners need to know sources of light, how light travels, shadows, reflection, refraction, lenses, cameras and the human eye.",
-      learningObjectives: [
-        "Name natural and artificial sources of light.",
-        "Explain how light travels and forms shadows.",
-        "Describe reflection and refraction of light.",
-        "Compare a lens camera with the human eye.",
-        "State common eye defects, eye diseases and ways of caring for the eye.",
+    "id": "population-and-health",
+    "themeId": "science-community-health",
+    "themeName": "The Community, Population and Family Life",
+    "title": "Population and health",
+    "estMinutes": 24,
+    "status": "published",
+    "reviewStatus": "verified",
+    "note": {
+      "intro": "Why this matters: Community health depends on sanitation, clean water, vector control, ORS preparation, worm prevention, and safe social habits.",
+      "learningObjectives": [
+        "Explain vector life cycles and control methods for Anopheles mosquitoes and houseflies.",
+        "Describe the 4 Fs transmission path and prepare homemade Oral Rehydration Salts (ORS).",
+        "Identify hookworms, tapeworms, and roundworms and explain prevention.",
+        "Recognise youth substance abuse effects (alcoholism/cirrhosis) and apply assertiveness skills.",
+        "Conduct tally-chart health surveys and construct school tippy-taps."
       ],
-      whatYouNeedToKnow: [
-        "Light is a form of energy that enables us to see. Natural sources of light include the sun, stars, lightning and fireflies. Artificial sources include bulbs, candles, torches, lamps and fires made by people.",
-        "Light travels in straight lines. A ray is a single path of light, while a beam is a group of rays. When an opaque object blocks light, a shadow is formed. The size of a shadow changes when the object or light source moves nearer or farther away.",
-        "Shadows help explain eclipses and pinhole camera images. A solar eclipse happens when the moon blocks sunlight from reaching part of the earth. A lunar eclipse happens when the earth blocks sunlight from reaching the moon. A pinhole camera forms an inverted image because light travels in straight lines through a small hole.",
-        "Materials affect light differently. Transparent materials allow most light to pass through. Translucent materials allow some light through but not a clear image. Opaque materials do not allow light to pass through. Smooth shiny surfaces reflect light better than dull rough surfaces.",
-        "Reflection is the bouncing back of light from a surface. Plane mirrors form upright images that are the same size as the object, the same distance behind the mirror as the object is in front, and laterally inverted. A periscope uses two plane mirrors to see over or around obstacles.",
-        "Refraction is the bending of light as it passes from one medium to another. Refraction helps explain why a stick in water looks bent and how lenses work. Dispersion splits white light into colours, as seen in a rainbow.",
-        "Convex lenses can converge light and are used in magnifying glasses, cameras and the eye. A simple lens camera forms a real inverted image on a screen or film. The human eye works like a camera: the lens focuses light on the retina, the iris controls light entering the eye, and the optic nerve carries messages to the brain.",
-        "Common eye defects include short sight and long sight. Short sight is corrected using concave lenses, while long sight is corrected using convex lenses. Eye diseases and disorders include conjunctivitis, cataracts and eye injuries. Eyes should be protected from sharp objects, bright light, dust and infections, and serious eye problems should be taken to a health worker.",
+      "whatYouNeedToKnow": [
+        "Female Anopheles mosquitoes transmit malaria; their 4-stage aquatic life cycle is controlled by ITNs, draining water, and pouring oil.",
+        "Cholera and diarrhoea spread via 4 Fs (Faeces, Flies, Fingers, Food); ORS formula = 1 litre boiled water + 8 tsp sugar + 1 tsp salt.",
+        "Hookworm larvae penetrate bare feet; tapeworms spread in undercooked beef/pork; excessive alcohol causes liver cirrhosis."
       ],
-      worked: {
-        problem: "A pencil placed in a glass of water appears bent. Which property of light explains this?",
-        steps: [
-          "Step 1. Light moves from water into air before reaching the eye.",
-          "Step 2. When light moves from one medium to another, it changes direction.",
-          "Step 3. This bending of light is called refraction.",
+      "worked": {
+        "problem": "Explain how boiling water and washing hands help prevent diarrhoea in a home.",
+        "steps": [
+          "Diarrhoea is caused by germs contaminating food or water.",
+          "Boiling kills intestinal pathogens in drinking water.",
+          "Hand washing with soap removes faecal germs from fingers before handling food."
         ],
-        answer: "Answer: The pencil appears bent because of refraction of light.",
+        "answer": "Answer: Boiling water kills pathogens, while washing hands breaks the faecal-oral transmission chain."
       },
-      commonMistakes: [
-        "Thinking light can bend around corners without reflection or refraction.",
-        "Mixing up reflection and refraction.",
-        "Calling transparent and translucent materials the same.",
-        "Forgetting that a shadow forms when an opaque object blocks light.",
-        "Confusing convex and concave lenses when correcting eye defects.",
-        "Forgetting that a pinhole camera forms an inverted image.",
-      ],
-      tryThis: {
-        question: "Which material is opaque?",
-        choices: ["Clear glass", "Clean water", "Wood", "Thin tracing paper"],
-        correct: 2,
-        explanation: "Wood does not allow light to pass through, so it is opaque.",
-      },
-      writingTasks: [
-        {
-          title: "Ray diagram explanation: Reflection and shadows",
-          prompt: "Describe how light travels to form a shadow or reflect from a mirror.",
-          planningSteps: [
-            "State that light travels in straight lines.",
-            "Name the source of light and the object or mirror.",
-            "Explain what blocks light or reflects it.",
-            "Use correct words such as ray, reflection, opaque, transparent and shadow.",
-          ],
-          checklist: [
-            "Straight-line travel of light is included.",
-            "Reflection or shadow formation is explained correctly.",
-            "Correct light vocabulary is used.",
-            "The explanation matches the diagram or situation.",
-          ],
-          modelOpening: "Light travels in straight lines. When an opaque object blocks light from a torch, a shadow is formed behind the object.",
-        },
-      ],
-      recap: [
-        "Light travels in straight lines.",
-        "Opaque objects form shadows by blocking light.",
-        "Reflection is bouncing back of light.",
-        "Refraction is bending of light between media.",
-        "The eye uses a lens to focus light on the retina.",
-        "Short sight and long sight are corrected with different lenses.",
-        "Eye care includes cleanliness, protection from injury and treatment by a health worker.",
-      ],
+      "recap": [
+        "Malaria vector = Female Anopheles mosquito; controlled by nets and draining pools.",
+        "ORS formula: 1 litre clean boiled water + 8 level teaspoons sugar + 1 level teaspoon salt.",
+        "Wear shoes outside to prevent hookworms; cook beef/pork well to prevent tapeworms.",
+        "Alcoholism causes fatal liver cirrhosis; use assertiveness to resist bad peer pressure."
+      ]
     },
-    quiz: [
-      { q: "Which is a natural source of light?", choices: ["Sun", "Torch", "Electric bulb", "Candle"], correct: 0, why: "The sun is a natural source of light." },
-      { q: "How does light usually travel?", choices: ["In straight lines", "Only in circles", "Only through metal", "Backwards only"], correct: 0, why: "Light travels in straight lines unless reflected or refracted." },
-      { q: "What type of material does not allow light to pass through?", choices: ["Transparent", "Translucent", "Opaque", "Magnetic"], correct: 2, why: "Opaque materials block light." },
-      { q: "Reflection means:", choices: ["Bouncing back of light", "Bending of light", "Making urine", "Changing water into steam"], correct: 0, why: "Reflection is the bouncing back of light from a surface." },
-      { q: "What causes a pencil in water to appear bent?", choices: ["Friction", "Refraction", "Excretion", "Magnetism"], correct: 1, why: "Refraction bends light as it moves between water and air." },
-      { q: "Which part of the eye receives the focused image?", choices: ["Retina", "Ribs", "Kidney", "Ureter"], correct: 0, why: "The retina receives the focused image in the eye." },
-      { q: "A periscope mainly uses:", choices: ["Mirrors", "Kidneys", "Magnets only", "Friction"], correct: 0, why: "A periscope uses mirrors to reflect light." },
+    "subtopics": [
+      {
+        "subtopicId": "vector-borne-diseases",
+        "title": "1. Vector-Borne Diseases and Vector Life Cycles",
+        "modules": [
+          {
+            "moduleId": "malaria-vector-control",
+            "imageUrl": "/images/science/anopheles-mosquito-life-cycle.png",
+            "imageCaption": "4-stage life cycle of the female Anopheles mosquito vector.",
+            "title": "Female Anopheles Mosquito and Malaria Control",
+            "bigIdea": "Malaria is transmitted by female Anopheles mosquitoes whose aquatic breeding cycle can be broken by draining pools.",
+            "learnIt": [
+              "Vector transmission: the female Anopheles mosquito transmits Plasmodium protozoan parasites into human blood while feeding on blood.",
+              "4-stage complete metamorphosis life cycle: Egg rafts (laid on stagnant water surface) -> Larva (wriggler breathing through spiracles just below water surface) -> Pupa (comma-shaped active tumbler) -> Adult winged mosquito.",
+              "Vector control methods: sleep under Insecticide-Treated Nets (ITNs); slash bushes around homesteads where adult mosquitoes rest; drain stagnant pools or empty broken containers to destroy egg/larval breeding sites; pour oil over open water pools to suffocate larvae."
+            ],
+            "tryThis": {
+              "question": "Why does pouring a thin layer of oil or paraffin on stagnant water pools kill mosquito larvae?",
+              "choices": ["It poisons their food", "It blocks their breathing spiracles from reaching air at the surface, causing suffocation", "It burns them with solar heat", "It sinks them to the mud bottom"],
+              "correct": 1,
+              "explanation": "Mosquito larvae must surface to breathe atmospheric air; oil creates an impermeable film blocking gas exchange."
+            }
+          },
+          {
+            "moduleId": "houseflies-transmission",
+            "title": "Houseflies and Disease Transmission",
+            "bigIdea": "Houseflies spread filth germs onto exposed food through hairy legs and feeding vomit.",
+            "learnIt": [
+              "Housefly transmission mechanism: houseflies breed in rotting garbage, faeces, and manure. Germs stick to their hairy bodies and legs. When landing on human food, flies vomit digestive saliva onto food to liquefy it, depositing pathogenic bacteria.",
+              "Diseases spread by houseflies: Trachoma (contagious eye blindness infection), Cholera, Typhoid, Dysentery, and Diarrhoea.",
+              "Control: always keep human food covered, dispose of garbage in covered pits, construct ventilated improved pit (VIP) latrines."
+            ],
+            "tryThis": {
+              "question": "Which contagious bacterial eye infection leading to blindness is mechanically transmitted by houseflies landing on human faces?",
+              "choices": ["Trachoma", "Malaria", "Rickets", "Polio"],
+              "correct": 0,
+              "explanation": "Houseflies feeding on eye secretions transfer Chlamydia trachomatis bacteria between individuals."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "sanitation-waterborne",
+        "title": "2. Sanitation, Water-Borne Illnesses and ORS Preparation",
+        "modules": [
+          {
+            "moduleId": "sanitation-four-fs",
+            "title": "The Four Fs Transmission Path and Cholera/Typhoid",
+            "bigIdea": "Faecal-oral infections spread via Faeces, Flies, Fingers, and Food when sanitation is poor.",
+            "learnIt": [
+              "The Four Fs Transmission chain: Faeces (infected human faeces contain millions of germs) -> Flies / Fingers (flies land on faeces or unwashed fingers touch latrine handles) -> Food / Fluids (germs contaminate food or drinking water) -> New host ingestion.",
+              "Water-borne illnesses: Cholera (caused by Vibrio cholerae bacteria, resulting in sudden violent watery rice-water diarrhoea and rapid fatal dehydration); Typhoid fever (caused by Salmonella typhi bacteria contaminating food/water); Amoebic/Bacillary Dysentery (severe diarrhoea containing blood and mucus).",
+              "Prevention: always boil drinking water for at least 10 minutes or use chlorine tablets; wash hands thoroughly with soap and running water after using pit latrines and before eating."
+            ],
+            "tryThis": {
+              "question": "In the faecal-oral disease transmission chain known as the '4 Fs', what do the four letters represent?",
+              "choices": ["Forests, Farms, Fruits, Fires", "Faeces, Flies, Fingers, Food", "Fish, Frogs, Feathers, Feet", "Fever, Fatigue, Fainting, Flu"],
+              "correct": 1,
+              "explanation": "Pathogenic intestinal bacteria transfer from infected Faeces via Flies and unwashed Fingers into ingested Food."
+            }
+          },
+          {
+            "moduleId": "ors-preparation",
+            "title": "Preparation and Role of Oral Rehydration Salts (ORS)",
+            "bigIdea": "ORS prevents fatal dehydration during diarrhoea by replenishing lost body water, glucose, and sodium electrolytes.",
+            "learnIt": [
+              "Role of ORS: severe diarrhoea and vomiting expel vital body fluids and mineral electrolytes rapidly. ORS solution restores fluid balance immediately.",
+              "Exact preparation of homemade ORS (Sugar-Salt Solution SSS): Measure exactly 1 litre of clean boiled and cooled drinking water into a clean container. Add exactly 8 level teaspoons of sugar (glucose energy and sodium absorption helper). Add exactly 1 level teaspoon of common table salt (sodium chloride). Stir thoroughly with a clean spoon until all crystals dissolve completely.",
+              "Administration: give the sick child or adult ORS solution after every watery stool pass and seek medical help at a health center."
+            ],
+            "tryThis": {
+              "question": "When preparing homemade Oral Rehydration Salts (ORS) solution using 1 litre of clean boiled water, what exact measurements of sugar and salt must be mixed?",
+              "choices": ["1 level teaspoon sugar and 8 level teaspoons salt", "8 level teaspoons sugar and 1 level teaspoon salt", "4 level teaspoons sugar and 4 level teaspoons salt", "10 level teaspoons sugar and half teaspoon salt"],
+              "correct": 1,
+              "explanation": "The precise physiological ratio of 8 teaspoons sugar to 1 teaspoon salt per litre optimizes intestinal water absorption."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "worm-infestations",
+        "title": "3. Intestinal Worm Infestations",
+        "modules": [
+          {
+            "moduleId": "worms-prevention",
+            "title": "Hookworms, Tapeworms and Roundworms",
+            "bigIdea": "Parasitic worms rob the body of blood and nutrients, but can be prevented by wearing shoes and cooking meat well.",
+            "learnIt": [
+              "Hookworm: microscopic larvae living in damp faeces-polluted soil bore directly through the unbroken skin of bare human feet. Inside the intestine, hookworms suck blood, causing severe anaemia and weakness. Prevention: wear shoes or sandals when walking outside or visiting latrines.",
+              "Tapeworm: long ribbon-like flatworms transmitted when humans consume undercooked infected beef (beef tapeworm) or pork (pork tapeworm) containing bladder worm cysts. Prevention: thoroughly roast or boil all animal meat before eating.",
+              "Roundworm (Ascaris): transmitted by ingesting roundworm eggs present on unwashed raw fruits/vegetables or dirty hands. Prevention: wash all fruits with clean water before eating and deworm every 3 months."
+            ],
+            "tryThis": {
+              "question": "Which intestinal worm infection is specifically prevented by thoroughly roasting or boiling beef and pork before eating?",
+              "choices": ["Hookworm", "Tapeworm", "Ringworm", "Earthworm"],
+              "correct": 1,
+              "explanation": "Tapeworm larvae encyst in cattle and pig muscle tissues and are destroyed only by high cooking temperatures."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "social-health-community",
+        "title": "4. Social Health Issues and Community Hygiene Projects",
+        "modules": [
+          {
+            "moduleId": "substance-abuse-cirrhosis",
+            "title": "Substance Abuse and Liver Cirrhosis",
+            "bigIdea": "Abusing addictive drugs and alcohol causes organ failure, mental breakdown, and liver cirrhosis.",
+            "learnIt": [
+              "Substance abuse is the improper or excessive consumption of addictive drugs and chemicals without medical prescription.",
+              "Commonly abused substances among youth: Alcohol, Tobacco cigarettes, Marijuana (bhang), Mairungi (khat), and inhaled petrol/glue.",
+              "Health effects of chronic alcoholism: causes Liver Cirrhosis (fatal hardening and scarring of liver tissue leading to liver failure), stomach ulcers, domestic violence, and brain deterioration.",
+              "Assertiveness against anti-social peer pressure: assertiveness is the life skill of firmly saying 'NO' to negative peer pressure without being aggressive or intimidated. Avoid friends who smoke or drink alcohol."
+            ],
+            "tryThis": {
+              "question": "Which fatal organ condition characterized by fibrous hardening and scarring is caused by chronic habitual alcohol consumption?",
+              "choices": ["Nephritis", "Liver Cirrhosis", "Polio", "Asthma"],
+              "correct": 1,
+              "explanation": "Heavy alcohol intake poisons hepatocytes, converting functional liver tissue into scar tissue."
+            }
+          },
+          {
+            "moduleId": "school-health-clubs",
+            "imageUrl": "/images/science/tippy-tap-handwashing.png",
+            "imageCaption": "Village tippy-tap device enabling hygienic touch-free handwashing with soap.",
+            "title": "Tally-Chart Surveys and Tippy-Tap Construction",
+            "bigIdea": "School health clubs conduct local health surveys and build hygienic tippy-taps to prevent community disease.",
+            "learnIt": [
+              "Tally-chart health surveys: school health clubs collect data on household latrine coverage, safe water access, and common illnesses using tally marks (||||) to organize frequency tables and plan hygiene education.",
+              "Constructing a Tippy-Tap handwashing station: suspend a 5-litre plastic water jerrycan on a horizontal wooden stick between two upright poles. Pierce a small hole near the handle and attach a string from the handle down to a foot pedal stick near the ground. Hang a piece of soap on a string nearby. When a user steps on the foot pedal, the jerrycan tilts pouring clean water without dirty hands touching the container."
+            ],
+            "tryThis": {
+              "question": "Why is a foot-operated Tippy-Tap considered more hygienic for rural handwashing than dipping hands into a communal water basin?",
+              "choices": ["It heats the water automatically", "It prevents dirty hands from touching and re-contaminating the water vessel", "It filters salt from water", "It saves soap"],
+              "correct": 1,
+              "explanation": "Because the user operates the water tilt with their foot, clean hands never touch dirty container surfaces."
+            }
+          }
+        ]
+      }
     ],
+    "quiz": [
+      { "q": "Which insect transmits malaria parasites?", "choices": ["Female Anopheles mosquito", "Housefly", "Tsetse fly", "Cockroach"], "correct": 0, "why": "Female Anopheles mosquitoes transmit Plasmodium during feeding." },
+      { "q": "How is cholera mainly prevented?", "choices": ["Boiling drinking water and proper latrine use", "Sleeping under a net", "Wearing spectacles", "Planting tall trees"], "correct": 0, "why": "Cholera spreads through contaminated water and food." },
+      { "q": "Why should people wear shoes when visiting a pit latrine?", "choices": ["To prevent hookworm larvae from entering bare feet", "To look smart", "To avoid slipping only", "To kill flies"], "correct": 0, "why": "Hookworm larvae bore directly through bare foot skin." },
+      { "q": "Which drug causes liver cirrhosis when consumed in excess?", "choices": ["Alcohol", "Aspirin", "Panadol", "Chloroquine"], "correct": 0, "why": "Excessive alcohol consumption destroys liver cells." },
+      { "q": "What is a tippy-tap used for?", "choices": ["Hygienic handwashing with soap", "Boiling water", "Catching fish", "Storing firewood"], "correct": 0, "why": "A tippy-tap allows foot-operated handwashing." },
+      { "q": "What tool uses tally marks to record community health information?", "choices": ["Health survey data table", "Microscope", "Stethoscope", "Thermometer"], "correct": 0, "why": "Survey tables use tally marks to count occurrences cleanly." },
+      { "q": "What exact formula makes 1 litre of homemade ORS?", "choices": ["8 teaspoons sugar and 1 teaspoon salt", "1 teaspoon sugar and 8 teaspoons salt", "4 teaspoons sugar and 4 teaspoons salt", "10 teaspoons sugar and half teaspoon salt"], "correct": 0, "why": "1 litre boiled water takes 8 level tsp sugar and 1 level tsp salt." },
+      { "q": "What do the 4 Fs represent in disease transmission?", "choices": ["Faeces, Flies, Fingers, Food", "Forests, Farms, Fruits, Fires", "Fish, Frogs, Feathers, Feet", "Fever, Flu, Fatigue, Fainting"], "correct": 0, "why": "Germs travel from Faeces via Flies and Fingers into Food." }
+    ]
   },
   {
-    id: "interdependence-environment",
-    themeId: "science-environment",
-    themeName: "The Environment",
-    title: "Interdependence of things in the environment",
-    estMinutes: 17,
-    status: "published",
-    reviewStatus: "verified",
-    note: {
-      intro: "Why this matters: Living and non-living things in the environment depend on one another. Understanding interdependence helps learners protect the environment and use resources responsibly.",
-      learningObjectives: [
-        "Name components of the environment.",
-        "Explain how plants, animals and non-living things depend on one another.",
-        "Describe agroforestry and its importance.",
-        "Explain ways of caring for trees and managing wood projects.",
+    "id": "energy-resources-environment",
+    "themeId": "science-environment",
+    "themeName": "The Environment",
+    "title": "Energy resources in the environment",
+    "estMinutes": 18,
+    "status": "published",
+    "reviewStatus": "verified",
+    "note": {
+      "intro": "Why this matters: Energy resources power daily life and industrial production. Learners compare renewable and non-renewable resources.",
+      "learningObjectives": [
+        "Identify renewable and non-renewable energy resources.",
+        "Describe solar, water, wind, plant, animal, and fossil fuel resources.",
+        "Explain sustainable resource use and conservation."
       ],
-      whatYouNeedToKnow: [
-        "The environment includes living things such as plants and animals, and non-living things such as air, water, soil, rocks and sunlight.",
-        "Animals depend on plants for food, shelter, oxygen and materials. Plants may depend on animals for pollination, seed dispersal, manure and carbon dioxide.",
-        "Animals also depend on other animals for food, protection, cleaning, transport and other relationships. Plants may depend on other plants for support, shade or protection.",
-        "Living things depend on non-living things. Plants need water, air, soil and sunlight to grow. Animals need air, water and sometimes soil or water bodies as habitats. Non-living things also benefit from living things, for example dead plants and animals add humus to soil.",
-        "Agroforestry is the practice of growing trees together with crops or rearing animals on the same land. It helps conserve soil, provide shade, produce firewood, improve fertility, and reduce wind damage.",
-        "Trees in agroforestry should be cared for by watering, protecting seedlings, pruning, pollarding, coppicing, lopping carefully, and harvesting responsibly.",
+      "whatYouNeedToKnow": [
+        "The Sun is the primary source of energy in the environment.",
+        "Renewable resources (solar, wind, water, biomass) can be replaced naturally. Non-renewable resources (fossil fuels: coal, oil, natural gas) take millions of years to form and get exhausted."
       ],
-      worked: {
-        problem: "Explain two ways animals depend on plants and two ways plants depend on animals.",
-        steps: [
-          "Step 1. Animals depend on plants for food such as fruits, leaves and seeds.",
-          "Step 2. Animals also depend on plants for oxygen and shelter.",
-          "Step 3. Plants depend on animals for pollination when insects move pollen from flower to flower.",
-          "Step 4. Plants can also depend on animals for seed dispersal or manure.",
+      "worked": {
+        "problem": "Explain why biogas from animal dung is considered a renewable resource while petroleum is non-renewable.",
+        "steps": [
+          "Define renewable: can be regenerated continuously from living cattle dung.",
+          "Define non-renewable: petroleum takes millions of years underground to form from prehistoric remains and cannot be replaced once extracted."
         ],
-        answer: "Answer: Animals depend on plants for food, oxygen and shelter. Plants depend on animals for pollination, seed dispersal and manure.",
+        "answer": "Answer: Biogas is regenerated continuously from cattle dung, whereas petroleum takes millions of years to form and gets exhausted."
       },
-      commonMistakes: [
-        "Thinking only animals depend on plants, not the other way round.",
-        "Forgetting non-living things like air, soil and water.",
-        "Confusing agroforestry with ordinary forest cutting.",
-        "Ignoring responsible harvesting of trees.",
-      ],
-      tryThis: {
-        question: "Which is an example of agroforestry?",
-        choices: ["Growing crops and trees together", "Burning all trees", "Keeping soil bare", "Throwing waste in a wetland"],
-        correct: 0,
-        explanation: "Agroforestry involves growing trees together with crops or animals on the same land.",
-      },
-      writingTasks: [
-        {
-          title: "Food chain task: Interdependence in a garden",
-          prompt: "Construct and explain a simple food chain found in a school garden.",
-          planningSteps: [
-            "Start with a green plant as the producer.",
-            "Add a plant eater and then a predator if possible.",
-            "Use arrows to show the direction of energy flow.",
-            "Explain what may happen if one organism is removed.",
-          ],
-          checklist: [
-            "The food chain starts with a producer.",
-            "Arrows show energy flow correctly.",
-            "Producer, consumer and predator are used correctly where possible.",
-            "The explanation shows interdependence.",
-          ],
-          modelOpening: "Grass → grasshopper → chicken is a simple food chain. The grass makes its own food, the grasshopper feeds on grass, and the chicken may feed on the grasshopper.",
-        },
-      ],
-      recap: [
-        "The environment has living and non-living components.",
-        "Plants, animals and non-living things depend on one another.",
-        "Agroforestry combines trees with crops or animals.",
-        "Responsible tree care protects the environment.",
-      ],
+      "recap": [
+        "Sunlight is the major source of environmental energy.",
+        "Fossil fuels (coal, oil, gas) are non-renewable.",
+        "Use energy-saving stoves and renewable solar/hydro power to conserve environment."
+      ]
     },
-    quiz: [
-      { q: "Which is a non-living component of the environment?", choices: ["Goat", "Mango tree", "Water", "Grasshopper"], correct: 2, why: "Water is non-living but important in the environment." },
-      { q: "How do animals help some plants reproduce?", choices: ["By pollination and seed dispersal", "By removing all soil", "By blocking sunlight", "By making rocks"], correct: 0, why: "Animals such as insects can pollinate flowers, and animals can disperse seeds." },
-      { q: "Plants give animals:", choices: ["Oxygen and food", "Plastic and iron", "Petroleum only", "Electric circuits"], correct: 0, why: "Plants provide oxygen, food, shelter and materials to animals." },
-      { q: "What is agroforestry?", choices: ["Growing trees with crops or animals", "Cutting all trees", "Fishing only", "Making mirrors"], correct: 0, why: "Agroforestry combines trees with crops or animal rearing on the same land." },
-      { q: "Which practice helps care for trees?", choices: ["Protecting seedlings", "Ring barking every tree", "Burning young trees", "Leaving animals to destroy seedlings"], correct: 0, why: "Protecting seedlings helps trees grow well." },
-      { q: "Dead plants and animals can improve soil by adding:", choices: ["Humus", "Plastic", "Glass", "Electricity"], correct: 0, why: "Decayed plant and animal remains add humus to soil." },
-      { q: "Which statement is true?", choices: ["Living things never need non-living things", "Plants need water, air and sunlight", "Animals do not need oxygen", "Soil is a living animal"], correct: 1, why: "Plants need water, air, sunlight and soil nutrients for growth." },
+    "subtopics": [
+      {
+        "subtopicId": "major-energy-sources",
+        "title": "1. Solar, Water and Wind Energy",
+        "modules": [
+          {
+            "moduleId": "solar-wind-water",
+            "title": "Renewable Natural Energy Sources",
+            "bigIdea": "The sun, moving water, and wind provide clean renewable energy that never runs out.",
+            "learnIt": [
+              "Solar energy: sunlight powers plant photosynthesis, dries crops/clothes, and generates electricity using solar photovoltaic panels.",
+              "Hydroelectric power: fast-flowing river water or waterfalls turn water turbines connected to generators.",
+              "Wind energy: moving air drives windmills and wind turbines to pump water from boreholes and generate electricity."
+            ],
+            "tryThis": {
+              "question": "Which energy device converts sunlight directly into electric current?",
+              "choices": ["Solar photovoltaic panel", "Windmill", "Dynamo", "Dry cell"],
+              "correct": 0,
+              "explanation": "Solar panels contain photovoltaic silicon cells that convert solar photons into electrical current."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "biological-fossil-fuels",
+        "title": "2. Biomass, Biogas and Fossil Fuels",
+        "modules": [
+          {
+            "moduleId": "fossil-fuels",
+            "imageUrl": "/images/science/fossil-fuels-formation.png",
+            "imageCaption": "Geological cross-section showing prehistoric strata transforming into underground coal and petroleum under heat and pressure.",
+            "title": "Fossil Fuels vs Biological Energy",
+            "bigIdea": "Fossil fuels are non-renewable hydrocarbon deposits formed from prehistoric remains.",
+            "learnIt": [
+              "Fossil fuels (Coal, Crude oil/petroleum, Natural gas): formed underground over millions of years from compressed prehistoric plant and marine animal remains under intense heat and pressure.",
+              "Biomass and Biogas: renewable organic energy from firewood, charcoal, agricultural residues, and methane biogas generated by fermenting cattle dung in anaerobic digesters."
+            ],
+            "tryThis": {
+              "question": "Why is crude petroleum classified as a non-renewable energy resource?",
+              "choices": ["Because it takes millions of years to form underground and gets exhausted once mined", "Because it is liquid", "Because it burns with smoke", "Because it is found under lakes"],
+              "correct": 0,
+              "explanation": "Non-renewable resources cannot regenerate within a human lifetime once depleted."
+            }
+          }
+        ]
+      }
     ],
+    "quiz": [
+      { "q": "Which is the primary source of energy in the environment?", "choices": ["The Sun", "Petroleum", "Wind", "Wood"], "correct": 0, "why": "The Sun provides energy for all weather, plants, and life." },
+      { "q": "Which of these is a non-renewable energy resource?", "choices": ["Crude oil / Petroleum", "Solar energy", "Wind energy", "Biogas"], "correct": 0, "why": "Petroleum takes millions of years to form and gets exhausted." },
+      { "q": "What gas is primarily produced in a biogas digester from animal dung?", "choices": ["Methane", "Oxygen", "Nitrogen", "Chlorine"], "correct": 0, "why": "Anaerobic fermentation of dung produces methane gas." },
+      { "q": "Which device generates electricity from moving wind?", "choices": ["Wind turbine", "Solar panel", "Accumulator", "Ammeter"], "correct": 0, "why": "Wind turbines rotate blades to drive electrical generators." },
+      { "q": "Why are energy-saving stoves encouraged in rural communities?", "choices": ["To reduce firewood consumption and deforestation", "To produce more smoke", "To make food burn", "To stop cooking"], "correct": 0, "why": "Energy-saving stoves retain heat and conserve forest woodlands." },
+      { "q": "Hydroelectric power plants generate electricity using:", "choices": ["Falling or fast-flowing river water", "Burning coal", "Sunlight", "Nuclear fuel"], "correct": 0, "why": "Water kinetic energy spins generator turbines." },
+      { "q": "Which resource is renewable?", "choices": ["Sunlight", "Coal", "Natural gas", "Kerosene"], "correct": 0, "why": "Sunlight shines continuously every day." },
+      { "q": "What remains formed coal millions of years ago?", "choices": ["Ancient swamp forests and plant vegetation", "Dinosaur bones only", "Ocean salt", "Plastic waste"], "correct": 0, "why": "Prehistoric swamp forests compressed under rock formed coal beds." }
+    ]
   },
   {
-    id: "population-and-health",
-    themeId: "science-community-health",
-    themeName: "The Community, Population and Family Life",
-    title: "Population and health",
-    estMinutes: 17,
-    status: "published",
-    reviewStatus: "verified",
-    note: {
-      intro: "Why this matters: Health problems affect homes, schools and communities. P7 learners need to identify common sicknesses, understand social problems, collect simple health information, and take part in health activities.",
-      learningObjectives: [
-        "Name common sicknesses in homes and communities.",
-        "Describe causes and control of common sicknesses.",
-        "Identify anti-social behaviour and health risks among young people using respectful, safety-focused language.",
-        "Explain simple health surveys and activities of health clubs.",
+    "id": "simple-machines-friction",
+    "themeId": "science-matter-energy",
+    "themeName": "Matter and Energy",
+    "title": "Simple machines and friction",
+    "estMinutes": 20,
+    "status": "published",
+    "reviewStatus": "verified",
+    "note": {
+      "intro": "Why this matters: Simple machines make work easier by multiplying force or changing direction. Friction opposes motion but enables walking and braking.",
+      "learningObjectives": [
+        "Calculate Mechanical Advantage (MA) and apply the principle of moments on levers.",
+        "Classify first, second, and third class levers.",
+        "Describe inclined planes, wedges, screws, pulleys, and wheel-and-axles.",
+        "Distinguish useful vs nuisance friction and explain methods of increasing or reducing friction."
       ],
-      whatYouNeedToKnow: [
-        "Common sicknesses in homes and communities include malaria, diarrhoea, coughs, measles, skin infections, worms and eye infections. Causes may include germs, mosquitoes, unsafe water, poor sanitation, poor feeding, overcrowding and lack of immunisation.",
-        "Community health improves when people use safe water, latrines, proper waste disposal, mosquito nets, immunisation, balanced diet, hand washing and early treatment. Prevention is better than waiting until many people are sick.",
-        "Different sicknesses need different control measures. Malaria can be reduced by clearing stagnant water, using mosquito nets and seeking treatment early. Diarrhoea can be reduced by safe water, hand washing, proper latrine use and covering food. Worms can be controlled by wearing shoes, washing hands and taking deworming medicine when advised by health workers.",
-        "Young people may face social problems such as drug abuse, theft, violence, bad peer pressure, unsafe sexual behaviour, school dropout and other anti-social behaviour. Lessons on these issues should be respectful, safety-focused and guided by a trusted teacher, parent or health worker. These problems can harm health, education and community peace.",
-        "A health concern can be addressed through health education, cleaning campaigns, reporting dangers, using health services, joining health clubs, and encouraging safe behaviour. Learners should report danger, abuse, sickness or pressure to trusted adults rather than handling serious problems alone.",
-        "Demography is the study of human population. Simple health surveys collect information about people, homes, sicknesses, sanitation, available health services and community needs. Survey questions should be clear, respectful and useful for solving a health problem.",
-        "A simple health survey has steps: choose the health problem, plan questions, collect information, organise the data, discuss findings, report results and take action. Results can be shown in tables, tally charts, bar graphs or short reports.",
-        "Health clubs help learners promote hygiene, first aid, environmental cleanliness, disease prevention and health education in the school and community. They may organise hand-washing campaigns, compound cleaning, safe-water messages, sanitation checks and peer education with teacher guidance.",
+      "whatYouNeedToKnow": [
+        "Mechanical Advantage = Load / Effort.",
+        "Principle of moments: clockwise turning moment equals anticlockwise moment (Load x Load Distance = Effort x Effort Distance).",
+        "Friction is reduced by lubricating with grease/oil, using ball bearings, and streamlining."
       ],
-      worked: {
-        problem: "A village has many cases of diarrhoea. Suggest three questions learners can ask in a simple health survey.",
-        steps: [
-          "Step 1. Ask about water because diarrhoea can spread through unsafe water: Where do families get drinking water?",
-          "Step 2. Ask about sanitation: Do homes have and use latrines?",
-          "Step 3. Ask about hygiene: Do people wash hands after using the latrine and before eating?",
-          "Step 4. Ask about treatment if needed: Have sick people visited a health worker?",
+      "worked": {
+        "problem": "A load of 120 N is lifted using an effort of 40 N on a lever. Find the Mechanical Advantage.",
+        "steps": [
+          "State formula: MA = Load / Effort.",
+          "Substitute values: MA = 120 N / 40 N = 3."
         ],
-        answer: "Answer: Useful survey questions can ask about water source, latrine use, hand washing, and treatment from health workers.",
+        "answer": "Answer: The Mechanical Advantage is 3."
       },
-      commonMistakes: [
-        "Thinking health is only the work of hospitals and not the community.",
-        "Listing sicknesses without their causes or control measures.",
-        "Collecting survey information without organising or reporting it.",
-        "Asking survey questions that are unclear, disrespectful or not useful for solving the problem.",
-        "Ignoring prevention activities such as hand washing and immunisation.",
-        "Using insulting or unsafe language when discussing sensitive health and social problems.",
-      ],
-      tryThis: {
-        question: "Which activity can a school health club do?",
-        choices: ["Promote hand washing", "Encourage dirty compounds", "Hide sickness reports", "Stop pupils from using latrines"],
-        correct: 0,
-        explanation: "A health club can promote hand washing, cleanliness, disease prevention and health education.",
-      },
-      writingTasks: [
-        {
-          title: "Health advice task: Preventing disease in a community",
-          prompt: "Write health advice for a village that wants to reduce disease and improve population health.",
-          planningSteps: [
-            "Name two common causes of disease spread.",
-            "Give practical prevention methods such as clean water, latrines, immunisation or mosquito control.",
-            "Mention the role of parents, teachers or health workers.",
-            "Use respectful, age-appropriate language.",
-          ],
-          checklist: [
-            "Advice is safe and practical.",
-            "Disease prevention methods are scientifically correct.",
-            "The answer encourages trusted adult or health-worker guidance.",
-            "The wording is respectful and not stigmatizing.",
-          ],
-          modelOpening: "A community can improve health by keeping water clean, using latrines properly, sleeping under mosquito nets and visiting health workers for advice and immunisation.",
-        },
-      ],
-      recap: [
-        "Common sicknesses have causes and control measures.",
-        "Community health improves through prevention and safe habits.",
-        "Anti-social behaviour and unsafe choices can damage health and education.",
-        "Simple surveys help communities identify health problems.",
-        "Survey results should be organised before action is planned.",
-        "Health clubs support school and community health activities.",
-      ],
+      "recap": [
+        "1st class lever = Fulcrum in middle; 2nd class = Load in middle; 3rd class = Effort in middle.",
+        "MA = Load / Effort.",
+        "Oil and ball bearings reduce nuisance friction in machines."
+      ]
     },
-    quiz: [
-      { q: "Which disease is commonly spread by mosquitoes?", choices: ["Malaria", "Rickets", "Fracture", "Short sight"], correct: 0, why: "Malaria is spread by infected mosquitoes." },
-      { q: "Which practice helps prevent diarrhoea?", choices: ["Drinking unsafe water", "Hand washing with soap", "Open defecation", "Leaving food uncovered"], correct: 1, why: "Hand washing with soap helps prevent germs that cause diarrhoea." },
-      { q: "What is demography?", choices: ["Study of human population", "Study of mirrors", "Study of magnets only", "Study of joints"], correct: 0, why: "Demography is the study of human population." },
-      { q: "Which is an anti-social behaviour?", choices: ["Helping clean a compound", "Stealing", "Reporting sickness", "Using a latrine"], correct: 1, why: "Stealing harms other people and the community, so it is anti-social behaviour." },
-      { q: "Why are health surveys useful?", choices: ["They help identify health problems", "They stop all learning", "They create sickness", "They hide community needs"], correct: 0, why: "Health surveys collect information that helps identify and address health problems." },
-      { q: "Which activity addresses a health concern?", choices: ["Cleaning stagnant water", "Throwing rubbish in wells", "Sharing dirty cups", "Ignoring sick children"], correct: 0, why: "Removing stagnant water helps reduce mosquito breeding and disease." },
-      { q: "Which is a cause of many common sicknesses?", choices: ["Poor sanitation", "Clean water", "Balanced diet", "Immunisation"], correct: 0, why: "Poor sanitation can spread germs and cause sickness." },
+    "subtopics": [
+      {
+        "subtopicId": "levers-moments",
+        "title": "1. Levers, Classes and Principle of Moments",
+        "modules": [
+          {
+            "moduleId": "lever-basics",
+            "imageUrl": "/images/science/three-classes-of-levers.png",
+            "imageCaption": "Comparison of 1st, 2nd, and 3rd class levers showing effort, load, and fulcrum positions.",
+            "title": "Classes of Levers and Mechanical Advantage",
+            "bigIdea": "Levers multiply applied effort around a pivot fulcrum according to three distinct classes.",
+            "learnIt": [
+              "A lever is a rigid bar turning about a fixed pivot called the Fulcrum (F). Load (L) is the weight lifted; Effort (E) is the force applied.",
+              "First Class Lever: Fulcrum lies between Load and Effort (L-F-E). Examples: seesaw, crowbar, pair of scissors, pliers, hammer, claw hammer.",
+              "Second Class Lever: Load lies between Fulcrum and Effort (F-L-E). Examples: wheelbarrow, nutcracker, bottle opener.",
+              "Third Class Lever: Effort lies between Fulcrum and Load (F-E-L). Examples: pair of sugar tongs, tweezers, human forearm lifting weight, fishing rod.",
+              "Mechanical Advantage (MA) = Load / Effort. Principle of Moments: Load x Load Distance = Effort x Effort Distance."
+            ],
+            "tryThis": {
+              "question": "In a wheelbarrow, the heavy load sits between the front wheel fulcrum and the handles where effort is applied. Which class of lever is a wheelbarrow?",
+              "choices": ["First class lever", "Second class lever", "Third class lever", "Fourth class lever"],
+              "correct": 1,
+              "explanation": "Second class levers always place the Load between the Fulcrum and Effort (F-L-E)."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "other-simple-machines",
+        "title": "2. Inclined Planes, Pulleys, Wedges and Screws",
+        "modules": [
+          {
+            "moduleId": "slopes-wedges-screws",
+            "title": "Slopes, Pulleys, Wedges and Screws",
+            "bigIdea": "Slopes, wheels, and wedges trade extra distance for reduced lifting effort.",
+            "learnIt": [
+              "Inclined plane: a sloping surface (ramp) used to roll heavy drums onto trucks with less effort.",
+              "Wedge: two double inclined planes meeting at a sharp cutting edge (axe, knife, chisel).",
+              "Screw: an inclined plane wound spirally around a cylinder (bolt, car jack).",
+              "Pulley: a grooved wheel carrying a rope. Single fixed pulley changes lifting direction (flagpole); movable pulley system halves lifting effort."
+            ],
+            "tryThis": {
+              "question": "A wooden ramp used to roll heavy oil drums up into the back of a delivery lorry is an example of which simple machine?",
+              "choices": ["Pulley", "Inclined plane", "Wedge", "Screw"],
+              "correct": 1,
+              "explanation": "An inclined plane is a sloping surface that reduces lifting effort over a longer distance."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "friction-nature-industry",
+        "title": "3. Friction: Useful vs Nuisance and Control",
+        "modules": [
+          {
+            "moduleId": "friction-control",
+            "title": "Controlling Friction in Daily Life",
+            "bigIdea": "Friction opposes motion between touching surfaces, enabling grip while causing heat and wear.",
+            "learnIt": [
+              "Friction is the force that opposes motion between two surfaces in contact.",
+              "Useful friction: enables walking without slipping, vehicle brakes stopping wheels, lighting matchsticks, writing with pens.",
+              "Nuisance friction: causes wear and tear on engine gears/shoe soles, wastes energy as heat.",
+              "Methods of increasing friction: putting deep treads on car tyres, putting studs on football boots, roughing slippery surfaces.",
+              "Methods of reducing friction: applying grease or lubricating oil, using smooth ball bearings in axles, streamlining vehicles and airplanes."
+            ],
+            "tryThis": {
+              "question": "Why do bicycle mechanics apply grease or lubricating oil to bicycle chain axles?",
+              "choices": ["To increase friction and stop the chain", "To reduce nuisance friction and prevent metal-on-metal wear", "To make the bicycle heavy", "To create electric sparks"],
+              "correct": 1,
+              "explanation": "Lubricants form a smooth liquid film between moving metal parts, eliminating grinding friction."
+            }
+          }
+        ]
+      }
     ],
-  },
+    "quiz": [
+      { "q": "Which formula correctly calculates Mechanical Advantage (MA)?", "choices": ["Load ÷ Effort", "Effort ÷ Load", "Load × Effort", "Load + Effort"], "correct": 0, "why": "MA is the ratio of weight lifted divided by force applied." },
+      { "q": "Which class of lever has the Fulcrum located between Load and Effort?", "choices": ["First class lever", "Second class lever", "Third class lever", "Fourth class lever"], "correct": 0, "why": "First class levers follow L-F-E arrangement (seesaw, crowbar)." },
+      { "q": "How can nuisance friction between moving engine gears be reduced?", "choices": ["Applying grease or oil lubrication", "Adding sand", "Making surfaces rough", "Heating the gears"], "correct": 0, "why": "Lubrication separates sliding surfaces." },
+      { "q": "Why do car tyres have deep rubber grooves (treads)?", "choices": ["To increase road grip friction and prevent skidding", "To reduce friction", "To look decorative", "To make the car slide"], "correct": 0, "why": "Treads increase useful friction on wet roads." },
+      { "q": "A single fixed pulley used on a school flagpole makes work easier by:", "choices": ["Changing the direction of lifting force downwards", "Multiplying effort tenfold", "Reducing rope length", "Increasing friction"], "correct": 0, "why": "A fixed pulley changes pulling direction so gravity helps." },
+      { "q": "An axe or sharp knife edge represents which simple machine?", "choices": ["Wedge", "Pulley", "Wheel and axle", "Screw"], "correct": 0, "why": "A wedge splits objects apart using two joined inclined planes." },
+      { "q": "If a crowbar lifts a 200 N rock using 50 N effort, what is its Mechanical Advantage?", "choices": ["4", "150", "250", "10"], "correct": 0, "why": "200 N ÷ 50 N = 4." },
+      { "q": "Which simple machine consists of an inclined plane wound spirally around a cylinder?", "choices": ["Screw", "Wedge", "Lever", "Pulley"], "correct": 0, "why": "Screws and car jacks use spiral inclined planes." }
+    ]
+  }
 ];
 
 export function getScienceTopic(id: string): Topic | undefined {

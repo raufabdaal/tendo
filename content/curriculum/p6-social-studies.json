@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Six (P.6)",
+    "subject": "Social Studies",
+    "examBody": "UNEB",
+    "exam": "PLE Foundation",
+    "source": "NCDC Primary Six Curriculum Set One, Social Studies Syllabus, Theme: People and Resources of East Africa",
+    "lastReviewed": "2026-07-05",
+    "notes": "P6 Social Studies strictly focuses on the East African region (Uganda, Kenya, Tanzania, Rwanda, Burundi, South Sudan)."
+  },
+  "themes": [
+    {
+      "id": "sst-east-africa",
+      "name": "People and Resources of East Africa",
+      "topics": [
+        {
+          "id": "p6-location-east-africa",
+          "term": "Term I",
+          "title": "Location of East Africa on the Map of Africa",
+          "periods": 10,
+          "subTopics": [
+            "Position and size of East Africa using latitudes and longitudes",
+            "Neighboring countries and bodies of water surrounding East Africa",
+            "Member states of the East African Community (EAC) and their capital cities",
+            "Landlocked and coastal countries of East Africa"
+          ]
+        },
+        {
+          "id": "p6-physical-features-ea",
+          "term": "Term I",
+          "title": "Physical Features of East Africa",
+          "periods": 14,
+          "subTopics": [
+            "Major physical features: East African Rift Valley, block mountains (Rwenzori) and volcanic peaks (Kilimanjaro, Elgon, Kenya)",
+            "Lakes and rivers of East Africa (Lake Victoria, Tanganyika, River Nile, Tana, Rufiji)",
+            "Formation of the Great Rift Valley and basin lakes",
+            "Importance of physical features to the economy and settlement of East Africa"
+          ]
+        },
+        {
+          "id": "p6-climate-vegetation-ea",
+          "term": "Term I",
+          "title": "Climate and Natural Vegetation of East Africa",
+          "periods": 16,
+          "subTopics": [
+            "Climatic zones of East Africa: Equatorial, Tropical/Savanna, Semi-arid, and Montane zones",
+            "Factors influencing East African climate (altitude, relief, winds, distance from sea)",
+            "Vegetation belts of East Africa (rainforests, savanna grasslands, mountain forests, papyrus/mangrove)",
+            "Conservation of East African forests and wildlife in game parks"
+          ]
+        },
+        {
+          "id": "p6-people-precolonial-ea",
+          "term": "Term II",
+          "title": "The People and Pre-Colonial History of East Africa",
+          "periods": 18,
+          "subTopics": [
+            "Origins and migration routes of Bantu, Nilotes (River-Lake, Plain, Highland), and Cushites into East Africa",
+            "Settlement patterns and traditional governance (kingdoms and chiefdoms e.g., Buganda, Bunyoro, Nyamwezi)",
+            "Long-distance trade in pre-colonial East Africa (Akamba, Nyamwezi, Arab/Swahili coastal civilization)"
+          ]
+        },
+        {
+          "id": "p6-colonization-ea",
+          "term": "Term II",
+          "title": "Foreign Influence and Colonization of East Africa",
+          "periods": 16,
+          "subTopics": [
+            "Scramble and partition of East Africa (Anglo-German agreements 1886/1890)",
+            "Chartered companies (Imperial British East Africa Company IBEAC and German East Africa Company)",
+            "Colonial administration: British protectorate rule in Uganda/Kenya vs German direct rule in Tanganyika",
+            "African resistance and collaboration in East Africa (Chief Mkwawa, Kabalega, Mwanga, Koitalel)"
+          ]
+        },
+        {
+          "id": "p6-independence-eac",
+          "term": "Term III",
+          "title": "Road to Independence and the East African Community",
+          "periods": 20,
+          "subTopics": [
+            "Rise of nationalist movements in East Africa (TANU in Tanzania, KANU in Kenya, UNC/UPC in Uganda)",
+            "Key East African nationalists (Julius Nyerere, Jomo Kenyatta, Milton Obote, Ignatius Musaazi)",
+            "The East African Community (EAC): formation, headquarters in Arusha, organs, benefits, and challenges of regional integration"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,17 @@
 # CHECKLIST — Tendo execution tracker
 
-*Updated: 2026-07-01*
+*Updated: 2026-07-05*
+
+## Primary Six (P6) Expansion
+- [x] Establish P6 Expansion Master Roadmap & Milestones (`docs/spec/p6-expansion-milestones.md`)
+- [x] Milestone 1: P6 NCDC Curriculum specifications (`content/curriculum/p6-*.json`)
+- [x] Milestone 2: Routing architecture & Grade Switcher (`<ClassSelector />`, `/p6-home`, `/[subject]/p6/`)
+- [x] Milestone 3a: P6 Social Studies (*East Africa*) & P6 Integrated Science v3 content library
+- [x] Milestone 3b: P6 Mathematics, English Language, and Religious Education v3 content library
+- [x] Milestone 4: P6 practice question banks & Teacher Dashboard class filtering
+- [x] Milestone 5: P6 Visual Roadmap & textbook illustrations linked to modules
+
+---
 
 ## Immediate milestone — post-push verification + cleanup
 - [x] P7 Social Studies completed enough for current scope
@@ -132,7 +143,74 @@
 - [x] Stale current-doc wording cleaned
 - [x] Four-subject closeout audit created
 - [x] Final build passed
-- [ ] Founder copies/pushes grouped improvement batch
+- [x] Founder copies/pushes grouped improvement batch
+
+---
+
+## Phase 11 — Lesson Structure v2 restructuring
+- [x] Lesson Structure v2 standard documented
+- [x] Topic data model supports optional `note.study` field
+- [x] Read tab renders v2 study flow when available
+- [x] v2 styles added
+- [x] SST pilot topic: Location of Africa
+- [x] SST pilot topic: Climate of Africa
+- [x] SST pilot topic: Economic developments in Africa
+- [x] Build passed after v2 pilot
+- [x] Build passed after full SST v2 conversion
+- [x] Roll v2 across all SST topics
+- [x] Build passed after full Science v2 conversion
+- [x] Roll v2 across Science topics
+- [x] Build passed after full English v2 conversion
+- [x] Roll v2 across English topics
+- [x] Review Maths for targeted v2 upgrades where needed
+- [x] Roll v2 across all Maths topics
+- [ ] Founder pushes grouped restructuring batch
+
+---
+
+## Phase 12 — Pilot readiness
+- [x] Lesson Structure v2 grouped push verified live
+- [x] Stale Maths home-card wording cleaned
+- [x] Post-push verification note created
+- [x] Teacher classroom guide v1 created
+- [x] Pilot checklist v1 created
+- [x] Founder demo script v1 created
+- [x] Teacher feedback loop v1 created
+- [x] Key-word definitions teacher-voice phrasing pass completed
+- [x] Founder copies/pushes pilot readiness cleanup batch
+- [ ] First teacher/school pilot conversation completed
+- [ ] Feedback summarised into product priorities
+
+## Phase 13 — Modular topic architecture (v3)
+- [x] v3 architecture problem and data model documented
+- [x] Modular types added to `app/lib/topics.ts`
+- [x] `TopicTabs.tsx` renders modular directory + module viewer when `subtopics` exists
+- [x] Modular styles added to `app/app/globals.css`
+- [x] First modular topic built: Social Studies → Location of Africa
+- [x] Subtopics mapped directly to NCDC `subTopics` in `content/curriculum/p7-social-studies.json`
+- [x] Module content sourced from NCDC P7 Set One PDF pages 294–296
+- [x] Build passed after modular spike
+- [x] Founder review of modular spike completed
+- [x] Fixed: rigid topic-level sections no longer repeat under every module
+- [x] Fixed: browser back now returns to subtopic list, not main topic page
+- [x] Fixed: modular UI simplified — fewer boxes, more content space
+- [x] Content deepened: 16 modules with fuller teacher-voice explanations
+- [x] NCDC deep extract documented for Location of Africa
+- [x] Content issue reporter + reviewer page added
+- [x] Modular UI overlap fixed
+- [x] Convert Physical Features of Africa to v3
+- [x] Convert Climate of Africa to v3
+- [x] Convert Vegetation of Africa to v3
+- [x] Convert People of Africa, Ethnic Groups and Settlement Patterns to v3
+- [x] Convert Foreign Influence in Africa to v3
+- [x] Convert Nationalism and the Road to Independence to v3
+- [x] Convert Post-Independence Africa to v3
+- [x] Convert Economic Developments in Africa to v3
+- [x] Convert Major World Organisations to v3
+- [x] Roll v3 structure to Mathematics
+- [x] Roll v3 structure to Integrated Science
+- [x] Roll v3 structure to English
+- [ ] Deepen v3 modules across all subjects topic-by-topic
 
 ---
 
@@ -179,13 +257,14 @@
 ---
 
 ## Totals
-- **Published P7 Mathematics topics:** 38
-- **Published P7 Integrated Science topics:** 8
-- **Published P7 Social Studies topics:** 10
-- **Published P7 English topics:** 7
+- **Published P7 Mathematics topics:** 11 official NCDC topics (encapsulating all 38 previous micro-competencies as v3 subtopics)
+- **Published P7 Integrated Science topics:** 8 official NCDC topics
+- **Published P7 Social Studies topics:** 10 official NCDC topics
+- **Published P7 English topics:** 7 official NCDC topics
+- **Published P7 Religious Education topics:** 14 official NCDC topics (7 CRE topics + 7 IRE topics, 100% enriched against requirement specifications)
 - **Visible maths coming-soon backlog:** 0
 - **Latest grouped push completed:** Social Studies + English + shared docs/app support
-- **Current improvement pass:** Four-subject core closeout audit completed
+- **Current improvement pass:** Pilot Readiness Pack v1 created after Lesson Structure v2 push verification
 - **Religious Education:** intentionally paused
 - **Pilot school:** Trainup a Child Uganda
 - **Monthly recurring cost:** UGX 0

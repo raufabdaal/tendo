@@ -8,17 +8,23 @@
 // All questions are auto-verified by Tendo's review process and open to teacher
 // feedback via the Report-a-problem flow.
 
-import type { QuizQuestion } from "./topics";
+import { TOPICS, type QuizQuestion } from "./topics";
 import { SCIENCE_TOPICS } from "./science-topics";
 import { SOCIAL_TOPICS } from "./social-topics";
 import { ENGLISH_TOPICS } from "./english-topics";
+import { CRE_TOPICS, IRE_TOPICS } from "./re-topics";
+import { P6_MATH_TOPICS } from "./p6-math-topics";
+import { P6_SCIENCE_TOPICS } from "./p6-science-topics";
+import { P6_SOCIAL_TOPICS } from "./p6-social-topics";
+import { P6_ENGLISH_TOPICS } from "./p6-english-topics";
+import { P6_RE_TOPICS } from "./p6-re-topics";
 
 export type BankQuestion = QuizQuestion & {
   difficulty: "easy" | "medium" | "hard";
 };
 
-export type SubjectId = "mathematics" | "science" | "social-studies" | "english";
-export type SubjectName = "Mathematics" | "Integrated Science" | "Social Studies" | "English";
+export type SubjectId = "mathematics" | "science" | "social-studies" | "english" | "religious-education";
+export type SubjectName = "Mathematics" | "Integrated Science" | "Social Studies" | "English" | "Religious Education";
 
 export interface TopicBank {
   topicId: string;
@@ -26,10 +32,11 @@ export interface TopicBank {
   themeName: string;
   subjectId: SubjectId;
   subjectName: SubjectName;
+  grade: "P6" | "P7";
   questions: BankQuestion[];
 }
 
-type TopicBankSeed = Omit<TopicBank, "subjectId" | "subjectName">;
+type TopicBankSeed = Omit<TopicBank, "subjectId" | "subjectName" | "grade">;
 
 export const BANK: TopicBankSeed[] = [
   // ────────────────── SETS ──────────────────
@@ -343,17 +350,108 @@ export const BANK: TopicBankSeed[] = [
       { q: "Simple interest is UGX 36,000 on UGX 240,000 over 2 years. Find the rate.", choices: ["30%", "7.5%", "5%", "15%"], correct: 1, why: "Use I = (P × R × T)/100. So 36,000 = (240,000 × R × 2)/100, which gives R = 7.5%.", difficulty: "hard" },
     ],
   },
-];
+  {
+    topicId: "four-basic-operations",
+    topicTitle: "Four basic operations",
+    themeName: "Numeracy",
+    questions: [
+      { q: "Work out: 3,456 + 2,879", choices: ["6,335", "6,345", "5,335", "6,235"], correct: 0, why: "3456 + 2879 = 6,335.", difficulty: "easy" },
+      { q: "Subtract 1,845 from 5,000.", choices: ["3,155", "3,255", "4,155", "3,145"], correct: 0, why: "5000 − 1845 = 3,155.", difficulty: "easy" },
+      { q: "Multiply 342 by 25.", choices: ["8,550", "8,450", "7,550", "8,650"], correct: 0, why: "342 × 25 = 8,550.", difficulty: "medium" },
+      { q: "Divide 7,488 by 24.", choices: ["312", "302", "322", "310"], correct: 0, why: "7488 ÷ 24 = 312.", difficulty: "medium" },
+      { q: "Evaluate: (14 + 16) ÷ 5 × 3", choices: ["18", "6", "30", "10"], correct: 0, why: "(30) ÷ 5 × 3 = 6 × 3 = 18.", difficulty: "medium" },
+      { q: "A factory produces 1,250 exercise books per day. How many books will it produce in 14 days?", choices: ["17,500", "16,500", "18,500", "17,000"], correct: 0, why: "1250 × 14 = 17,500.", difficulty: "medium" },
+      { q: "Share UGX 450,000 equally among 15 teachers. How much does each teacher receive?", choices: ["UGX 30,000", "UGX 35,000", "UGX 25,000", "UGX 45,000"], correct: 0, why: "450,000 ÷ 15 = 30,000.", difficulty: "medium" },
+      { q: "Work out: 8 + 4 × 6 − 10", choices: ["22", "62", "18", "24"], correct: 0, why: "Multiply first: 4 × 6 = 24. Then 8 + 24 − 10 = 32 − 10 = 22.", difficulty: "hard" },
+      { q: "Find the GCF of 36 and 48.", choices: ["12", "6", "24", "144"], correct: 0, why: "Factors of 36 and 48 share highest factor 12.", difficulty: "medium" },
+      { q: "Find the LCM of 15 and 20.", choices: ["60", "30", "120", "45"], correct: 0, why: "Multiples of 15: 15, 30, 45, 60. Multiples of 20: 20, 40, 60. LCM is 60.", difficulty: "medium" },
+      { q: "Express 3,600,000 in standard form.", choices: ["3.6 × 10⁶", "36 × 10⁵", "0.36 × 10⁷", "3.6 × 10⁵"], correct: 0, why: "Move decimal 6 places left: 3.6 × 10⁶.", difficulty: "hard" },
+      { q: "Find the prime factors of 84.", choices: ["2² × 3 × 7", "2³ × 7", "2 × 3² × 7", "4 × 21"], correct: 0, why: "84 = 2 × 42 = 2 × 2 × 21 = 2 × 2 × 3 × 7 = 2² × 3 × 7.", difficulty: "hard" },
+    ],
+  },
+  {
+    topicId: "tests-of-divisibility",
+    topicTitle: "Tests of divisibility",
+    themeName: "Numeracy",
+    questions: [
+      { q: "Which of the following numbers is divisible by 4?", choices: ["316", "214", "418", "522"], correct: 0, why: "A number is divisible by 4 if its last two digits form a number divisible by 4. 16 is divisible by 4.", difficulty: "easy" },
+      { q: "Which digit can replace d so that 45d2 is divisible by 3?", choices: ["1", "0", "2", "3"], correct: 0, why: "Sum of digits = 4 + 5 + d + 2 = 11 + d. If d = 1, sum = 12 (divisible by 3).", difficulty: "medium" },
+      { q: "A number is divisible by 6 if:", choices: ["It is divisible by both 2 and 3", "It is an even number ending in 6", "Its digits sum to 6", "It ends in 3"], correct: 0, why: "6 = 2 × 3, so a number must be even and its digit sum must be a multiple of 3.", difficulty: "easy" },
+      { q: "Which of these numbers is divisible by 11?", choices: ["1,331", "1,231", "1,341", "1,441"], correct: 0, why: "Difference between sum of alternate digits of 1331 = (1+3) − (3+1) = 0 (divisible by 11).", difficulty: "hard" },
+      { q: "Find the 8th term in the sequence: 3, 6, 9, 12...", choices: ["24", "21", "27", "30"], correct: 0, why: "Multiples of 3: 8 × 3 = 24.", difficulty: "easy" },
+      { q: "Find the missing numbers: 1, 3, 6, 10, 15, ___", choices: ["21", "20", "19", "22"], correct: 0, why: "Add +2, +3, +4, +5, +6. 15 + 6 = 21.", difficulty: "medium" },
+      { q: "What is the sum of the first 5 prime numbers?", choices: ["28", "26", "25", "30"], correct: 0, why: "First 5 primes: 2, 3, 5, 7, 11. Sum = 28.", difficulty: "medium" },
+      { q: "Which sequence shows square numbers?", choices: ["1, 4, 9, 16, 25", "2, 4, 6, 8, 10", "1, 3, 6, 10, 15", "2, 3, 5, 7, 11"], correct: 0, why: "1², 2², 3², 4², 5² = 1, 4, 9, 16, 25.", difficulty: "easy" },
+      { q: "If the nth term of a sequence is 2n + 1, find the 10th term.", choices: ["21", "20", "19", "22"], correct: 0, why: "2(10) + 1 = 20 + 1 = 21.", difficulty: "hard" },
+      { q: "Which of these numbers is divisible by 8?", choices: ["1,048", "2,120", "3,128", "4,118"], correct: 2, why: "Last three digits of 3128 form 128, and 128 ÷ 8 = 16.", difficulty: "hard" },
+      { q: "Find the next term: 2, 6, 18, 54, ___", choices: ["162", "108", "154", "216"], correct: 0, why: "Multiply each term by 3. 54 × 3 = 162.", difficulty: "medium" },
+      { q: "Which is a composite number?", choices: ["15", "13", "2", "Both 15 and 13"], correct: 0, why: "15 has factors 1, 3, 5, 15 (composite).", difficulty: "easy" },
+    ],
+  },
+  {
+    topicId: "integers-core",
+    topicTitle: "Integers",
+    themeName: "Numeracy",
+    questions: [
+      { q: "Work out: −12 + +7", choices: ["−5", "+5", "−19", "+19"], correct: 0, why: "−12 + 7 = −5.", difficulty: "easy" },
+      { q: "Work out: +15 − −6", choices: ["+21", "+9", "−9", "−21"], correct: 0, why: "Subtracting negative is adding: 15 + 6 = 21.", difficulty: "easy" },
+      { q: "Multiply: −8 × −5", choices: ["+40", "−40", "+13", "−13"], correct: 0, why: "Negative × negative = positive: +40.", difficulty: "medium" },
+      { q: "Divide: −64 ÷ +8", choices: ["−8", "+8", "−56", "+56"], correct: 0, why: "Negative ÷ positive = negative: −8.", difficulty: "medium" },
+      { q: "Solve in mod 6: 4 + 5 = ___ (mod 6)", choices: ["3 (mod 6)", "2 (mod 6)", "1 (mod 6)", "4 (mod 6)"], correct: 0, why: "4 + 5 = 9. 9 ÷ 6 = 1 remainder 3. So 3 (mod 6).", difficulty: "medium" },
+      { q: "Solve in mod 4: 2 − 5 = ___ (mod 4)", choices: ["1 (mod 4)", "3 (mod 4)", "2 (mod 4)", "0 (mod 4)"], correct: 0, why: "Add multiples of 4 to 2: 2 + 4 = 6. 6 − 5 = 1 (mod 4).", difficulty: "hard" },
+      { q: "A diver is 15 metres below sea level (−15 m). He ascends 8 metres. What is his new position?", choices: ["−7 m", "+7 m", "−23 m", "+23 m"], correct: 0, why: "−15 + 8 = −7 m.", difficulty: "medium" },
+      { q: "Evaluate: −3 + −6 − −4", choices: ["−5", "−13", "+5", "−3"], correct: 0, why: "−3 − 6 + 4 = −9 + 4 = −5.", difficulty: "hard" },
+      { q: "Solve in mod 5: 3 × 4 = ___ (mod 5)", choices: ["2 (mod 5)", "1 (mod 5)", "3 (mod 5)", "4 (mod 5)"], correct: 0, why: "3 × 4 = 12. 12 ÷ 5 = 2 remainder 2. So 2 (mod 5).", difficulty: "hard" },
+      { q: "Which integer is greater: −15 or −8?", choices: ["−8", "−15", "They are equal", "Cannot tell"], correct: 0, why: "On number line, −8 is to the right of −15, so −8 is greater.", difficulty: "easy" },
+      { q: "Find the sum of all integers between −3 and +3.", choices: ["0", "6", "−6", "3"], correct: 0, why: "Integers between are −2, −1, 0, +1, +2. Their sum = 0.", difficulty: "medium" },
+      { q: "If x = −4 and y = +2, evaluate xy − x.", choices: ["−4", "−12", "+4", "−8"], correct: 0, why: "(−4)(2) − (−4) = −8 + 4 = −4.", difficulty: "hard" },
+    ],
+  },
+  {
+    topicId: "parallel-skew-lines",
+    topicTitle: "Construction and geometry",
+    themeName: "Geometry",
+    questions: [
+      { q: "An angle of 180° is called a:", choices: ["Straight angle", "Right angle", "Reflex angle", "Complete turn"], correct: 0, why: "An angle on a straight line equals 180°.", difficulty: "easy" },
+      { q: "If two supplementary angles are in the ratio 2:3, find the smaller angle.", choices: ["72°", "108°", "36°", "54°"], correct: 0, why: "Supplementary sum = 180°. Total parts = 5. Smaller = (2/5) × 180° = 72°.", difficulty: "medium" },
+      { q: "Constructing the perpendicular bisector of a line segment divides it into:", choices: ["Two equal halves at 90°", "Three parts", "Two unequal halves", "Parallel lines"], correct: 0, why: "Perpendicular bisector cuts line into two equal parts at right angles.", difficulty: "easy" },
+      { q: "Find the number of sides of a regular polygon whose exterior angle is 45°.", choices: ["8 sides", "6 sides", "10 sides", "12 sides"], correct: 0, why: "Number of sides n = 360° ÷ exterior angle = 360° ÷ 45° = 8 sides.", difficulty: "medium" },
+      { q: "In a triangle ABC, angle A = 50° and angle B = 60°. Find angle C.", choices: ["70°", "80°", "60°", "110°"], correct: 0, why: "180° − (50° + 60°) = 180° − 110° = 70°.", difficulty: "easy" },
+      { q: "What is the bearing of South-West from North?", choices: ["225°", "135°", "315°", "045°"], correct: 0, why: "South is 180°, plus 45° towards West = 225°.", difficulty: "medium" },
+      { q: "A scale drawing uses 1 cm to represent 4 m. Find the length on paper for an actual length of 28 m.", choices: ["7 cm", "6 cm", "8 cm", "14 cm"], correct: 0, why: "28 ÷ 4 = 7 cm.", difficulty: "medium" },
+      { q: "Vertically opposite angles formed by two intersecting straight lines are always:", choices: ["Equal", "Supplementary", "Complementary", "90°"], correct: 0, why: "Intersecting straight lines form vertically opposite equal angles.", difficulty: "easy" },
+      { q: "How many degrees are in a full circle (complete revolution)?", choices: ["360°", "180°", "90°", "270°"], correct: 0, why: "A complete revolution around a point is 360°.", difficulty: "easy" },
+      { q: "Find the sum of interior angles of a pentagon (5 sides).", choices: ["540°", "360°", "720°", "450°"], correct: 0, why: "(5 − 2) × 180° = 3 × 180° = 540°.", difficulty: "medium" },
+      { q: "Alternate angles (Z-angles) on parallel lines are:", choices: ["Equal", "Supplementary", "Reflex", "Unequal"], correct: 0, why: "Alternate angles between parallel lines are equal.", difficulty: "medium" },
+      { q: "If the bearing of Town B from Town A is 070°, what is the back bearing of Town A from Town B?", choices: ["250°", "110°", "160°", "340°"], correct: 0, why: "Since 070° < 180°, add 180°: 70° + 180° = 250°.", difficulty: "hard" },
+    ],
+  },];
 
 // ─────────────────────────────────────────────────────────────
 // Helpers
 // ─────────────────────────────────────────────────────────────
 
-const MATHS_BANK: TopicBank[] = BANK.map((bank) => ({
-  ...bank,
-  subjectId: "mathematics",
-  subjectName: "Mathematics",
-}));
+const MATHS_BANK: TopicBank[] = [
+  ...TOPICS.map((t) => {
+    const subIds = new Set([t.id, ...(t.subtopics?.map((s) => s.subtopicId) || [])]);
+    const extraQs = BANK.filter((b) => subIds.has(b.topicId)).flatMap((b) => b.questions);
+    return {
+      topicId: t.id,
+      topicTitle: t.title,
+      themeName: t.themeName,
+      subjectId: "mathematics" as const,
+      subjectName: "Mathematics" as const,
+      grade: "P7" as const,
+      questions: [...t.quiz.map((q, idx) => ({ ...q, difficulty: idx < 5 ? "easy" as const : idx < 12 ? "medium" as const : "hard" as const })), ...extraQs],
+    };
+  }),
+  ...BANK.map((bank) => ({
+    ...bank,
+    subjectId: "mathematics" as const,
+    subjectName: "Mathematics" as const,
+    grade: "P7" as const,
+  }))
+];
 
 
 const SCIENCE_EXTRA_QUESTIONS: Record<string, BankQuestion[]> = {
@@ -485,6 +583,7 @@ const SCIENCE_BANK: TopicBank[] = SCIENCE_TOPICS.map((topic) => ({
   themeName: topic.themeName,
   subjectId: "science",
   subjectName: "Integrated Science",
+  grade: "P7" as const,
   questions: [
     ...topic.quiz.map((question, index) => ({
       ...question,
@@ -655,6 +754,7 @@ const SOCIAL_STUDIES_BANK: TopicBank[] = SOCIAL_TOPICS.map((topic) => ({
   themeName: topic.themeName,
   subjectId: "social-studies",
   subjectName: "Social Studies",
+  grade: "P7" as const,
   questions: [
     ...topic.quiz.map((question, index) => ({
       ...question,
@@ -780,6 +880,7 @@ const ENGLISH_BANK: TopicBank[] = ENGLISH_TOPICS.map((topic) => ({
   themeName: topic.themeName,
   subjectId: "english",
   subjectName: "English",
+  grade: "P7" as const,
   questions: [
     ...topic.quiz.map((question, index) => ({
       ...question,
@@ -789,19 +890,123 @@ const ENGLISH_BANK: TopicBank[] = ENGLISH_TOPICS.map((topic) => ({
   ],
 }));
 
-export const ALL_BANKS: TopicBank[] = [...MATHS_BANK, ...SCIENCE_BANK, ...SOCIAL_STUDIES_BANK, ...ENGLISH_BANK];
+const CRE_BANK: TopicBank[] = CRE_TOPICS.map((topic) => ({
+  topicId: topic.id,
+  topicTitle: topic.title,
+  themeName: topic.themeName,
+  subjectId: "religious-education" as const,
+  subjectName: "Religious Education" as const,
+  grade: "P7" as const,
+  questions: topic.quiz.map((question, index) => ({
+    ...question,
+    difficulty: (index < 3 ? "easy" : index < 6 ? "medium" : "hard") as BankQuestion["difficulty"],
+  })),
+}));
+
+const IRE_BANK: TopicBank[] = IRE_TOPICS.map((topic) => ({
+  topicId: topic.id,
+  topicTitle: topic.title,
+  themeName: topic.themeName,
+  subjectId: "religious-education" as const,
+  subjectName: "Religious Education" as const,
+  grade: "P7" as const,
+  questions: topic.quiz.map((question, index) => ({
+    ...question,
+    difficulty: (index < 3 ? "easy" : index < 6 ? "medium" : "hard") as BankQuestion["difficulty"],
+  })),
+}));
+
+const P6_MATHS_BANK: TopicBank[] = P6_MATH_TOPICS.map((topic) => ({
+  topicId: topic.id,
+  topicTitle: topic.title,
+  themeName: topic.themeName,
+  subjectId: "mathematics" as const,
+  subjectName: "Mathematics" as const,
+  grade: "P6" as const,
+  questions: topic.quiz.map((question, index) => ({
+    ...question,
+    difficulty: (index < 3 ? "easy" : index < 6 ? "medium" : "hard") as BankQuestion["difficulty"],
+  })),
+}));
+
+const P6_SCIENCE_BANK: TopicBank[] = P6_SCIENCE_TOPICS.map((topic) => ({
+  topicId: topic.id,
+  topicTitle: topic.title,
+  themeName: topic.themeName,
+  subjectId: "science" as const,
+  subjectName: "Integrated Science" as const,
+  grade: "P6" as const,
+  questions: topic.quiz.map((question, index) => ({
+    ...question,
+    difficulty: (index < 3 ? "easy" : index < 6 ? "medium" : "hard") as BankQuestion["difficulty"],
+  })),
+}));
+
+const P6_SOCIAL_STUDIES_BANK: TopicBank[] = P6_SOCIAL_TOPICS.map((topic) => ({
+  topicId: topic.id,
+  topicTitle: topic.title,
+  themeName: topic.themeName,
+  subjectId: "social-studies" as const,
+  subjectName: "Social Studies" as const,
+  grade: "P6" as const,
+  questions: topic.quiz.map((question, index) => ({
+    ...question,
+    difficulty: (index < 3 ? "easy" : index < 6 ? "medium" : "hard") as BankQuestion["difficulty"],
+  })),
+}));
+
+const P6_ENGLISH_BANK: TopicBank[] = P6_ENGLISH_TOPICS.map((topic) => ({
+  topicId: topic.id,
+  topicTitle: topic.title,
+  themeName: topic.themeName,
+  subjectId: "english" as const,
+  subjectName: "English" as const,
+  grade: "P6" as const,
+  questions: topic.quiz.map((question, index) => ({
+    ...question,
+    difficulty: (index < 3 ? "easy" : index < 6 ? "medium" : "hard") as BankQuestion["difficulty"],
+  })),
+}));
+
+const P6_RE_BANK: TopicBank[] = P6_RE_TOPICS.map((topic) => ({
+  topicId: topic.id,
+  topicTitle: topic.title,
+  themeName: topic.themeName,
+  subjectId: "religious-education" as const,
+  subjectName: "Religious Education" as const,
+  grade: "P6" as const,
+  questions: topic.quiz.map((question, index) => ({
+    ...question,
+    difficulty: (index < 3 ? "easy" : index < 6 ? "medium" : "hard") as BankQuestion["difficulty"],
+  })),
+}));
+
+export const ALL_BANKS: TopicBank[] = [
+  ...MATHS_BANK,
+  ...SCIENCE_BANK,
+  ...SOCIAL_STUDIES_BANK,
+  ...ENGLISH_BANK,
+  ...CRE_BANK,
+  ...IRE_BANK,
+  ...P6_MATHS_BANK,
+  ...P6_SCIENCE_BANK,
+  ...P6_SOCIAL_STUDIES_BANK,
+  ...P6_ENGLISH_BANK,
+  ...P6_RE_BANK,
+];
 
 export function getBank(topicId: string): TopicBank | undefined {
   return ALL_BANKS.find((b) => b.topicId === topicId);
 }
 
-export function listBankTopics(): Array<{ topicId: string; topicTitle: string; themeName: string; subjectId: SubjectId; subjectName: SubjectName; count: number }> {
+export function listBankTopics(): Array<{ topicId: string; topicTitle: string; themeName: string; subjectId: SubjectId; subjectName: SubjectName; grade: "P6" | "P7"; count: number }> {
   return ALL_BANKS.map((b) => ({
     topicId: b.topicId,
     topicTitle: b.topicTitle,
     themeName: b.themeName,
     subjectId: b.subjectId,
     subjectName: b.subjectName,
+    grade: b.grade,
     count: b.questions.length,
   }));
 }
@@ -824,13 +1029,13 @@ export function sampleFromTopic(topicId: string, n: number): BankQuestion[] {
 }
 
 /** Sample N questions across multiple topics, mixed and randomised. */
-export function sampleAcrossTopics(topicIds: string[], n: number): Array<BankQuestion & { topicTitle: string; topicId: string; subjectName: SubjectName }> {
-  const pool: Array<BankQuestion & { topicTitle: string; topicId: string; subjectName: SubjectName }> = [];
+export function sampleAcrossTopics(topicIds: string[], n: number): Array<BankQuestion & { topicTitle: string; topicId: string; subjectName: SubjectName; grade: "P6" | "P7" }> {
+  const pool: Array<BankQuestion & { topicTitle: string; topicId: string; subjectName: SubjectName; grade: "P6" | "P7" }> = [];
   for (const tid of topicIds) {
     const b = getBank(tid);
     if (!b) continue;
     for (const q of b.questions) {
-      pool.push({ ...q, topicId: b.topicId, topicTitle: b.topicTitle, subjectName: b.subjectName });
+      pool.push({ ...q, topicId: b.topicId, topicTitle: b.topicTitle, subjectName: b.subjectName, grade: b.grade });
     }
   }
   return shuffle(pool).slice(0, Math.min(n, pool.length));

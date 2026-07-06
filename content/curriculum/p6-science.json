@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Six (P.6)",
+    "subject": "Integrated Science",
+    "examBody": "UNEB",
+    "exam": "PLE Foundation",
+    "source": "NCDC Primary Six Curriculum Set One, Integrated Science Syllabus",
+    "lastReviewed": "2026-07-05"
+  },
+  "themes": [
+    {
+      "id": "p6-science-living-things",
+      "name": "Diversity of Living Things and Anatomy",
+      "topics": [
+        {
+          "id": "p6-classification-living-things",
+          "term": "Term I",
+          "title": "Classification of Living Things",
+          "periods": 18,
+          "subTopics": [
+            "Classification of animals: Vertebrates (mammals, birds, reptiles, amphibians, fish) vs Invertebrates (arthropods, worms, molluscs)",
+            "Classification of plants: Flowering plants (monocots vs dicots) vs Non-flowering plants (ferns, mosses, conifers, fungi)",
+            "Characteristics and adaptations of living organisms"
+          ]
+        },
+        {
+          "id": "p6-sound-energy",
+          "term": "Term I",
+          "title": "Sound Energy and the Human Ear",
+          "periods": 16,
+          "subTopics": [
+            "Production of sound by vibration and transmission through solids, liquids, and gases",
+            "Pitch, volume, frequency, and echo reflection",
+            "Structure and working of the human ear (outer ear, eardrum, middle ear ossicles, inner ear cochlea)",
+            "Care of the human ear and deafness prevention"
+          ]
+        },
+        {
+          "id": "p6-circulatory-system",
+          "term": "Term II",
+          "title": "The Human Circulatory System",
+          "periods": 18,
+          "subTopics": [
+            "Structure and working of the human heart (4 chambers, valves, pumping mechanism)",
+            "Blood vessels: comparing arteries, veins, and capillaries",
+            "Components and functions of blood (plasma, red blood cells, white blood cells, platelets)",
+            "Blood circulation pathway and circulatory system disorders (hypertension, anaemia, malaria impact)"
+          ]
+        },
+        {
+          "id": "p6-respiratory-system",
+          "term": "Term II",
+          "title": "The Human Respiratory System",
+          "periods": 14,
+          "subTopics": [
+            "Organs of breathing: nose, trachea, bronchi, lungs, alveoli, and diaphragm",
+            "Mechanism of inhalation and exhalation (gas exchange in alveoli)",
+            "Respiratory diseases and hygiene (tuberculosis TB, pneumonia, asthma, dangers of tobacco smoking)"
+          ]
+        },
+        {
+          "id": "p6-livestock-keeping",
+          "term": "Term III",
+          "title": "Cattle and Poultry Keeping",
+          "periods": 20,
+          "subTopics": [
+            "Breeds of cattle (local/indigenous vs exotic dairy and beef breeds) and management systems",
+            "Poultry keeping: types of chickens, housing (deep litter vs battery cage), feeding, and egg production",
+            "Livestock parasites and common diseases (ticks, tsetse flies, East Coast Fever, Newcastle disease, coccidiosis)"
+          ]
+        }
+      ]
+    }
+  ]
+}

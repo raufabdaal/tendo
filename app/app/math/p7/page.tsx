@@ -1,66 +1,41 @@
 import Link from "next/link";
 import ProgressBadge from "@/components/ProgressBadge";
-import { hasTopicDiagram } from "@/components/TopicDiagram";
+import { getTopicVisualPill } from "@/lib/topics";
 import { TOPICS, COMING_SOON } from "@/lib/topics";
 
 const THEME_ORDER = [
   "Sets",
-  "Numeracy · Whole Numbers",
-  "Numeracy · Operations",
-  "Numeracy · Fractions",
-  "Numeracy · Integers",
-  "Numeracy · Patterns",
-  "Algebra",
+  "Numeracy",
   "Interpretation of Graphs and Data",
+  "Geometry",
   "Measurement",
-  "Measurement · Time",
-  "Measurement · Money",
-  "Geometry · Construction",
+  "Algebra",
 ] as const;
 
 const THEME_META: Record<string, { description: string; start?: string }> = {
   "Sets": {
-    description: "Groups, Venn diagrams, subsets and probability language.",
-    start: "Start with Venn diagrams",
+    description: "Set concepts, subsets, Venn diagrams and probability.",
+    start: "Foundation strand",
   },
-  "Numeracy · Whole Numbers": {
-    description: "Large numbers, place value, Roman numerals, prime factors and bases.",
-    start: "Start with large numbers",
-  },
-  "Numeracy · Operations": {
-    description: "Core calculation skills used across the whole maths syllabus.",
-    start: "Start here if basics feel weak",
-  },
-  "Numeracy · Fractions": {
-    description: "Fractions, decimals, percentages and proportion work.",
-    start: "Start with fractions",
-  },
-  "Numeracy · Integers": {
-    description: "Positive numbers, negative numbers, zero and number-line reasoning.",
-  },
-  "Numeracy · Patterns": {
-    description: "Divisibility tests and number patterns for faster reasoning.",
-  },
-  "Algebra": {
-    description: "Expressions, substitution, equations, inequalities and word statements.",
-    start: "Start with expressions",
+  "Numeracy": {
+    description: "Whole numbers, operations, sequences, fractions, decimals, percentages and integers.",
+    start: "Core numeracy skills",
   },
   "Interpretation of Graphs and Data": {
-    description: "Averages, charts, travel graphs and coordinates.",
-    start: "Visual strand",
+    description: "Data handling, pie charts, coordinates, travel graphs and averages.",
+    start: "Visual data strand",
+  },
+  "Geometry": {
+    description: "Angles, lines, simple and regular polygons, construction, bearings and scale drawing.",
+    start: "Geometry and construction",
   },
   "Measurement": {
-    description: "Length, mass, capacity, perimeter, area and volume.",
+    description: "Time, length, perimeter, area, volume, capacity, mass and money reasoning.",
+    start: "Practical measurement",
   },
-  "Measurement · Time": {
-    description: "Clock conversion, elapsed time and timetable reasoning.",
-  },
-  "Measurement · Money": {
-    description: "Profit, loss, discount, interest and everyday money problems.",
-  },
-  "Geometry · Construction": {
-    description: "Angles, polygons, lines, bearings and scale drawing.",
-    start: "Visual strand",
+  "Algebra": {
+    description: "Expressions, substitution, linear equations, inequalities and real-life word statements.",
+    start: "Algebraic problem solving",
   },
 };
 
@@ -80,7 +55,7 @@ export default function TopicListPage() {
   const publishedCount = TOPICS.length;
   const comingSoonCount = COMING_SOON.length;
   const totalCount = publishedCount + comingSoonCount;
-  const visualTopicCount = TOPICS.filter((topic) => hasTopicDiagram(topic.id)).length;
+  const visualTopicCount = TOPICS.filter((topic) => Boolean(getTopicVisualPill(topic))).length;
 
   const groups = new Map<string, typeof TOPICS>();
   for (const t of TOPICS) {
@@ -133,7 +108,7 @@ export default function TopicListPage() {
 
       {orderedGroups.map(([theme, topics]) => {
         const meta = THEME_META[theme];
-        const visualCount = topics.filter((topic) => hasTopicDiagram(topic.id)).length;
+        const visualCount = topics.filter((topic) => Boolean(getTopicVisualPill(topic))).length;
 
         return (
           <section key={theme} id={slugify(theme)} className="theme-group strand-section">
@@ -156,7 +131,7 @@ export default function TopicListPage() {
                     <div>
                       <div className="card-title">{t.title}</div>
                       <div className="card-sub">About {t.estMinutes} minutes · {t.quiz.length} questions</div>
-                      {hasTopicDiagram(t.id) && <div className="visual-cue">Includes diagram</div>}
+                      {getTopicVisualPill(t) && <div className="visual-cue">{getTopicVisualPill(t)}</div>}
                     </div>
                     <ProgressBadge topicId={t.id} />
                   </div>
