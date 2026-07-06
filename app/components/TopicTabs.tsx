@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { Topic, TopicVisual } from "@/lib/topics";
 import TopicDiagram from "@/components/TopicDiagram";
 import ReportContentIssue from "@/components/ReportContentIssue";
@@ -31,6 +31,26 @@ export default function TopicTabs({ topic }: { topic: Topic }) {
   const [paused, setPaused] = useState(false);
   const [selectedSubtopicId, setSelectedSubtopicId] = useState<string | null>(null);
   const [activeModuleIndex, setActiveModuleIndex] = useState(0);
+  const [selectedVideoUrl, setSelectedVideoUrl] = useState<string | null>(null);
+
+  const availableVideos = useMemo(() => {
+    const list: Array<{ title: string; url: string }> = [];
+    if (topic.videoUrl) {
+      list.push({ title: `${topic.title} (Topic Overview)`, url: topic.videoUrl });
+    }
+    if (topic.subtopics) {
+      for (const sub of topic.subtopics) {
+        for (const mod of sub.modules) {
+          if (mod.videoUrl && !list.some((v) => v.url === mod.videoUrl)) {
+            list.push({ title: `${sub.title}: ${mod.title}`, url: mod.videoUrl });
+          }
+        }
+      }
+    }
+    return list;
+  }, [topic]);
+
+  const currentWatchUrl = selectedVideoUrl || availableVideos[0]?.url || topic.videoUrl || null;
 
   // Sync modular selection with URL hash so browser back/forward works inside the topic.
   useEffect(() => {
@@ -95,7 +115,7 @@ export default function TopicTabs({ topic }: { topic: Topic }) {
           className={"tab" + (tab === "watch" ? " active" : "")}
           onClick={() => { setTab("watch"); stopSpeech(); }}
         >
-          ▶ Watch {topic.videoUrl ? null : <span className="tab-pill">soon</span>}
+          ▶ Watch {currentWatchUrl ? null : <span className="tab-pill">soon</span>}
         </button>
         <button
           role="tab"
@@ -109,14 +129,37 @@ export default function TopicTabs({ topic }: { topic: Topic }) {
 
       {tab === "watch" && (
         <div className="watch-panel">
-          {topic.videoUrl ? (
-            <div className="video-wrapper">
-              <iframe
-                src={toEmbedUrl(topic.videoUrl)}
-                title={`Video: ${topic.title}`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
+          {currentWatchUrl ? (
+            <div>
+              <div className="video-wrapper">
+                <iframe
+                  src={toEmbedUrl(currentWatchUrl)}
+                  title={`Video: ${topic.title}`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+              {availableVideos.length > 1 && (
+                <div style={{ marginTop: 16, padding: "14px 16px", background: "var(--surface-sunken, #f8fafc)", borderRadius: 12, border: "1px solid var(--border-light, #e2e8f0)" }}>
+                  <strong style={{ display: "block", marginBottom: 10, fontSize: 14, color: "var(--text-main)" }}>🎬 Video Lessons for this Topic:</strong>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+                    {availableVideos.map((vid, idx) => {
+                      const isSelected = vid.url === currentWatchUrl;
+                      return (
+                        <button
+                          key={idx}
+                          type="button"
+                          className={"btn " + (isSelected ? "btn-primary" : "btn-secondary")}
+                          style={{ fontSize: 13, padding: "6px 12px", borderRadius: 8 }}
+                          onClick={() => setSelectedVideoUrl(vid.url)}
+                        >
+                          {vid.title}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
             </div>
           ) : (
             <div className="watch-empty">
@@ -388,6 +431,20 @@ function ModularTopicView({
       <article className="modular-module">
         <h3 className="modular-module-title">{module.title}</h3>
         <p className="modular-big-idea">{module.bigIdea}</p>
+
+        {module.videoUrl && (
+          <div className="module-video-card" style={{ margin: "16px 0 24px", background: "var(--surface-sunken, #f8fafc)", padding: 12, borderRadius: 12, border: "1px solid var(--border-light, #e2e8f0)" }}>
+            <div style={{ marginBottom: 8, fontSize: 13, fontWeight: 600, color: "var(--text-main)" }}>🎬 Video Explainer: {module.title}</div>
+            <div className="video-wrapper">
+              <iframe
+                src={toEmbedUrl(module.videoUrl)}
+                title={`Video lesson: ${module.title}`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        )}
 
         {module.imageUrl && (
           <div className="module-image-card">

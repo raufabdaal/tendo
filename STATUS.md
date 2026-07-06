@@ -15,7 +15,11 @@ With P7 completed and verified, Tendo expanded to Primary Six (P6) per `docs/spe
 - Milestone 4: P6 practice banks and dashboard/worksheet class filtering (`P6` vs `P7`) — **COMPLETED**
 - Milestone 5: P6 visual roadmap and textbook illustrations — **COMPLETED (All P6 topics linked to verified visual assets)**
 
-**Recent P6 Expansion Achievements (Milestones 3b, 4 & Deep Content Overhaul):**
+**Recent P6 & P7 Video Integration & Modular Video Player Upgrades:**
+- Integrated all 12 founder-provided YouTube video lessons across P7 Mathematics (`topics.ts`) and P6 Mathematics (`p6-math-topics.ts`).
+- Upgraded `TopicTabs.tsx` to support `videoUrl` on both the main topic and individual subtopic modules (`SubtopicModule`).
+- When studying a module inside the Read tab, learners can watch the embedded video lesson directly above the study notes.
+- When inside the Watch tab, if a topic contains multiple video lessons across its modules, an interactive video lesson switcher/playlist appears below the video player.
 - Authored deep Lesson Structure v3 topic data libraries across all 5 official P6 subjects: Social Studies (6 regional East Africa topics), Integrated Science (5 biological/physical topics), Mathematics (6 topics), English Language (5 functional grammar topics), and Religious Education (6 dual CRE/IRE topics).
 - Performed an exhaustive content overhaul across all P6 subjects: every subtopic specified in `content/curriculum/p6-*.json` is now fully represented as a modular subtopic with paginated `Module` steps containing `bigIdea`, exhaustive multi-paragraph `learnIt` in Ugandan teacher voice, numerical/analytical `workedExample`, multiple-choice `tryThis` checks, and relevant educational diagram/image links (`/images/social-studies/...`, `/images/science/...`, etc.).
 - Seeded central practice banks (`P6_MATHS_BANK`, `P6_ENGLISH_BANK`, `P6_SCIENCE_BANK`, `P6_SOCIAL_STUDIES_BANK`, `P6_RE_BANK`) in `app/lib/question-bank.ts`.

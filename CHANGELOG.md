@@ -2,6 +2,19 @@
 
 > Newest at the top. Dated, append-only. This file records what happened; `STATUS.md` explains where the project stands now.
 
+## v1.6.0 — 2026-07-06 — Integrate 12 Founder-Provided Mathematics Video Explainer Lessons & Build Interactive Playlist Player
+
+**Session theme:** Seamlessly integrate 12 founder-provided YouTube video explainer lessons into exact matching subtopics and modules across Primary Seven (P7 PLE) and Primary Six (P6) Mathematics, and upgrade the video viewing architecture.
+
+**Changed:**
+- `app/lib/topics.ts` — Added `videoUrl?: string` to `SubtopicModule` interface. Embedded founder video URLs into P7 Mathematics: `set-concepts` (`youtu.be/BAUouvIwPZQ`, `youtu.be/CMHmvvz8uJE`, `youtu.be/DMH70G_NjqA`), `whole-numbers` (`youtu.be/86ge44f5IYM`, `youtu.be/rGRPJKTClYg`, `youtu.be/pEfYJgoe_2o`), `operations-on-whole-numbers` (`youtu.be/TQu3yIGHA-4`, `youtu.be/Nx4h4j4jkCc`), `patterns-and-sequences` (`youtu.be/SVG2Y4U1MTk`, `youtu.be/MUBvjysD3VI`), and `fractions` (`youtu.be/HuitLoh1Q9g`, `youtu.be/YZNXTXfemQE`).
+- `app/lib/p6-math-topics.ts` — Embedded matching video URLs across P6 Mathematics topics and modules (`p6-sets`, `p6-whole-numbers`, `p6-operations`, `p6-fractions-decimals`).
+- `app/components/TopicTabs.tsx` — Upgraded the Watch tab to collect all video lessons available across a topic and its subtopics, displaying an interactive video lesson switcher/playlist below the iframe. Upgraded `ModularTopicView` so learners studying a module in the Read tab can watch that module's video embedded directly above the study notes.
+- Root docs updated: `STATUS.md`, `CHECKLIST.md`, `HANDOFF.md`, `CHANGELOG.md`.
+
+**Verified locally:**
+- Production build passed cleanly with `✓ Generating static pages (185/185)`.
+
 ## v1.5.0 — 2026-07-05 — Execute Primary Six (P6) Deep Content Overhaul & Visual Roadmap Integration across All 5 Subjects
 
 **Session theme:** Conduct a deep textbook-grade content overhaul of Primary Six (P6) across Social Studies and Integrated Science, linking verified educational textbook diagrams (`/images/...`) to modules across all five P6 subjects strictly adhering to NCDC Set One specifications.

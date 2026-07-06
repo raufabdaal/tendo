@@ -30,6 +30,12 @@ The platform is a child-friendly study app for upper-primary learners in Uganda 
 
 ## What this session changed
 
+**Mathematics Video Explainer Integration & Modular Video Player Upgrades:**
+- Embedded all 12 founder-provided YouTube explainer videos into exact matching subtopics and modules across Primary Seven Mathematics (`app/lib/topics.ts`) and Primary Six Mathematics (`app/lib/p6-math-topics.ts`).
+- Upgraded `TopicTabs.tsx` to support `videoUrl` on both the main topic and individual subtopic modules (`SubtopicModule`).
+- When inside the Watch tab, if a topic contains multiple video lessons across its modules, an interactive video playlist switcher lets learners toggle between videos.
+- When reading a module inside the Read tab, if that module has a `videoUrl`, learners can watch the video embedded directly above the study notes.
+
 **Primary Six (P6) Expansion Complete (Exhaustive Lesson Structure v3 & Visual Overhaul):**
 - Performed a deep overhaul across all 5 Primary Six subjects: Social Studies (`app/lib/p6-social-topics.ts`), Integrated Science (`app/lib/p6-science-topics.ts`), Mathematics (`app/lib/p6-math-topics.ts`), English Language (`app/lib/p6-english-topics.ts`), and Religious Education (`app/lib/p6-re-topics.ts`).
 - Every single subtopic specified in `content/curriculum/p6-*.json` is now explicitly structured as a multi-module subtopic complete with paginated `Module` steps, Ugandan teacher voice explanations, numerical/analytical `workedExample`, multiple-choice `tryThis` checks, and relevant visual asset integrations (`/images/...`).

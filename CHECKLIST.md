@@ -10,6 +10,7 @@
 - [x] Milestone 3b: P6 Mathematics, English Language, and Religious Education v3 content library
 - [x] Milestone 4: P6 practice question banks & Teacher Dashboard class filtering
 - [x] Milestone 5: P6 Visual Roadmap & textbook illustrations linked to modules
+- [x] Integrate 12 founder-provided YouTube video explainer lessons across P7 & P6 Mathematics modular libraries and build interactive video playlist switcher (`TopicTabs.tsx`)
 
 ---
 
