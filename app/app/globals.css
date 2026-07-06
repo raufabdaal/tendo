@@ -3321,3 +3321,236 @@ input, select, textarea, button { max-width: 100%; }
   .bottom-nav a span { font-size: 22px; }
   .teacher-menu-button { width: 42px; height: 40px; }
 }
+
+/* ============================================
+   Declutter pass: compact page intros, grade-safe student UI,
+   and more polished subject cards.
+   ============================================ */
+.student-class-pill {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--charcoal-soft);
+  padding: 7px 11px;
+  font-size: 13px;
+  font-weight: 950;
+  white-space: nowrap;
+  box-shadow: var(--shadow-soft);
+}
+
+.focused-study-page,
+.focused-practice-page,
+.focused-papers-page {
+  gap: 16px;
+}
+.compact-page-intro {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(255,255,255,.95), rgba(255,240,214,.78));
+  box-shadow: var(--shadow-soft);
+  padding: 18px 20px;
+}
+.compact-page-intro::after {
+  content: "";
+  position: absolute;
+  right: -48px;
+  top: -62px;
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background: rgba(255,200,87,.26);
+}
+.compact-page-intro::before {
+  content: "";
+  position: absolute;
+  left: -48px;
+  bottom: -70px;
+  width: 150px;
+  height: 150px;
+  border-radius: 42% 58% 70% 30% / 48% 35% 65% 52%;
+  background: rgba(190,86,54,.08);
+}
+.compact-page-intro > * { position: relative; z-index: 1; }
+.compact-page-intro h1 {
+  margin: 0 0 6px;
+  font-size: clamp(30px, 4vw, 44px);
+}
+.compact-page-intro .lead {
+  margin: 0;
+  font-size: 16px;
+  max-width: 620px;
+}
+.compact-page-intro > span {
+  width: 74px;
+  height: 74px;
+  flex: 0 0 74px;
+  display: grid;
+  place-items: center;
+  border-radius: 24px;
+  background: rgba(255,255,255,.84);
+  box-shadow: var(--shadow-soft);
+  font-size: 40px;
+}
+.teacher-content-intro,
+.practice-intro-card { background: linear-gradient(135deg, rgba(255,255,255,.95), rgba(234,240,255,.86)); }
+.papers-intro-card { background: linear-gradient(135deg, rgba(255,255,255,.95), rgba(241,236,255,.86)); }
+
+.teacher-library-section {
+  display: grid;
+  gap: 12px;
+}
+.polished-subject-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+.polished-subject {
+  isolation: isolate;
+  min-height: 190px;
+  border-radius: 26px;
+  padding: 18px;
+  background:
+    radial-gradient(circle at top right, color-mix(in srgb, var(--tile-accent, var(--terracotta)) 14%, transparent) 0, transparent 42%),
+    #fff;
+  border: 1px solid color-mix(in srgb, var(--tile-accent, var(--terracotta)) 20%, var(--border));
+}
+.polished-subject::before {
+  height: 8px;
+  background: linear-gradient(90deg, var(--tile-accent, var(--terracotta)), color-mix(in srgb, var(--tile-accent, var(--terracotta)) 55%, #ffc857));
+}
+.polished-subject::after {
+  content: "→";
+  position: absolute;
+  right: 16px;
+  bottom: 15px;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: color-mix(in srgb, var(--tile-accent, var(--terracotta)) 13%, white);
+  color: var(--tile-accent, var(--terracotta));
+  font-weight: 950;
+  transition: transform .16s ease;
+}
+.polished-subject:hover::after { transform: translateX(3px); }
+.polished-subject .subject-emoji {
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--tile-accent, var(--terracotta)) 16%, white);
+}
+.polished-subject h3 {
+  font-size: 20px;
+  line-height: 1.05;
+}
+.polished-subject p {
+  font-size: 13.5px;
+  padding-right: 18px;
+}
+.polished-subject .tile-pills {
+  padding-right: 42px;
+}
+.polished-subject .tile-pills span:first-child {
+  background: color-mix(in srgb, var(--tile-accent, var(--terracotta)) 10%, white);
+  color: color-mix(in srgb, var(--tile-accent, var(--terracotta)) 75%, var(--charcoal));
+  border-color: color-mix(in srgb, var(--tile-accent, var(--terracotta)) 20%, var(--border));
+}
+
+.polished-practice-grid,
+.polished-paper-grid {
+  margin-top: 0;
+}
+.polished-paper-card {
+  background:
+    radial-gradient(circle at top right, rgba(118,84,185,.10) 0, transparent 42%),
+    #fff;
+}
+.compact-disabled-card {
+  box-shadow: none;
+  background: rgba(255,255,255,.62);
+}
+
+/* Homepage should feel like a home, not a directory */
+.simple-home .home-hero {
+  min-height: 0;
+  padding: 24px;
+}
+.simple-home .hero-progress-card {
+  min-height: 0;
+}
+.simple-home .learner-mini-card:nth-of-type(n+3) {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  .polished-subject-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 720px) {
+  .compact-page-intro {
+    align-items: flex-start;
+    border-radius: 22px;
+    padding: 16px;
+  }
+  .compact-page-intro > span {
+    width: 54px;
+    height: 54px;
+    flex-basis: 54px;
+    border-radius: 18px;
+    font-size: 30px;
+  }
+  .compact-page-intro h1 {
+    font-size: 32px;
+  }
+  .compact-page-intro .lead {
+    font-size: 15px;
+  }
+  .polished-subject-grid { grid-template-columns: 1fr; gap: 10px; }
+  .polished-subject {
+    min-height: 0;
+    grid-template-columns: auto 1fr;
+    display: grid;
+    align-items: center;
+    column-gap: 13px;
+    padding: 15px;
+  }
+  .polished-subject .subject-emoji {
+    grid-row: span 2;
+  }
+  .polished-subject h3 { margin: 0 38px 4px 0; }
+  .polished-subject p { padding-right: 30px; }
+  .polished-subject .tile-pills {
+    grid-column: 2;
+    margin-top: 2px;
+  }
+  .student-class-pill {
+    min-height: 34px;
+    padding: 6px 9px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 390px) {
+  .compact-page-intro {
+    padding: 14px;
+    gap: 10px;
+  }
+  .compact-page-intro > span {
+    width: 46px;
+    height: 46px;
+    flex-basis: 46px;
+    border-radius: 16px;
+    font-size: 25px;
+  }
+  .compact-page-intro h1 { font-size: 29px; }
+  .student-class-pill { display: none; }
+  .polished-subject h3 { font-size: 18px; }
+  .polished-subject p { font-size: 13px; }
+}

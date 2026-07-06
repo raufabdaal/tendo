@@ -34,6 +34,21 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
 
     if (session.role === "student" && pathname.startsWith("/teacher")) {
       router.replace(session.grade === "P6" ? "/p6-home" : "/");
+      return;
+    }
+
+    if (session.role === "student") {
+      const isP6Path = pathname === "/p6-home" || pathname.includes("/p6");
+      const isP7SubjectPath = /^\/(math|english|science|social-studies|re)\/p7/.test(pathname);
+
+      if (session.grade === "P7" && isP6Path) {
+        router.replace("/");
+        return;
+      }
+
+      if (session.grade === "P6" && (pathname === "/" || isP7SubjectPath)) {
+        router.replace("/p6-home");
+      }
     }
   }, [hydrated, pathname, router, session]);
 

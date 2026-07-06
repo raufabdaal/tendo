@@ -155,10 +155,7 @@ export default function AppNav({
         </nav>
 
         <div className="account-tools">
-          <div className="grade-switch" aria-label="Class switcher">
-            <Link href="/p6-home" className={grade === "P6" ? "on" : undefined}>P6</Link>
-            <Link href="/" className={grade === "P7" ? "on" : undefined}>P7</Link>
-          </div>
+          <span className="student-class-pill">🎓 {grade}</span>
           <button type="button" className="sign-out-btn" onClick={onSignOut}>
             Switch
           </button>
