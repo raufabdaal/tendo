@@ -3068,3 +3068,256 @@ h3 { letter-spacing: -.02em; }
   .bottom-nav a small { font-size: 10px; }
   .sign-out-btn { font-size: 12px; }
 }
+
+/* ============================================
+   Teacher hamburger nav + small-phone responsiveness pass
+   ============================================ */
+html, body { max-width: 100%; overflow-x: hidden; }
+.app-main, .app-main > *, .home-page, .study-page, .practice-home, .papers-page, .teacher-page-shell,
+.home-hero, .study-hero, .teacher-hero, .hero-copy, .hero-progress-card,
+.subject-tile, .quick-action-card, .today-card, .practice-choice, .paper-card,
+.teacher-dashboard-panel, .teacher-content-library, .worksheet, .generator-form {
+  min-width: 0;
+}
+img, svg, video, iframe { max-width: 100%; }
+input, select, textarea, button { max-width: 100%; }
+
+.teacher-shell {
+  position: sticky;
+  top: 0;
+  z-index: 70;
+  background: rgba(255,249,239,.94);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(234,223,205,.9);
+}
+.teacher-topbar {
+  flex-wrap: nowrap;
+}
+.teacher-menu-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+.teacher-menu-button {
+  width: 46px;
+  height: 42px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: #fff;
+  display: inline-grid;
+  place-items: center;
+  gap: 4px;
+  padding: 9px 10px;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+}
+.teacher-menu-button span {
+  display: block;
+  width: 20px;
+  height: 2.5px;
+  border-radius: 999px;
+  background: var(--charcoal);
+}
+.teacher-menu-button[aria-expanded="true"] {
+  background: var(--indigo);
+  border-color: var(--indigo);
+}
+.teacher-menu-button[aria-expanded="true"] span { background: #fff; }
+.teacher-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 71;
+  background: rgba(31,27,23,.18);
+  cursor: default;
+}
+.teacher-menu-popover {
+  position: fixed;
+  z-index: 72;
+  top: 72px;
+  right: max(18px, calc((100vw - 1160px) / 2 + 18px));
+  width: min(360px, calc(100vw - 24px));
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background: rgba(255,255,255,.98);
+  box-shadow: 0 24px 70px rgba(31,27,23,.22);
+  padding: 14px;
+}
+.teacher-menu-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 10px 14px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 10px;
+}
+.teacher-menu-head > span {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: var(--indigo-soft);
+  font-size: 26px;
+  flex: 0 0 48px;
+}
+.teacher-menu-head strong { display: block; line-height: 1.1; }
+.teacher-menu-head small { display: block; color: var(--muted); margin-top: 3px; }
+.teacher-menu-list {
+  display: grid;
+  gap: 8px;
+}
+.teacher-menu-list a {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #fff;
+  color: var(--charcoal);
+  padding: 12px;
+}
+.teacher-menu-list a span {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: var(--paper-soft);
+  flex: 0 0 34px;
+}
+.teacher-menu-list a.active {
+  background: var(--indigo);
+  border-color: var(--indigo);
+  color: #fff;
+}
+.teacher-menu-list a.active span { background: rgba(255,255,255,.16); }
+.teacher-menu-switch {
+  width: 100%;
+  min-height: 46px;
+  margin-top: 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--paper-soft);
+  color: var(--terracotta);
+  font-weight: 950;
+  cursor: pointer;
+}
+.teacher-shell .top-nav,
+.teacher-shell .bottom-nav,
+.teacher-shell .grade-switch,
+.teacher-shell .sign-out-btn {
+  display: none !important;
+}
+
+@media (max-width: 860px) {
+  .teacher-shell {
+    position: sticky;
+    top: 0;
+    background: rgba(255,249,239,.96);
+    border-bottom: 1px solid rgba(234,223,205,.9);
+  }
+  .teacher-main.app-main {
+    padding-bottom: 34px;
+  }
+  .teacher-menu-popover {
+    top: 62px;
+    left: 10px;
+    right: 10px;
+    width: auto;
+    max-height: calc(100dvh - 78px);
+    overflow: auto;
+    border-radius: 24px;
+  }
+  .student-shell .app-topbar {
+    flex-wrap: nowrap;
+  }
+}
+
+/* Extra small Android/iPhone widths */
+@media (max-width: 390px) {
+  main.app-main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .home-hero, .study-hero, .teacher-hero {
+    padding: 18px;
+    border-radius: 22px;
+  }
+  .hero-actions {
+    gap: 8px;
+  }
+  .app-topbar {
+    gap: 8px;
+  }
+  .app-brand-mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 12px;
+  }
+  .app-brand-text {
+    font-size: 19px;
+  }
+  .grade-switch {
+    padding: 3px;
+  }
+  .grade-switch a {
+    min-width: 36px;
+    min-height: 31px;
+    font-size: 12px;
+  }
+  .sign-out-btn {
+    min-height: 31px;
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+  .bottom-nav {
+    left: 6px;
+    right: 6px;
+    bottom: calc(6px + env(safe-area-inset-bottom));
+    gap: 3px;
+    padding: 6px;
+    border-radius: 23px;
+  }
+  .bottom-nav a {
+    min-height: 48px;
+    border-radius: 17px;
+  }
+  .bottom-nav a span {
+    font-size: 19px;
+  }
+  .bottom-nav a small {
+    font-size: 9.5px;
+    letter-spacing: -.02em;
+  }
+  .today-card, .learner-mini-card, .quick-action-card, .subject-tile, .practice-choice, .paper-card,
+  .teacher-task-card, .teacher-content-library, .teacher-dashboard-panel {
+    border-radius: 20px;
+    padding: 14px;
+  }
+  .today-card > span, .quick-icon, .subject-emoji, .practice-choice-icon, .strip-emoji {
+    width: 44px;
+    height: 44px;
+    border-radius: 15px;
+    font-size: 23px;
+  }
+  .lesson-stepper {
+    top: 6px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lesson-stepper .tab {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 340px) {
+  h1 { font-size: 32px; }
+  .lead { font-size: 15px; }
+  .app-brand-text { display: none; }
+  .student-shell .account-tools { gap: 5px; }
+  .bottom-nav a small { display: none; }
+  .bottom-nav a { min-height: 46px; }
+  .bottom-nav a span { font-size: 22px; }
+  .teacher-menu-button { width: 42px; height: 40px; }
+}

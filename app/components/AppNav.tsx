@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { TendoSession } from "@/lib/auth-session";
@@ -35,9 +36,14 @@ export default function AppNav({
   onSignOut: () => void;
 }) {
   const pathname = usePathname() ?? "/";
+  const [teacherMenuOpen, setTeacherMenuOpen] = useState(false);
   const grade = gradeFromPath(pathname, session);
   const active = activeSection(pathname, session.role);
   const homeHref = session.role === "teacher" ? "/teacher" : grade === "P6" ? "/p6-home" : "/";
+
+  useEffect(() => {
+    setTeacherMenuOpen(false);
+  }, [pathname]);
 
   const learnerItems = [
     { id: "home", label: "Home", emoji: "🏠", href: homeHref },
@@ -47,28 +53,96 @@ export default function AppNav({
   ] as const;
 
   const teacherItems = [
-    { id: "home", label: "Home", emoji: "🏠", href: "/teacher" },
-    { id: "study", label: "Content", emoji: "📚", href: "/study" },
+    { id: "home", label: "Teacher home", emoji: "🏠", href: "/teacher" },
+    { id: "study", label: "Content library", emoji: "📚", href: "/study" },
     { id: "worksheet", label: "Worksheets", emoji: "🧾", href: "/teacher/worksheet" },
-    { id: "reports", label: "Reports", emoji: "⚠️", href: "/teacher/content-reports" },
+    { id: "papers", label: "Past papers", emoji: "📝", href: "/papers" },
+    { id: "reports", label: "Content reports", emoji: "⚠️", href: "/teacher/content-reports" },
   ] as const;
 
-  const navItems = session.role === "teacher" ? teacherItems : learnerItems;
   const firstName = session.name?.split(" ")[0];
 
+  if (session.role === "teacher") {
+    return (
+      <header className="app-shell teacher-shell no-print">
+        <div className="app-topbar teacher-topbar">
+          <Link href="/teacher" className="app-brand" aria-label="Tendo teacher home">
+            <span className="app-brand-mark">T</span>
+            <span className="app-brand-text">
+              Tendo
+              <small>Teacher workspace</small>
+            </span>
+          </Link>
+
+          <div className="teacher-menu-wrap">
+            <span className="teacher-account-pill">👩🏾‍🏫 {firstName || "Teacher"}</span>
+            <button
+              type="button"
+              className="teacher-menu-button"
+              aria-label={teacherMenuOpen ? "Close teacher menu" : "Open teacher menu"}
+              aria-expanded={teacherMenuOpen}
+              onClick={() => setTeacherMenuOpen((open) => !open)}
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+          </div>
+        </div>
+
+        {teacherMenuOpen && (
+          <>
+            <button
+              type="button"
+              className="teacher-menu-backdrop"
+              aria-label="Close menu"
+              onClick={() => setTeacherMenuOpen(false)}
+            />
+            <div className="teacher-menu-popover" role="dialog" aria-label="Teacher navigation menu">
+              <div className="teacher-menu-head">
+                <span>👩🏾‍🏫</span>
+                <div>
+                  <strong>{firstName || "Teacher"}</strong>
+                  <small>{session.schoolName || "Tendo teacher workspace"}</small>
+                </div>
+              </div>
+
+              <nav className="teacher-menu-list" aria-label="Teacher navigation">
+                {teacherItems.map((item) => (
+                  <Link
+                    key={item.id}
+                    href={item.href}
+                    className={active === item.id ? "active" : undefined}
+                  >
+                    <span aria-hidden="true">{item.emoji}</span>
+                    <strong>{item.label}</strong>
+                  </Link>
+                ))}
+              </nav>
+
+              <button type="button" className="teacher-menu-switch" onClick={onSignOut}>
+                Switch account
+              </button>
+            </div>
+          </>
+        )}
+      </header>
+    );
+  }
+
   return (
-    <header className="app-shell no-print">
+    <header className="app-shell student-shell no-print">
       <div className="app-topbar">
         <Link href={homeHref} className="app-brand" aria-label="Tendo home">
           <span className="app-brand-mark">T</span>
           <span className="app-brand-text">
             Tendo
-            <small>{session.role === "teacher" ? "Teacher workspace" : `${grade} learner`}</small>
+            <small>{`${grade} learner`}</small>
           </span>
         </Link>
 
         <nav className="top-nav" aria-label="Main navigation">
-          {navItems.map((item) => (
+          {learnerItems.map((item) => (
             <Link
               key={item.id}
               href={item.href}
@@ -81,14 +155,10 @@ export default function AppNav({
         </nav>
 
         <div className="account-tools">
-          {session.role === "student" ? (
-            <div className="grade-switch" aria-label="Class switcher">
-              <Link href="/p6-home" className={grade === "P6" ? "on" : undefined}>P6</Link>
-              <Link href="/" className={grade === "P7" ? "on" : undefined}>P7</Link>
-            </div>
-          ) : (
-            <span className="teacher-account-pill">👩🏾‍🏫 {firstName || "Teacher"}</span>
-          )}
+          <div className="grade-switch" aria-label="Class switcher">
+            <Link href="/p6-home" className={grade === "P6" ? "on" : undefined}>P6</Link>
+            <Link href="/" className={grade === "P7" ? "on" : undefined}>P7</Link>
+          </div>
           <button type="button" className="sign-out-btn" onClick={onSignOut}>
             Switch
           </button>
@@ -96,7 +166,7 @@ export default function AppNav({
       </div>
 
       <nav className="bottom-nav" aria-label="Mobile navigation">
-        {navItems.map((item) => (
+        {learnerItems.map((item) => (
           <Link
             key={item.id}
             href={item.href}
