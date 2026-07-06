@@ -3860,3 +3860,321 @@ input, select, textarea, button { max-width: 100%; }
     padding: 13px;
   }
 }
+
+/* ============================================
+   Teacher-set questions, manual marking, writing space,
+   and final card polish.
+   ============================================ */
+.simplified-teacher-home {
+  gap: 14px;
+}
+.teacher-home-intro {
+  padding: 16px 18px;
+}
+.simplified-teacher-actions {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.simplified-teacher-actions .teacher-task-card {
+  padding: 16px;
+  min-height: 138px;
+}
+.simplified-teacher-actions .teacher-task-card span {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+.simplified-dashboard-panel {
+  padding: 14px;
+}
+
+.working-space {
+  display: grid;
+  gap: 7px;
+  margin: 12px 0 14px;
+}
+.working-space span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 950;
+}
+.working-space textarea,
+.teacher-question-textarea {
+  width: 100%;
+  min-height: 96px;
+  border: 1.5px solid var(--border);
+  border-radius: 18px;
+  background: #fffdf8;
+  color: var(--charcoal);
+  padding: 12px 14px;
+  resize: vertical;
+  font: inherit;
+  line-height: 1.45;
+}
+.working-space textarea:focus,
+.teacher-question-textarea:focus {
+  outline: none;
+  border-color: var(--terracotta);
+  box-shadow: 0 0 0 4px rgba(190,86,54,.12);
+}
+.working-space textarea:disabled {
+  opacity: .82;
+  background: #fff8ec;
+}
+.teacher-question-textarea.small {
+  min-height: 76px;
+}
+
+.teacher-questions-page,
+.student-teacher-questions,
+.teacher-question-manager {
+  display: grid;
+  gap: 16px;
+}
+.teacher-question-form,
+.teacher-question-card {
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  background: #fff;
+  padding: 18px;
+  box-shadow: var(--shadow-soft);
+}
+.teacher-question-list {
+  display: grid;
+  gap: 12px;
+}
+.teacher-question-list h2 {
+  margin-bottom: 0;
+}
+.teacher-question-card-head,
+.submission-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.teacher-question-card h3,
+.teacher-question-card h2 {
+  margin: 8px 0 0;
+}
+.status-open,
+.status-closed {
+  border-radius: 999px;
+  padding: 5px 9px;
+  font-size: 12px;
+  font-weight: 950;
+  white-space: nowrap;
+}
+.status-open {
+  background: var(--success-soft);
+  color: var(--success);
+}
+.status-closed {
+  background: var(--paper-soft);
+  color: var(--muted);
+}
+.marking-guide,
+.marked-answer-box {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--paper-soft);
+  padding: 12px;
+  color: var(--charcoal-soft);
+  margin: 12px 0;
+}
+.marked-answer-box p {
+  margin: 6px 0;
+}
+.marked-answer-box small {
+  color: var(--muted);
+  display: block;
+}
+.teacher-question-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+.teacher-question-actions > span {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 850;
+}
+.submission-list,
+.teacher-question-student-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+.submission-card {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: rgba(255,249,239,.7);
+  padding: 14px;
+}
+.submission-card p {
+  margin: 0 0 12px;
+}
+.submission-card-head span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 900;
+}
+.submission-mark-row {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  gap: 8px;
+  align-items: center;
+}
+.student-question-card h2 {
+  font-size: 24px;
+}
+
+.practice-choice {
+  position: relative;
+  overflow: hidden;
+}
+.practice-choice::after {
+  content: "";
+  position: absolute;
+  right: -32px;
+  top: -38px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--tile-accent, var(--terracotta)) 13%, transparent);
+}
+.practice-choice > * {
+  position: relative;
+  z-index: 1;
+}
+.practice-choice .pill-start {
+  margin-top: 3px;
+}
+.paper-card.polished-paper-card {
+  border-top: 7px solid var(--purple);
+}
+.paper-card.polished-paper-card::after {
+  content: "📝";
+  position: absolute;
+  right: 16px;
+  top: 14px;
+  opacity: .16;
+  font-size: 42px;
+}
+.paper-card.polished-paper-card {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 860px) {
+  .simplified-teacher-actions {
+    grid-template-columns: 1fr;
+  }
+  .simplified-teacher-actions .teacher-task-card {
+    min-height: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 12px;
+    align-items: center;
+  }
+  .simplified-teacher-actions .teacher-task-card span {
+    grid-row: span 2;
+    margin: 0;
+  }
+  .simplified-teacher-actions .teacher-task-card p {
+    margin: 2px 0 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .teacher-question-form,
+  .teacher-question-card {
+    border-radius: 22px;
+    padding: 14px;
+  }
+  .submission-mark-row {
+    grid-template-columns: 1fr;
+  }
+  .teacher-question-card-head,
+  .submission-card-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .teacher-question-actions > span {
+    margin-left: 0;
+    width: 100%;
+  }
+  .working-space textarea,
+  .teacher-question-textarea {
+    min-height: 86px;
+  }
+}
+
+/* ============================================
+   Presentation/live-data polish
+   ============================================ */
+.live-paper-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.live-paper-card {
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+.paper-card-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.paper-card-actions .btn {
+  box-shadow: none;
+}
+.simplified-dashboard-panel .dash-stat-grid {
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 8px;
+  margin: 10px 0 18px;
+}
+.simplified-dashboard-panel .dash-stat {
+  padding: 12px;
+  border-radius: 18px;
+}
+.simplified-dashboard-panel .dash-stat-num {
+  font-size: 28px;
+}
+.simplified-dashboard-panel .dash-stat-label {
+  font-size: 12px;
+  line-height: 1.2;
+}
+.simplified-dashboard-panel h2 {
+  font-size: 24px;
+}
+.teacher-dashboard-panel .topic-chart {
+  border-radius: 22px;
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 14px;
+  box-shadow: var(--shadow-soft);
+}
+.topic-chart-row {
+  align-items: center;
+}
+.teacher-dashboard-panel .callout {
+  background: linear-gradient(135deg, #fff, #eaf0ff);
+}
+
+@media (max-width: 720px) {
+  .live-paper-card {
+    grid-template-columns: 1fr;
+  }
+  .paper-card-actions .btn {
+    flex: 1 1 120px;
+  }
+  .simplified-dashboard-panel .dash-stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .simplified-dashboard-panel .dash-stat-num {
+    font-size: 24px;
+  }
+}

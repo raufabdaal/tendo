@@ -25,6 +25,7 @@ export default function Quiz({
   const [phase, setPhase] = useState<Phase>("answering");
   const [picked, setPicked] = useState<number | null>(null);
   const [showQuiz, setShowQuiz] = useState(false);
+  const [workingNotes, setWorkingNotes] = useState<string[]>(() => questions.map(() => ""));
 
   if (!showQuiz) {
     return (
@@ -60,6 +61,7 @@ export default function Quiz({
             setIndex(0);
             setScore(0);
             setPicked(null);
+            setWorkingNotes(questions.map(() => ""));
             setPhase("answering");
           }}
         >
@@ -97,6 +99,16 @@ export default function Quiz({
       <div className="progress-bar"><div className="progress-fill" style={{ width: `${progress}%` }} /></div>
       <div className="eyebrow">Question {index + 1} of {questions.length}</div>
       <div className="quiz-q">{item.q}</div>
+
+      <label className="working-space">
+        <span>Working space</span>
+        <textarea
+          value={workingNotes[index] ?? ""}
+          onChange={(e) => setWorkingNotes((notes) => notes.map((note, i) => i === index ? e.target.value : note))}
+          placeholder="Write your working here before choosing an answer."
+          disabled={phase !== "answering"}
+        />
+      </label>
 
       <div className="quiz-choices">
         {item.choices.map((c, i) => {

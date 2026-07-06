@@ -11,8 +11,9 @@ function gradeFromPath(pathname: string, session: TendoSession): "P6" | "P7" {
   return "P7";
 }
 
-function activeSection(pathname: string, role: TendoSession["role"]): "home" | "study" | "practice" | "papers" | "teacher" | "worksheet" | "reports" {
+function activeSection(pathname: string, role: TendoSession["role"]): "home" | "study" | "practice" | "papers" | "teacher" | "worksheet" | "questions" | "reports" {
   if (pathname.startsWith("/teacher/worksheet")) return "worksheet";
+  if (pathname.startsWith("/teacher/questions")) return "questions";
   if (pathname.startsWith("/teacher/content-reports")) return "reports";
   if (pathname.startsWith("/teacher")) return role === "teacher" ? "home" : "teacher";
   if (pathname.startsWith("/papers")) return "papers";
@@ -56,6 +57,7 @@ export default function AppNav({
     { id: "home", label: "Teacher home", emoji: "🏠", href: "/teacher" },
     { id: "study", label: "Content library", emoji: "📚", href: "/study" },
     { id: "worksheet", label: "Worksheets", emoji: "🧾", href: "/teacher/worksheet" },
+    { id: "questions", label: "Set questions", emoji: "✍️", href: "/teacher/questions" },
     { id: "papers", label: "Past papers", emoji: "📝", href: "/papers" },
     { id: "reports", label: "Content reports", emoji: "⚠️", href: "/teacher/content-reports" },
   ] as const;

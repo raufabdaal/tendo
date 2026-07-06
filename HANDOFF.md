@@ -18,6 +18,8 @@ The app now has a local/device sign-in gate and role-specific experiences. This 
 - Removed demo/sales wording from teacher dashboard and made sample data copy neutral.
 - Simplified worksheet maker into class → subject → topics → questions → generate, with advanced options collapsed.
 - Removed topic-page intro callouts so lesson content appears faster.
+- Added teacher-set question/manual marking scaffold and student writing spaces for quizzes, practice and papers.
+- Auto-populated teacher dashboard with presentation sample data and documented how to turn it off later.
 
 ### Files to understand first
 - `app/components/AuthGate.tsx`
@@ -26,10 +28,13 @@ The app now has a local/device sign-in gate and role-specific experiences. This 
 - `app/components/PracticeHomeContent.tsx`
 - `app/app/globals.css` (latest UX overrides are at the end)
 - `docs/ops/ux-auth-production-cleanup-2026-07-07.md`
+- `docs/ops/teacher-questions-manual-marking-2026-07-07.md`
+- `docs/ops/parent-teacher-dashboard-requirements-2026-07-07.md`
+- `docs/ops/auth-backend-roadmap-2026-07-07.md`
 
 ### Next cleanup tasks
 1. Test manually on 320/340/360/390/414/430px phone widths.
-2. Decide backend auth provider/data model when ready.
+2. Decide backend auth/provider and data model when ready, especially for cross-device teacher questions and manual marking.
 3. After real-device testing, do a final pass on any screen that still pushes the main action below the fold.
 
 ---

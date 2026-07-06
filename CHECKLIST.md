@@ -30,6 +30,32 @@
 
 ---
 
+
+## Phase 15 — Teacher-set questions and manual marking scaffold
+- [x] Add local teacher question data helpers (`teacher-questions.ts`)
+- [x] Add teacher question-setting page (`/teacher/questions`)
+- [x] Add teacher hamburger menu link for Set questions
+- [x] Add student teacher-question practice page (`/practice/teacher-questions`)
+- [x] Show Teacher questions card in Practice when open questions exist for the student grade
+- [x] Add manual marking UI for teacher-set question submissions
+- [x] Add working-space textareas to Quiz, PracticeRunner and PaperAttempt
+- [x] Document backend requirements for teacher questions/manual marking
+- [x] Build passed after teacher-question scaffold (`npm run build`, 189 static pages)
+
+---
+
+
+## Phase 16 — Presentation/live-data polish
+- [x] Auto-populate teacher dashboard with presentation sample class data
+- [x] Update sample class topic IDs to current P6/P7 content model
+- [x] Make demo student progress/status bars look more active
+- [x] Polish past-paper cards with direct Start/Review actions
+- [x] Document backend auth roadmap for later implementation
+- [x] Add env escape hatch: `NEXT_PUBLIC_TENDO_PRESENTATION_DATA=off`
+- [x] Build passed after presentation polish (`npm run build`, 189 static pages)
+
+---
+
 ## Primary Six (P6) Expansion
 - [x] Establish P6 Expansion Master Roadmap & Milestones (`docs/spec/p6-expansion-milestones.md`)
 - [x] Milestone 1: P6 NCDC Curriculum specifications (`content/curriculum/p6-*.json`)

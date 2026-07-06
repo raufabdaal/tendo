@@ -25,6 +25,7 @@ export default function PaperAttempt({
   );
   const [phase, setPhase] = useState<Phase>("answering");
   const [started, setStarted] = useState(false);
+  const [workingNotes, setWorkingNotes] = useState<string[]>(() => questions.map(() => ""));
 
   if (!started) {
     return (
@@ -106,6 +107,7 @@ export default function PaperAttempt({
             className="btn btn-secondary btn-block"
             onClick={() => {
               setPicks(questions.map(() => null));
+              setWorkingNotes(questions.map(() => ""));
               setIndex(0);
               setPhase("answering");
             }}
@@ -145,6 +147,16 @@ export default function PaperAttempt({
         Question {index + 1} of {questions.length} · {item.marks} {item.marks === 1 ? "mark" : "marks"}
       </div>
       <div className="quiz-q">{item.q}</div>
+
+      <label className="working-space">
+        <span>Working space</span>
+        <textarea
+          value={workingNotes[index] ?? ""}
+          onChange={(e) => setWorkingNotes((notes) => notes.map((note, i) => i === index ? e.target.value : note))}
+          placeholder="Write your working here before choosing an answer."
+          disabled={phase !== "answering"}
+        />
+      </label>
 
       <div className="quiz-choices">
         {item.choices.map((c, i) => {

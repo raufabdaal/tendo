@@ -1,9 +1,8 @@
-// Seed data for "Load demo class" on the teacher dashboard.
-// Creates ~22 realistic-looking P7 students with varying activity.
-// Stored in localStorage under tendo:demo-class so it can be loaded/cleared cleanly.
+// Presentation/sample class data for the teacher dashboard.
 //
-// This is DEMO-ONLY data for the sales pitch. Real per-student data comes via
-// Supabase class codes in Phase 4 (see DEV-009).
+// This data makes the product feel alive during demos and school previews.
+// It is intentionally isolated from real auth/user data and can be disabled
+// later with NEXT_PUBLIC_TENDO_PRESENTATION_DATA=off once real backend auth is live.
 
 export interface DemoStudent {
   id: string;
@@ -13,7 +12,6 @@ export interface DemoStudent {
   paperActivity: Record<string, { best: number; lastTotal: number; attempts: number; updatedAt: string }>;
 }
 
-// Ugandan names — common, neutral, mixed regions
 const NAMES = [
   "Akello Joy", "Mukasa Daniel", "Namutebi Sarah", "Okello Brian", "Nakato Faith",
   "Ssemakula Trevor", "Achieng Patricia", "Kato Allan", "Auma Rebecca", "Wanyama Joshua",
@@ -22,20 +20,28 @@ const NAMES = [
   "Nansubuga Ruth", "Kiprotich Samuel",
 ];
 
+// Current P7 topic ids across subjects so dashboard labels resolve cleanly.
 const TOPIC_IDS = [
-  "venn-diagrams-2-events",
-  "roman-numerals-mm",
-  "fractions-core",
-  "decimals",
-  "proportion-percentages",
-  "perimeter",
-  "area",
-  "volume",
-  "equations",
-  "substitution",
-  "central-tendency-range",
-  "12-24-hour-clocks",
-  "money",
+  "set-concepts",
+  "whole-numbers",
+  "operations-on-whole-numbers",
+  "fractions",
+  "data-handling",
+  "construction",
+  "time",
+  "algebra",
+  "school-holidays",
+  "letter-writing",
+  "electronic-media",
+  "environmental-protection",
+  "muscular-skeletal-system",
+  "electricity-and-magnetism",
+  "light-energy",
+  "interdependence-environment",
+  "location-of-africa",
+  "physical-features-of-africa",
+  "climate-of-africa",
+  "major-world-organisations",
 ];
 
 const PAPER_IDS = ["ple-math-2018", "ple-math-2019", "ple-math-2020"];
@@ -46,9 +52,8 @@ const PAPER_TOTAL_MARKS: Record<string, number> = {
   "ple-math-2020": 100,
 };
 
-const TOPIC_QUIZ_LEN = 7;
+const TOPIC_QUIZ_LEN = 10;
 
-// Seeded pseudo-random so the demo class looks the same each time
 let seed = 7;
 function rnd(): number {
   seed = (seed * 1664525 + 1013904223) % 4294967296;
@@ -65,58 +70,53 @@ function pickDateWithinDays(daysAgo: number): string {
 }
 
 export function generateDemoClass(): DemoStudent[] {
-  seed = 7; // reset for determinism
+  seed = 7;
   const students: DemoStudent[] = [];
 
   for (let i = 0; i < NAMES.length; i++) {
-    // Performance band per student — creates a realistic spread.
-    // ~30% high, ~50% mid, ~20% low.
+    // Presentation data should look active and hopeful, with some learners needing support.
     const r = rnd();
-    const band: "high" | "mid" | "low" = r < 0.3 ? "high" : r < 0.8 ? "mid" : "low";
+    const band: "high" | "mid" | "low" = r < 0.42 ? "high" : r < 0.9 ? "mid" : "low";
 
-    // How many topics this student has attempted (more for engaged students)
     const topicCount =
-      band === "high" ? pickInt(8, 13) : band === "mid" ? pickInt(4, 9) : pickInt(1, 4);
+      band === "high" ? pickInt(12, 18) : band === "mid" ? pickInt(8, 14) : pickInt(4, 8);
 
-    // Shuffle topic ids then take topicCount
     const shuffled = [...TOPIC_IDS].sort(() => rnd() - 0.5);
     const attempted = shuffled.slice(0, topicCount);
 
     const topicActivity: DemoStudent["topicActivity"] = {};
     for (const tid of attempted) {
-      // Score band per topic, lightly biased to student band
       const baseBest =
-        band === "high" ? pickInt(5, 7) : band === "mid" ? pickInt(3, 6) : pickInt(1, 4);
+        band === "high" ? pickInt(8, 10) : band === "mid" ? pickInt(6, 8) : pickInt(3, 6);
       topicActivity[tid] = {
         bestScore: baseBest,
         lastTotal: TOPIC_QUIZ_LEN,
-        attempts: pickInt(1, 3),
-        updatedAt: pickDateWithinDays(14),
+        attempts: pickInt(1, 4),
+        updatedAt: pickDateWithinDays(10),
       };
     }
 
-    // Past papers — fewer kids attempt these
     const paperActivity: DemoStudent["paperActivity"] = {};
     const paperAttempts =
-      band === "high" ? pickInt(1, 3) : band === "mid" ? pickInt(0, 2) : pickInt(0, 1);
+      band === "high" ? pickInt(2, 3) : band === "mid" ? pickInt(1, 2) : pickInt(0, 1);
     const shuffledPapers = [...PAPER_IDS].sort(() => rnd() - 0.5).slice(0, paperAttempts);
     for (const pid of shuffledPapers) {
       const total = PAPER_TOTAL_MARKS[pid];
       const pctTarget =
-        band === "high" ? pickInt(65, 88) : band === "mid" ? pickInt(40, 70) : pickInt(20, 45);
+        band === "high" ? pickInt(72, 92) : band === "mid" ? pickInt(52, 74) : pickInt(30, 52);
       const best = Math.round((pctTarget / 100) * total);
       paperActivity[pid] = {
         best,
         lastTotal: total,
         attempts: pickInt(1, 2),
-        updatedAt: pickDateWithinDays(21),
+        updatedAt: pickDateWithinDays(14),
       };
     }
 
     students.push({
       id: `demo-${i + 1}`,
       name: NAMES[i],
-      classCode: "P7-DEMO",
+      classCode: "P7",
       topicActivity,
       paperActivity,
     });

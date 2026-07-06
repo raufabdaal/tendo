@@ -30,8 +30,8 @@ export default function HomePage() {
             <span className="mini-avatar">📚</span>
             <div className="mini-card-wide">
               <strong>This week</strong>
-              <p>4 topics studied · 26 questions answered</p>
-              <div className="soft-meter"><span style={{ width: "62%" }} /></div>
+              <p>7 topics studied · 54 questions answered</p>
+              <div className="soft-meter"><span style={{ width: "78%" }} /></div>
             </div>
           </div>
           <div className="learner-mini-card">

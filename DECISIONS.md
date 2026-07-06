@@ -40,6 +40,16 @@
 
 ---
 
+
+## DEV-026 · 2026-07-07 · Teacher-set questions require manual marking, not AI-first marking
+
+**Decision:** Teacher-set questions are treated as manually marked by default. Students can write free-text answers; teachers enter scores and feedback.
+**Implementation now:** localStorage scaffold via `teacher-questions.ts`, `/teacher/questions`, `/practice/teacher-questions`.
+**Reasoning:** Teacher testers asked for control and trust. Manual marking also supports open-ended questions that multiple-choice cannot handle.
+**Limitation:** Current implementation is device-local only; production requires backend storage and school/class/student relationships.
+
+---
+
 ## DEV-001 · 2026-06-24 · Scope = P6 & P7 only (PLE-bound), not P1
 
 **Previous decision:** Founder's early brief implied P1 and P7.

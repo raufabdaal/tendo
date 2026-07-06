@@ -19,13 +19,19 @@ Tendo is now moving from "content-rich app" toward **production-ready role-speci
 - Subject landing pages were decluttered for production: removed "topics live", "study strands", long explanatory copy, footer status notes, and visible phase/coming-soon backlog language.
 - Papers flow no longer exposes mixed "student mode / teacher mode" labels to signed-in users.
 - Mobile responsiveness was tightened for small phones down to ~320-340px widths.
+- Added local teacher-set questions and manual marking scaffold, plus writing space on quizzes, practice and papers.
+- Presentation/sample data now auto-populates teacher dashboard unless `NEXT_PUBLIC_TENDO_PRESENTATION_DATA=off`. Student progress bars were made fuller for demos.
 
 ### Current known UX cleanup still needed
 - Manual real-device testing is still needed at 320/340/360/390/414/430px widths.
 - Current auth is local/device-only UX scaffolding; real backend auth remains a future implementation task.
 - After real-device testing, do a final pass on any screens that still push the main action below the fold.
 
-Detailed handoff: `docs/ops/ux-auth-production-cleanup-2026-07-07.md`.
+Detailed handoffs:
+- `docs/ops/ux-auth-production-cleanup-2026-07-07.md`
+- `docs/ops/teacher-questions-manual-marking-2026-07-07.md`
+- `docs/ops/parent-teacher-dashboard-requirements-2026-07-07.md`
+- `docs/ops/auth-backend-roadmap-2026-07-07.md`
 
 ---
 

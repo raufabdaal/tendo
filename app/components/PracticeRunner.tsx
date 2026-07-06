@@ -27,6 +27,7 @@ export default function PracticeRunner({
   const [sessionTotal, setSessionTotal] = useState(0);
   const [streak, setStreak] = useState(0);
   const [bestStreak, setBestStreak] = useState(0);
+  const [working, setWorking] = useState("");
 
   // Seed first batch of questions on mount
   useEffect(() => {
@@ -65,6 +66,7 @@ export default function PracticeRunner({
       setIndex((n) => n + 1);
     }
     setPicked(null);
+    setWorking("");
     setPhase("answering");
   }
 
@@ -114,6 +116,16 @@ export default function PracticeRunner({
         {difficultyBadge}
       </div>
       <div className="quiz-q">{item.q}</div>
+
+      <label className="working-space">
+        <span>Working space</span>
+        <textarea
+          value={working}
+          onChange={(e) => setWorking(e.target.value)}
+          placeholder="Write your working here before choosing an answer."
+          disabled={phase !== "answering"}
+        />
+      </label>
 
       <div className="quiz-choices">
         {item.choices.map((c, i) => {

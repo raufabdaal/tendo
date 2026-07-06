@@ -3,8 +3,17 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { getSession, type TendoSession } from "@/lib/auth-session";
+import { listTeacherQuestions } from "@/lib/teacher-questions";
 
-const p7Sets = [
+type PracticeSet = {
+  href: string;
+  icon: string;
+  title: string;
+  sub: string;
+  tone: string;
+};
+
+const p7Sets: PracticeSet[] = [
   {
     href: "/math/p7/fractions/practice",
     icon: "🎯",
@@ -35,7 +44,7 @@ const p7Sets = [
   },
 ];
 
-const p6Sets = [
+const p6Sets: PracticeSet[] = [
   {
     href: "/math/p6/p6-fractions-decimals/practice",
     icon: "🌱",
@@ -66,7 +75,7 @@ const p6Sets = [
   },
 ];
 
-function PracticeGrid({ sets }: { sets: typeof p7Sets }) {
+function PracticeGrid({ sets }: { sets: PracticeSet[] }) {
   return (
     <div className="quick-practice-grid polished-practice-grid">
       {sets.map((set) => (
@@ -85,10 +94,13 @@ function PracticeGrid({ sets }: { sets: typeof p7Sets }) {
 
 export default function PracticeHomeContent() {
   const [session, setSession] = useState<TendoSession | null>(null);
+  const [teacherQuestionCount, setTeacherQuestionCount] = useState(0);
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    setSession(getSession());
+    const currentSession = getSession();
+    setSession(currentSession);
+    setTeacherQuestionCount(listTeacherQuestions().filter((q) => q.status === "open" && q.grade === (currentSession?.grade ?? "P7")).length);
     setReady(true);
   }, []);
 
@@ -96,6 +108,9 @@ export default function PracticeHomeContent() {
 
   const grade = session?.grade ?? "P7";
   const sets = grade === "P6" ? p6Sets : p7Sets;
+  const finalSets = teacherQuestionCount > 0
+    ? [{ href: "/practice/teacher-questions", icon: "📝", title: "Teacher questions", sub: `${teacherQuestionCount} question${teacherQuestionCount === 1 ? "" : "s"} to answer`, tone: "accent-english" }, ...sets]
+    : sets;
 
   return (
     <div className="practice-home focused-practice-page">
@@ -107,7 +122,7 @@ export default function PracticeHomeContent() {
         </div>
         <span aria-hidden="true">✏️</span>
       </section>
-      <PracticeGrid sets={sets} />
+      <PracticeGrid sets={finalSets} />
     </div>
   );
 }

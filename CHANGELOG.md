@@ -1,5 +1,43 @@
 # CHANGELOG — Tendo
 
+## v1.8.3 — 2026-07-07 — Presentation data polish and auth roadmap documentation
+
+**Session theme:** Make the app feel alive for presentation while keeping an escape hatch for real user data later.
+
+**Changed:**
+- Teacher dashboard now auto-loads a populated sample class when no real data exists.
+- Sample class data now uses current topic IDs and fuller learner activity so dashboard charts/cards look used.
+- Student home progress bars were made more active for demo readiness.
+- Past-paper cards now have direct Start and Review actions.
+- Added `NEXT_PUBLIC_TENDO_PRESENTATION_DATA=off` escape hatch for turning sample dashboard data off when real backend data is ready.
+- Added backend authentication roadmap: `docs/ops/auth-backend-roadmap-2026-07-07.md`.
+
+**Verified:**
+- `cd app && npm run build` passed with 189 static pages.
+
+---
+
+## v1.8.2 — 2026-07-07 — Teacher-set questions, manual marking scaffold, and student writing space
+
+**Session theme:** Address tester feedback that students need a place to write answers and teachers need to set/mark their own questions.
+
+**Changed:**
+- Added local teacher-question storage helpers: `app/lib/teacher-questions.ts`.
+- Added teacher question manager and route: `app/components/TeacherQuestionManager.tsx`, `/teacher/questions`.
+- Added student teacher-question answering route: `app/components/StudentTeacherQuestions.tsx`, `/practice/teacher-questions`.
+- Added Set questions to the teacher hamburger menu.
+- Practice page now surfaces Teacher questions when open questions exist for the signed-in student grade.
+- Added working-space textareas to `Quiz.tsx`, `PracticeRunner.tsx`, and `PaperAttempt.tsx`.
+- Added documentation: `docs/ops/teacher-questions-manual-marking-2026-07-07.md`.
+
+**Known limitation:**
+- Current teacher questions and submissions are localStorage-only UX scaffolding and do not sync across devices yet.
+
+**Verified:**
+- `cd app && npm run build` passed with 189 static pages.
+
+---
+
 ## v1.8.1 — 2026-07-07 — Remaining production simplification pass
 
 **Session theme:** Finish the immediate cleanup tasks after role-based UX: teacher dashboard copy, worksheet default flow, and topic-page vertical space.

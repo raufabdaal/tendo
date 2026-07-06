@@ -30,8 +30,8 @@ export default function P6HomePage() {
             <span className="mini-avatar">📚</span>
             <div className="mini-card-wide">
               <strong>This week</strong>
-              <p>3 topics studied · 18 questions answered</p>
-              <div className="soft-meter"><span style={{ width: "48%" }} /></div>
+              <p>5 topics studied · 36 questions answered</p>
+              <div className="soft-meter"><span style={{ width: "68%" }} /></div>
             </div>
           </div>
           <div className="learner-mini-card">

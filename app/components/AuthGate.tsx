@@ -28,7 +28,7 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (!hydrated || !session) return;
 
-    if (session.role === "teacher" && (pathname === "/" || pathname === "/p6-home" || pathname === "/practice")) {
+    if (session.role === "teacher" && (pathname === "/" || pathname === "/p6-home" || pathname.startsWith("/practice"))) {
       router.replace("/teacher");
     }
 

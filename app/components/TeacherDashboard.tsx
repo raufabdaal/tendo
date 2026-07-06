@@ -28,6 +28,10 @@ import {
 type View = "class" | "student";
 type Mode = "demo" | "device";
 
+// Presentation data keeps the dashboard from looking empty before real backend auth exists.
+// Set NEXT_PUBLIC_TENDO_PRESENTATION_DATA=off when production user data is ready.
+const USE_PRESENTATION_SAMPLE_DATA = process.env.NEXT_PUBLIC_TENDO_PRESENTATION_DATA !== "off";
+
 interface TopicProgress { bestScore: number; lastTotal: number; attempts: number; updatedAt: string; }
 interface PaperProgress { best: number; lastTotal: number; questions?: number; attempts: number; updatedAt: string; }
 
@@ -49,8 +53,14 @@ export default function TeacherDashboard() {
       if (p) setDevicePapers(JSON.parse(p));
     } catch {}
     const dc = loadDemoClass();
-    if (dc) {
+    const hasOldSampleData = dc?.some((student) => student.classCode === "P7-DEMO");
+    if (dc && !hasOldSampleData) {
       setDemoClass(dc);
+      setMode("demo");
+    } else if (USE_PRESENTATION_SAMPLE_DATA) {
+      const sample = generateDemoClass();
+      saveDemoClass(sample);
+      setDemoClass(sample);
       setMode("demo");
     }
     setHydrated(true);

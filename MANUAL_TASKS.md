@@ -22,8 +22,12 @@
 6. Switch account, sign in as a **Teacher** and verify:
    - no student bottom nav appears.
    - hamburger menu opens and fits the screen.
-   - Content library, Worksheets, Reports and Papers links work.
-7. Test widths if using desktop dev tools: 320, 340, 360, 390, 414, 430.
+   - Content library, Worksheets, Set questions, Reports and Papers links work.
+7. Test teacher-set question flow on one browser:
+   - Teacher → Set questions → create one P7 question.
+   - Switch account → P7 Student → Practice → Teacher questions → submit answer.
+   - Switch back → Teacher → Set questions → mark the answer.
+8. Test widths if using desktop dev tools: 320, 340, 360, 390, 414, 430.
 8. Report any overflow/cut-off screenshots before more content work.
 
 ---
