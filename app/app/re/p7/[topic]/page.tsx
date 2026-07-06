@@ -50,7 +50,16 @@ export default async function ReTopicPage({ params }: { params: Promise<{ topic:
 
       <PracticeCTA topicId={topic.id} />
 
-      <Quiz questions={topic.quiz} topicId={topic.id} topicTitle={topic.title} />
+      <section id="quick-quiz" className="quiz-panel">
+        <div className="quiz-panel-heading">
+          <span className="quiz-panel-emoji" aria-hidden="true">✏️</span>
+          <div>
+            <div className="eyebrow">Step 3 · Try</div>
+            <h2>Check what you understood</h2>
+          </div>
+        </div>
+        <Quiz questions={topic.quiz} topicId={topic.id} topicTitle={topic.title} backHref="/re/p7" />
+      </section>
     </>
   );
 }

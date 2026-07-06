@@ -38,7 +38,16 @@ export default async function P6EnglishTopicPage({ params }: { params: Promise<{
       <div className="callout">{topic.note.intro}</div>
 
       <TopicTabs topic={topic} />
-      <Quiz questions={topic.quiz} topicId={topic.id} topicTitle={topic.title} />
+      <section id="quick-quiz" className="quiz-panel">
+        <div className="quiz-panel-heading">
+          <span className="quiz-panel-emoji" aria-hidden="true">✏️</span>
+          <div>
+            <div className="eyebrow">Step 3 · Try</div>
+            <h2>Check what you understood</h2>
+          </div>
+        </div>
+        <Quiz questions={topic.quiz} topicId={topic.id} topicTitle={topic.title} backHref="/english/p6" />
+      </section>
       <PracticeCTA topicId={topic.id} />
     </>
   );

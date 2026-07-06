@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import "./globals.css";
 import BrandBar from "@/components/BrandBar";
+import AppNav from "@/components/AppNav";
 
 export const metadata: Metadata = {
   title: "Tendo — PLE study",
@@ -14,14 +14,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <BrandBar />
-        <nav className="nav">
-          <Link href="/" className="brand">
-            <span className="brand-dot" />
-            Tendo
-          </Link>
-          <div className="nav-meta">P7 Mathematics</div>
-        </nav>
-        <main>{children}</main>
+        <AppNav />
+        <main className="app-main">{children}</main>
       </body>
     </html>
   );

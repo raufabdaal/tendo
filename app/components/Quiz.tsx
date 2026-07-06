@@ -13,10 +13,12 @@ export default function Quiz({
   questions,
   topicId,
   topicTitle,
+  backHref = "/study",
 }: {
   questions: QuizQuestion[];
   topicId: string;
   topicTitle: string;
+  backHref?: string;
 }) {
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -49,7 +51,7 @@ export default function Quiz({
           <div className="result-score-sub">{pct}%</div>
         </div>
         <div className="result-msg">{msg}</div>
-        <Link href="/math/p7" className="btn btn-primary btn-block" style={{ marginBottom: 10 }}>
+        <Link href={backHref} className="btn btn-primary btn-block" style={{ marginBottom: 10 }}>
           Pick another topic
         </Link>
         <button

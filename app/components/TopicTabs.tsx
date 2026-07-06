@@ -108,23 +108,30 @@ export default function TopicTabs({ topic }: { topic: Topic }) {
 
   return (
     <>
-      <div className="tabs" role="tablist">
+      <div className="tabs lesson-stepper" role="tablist" aria-label="Lesson steps">
         <button
           role="tab"
           aria-selected={tab === "watch"}
-          className={"tab" + (tab === "watch" ? " active" : "")}
+          className={"tab lesson-step" + (tab === "watch" ? " active" : "")}
           onClick={() => { setTab("watch"); stopSpeech(); }}
         >
-          ▶ Watch {currentWatchUrl ? null : <span className="tab-pill">soon</span>}
+          <span className="step-num">1</span>
+          <span>Watch</span>
+          {currentWatchUrl ? null : <span className="tab-pill">soon</span>}
         </button>
         <button
           role="tab"
           aria-selected={tab === "read"}
-          className={"tab" + (tab === "read" ? " active" : "")}
+          className={"tab lesson-step" + (tab === "read" ? " active" : "")}
           onClick={() => setTab("read")}
         >
-          📖 Read
+          <span className="step-num">2</span>
+          <span>Read</span>
         </button>
+        <a className="tab lesson-step lesson-step-link" href="#quick-quiz" onClick={stopSpeech}>
+          <span className="step-num">3</span>
+          <span>Try quiz</span>
+        </a>
       </div>
 
       {tab === "watch" && (
@@ -361,6 +368,16 @@ export default function TopicTabs({ topic }: { topic: Topic }) {
               </ul>
             </>
           )}
+
+          <div className="read-next-card">
+            <div>
+              <strong>Ready to check yourself?</strong>
+              <span>Try a short quiz and get instant feedback.</span>
+            </div>
+            <a href="#quick-quiz" className="btn btn-primary" onClick={stopSpeech}>
+              ✏️ Take the quiz
+            </a>
+          </div>
         </div>
       )}
     </>

@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tendo UX Prototype — learner + teacher preview</title>
+<style>
+  :root{
+    --cream:#fff9ef;
+    --paper:#ffffff;
+    --paper-2:#fff4dd;
+    --ink:#1e1b16;
+    --soft-ink:#4b4137;
+    --muted:#7c7165;
+    --line:#eadfcd;
+    --brand:#be5636;
+    --brand-dark:#963d24;
+    --sun:#ffc857;
+    --green:#2f8f5b;
+    --green-soft:#e6f6ed;
+    --blue:#3f64b5;
+    --blue-soft:#eaf0ff;
+    --purple:#7654b9;
+    --purple-soft:#f1ecff;
+    --red:#b83b32;
+    --red-soft:#ffe9e6;
+    --shadow:0 18px 45px rgba(68,45,21,.12);
+    --shadow-soft:0 8px 24px rgba(68,45,21,.08);
+    --radius:20px;
+    --radius-sm:13px;
+    --max:1160px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:radial-gradient(circle at top left,#fff1d1 0,#fff9ef 36%,#fffdf8 100%);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.45;-webkit-font-smoothing:antialiased}
+  button,input,select{font:inherit}
+  button{border:0}
+  .ribbon{background:var(--ink);color:#fff7ec;padding:8px 18px;text-align:center;font-size:13px;letter-spacing:.01em}
+  .ribbon b{color:#ffd481}
+  .shell{position:sticky;top:0;z-index:40;background:rgba(255,249,239,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(234,223,205,.9)}
+  .topbar{max-width:var(--max);margin:0 auto;padding:14px 18px;display:flex;gap:14px;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:22px;letter-spacing:-.04em;color:var(--ink);cursor:pointer;white-space:nowrap}
+  .brand-mark{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--brand),#f08b53);display:grid;place-items:center;color:white;font-weight:950;box-shadow:0 8px 18px rgba(190,86,54,.25)}
+  .brand small{display:block;color:var(--muted);font-weight:700;font-size:11px;letter-spacing:.02em;margin-top:-5px}
+  .nav{display:flex;align-items:center;gap:6px;background:#fff3df;border:1px solid var(--line);padding:5px;border-radius:999px;box-shadow:var(--shadow-soft)}
+  .nav button,.bottom-nav button{background:transparent;color:var(--soft-ink);padding:9px 13px;border-radius:999px;cursor:pointer;font-weight:800;font-size:14px;min-height:38px;white-space:nowrap}
+  .nav button.active,.bottom-nav button.active{background:var(--ink);color:white}
+  .top-actions{display:flex;align-items:center;gap:8px}
+  .seg{display:flex;align-items:center;gap:4px;background:#fff;border:1px solid var(--line);padding:4px;border-radius:999px;box-shadow:var(--shadow-soft)}
+  .seg button{padding:8px 11px;border-radius:999px;background:transparent;color:var(--muted);font-weight:900;cursor:pointer;font-size:13px;min-width:44px}
+  .seg button.on{background:var(--brand);color:white}
+  .seg.role button.on.teacher{background:var(--blue)}
+  .main{max-width:var(--max);margin:0 auto;padding:28px 18px 96px}
+  .screen{animation:fade .18s ease-out}
+  @keyframes fade{from{opacity:.4;transform:translateY(5px)}to{opacity:1;transform:none}}
+  .grid{display:grid;gap:16px}
+  .two{grid-template-columns:1.25fr .75fr}
+  .three{grid-template-columns:repeat(3,1fr)}
+  .four{grid-template-columns:repeat(4,1fr)}
+  .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#fff,#fff1d5);border:1px solid var(--line);border-radius:30px;padding:30px;box-shadow:var(--shadow);display:grid;grid-template-columns:1.08fr .92fr;gap:20px;align-items:center}
+  .hero.teacher{background:linear-gradient(135deg,#f8fbff,#eaf0ff)}
+  .hero:after{content:"";position:absolute;right:-130px;top:-150px;width:340px;height:340px;border-radius:50%;background:rgba(255,200,87,.25)}
+  .hero > *{position:relative;z-index:1}
+  .eyebrow{text-transform:uppercase;letter-spacing:.12em;color:var(--brand);font-size:12px;font-weight:950;margin:0 0 8px}
+  .teacher .eyebrow{color:var(--blue)}
+  h1{font-size:clamp(32px,5vw,56px);line-height:.98;margin:0 0 14px;letter-spacing:-.055em}
+  h2{font-size:clamp(22px,3vw,32px);line-height:1.05;margin:0 0 12px;letter-spacing:-.035em}
+  h3{font-size:19px;line-height:1.15;margin:0 0 8px;letter-spacing:-.02em}
+  p{color:var(--soft-ink);margin:0 0 14px}
+  .lead{font-size:18px;color:var(--soft-ink);max-width:680px}
+  .hero-art{min-height:250px;background:rgba(255,255,255,.64);border:1px solid rgba(234,223,205,.85);border-radius:26px;padding:18px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55)}
+  .learner-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:16px;margin-bottom:12px;display:flex;align-items:center;gap:14px;box-shadow:var(--shadow-soft)}
+  .avatar{width:46px;height:46px;border-radius:16px;background:var(--blue-soft);display:grid;place-items:center;font-size:24px;flex:0 0 auto}
+  .meter{height:10px;background:#f1e7d8;border-radius:999px;overflow:hidden}
+  .meter span{display:block;height:100%;background:linear-gradient(90deg,var(--green),#82c66f);border-radius:999px;width:var(--w,50%)}
+  .quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+  .quick{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;cursor:pointer;text-align:left;box-shadow:var(--shadow-soft);transition:.16s ease;min-height:146px;display:flex;flex-direction:column;justify-content:space-between}
+  .quick:hover,.card:hover,.subject-card:hover,.topic-card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:#e6c49f}
+  .quick-icon,.subject-icon{width:46px;height:46px;border-radius:16px;display:grid;place-items:center;font-size:25px;margin-bottom:12px;background:var(--paper-2)}
+  .quick strong{display:block;font-size:18px;line-height:1.15;margin-bottom:5px}
+  .quick span,.muted{color:var(--muted);font-size:14px}
+  .section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:32px 0 14px}
+  .section-head p{margin:0;color:var(--muted)}
+  .card,.subject-card,.topic-card,.panel{background:rgba(255,255,255,.86);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-soft)}
+  .card{padding:18px}
+  .subject-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  .subject-card{padding:18px;cursor:pointer;min-height:214px;display:flex;flex-direction:column;gap:10px;transition:.16s ease;text-align:left;position:relative;overflow:hidden}
+  .subject-card:before{content:"";position:absolute;inset:0 0 auto;height:6px;background:var(--accent,var(--brand))}
+  .subject-card h3{font-size:18px;margin-top:4px}
+  .pill-row{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto}
+  .pill{display:inline-flex;align-items:center;gap:6px;background:#fff7e8;border:1px solid var(--line);border-radius:999px;padding:5px 9px;color:var(--muted);font-weight:850;font-size:12px;white-space:nowrap}
+  .pill.good{background:var(--green-soft);color:var(--green);border-color:#c7ecd6}.pill.warn{background:var(--red-soft);color:var(--red);border-color:#ffd0ca}.pill.blue{background:var(--blue-soft);color:var(--blue);border-color:#d9e4ff}.pill.purple{background:var(--purple-soft);color:var(--purple);border-color:#e2d7ff}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 18px;min-height:46px;background:var(--ink);color:white;font-weight:950;cursor:pointer;text-decoration:none;box-shadow:0 8px 20px rgba(30,27,22,.12)}
+  .btn:hover{filter:brightness(.98);transform:translateY(-1px)}
+  .btn.primary{background:var(--brand)}.btn.blue{background:var(--blue)}.btn.green{background:var(--green)}.btn.light{background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:none}.btn.ghost{background:transparent;color:var(--soft-ink);border:1px solid var(--line);box-shadow:none}.btn.block{width:100%}.btn.small{min-height:36px;padding:8px 12px;font-size:13px}
+  .toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .breadcrumb{display:flex;align-items:center;gap:8px;flex-wrap:wrap;color:var(--muted);font-weight:800;font-size:14px;margin:0 0 14px}
+  .breadcrumb button{background:transparent;color:var(--brand);font-weight:950;cursor:pointer;padding:0}
+  .subject-hero{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:var(--shadow-soft)}
+  .stat-row{display:flex;gap:10px;flex-wrap:wrap}.stat{background:#fff7e8;border:1px solid var(--line);border-radius:16px;padding:12px 14px;min-width:110px}.stat b{display:block;font-size:22px;line-height:1}.stat span{font-size:12px;color:var(--muted);font-weight:800}
+  .filters{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0}.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 13px;color:var(--muted);font-weight:900;cursor:pointer}.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .search{width:100%;background:#fff;border:1px solid var(--line);border-radius:999px;padding:13px 16px;font-weight:800;outline:none}.search:focus{border-color:var(--brand);box-shadow:0 0 0 4px rgba(190,86,54,.12)}
+  .topic-layout{display:grid;grid-template-columns:260px 1fr;gap:16px}.side-panel{position:sticky;top:96px;align-self:start}.side-panel .card{padding:15px}.mini-list{display:grid;gap:8px}.mini-list button{text-align:left;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px;cursor:pointer;font-weight:850;color:var(--soft-ink)}.mini-list button.on{background:var(--ink);color:white;border-color:var(--ink)}
+  .topic-list{display:grid;gap:12px}.topic-card{padding:16px;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;cursor:pointer;text-align:left;transition:.16s ease}.topic-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}.topic-card h3{margin-bottom:4px}.progress-ring{width:54px;height:54px;border-radius:50%;background:conic-gradient(var(--green) var(--pct),#efe6d8 0);display:grid;place-items:center}.progress-ring span{width:40px;height:40px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:12px;font-weight:950;color:var(--soft-ink)}
+  .lesson-shell{display:grid;grid-template-columns:1fr 330px;gap:18px}.lesson-main,.lesson-aside{background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow-soft)}.lesson-main{overflow:hidden}.lesson-head{padding:24px;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#fff,#fff6e5)}.stepper{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:18px}.stepper button{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 8px;cursor:pointer;font-weight:950;color:var(--muted)}.stepper button.on{background:var(--ink);color:white;border-color:var(--ink)}.lesson-body{padding:24px}.lesson-aside{padding:18px;align-self:start;position:sticky;top:96px}.video-box{height:310px;border-radius:24px;background:linear-gradient(135deg,#29231f,#5a4035);display:grid;place-items:center;color:white;text-align:center;position:relative;overflow:hidden}.video-box:before{content:"";position:absolute;inset:auto -60px -80px auto;width:260px;height:260px;border-radius:50%;background:rgba(255,200,87,.18)}.play{width:76px;height:76px;border-radius:50%;background:rgba(255,255,255,.18);display:grid;place-items:center;font-size:34px;margin:0 auto 12px;border:1px solid rgba(255,255,255,.26)}.study-card{background:#fff9ef;border:1px solid var(--line);border-radius:22px;padding:18px;margin:14px 0}.keyword-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.keyword{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px}.keyword b{display:block}.callout{background:var(--blue-soft);border:1px solid #d7e3ff;border-radius:18px;padding:14px;color:#263c72;margin:14px 0}.listen{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:12px;margin-bottom:14px}.listen .sound{font-weight:950}.quiz-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px}.choice{width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:16px;padding:14px;margin:8px 0;cursor:pointer;font-weight:850;display:flex;gap:10px;align-items:center}.choice:hover{border-color:var(--brand)}.choice.correct{background:var(--green-soft);border-color:var(--green);color:var(--green)}.choice.wrong{background:var(--red-soft);border-color:var(--red);color:var(--red)}.letter{width:28px;height:28px;border-radius:10px;background:#f3eadb;display:grid;place-items:center;font-weight:950;flex:none}.choice.correct .letter{background:var(--green);color:white}.choice.wrong .letter{background:var(--red);color:white}.feedback{border-radius:16px;padding:13px;background:#fff7e8;border:1px solid var(--line);margin:12px 0;color:var(--soft-ink)}
+  .timeline{display:grid;gap:10px}.timeline-item{display:flex;gap:12px;align-items:flex-start}.dot{width:24px;height:24px;border-radius:50%;background:#efe2d0;display:grid;place-items:center;font-size:12px;font-weight:950;flex:none}.timeline-item.done .dot{background:var(--green);color:white}.timeline-item.active .dot{background:var(--brand);color:white}.timeline-item strong{display:block}.timeline-item span{font-size:13px;color:var(--muted)}
+  .practice-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.practice-card{padding:20px;background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow-soft)}.practice-card .big{font-size:44px;line-height:1;margin-bottom:10px}
+  .teacher-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.teacher-task{background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px;text-align:left;cursor:pointer;box-shadow:var(--shadow-soft)}.teacher-task strong{display:block;font-size:20px;margin-bottom:6px}.dash-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.dash-stat{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--shadow-soft)}.dash-stat b{font-size:34px;line-height:1;display:block}.attention{display:grid;gap:10px}.attention-row{background:#fff;border:1px solid var(--line);border-radius:20px;padding:16px;display:grid;grid-template-columns:1fr 190px auto;gap:16px;align-items:center}.bar{height:12px;background:#f0e6d9;border-radius:999px;overflow:hidden}.bar span{display:block;height:100%;background:var(--red);border-radius:999px;width:var(--w)}.bar.good span{background:var(--green)}.student-row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px}.teacher-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.teacher-tabs button{background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 14px;cursor:pointer;font-weight:950;color:var(--muted)}.teacher-tabs button.on{background:var(--blue);border-color:var(--blue);color:white}.worksheet{display:grid;grid-template-columns:360px 1fr;gap:16px}.form-panel{background:#fff;border:1px solid var(--line);border-radius:24px;padding:18px;box-shadow:var(--shadow-soft)}.field{margin:0 0 14px}.field label{display:block;font-size:13px;font-weight:950;color:var(--soft-ink);margin-bottom:6px}.field input,.field select{width:100%;border:1px solid var(--line);border-radius:14px;padding:12px;background:#fff}.check-list{display:grid;gap:8px;max-height:260px;overflow:auto;padding-right:4px}.check{display:flex;gap:8px;align-items:flex-start;background:#fff9ef;border:1px solid var(--line);border-radius:14px;padding:10px}.check input{margin-top:3px}.paper-preview{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:var(--shadow-soft)}.paper-preview ol{padding-left:24px}.paper-preview li{margin:0 0 14px}.copy-box{background:#fff;border:1px dashed #b9c8eb;border-radius:20px;padding:16px;white-space:pre-wrap;color:var(--soft-ink)}
+  .bottom-nav{display:none;position:fixed;z-index:45;left:10px;right:10px;bottom:10px;background:rgba(255,249,239,.96);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:24px;padding:8px;box-shadow:var(--shadow);justify-content:space-around}.bottom-nav button{font-size:12px;padding:8px 9px;display:grid;gap:2px;place-items:center}.empty{padding:28px;text-align:center;background:#fff;border:1px solid var(--line);border-radius:24px;color:var(--muted)}
+  .route-map{background:#fffdf8;border:1px solid var(--line);border-radius:24px;padding:18px}.route-map code{background:#fff1d5;border:1px solid var(--line);padding:2px 6px;border-radius:8px;color:var(--brand-dark)}
+  @media(max-width:980px){.topbar{flex-wrap:wrap}.nav{order:3;width:100%;justify-content:center;overflow:auto}.hero,.two,.lesson-shell,.worksheet,.topic-layout{grid-template-columns:1fr}.subject-grid{grid-template-columns:repeat(2,1fr)}.quick-grid,.three,.four,.teacher-grid,.dash-grid,.practice-grid{grid-template-columns:1fr 1fr}.lesson-aside,.side-panel{position:static}.attention-row{grid-template-columns:1fr}.hero-art{min-height:auto}.worksheet{grid-template-columns:1fr}}
+  @media(max-width:640px){.ribbon{font-size:12px}.topbar{padding:10px 12px}.brand small{display:none}.nav{display:none}.top-actions{margin-left:auto}.seg.role{display:none}.main{padding:18px 12px 92px}.hero{padding:22px;border-radius:24px}.quick-grid,.subject-grid,.teacher-grid,.dash-grid,.practice-grid,.keyword-grid{grid-template-columns:1fr}.subject-hero{grid-template-columns:1fr}.lesson-head,.lesson-body{padding:18px}.stepper{grid-template-columns:repeat(2,1fr)}.bottom-nav{display:flex}.hero h1{font-size:38px}.attention-row{grid-template-columns:1fr}.subject-card{min-height:auto}.stat-row{display:grid;grid-template-columns:1fr 1fr}.teacher-tabs{overflow:auto;flex-wrap:nowrap}.top-actions .seg:first-child{display:flex}.paper-preview{padding:18px}}
+</style>
+</head>
+<body>
+<div class="ribbon">Interactive UX prototype for <b>Tendo</b> — based on the repo scan. App code is untouched.</div>
+<header class="shell">
+  <div class="topbar">
+    <div class="brand" onclick="go('home')" role="button" tabindex="0" aria-label="Go home">
+      <span class="brand-mark">T</span>
+      <span>Tendo<small id="brand-sub">Learner mode</small></span>
+    </div>
+    <nav class="nav" aria-label="Main navigation">
+      <button data-nav="home" onclick="go('home')">Home</button>
+      <button data-nav="study" onclick="go('study')">Study</button>
+      <button data-nav="practice" onclick="go('practice')">Practice</button>
+      <button data-nav="papers" onclick="go('papers')">Papers</button>
+      <button data-nav="teacher" onclick="goTeacher()">Teacher</button>
+    </nav>
+    <div class="top-actions">
+      <div class="seg" aria-label="Class switcher">
+        <button id="grade-p6" onclick="setGrade('P6')">P6</button>
+        <button id="grade-p7" onclick="setGrade('P7')">P7</button>
+      </div>
+      <div class="seg role" aria-label="Role switcher">
+        <button id="role-learner" onclick="setRole('learner')">Learner</button>
+        <button id="role-teacher" class="teacher" onclick="setRole('teacher')">Teacher</button>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="main" id="app" aria-live="polite"></main>
+<nav class="bottom-nav" aria-label="Mobile navigation">
+  <button data-bottom="home" onclick="go('home')">🏠<span>Home</span></button>
+  <button data-bottom="study" onclick="go('study')">📚<span>Study</span></button>
+  <button data-bottom="practice" onclick="go('practice')">✏️<span>Practice</span></button>
+  <button data-bottom="teacher" onclick="goTeacher()">👩🏾‍🏫<span>Teacher</span></button>
+</nav>
+<script>
+const subjects = {
+  P7: [
+    {id:'math',title:'Mathematics',short:'Maths',icon:'➗',accent:'#be5636',topics:11,questions:220,route:'/math/p7',desc:'Sets, numbers, geometry, measurement and algebra.',progress:58},
+    {id:'english',title:'English Language',short:'English',icon:'📖',accent:'#7654b9',topics:7,questions:140,route:'/english/p7',desc:'Writing, media, rights, environment and ceremonies.',progress:34},
+    {id:'science',title:'Integrated Science',short:'Science',icon:'🔬',accent:'#2f8f5b',topics:8,questions:160,route:'/science/p7',desc:'Body systems, energy, health and machines.',progress:42},
+    {id:'sst',title:'Social Studies',short:'SST',icon:'🌍',accent:'#3f64b5',topics:10,questions:200,route:'/social-studies/p7',desc:'Living together in Africa: maps, people, history and development.',progress:25},
+    {id:'re',title:'Religious Education',short:'RE',icon:'🕊️',accent:'#d28b28',topics:14,questions:112,route:'/re/p7',desc:'Choose CRE or IRE, then study the official PLE option.',progress:12}
+  ],
+  P6: [
+    {id:'math',title:'Mathematics',short:'Maths',icon:'➗',accent:'#be5636',topics:6,questions:120,route:'/math/p6',desc:'Numbers, fractions, geometry, data and simple algebra.',progress:48},
+    {id:'english',title:'English Language',short:'English',icon:'📖',accent:'#7654b9',topics:5,questions:100,route:'/english/p6',desc:'Road safety, debating, family, occupations and dining.',progress:28},
+    {id:'science',title:'Integrated Science',short:'Science',icon:'🔬',accent:'#2f8f5b',topics:5,questions:100,route:'/science/p6',desc:'Living things, sound, body systems and agriculture.',progress:33},
+    {id:'sst',title:'Social Studies',short:'SST',icon:'🌍',accent:'#3f64b5',topics:6,questions:120,route:'/social-studies/p6',desc:'People and resources of East Africa.',progress:20},
+    {id:'re',title:'Religious Education',short:'RE',icon:'🕊️',accent:'#d28b28',topics:6,questions:80,route:'/re/p6',desc:'CRE and IRE foundations for Primary Six.',progress:8}
+  ]
+};
+const topics = {
+  math:[
+    {id:'sets',title:'Set Concepts',strand:'Sets',minutes:22,status:'done',score:84,pct:100,visual:true},
+    {id:'whole',title:'Whole Numbers',strand:'Numeracy',minutes:28,status:'continue',score:68,pct:55,visual:false},
+    {id:'operations',title:'Operations on Whole Numbers',strand:'Numeracy',minutes:24,status:'new',score:null,pct:0,visual:false},
+    {id:'patterns',title:'Patterns and Sequences',strand:'Numeracy',minutes:18,status:'new',score:null,pct:0,visual:false},
+    {id:'fractions',title:'Fractions, Decimals and Percentages',strand:'Numeracy',minutes:32,status:'needs',score:46,pct:35,visual:false},
+    {id:'integers',title:'Integers',strand:'Numeracy',minutes:18,status:'new',score:null,pct:0,visual:false},
+    {id:'graphs',title:'Data Handling and Graphs',strand:'Graphs and Data',minutes:28,status:'continue',score:72,pct:65,visual:true},
+    {id:'geometry',title:'Construction and Geometry',strand:'Geometry',minutes:34,status:'new',score:null,pct:0,visual:true},
+    {id:'time',title:'Time',strand:'Measurement',minutes:20,status:'done',score:91,pct:100,visual:false},
+    {id:'measure',title:'Length, Mass, Capacity and Money',strand:'Measurement',minutes:30,status:'new',score:null,pct:0,visual:false},
+    {id:'algebra',title:'Algebra',strand:'Algebra',minutes:30,status:'needs',score:39,pct:20,visual:false}
+  ],
+  english:[
+    {id:'holidays',title:'School holidays',strand:'Term I',minutes:20,status:'continue',score:70,pct:60,visual:true},
+    {id:'letters',title:'Letter writing',strand:'Term I',minutes:26,status:'needs',score:44,pct:35,visual:true},
+    {id:'exams',title:'Examinations',strand:'Term II',minutes:22,status:'new',score:null,pct:0,visual:false},
+    {id:'media',title:'Electronic media',strand:'Term II',minutes:24,status:'done',score:82,pct:100,visual:true},
+    {id:'rights',title:'Rights, responsibilities and freedom',strand:'Term II',minutes:24,status:'new',score:null,pct:0,visual:false},
+    {id:'environment',title:'Environmental protection',strand:'Term III',minutes:24,status:'new',score:null,pct:0,visual:true},
+    {id:'ceremonies',title:'Ceremonies',strand:'Term III',minutes:20,status:'new',score:null,pct:0,visual:false}
+  ],
+  science:[
+    {id:'skeleton',title:'Muscular-skeletal system',strand:'Human body',minutes:30,status:'continue',score:62,pct:55,visual:true},
+    {id:'electricity',title:'Electricity and magnetism',strand:'Energy',minutes:32,status:'needs',score:41,pct:30,visual:true},
+    {id:'excretory',title:'Excretory system',strand:'Human body',minutes:28,status:'new',score:null,pct:0,visual:true},
+    {id:'light',title:'Light energy',strand:'Energy',minutes:28,status:'new',score:null,pct:0,visual:true},
+    {id:'environment',title:'Interdependence of things in the environment',strand:'Environment',minutes:30,status:'done',score:88,pct:100,visual:true},
+    {id:'health',title:'Population and health',strand:'Health',minutes:26,status:'new',score:null,pct:0,visual:false}
+  ],
+  sst:[
+    {id:'africa-location',title:'Location of Africa on the map of the world',strand:'Term I',minutes:28,status:'continue',score:66,pct:50,visual:true},
+    {id:'physical',title:'Physical features of Africa',strand:'Term I',minutes:32,status:'new',score:null,pct:0,visual:true},
+    {id:'climate',title:'Climate of Africa',strand:'Term I',minutes:26,status:'needs',score:45,pct:25,visual:true},
+    {id:'vegetation',title:'Vegetation of Africa',strand:'Term I',minutes:26,status:'new',score:null,pct:0,visual:true},
+    {id:'people',title:'People of Africa, ethnic groups and settlement patterns',strand:'Term II',minutes:34,status:'new',score:null,pct:0,visual:true},
+    {id:'organisations',title:'Major world organisations',strand:'Term III',minutes:28,status:'new',score:null,pct:0,visual:false}
+  ],
+  re:[
+    {id:'cre-choice',title:'Christian Religious Education — choose CRE path',strand:'CRE',minutes:20,status:'new',score:null,pct:0,visual:false},
+    {id:'ire-choice',title:'Islamic Religious Education — choose IRE path',strand:'IRE',minutes:20,status:'new',score:null,pct:0,visual:false},
+    {id:'commandments',title:'The Ten Commandments in Daily Life',strand:'CRE',minutes:24,status:'continue',score:68,pct:55,visual:false},
+    {id:'surahs',title:'Selected Surahs and Moral Teachings',strand:'IRE',minutes:24,status:'new',score:null,pct:0,visual:false}
+  ]
+};
+const quiz = [
+  {q:'Akello has 24 mangoes. She gives 1/3 to her brother. How many mangoes remain?', choices:['8','12','16','21'], correct:2, why:'1/3 of 24 is 8. 24 − 8 = 16 mangoes remain.'},
+  {q:'Which is greater: 3/4 or 5/8?', choices:['3/4','5/8','They are equal','Cannot tell'], correct:0, why:'3/4 is 6/8, so it is greater than 5/8.'},
+  {q:'Change 0.25 to a fraction in simplest form.', choices:['25/10','1/4','2/5','1/2'], correct:1, why:'0.25 = 25/100. Divide by 25 to get 1/4.'}
+];
+const teacherAttention = [
+  {topic:'Fractions, Decimals and Percentages', subject:'Maths', avg:46, low:9, action:'Make 10-question worksheet'},
+  {topic:'Letter writing', subject:'English', avg:44, low:7, action:'Give guided writing practice'},
+  {topic:'Electricity and magnetism', subject:'Science', avg:41, low:8, action:'Re-teach circuit diagrams'},
+  {topic:'Climate of Africa', subject:'SST', avg:45, low:6, action:'Use map + rainfall activity'}
+];
+const students = [
+  {name:'Akello Joy',topics:12,avg:78,last:'Today'},
+  {name:'Kato Daniel',topics:9,avg:62,last:'Today'},
+  {name:'Namuli Sarah',topics:6,avg:44,last:'Yesterday'},
+  {name:'Okello Brian',topics:5,avg:39,last:'2 days ago'}
+];
+let state = {role:'learner',grade:'P7',screen:'home',subject:'math',topic:'fractions',filter:'all',query:'',lessonStep:'read',quizIndex:0,answer:null,score:0,teacherTab:'dashboard',worksheet:false,listen:false,practiceStarted:false};
+const app = document.getElementById('app');
+function syncShell(){
+  document.getElementById('brand-sub').textContent = state.role === 'teacher' ? 'Teacher mode' : 'Learner mode';
+  document.getElementById('grade-p6').classList.toggle('on', state.grade==='P6');
+  document.getElementById('grade-p7').classList.toggle('on', state.grade==='P7');
+  document.getElementById('role-learner').classList.toggle('on', state.role==='learner');
+  document.getElementById('role-teacher').classList.toggle('on', state.role==='teacher');
+  document.querySelectorAll('[data-nav]').forEach(b=>b.classList.toggle('active', b.dataset.nav === activeNav()));
+  document.querySelectorAll('[data-bottom]').forEach(b=>b.classList.toggle('active', b.dataset.bottom === activeNav()));
+}
+function activeNav(){ return ['subject','lesson'].includes(state.screen) ? 'study' : state.screen; }
+function render(){ syncShell(); app.innerHTML = `<div class="screen">${screenHtml()}</div>`; window.scrollTo(0,0); }
+function screenHtml(){
+  if(state.screen==='home') return state.role==='teacher' ? teacherHome() : learnerHome();
+  if(state.screen==='study') return studyHome();
+  if(state.screen==='subject') return subjectPage();
+  if(state.screen==='lesson') return lessonPage();
+  if(state.screen==='practice') return practicePage();
+  if(state.screen==='papers') return papersPage();
+  if(state.screen==='teacher') return teacherPage();
+  return learnerHome();
+}
+function setRole(role){ state.role=role; if(role==='teacher') { state.screen='teacher'; state.teacherTab='dashboard'; } else { state.screen='home'; } render(); }
+function setGrade(grade){ state.grade=grade; state.screen = state.screen==='teacher' ? 'teacher' : state.screen; render(); }
+function go(screen){ state.screen=screen; if(screen==='teacher') state.role='teacher'; render(); }
+function goTeacher(){ state.role='teacher'; state.screen='teacher'; render(); }
+function openSubject(id){ state.subject=id; state.screen='subject'; state.filter='all'; state.query=''; render(); }
+function openTopic(id){ state.topic=id; state.screen='lesson'; state.lessonStep='read'; state.quizIndex=0; state.answer=null; state.score=0; render(); }
+function setFilter(f){ state.filter=f; render(); }
+function setQuery(v){ state.query=v.toLowerCase(); render(); }
+function setStep(s){ state.lessonStep=s; if(s==='try'){state.quizIndex=0;state.answer=null;state.score=0;} render(); }
+function chooseAnswer(i){ if(state.answer!==null) return; state.answer=i; if(i===quiz[state.quizIndex].correct) state.score++; render(); }
+function nextQuestion(){ if(state.quizIndex < quiz.length-1){ state.quizIndex++; state.answer=null; } else { state.lessonStep='done'; } render(); }
+function setTeacherTab(tab){ state.teacherTab=tab; render(); }
+function generateWorksheet(){ state.worksheet=true; render(); }
+function resetWorksheet(){ state.worksheet=false; render(); }
+function toggleListen(){ state.listen=!state.listen; render(); }
+function startPractice(){ state.practiceStarted=true; render(); }
+function currentSubject(){ return subjects[state.grade].find(s=>s.id===state.subject) || subjects[state.grade][0]; }
+function currentTopics(){ return topics[state.subject] || topics.math; }
+function currentTopic(){ return currentTopics().find(t=>t.id===state.topic) || currentTopics()[0]; }
+function badgeForStatus(t){
+  if(t.status==='done') return '<span class="pill good">✓ Strong</span>';
+  if(t.status==='continue') return '<span class="pill blue">Continue</span>';
+  if(t.status==='needs') return '<span class="pill warn">Needs practice</span>';
+  return '<span class="pill">Not started</span>';
+}
+function subjectCards(){
+  return subjects[state.grade].map(s=>`
+    <button class="subject-card" style="--accent:${s.accent}" onclick="openSubject('${s.id}')">
+      <div class="subject-icon" style="background:${s.accent}18">${s.icon}</div>
+      <h3>${s.title}</h3>
+      <p>${s.desc}</p>
+      <div class="meter" aria-hidden="true"><span style="--w:${s.progress}%"></span></div>
+      <div class="pill-row"><span class="pill">${s.topics} topics</span><span class="pill blue">${s.questions} questions</span></div>
+    </button>`).join('');
+}
+function learnerHome(){
+  return `
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Learner home · ${state.grade}</div>
+      <h1>Joy, choose one thing to do now.</h1>
+      <p class="lead">No maze. No long menu. Tendo gives a child three obvious choices: continue, practice, or pick a subject.</p>
+      <div class="quick-grid">
+        <button class="quick" onclick="openTopic('fractions')"><span><div class="quick-icon">▶️</div><strong>Continue lesson</strong><span>Fractions · 12 min left</span></span><span class="pill blue">Start here</span></button>
+        <button class="quick" onclick="go('practice')"><span><div class="quick-icon">✏️</div><strong>Practice 10 questions</strong><span>Mixed from your weak areas</span></span><span class="pill warn">Good before prep</span></button>
+        <button class="quick" onclick="go('papers')"><span><div class="quick-icon">📝</div><strong>Try a PLE paper</strong><span>Timed or small section</span></span><span class="pill">Exam mode</span></button>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="learner-card"><div class="avatar">🎓</div><div><strong>${state.grade} learner profile</strong><p class="muted">Class is always visible, but switching is just two taps.</p></div></div>
+      <div class="learner-card"><div class="avatar">⭐</div><div style="flex:1"><strong>This week</strong><p class="muted">4 topics studied · 26 questions answered</p><div class="meter"><span style="--w:62%"></span></div></div></div>
+      <div class="learner-card"><div class="avatar">👩🏾‍🏫</div><div><strong>Teacher tools are separate</strong><p class="muted">Kids do not see worksheet/report clutter unless they switch to Teacher.</p></div></div>
+    </div>
+  </section>
+  <div class="section-head"><div><h2>Your subjects</h2><p>Cards use familiar school words and large tap targets.</p></div><button class="btn light" onclick="go('study')">See all subjects</button></div>
+  <div class="subject-grid">${subjectCards()}</div>
+  <div class="section-head"><div><h2>What changed from the current repo flow?</h2><p>The content stays. The entry points become clearer.</p></div></div>
+  <div class="grid three">
+    <div class="route-map"><h3>1. Role split</h3><p>Learner actions and teacher actions are no longer mixed in the same long home list.</p><code>/teacher</code> becomes a clear mode.</div>
+    <div class="route-map"><h3>2. Persistent navbar</h3><p>Home, Study, Practice, Papers and Teacher are always visible instead of only back links.</p><code>/math/p7/topic</code> still works.</div>
+    <div class="route-map"><h3>3. Guided topic page</h3><p>Each topic becomes Watch → Read → Try → Done so a child always knows the next step.</p><code>TopicTabs</code> can evolve into this.</div>
+  </div>`;
+}
+function teacherHome(){
+  return `
+  <section class="hero teacher">
+    <div>
+      <div class="eyebrow">Teacher home · ${state.grade}</div>
+      <h1>Good morning, Teacher. Pick the job.</h1>
+      <p class="lead">The teacher side uses plain tasks: see weak topics, make a worksheet, share a parent update. No data-table-first experience.</p>
+      <div class="quick-grid">
+        <button class="quick" onclick="go('teacher');setTeacherTab('dashboard')"><span><div class="quick-icon">📉</div><strong>What needs reteaching?</strong><span>4 topics need attention</span></span><span class="pill warn">Today</span></button>
+        <button class="quick" onclick="go('teacher');setTeacherTab('worksheet')"><span><div class="quick-icon">🧾</div><strong>Make worksheet</strong><span>3 steps, then print/copy</span></span><span class="pill blue">Fast</span></button>
+        <button class="quick" onclick="go('teacher');setTeacherTab('reports')"><span><div class="quick-icon">💬</div><strong>Parent report</strong><span>Copy a readable update</span></span><span class="pill good">Ready</span></button>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="dash-grid" style="grid-template-columns:1fr 1fr">
+        <div class="dash-stat"><b>22</b><span>learners</span></div><div class="dash-stat"><b>64%</b><span>class average</span></div><div class="dash-stat"><b>4</b><span>weak topics</span></div><div class="dash-stat"><b>3</b><span>papers attempted</span></div>
+      </div>
+      <div class="callout"><strong>Teacher copy principle:</strong> use classroom language, not analytics language. “Needs reteaching” beats “low-performing segment”.</div>
+    </div>
+  </section>`;
+}
+function studyHome(){
+  return `
+  <div class="section-head"><div><div class="eyebrow">Study · ${state.grade}</div><h1>Choose a subject.</h1><p class="lead">This screen is intentionally boring: no papers, no teacher links, no sales copy. Just subjects.</p></div><div class="toolbar"><button class="btn light" onclick="setGrade('P6')">P6</button><button class="btn primary" onclick="setGrade('P7')">P7</button></div></div>
+  <div class="subject-grid">${subjectCards()}</div>
+  <div class="section-head"><div><h2>Information architecture</h2><p>Suggested route structure without rebuilding content yet.</p></div></div>
+  <div class="grid two">
+    <div class="panel card"><h3>Learner routes</h3><p><code>/</code> learner home → <code>/study</code> subjects → <code>/${state.grade.toLowerCase()}/:subject</code> topics → lesson → practice → result.</p><p>Existing routes can redirect into this mental model first; code migration can come later.</p></div>
+    <div class="panel card"><h3>Teacher routes</h3><p><code>/teacher</code> dashboard → worksheet → reports → content issues.</p><p>Teacher tools stop competing with child study actions.</p></div>
+  </div>`;
+}
+function subjectPage(){
+  const s=currentSubject();
+  const strands=[...new Set(currentTopics().map(t=>t.strand))];
+  let list=currentTopics().filter(t=> state.filter==='all' || t.status===state.filter || (state.filter==='visual' && t.visual));
+  if(state.query) list=list.filter(t=>`${t.title} ${t.strand}`.toLowerCase().includes(state.query));
+  return `
+  <div class="breadcrumb"><button onclick="go('study')">Study</button><span>›</span><span>${state.grade}</span><span>›</span><strong>${s.title}</strong></div>
+  <section class="subject-hero">
+    <div>
+      <div class="eyebrow">${state.grade} · ${s.title}</div>
+      <h1>${s.short}: clear topic map</h1>
+      <p class="lead">Topics are grouped, searchable, and labelled with the next action — start, continue, or practise again.</p>
+      <div class="stat-row"><div class="stat"><b>${s.topics}</b><span>topics</span></div><div class="stat"><b>${s.questions}</b><span>questions</span></div><div class="stat"><b>${s.progress}%</b><span>complete</span></div></div>
+    </div>
+    <button class="btn primary" onclick="openTopic('${list[0]?.id || currentTopics()[0].id}')">Start next topic</button>
+  </section>
+  <div class="topic-layout" style="margin-top:18px">
+    <aside class="side-panel">
+      <div class="card"><h3>Find topic</h3><input class="search" placeholder="Search e.g. fractions" oninput="setQuery(this.value)" value="${state.query}"><div class="filters"><button class="chip ${state.filter==='all'?'on':''}" onclick="setFilter('all')">All</button><button class="chip ${state.filter==='continue'?'on':''}" onclick="setFilter('continue')">Continue</button><button class="chip ${state.filter==='needs'?'on':''}" onclick="setFilter('needs')">Needs practice</button><button class="chip ${state.filter==='visual'?'on':''}" onclick="setFilter('visual')">Visuals</button></div></div>
+      <div class="card" style="margin-top:12px"><h3>Groups</h3><div class="mini-list">${strands.map(st=>`<button onclick="setQuery('${st.toLowerCase()}')">${st}</button>`).join('')}</div></div>
+    </aside>
+    <section class="topic-list">
+      ${list.length ? list.map(t=>topicCard(t)).join('') : '<div class="empty">No topics match that search.</div>'}
+    </section>
+  </div>`;
+}
+function topicCard(t){
+  const pct = Math.max(2,t.pct);
+  return `<button class="topic-card" onclick="openTopic('${t.id}')">
+    <div><h3>${t.title}</h3><p>${t.strand} · about ${t.minutes} minutes${t.visual?' · diagram included':''}</p><div class="topic-meta">${badgeForStatus(t)}${t.score!==null?`<span class="pill">Last score ${t.score}%</span>`:''}<span class="pill">${t.minutes} min</span></div></div>
+    <div class="progress-ring" style="--pct:${pct}%"><span>${t.pct}%</span></div>
+  </button>`;
+}
+function lessonPage(){
+  const s=currentSubject(), t=currentTopic();
+  return `
+  <div class="breadcrumb"><button onclick="go('study')">Study</button><span>›</span><button onclick="openSubject('${s.id}')">${s.title}</button><span>›</span><strong>${t.title}</strong></div>
+  <div class="lesson-shell">
+    <section class="lesson-main">
+      <div class="lesson-head"><div class="eyebrow">${state.grade} · ${s.title} · ${t.strand}</div><h1>${t.title}</h1><p class="lead">One topic page. One visible next step. The child never has to decide between too many buttons.</p><div class="stepper"><button class="${state.lessonStep==='watch'?'on':''}" onclick="setStep('watch')">1 Watch</button><button class="${state.lessonStep==='read'?'on':''}" onclick="setStep('read')">2 Read</button><button class="${state.lessonStep==='try'?'on':''}" onclick="setStep('try')">3 Try</button><button class="${state.lessonStep==='done'?'on':''}" onclick="setStep('done')">4 Done</button></div></div>
+      <div class="lesson-body">${lessonStepHtml(t)}</div>
+    </section>
+    <aside class="lesson-aside"><h3>Lesson path</h3><div class="timeline"><div class="timeline-item ${['read','try','done'].includes(state.lessonStep)?'done':state.lessonStep==='watch'?'active':''}"><span class="dot">1</span><div><strong>Watch</strong><span>Short video or teacher explanation</span></div></div><div class="timeline-item ${['try','done'].includes(state.lessonStep)?'done':state.lessonStep==='read'?'active':''}"><span class="dot">2</span><div><strong>Read</strong><span>Big idea, keywords, worked example</span></div></div><div class="timeline-item ${state.lessonStep==='done'?'done':state.lessonStep==='try'?'active':''}"><span class="dot">3</span><div><strong>Try</strong><span>3 quick checks with feedback</span></div></div><div class="timeline-item ${state.lessonStep==='done'?'active':''}"><span class="dot">4</span><div><strong>Done</strong><span>Save score and choose next action</span></div></div></div><div class="callout"><strong>UX note:</strong> existing Watch/Read tabs become a child-friendly stepper. Practice is no longer hidden at the bottom.</div><button class="btn light block" onclick="openSubject('${s.id}')">Back to ${s.short}</button></aside>
+  </div>`;
+}
+function lessonStepHtml(t){
+  if(state.lessonStep==='watch') return `<div class="video-box"><div><div class="play">▶</div><h2>5-minute teacher video</h2><p style="color:#fff4df">If no video exists yet, this panel says “Video coming soon” and sends the learner to Read.</p><button class="btn primary" onclick="setStep('read')">I watched / skip to Read</button></div></div>`;
+  if(state.lessonStep==='read') return `<div class="listen"><div><span class="sound">🔊 Listen mode</span><p class="muted">Useful for younger learners and slow readers.</p></div><button class="btn ${state.listen?'green':'light'}" onclick="toggleListen()">${state.listen?'Playing… pause':'Listen'}</button></div><div class="study-card"><div class="eyebrow">Big idea</div><h2>${t.title}</h2><p>Understand the main rule first, then practise with small questions. For this prototype, the content is shortened; the real app keeps your full topic notes.</p></div><div class="keyword-grid"><div class="keyword"><b>Key word</b><span>Numerator: top number in a fraction.</span></div><div class="keyword"><b>Key word</b><span>Denominator: bottom number showing equal parts.</span></div></div><div class="study-card"><h3>Worked example</h3><p><strong>Problem:</strong> Akello has 24 mangoes. She gives 1/3 to her brother. How many remain?</p><p>1/3 of 24 = 8. Then 24 − 8 = 16.</p><p><strong>Answer: 16 mangoes.</strong></p></div><button class="btn primary block" onclick="setStep('try')">I understand — try 3 questions</button>`;
+  if(state.lessonStep==='try'){
+    const q=quiz[state.quizIndex];
+    const answered=state.answer!==null;
+    return `<div class="quiz-card"><div class="eyebrow">Question ${state.quizIndex+1} of ${quiz.length}</div><h2>${q.q}</h2>${q.choices.map((c,i)=>{let cls='choice'; if(answered && i===q.correct) cls+=' correct'; else if(answered && i===state.answer) cls+=' wrong'; return `<button class="${cls}" onclick="chooseAnswer(${i})"><span class="letter">${String.fromCharCode(65+i)}</span><span>${c}</span></button>`}).join('')}${answered?`<div class="feedback"><strong>${state.answer===q.correct?'Correct.':'Not quite.'}</strong> ${q.why}</div><button class="btn primary block" onclick="nextQuestion()">${state.quizIndex===quiz.length-1?'See result':'Next question'}</button>`:''}</div>`;
+  }
+  const pct=Math.round((state.score/quiz.length)*100);
+  return `<div class="study-card" style="text-align:center"><div style="font-size:74px;font-weight:950;color:var(--brand);line-height:1">${state.score}/${quiz.length}</div><h2>${pct >= 70 ? 'Great work.' : 'Good start.'}</h2><p>${pct >= 70 ? 'The topic can be marked strong. Try a new topic or a past-paper section.' : 'Read the worked example once more, then retry.'}</p><div class="toolbar" style="justify-content:center"><button class="btn primary" onclick="openSubject('${state.subject}')">Pick another topic</button><button class="btn light" onclick="setStep('try')">Retake</button><button class="btn green" onclick="go('practice')">Practice more</button></div></div>`;
+}
+function practicePage(){
+  if(state.practiceStarted) return `<div class="breadcrumb"><button onclick="go('practice')">Practice</button><span>›</span><strong>Mixed set</strong></div><section class="lesson-main"><div class="lesson-head"><div class="eyebrow">Practice · ${state.grade}</div><h1>10-question practice</h1><p class="lead">Prototype interaction: answer one sample question and get immediate feedback.</p></div><div class="lesson-body">${lessonStepHtml({title:'Mixed practice'})}</div></section>`;
+  return `<div class="section-head"><div><div class="eyebrow">Practice · ${state.grade}</div><h1>Short practice, not a maze.</h1><p class="lead">Kids can start a set without choosing 10 filters. Teachers can still customise worksheets in Teacher mode.</p></div></div><div class="practice-grid"><div class="practice-card"><div class="big">⚡</div><h2>Quick 10</h2><p>Mixed questions from topics Joy has already touched.</p><button class="btn primary block" onclick="startPractice();setStep('try')">Start quick practice</button></div><div class="practice-card"><div class="big">🎯</div><h2>Weak topics</h2><p>Fractions, Algebra, Letter writing. Best for evening prep.</p><button class="btn light block" onclick="openTopic('fractions')">Practise weak topic</button></div><div class="practice-card"><div class="big">🧠</div><h2>Remember yesterday</h2><p>Small revision set from what was studied yesterday.</p><button class="btn light block" onclick="startPractice();setStep('try')">Start recall</button></div><div class="practice-card"><div class="big">🏁</div><h2>Exam sprint</h2><p>15 timed questions, mixed PLE style.</p><button class="btn light block" onclick="go('papers')">Open papers</button></div></div>`;
+}
+function papersPage(){
+  const teacher = state.role==='teacher';
+  return `<div class="section-head"><div><div class="eyebrow">PLE papers · ${state.grade}</div><h1>Past papers with two clear uses.</h1><p class="lead">A learner attempts. A teacher browses by topic or prints. Same content, different task labels.</p></div><button class="btn ${teacher?'blue':'primary'}" onclick="setRole('${teacher?'learner':'teacher'}')">Switch to ${teacher?'learner':'teacher'} view</button></div><div class="grid three">${[2018,2019,2020].map(y=>`<div class="card"><div class="pill-row"><span class="pill blue">UNEB representative</span><span class="pill">${y}</span></div><h2>PLE Mathematics ${y}</h2><p>40 questions · 2 hours · explanations included.</p>${teacher?`<button class="btn blue block" onclick="go('teacher');setTeacherTab('worksheet')">Browse by topic / print</button>`:`<button class="btn primary block" onclick="startPractice();setStep('try')">Attempt as learner</button>`}<button class="btn light block" style="margin-top:8px" onclick="alert('Preview: this would open the paper detail screen.')">View details</button></div>`).join('')}</div><div class="callout" style="margin-top:18px"><strong>Design note:</strong> The current repo already separates paper attempt and teacher browse routes. The preview makes that choice visible earlier.</div>`;
+}
+function teacherPage(){
+  return `<div class="breadcrumb"><button onclick="go('home')">Home</button><span>›</span><strong>Teacher</strong></div><div class="section-head"><div><div class="eyebrow">Teacher mode · ${state.grade}</div><h1>Class tools in plain English.</h1><p class="lead">This is the non-tech-teacher version: answers “what should I do next?” before showing details.</p></div><button class="btn light" onclick="setRole('learner')">Back to learner</button></div><div class="teacher-tabs"><button class="${state.teacherTab==='dashboard'?'on':''}" onclick="setTeacherTab('dashboard')">Dashboard</button><button class="${state.teacherTab==='worksheet'?'on':''}" onclick="setTeacherTab('worksheet')">Worksheet maker</button><button class="${state.teacherTab==='reports'?'on':''}" onclick="setTeacherTab('reports')">Parent update</button><button class="${state.teacherTab==='issues'?'on':''}" onclick="setTeacherTab('issues')">Content issues</button></div>${teacherTabHtml()}`;
+}
+function teacherTabHtml(){
+  if(state.teacherTab==='worksheet') return worksheetHtml();
+  if(state.teacherTab==='reports') return `<div class="grid two"><div class="card"><h2>Parent update</h2><p>Readable, copy-paste friendly. No spreadsheet language.</p><div class="copy-box">Dear Parent, Joy practised 4 Tendo topics this week. Her strongest topic is Set Concepts. She needs more support in Fractions, Decimals and Percentages. Please encourage 10 minutes of practice before Friday.</div><button class="btn blue" style="margin-top:14px" onclick="alert('Preview: copied parent update.')">Copy update</button></div><div class="card"><h2>Class summary</h2><p>22 learners active · average score 64% · 4 topics need reteaching.</p><p class="muted">In the real app this can use the existing TeacherDashboard data, but change the first screen from tables to action cards.</p></div></div>`;
+  if(state.teacherTab==='issues') return `<div class="card"><h2>Content issues</h2><p>Teachers need a simple way to say “this answer is wrong” or “this explanation confused my class”.</p><div class="field"><label>What did you notice?</label><input placeholder="e.g. Question 4 in Fractions has two correct answers"></div><button class="btn blue">Send issue</button></div>`;
+  return `<div class="dash-grid"><div class="dash-stat"><b>22</b><span>active learners</span></div><div class="dash-stat"><b>64%</b><span>class average</span></div><div class="dash-stat"><b>4</b><span>topics to reteach</span></div><div class="dash-stat"><b>18</b><span>worksheets made</span></div></div><div class="section-head"><div><h2>Needs attention</h2><p>Sorted by what a teacher should act on first.</p></div><button class="btn blue" onclick="setTeacherTab('worksheet')">Make worksheet from these</button></div><div class="attention">${teacherAttention.map(a=>`<div class="attention-row"><div><h3>${a.topic}</h3><p>${a.subject} · ${a.low} learners below 50% · ${a.action}</p></div><div><div class="bar" style="--w:${a.avg}%"><span></span></div><span class="muted">Class average ${a.avg}%</span></div><button class="btn light small" onclick="setTeacherTab('worksheet')">Use</button></div>`).join('')}</div><div class="section-head"><div><h2>Learners to check</h2><p>Small cards first; detailed drill-down can remain one click away.</p></div></div><div class="grid two">${students.map(s=>`<div class="student-row"><div><strong>${s.name}</strong><p class="muted">${s.topics} topics · average ${s.avg}% · ${s.last}</p></div><span class="pill ${s.avg<50?'warn':s.avg>70?'good':'blue'}">${s.avg<50?'help':s.avg>70?'strong':'okay'}</span></div>`).join('')}</div>`;
+}
+function worksheetHtml(){
+  if(state.worksheet) return `<div class="worksheet"><div class="form-panel"><h2>Worksheet ready</h2><p>Teacher can print, copy to WhatsApp, or reshuffle.</p><button class="btn blue block" onclick="alert('Preview: print dialog would open.')">Print worksheet</button><button class="btn light block" style="margin-top:8px" onclick="alert('Preview: copied worksheet text.')">Copy to WhatsApp</button><button class="btn ghost block" style="margin-top:8px" onclick="resetWorksheet()">Edit choices</button></div><div class="paper-preview"><h2>${state.grade} Mathematics worksheet</h2><p>Name: ____________________ Class: ${state.grade} Date: __________</p><p><strong>Instructions:</strong> Answer all questions. Show working where needed.</p><ol><li>Akello has 24 mangoes. She gives 1/3 to her brother. How many remain?<br>A. 8 &nbsp; B. 12 &nbsp; C. 16 &nbsp; D. 21</li><li>Change 0.25 to a fraction in simplest form.<br>A. 25/10 &nbsp; B. 1/4 &nbsp; C. 2/5 &nbsp; D. 1/2</li><li>Which is greater: 3/4 or 5/8?<br>A. 3/4 &nbsp; B. 5/8 &nbsp; C. Equal &nbsp; D. Cannot tell</li></ol><hr><h3>Answer key</h3><p>1. C — 1/3 of 24 is 8; 24−8=16. 2. B. 3. A.</p></div></div>`;
+  return `<div class="worksheet"><div class="form-panel"><h2>Make worksheet</h2><p>Three steps. Defaults do most of the work.</p><div class="field"><label>Class</label><select><option>${state.grade}</option><option>P6</option><option>P7</option></select></div><div class="field"><label>Subject</label><select><option>Mathematics</option><option>English</option><option>Integrated Science</option><option>Social Studies</option><option>Religious Education</option><option>Mixed</option></select></div><div class="field"><label>Number of questions</label><select><option>10 quick questions</option><option>15 standard questions</option><option>25 full prep</option></select></div><button class="btn blue block" onclick="generateWorksheet()">Generate worksheet</button></div><div class="form-panel"><h2>Topics</h2><p class="muted">Pre-select weak topics from the dashboard.</p><div class="check-list">${teacherAttention.map((a,i)=>`<label class="check"><input type="checkbox" checked><span><strong>${a.topic}</strong><br><span class="muted">${a.subject} · class average ${a.avg}%</span></span></label>`).join('')}</div><div class="callout"><strong>Non-tech teacher principle:</strong> “Use weak topics” should be automatic; advanced selection stays optional.</div></div></div>`;
+}
+render();
+</script>
+</body>
+</html>
