@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import BrandBar from "@/components/BrandBar";
-import AppNav from "@/components/AppNav";
+import AuthGate from "@/components/AuthGate";
 
 export const metadata: Metadata = {
   title: "Tendo — PLE study",
@@ -14,8 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <BrandBar />
-        <AppNav />
-        <main className="app-main">{children}</main>
+        <AuthGate>{children}</AuthGate>
       </body>
     </html>
   );

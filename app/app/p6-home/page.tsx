@@ -1,67 +1,18 @@
 import Link from "next/link";
-import ClassSelector from "@/components/ClassSelector";
-
-const subjects = [
-  {
-    href: "/math/p6",
-    icon: "➗",
-    accent: "accent-math",
-    title: "Mathematics",
-    sub: "Sets, whole numbers up to 10M, fractions and geometry",
-    topics: "6 topics",
-    questions: "120+ questions",
-  },
-  {
-    href: "/english/p6",
-    icon: "📖",
-    accent: "accent-english",
-    title: "English Language",
-    sub: "Road safety, debating, family, occupations and dining",
-    topics: "5 topics",
-    questions: "100 questions",
-  },
-  {
-    href: "/science/p6",
-    icon: "🔬",
-    accent: "accent-science",
-    title: "Integrated Science",
-    sub: "Living things, sound, body systems and agriculture",
-    topics: "5 topics",
-    questions: "100 questions",
-  },
-  {
-    href: "/social-studies/p6",
-    icon: "🌍",
-    accent: "accent-sst",
-    title: "Social Studies",
-    sub: "People and resources of East Africa",
-    topics: "6 topics",
-    questions: "120 questions",
-  },
-  {
-    href: "/re/p6",
-    icon: "🕊️",
-    accent: "accent-re",
-    title: "Religious Education",
-    sub: "CRE and IRE foundation topics",
-    topics: "6 topics",
-    questions: "80 questions",
-  },
-];
 
 export default function P6HomePage() {
   return (
-    <div className="home-page">
+    <div className="home-page simple-home">
       <section className="home-hero hero-learner p6-hero">
         <div className="hero-copy">
-          <div className="eyebrow">Welcome · Primary Six</div>
-          <h1>Build the foundation early.</h1>
+          <div className="eyebrow">Student home · Primary Six</div>
+          <h1>Build one foundation skill today.</h1>
           <p className="lead">
-            Start with simple P6 topics now so P7 and PLE revision feel easier later.
+            Home is simple on purpose. Choose one next step, then use the tabs for subjects and practice.
           </p>
           <div className="hero-actions">
-            <Link href="/math/p6/p6-fractions-decimals" className="btn btn-primary">▶ Continue lesson</Link>
-            <Link href="/practice" className="btn btn-secondary">✏️ Quick practice</Link>
+            <Link href="/math/p6/p6-fractions-decimals" className="btn btn-primary">▶ Continue Fractions</Link>
+            <Link href="/study" className="btn btn-secondary">📚 Choose subject</Link>
           </div>
         </div>
 
@@ -72,7 +23,7 @@ export default function P6HomePage() {
             <span className="mini-avatar">🎓</span>
             <div>
               <strong>P6 foundation learner</strong>
-              <p>Only P6 content first, with a clear path to P7.</p>
+              <p>Small daily practice now makes P7 revision easier later.</p>
             </div>
           </div>
           <div className="learner-mini-card">
@@ -86,63 +37,43 @@ export default function P6HomePage() {
           <div className="learner-mini-card">
             <span className="mini-avatar">🏁</span>
             <div>
-              <strong>Getting ready for P7</strong>
-              <p>Practice small bits every day. No pressure.</p>
+              <strong>Suggested next step</strong>
+              <p>Finish Fractions and Decimals, then do quick practice.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <ClassSelector activeLevel="P6" />
-
-      <section id="quick-start" className="quick-start-grid" aria-label="Quick actions">
-        <Link href="/math/p6/p6-fractions-decimals" className="quick-action-card">
-          <span className="quick-icon">▶️</span>
-          <strong>Continue lesson</strong>
-          <span>Fractions and decimals</span>
-          <em>Start here</em>
-        </Link>
-        <Link href="/practice" className="quick-action-card">
-          <span className="quick-icon">✏️</span>
-          <strong>Quick practice</strong>
-          <span>Short questions for memory</span>
-          <em>10 minutes</em>
-        </Link>
-        <Link href="/" className="quick-action-card">
-          <span className="quick-icon">🏁</span>
-          <strong>Peek at P7</strong>
-          <span>See what comes next</span>
-          <em>Optional</em>
-        </Link>
-      </section>
-
-      <section id="subjects" className="home-section">
-        <div className="section-heading">
+      <section className="today-grid" aria-label="Today on Tendo">
+        <Link href="/math/p6/p6-fractions-decimals" className="today-card main-today-card">
+          <span>▶️</span>
           <div>
-            <div className="eyebrow">Study</div>
-            <h2>P6 Subjects</h2>
-            <p>Foundation content aligned with the NCDC syllabus.</p>
+            <div className="eyebrow">Continue</div>
+            <h2>Fractions, Decimals and Percentages</h2>
+            <p>Build the foundation before moving to harder P7 topics.</p>
           </div>
-          <Link href="/study" className="btn btn-secondary compact">See P6 + P7</Link>
-        </div>
-
-        <div className="subject-card-grid">
-          {subjects.map((subject) => (
-            <Link key={subject.href} href={subject.href} className={`subject-tile ${subject.accent}`}>
-              <span className="subject-emoji">{subject.icon}</span>
-              <h3>{subject.title}</h3>
-              <p>{subject.sub}</p>
-              <div className="tile-pills">
-                <span>{subject.topics}</span>
-                <span>{subject.questions}</span>
-              </div>
-            </Link>
-          ))}
-        </div>
+        </Link>
+        <Link href="/practice" className="today-card">
+          <span>✏️</span>
+          <div>
+            <h3>Quick practice</h3>
+            <p>Short questions for memory.</p>
+          </div>
+        </Link>
+        <Link href="/study" className="today-card">
+          <span>📚</span>
+          <div>
+            <h3>All subjects</h3>
+            <p>Maths, English, Science, SST and RE.</p>
+          </div>
+        </Link>
       </section>
 
-      <div className="foot">
-        Primary Six foundation curriculum aligned with NCDC Set One syllabus.
+      <div className="home-note-card">
+        <span aria-hidden="true">✨</span>
+        <p>
+          Tip: P6 is your foundation space. Use the bottom tabs to move between Home, Study, Practice and Papers.
+        </p>
       </div>
     </div>
   );

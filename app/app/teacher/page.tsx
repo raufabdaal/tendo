@@ -47,6 +47,24 @@ export default function TeacherPage() {
         </Link>
       </section>
 
+      <section className="teacher-content-library">
+        <div className="section-heading compact-heading">
+          <div>
+            <div className="eyebrow">Content library</div>
+            <h2>Use the same lessons your learners see</h2>
+            <p>Open subjects for lesson inspiration, examples, diagrams and quick checks.</p>
+          </div>
+          <Link href="/study" className="btn btn-secondary compact">Open full library</Link>
+        </div>
+        <div className="teacher-subject-strip">
+          <Link href="/math/p7" className="teacher-subject-chip accent-math"><span>➗</span><strong>Maths</strong><small>P6 + P7</small></Link>
+          <Link href="/english/p7" className="teacher-subject-chip accent-english"><span>📖</span><strong>English</strong><small>Writing ideas</small></Link>
+          <Link href="/science/p7" className="teacher-subject-chip accent-science"><span>🔬</span><strong>Science</strong><small>Diagrams</small></Link>
+          <Link href="/social-studies/p7" className="teacher-subject-chip accent-sst"><span>🌍</span><strong>SST</strong><small>Maps/history</small></Link>
+          <Link href="/re/p7" className="teacher-subject-chip accent-re"><span>🕊️</span><strong>RE</strong><small>CRE/IRE</small></Link>
+        </div>
+      </section>
+
       <section id="teacher-dashboard" className="teacher-dashboard-panel">
         <div className="section-heading compact-heading">
           <div>

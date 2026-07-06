@@ -29,7 +29,7 @@ export default function StudyPage() {
           <div className="eyebrow">Study</div>
           <h1>Choose your class, then your subject.</h1>
           <p className="lead">
-            A simple subject directory for learners. No teacher tools. No long explanation. Just study.
+            A simple subject directory for students and a content library for teachers planning lessons.
           </p>
         </div>
         <div className="study-hero-badge" aria-hidden="true">📚</div>
