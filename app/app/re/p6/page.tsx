@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { P6_RE_TOPICS } from "@/lib/p6-re-topics";
+import LearnerBanner from "@/components/LearnerBanner";
 
 export default function P6RePage() {
   return (
     <>
-      <Link href="/" className="back">← All subjects</Link>
+      <Link href="/p6-home" className="back">← P6 Subjects</Link>
+      <LearnerBanner activeLevel="P6" subject="re" />
       <div className="eyebrow">P6 · Religious Education</div>
       <h1>Primary Six Religious Education</h1>
       <p className="lead">Christian and Islamic Religious Education foundation topics.</p>

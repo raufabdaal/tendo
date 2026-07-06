@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProgressBadge from "@/components/ProgressBadge";
+import LearnerBanner from "@/components/LearnerBanner";
 import { getTopicVisualPill } from "@/lib/topics";
 import { SOCIAL_TOPICS } from "@/lib/social-topics";
 
@@ -52,6 +53,7 @@ export default function SocialStudiesTopicListPage() {
   return (
     <>
       <Link href="/" className="back">← All subjects</Link>
+      <LearnerBanner activeLevel="P7" subject="social-studies" />
       <div className="eyebrow">P7 · Social Studies</div>
       <h1>Choose a Social Studies topic to study</h1>
       <p className="lead">

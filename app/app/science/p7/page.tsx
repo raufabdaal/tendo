@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProgressBadge from "@/components/ProgressBadge";
+import LearnerBanner from "@/components/LearnerBanner";
 import { getTopicVisualPill } from "@/lib/topics";
 import { SCIENCE_TOPICS } from "@/lib/science-topics";
 
@@ -53,6 +54,7 @@ export default function ScienceTopicListPage() {
   return (
     <>
       <Link href="/" className="back">← All subjects</Link>
+      <LearnerBanner activeLevel="P7" subject="science" />
       <div className="eyebrow">P7 · Integrated Science</div>
       <h1>Choose a science strand to study</h1>
       <p className="lead">

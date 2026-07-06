@@ -1,6 +1,6 @@
-import { useState } from "react";
 import Link from "next/link";
 import ProgressBadge from "@/components/ProgressBadge";
+import LearnerBanner from "@/components/LearnerBanner";
 import { getTopicVisualPill } from "@/lib/topics";
 import { CRE_TOPICS, IRE_TOPICS } from "@/lib/re-topics";
 
@@ -8,6 +8,7 @@ export default function ReligiousEducationPage() {
   return (
     <>
       <Link href="/" className="back">← All subjects</Link>
+      <LearnerBanner activeLevel="P7" subject="re" />
       <div className="eyebrow">P7 · Religious Education</div>
       <h1>Choose your Religious Education option</h1>
       <p className="lead">

@@ -30,6 +30,11 @@ The platform is a child-friendly study app for upper-primary learners in Uganda 
 
 ## What this session changed
 
+**Frictionless Learner Profile & Class Lock System Built:**
+- Built an offline, zero-password **Learner Profile & Class Lock** onboarding flow (`app/lib/learner-profile.ts`, `app/components/ClassSelector.tsx`, `app/components/LearnerBanner.tsx`).
+- First-time visitors select their study class (**Primary Six** or **Primary Seven PLE**) and optionally record their name.
+- Automatically locks the home hub and routes P6 learners away from P7 content and vice versa. If learners navigate to the opposite grade's subject pages, an instant top warning banner lets them return to their designated class hub or switch profiles.
+
 **Mathematics Video Explainer Integration & Modular Video Player Upgrades:**
 - Embedded all 12 founder-provided YouTube explainer videos into exact matching subtopics and modules across Primary Seven Mathematics (`app/lib/topics.ts`) and Primary Six Mathematics (`app/lib/p6-math-topics.ts`).
 - Upgraded `TopicTabs.tsx` to support `videoUrl` on both the main topic and individual subtopic modules (`SubtopicModule`).

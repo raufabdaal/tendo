@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { P6_SOCIAL_TOPICS } from "@/lib/p6-social-topics";
+import LearnerBanner from "@/components/LearnerBanner";
 
 export default function P6SocialPage() {
   return (
     <>
-      <Link href="/" className="back">← All subjects</Link>
+      <Link href="/p6-home" className="back">← P6 Subjects</Link>
+      <LearnerBanner activeLevel="P6" subject="social-studies" />
       <div className="eyebrow">P6 · Social Studies</div>
       <h1>People and Resources of East Africa</h1>
       <p className="lead">Primary Six SST focusing specifically on the East African Community region.</p>

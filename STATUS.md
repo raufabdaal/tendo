@@ -15,7 +15,11 @@ With P7 completed and verified, Tendo expanded to Primary Six (P6) per `docs/spe
 - Milestone 4: P6 practice banks and dashboard/worksheet class filtering (`P6` vs `P7`) — **COMPLETED**
 - Milestone 5: P6 visual roadmap and textbook illustrations — **COMPLETED (All P6 topics linked to verified visual assets)**
 
-**Recent P6 & P7 Video Integration & Modular Video Player Upgrades:**
+**Recent Learner Profile & Class Lock Integration:**
+- Built a frictionless, zero-password **Learner Profile & Class Lock** system (`learner-profile.ts`, `ClassSelector.tsx`, `LearnerBanner.tsx`).
+- On first visit, students encounter a child-friendly onboarding card allowing them to select their primary class (**Primary Six** or **Primary Seven PLE**) and optionally enter their first name.
+- Once locked, learners automatically land on their designated grade study hub (`/` for P7, `/p6-home` for P6). If they navigate to a subject page belonging to the other grade, an automatic notice banner allows them to return instantly or switch their class profile.
+- 100% static SSG compatible, requiring zero cloud login credentials or internet connectivity to switch and maintain study profiles.
 - Integrated all 12 founder-provided YouTube video lessons across P7 Mathematics (`topics.ts`) and P6 Mathematics (`p6-math-topics.ts`).
 - Upgraded `TopicTabs.tsx` to support `videoUrl` on both the main topic and individual subtopic modules (`SubtopicModule`).
 - When studying a module inside the Read tab, learners can watch the embedded video lesson directly above the study notes.

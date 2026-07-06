@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { P6_MATH_TOPICS } from "@/lib/p6-math-topics";
+import LearnerBanner from "@/components/LearnerBanner";
 
 export default function P6MathPage() {
   return (
     <>
-      <Link href="/" className="back">← All subjects</Link>
+      <Link href="/p6-home" className="back">← P6 Subjects</Link>
+      <LearnerBanner activeLevel="P6" subject="math" />
       <div className="eyebrow">P6 · Mathematics</div>
       <h1>Primary Six Mathematics</h1>
       <p className="lead">Foundation upper-primary mathematics covering sets, whole numbers, fractions, and simple geometry.</p>

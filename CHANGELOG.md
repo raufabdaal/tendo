@@ -2,6 +2,20 @@
 
 > Newest at the top. Dated, append-only. This file records what happened; `STATUS.md` explains where the project stands now.
 
+## v1.7.0 — 2026-07-06 — Build Frictionless Learner Profile & Class Lock Onboarding System
+
+**Session theme:** Implement an offline-first, zero-password Learner Profile and Class Lock system to lock students into their selected class (P6 vs P7 PLE) during onboarding without complex backend authentication.
+
+**Changed:**
+- `app/lib/learner-profile.ts` — Created data model and storage manager for persisting learner profile (`name`, `grade: "P6" | "P7"`, `onboardedAt`) in browser local storage.
+- `app/components/ClassSelector.tsx` — Transformed into an interactive onboarding and class lock component. Displays a friendly welcome card on first visit where learners pick their grade and enter an optional name. Automatically locks the home hub and routes P6 learners away from P7 content and vice versa while providing a clean profile bar (`🎓 Akello · Locked into: Primary Six`).
+- `app/components/LearnerBanner.tsx` — Created a top notice banner for subject pages that alerts learners when they browse content outside their locked class profile, providing a one-click return to their class hub or profile switcher.
+- `app/app/[subject]/p6/page.tsx` & `app/app/[subject]/p7/page.tsx` — Embedded `LearnerBanner` across all subject landing pages.
+- Root docs updated: `STATUS.md`, `CHECKLIST.md`, `HANDOFF.md`, `CHANGELOG.md`.
+
+**Verified locally:**
+- Production build passed cleanly with `✓ Generating static pages (185/185)`.
+
 ## v1.6.0 — 2026-07-06 — Integrate 12 Founder-Provided Mathematics Video Explainer Lessons & Build Interactive Playlist Player
 
 **Session theme:** Seamlessly integrate 12 founder-provided YouTube video explainer lessons into exact matching subtopics and modules across Primary Seven (P7 PLE) and Primary Six (P6) Mathematics, and upgrade the video viewing architecture.

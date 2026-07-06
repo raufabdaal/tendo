@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProgressBadge from "@/components/ProgressBadge";
+import LearnerBanner from "@/components/LearnerBanner";
 import { getTopicVisualPill } from "@/lib/topics";
 import { TOPICS, COMING_SOON } from "@/lib/topics";
 
@@ -77,6 +78,7 @@ export default function TopicListPage() {
   return (
     <>
       <Link href="/" className="back">← All subjects</Link>
+      <LearnerBanner activeLevel="P7" subject="math" />
       <div className="eyebrow">P7 · Mathematics</div>
       <h1>Choose a maths strand to study</h1>
       <p className="lead">

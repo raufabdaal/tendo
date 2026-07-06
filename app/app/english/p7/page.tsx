@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProgressBadge from "@/components/ProgressBadge";
+import LearnerBanner from "@/components/LearnerBanner";
 import { hasTopicDiagram } from "@/components/TopicDiagram";
 import { ENGLISH_TOPICS } from "@/lib/english-topics";
 
@@ -34,6 +35,7 @@ export default function EnglishTopicListPage() {
   return (
     <>
       <Link href="/" className="back">← All subjects</Link>
+      <LearnerBanner activeLevel="P7" subject="english" />
       <div className="eyebrow">P7 · English Language</div>
       <h1>Choose an English topic to study</h1>
       <p className="lead">
