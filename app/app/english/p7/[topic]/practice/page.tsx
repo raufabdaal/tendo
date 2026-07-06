@@ -22,13 +22,8 @@ export default async function EnglishPracticePage({
   return (
     <>
       <Link href={`/english/p7/${topic.id}`} className="back">← {topic.title}</Link>
-      <div className="eyebrow">P7 English · Endless practice</div>
-      <h1>Practice: {topic.title}</h1>
-      <p className="lead">
-        Different question every time. Track your streak. Stop whenever you like.
-        {bank ? ` Drawing from ${bank.questions.length} questions.` : ""}
-      </p>
-
+      <div className="eyebrow">Practice</div>
+      <h1>{topic.title}</h1>
       {!bank ? (
         <div className="dash-empty">
           <strong>No practice bank for this topic yet.</strong>

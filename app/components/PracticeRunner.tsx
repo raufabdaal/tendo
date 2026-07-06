@@ -165,9 +165,6 @@ export default function PracticeRunner({
         </Link>
       </div>
 
-      <div className="foot" style={{ marginTop: 32 }}>
-        Practice mode · questions are drawn fresh each round.
-      </div>
     </>
   );
 }

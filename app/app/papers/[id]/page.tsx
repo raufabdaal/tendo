@@ -16,40 +16,34 @@ export default async function PaperCoverPage({
   if (!paper) notFound();
 
   return (
-    <>
-      <Link href="/papers" className="back">← All papers</Link>
-      <div className="eyebrow">{paper.examBody} · {paper.year}</div>
-      <h1>{paper.paperName}</h1>
+    <div className="paper-cover-page">
+      <Link href="/papers" className="back">← Papers</Link>
+      <section className="compact-page-intro papers-intro-card">
+        <div>
+          <div className="eyebrow">{paper.examBody} · {paper.year}</div>
+          <h1>{paper.paperName}</h1>
+          <p className="lead">{paper.questions.length} questions · {paper.totalMarks} marks · {paper.durationMinutes} minutes</p>
+        </div>
+        <span aria-hidden="true">📝</span>
+      </section>
 
-      <div className="callout">{paper.blurb}</div>
+      <div className="paper-action-grid">
+        <Link href={`/papers/${paper.id}/attempt`} className="paper-action-card primary-paper-action">
+          <span aria-hidden="true">▶️</span>
+          <div>
+            <strong>Start paper</strong>
+            <small>Answer questions and get explanations.</small>
+          </div>
+        </Link>
 
-      <div className="paper-meta">
-        <div><span className="meta-label">Questions:</span> {paper.questions.length}</div>
-        <div><span className="meta-label">Total marks:</span> {paper.totalMarks}</div>
-        <div><span className="meta-label">Suggested time:</span> {paper.durationMinutes} minutes</div>
+        <Link href={`/papers/${paper.id}/browse`} className="paper-action-card">
+          <span aria-hidden="true">📚</span>
+          <div>
+            <strong>Review by topic</strong>
+            <small>Browse questions grouped for revision.</small>
+          </div>
+        </Link>
       </div>
-
-      <h2>How do you want to use this paper?</h2>
-
-      <Link href={`/papers/${paper.id}/attempt`} className="card">
-        <div className="card-row">
-          <div>
-            <div className="card-title">Attempt as a student</div>
-            <div className="card-sub">Answer one question at a time. Get instant marks and explanations at the end.</div>
-          </div>
-          <span className="badge badge-math">Student mode</span>
-        </div>
-      </Link>
-
-      <Link href={`/papers/${paper.id}/browse`} className="card">
-        <div className="card-row">
-          <div>
-            <div className="card-title">Browse as a teacher</div>
-            <div className="card-sub">See every question grouped by topic. Copy or print a worksheet for class.</div>
-          </div>
-          <span className="badge badge-math">Teacher mode</span>
-        </div>
-      </Link>
-    </>
+    </div>
   );
 }

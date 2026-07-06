@@ -17,10 +17,10 @@ export default async function PaperAttemptPage({
   if (!paper) notFound();
 
   return (
-    <>
+    <div className="paper-attempt-page">
       <Link href={`/papers/${paper.id}`} className="back">← {paper.paperName}</Link>
-      <div className="eyebrow">{paper.examBody} · {paper.year} · Student mode</div>
-      <h1>Attempt {paper.year} PLE Maths</h1>
+      <div className="eyebrow">{paper.examBody} · {paper.year}</div>
+      <h1>Start paper</h1>
 
       <PaperAttempt
         paperId={paper.id}
@@ -28,6 +28,6 @@ export default async function PaperAttemptPage({
         questions={paper.questions}
         totalMarks={paper.totalMarks}
       />
-    </>
+    </div>
   );
 }

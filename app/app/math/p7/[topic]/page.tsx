@@ -11,11 +11,8 @@ function PracticeCTA({ topicId }: { topicId: string }) {
   return (
     <div className="practice-cta">
       <div className="practice-cta-text">
-        <div className="practice-cta-title">Want more practice?</div>
-        <div className="practice-cta-sub">
-          Endless practice mode draws from a bank of {bank.questions.length} questions for this topic.
-          Different questions every time.
-        </div>
+        <div className="practice-cta-title">More practice</div>
+        <div className="practice-cta-sub">Extra questions for this topic.</div>
       </div>
       <Link href={`/math/p7/${topicId}/practice`} className="btn btn-primary">
         Start practice
@@ -42,8 +39,6 @@ export default async function TopicPage({
       <Link href="/math/p7" className="back">← All topics</Link>
       <div className="eyebrow">{topic.themeName}</div>
       <h1>{topic.title}</h1>
-      <div className="callout">{topic.note.intro}</div>
-
       <TopicTabs topic={topic} />
 
       <section id="quick-quiz" className="quiz-panel">

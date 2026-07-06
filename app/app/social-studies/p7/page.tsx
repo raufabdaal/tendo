@@ -1,25 +1,9 @@
 import Link from "next/link";
 import ProgressBadge from "@/components/ProgressBadge";
-import LearnerBanner from "@/components/LearnerBanner";
 import { getTopicVisualPill } from "@/lib/topics";
 import { SOCIAL_TOPICS } from "@/lib/social-topics";
 
 const TERM_ORDER = ["Term I", "Term II", "Term III"] as const;
-
-const TERM_META: Record<string, { description: string; start?: string }> = {
-  "Term I": {
-    description: "Africa's location, physical features, climate and vegetation.",
-    start: "Start with map skills",
-  },
-  "Term II": {
-    description: "People, migration, foreign influence, nationalism and post-independence cooperation.",
-    start: "History-heavy term",
-  },
-  "Term III": {
-    description: "Economic development and major world organisations.",
-    start: "PLE integration term",
-  },
-};
 
 const TOPIC_TERMS: Record<string, (typeof TERM_ORDER)[number]> = {
   "location-of-africa": "Term I",
@@ -48,80 +32,37 @@ export default function SocialStudiesTopicListPage() {
   }
 
   const orderedGroups = sortTermEntries(Array.from(groups.entries()));
-  const visualTopicCount = SOCIAL_TOPICS.filter((topic) => Boolean(getTopicVisualPill(topic))).length;
 
   return (
-    <>
-      <Link href="/" className="back">← All subjects</Link>
-      <LearnerBanner activeLevel="P7" subject="social-studies" />
-      <div className="eyebrow">P7 · Social Studies</div>
-      <h1>Choose a Social Studies topic to study</h1>
-      <p className="lead">
-        P7 Social Studies follows the NCDC theme Living Together in Africa. Start with map skills, then move into people, history, development and world organisations.
-      </p>
-
-      <div className="maths-overview" aria-label="P7 social studies summary">
-        <div className="maths-overview-item">
-          <strong>{SOCIAL_TOPICS.length}</strong>
-          <span>topics live</span>
+    <div className="subject-list-page">
+      <section className="compact-page-intro subject-intro-card">
+        <div>
+          <div className="eyebrow">P7 · Social Studies</div>
+          <h1>Social Studies</h1>
         </div>
-        <div className="maths-overview-item">
-          <strong>{orderedGroups.length}</strong>
-          <span>school terms</span>
-        </div>
-        <div className="maths-overview-item">
-          <strong>{visualTopicCount}</strong>
-          <span>topics with diagrams</span>
-        </div>
-      </div>
+        <span aria-hidden="true">🌍</span>
+      </section>
 
-      <div className="strand-jump" aria-label="Jump to a Social Studies term">
-        {orderedGroups.map(([term, topics]) => (
-          <a key={`jump-${term}`} href={`#${slugify(term)}`} className="strand-chip">
-            {term} <span>{topics.length}</span>
-          </a>
-        ))}
-      </div>
-
-      {orderedGroups.map(([term, topics]) => {
-        const meta = TERM_META[term];
-        const visualCount = topics.filter((topic) => Boolean(getTopicVisualPill(topic))).length;
-        return (
-          <section key={term} id={slugify(term)} className="theme-group strand-section">
-            <div className="strand-head">
-              <div>
-                <div className="theme-label">{term} · Living Together in Africa</div>
-                {meta?.description && <p className="strand-desc">{meta.description}</p>}
-              </div>
-              <div className="strand-meta">
-                <span>{topics.length} {topics.length === 1 ? "topic" : "topics"}</span>
-                {visualCount > 0 && <span>{visualCount} visual</span>}
-              </div>
-            </div>
-            {meta?.start && <div className="strand-start">{meta.start}</div>}
-
-            <div className="topic-card-grid">
-              {topics.map((topic) => (
-                <Link key={topic.id} href={`/social-studies/p7/${topic.id}`} className="card topic-card">
-                  <div className="card-row">
-                    <div>
-                      <div className="card-title">{topic.title}</div>
-                      <div className="card-sub">About {topic.estMinutes} minutes · {topic.quiz.length} questions</div>
-                      {getTopicVisualPill(topic) && <div className="visual-cue">{getTopicVisualPill(topic)}</div>}
-                    </div>
-                    <ProgressBadge topicId={`social-${topic.id}`} />
+      {orderedGroups.map(([term, topics]) => (
+        <section key={term} id={slugify(term)} className="theme-group strand-section simplified-strand-section">
+          <div className="theme-label">{term}</div>
+          <div className="topic-card-grid">
+            {topics.map((topic) => (
+              <Link key={topic.id} href={`/social-studies/p7/${topic.id}`} className="card topic-card simplified-topic-card">
+                <div className="card-row">
+                  <div>
+                    <div className="card-title">{topic.title}</div>
+                    <div className="card-sub">{topic.estMinutes} min</div>
+                    {getTopicVisualPill(topic) && <div className="visual-cue">{getTopicVisualPill(topic)}</div>}
                   </div>
-                </Link>
-              ))}
-            </div>
-          </section>
-        );
-      })}
-
-      <div className="foot">
-        {SOCIAL_TOPICS.length} P7 Social Studies topics ready now. First build wave: Living Together in Africa.
-      </div>
-    </>
+                  <ProgressBadge topicId={`social-${topic.id}`} />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
   );
 }
 

@@ -39,12 +39,15 @@ export default function ContentReportsPage() {
 
   return (
     <>
-      <Link href="/teacher" className="back">← Teacher dashboard</Link>
-      <div className="eyebrow">For reviewers</div>
-      <h1>Content issue reports</h1>
-      <p className="lead">
-        These reports were submitted from the app and saved on this device. Use them to fix the source files.
-      </p>
+      <Link href="/teacher" className="back">← Teacher home</Link>
+      <section className="compact-page-intro teacher-content-intro">
+        <div>
+          <div className="eyebrow">Reports</div>
+          <h1>Content issues</h1>
+          <p className="lead">Teacher-submitted notes saved on this device.</p>
+        </div>
+        <span aria-hidden="true">⚠️</span>
+      </section>
 
       <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 20 }}>
         <button className="btn btn-primary" onClick={exportJson} disabled={reports.length === 0}>

@@ -4,6 +4,30 @@
 
 ---
 
+## MT-011 · Push and mobile-verify UX/auth production cleanup
+**Status:** Open · **Blocks:** Production pilot polish · **Estimated time:** 20–30 min · **Cost:** Free
+
+**Why:** The latest workspace changes split Student/Teacher experiences, add local role sign-in, declutter subject/paper pages, and improve mobile responsiveness. This needs a real device check after deployment.
+
+**Steps:**
+1. Commit the latest changed files with summary: `UX: role sign-in, teacher menu, production declutter`.
+2. Push to `main` and wait for Vercel green deployment.
+3. Open the live site on a phone or phone-sized browser.
+4. Sign in as a **P7 student** and verify:
+   - Home is simple.
+   - Study shows only P7 subjects.
+   - Practice shows only P7 sets.
+   - Papers no longer shows learner/teacher mode labels.
+5. Switch account, sign in as a **P6 student** and verify P6-only Study/Practice.
+6. Switch account, sign in as a **Teacher** and verify:
+   - no student bottom nav appears.
+   - hamburger menu opens and fits the screen.
+   - Content library, Worksheets, Reports and Papers links work.
+7. Test widths if using desktop dev tools: 320, 340, 360, 390, 414, 430.
+8. Report any overflow/cut-off screenshots before more content work.
+
+---
+
 ## MT-001 · Create GitHub repo for Tendo
 **Status:** Open · **Blocks:** Phase 1 · **Estimated time:** 5 min · **Cost:** Free
 

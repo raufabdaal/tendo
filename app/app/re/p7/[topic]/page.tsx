@@ -11,11 +11,8 @@ function PracticeCTA({ topicId }: { topicId: string }) {
   return (
     <div className="practice-cta">
       <div className="practice-cta-text">
-        <div className="practice-cta-title">Want more practice?</div>
-        <div className="practice-cta-sub">
-          Endless practice mode draws from a bank of {bank.questions.length} questions for this topic.
-          Different questions every time.
-        </div>
+        <div className="practice-cta-title">More practice</div>
+        <div className="practice-cta-sub">Extra questions for this topic.</div>
       </div>
       <Link href={`/re/p7/${topicId}/practice`} className="btn btn-primary">
         Start practice
@@ -39,16 +36,9 @@ export default async function ReTopicPage({ params }: { params: Promise<{ topic:
         <Link href="/re/p7" className="back">← Religious Education</Link>
         <div className="eyebrow">P7 · Religious Education · {topic.themeName}</div>
         <h1>{topic.title}</h1>
-        <div className="meta">
-          <span>{topic.estMinutes} mins</span>
-          <span>·</span>
-          <span>{topic.quiz.length} quiz questions</span>
-        </div>
       </div>
 
       <TopicTabs topic={topic} />
-
-      <PracticeCTA topicId={topic.id} />
 
       <section id="quick-quiz" className="quiz-panel">
         <div className="quiz-panel-heading">
@@ -60,6 +50,8 @@ export default async function ReTopicPage({ params }: { params: Promise<{ topic:
         </div>
         <Quiz questions={topic.quiz} topicId={topic.id} topicTitle={topic.title} backHref="/re/p7" />
       </section>
+
+      <PracticeCTA topicId={topic.id} />
     </>
   );
 }

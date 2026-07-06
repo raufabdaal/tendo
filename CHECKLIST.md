@@ -1,6 +1,34 @@
 # CHECKLIST — Tendo execution tracker
 
-*Updated: 2026-07-05*
+*Updated: 2026-07-07*
+
+
+## Phase 13 — Role-based UX shell and production declutter
+- [x] Add local/device sign-in gate (`AuthGate.tsx`, `auth-session.ts`)
+- [x] Split student and teacher experiences after sign-in
+- [x] Student mobile nav kept as bottom tabs
+- [x] Teacher nav converted to hamburger menu
+- [x] Teacher workspace includes content-library access for lesson inspiration
+- [x] Student Study page shows only signed-in grade content
+- [x] Student Practice page shows only signed-in grade practice
+- [x] Wrong-grade student routes redirect back to the correct student home
+- [x] Student home decluttered into a true home screen
+- [x] Papers pages cleaned of mixed learner/teacher mode language
+- [x] Subject landing pages cleaned of stats, long intros, status footers, and phase/backlog copy
+- [x] Small-phone responsiveness pass added for 320–430px widths
+- [x] UX/auth/production cleanup handoff created (`docs/ops/ux-auth-production-cleanup-2026-07-07.md`)
+- [x] Final local build passed after declutter pass (`npm run build`, 187 static pages)
+
+## Phase 14 — Remaining production simplification
+- [x] Audit `TeacherDashboard.tsx` and remove/hide demo-sales copy
+- [x] Simplify `WorksheetGenerator.tsx` default form: class → subject/topics → generate
+- [x] Make worksheet advanced fields visually secondary
+- [x] Tighten topic-page top area so lesson content appears faster on mobile
+- [x] Review `PracticeRunner.tsx` for small-phone clutter
+- [ ] Decide backend authentication provider and data model after UX stabilises
+- [x] Final build passed after remaining cleanup (`npm run build`, 187 static pages)
+
+---
 
 ## Primary Six (P6) Expansion
 - [x] Establish P6 Expansion Master Roadmap & Milestones (`docs/spec/p6-expansion-milestones.md`)

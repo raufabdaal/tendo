@@ -22,7 +22,7 @@ export default function TeacherPage() {
           </div>
         </div>
         <div className="teacher-hero-card">
-          <div className="teacher-hero-stat"><strong>22</strong><span>sample learners</span></div>
+          <div className="teacher-hero-stat"><strong>22</strong><span>learners</span></div>
           <div className="teacher-hero-stat"><strong>64%</strong><span>class average</span></div>
           <div className="teacher-hero-stat"><strong>4</strong><span>topics to re-teach</span></div>
           <div className="teacher-hero-stat"><strong>3</strong><span>papers attempted</span></div>
@@ -70,7 +70,7 @@ export default function TeacherPage() {
           <div>
             <div className="eyebrow">Class dashboard</div>
             <h2>What is happening in class?</h2>
-            <p>Load the demo class to see the teacher experience immediately.</p>
+            <p>Start with class activity, then open a learner when you need detail.</p>
           </div>
         </div>
         <TeacherDashboard />

@@ -19,16 +19,12 @@ export default async function PaperBrowsePage({
   const grouped = Array.from(groupByTopic(paper).entries());
 
   return (
-    <>
+    <div className="paper-browse-page">
       <Link href={`/papers/${paper.id}`} className="back no-print">← {paper.paperName}</Link>
-      <div className="eyebrow no-print">{paper.examBody} · {paper.year} · Teacher mode</div>
-      <h1>{paper.paperName} · by topic</h1>
-      <p className="lead no-print">
-        Every question grouped by syllabus topic. Toggle answers on or off, then copy to WhatsApp or
-        print a worksheet for class.
-      </p>
+      <div className="eyebrow no-print">{paper.examBody} · {paper.year}</div>
+      <h1>Review by topic</h1>
 
       <PaperBrowse grouped={grouped} />
-    </>
+    </div>
   );
 }

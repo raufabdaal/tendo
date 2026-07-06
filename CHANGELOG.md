@@ -1,5 +1,43 @@
 # CHANGELOG — Tendo
 
+## v1.8.1 — 2026-07-07 — Remaining production simplification pass
+
+**Session theme:** Finish the immediate cleanup tasks after role-based UX: teacher dashboard copy, worksheet default flow, and topic-page vertical space.
+
+**Changed:**
+- Removed demo/sales wording from `TeacherDashboard.tsx`; sample data copy is now neutral and classroom-focused.
+- Simplified `WorksheetGenerator.tsx` default state into class → subject → topics → questions → generate.
+- Moved worksheet title, school, term, marks, time, difficulty, answer key and instruction fields into collapsed Advanced options.
+- Removed topic-page intro callouts across P6/P7 subject topic pages so lesson content appears faster on mobile.
+- Removed the practice runner footer copy.
+- Added final CSS overrides for cleaner worksheet steps and tighter topic-page spacing.
+- Updated root docs and the UX/auth production handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 187 static pages.
+
+---
+
+## v1.8.0 — 2026-07-07 — Role-based UX shell and production declutter
+
+**Session theme:** Convert the UX from a content-rich mixed prototype into a cleaner role-specific product surface for students and teachers.
+
+**Changed:**
+- Added local/device sign-in scaffolding: `app/components/AuthGate.tsx` and `app/lib/auth-session.ts`.
+- Split experiences by role: students get Home/Study/Practice/Papers; teachers get a hamburger workspace menu with Teacher home, Content library, Worksheets, Past papers, Content reports and Switch account.
+- Removed visible student/teacher mixed-mode language from papers screens.
+- Made student grade visibility strict: P7 students see P7 study/practice; P6 students see P6 study/practice; teachers can browse both through content library.
+- Reworked Study and Practice into client-aware directories: `StudyDirectory.tsx`, `PracticeHomeContent.tsx`.
+- Decluttered all subject landing pages by removing stats panels, long intro paragraphs, phase/coming-soon backlog cards, and footer status copy.
+- Simplified paper cover, paper attempt, paper browse, and topic practice page copy.
+- Added compact intro-card and polished subject-card CSS at the end of `app/app/globals.css`.
+- Added detailed operational handoff: `docs/ops/ux-auth-production-cleanup-2026-07-07.md`.
+
+**Verified:**
+- `cd app && npm run build` passed.
+
+---
+
 > Newest at the top. Dated, append-only. This file records what happened; `STATUS.md` explains where the project stands now.
 
 ## v1.7.0 — 2026-07-06 — Build Frictionless Learner Profile & Class Lock Onboarding System

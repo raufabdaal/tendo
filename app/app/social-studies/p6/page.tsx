@@ -1,23 +1,24 @@
 import Link from "next/link";
 import { P6_SOCIAL_TOPICS } from "@/lib/p6-social-topics";
-import LearnerBanner from "@/components/LearnerBanner";
 
 export default function P6SocialPage() {
   return (
-    <>
-      <Link href="/p6-home" className="back">← P6 Subjects</Link>
-      <LearnerBanner activeLevel="P6" subject="social-studies" />
-      <div className="eyebrow">P6 · Social Studies</div>
-      <h1>People and Resources of East Africa</h1>
-      <p className="lead">Primary Six SST focusing specifically on the East African Community region.</p>
-      <div className="topic-card-grid" style={{ marginTop: 24 }}>
-        {P6_SOCIAL_TOPICS.map((t) => (
-          <Link key={t.id} href={`/social-studies/p6/${t.id}`} className="card topic-card">
-            <div className="card-title">{t.title}</div>
-            <div className="card-sub">{t.estMinutes} mins · {t.quiz.length} questions</div>
+    <div className="subject-list-page">
+      <section className="compact-page-intro subject-intro-card">
+        <div>
+          <div className="eyebrow">P6 · Social Studies</div>
+          <h1>Social Studies</h1>
+        </div>
+        <span aria-hidden="true">🌍</span>
+      </section>
+      <div className="topic-card-grid">
+        {P6_SOCIAL_TOPICS.map((topic) => (
+          <Link key={topic.id} href={`/social-studies/p6/${topic.id}`} className="card topic-card simplified-topic-card">
+            <div className="card-title">{topic.title}</div>
+            <div className="card-sub">{topic.estMinutes} min</div>
           </Link>
         ))}
       </div>
-    </>
+    </div>
   );
 }

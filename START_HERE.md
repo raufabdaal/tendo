@@ -1,6 +1,6 @@
 # START HERE — Tendo
 
-**Tendo** is a school-sold web platform that helps Ugandan upper-primary students master the PLE Mathematics syllabus through structured notes, auto-graded quizzes, and real past papers.
+**Tendo** is a child-friendly study platform for Ugandan upper-primary learners and teachers. It serves **Primary Six (P6)** and **Primary Seven (P7 PLE)** across the official NCDC subjects.
 
 > *Tendo* (Luganda): "praise / commendation" — what parents say when PLE results come back.
 
@@ -8,50 +8,67 @@
 
 ## You have 10 seconds. What do I read?
 
-1. **`STATUS.md`** — what's done, what's next, what's blocked. Always start here.
-2. **`HANDOFF.md`** — last session's snapshot. Picks up where the last agent left off.
-3. **`docs/sales/value-prop.md`** — what we're selling and to whom (read this before any sales call).
-4. **`preview.html`** — double-click to see the student experience. **This is the sales demo.**
+1. **`STATUS.md`** — current state, latest UX/auth changes, and what is still open.
+2. **`HANDOFF.md`** — no-context restart handoff for the next session.
+3. **`CHECKLIST.md`** — execution tracker and remaining production-cleanup tasks.
+4. **`DECISIONS.md`** — architecture/product decisions, including role sign-in and UX declutter rules.
+5. **`CHANGELOG.md`** — dated record of what changed.
+6. **`docs/ops/ux-auth-production-cleanup-2026-07-07.md`** — latest UX/auth/production cleanup handoff.
 
-## You have 60 seconds. What's this project?
+## You have 60 seconds. What's this project now?
 
-- **For:** Ugandan upper-primary students (P6 & P7) preparing for **PLE Mathematics** (UNEB).
-- **Sold to:** Private primary schools. **They** then offer it to parents as a value-add. We charge schools a per-student maintenance fee.
-- **Why it works:** PLE Math syllabus is finite (6 themes, 11 topics, 40 sub-topics). Past papers are public. We package both into the cleanest, calmest, fastest study app in the country.
-- **Phase 0 (right now):** Foundation + sales materials. No code yet.
-- **Phase 1 (next):** Next.js app shell + first 3 topics live.
+- **For students:** P6 and P7 learners studying Mathematics, English, Integrated Science, Social Studies, and Religious Education.
+- **For teachers:** class dashboard, worksheets, content issue reports, past-paper browsing, and the same content library learners use for lesson inspiration.
+- **Current UX direction:** role-specific experiences. Students see only their signed-in grade; teachers use a separate hamburger-menu workspace and can browse both P6 and P7 content.
+- **Auth status:** local/device sign-in scaffolding only. Real backend authentication is a future task.
+- **Production focus:** reduce clutter, especially on mobile. Remove text that does not help the current user take the next action.
 
 ## Folder map
 
 ```
 tendo/
-├─ START_HERE.md              👈 you are here
+├─ START_HERE.md
 ├─ README.md · STATUS.md · HANDOFF.md · CHANGELOG.md
 ├─ CHECKLIST.md · DECISIONS.md · MANUAL_TASKS.md
-├─ launch.sh / launch.bat     (Phase 1: starts the dev server)
-├─ preview.html               👈 double-click this for the sales demo
-├─ .env.example · .gitignore
-│
-├─ app/                       Next.js app (Phase 1)
+├─ app/                       Next.js app
+│  ├─ app/                    routes
+│  ├─ components/             UI and client logic
+│  └─ lib/                    content/data/session helpers
 ├─ content/
-│   ├─ curriculum/            syllabus structure (p7-math.json done)
-│   ├─ topics/                MDX notes + quizzes (Phase 1)
-│   └─ papers/                past PLE papers (Phase 3)
+│  └─ curriculum/             NCDC curriculum maps
 └─ docs/
-    ├─ spec/                  PRD, design philosophy, content guidelines
-    ├─ sales/                 value-prop, pitch, pricing, school packet, objections
-    ├─ ops/                   secrets guide, deployment notes
-    └─ prompts/               reusable AI prompts
+   ├─ spec/                   specs and content architecture
+   ├─ sales/                  school-facing materials
+   ├─ ops/                    handoffs, audits, deployment notes
+   └─ prompts/                reusable AI prompts
 ```
 
-## The rules (from `AGENT_BRIEF.md`, must-follow)
+## Run locally
 
-- Never paste secrets in chat. `.env.local` only.
-- Update STATUS / HANDOFF / CHANGELOG every session.
-- Log architecture changes in `DECISIONS.md`.
-- Free-tier first. Always.
-- Plain language. Numbered steps.
+```bash
+cd app
+npm install
+npm run dev
+```
+
+## Build check
+
+```bash
+cd app
+npm run build
+```
+
+## Documentation rule
+
+Every meaningful product/code session should update:
+
+- `STATUS.md`
+- `HANDOFF.md`
+- `CHECKLIST.md`
+- `CHANGELOG.md`
+- `DECISIONS.md` if an architecture/product decision changed
+- `docs/ops/` when a detailed handoff/audit is useful
 
 ---
 
-*Tendo · v0.1 · Phase 0 foundation · 2026-06-24*
+*Tendo · current product snapshot · 2026-07-07*

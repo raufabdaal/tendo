@@ -1,6 +1,5 @@
 import Link from "next/link";
 import ProgressBadge from "@/components/ProgressBadge";
-import LearnerBanner from "@/components/LearnerBanner";
 import { getTopicVisualPill } from "@/lib/topics";
 import { SCIENCE_TOPICS } from "@/lib/science-topics";
 
@@ -10,23 +9,6 @@ const THEME_ORDER = [
   "The Environment",
   "The Community, Population and Family Life",
 ] as const;
-
-const THEME_META: Record<string, { description: string; start?: string }> = {
-  "Human Body": {
-    description: "Body systems, health habits, organs and care of the human body.",
-    start: "Start with body systems",
-  },
-  "Matter and Energy": {
-    description: "Electricity, magnetism, light, machines, friction and practical science.",
-    start: "High-value PLE strand",
-  },
-  "The Environment": {
-    description: "Energy resources, interdependence, agroforestry and care for nature.",
-  },
-  "The Community, Population and Family Life": {
-    description: "Community health, social problems, health surveys and health clubs.",
-  },
-};
 
 function sortThemeEntries<T>(entries: [string, T][]) {
   return [...entries].sort(([a], [b]) => {
@@ -49,80 +31,37 @@ export default function ScienceTopicListPage() {
   }
 
   const orderedGroups = sortThemeEntries(Array.from(groups.entries()));
-  const visualTopicCount = SCIENCE_TOPICS.filter((topic) => Boolean(getTopicVisualPill(topic))).length;
 
   return (
-    <>
-      <Link href="/" className="back">← All subjects</Link>
-      <LearnerBanner activeLevel="P7" subject="science" />
-      <div className="eyebrow">P7 · Integrated Science</div>
-      <h1>Choose a science strand to study</h1>
-      <p className="lead">
-        P7 Integrated Science is organised around the body, energy, the environment and community health. Start with any strand or revise the topic your class is covering.
-      </p>
-
-      <div className="maths-overview" aria-label="P7 integrated science summary">
-        <div className="maths-overview-item">
-          <strong>{SCIENCE_TOPICS.length}</strong>
-          <span>topics live</span>
+    <div className="subject-list-page">
+      <section className="compact-page-intro subject-intro-card">
+        <div>
+          <div className="eyebrow">P7 · Integrated Science</div>
+          <h1>Science</h1>
         </div>
-        <div className="maths-overview-item">
-          <strong>{orderedGroups.length}</strong>
-          <span>study strands</span>
-        </div>
-        <div className="maths-overview-item">
-          <strong>{visualTopicCount}</strong>
-          <span>topics with diagrams</span>
-        </div>
-      </div>
+        <span aria-hidden="true">🔬</span>
+      </section>
 
-      <div className="strand-jump" aria-label="Jump to a science strand">
-        {orderedGroups.map(([theme, topics]) => (
-          <a key={`jump-${theme}`} href={`#${slugify(theme)}`} className="strand-chip">
-            {theme} <span>{topics.length}</span>
-          </a>
-        ))}
-      </div>
-
-      {orderedGroups.map(([theme, topics]) => {
-        const meta = THEME_META[theme];
-        const visualCount = topics.filter((topic) => Boolean(getTopicVisualPill(topic))).length;
-        return (
-          <section key={theme} id={slugify(theme)} className="theme-group strand-section">
-            <div className="strand-head">
-              <div>
-                <div className="theme-label">{theme}</div>
-                {meta?.description && <p className="strand-desc">{meta.description}</p>}
-              </div>
-              <div className="strand-meta">
-                <span>{topics.length} {topics.length === 1 ? "topic" : "topics"}</span>
-                {visualCount > 0 && <span>{visualCount} visual</span>}
-              </div>
-            </div>
-            {meta?.start && <div className="strand-start">{meta.start}</div>}
-
-            <div className="topic-card-grid">
-              {topics.map((topic) => (
-                <Link key={topic.id} href={`/science/p7/${topic.id}`} className="card topic-card">
-                  <div className="card-row">
-                    <div>
-                      <div className="card-title">{topic.title}</div>
-                      <div className="card-sub">About {topic.estMinutes} minutes · {topic.quiz.length} questions</div>
-                      {getTopicVisualPill(topic) && <div className="visual-cue">{getTopicVisualPill(topic)}</div>}
-                    </div>
-                    <ProgressBadge topicId={`science-${topic.id}`} />
+      {orderedGroups.map(([theme, topics]) => (
+        <section key={theme} id={slugify(theme)} className="theme-group strand-section simplified-strand-section">
+          <div className="theme-label">{theme}</div>
+          <div className="topic-card-grid">
+            {topics.map((topic) => (
+              <Link key={topic.id} href={`/science/p7/${topic.id}`} className="card topic-card simplified-topic-card">
+                <div className="card-row">
+                  <div>
+                    <div className="card-title">{topic.title}</div>
+                    <div className="card-sub">{topic.estMinutes} min</div>
+                    {getTopicVisualPill(topic) && <div className="visual-cue">{getTopicVisualPill(topic)}</div>}
                   </div>
-                </Link>
-              ))}
-            </div>
-          </section>
-        );
-      })}
-
-      <div className="foot">
-        {SCIENCE_TOPICS.length} P7 Integrated Science topics ready now. This is the first science build wave.
-      </div>
-    </>
+                  <ProgressBadge topicId={`science-${topic.id}`} />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
   );
 }
 

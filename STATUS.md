@@ -1,8 +1,33 @@
 # STATUS — Tendo
 
-*Updated: 2026-07-05*
+*Updated: 2026-07-07*
 
 > **Current state:** Tendo is a child-friendly study platform (not just for revision) for Ugandan upper-primary learners. Both Primary Seven (P7 PLE) and Primary Six (P6) are live across all 5 official NCDC subjects (Mathematics, English Language, Integrated Science, Social Studies, and Religious Education—both CRE and IRE) on the proven Lesson Structure v3 modular architecture.
+
+
+## Latest snapshot — UX/auth and production cleanup (2026-07-07)
+
+Tendo is now moving from "content-rich app" toward **production-ready role-specific UX**. The latest work introduced a local/device sign-in gate and separated the product into student and teacher experiences.
+
+### Completed in the latest UX pass
+- Added local role session scaffolding: `AuthGate.tsx` and `auth-session.ts`.
+- Students sign in as `P6` or `P7`; teachers sign in to a separate teacher workspace.
+- Students now see only their own grade in Study and Practice. Wrong-grade subject routes redirect back to the correct student home.
+- Student home is now intentionally simple: continue, quick practice/papers links, and progress/suggested next step.
+- Teacher navigation is now a hamburger menu; student navigation remains bottom-tab based on mobile.
+- Teacher workspace includes dashboard, worksheets, reports, past papers, and the content library for lesson inspiration.
+- Subject landing pages were decluttered for production: removed "topics live", "study strands", long explanatory copy, footer status notes, and visible phase/coming-soon backlog language.
+- Papers flow no longer exposes mixed "student mode / teacher mode" labels to signed-in users.
+- Mobile responsiveness was tightened for small phones down to ~320-340px widths.
+
+### Current known UX cleanup still needed
+- Manual real-device testing is still needed at 320/340/360/390/414/430px widths.
+- Current auth is local/device-only UX scaffolding; real backend auth remains a future implementation task.
+- After real-device testing, do a final pass on any screens that still push the main action below the fold.
+
+Detailed handoff: `docs/ops/ux-auth-production-cleanup-2026-07-07.md`.
+
+---
 
 ## Current focus
 
@@ -15,7 +40,7 @@ With P7 completed and verified, Tendo expanded to Primary Six (P6) per `docs/spe
 - Milestone 4: P6 practice banks and dashboard/worksheet class filtering (`P6` vs `P7`) — **COMPLETED**
 - Milestone 5: P6 visual roadmap and textbook illustrations — **COMPLETED (All P6 topics linked to verified visual assets)**
 
-**Recent Learner Profile & Class Lock Integration:**
+**Earlier Learner Profile & Class Lock Integration (now mostly superseded by `AuthGate.tsx`):**
 - Built a frictionless, zero-password **Learner Profile & Class Lock** system (`learner-profile.ts`, `ClassSelector.tsx`, `LearnerBanner.tsx`).
 - On first visit, students encounter a child-friendly onboarding card allowing them to select their primary class (**Primary Six** or **Primary Seven PLE**) and optionally enter their first name.
 - Once locked, learners automatically land on their designated grade study hub (`/` for P7, `/p6-home` for P6). If they navigate to a subject page belonging to the other grade, an automatic notice banner allows them to return instantly or switch their class profile.

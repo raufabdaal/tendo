@@ -1,25 +1,9 @@
 import Link from "next/link";
 import ProgressBadge from "@/components/ProgressBadge";
-import LearnerBanner from "@/components/LearnerBanner";
 import { hasTopicDiagram } from "@/components/TopicDiagram";
 import { ENGLISH_TOPICS } from "@/lib/english-topics";
 
 const TERM_ORDER = ["Term I", "Term II", "Term III"] as const;
-
-const TERM_META: Record<string, { description: string; start?: string }> = {
-  "Term I": {
-    description: "Holiday language, letter writing and examination preparation.",
-    start: "Start with writing foundations",
-  },
-  "Term II": {
-    description: "Electronic media, rights, responsibilities and freedom.",
-    start: "Language for modern life",
-  },
-  "Term III": {
-    description: "Environmental protection and ceremonies.",
-    start: "PLE writing and vocabulary themes",
-  },
-};
 
 export default function EnglishTopicListPage() {
   const groups = new Map<string, typeof ENGLISH_TOPICS>();
@@ -30,79 +14,37 @@ export default function EnglishTopicListPage() {
   }
 
   const orderedGroups = Array.from(groups.entries()).sort(([a], [b]) => TERM_ORDER.indexOf(a as (typeof TERM_ORDER)[number]) - TERM_ORDER.indexOf(b as (typeof TERM_ORDER)[number]));
-  const templateTopicCount = ENGLISH_TOPICS.filter((topic) => hasTopicDiagram(topic.id)).length;
 
   return (
-    <>
-      <Link href="/" className="back">← All subjects</Link>
-      <LearnerBanner activeLevel="P7" subject="english" />
-      <div className="eyebrow">P7 · English Language</div>
-      <h1>Choose an English topic to study</h1>
-      <p className="lead">
-        P7 English is organised by term themes. Practise vocabulary, grammar, comprehension, writing formats and respectful communication for PLE.
-      </p>
-
-      <div className="maths-overview" aria-label="P7 English summary">
-        <div className="maths-overview-item">
-          <strong>{ENGLISH_TOPICS.length}</strong>
-          <span>topics live</span>
+    <div className="subject-list-page">
+      <section className="compact-page-intro subject-intro-card">
+        <div>
+          <div className="eyebrow">P7 · English Language</div>
+          <h1>English</h1>
         </div>
-        <div className="maths-overview-item">
-          <strong>{orderedGroups.length}</strong>
-          <span>school terms</span>
-        </div>
-        <div className="maths-overview-item">
-          <strong>{templateTopicCount}</strong>
-          <span>templates / diagrams</span>
-        </div>
-      </div>
+        <span aria-hidden="true">📖</span>
+      </section>
 
-      <div className="strand-jump" aria-label="Jump to an English term">
-        {orderedGroups.map(([term, topics]) => (
-          <a key={`jump-${term}`} href={`#${slugify(term)}`} className="strand-chip">
-            {term} <span>{topics.length}</span>
-          </a>
-        ))}
-      </div>
-
-      {orderedGroups.map(([term, topics]) => {
-        const meta = TERM_META[term];
-        return (
-          <section key={term} id={slugify(term)} className="theme-group strand-section">
-            <div className="strand-head">
-              <div>
-                <div className="theme-label">{term} · English Language</div>
-                {meta?.description && <p className="strand-desc">{meta.description}</p>}
-              </div>
-              <div className="strand-meta">
-                <span>{topics.length} {topics.length === 1 ? "topic" : "topics"}</span>
-                <span>{topics.filter((topic) => hasTopicDiagram(topic.id)).length} templates</span>
-              </div>
-            </div>
-            {meta?.start && <div className="strand-start">{meta.start}</div>}
-
-            <div className="topic-card-grid">
-              {topics.map((topic) => (
-                <Link key={topic.id} href={`/english/p7/${topic.id}`} className="card topic-card">
-                  <div className="card-row">
-                    <div>
-                      <div className="card-title">{topic.title}</div>
-                      <div className="card-sub">About {topic.estMinutes} minutes · {topic.quiz.length} questions</div>
-                      {hasTopicDiagram(topic.id) && <div className="card-sub">Includes writing template</div>}
-                    </div>
-                    <ProgressBadge topicId={`english-${topic.id}`} />
+      {orderedGroups.map(([term, topics]) => (
+        <section key={term} id={slugify(term)} className="theme-group strand-section simplified-strand-section">
+          <div className="theme-label">{term}</div>
+          <div className="topic-card-grid">
+            {topics.map((topic) => (
+              <Link key={topic.id} href={`/english/p7/${topic.id}`} className="card topic-card simplified-topic-card">
+                <div className="card-row">
+                  <div>
+                    <div className="card-title">{topic.title}</div>
+                    <div className="card-sub">{topic.estMinutes} min</div>
+                    {hasTopicDiagram(topic.id) && <div className="visual-cue">Writing template</div>}
                   </div>
-                </Link>
-              ))}
-            </div>
-          </section>
-        );
-      })}
-
-      <div className="foot">
-        {ENGLISH_TOPICS.length} P7 English topics ready now. NCDC Set One outline covered with writing templates and practice.
-      </div>
-    </>
+                  <ProgressBadge topicId={`english-${topic.id}`} />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
   );
 }
 

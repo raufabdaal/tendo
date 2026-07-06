@@ -19,12 +19,8 @@ export default async function RePracticePage({ params }: { params: Promise<{ top
     <>
       <div className="topic-header">
         <Link href={`/re/p7/${topic.id}`} className="back">← Back to {topic.title}</Link>
-        <div className="eyebrow">P7 · Religious Education · Endless Practice</div>
-        <h1>Practising {topic.title}</h1>
-        <p className="lead" style={{ marginTop: 8 }}>
-          Random 5-question sessions drawn from verified PLE examination patterns.
-          {bank ? ` Drawing from ${bank.questions.length} questions.` : ""}
-        </p>
+        <div className="eyebrow">Practice</div>
+        <h1>{topic.title}</h1>
       </div>
 
       <PracticeRunner topicId={topic.id} topicTitle={topic.title} backHref={`/re/p7/${topic.id}`} />

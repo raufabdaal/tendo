@@ -4,6 +4,42 @@
 
 ---
 
+## DEV-022 · 2026-07-07 · Local role sign-in replaces visible class-lock onboarding as primary UX
+
+**Previous decision:** DEV-002/DEV-015 style flow avoided login and used learner class lock only.
+**New decision:** Tendo now uses a **local/device role sign-in gate** as UX scaffolding: Student or Teacher.
+**Implementation:** `app/components/AuthGate.tsx`, `app/lib/auth-session.ts`.
+**Reasoning:** The app needs separate experiences to remove mixed student/teacher clutter. Real backend auth can be added later without changing the core UX model.
+**Status:** Local-only; not a secure production account system yet.
+
+---
+
+## DEV-023 · 2026-07-07 · Student and teacher navigation are different products
+
+**Decision:** Students keep simple bottom-tab navigation. Teachers use a hamburger workspace menu.
+**Student nav:** Home, Study, Practice, Papers.
+**Teacher menu:** Teacher home, Content library, Worksheets, Past papers, Content reports, Switch account.
+**Reasoning:** Students need persistent simple actions; teachers need more tools without cluttering the student interface.
+
+---
+
+## DEV-024 · 2026-07-07 · Students must only see their signed-in grade
+
+**Decision:** A P7 student should not see P6 subject/practice cards, and a P6 student should not see P7 subject/practice cards. Wrong-grade routes redirect to the correct home.
+**Implementation:** `AuthGate.tsx`, `StudyDirectory.tsx`, `PracticeHomeContent.tsx`.
+**Reasoning:** Grade mixing created confusion and made the product feel less personal. Teachers can still access both grades through the content library.
+
+---
+
+## DEV-025 · 2026-07-07 · Production cleanup rule: remove explanation that does not drive action
+
+**Decision:** Production screens should not show internal content counts, phase language, backlog notes, or mixed persona labels unless they directly help the current user act.
+**Examples removed:** “topics live”, “study strands”, long subject-page intros, footer status notes, “Student mode / Teacher mode” cards, and coming-phase backlog cards.
+**Reasoning:** The app is content-rich; production UX must reduce visible decision load, especially on phones.
+**Detailed record:** `docs/ops/ux-auth-production-cleanup-2026-07-07.md`.
+
+---
+
 ## DEV-001 · 2026-06-24 · Scope = P6 & P7 only (PLE-bound), not P1
 
 **Previous decision:** Founder's early brief implied P1 and P7.

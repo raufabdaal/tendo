@@ -67,7 +67,7 @@ export default function TeacherDashboard() {
   }
 
   function handleClearDemoClass() {
-    if (!confirm("Clear the demo class data? This removes the 22 sample students but keeps real device activity.")) return;
+    if (!confirm("Clear the sample class data? This keeps any real activity saved on this browser.")) return;
     clearDemoClass();
     setDemoClass(null);
     setMode("device");
@@ -75,7 +75,7 @@ export default function TeacherDashboard() {
   }
 
   function handleClearDeviceData() {
-    if (!confirm("Clear your own device's progress? This affects only this device.")) return;
+    if (!confirm("Clear activity saved on this browser?")) return;
     try {
       window.localStorage.removeItem("tendo:progress");
       window.localStorage.removeItem("tendo:papers");
@@ -92,15 +92,14 @@ export default function TeacherDashboard() {
       {/* Mode banner / picker */}
       {!hasDemo && !hasDevice && (
         <div className="dash-empty">
-          <strong>No activity yet on this device.</strong>
-          To see what a real classroom looks like, load a demo class of 22 sample students.
-          Or open a topic / past paper yourself first, then come back.
+          <strong>No class activity yet.</strong>
+          Add sample data to explore the dashboard, or open the content library and try a topic first.
           <div style={{ marginTop: 16, display: "flex", gap: 10, flexWrap: "wrap", justifyContent: "center" }}>
             <button className="btn btn-primary" onClick={handleLoadDemoClass}>
-              Load demo class (22 students)
+              Add sample class
             </button>
-            <Link href="/math/p7" className="btn btn-secondary">
-              Try a topic yourself
+            <Link href="/study" className="btn btn-secondary">
+              Open content library
             </Link>
           </div>
         </div>
@@ -113,7 +112,7 @@ export default function TeacherDashboard() {
               className={"mode-tab" + (mode === "demo" ? " active" : "")}
               onClick={() => { setMode("demo"); setView("class"); setSelectedStudentId(null); }}
             >
-              Demo class
+              Sample class
               <span className="mode-tab-pill">{demoClass!.length} students</span>
             </button>
           )}
@@ -122,13 +121,13 @@ export default function TeacherDashboard() {
               className={"mode-tab" + (mode === "device" ? " active" : "")}
               onClick={() => { setMode("device"); setView("class"); setSelectedStudentId(null); }}
             >
-              This device
+              This browser
               <span className="mode-tab-pill">you</span>
             </button>
           )}
           {!hasDemo && hasDevice && (
             <button className="mode-tab-link" onClick={handleLoadDemoClass}>
-              + Load demo class
+              + Add sample class
             </button>
           )}
         </div>
@@ -190,9 +189,7 @@ function DemoClassView({
   return (
     <>
       <div className="callout">
-        <strong>Demo class — for the sales pitch.</strong> These are 22 sample students with realistic
-        varied activity. In the school-pilot version, every student logs in with a class code and this
-        shows your real P7 class.
+        <strong>Sample class.</strong> Use this sample data to explore class progress and parent reports.
       </div>
 
       <div className="dash-stat-grid">
@@ -217,9 +214,9 @@ function DemoClassView({
       <div style={{ display: "flex", alignItems: "center", gap: 10, margin: "24px 0 12px", flexWrap: "wrap" }}>
         <h2 style={{ margin: 0 }}>Performance by topic</h2>
         <div className="subject-filter" style={{ marginLeft: "auto", display: "inline-flex", verticalAlign: "middle" }}>
-          <button type="button" className={"subject-filter-btn" + (gradeFilter === "all" ? " on" : "")} onClick={() => setGradeFilter("all")}>All Classes</button>
-          <button type="button" className={"subject-filter-btn" + (gradeFilter === "P7" ? " on" : "")} onClick={() => setGradeFilter("P7")}>P7 Topics</button>
-          <button type="button" className={"subject-filter-btn" + (gradeFilter === "P6" ? " on" : "")} onClick={() => setGradeFilter("P6")}>P6 Topics</button>
+          <button type="button" className={"subject-filter-btn" + (gradeFilter === "all" ? " on" : "")} onClick={() => setGradeFilter("all")}>All</button>
+          <button type="button" className={"subject-filter-btn" + (gradeFilter === "P7" ? " on" : "")} onClick={() => setGradeFilter("P7")}>P7</button>
+          <button type="button" className={"subject-filter-btn" + (gradeFilter === "P6" ? " on" : "")} onClick={() => setGradeFilter("P6")}>P6</button>
         </div>
       </div>
       <p className="dash-help">
@@ -269,7 +266,7 @@ function DemoClassView({
           className="btn btn-secondary dash-clear"
           onClick={onClear}
         >
-          Clear demo class
+          Clear sample class
         </button>
       </div>
     </>
@@ -289,7 +286,7 @@ function StudentDrillDown({ student, onBack }: { student: DemoStudent; onBack: (
       <button className="back no-print" onClick={onBack} style={{ background: "none", border: "none", padding: 0, cursor: "pointer" }}>
         ← Back to class
       </button>
-      <div className="eyebrow">Demo class · P7-DEMO</div>
+      <div className="eyebrow">Class record</div>
       <h1 style={{ marginTop: 4 }}>{student.name}</h1>
 
       <div className="dash-stat-grid">
@@ -396,8 +393,7 @@ function DeviceView({
   return (
     <>
       <div className="callout">
-        <strong>This device only.</strong> Shows activity from THIS browser. In the school-pilot version,
-        students log in with a class code so their progress reports from any phone.
+        <strong>Browser activity.</strong> Shows learning activity saved on this browser.
       </div>
 
       <div className="dash-stat-grid">
@@ -424,9 +420,9 @@ function DeviceView({
       <div style={{ display: "flex", alignItems: "center", gap: 10, margin: "24px 0 12px", flexWrap: "wrap" }}>
         <h2 style={{ margin: 0 }}>Topic activity</h2>
         <div className="subject-filter" style={{ marginLeft: "auto", display: "inline-flex", verticalAlign: "middle" }}>
-          <button type="button" className={"subject-filter-btn" + (gradeFilter === "all" ? " on" : "")} onClick={() => setGradeFilter("all")}>All Classes</button>
-          <button type="button" className={"subject-filter-btn" + (gradeFilter === "P7" ? " on" : "")} onClick={() => setGradeFilter("P7")}>P7 Topics</button>
-          <button type="button" className={"subject-filter-btn" + (gradeFilter === "P6" ? " on" : "")} onClick={() => setGradeFilter("P6")}>P6 Topics</button>
+          <button type="button" className={"subject-filter-btn" + (gradeFilter === "all" ? " on" : "")} onClick={() => setGradeFilter("all")}>All</button>
+          <button type="button" className={"subject-filter-btn" + (gradeFilter === "P7" ? " on" : "")} onClick={() => setGradeFilter("P7")}>P7</button>
+          <button type="button" className={"subject-filter-btn" + (gradeFilter === "P6" ? " on" : "")} onClick={() => setGradeFilter("P6")}>P6</button>
         </div>
       </div>
 

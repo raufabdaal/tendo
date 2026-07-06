@@ -1,6 +1,38 @@
 # HANDOFF — for the next session
 
-*Written: 2026-07-05*
+*Written: 2026-07-07*
+
+
+## Latest handoff — 2026-07-07 UX/auth + production declutter
+
+The app now has a local/device sign-in gate and role-specific experiences. This is UX scaffolding, not backend auth.
+
+### What changed most recently
+- `AuthGate.tsx` wraps the app and requires Student or Teacher sign-in.
+- `auth-session.ts` stores the local session in browser storage.
+- Student sessions are grade-specific. P7 students see P7 Study/Practice; P6 students see P6 Study/Practice. Wrong-grade routes redirect.
+- Teacher sessions use a hamburger menu instead of student-style bottom nav.
+- Teachers can still access both P6 and P7 content through the content library for lesson inspiration.
+- Home, Study, Practice, Papers, subject pages, and paper pages were decluttered for production.
+- Subject pages no longer show stats panels, long explanatory intros, status footers, or phase/backlog copy.
+- Removed demo/sales wording from teacher dashboard and made sample data copy neutral.
+- Simplified worksheet maker into class → subject → topics → questions → generate, with advanced options collapsed.
+- Removed topic-page intro callouts so lesson content appears faster.
+
+### Files to understand first
+- `app/components/AuthGate.tsx`
+- `app/components/AppNav.tsx`
+- `app/components/StudyDirectory.tsx`
+- `app/components/PracticeHomeContent.tsx`
+- `app/app/globals.css` (latest UX overrides are at the end)
+- `docs/ops/ux-auth-production-cleanup-2026-07-07.md`
+
+### Next cleanup tasks
+1. Test manually on 320/340/360/390/414/430px phone widths.
+2. Decide backend auth provider/data model when ready.
+3. After real-device testing, do a final pass on any screen that still pushes the main action below the fold.
+
+---
 
 ## Read this first (for a no-context restart)
 

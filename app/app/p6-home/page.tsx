@@ -63,7 +63,7 @@ export default function P6HomePage() {
         <Link href="/study" className="today-card">
           <span>📚</span>
           <div>
-            <h3>All subjects</h3>
+            <h3>Subjects</h3>
             <p>Maths, English, Science, SST and RE.</p>
           </div>
         </Link>

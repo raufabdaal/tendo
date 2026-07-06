@@ -3554,3 +3554,309 @@ input, select, textarea, button { max-width: 100%; }
   .polished-subject h3 { font-size: 18px; }
   .polished-subject p { font-size: 13px; }
 }
+
+/* ============================================
+   Production declutter pass — subject and paper pages
+   ============================================ */
+.subject-list-page,
+.paper-cover-page,
+.worksheet-page {
+  display: grid;
+  gap: 16px;
+}
+.subject-list-page .compact-page-intro {
+  margin-bottom: 2px;
+}
+.simplified-strand-section {
+  padding: 14px;
+  margin-bottom: 0;
+}
+.simplified-strand-section .theme-label {
+  margin-bottom: 10px;
+  padding-left: 2px;
+  color: var(--charcoal-soft);
+}
+.simplified-topic-card {
+  border-radius: 20px;
+  padding: 15px 16px;
+}
+.simplified-topic-card .card-title {
+  font-size: 17px;
+  line-height: 1.18;
+}
+.simplified-topic-card .card-sub {
+  font-size: 13px;
+  margin-top: 4px;
+}
+.simplified-topic-card .visual-cue {
+  margin-top: 6px;
+}
+.paper-action-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.paper-action-card {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: #fff;
+  padding: 18px;
+  box-shadow: var(--shadow-soft);
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+}
+.paper-action-card:hover {
+  transform: translateY(-2px);
+  border-color: #e6c49f;
+  box-shadow: var(--shadow);
+}
+.paper-action-card > span {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: var(--paper-soft);
+  font-size: 27px;
+}
+.paper-action-card strong {
+  display: block;
+  font-size: 20px;
+  line-height: 1.1;
+}
+.paper-action-card small {
+  display: block;
+  color: var(--muted);
+  margin-top: 4px;
+  font-weight: 750;
+}
+.primary-paper-action {
+  background: linear-gradient(135deg, #fff, #fff0d6);
+}
+.worksheet-page .compact-page-intro,
+.report-list,
+.report-card {
+  margin-bottom: 14px;
+}
+
+/* Hide old overview/jump utilities when accidentally left on production pages. */
+.subject-list-page .maths-overview,
+.subject-list-page .strand-jump,
+.subject-list-page .strand-desc,
+.subject-list-page .strand-meta,
+.subject-list-page .strand-start,
+.subject-list-page .foot {
+  display: none !important;
+}
+
+@media (max-width: 720px) {
+  .subject-list-page,
+  .paper-cover-page,
+  .worksheet-page {
+    gap: 12px;
+  }
+  .simplified-strand-section {
+    padding: 12px;
+  }
+  .simplified-topic-card {
+    padding: 14px;
+  }
+  .paper-action-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .paper-action-card {
+    border-radius: 20px;
+    padding: 14px;
+  }
+}
+
+/* ============================================
+   Remaining production simplification pass
+   - teacher dashboard copy cleanup
+   - worksheet default flow simplification
+   - tighter topic page top area
+   ============================================ */
+.clean-generator-form {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+}
+.worksheet-step {
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: #fff;
+  padding: 16px;
+  box-shadow: var(--shadow-soft);
+}
+.worksheet-step h2,
+.worksheet-generate-card h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+.compact-toggle-row {
+  margin: 0;
+  gap: 7px;
+}
+.worksheet-step-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.worksheet-step-head h2 { margin: 0; }
+.worksheet-step-head span {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--paper-soft);
+  color: var(--muted);
+  padding: 5px 9px;
+  font-size: 12px;
+  font-weight: 950;
+}
+.compact-generator-toolbar {
+  margin: 0 0 12px;
+}
+.compact-topic-chips {
+  max-height: 280px;
+  overflow: auto;
+  padding-right: 4px;
+  margin-bottom: 0;
+}
+.compact-topic-chips .topic-chip {
+  border-radius: 16px;
+  padding: 9px 11px;
+}
+.worksheet-generate-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: linear-gradient(135deg, #fff, #fff0d6);
+  padding: 18px;
+  box-shadow: var(--shadow-soft);
+}
+.worksheet-generate-card p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-weight: 850;
+}
+.worksheet-generate-card .btn {
+  flex: 0 0 auto;
+}
+.worksheet-advanced {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: rgba(255,255,255,.72);
+  padding: 0;
+  overflow: hidden;
+}
+.worksheet-advanced summary {
+  cursor: pointer;
+  padding: 14px 16px;
+  color: var(--charcoal-soft);
+  font-weight: 950;
+  list-style: none;
+}
+.worksheet-advanced summary::-webkit-details-marker { display: none; }
+.worksheet-advanced summary::after {
+  content: "+";
+  float: right;
+  color: var(--terracotta);
+  font-size: 18px;
+  line-height: 1;
+}
+.worksheet-advanced[open] summary::after { content: "–"; }
+.advanced-panel {
+  display: grid;
+  gap: 12px;
+  border-top: 1px solid var(--border);
+  padding: 14px;
+}
+
+/* Topic pages: get to the lesson faster. */
+.app-main > .back + .eyebrow + h1,
+.topic-header h1 {
+  margin-bottom: 12px;
+}
+.lesson-stepper {
+  margin: 10px 0 14px;
+  padding: 6px;
+  border-radius: 18px;
+}
+.lesson-stepper .tab {
+  min-height: 44px;
+}
+.step-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 9px;
+}
+.watch-panel,
+.note,
+.quiz-panel,
+.practice-cta {
+  margin-bottom: 16px;
+}
+.note {
+  padding: 16px;
+}
+.study-big-idea {
+  margin-top: 0;
+}
+.read-listen-bar {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+}
+.quiz-panel-heading {
+  margin-bottom: 12px;
+}
+
+/* Teacher dashboard: quieter helper copy. */
+.teacher-dashboard-panel .callout {
+  margin-top: 0;
+}
+.mode-tab,
+.mode-tab-link {
+  min-height: 40px;
+}
+
+@media (max-width: 720px) {
+  .clean-generator-form {
+    padding: 12px;
+    gap: 12px;
+  }
+  .worksheet-step,
+  .worksheet-generate-card {
+    border-radius: 20px;
+    padding: 14px;
+  }
+  .worksheet-generate-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .worksheet-generate-card .btn {
+    width: 100%;
+  }
+  .compact-topic-chips {
+    max-height: 240px;
+  }
+  .lesson-stepper {
+    margin: 8px 0 12px;
+  }
+  .lesson-stepper .tab {
+    min-height: 42px;
+  }
+  .note,
+  .quiz-panel,
+  .watch-panel,
+  .practice-cta {
+    padding: 13px;
+  }
+}

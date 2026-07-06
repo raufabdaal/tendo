@@ -16,21 +16,8 @@ interface SampledQ extends BankQuestion {
   grade: "P6" | "P7";
 }
 
-const SUBJECT_ORDER = ["Mathematics", "English", "Integrated Science", "Social Studies", "Religious Education"] as const;
-
 export default function WorksheetGenerator() {
   const topics = useMemo(() => listBankTopics(), []);
-  const subjectStats = useMemo(() => {
-    const stats = new Map<string, { topics: number; questions: number }>();
-    for (const topic of topics) {
-      const existing = stats.get(topic.subjectName) ?? { topics: 0, questions: 0 };
-      existing.topics += 1;
-      existing.questions += topic.count;
-      stats.set(topic.subjectName, existing);
-    }
-    return SUBJECT_ORDER.map((name) => ({ name, ...(stats.get(name) ?? { topics: 0, questions: 0 }) }));
-  }, [topics]);
-
   const [classFilter, setClassFilter] = useState<ClassFilter>("P7");
   const [subject, setSubject] = useState<SubjectFilter>("mathematics");
   const visibleTopics = useMemo(
@@ -156,132 +143,112 @@ export default function WorksheetGenerator() {
   return (
     <>
       {!worksheet && (
-        <div className="generator-form no-print">
-          <div className="worksheet-stats" aria-label="Question-bank summary by subject">
-            {subjectStats.map((item) => (
-              <div className="worksheet-stat" key={item.name}>
-                <strong>{item.questions}</strong>
-                <span>{item.name}</span>
-                <small>{item.topics} bank topics</small>
-              </div>
-            ))}
-          </div>
-
-          <h2>1. Worksheet details</h2>
-          <input
-            type="text"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            placeholder="Worksheet title"
-            className="text-input"
-          />
-          <div className="generator-controls compact-controls">
-            <input
-              type="text"
-              value={schoolName}
-              onChange={(e) => setSchoolName(e.target.value)}
-              placeholder="School name (optional)"
-              className="text-input"
-            />
-            <input
-              type="text"
-              value={className}
-              onChange={(e) => setClassName(e.target.value)}
-              placeholder="Class e.g. P.7"
-              className="text-input"
-            />
-            <input
-              type="text"
-              value={termName}
-              onChange={(e) => setTermName(e.target.value)}
-              placeholder="Term / week (optional)"
-              className="text-input"
-            />
-          </div>
-
-          <h2>2. Subject and topics</h2>
-          <div style={{ marginBottom: 12 }}>
-            <div className="subject-filter" role="group" aria-label="Worksheet class level">
-              <button type="button" className={"subject-filter-btn" + (classFilter === "P7" ? " on" : "")} onClick={() => changeClassFilter("P7")}>Primary 7 (PLE)</button>
-              <button type="button" className={"subject-filter-btn" + (classFilter === "P6" ? " on" : "")} onClick={() => changeClassFilter("P6")}>Primary 6</button>
-              <button type="button" className={"subject-filter-btn" + (classFilter === "all" ? " on" : "")} onClick={() => changeClassFilter("all")}>Mixed Classes (P6 & P7)</button>
+        <div className="generator-form no-print clean-generator-form">
+          <section className="worksheet-step">
+            <h2>1. Class</h2>
+            <div className="subject-filter compact-toggle-row" role="group" aria-label="Worksheet class level">
+              <button type="button" className={"subject-filter-btn" + (classFilter === "P7" ? " on" : "")} onClick={() => changeClassFilter("P7")}>P7</button>
+              <button type="button" className={"subject-filter-btn" + (classFilter === "P6" ? " on" : "")} onClick={() => changeClassFilter("P6")}>P6</button>
+              <button type="button" className={"subject-filter-btn" + (classFilter === "all" ? " on" : "")} onClick={() => changeClassFilter("all")}>Both</button>
             </div>
-          </div>
-          <div className="subject-filter" role="group" aria-label="Worksheet subject">
-            <button type="button" className={"subject-filter-btn" + (subject === "mathematics" ? " on" : "")} onClick={() => changeSubject("mathematics")}>Maths only</button>
-            <button type="button" className={"subject-filter-btn" + (subject === "science" ? " on" : "")} onClick={() => changeSubject("science")}>Science only</button>
-            <button type="button" className={"subject-filter-btn" + (subject === "social-studies" ? " on" : "")} onClick={() => changeSubject("social-studies")}>Social Studies only</button>
-            <button type="button" className={"subject-filter-btn" + (subject === "english" ? " on" : "")} onClick={() => changeSubject("english")}>English only</button>
-            <button type="button" className={"subject-filter-btn" + (subject === "religious-education" ? " on" : "")} onClick={() => changeSubject("religious-education")}>RE only</button>
-            <button type="button" className={"subject-filter-btn" + (subject === "all" ? " on" : "")} onClick={() => changeSubject("all")}>Mixed</button>
-          </div>
-          <div className="generator-toolbar">
-            <button type="button" className="link-btn" onClick={selectAll}>Select all</button>
-            <button type="button" className="link-btn" onClick={selectNone}>Select none</button>
-            <span className="generator-count">{selected.size} selected · {visibleTopics.length} shown · {liveSelectedQuestionPool} questions available</span>
-          </div>
-          <div className="topic-chips">
-            {visibleTopics.map((t) => {
-              const on = selected.has(t.topicId);
-              return (
-                <button type="button" key={t.topicId} className={"topic-chip" + (on ? " on" : "")} onClick={() => toggle(t.topicId)}>
-                  <span>{t.topicTitle}</span>
-                  <span className="topic-chip-subject">{t.grade} · {t.subjectName}</span>
-                  <span className="topic-chip-count">{t.count}</span>
-                </button>
-              );
-            })}
-          </div>
+          </section>
 
-          <h2>3. Length, marks and answer key</h2>
-          <div className="quick-picks" aria-label="Quick worksheet lengths">
-            {[10, 15, 20, 30, 40].map((n) => (
-              <button type="button" key={n} className={"quick-pick" + (count === n ? " on" : "")} onClick={() => setCount(n)}>{n} questions</button>
-            ))}
-          </div>
-          <div className="generator-controls">
-            <label className="ctl">
-              <span>Number of questions</span>
-              <input type="number" min={1} max={50} value={count} onChange={(e) => setCount(Math.max(1, Math.min(50, Number(e.target.value) || 1)))} className="num-input" />
-            </label>
-            <label className="ctl">
-              <span>Marks per question</span>
-              <input type="number" min={1} max={10} value={marksPerQuestion} onChange={(e) => setMarksPerQuestion(Math.max(1, Math.min(10, Number(e.target.value) || 1)))} className="num-input" />
-            </label>
-            <label className="ctl">
-              <span>Time allowed</span>
-              <input type="number" min={1} max={180} value={durationMinutes} onChange={(e) => setDurationMinutes(e.target.value)} placeholder="minutes" className="num-input" />
-            </label>
-            <label className="ctl">
-              <span>Difficulty</span>
-              <select value={difficulty} onChange={(e) => setDifficulty(e.target.value as Difficulty)} className="num-input">
-                <option value="all">Mixed</option>
-                <option value="easy">Easy only</option>
-                <option value="medium">Medium only</option>
-                <option value="hard">Hard only</option>
-              </select>
-            </label>
-            <label className="ctl">
-              <span>Answer key</span>
-              <select value={includeAnswerKey ? "yes" : "no"} onChange={(e) => setIncludeAnswerKey(e.target.value === "yes")} className="num-input">
-                <option value="yes">Add separate answer key</option>
-                <option value="no">Questions only</option>
-              </select>
-            </label>
-          </div>
+          <section className="worksheet-step">
+            <h2>2. Subject</h2>
+            <div className="subject-filter compact-toggle-row" role="group" aria-label="Worksheet subject">
+              <button type="button" className={"subject-filter-btn" + (subject === "mathematics" ? " on" : "")} onClick={() => changeSubject("mathematics")}>Maths</button>
+              <button type="button" className={"subject-filter-btn" + (subject === "science" ? " on" : "")} onClick={() => changeSubject("science")}>Science</button>
+              <button type="button" className={"subject-filter-btn" + (subject === "social-studies" ? " on" : "")} onClick={() => changeSubject("social-studies")}>SST</button>
+              <button type="button" className={"subject-filter-btn" + (subject === "english" ? " on" : "")} onClick={() => changeSubject("english")}>English</button>
+              <button type="button" className={"subject-filter-btn" + (subject === "religious-education" ? " on" : "")} onClick={() => changeSubject("religious-education")}>RE</button>
+              <button type="button" className={"subject-filter-btn" + (subject === "all" ? " on" : "")} onClick={() => changeSubject("all")}>Mixed</button>
+            </div>
+          </section>
 
-          <label className="ctl instruction-box">
-            <span>Instruction line</span>
-            <input type="text" value={instruction} onChange={(e) => setInstruction(e.target.value)} className="text-input" />
-          </label>
+          <section className="worksheet-step">
+            <div className="worksheet-step-head">
+              <h2>3. Topics</h2>
+              <span>{selected.size} selected</span>
+            </div>
+            <div className="generator-toolbar compact-generator-toolbar">
+              <button type="button" className="link-btn" onClick={selectAll}>Select all</button>
+              <button type="button" className="link-btn" onClick={selectNone}>Clear</button>
+              <span className="generator-count">{liveSelectedQuestionPool} questions available</span>
+            </div>
+            <div className="topic-chips compact-topic-chips">
+              {visibleTopics.map((t) => {
+                const on = selected.has(t.topicId);
+                return (
+                  <button type="button" key={t.topicId} className={"topic-chip" + (on ? " on" : "")} onClick={() => toggle(t.topicId)}>
+                    <span>{t.topicTitle}</span>
+                    <span className="topic-chip-subject">{t.grade} · {t.subjectName}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </section>
 
-          <div className="worksheet-preview-note">
-            This worksheet will generate about <strong>{count}</strong> questions, worth <strong>{count * marksPerQuestion}</strong> marks, from <strong>{selected.size}</strong> selected topic{selected.size === 1 ? "" : "s"}.
-          </div>
+          <section className="worksheet-generate-card">
+            <div>
+              <h2>4. Questions</h2>
+              <div className="quick-picks" aria-label="Quick worksheet lengths">
+                {[10, 15, 20, 30].map((n) => (
+                  <button type="button" key={n} className={"quick-pick" + (count === n ? " on" : "")} onClick={() => setCount(n)}>{n}</button>
+                ))}
+              </div>
+              <p>{count} questions · {totalMarks} marks</p>
+            </div>
+            <button className="btn btn-primary" onClick={generate}>Generate worksheet</button>
+          </section>
 
-          <div style={{ marginTop: 24 }}>
-            <button className="btn btn-primary btn-block" onClick={generate}>Generate worksheet</button>
-          </div>
+          <details className="worksheet-advanced">
+            <summary>Advanced options</summary>
+            <div className="advanced-panel">
+              <label className="ctl">
+                <span>Worksheet title</span>
+                <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className="text-input" />
+              </label>
+              <div className="generator-controls compact-controls">
+                <input type="text" value={schoolName} onChange={(e) => setSchoolName(e.target.value)} placeholder="School name (optional)" className="text-input" />
+                <input type="text" value={className} onChange={(e) => setClassName(e.target.value)} placeholder="Class e.g. P.7" className="text-input" />
+                <input type="text" value={termName} onChange={(e) => setTermName(e.target.value)} placeholder="Term / week (optional)" className="text-input" />
+              </div>
+              <div className="generator-controls">
+                <label className="ctl">
+                  <span>Custom question count</span>
+                  <input type="number" min={1} max={50} value={count} onChange={(e) => setCount(Math.max(1, Math.min(50, Number(e.target.value) || 1)))} className="num-input" />
+                </label>
+                <label className="ctl">
+                  <span>Marks per question</span>
+                  <input type="number" min={1} max={10} value={marksPerQuestion} onChange={(e) => setMarksPerQuestion(Math.max(1, Math.min(10, Number(e.target.value) || 1)))} className="num-input" />
+                </label>
+                <label className="ctl">
+                  <span>Time allowed</span>
+                  <input type="number" min={1} max={180} value={durationMinutes} onChange={(e) => setDurationMinutes(e.target.value)} placeholder="minutes" className="num-input" />
+                </label>
+                <label className="ctl">
+                  <span>Difficulty</span>
+                  <select value={difficulty} onChange={(e) => setDifficulty(e.target.value as Difficulty)} className="num-input">
+                    <option value="all">Mixed</option>
+                    <option value="easy">Easy only</option>
+                    <option value="medium">Medium only</option>
+                    <option value="hard">Hard only</option>
+                  </select>
+                </label>
+                <label className="ctl">
+                  <span>Answer key</span>
+                  <select value={includeAnswerKey ? "yes" : "no"} onChange={(e) => setIncludeAnswerKey(e.target.value === "yes")} className="num-input">
+                    <option value="yes">Add answer key</option>
+                    <option value="no">Questions only</option>
+                  </select>
+                </label>
+              </div>
+              <label className="ctl instruction-box">
+                <span>Instruction line</span>
+                <input type="text" value={instruction} onChange={(e) => setInstruction(e.target.value)} className="text-input" />
+              </label>
+            </div>
+          </details>
         </div>
       )}
 
