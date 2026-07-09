@@ -4,6 +4,27 @@
 
 ---
 
+
+## MT-012 · Push current student-first/premium milestone when founder is ready
+**Status:** Waiting · **Blocks:** Remote/live update · **Estimated time:** 10–20 min · **Cost:** Free
+
+**Why:** The local workspace contains a large milestone bundle that has not yet been pushed: student-first pivot, premium parent strategy docs, role-based auth scaffold, UX declutter, teacher-set questions/manual marking, writing spaces, presentation data, and P7 Maths premium strengthening.
+
+**Do not push until founder says they are ready.**
+
+**When ready, ask the agent for:**
+1. Files to overwrite.
+2. Files to add.
+3. Files to delete.
+4. Build status.
+5. Suggested commit message.
+6. Post-deploy smoke-test checklist.
+
+**Suggested commit message when ready:**
+`Student-first premium pivot, UX cleanup, teacher questions, P7 Maths premium pass`
+
+---
+
 ## MT-011 · Push and mobile-verify UX/auth production cleanup
 **Status:** Open · **Blocks:** Production pilot polish · **Estimated time:** 20–30 min · **Cost:** Free
 
@@ -28,7 +49,7 @@
    - Switch account → P7 Student → Practice → Teacher questions → submit answer.
    - Switch back → Teacher → Set questions → mark the answer.
 8. Test widths if using desktop dev tools: 320, 340, 360, 390, 414, 430.
-8. Report any overflow/cut-off screenshots before more content work.
+9. Report any overflow/cut-off screenshots before more content work.
 
 ---
 

@@ -150,7 +150,41 @@ export const SCIENCE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-skeleton-application",
+        "title": "4. Premium Exam Practice: Diagrams, Injuries and Care",
+        "modules": [
+          {
+            "moduleId": "skeleton-diagram-labelling",
+            "title": "Labelling Skeleton and Joint Diagrams",
+            "bigIdea": "A learner scores easy marks when they can name bones and joints from a diagram and state their functions.",
+            "learnIt": [
+              "When a diagram shows the head, identify the skull and remember that it protects the brain.",
+              "When a diagram shows the chest, identify the ribs and remember that they protect the heart and lungs and help in breathing.",
+              "For movable joints, name both the joint type and where it is found: hinge at elbow/knee, ball-and-socket at shoulder/hip."
+            ],
+            "workedExample": {
+              "question": "A diagram points to the rib cage. State two functions of the rib cage.",
+              "steps": ["Step 1: Identify organs inside the rib cage: heart and lungs.", "Step 2: State protection: it protects the heart and lungs.", "Step 3: Add breathing function: it helps the chest move during breathing."],
+              "answer": "It protects the heart and lungs and helps in breathing movements."
+            },
+            "tryThis": { "question": "Which joint is found at the elbow?", "choices": ["Hinge joint", "Ball-and-socket joint", "Pivot joint", "Fixed joint"], "correct": 0, "explanation": "The elbow bends and straightens like a door, so it is a hinge joint." }
+          },
+          {
+            "moduleId": "injury-first-aid-posture",
+            "title": "Injuries, First Aid and Posture",
+            "bigIdea": "Science questions often ask for safe care of bones, muscles and joints after injury.",
+            "learnIt": [
+              "A fracture is a broken bone. Do not move the injured part unnecessarily; support it and seek medical help.",
+              "A sprain affects ligaments around a joint. Resting the joint, cooling it and avoiding further strain can reduce damage before medical care.",
+              "Good posture protects the backbone and muscles. Learners should sit upright, carry bags properly and avoid careless play."
+            ],
+            "workedExample": { "question": "Why should a suspected broken arm be supported before taking the patient to hospital?", "steps": ["Step 1: A broken bone can move and cause more injury.", "Step 2: Supporting the arm keeps it still.", "Step 3: This reduces pain and prevents further damage."], "answer": "It keeps the bone still and prevents further injury." },
+            "tryThis": { "question": "Which habit helps prevent back problems?", "choices": ["Sitting upright when reading", "Carrying a very heavy bag on one shoulder", "Bending the back for long hours", "Jumping from desks"], "correct": 0, "explanation": "Good posture reduces strain on the backbone and muscles." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Which joint is found at the shoulder?", "choices": ["Hinge joint", "Ball-and-socket joint", "Pivot joint", "Fixed joint"], "correct": 1, "why": "The shoulder allows movement in many directions, making it a ball-and-socket joint." },
       { "q": "Which tissue attaches muscle to bone?", "choices": ["Ligament", "Tendon", "Cartilage", "Skin"], "correct": 1, "why": "Tendons attach muscle to bone, while ligaments attach bone to bone." },
@@ -350,7 +384,37 @@ export const SCIENCE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-electricity-application",
+        "title": "5. Premium Exam Practice: Circuits, Safety and Troubleshooting",
+        "modules": [
+          {
+            "moduleId": "circuit-fault-finding",
+            "title": "Finding Faults in Simple Circuits",
+            "bigIdea": "Circuit questions test whether learners understand complete paths, conductors, insulators and switches.",
+            "learnIt": [
+              "A bulb lights only when there is a complete circuit from one battery terminal through the bulb and back to the other terminal.",
+              "If a bulb does not light, check whether the cell is exhausted, the switch is open, a wire is disconnected, or an insulator is in the path.",
+              "In a series circuit, one broken part stops the whole circuit. In a parallel circuit, one branch may fail while another branch still works."
+            ],
+            "workedExample": { "question": "A bulb does not light although a cell and wires are present. Give two possible reasons.", "steps": ["Step 1: A circuit needs a complete path.", "Step 2: One wire may be disconnected or the switch may be open.", "Step 3: The cell may also be weak or exhausted."], "answer": "A wire may be disconnected, the switch may be open, or the cell may be exhausted." },
+            "tryThis": { "question": "Which material is a good conductor?", "choices": ["Copper", "Rubber", "Plastic", "Dry wood"], "correct": 0, "explanation": "Copper allows electric current to pass easily." }
+          },
+          {
+            "moduleId": "home-electrical-safety",
+            "title": "Home Electrical Safety",
+            "bigIdea": "Electricity is useful but dangerous when handled carelessly.",
+            "learnIt": [
+              "Never touch electrical appliances with wet hands because water can conduct electricity and cause shock.",
+              "A fuse protects a circuit by melting when current is too high, breaking the circuit before wires overheat.",
+              "Lightning arresters protect tall buildings by providing a safe path for lightning to reach the ground."
+            ],
+            "workedExample": { "question": "Why is a fuse connected in an electric circuit?", "steps": ["Step 1: Too much current can heat wires dangerously.", "Step 2: A fuse melts when current is too high.", "Step 3: This breaks the circuit and protects appliances and people."], "answer": "It breaks the circuit when current is too high, protecting the appliance and users." },
+            "tryThis": { "question": "Why should a person not touch a switch with wet hands?", "choices": ["Water may conduct electricity and cause shock", "Water makes the switch beautiful", "Water stores magnetism", "Water makes current disappear"], "correct": 0, "explanation": "Water can conduct electricity, increasing the risk of electric shock." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Which item is needed to open and close an electric circuit?", "choices": ["Switch", "Ruler", "Magnet", "Thermometer"], "correct": 0, "why": "A switch opens or closes the conducting path." },
       { "q": "Which metal is best for making the core of an electromagnet?", "choices": ["Soft iron", "Hard steel", "Aluminium", "Copper"], "correct": 0, "why": "Soft iron magnetizes and demagnetizes readily." },
@@ -550,7 +614,37 @@ export const SCIENCE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-excretion-application",
+        "title": "5. Premium Exam Practice: Organ Functions, Disorders and Hygiene",
+        "modules": [
+          {
+            "moduleId": "excretory-organ-matching",
+            "title": "Matching Organs to Wastes",
+            "bigIdea": "A common exam task is to match each excretory organ with the waste it removes.",
+            "learnIt": [
+              "Kidneys remove urea, excess water and mineral salts in urine.",
+              "Lungs remove carbon dioxide and water vapour during breathing out.",
+              "Skin removes water, salts and small amounts of urea in sweat; the liver breaks down harmful substances and excess amino acids."
+            ],
+            "workedExample": { "question": "Name the organ that removes urea from blood and forms urine.", "steps": ["Step 1: Urea is a nitrogenous waste from protein breakdown.", "Step 2: Blood carrying urea is filtered in the kidneys.", "Step 3: The kidneys form urine."], "answer": "The kidneys." },
+            "tryThis": { "question": "Which waste is removed by the lungs?", "choices": ["Carbon dioxide", "Undigested food", "Faeces", "Bile only"], "correct": 0, "explanation": "The lungs excrete carbon dioxide and water vapour." }
+          },
+          {
+            "moduleId": "urinary-health-cases",
+            "title": "Health Cases: Urinary System and Skin",
+            "bigIdea": "Health questions ask learners to connect symptoms, prevention and care without guessing beyond the syllabus.",
+            "learnIt": [
+              "Drinking enough clean water helps kidneys remove wastes and reduces concentration of urine.",
+              "Keeping skin clean helps prevent some skin infections and removes sweat, dirt and germs.",
+              "Severe pain, blood in urine, swelling or persistent skin disease should be taken to a health worker. Learners should not self-medicate."
+            ],
+            "workedExample": { "question": "Give two ways of caring for the urinary system.", "steps": ["Step 1: Think of what helps kidneys work well.", "Step 2: Clean water helps remove wastes.", "Step 3: Seeking medical help for urinary problems prevents worse illness."], "answer": "Drink enough clean water and seek medical help when urinary problems occur." },
+            "tryThis": { "question": "Which habit helps care for the skin?", "choices": ["Bathing regularly", "Sharing dirty towels", "Scratching wounds with dirty nails", "Wearing wet clothes all day"], "correct": 0, "explanation": "Bathing removes sweat, dirt and germs from the skin." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "What is excretion?", "choices": ["Removal of body waste products", "Eating food", "Breathing in oxygen only", "Breaking food by teeth"], "correct": 0, "why": "Excretion is the removal of waste products made by body activities." },
       { "q": "Which organ forms urine?", "choices": ["Kidney", "Heart", "Stomach", "Eye"], "correct": 0, "why": "The kidneys filter blood and form urine." },
@@ -784,7 +878,37 @@ export const SCIENCE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-light-application",
+        "title": "5. Premium Exam Practice: Ray Diagrams, Lenses and Vision",
+        "modules": [
+          {
+            "moduleId": "ray-diagram-reasoning",
+            "title": "Reasoning with Rays and Shadows",
+            "bigIdea": "Light diagram questions test whether learners remember that light travels in straight lines.",
+            "learnIt": [
+              "Shadows form because light travels in straight lines and opaque objects block it.",
+              "A pinhole camera forms an inverted image because rays from the top of the object pass through the hole to the bottom of the screen, and rays from the bottom go to the top.",
+              "Reflection follows two laws: the angle of incidence equals the angle of reflection, and the incident ray, reflected ray and normal lie in the same plane."
+            ],
+            "workedExample": { "question": "Why is the image in a pinhole camera upside down?", "steps": ["Step 1: Light travels in straight lines.", "Step 2: Rays from the top of the object pass through the pinhole to the lower part of the screen.", "Step 3: Rays from the bottom pass to the upper part of the screen."], "answer": "Because light rays cross at the pinhole, forming an inverted image." },
+            "tryThis": { "question": "Which object forms a dark shadow?", "choices": ["Opaque object", "Transparent object", "Clear glass", "Air"], "correct": 0, "explanation": "Opaque objects block light and form shadows." }
+          },
+          {
+            "moduleId": "lenses-eye-problems",
+            "title": "Lenses, the Eye and Vision Defects",
+            "bigIdea": "Vision questions connect lens shape, focusing and correction of defects.",
+            "learnIt": [
+              "A convex lens is thicker in the middle and can converge light rays. It is used in magnifying glasses and to correct long sightedness.",
+              "A concave lens is thinner in the middle and diverges light rays. It is used to correct short sightedness.",
+              "The retina receives the image, the optic nerve carries messages to the brain, and the iris controls the size of the pupil."
+            ],
+            "workedExample": { "question": "Which lens can be used to correct short sightedness?", "steps": ["Step 1: Short sightedness means distant objects are not seen clearly.", "Step 2: A concave lens spreads light rays before they enter the eye.", "Step 3: This helps the image focus on the retina."], "answer": "A concave lens." },
+            "tryThis": { "question": "Which part of the eye receives the image?", "choices": ["Retina", "Iris", "Eyelid", "Tear gland"], "correct": 0, "explanation": "The retina is the light-sensitive layer where the image is formed." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Which is a natural source of light?", "choices": ["The sun", "Electric bulb", "Lit candle", "Mirror"], "correct": 0, "why": "The sun is a luminous natural object." },
       { "q": "How does light travel?", "choices": ["In straight lines", "In circles", "In zigzag lines", "Only upwards"], "correct": 0, "why": "Light travels in straight lines." },
@@ -937,7 +1061,37 @@ export const SCIENCE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-ecosystem-application",
+        "title": "4. Premium Exam Practice: Food Webs and Environmental Decisions",
+        "modules": [
+          {
+            "moduleId": "food-web-reasoning",
+            "title": "Reasoning with Food Chains and Food Webs",
+            "bigIdea": "Food-chain questions test cause and effect in ecosystems.",
+            "learnIt": [
+              "A food chain starts with a producer, usually a green plant, because it makes food using sunlight.",
+              "Arrows show the direction of energy flow, from food to feeder. Grass -> grasshopper means energy moves from grass to grasshopper.",
+              "If one organism is removed, other organisms may increase or decrease depending on their feeding relationships."
+            ],
+            "workedExample": { "question": "Grass -> grasshopper -> frog -> snake. What may happen to frogs if many grasshoppers are killed?", "steps": ["Step 1: Frogs feed on grasshoppers.", "Step 2: If grasshoppers reduce, frogs have less food.", "Step 3: Frog numbers may reduce."], "answer": "The number of frogs may reduce because they have less food." },
+            "tryThis": { "question": "What is the producer in this chain: maize -> rat -> snake?", "choices": ["Maize", "Rat", "Snake", "Soil"], "correct": 0, "explanation": "Maize is a green plant and makes its own food." }
+          },
+          {
+            "moduleId": "agroforestry-decisions",
+            "title": "Agroforestry and Conservation Decisions",
+            "bigIdea": "Environmental science asks learners to choose practices that protect soil, water and living things.",
+            "learnIt": [
+              "Agroforestry means growing trees together with crops or animals on the same land.",
+              "Trees can reduce soil erosion, provide shade, act as windbreaks and improve soil fertility when leaves decompose.",
+              "Good environmental decisions balance human needs with conservation so resources remain useful in the future."
+            ],
+            "workedExample": { "question": "Give two benefits of planting trees on a farm.", "steps": ["Step 1: Think of how trees affect soil and weather.", "Step 2: Trees reduce erosion by holding soil.", "Step 3: Trees also provide shade, fruits, timber or improve soil."], "answer": "Trees reduce soil erosion and provide useful products such as fruits, timber or shade." },
+            "tryThis": { "question": "Which practice helps conserve soil?", "choices": ["Planting trees on slopes", "Burning all vegetation", "Overgrazing", "Cutting all trees"], "correct": 0, "explanation": "Trees help hold soil and reduce erosion." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Which is an abiotic component of the environment?", "choices": ["Soil minerals", "Grass", "Bacteria", "Insects"], "correct": 0, "why": "Soil minerals are non-living physical components." },
       { "q": "What does the arrow in a food chain represent?", "choices": ["Direction of energy flow", "Size of animals", "Speed of movement", "Number of plants"], "correct": 0, "why": "Arrows point in the direction energy is transferred." },
@@ -1128,7 +1282,37 @@ export const SCIENCE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-health-application",
+        "title": "5. Premium Exam Practice: Disease Prevention and Community Health",
+        "modules": [
+          {
+            "moduleId": "disease-transmission-cases",
+            "title": "Disease Transmission Case Questions",
+            "bigIdea": "Health case questions ask learners to connect a disease to its mode of spread and prevention.",
+            "learnIt": [
+              "Malaria is spread by female Anopheles mosquitoes. Prevention includes sleeping under treated mosquito nets and removing stagnant water.",
+              "Cholera and typhoid spread through contaminated food and water. Prevention includes drinking safe water, washing hands and using latrines properly.",
+              "Worms may spread through contaminated soil, water or food depending on the type. Shoes, sanitation and safe food help prevention."
+            ],
+            "workedExample": { "question": "A village has many open containers with stagnant water. Which disease risk may increase and why?", "steps": ["Step 1: Stagnant water can breed mosquitoes.", "Step 2: Female Anopheles mosquitoes spread malaria.", "Step 3: Therefore malaria risk may increase."], "answer": "Malaria risk may increase because mosquitoes breed in stagnant water." },
+            "tryThis": { "question": "Which action helps prevent cholera?", "choices": ["Drinking boiled water", "Leaving food uncovered", "Defecating near water sources", "Sharing dirty cups"], "correct": 0, "explanation": "Boiling water kills many disease-causing germs." }
+          },
+          {
+            "moduleId": "community-health-action",
+            "title": "Community Health Action Plans",
+            "bigIdea": "Science is applied when learners can suggest practical community health actions.",
+            "learnIt": [
+              "A health club can promote handwashing, compound cleaning, safe water storage and proper rubbish disposal.",
+              "A tippy tap helps people wash hands where there is no tap, especially near latrines or eating places.",
+              "Health surveys can use tally marks to count cases, then use the results to decide what action is needed."
+            ],
+            "workedExample": { "question": "A school survey shows many pupils do not wash hands after visiting the latrine. Suggest two actions.", "steps": ["Step 1: Identify the hygiene problem: poor handwashing.", "Step 2: Provide a handwashing facility such as a tippy tap.", "Step 3: Teach pupils to wash hands with soap or ash after using the latrine."], "answer": "Build handwashing facilities and teach pupils to wash hands after using the latrine." },
+            "tryThis": { "question": "What is the main purpose of a tippy tap?", "choices": ["Handwashing", "Cooking food", "Measuring rainfall", "Catching mosquitoes"], "correct": 0, "explanation": "A tippy tap is a simple handwashing device." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Which insect transmits malaria parasites?", "choices": ["Female Anopheles mosquito", "Housefly", "Tsetse fly", "Cockroach"], "correct": 0, "why": "Female Anopheles mosquitoes transmit Plasmodium during feeding." },
       { "q": "How is cholera mainly prevented?", "choices": ["Boiling drinking water and proper latrine use", "Sleeping under a net", "Wearing spectacles", "Planting tall trees"], "correct": 0, "why": "Cholera spreads through contaminated water and food." },
@@ -1219,7 +1403,37 @@ export const SCIENCE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-energy-application",
+        "title": "3. Premium Exam Practice: Energy Choices and Conservation",
+        "modules": [
+          {
+            "moduleId": "renewable-nonrenewable-comparison",
+            "title": "Comparing Renewable and Non-Renewable Energy",
+            "bigIdea": "Energy-resource questions often ask learners to compare sources and choose the best option for a situation.",
+            "learnIt": [
+              "Renewable energy sources are naturally replaced, such as sunlight, wind, flowing water and biomass when well managed.",
+              "Non-renewable sources such as coal, petroleum and natural gas can be used up and may pollute the environment.",
+              "A good energy choice depends on availability, cost, safety and environmental effect."
+            ],
+            "workedExample": { "question": "Why is solar energy suitable for many homes in Uganda?", "steps": ["Step 1: Uganda receives strong sunlight in many places.", "Step 2: Solar energy does not require fuel after installation.", "Step 3: It produces less smoke than firewood or charcoal."], "answer": "Because sunlight is available and solar energy is clean after installation." },
+            "tryThis": { "question": "Which is a non-renewable source of energy?", "choices": ["Petroleum", "Sunlight", "Wind", "Flowing water"], "correct": 0, "explanation": "Petroleum forms over a very long time and can be used up." }
+          },
+          {
+            "moduleId": "energy-conservation-home",
+            "title": "Saving Energy at Home and School",
+            "bigIdea": "Energy conservation reduces waste, saves money and protects the environment.",
+            "learnIt": [
+              "Switch off lights and appliances when they are not being used.",
+              "Use improved stoves or efficient cooking methods to reduce firewood and charcoal use.",
+              "Planting trees helps replace wood fuel and protects the environment."
+            ],
+            "workedExample": { "question": "Give two ways a family can reduce fuel use while cooking.", "steps": ["Step 1: Think of cooking methods that waste less heat.", "Step 2: Improved stoves use less charcoal or firewood.", "Step 3: Covering saucepans helps food cook faster."], "answer": "Use an improved stove and cover saucepans while cooking." },
+            "tryThis": { "question": "Which action saves electrical energy?", "choices": ["Switching off unused lights", "Leaving a radio on all night", "Opening the fridge for long", "Using damaged wires"], "correct": 0, "explanation": "Switching off unused lights prevents energy waste." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Which is the primary source of energy in the environment?", "choices": ["The Sun", "Petroleum", "Wind", "Wood"], "correct": 0, "why": "The Sun provides energy for all weather, plants, and life." },
       { "q": "Which of these is a non-renewable energy resource?", "choices": ["Crude oil / Petroleum", "Solar energy", "Wind energy", "Biogas"], "correct": 0, "why": "Petroleum takes millions of years to form and gets exhausted." },
@@ -1340,7 +1554,37 @@ export const SCIENCE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-machines-application",
+        "title": "4. Premium Exam Practice: Mechanical Advantage and Friction Decisions",
+        "modules": [
+          {
+            "moduleId": "mechanical-advantage-problems",
+            "title": "Mechanical Advantage Word Problems",
+            "bigIdea": "Simple-machine questions often require identifying load, effort and mechanical advantage.",
+            "learnIt": [
+              "Load is the weight or resistance being moved. Effort is the force applied to move the load.",
+              "Mechanical Advantage = Load ÷ Effort. If MA is greater than 1, the machine makes work easier by multiplying force.",
+              "A fixed pulley changes direction of effort, while some pulley systems can reduce the effort needed."
+            ],
+            "workedExample": { "question": "A lever lifts a 300 N load using 75 N effort. Find the mechanical advantage.", "steps": ["Step 1: MA = Load ÷ Effort.", "Step 2: MA = 300 ÷ 75.", "Step 3: 300 ÷ 75 = 4."], "answer": "The mechanical advantage is 4." },
+            "tryThis": { "question": "A machine lifts 200 N using 50 N effort. What is its MA?", "choices": ["4", "150", "250", "10"], "correct": 0, "explanation": "MA = 200 ÷ 50 = 4." }
+          },
+          {
+            "moduleId": "friction-choice-questions",
+            "title": "Choosing When to Increase or Reduce Friction",
+            "bigIdea": "Friction can be useful or a nuisance depending on the situation.",
+            "learnIt": [
+              "Increase friction when grip is needed, such as tyre treads, shoe soles and brake pads.",
+              "Reduce friction when moving parts are wearing out or wasting energy, such as bicycle chains and engine parts.",
+              "Lubricants, smooth surfaces and ball bearings reduce friction; rough surfaces and treads increase friction."
+            ],
+            "workedExample": { "question": "Should friction be increased or reduced in a bicycle chain? Explain.", "steps": ["Step 1: A bicycle chain has moving metal parts.", "Step 2: Too much friction causes wear and wastes energy.", "Step 3: Oil is used to reduce friction."], "answer": "Friction should be reduced using oil or grease." },
+            "tryThis": { "question": "Why are car tyres given treads?", "choices": ["To increase grip", "To reduce grip", "To store electricity", "To make tyres lighter"], "correct": 0, "explanation": "Treads increase useful friction between tyres and the road." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Which formula correctly calculates Mechanical Advantage (MA)?", "choices": ["Load ÷ Effort", "Effort ÷ Load", "Load × Effort", "Load + Effort"], "correct": 0, "why": "MA is the ratio of weight lifted divided by force applied." },
       { "q": "Which class of lever has the Fulcrum located between Load and Effort?", "choices": ["First class lever", "Second class lever", "Third class lever", "Fourth class lever"], "correct": 0, "why": "First class levers follow L-F-E arrangement (seesaw, crowbar)." },

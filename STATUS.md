@@ -1,9 +1,94 @@
 # STATUS — Tendo
 
-*Updated: 2026-07-07*
+*Updated: 2026-07-09 · Current working state locked*
 
 > **Current state:** Tendo is a child-friendly study platform (not just for revision) for Ugandan upper-primary learners. Both Primary Seven (P7 PLE) and Primary Six (P6) are live across all 5 official NCDC subjects (Mathematics, English Language, Integrated Science, Social Studies, and Religious Education—both CRE and IRE) on the proven Lesson Structure v3 modular architecture.
 
+
+
+
+## CURRENT OPERATING SNAPSHOT — READ FIRST
+
+### Strategy
+Tendo is now a **premium parent-funded, student-first study product**. We are not building around Trainup or any school-first dependency. Schools can become partners later, but the product must keep improving for learners and paying parents directly.
+
+### Paying customer
+Premium parents/guardians who already spend heavily on education and can justify around **UGX 50,000/month** if Tendo shows clear academic ROI.
+
+### Primary user
+Students, starting with **P7** and **P6**. Teachers/tutors remain supporting users. Parent visibility is strategically more important than expanding the teacher dashboard right now.
+
+### Current product status
+- P7 content exists across all 5 subjects.
+- P6 content exists across all 5 subjects.
+- P6 Mathematics, English, Science, Social Studies and Religious Education premium strengthening have started; all current P6 topics gained premium practice/application subtopics.
+- P7 Mathematics has started its premium-strengthening pass; the thinnest five topics were upgraded.
+- P7 English premium strengthening has started; all 7 topics gained premium exam-practice subtopics for comprehension/writing/grammar quality.
+- P7 Science premium strengthening has started; all 8 topics gained premium application/case-practice subtopics.
+- P7 Social Studies premium strengthening has started; all 10 topics gained premium reasoning/casework subtopics.
+- P7 Religious Education premium strengthening has started; all 14 CRE/IRE topics gained premium application subtopics.
+- Teacher-set questions, student writing space and manual marking are scaffolded locally.
+- Auth is still local/device-only. Backend auth is documented but not started.
+- Teacher dashboard now auto-populates with presentation/sample data unless `NEXT_PUBLIC_TENDO_PRESENTATION_DATA=off`.
+
+### Current active milestone
+**P7 Premium Content Completion.**
+
+Immediate sequence:
+1. Human/founder review upgraded P7 Mathematics topics.
+2. Human/founder review P7 English premium additions.
+3. Human/founder/teacher review P7 Science premium additions.
+4. Human/founder review P7 Social Studies premium additions.
+5. Human/founder/teacher review P7 Religious Education premium additions.
+6. Human/founder review upgraded P6 premium additions.
+7. Then move class-by-class downward.
+
+### Push status
+Founder has **not pushed** the current milestone bundle yet. Do not assume the remote repo has these latest changes. When founder is ready, provide a clear overwrite/add file list for the whole milestone.
+
+### Key docs for this state
+- `HANDOFF.md` — no-context restart and exact next tasks.
+- `CHECKLIST.md` — active milestones and push state.
+- `DECISIONS.md` — DEV-027 and DEV-028 are the active strategic decisions.
+- `docs/ops/primary-content-completion-roadmap-2026-07-09.md` — content rollout plan.
+- `docs/ops/content-corrections-workflow-2026-07-09.md` — how to fix/restructure content safely.
+
+---
+
+## Strategic pivot — student-first path (2026-07-09)
+
+Tendo is now being built for the **direct student/parent market**, not around one school pilot or a school-first sales path.
+
+- Trainup a Child Uganda is archived historical context, not the active product direction.
+- The active product is for P6/P7 learners and premium parents to use directly.
+- Teachers, tutors and parents remain important supporting users.
+- Schools may become optional partners later, but product progress should not wait for schools.
+- The old school-specific `/trainup` route has been removed from the app.
+
+Source of truth: `docs/ops/strategic-pivot-student-first-2026-07-09.md`.
+
+---
+
+
+## Premium parent-funded direction (2026-07-09)
+
+The latest commercial direction is **premium direct-to-parent / student-first**.
+
+- We are targeting parents already spending heavily on education, not a mass-market free product.
+- Working price assumption: around **UGX 50,000/month** if the app feels premium and shows clear ROI.
+- The top priority is now completing and polishing the core study content, starting with **Primary 7**.
+- After P7, we move systematically class by class.
+- Teacher dashboard is no longer central; keep teacher/tutor tools, but do not let them distract from student content and parent ROI.
+- Parent dashboard/ROI visibility is strategically important and should be designed around usage, strengths, weaknesses and recommendations.
+
+New docs:
+- `docs/ops/premium-parent-student-first-strategy-2026-07-09.md`
+- `docs/ops/primary-content-completion-roadmap-2026-07-09.md`
+- `docs/ops/p7-math-premium-audit-2026-07-09.md`
+- `docs/ops/content-corrections-workflow-2026-07-09.md`
+- `docs/ops/parent-dashboard-roi-roadmap-2026-07-09.md`
+
+---
 
 ## Latest snapshot — UX/auth and production cleanup (2026-07-07)
 
@@ -22,12 +107,14 @@ Tendo is now moving from "content-rich app" toward **production-ready role-speci
 - Added local teacher-set questions and manual marking scaffold, plus writing space on quizzes, practice and papers.
 - Presentation/sample data now auto-populates teacher dashboard unless `NEXT_PUBLIC_TENDO_PRESENTATION_DATA=off`. Student progress bars were made fuller for demos.
 
-### Current known UX cleanup still needed
+### Current known strategic/content work
+- P7 Mathematics premium strengthening has started: Integers, Time, Data Handling, Measurement/Money and Algebra were upgraded. Founder/human review still needed.
+- Parent dashboard/ROI design is strategically more important than teacher dashboard expansion.
 - Manual real-device testing is still needed at 320/340/360/390/414/430px widths.
 - Current auth is local/device-only UX scaffolding; real backend auth remains a future implementation task.
-- After real-device testing, do a final pass on any screens that still push the main action below the fold.
 
 Detailed handoffs:
+- `docs/ops/strategic-pivot-student-first-2026-07-09.md`
 - `docs/ops/ux-auth-production-cleanup-2026-07-07.md`
 - `docs/ops/teacher-questions-manual-marking-2026-07-07.md`
 - `docs/ops/parent-teacher-dashboard-requirements-2026-07-07.md`
@@ -37,7 +124,13 @@ Detailed handoffs:
 
 ## Current focus
 
-### 1. Primary Six (P6) Expansion Strategy & Roadmap
+### 1. P7 premium content completion
+The active work is now to audit and strengthen P7 until it is premium-ready for paying parents. Start with Mathematics, then English, Science, Social Studies and Religious Education. See `docs/ops/primary-content-completion-roadmap-2026-07-09.md`.
+
+### 2. Parent dashboard / ROI visibility
+Parent visibility is the next strategic dashboard priority. Teacher tools remain useful, but the parent is the paying customer. See `docs/ops/parent-dashboard-roi-roadmap-2026-07-09.md`.
+
+### Historical/completed: Primary Six (P6) Expansion Strategy & Roadmap
 With P7 completed and verified, Tendo expanded to Primary Six (P6) per `docs/spec/p6-expansion-milestones.md`:
 - Milestone 1: P6 NCDC Curriculum specifications (`content/curriculum/p6-*.json`) — **COMPLETED**
 - Milestone 2: Grade Switcher & Routing architecture (`/[subject]/p6/`, `/p6-home`) — **COMPLETED**
@@ -62,7 +155,8 @@ With P7 completed and verified, Tendo expanded to Primary Six (P6) per `docs/spe
 - Added practice CTAs and `/practice` endless practice routes across all P6 subjects.
 
 **Next:**
-1. Conduct school pilot readiness checks and demonstrations with teachers at Trainup a Child Uganda.
+1. Continue direct-to-student product polish and real-device testing.
+2. Keep teacher/tutor workflows useful, but do not depend on a school pilot to move forward.
 
 ### 2. P7 Mathematics is complete enough
 Mathematics has reached a founder-safe “done enough” state for current product scope and is calibrated to the official NCDC structure.
@@ -160,7 +254,7 @@ Operational notes should live under `docs/ops/` where useful.
 - Worksheet generator
 - Worksheet subject filters: Maths only / English only / Science only / Social Studies only / Mixed
 - Watch / Read topic structure with in-read audio support
-- Trainup branding layer and `/trainup` route
+- Teacher-set questions, manual marking, writing space, and presentation sample data
 
 ### Current subject totals
 - Published P7 Mathematics topics: 38

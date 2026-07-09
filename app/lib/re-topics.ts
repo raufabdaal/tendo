@@ -82,7 +82,21 @@ export const CRE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-premium-exam-practice-talents-and-witnessing",
+        "title": "Premium Exam Practice: Talents and Witnessing",
+        "modules": [
+          {
+            "moduleId": "applying-talents-in-daily-life",
+            "title": "Applying Talents in Daily Life",
+            "bigIdea": "A strong CRE answer connects God-given talents to service, honesty and care for others.",
+            "learnIt": ["Witnessing for Christ is shown through actions, not only words.", "A talent should be developed through practice and used to serve others.", "In exam answers, give practical school examples such as honesty, helping classmates, leadership and kindness."],
+            "workedExample": { "question": "How can a P7 learner witness for Christ at school?", "steps": ["Step 1: Mention a Christian value such as honesty or love.", "Step 2: Connect it to a school action.", "Step 3: Give a clear example."], "answer": "By being honest, helping weaker classmates and refusing to cheat in examinations." },
+            "tryThis": { "question": "Which action shows good use of a talent?", "choices": ["Using singing to encourage others", "Hiding all abilities", "Mocking weak learners", "Refusing to help"], "correct": 0, "explanation": "A talent should be used to serve and encourage others." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "What does 'Witnessing for Christ' mean in daily Christian life?", "choices": ["Reflecting Jesus' love, honesty, and moral character in words and deeds", "Wearing expensive jewelry", "Living in seclusion", "Boasting about religion"], "correct": 0, "why": "Witnessing is demonstrating Christian faith through exemplary conduct." },
       { "q": "In the Parable of the Talents, what did the servant with five talents do?", "choices": ["Traded with them and gained five more talents", "Buried them in a field", "Spent them on feasts", "Returned them immediately"], "correct": 0, "why": "He invested wisely and doubled his master's entrustment." },
@@ -198,7 +212,21 @@ export const CRE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-premium-exam-practice-faith-examples",
+        "title": "Premium Exam Practice: Faith Examples",
+        "modules": [
+          {
+            "moduleId": "learning-from-ancestors-and-pioneers",
+            "title": "Learning from Ancestors and Pioneers",
+            "bigIdea": "CRE history questions often ask what lesson a believer learns from a biblical or church figure.",
+            "learnIt": ["Abraham teaches faith and obedience to God.", "Moses teaches leadership and trust in God during difficulty.", "The Uganda Martyrs teach courage and commitment to faith."],
+            "workedExample": { "question": "What lesson can Christians learn from Abraham?", "steps": ["Step 1: Identify Abraham as a person of faith.", "Step 2: State the lesson in simple words.", "Step 3: Apply it to daily life."], "answer": "Christians can learn to trust and obey God." },
+            "tryThis": { "question": "The Uganda Martyrs are remembered mainly for:", "choices": ["standing firm in their faith", "building railways", "writing the Qur'an", "discovering oil"], "correct": 0, "explanation": "They are remembered for courage and commitment to faith." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Who is known in the Bible as the 'Father of Faith' due to his obedience?", "choices": ["Abraham", "Moses", "Isaac", "Jacob"], "correct": 0, "why": "Abraham believed God unquestioningly." },
       { "q": "Which prophet confronted King David over his sin involving Uriah and Bathsheba?", "choices": ["Prophet Nathan", "Prophet Elijah", "Prophet Isaiah", "Prophet Samuel"], "correct": 0, "why": "Nathan used the parable of the ewe lamb to convict David." },
@@ -310,7 +338,21 @@ export const CRE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-premium-exam-practice-commandments-and-freedom",
+        "title": "Premium Exam Practice: Commandments and Freedom",
+        "modules": [
+          {
+            "moduleId": "applying-god-s-law",
+            "title": "Applying God's Law",
+            "bigIdea": "A good answer explains how a commandment guides behaviour today.",
+            "learnIt": ["The Ten Commandments guide Christians in loving God and respecting neighbours.", "Christian freedom does not mean doing anything carelessly; it means choosing what is right.", "Use practical examples: respecting parents, telling the truth, not stealing and worshipping God."],
+            "workedExample": { "question": "How can a learner obey the commandment against stealing?", "steps": ["Step 1: Name the commandment: do not steal.", "Step 2: Apply it to school life.", "Step 3: Give one practical action."], "answer": "A learner can obey it by not taking another pupil's books, money or property." },
+            "tryThis": { "question": "Which commandment teaches respect for parents?", "choices": ["Honour your father and mother", "Do not steal", "Do not kill", "Keep the Sabbath holy"], "correct": 0, "explanation": "Honouring father and mother teaches respect for parents." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "On which mountain did Prophet Moses receive the Ten Commandments from God?", "choices": ["Mount Sinai / Horeb", "Mount Ararat", "Mount Carmel", "Mount Olivet"], "correct": 0, "why": "God delivered the Decalogue to Moses on Mount Sinai." },
       { "q": "Which commandment carries the explicit promise that your days may be long in the land?", "choices": ["Fifth Commandment (Honor your father and mother)", "First Commandment", "Eighth Commandment", "Fourth Commandment"], "correct": 0, "why": "Honoring parents is the first commandment with a promise." },
@@ -423,7 +465,21 @@ export const CRE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-premium-exam-practice-jesus-teachings",
+        "title": "Premium Exam Practice: Jesus' Teachings",
+        "modules": [
+          {
+            "moduleId": "applying-parables-and-miracles",
+            "title": "Applying Parables and Miracles",
+            "bigIdea": "Questions about Jesus often ask for the meaning or lesson, not only the story.",
+            "learnIt": ["Parables are stories Jesus used to teach spiritual and moral lessons.", "Miracles show Jesus' power and compassion for people in need.", "When answering, state the event and the lesson clearly."],
+            "workedExample": { "question": "What lesson is taught by the Good Samaritan?", "steps": ["Step 1: Recall that the Samaritan helped an injured stranger.", "Step 2: Identify the lesson: love and help others.", "Step 3: Apply it to all people, not only friends."], "answer": "It teaches Christians to love and help all people, including strangers." },
+            "tryThis": { "question": "A parable is:", "choices": ["a story with a moral or spiritual lesson", "a type of tax", "a Roman road", "a musical instrument"], "correct": 0, "explanation": "Jesus used parables to teach lessons." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "In the Parable of the Sower, what does the seed falling on good fertile soil represent?", "choices": ["People who hear God's Word, understand it, and produce abundant moral fruit", "Birds eating grain", "Thorns choking wheat", "People sleeping in church"], "correct": 0, "why": "Good soil represents sincere receptive believers." },
       { "q": "Which friend of Jesus did He raise from the dead after four days in the tomb at Bethany?", "choices": ["Lazarus", "Zacchaeus", "Nicodemus", "Bartimaeus"], "correct": 0, "why": "Lazarus' resurrection proved Jesus is the Resurrection and the Life." },
@@ -516,7 +572,21 @@ export const CRE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-premium-exam-practice-passion-and-resurrection",
+        "title": "Premium Exam Practice: Passion and Resurrection",
+        "modules": [
+          {
+            "moduleId": "meaning-of-jesus-death-and-resurrection",
+            "title": "Meaning of Jesus' Death and Resurrection",
+            "bigIdea": "Premium CRE answers explain why an event matters to Christians.",
+            "learnIt": ["The Passion refers to the suffering and death of Jesus Christ.", "The Resurrection means Jesus rose from the dead.", "Christians believe these events show God's love, forgiveness and victory over sin and death."],
+            "workedExample": { "question": "Why is Easter important to Christians?", "steps": ["Step 1: Link Easter to the Resurrection.", "Step 2: Explain its meaning: Jesus rose from the dead.", "Step 3: State why Christians celebrate it."], "answer": "Easter is important because Christians celebrate the Resurrection of Jesus Christ." },
+            "tryThis": { "question": "The Resurrection means Jesus:", "choices": ["rose from the dead", "was born in Bethlehem", "entered Jerusalem", "was baptised"], "correct": 0, "explanation": "Resurrection means rising from the dead." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "On which day did Jesus ride a donkey into Jerusalem while crowds waved palm branches?", "choices": ["Palm Sunday", "Good Friday", "Easter Sunday", "Ascension Day"], "correct": 0, "why": "Palm Sunday marks the triumphal entry." },
       { "q": "For how many pieces of silver did Judas Iscariot betray Jesus to the chief priests?", "choices": ["30 pieces of silver", "100 pieces of gold", "10 pieces of silver", "50 denarii"], "correct": 0, "why": "Judas accepted thirty pieces of silver." },
@@ -623,7 +693,21 @@ export const CRE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-premium-exam-practice-holy-spirit-and-church",
+        "title": "Premium Exam Practice: Holy Spirit and Church",
+        "modules": [
+          {
+            "moduleId": "gifts-fruits-and-sacraments",
+            "title": "Gifts, Fruits and Sacraments",
+            "bigIdea": "A good answer separates gifts, fruits and sacraments instead of mixing them.",
+            "learnIt": ["Gifts of the Holy Spirit are abilities for service, such as wisdom, healing or teaching.", "Fruits of the Holy Spirit are good qualities such as love, joy, peace and kindness.", "Sacraments are outward signs of God's grace, such as Baptism and Holy Communion in many Christian traditions."],
+            "workedExample": { "question": "Give two fruits of the Holy Spirit.", "steps": ["Step 1: Remember fruits are character qualities.", "Step 2: Choose examples from the list.", "Step 3: Write them clearly."], "answer": "Love and peace are fruits of the Holy Spirit." },
+            "tryThis": { "question": "Which is a fruit of the Holy Spirit?", "choices": ["Kindness", "A tax receipt", "A railway", "A desert"], "correct": 0, "explanation": "Kindness is a Christian character quality." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "What miraculous physical signs accompanied the descent of the Holy Spirit on Pentecost?", "choices": ["Sound of rushing wind and divided tongues of fire resting on believers", "Solar eclipse and earthquake", "Heavy rain and flood", "Snow falling inside the house"], "correct": 0, "why": "Acts 2 describes wind and tongues of fire." },
       { "q": "Which event is recognized in Christian history as the birthday of the Christian Church?", "choices": ["The Day of Pentecost", "Christmas Day", "Good Friday", "Ascension Day"], "correct": 0, "why": "Pentecost launched worldwide Christian evangelism." },
@@ -731,7 +815,21 @@ export const CRE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-premium-exam-practice-christian-citizenship",
+        "title": "Premium Exam Practice: Christian Citizenship",
+        "modules": [
+          {
+            "moduleId": "serving-god-and-community",
+            "title": "Serving God and Community",
+            "bigIdea": "Christian citizenship connects faith to responsible behaviour in society.",
+            "learnIt": ["Christians are encouraged to obey just laws, work honestly and serve people in need.", "Service may include helping orphans, widows, refugees, the sick and poor people.", "Good answers give practical actions, not only general words."],
+            "workedExample": { "question": "How can a Christian learner serve the community?", "steps": ["Step 1: Choose a practical service action.", "Step 2: Connect it to helping others.", "Step 3: State it clearly."], "answer": "A learner can serve the community by joining a clean-up activity or helping needy people." },
+            "tryThis": { "question": "Which action shows good citizenship?", "choices": ["Obeying just laws", "Destroying public property", "Cheating in exams", "Refusing to help anyone"], "correct": 0, "explanation": "Good citizens respect just laws and public property." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "What rule did Apostle Paul establish in 2 Thessalonians 3:10 regarding work and laziness?", "choices": ["The one who is unwilling to work shall not eat", "Lazy people should receive extra money", "Work is a curse", "Only farmers should work"], "correct": 0, "why": "Paul condemned idleness and commanded diligent self-support." },
       { "q": "According to James 1:27, what constitutes pure and faultless religion before God?", "choices": ["Caring for orphans and widows in distress and remaining morally uncorrupted", "Giving long public speeches", "Paying money to judges", "Never leaving church"], "correct": 0, "why": "Pure religion balances social compassion with personal holiness." },
@@ -828,7 +926,21 @@ export const IRE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-premium-exam-practice-tawheed-and-iman",
+        "title": "Premium Exam Practice: Tawheed and Iman",
+        "modules": [
+          {
+            "moduleId": "explaining-belief-clearly",
+            "title": "Explaining Belief Clearly",
+            "bigIdea": "IRE answers should define beliefs respectfully and connect them to Muslim life.",
+            "learnIt": ["Tawheed means belief in the oneness of Allah.", "Iman includes belief in Allah, angels, holy books, prophets, the Last Day and Qadar.", "A strong answer gives the definition and one way the belief guides behaviour."],
+            "workedExample": { "question": "What is Tawheed?", "steps": ["Step 1: Identify Tawheed as a belief.", "Step 2: State that Allah is One.", "Step 3: Avoid adding unrelated ideas."], "answer": "Tawheed is belief in the oneness of Allah." },
+            "tryThis": { "question": "How many pillars of Iman are commonly taught?", "choices": ["Six", "Five", "Seven", "Two"], "correct": 0, "explanation": "The six pillars of Iman are commonly taught in IRE." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "What does the Arabic term 'Tawhid' mean?", "choices": ["Belief in the absolute Oneness of Allah", "Fasting in Ramadan", "Giving alms", "Making pilgrimage"], "correct": 0, "why": "Tawhid is Islamic monotheism." },
       { "q": "Which holy book was revealed to Prophet Musa (Moses)?", "choices": ["Tawrat", "Zabur", "Injeel", "Qur'an"], "correct": 0, "why": "Musa received the Tawrat." },
@@ -923,7 +1035,21 @@ export const IRE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-premium-exam-practice-pillars-and-worship",
+        "title": "Premium Exam Practice: Pillars and Worship",
+        "modules": [
+          {
+            "moduleId": "applying-the-five-pillars",
+            "title": "Applying the Five Pillars",
+            "bigIdea": "A strong IRE answer names the pillar and explains its practice.",
+            "learnIt": ["The Five Pillars are Shahadah, Salah, Zakah, Sawm and Hajj.", "Salah is prayer performed at prescribed times.", "Zakah is obligatory giving to help eligible people and purify wealth."],
+            "workedExample": { "question": "Why is Zakah important?", "steps": ["Step 1: Identify Zakah as obligatory giving.", "Step 2: Explain that it helps needy people.", "Step 3: Mention purification of wealth if relevant."], "answer": "Zakah is important because it helps needy people and purifies wealth." },
+            "tryThis": { "question": "Which pillar means fasting in Ramadan?", "choices": ["Sawm", "Hajj", "Zakah", "Shahadah"], "correct": 0, "explanation": "Sawm is fasting, especially in Ramadan." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "What is the declaration of faith in Islam called?", "choices": ["Shahadah", "Salah", "Zakat", "Hajj"], "correct": 0, "why": "Shahadah declares belief in Allah and His Messenger." },
       { "q": "Which obligatory prayer is performed early in the morning before sunrise?", "choices": ["Fajr", "Dhuhr", "Asr", "Maghrib"], "correct": 0, "why": "Fajr is the dawn prayer." },
@@ -1014,7 +1140,21 @@ export const IRE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-premium-exam-practice-qur-an-and-guidance",
+        "title": "Premium Exam Practice: Qur'an and Guidance",
+        "modules": [
+          {
+            "moduleId": "respecting-and-using-the-qur-an",
+            "title": "Respecting and Using the Qur'an",
+            "bigIdea": "Questions about the Qur'an should connect revelation, guidance and respect.",
+            "learnIt": ["The Qur'an is the holy book of Islam revealed to Prophet Muhammad through Angel Jibril.", "Muslims use the Qur'an for guidance in worship, morals and daily life.", "Respect for the Qur'an includes cleanliness, careful handling and recitation with attention."],
+            "workedExample": { "question": "How does the Qur'an guide Muslims?", "steps": ["Step 1: State that it is a holy book.", "Step 2: Mention worship or daily behaviour.", "Step 3: Write a full sentence."], "answer": "The Qur'an guides Muslims in worship, morals and daily life." },
+            "tryThis": { "question": "Who brought revelation to Prophet Muhammad?", "choices": ["Angel Jibril", "Pharaoh", "Caesar", "A tax collector"], "correct": 0, "explanation": "Angel Jibril brought revelation to Prophet Muhammad." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "How many total Surahs (chapters) are in the Holy Qur'an?", "choices": ["114 Surahs", "66 Surahs", "30 Surahs", "99 Surahs"], "correct": 0, "why": "The Qur'an comprises exactly 114 Surahs." },
       { "q": "Which chapter of the Qur'an is known as 'The Opening' and recited in every prayer?", "choices": ["Surah Al-Fatiha", "Surah Al-Ikhlas", "Surah Al-Baqarah", "Surah Yasin"], "correct": 0, "why": "Al-Fatiha opens the Qur'an." },
@@ -1105,7 +1245,21 @@ export const IRE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-premium-exam-practice-akhlaq",
+        "title": "Premium Exam Practice: Akhlaq",
+        "modules": [
+          {
+            "moduleId": "good-character-in-daily-life",
+            "title": "Good Character in Daily Life",
+            "bigIdea": "Akhlaq answers should give practical examples of good Muslim conduct.",
+            "learnIt": ["Akhlaq means good character or moral behaviour.", "Examples include truthfulness, respect for parents, cleanliness, kindness and honesty in trade.", "A strong answer shows how the value is practised at home, school or community."],
+            "workedExample": { "question": "Give one way a Muslim learner can show honesty at school.", "steps": ["Step 1: Choose a school situation.", "Step 2: Connect it to honesty.", "Step 3: Write the action clearly."], "answer": "A learner can show honesty by refusing to cheat in examinations." },
+            "tryThis": { "question": "Which behaviour shows good Akhlaq?", "choices": ["Telling the truth", "Stealing", "Mocking parents", "Cheating customers"], "correct": 0, "explanation": "Truthfulness is part of good character." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Under whose feet does Hadith say Paradise lies?", "choices": ["Mothers", "Kings", "Soldiers", "Traders"], "correct": 0, "why": "Mothers receive supreme honor for nurturing children." },
       { "q": "What term refers to forbidden or unlawful acts in Islam?", "choices": ["Haram", "Halal", "Sunnah", "Wudhu"], "correct": 0, "why": "Haram designates actions prohibited by Allah." },
@@ -1175,7 +1329,21 @@ export const IRE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-premium-exam-practice-hadith-and-sunnah",
+        "title": "Premium Exam Practice: Hadith and Sunnah",
+        "modules": [
+          {
+            "moduleId": "using-prophetic-teachings",
+            "title": "Using Prophetic Teachings",
+            "bigIdea": "Hadith and Sunnah questions ask learners to identify teachings and apply them.",
+            "learnIt": ["Hadith are recorded sayings, actions or approvals of Prophet Muhammad.", "Sunnah is the Prophet's example and way of life.", "Teachings on cleanliness, kindness, neighbours, mothers and truthfulness can be applied in daily life."],
+            "workedExample": { "question": "What lesson is taught by the Hadith about cleanliness?", "steps": ["Step 1: Recall that Islam values cleanliness.", "Step 2: Apply it to personal and environmental hygiene.", "Step 3: Give a clear answer."], "answer": "It teaches Muslims to keep their bodies, clothes and surroundings clean." },
+            "tryThis": { "question": "The Sunnah refers to:", "choices": ["the example and way of life of Prophet Muhammad", "a mountain", "a market tax", "a river"], "correct": 0, "explanation": "Sunnah is the Prophet's example and way of life." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "What is the recorded written report of sayings and approvals of Prophet Muhammad (PBUH) called?", "choices": ["Hadith", "Sunnah", "Tawrat", "Zabur"], "correct": 0, "why": "Hadith preserves oral prophetic statements." },
       { "q": "What does the term 'Sunnah' mean in Islamic jurisprudence?", "choices": ["The practical daily lifestyle, habits, and exemplary actions of the Prophet", "A holy mountain", "Fasting in Ramadan", "Giving Zakah"], "correct": 0, "why": "Sunnah demonstrates living application." },
@@ -1266,7 +1434,21 @@ export const IRE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-premium-exam-practice-seerah-and-caliphs",
+        "title": "Premium Exam Practice: Seerah and Caliphs",
+        "modules": [
+          {
+            "moduleId": "learning-from-islamic-history",
+            "title": "Learning from Islamic History",
+            "bigIdea": "History questions should name the person/event and explain its importance.",
+            "learnIt": ["Seerah is the life history of Prophet Muhammad.", "The Hijrah was the migration from Makkah to Madinah and marks the beginning of the Islamic calendar.", "The Rightly Guided Caliphs helped lead the Muslim community after the Prophet."],
+            "workedExample": { "question": "Why is the Hijrah important in Islamic history?", "steps": ["Step 1: Identify Hijrah as migration.", "Step 2: State from Makkah to Madinah.", "Step 3: Mention the Islamic calendar if needed."], "answer": "The Hijrah is important because it was the migration to Madinah and marks the beginning of the Islamic calendar." },
+            "tryThis": { "question": "Hijrah was the migration from:", "choices": ["Makkah to Madinah", "Uganda to Kenya", "Egypt to Rome", "Mecca to London"], "correct": 0, "explanation": "Hijrah refers to migration from Makkah to Madinah." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "What title meaning 'The Trustworthy' did Meccans give Prophet Muhammad in his youth?", "choices": ["Al-Amin", "Al-Farooq", "Al-Siddiq", "Al-Asad"], "correct": 0, "why": "His honesty earned him Al-Amin." },
       { "q": "In which city did Prophet Muhammad establish the first Islamic state after his migration?", "choices": ["Madinah (Yathrib)", "Makkah", "Cairo", "Jerusalem"], "correct": 0, "why": "Madinah welcomed the Prophet as leader." },
@@ -1357,7 +1539,21 @@ export const IRE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-premium-exam-practice-adab-and-justice",
+        "title": "Premium Exam Practice: Adab and Justice",
+        "modules": [
+          {
+            "moduleId": "applying-islamic-etiquette-and-fairness",
+            "title": "Applying Islamic Etiquette and Fairness",
+            "bigIdea": "Adab and justice questions require practical examples of respectful conduct.",
+            "learnIt": ["Adab means good manners or etiquette in daily life.", "Islamic social justice includes fairness, care for the needy, honesty in trade and avoiding exploitation.", "A premium answer names the value and gives a real example of practising it."],
+            "workedExample": { "question": "How can a trader practise fairness in the market?", "steps": ["Step 1: Think of market behaviour.", "Step 2: Fairness means honest measures and prices.", "Step 3: State it clearly."], "answer": "A trader can practise fairness by using correct weights and measures." },
+            "tryThis": { "question": "Which action shows fairness in trade?", "choices": ["Using correct measurements", "Cheating customers", "Hiding bad goods", "Charging after lying"], "correct": 0, "explanation": "Correct measurements show honesty and fairness." }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "What is the Islamic term for charging exploitative fixed interest on financial loans?", "choices": ["Riba (Usury)", "Zakah", "Mahr", "Sadaqah"], "correct": 0, "why": "Riba exploits debtors and is strictly forbidden." },
       { "q": "Which chapter of the Qur'an strictly condemns marketplace traders who cheat customers by giving inaccurate short weights and measures?", "choices": ["Surah Al-Mutaffifin", "Surah Al-Ikhlas", "Surah Al-Asr", "Surah Al-Kawthar"], "correct": 0, "why": "Al-Mutaffifin warns defrauders in weights." },

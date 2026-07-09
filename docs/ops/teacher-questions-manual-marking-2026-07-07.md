@@ -91,14 +91,14 @@ Added working-space textareas to:
 
 ## Important limitation
 
-Because the current auth/session is local-only, teacher-set questions and student submissions only work on the same browser/device. This is acceptable as UX scaffolding, but it is not a real school deployment model.
+Because the current auth/session is local-only, teacher-set questions and student submissions only work on the same browser/device. This is acceptable as UX scaffolding, but it is not a real multi-device product model.
 
 For production, this needs backend storage and real relationships:
 
-- school
-- class
-- teacher
-- student
+- learner
+- teacher/tutor
+- optional group/class
+- optional school/organisation later
 - assignment/question
 - submission
 - mark/feedback
@@ -109,9 +109,11 @@ For production, this needs backend storage and real relationships:
 
 ### tables/collections
 
-- `schools`
-- `classes`
 - `users`
+- `learner_profiles`
+- `teacher_profiles`
+- `learning_groups` optional
+- `organisations` optional later
 - `teacher_questions`
 - `teacher_question_submissions`
 - `marks`
@@ -119,9 +121,9 @@ For production, this needs backend storage and real relationships:
 ### `teacher_questions`
 
 - `id`
-- `school_id`
-- `class_id`
 - `teacher_id`
+- `group_id` optional
+- `learner_id` optional
 - `grade`
 - `subject`
 - `topic_id` optional

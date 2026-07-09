@@ -119,7 +119,63 @@ export const ENGLISH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-holiday-exam-practice",
+        "title": "3. Premium Exam Practice: Timetables and Composition",
+        "modules": [
+          {
+            "moduleId": "holiday-programme-comprehension",
+            "title": "Reading Holiday Programmes and Notices",
+            "bigIdea": "PLE English often tests whether a learner can read a simple notice, timetable or programme and answer exactly what is asked.",
+            "learnIt": [
+              "Read the heading first. It tells you whether the text is a programme, notice, invitation, timetable or letter.",
+              "Circle dates, places, times, people and required actions. Most comprehension questions ask for one of these details.",
+              "When answering, use words from the passage but write a full clear answer. Do not copy a whole sentence if only one detail is needed."
+            ],
+            "workedExample": {
+              "question": "A holiday programme says: 'Monday 9:00 a.m. — Mathematics revision in Room P7.' What will learners do on Monday morning?",
+              "steps": [
+                "Step 1: Identify the day and time: Monday at 9:00 a.m.",
+                "Step 2: Read the activity written after the dash: Mathematics revision.",
+                "Step 3: Answer in a complete sentence."
+              ],
+              "answer": "They will have Mathematics revision on Monday morning."
+            },
+            "tryThis": {
+              "question": "In a timetable, the word 'venue' means:",
+              "choices": ["place where an activity happens", "person in charge", "time of arrival", "reason for holiday"],
+              "correct": 0,
+              "explanation": "Venue means the place where an event or activity takes place."
+            }
+          },
+          {
+            "moduleId": "holiday-composition-rubric",
+            "title": "Writing a Holiday Composition that Scores",
+            "bigIdea": "A premium composition is planned, sequenced and checked before submission.",
+            "learnIt": [
+              "Plan three parts before writing: beginning, main events, and ending. A short plan prevents mixed-up ideas.",
+              "Use time connectors such as first, later, afterwards, finally, while and during to show order.",
+              "After writing, check tense consistency, capital letters, punctuation, paragraphing and whether every sentence helps the story."
+            ],
+            "workedExample": {
+              "question": "Write a strong opening sentence for a composition titled 'My Best Holiday'.",
+              "steps": [
+                "Step 1: Name the holiday period.",
+                "Step 2: Mention where you went or what made it special.",
+                "Step 3: Create interest without writing too much."
+              ],
+              "answer": "Last December holiday, I visited my grandparents in Masaka and learnt lessons I will never forget."
+            },
+            "tryThis": {
+              "question": "Which sentence is the best composition opening?",
+              "choices": ["Last holiday, I visited my uncle in Gulu and helped him on his farm.", "Holiday good food nice.", "I am ending my story now.", "Because and then we went."],
+              "correct": 0,
+              "explanation": "It is complete, clear and introduces the main event."
+            }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Choose the correct sentence:", "choices": ["No sooner had the bus stopped than the passengers stepped out.", "No sooner had the bus stopped when the passengers stepped out.", "No sooner did the bus stopped than passengers stepped out.", "No sooner had the bus stop then passengers stepped out."], "correct": 0, "why": "'No sooner had + past participle' must be paired with 'than'." },
       { "q": "We ___ travel to Mombasa during the Christmas break.", "choices": ["shall", "did", "were", "had"], "correct": 0, "why": "'Shall' expresses future intention with 'We'." },
@@ -218,7 +274,7 @@ export const ENGLISH_TOPICS: Topic[] = [
             "bigIdea": "Formal letters strictly require two addresses, a formal salutation, a subject line, and an official sign-off.",
             "learnIt": [
               "Sender's address and date: placed at the top right-hand corner.",
-              "Receiver's address: placed below the date on the left-hand side (e.g., The Headteacher, Trainup Primary School, P.O. Box...).",
+              "Receiver's address: placed below the date on the left-hand side (e.g., The Headteacher, Tendo Primary School, P.O. Box...).",
               "Salutation: 'Dear Sir,' or 'Dear Madam,' (or 'Dear Mr. Kato,' if the exact name is known).",
               "Subject line (RE:): written below the salutation in capital letters or underlined (e.g., RE: APPLICATION FOR A VACANCY IN P.7).",
               "Complimentary close: 'Yours faithfully,' (when salutation is Dear Sir/Madam) or 'Yours sincerely,' (when addressed by name), followed by your signature and full name."
@@ -248,7 +304,63 @@ export const ENGLISH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-letter-exam-practice",
+        "title": "3. Premium Exam Practice: Choosing and Marking Letters",
+        "modules": [
+          {
+            "moduleId": "letter-format-decision",
+            "title": "Choosing the Correct Letter Format",
+            "bigIdea": "Before writing any letter, decide whether it is informal or formal; the format depends on that choice.",
+            "learnIt": [
+              "An informal letter is written to a friend or relative. It normally has one address, a friendly greeting and a warm ending.",
+              "A formal letter is written to an official person or office. It normally has two addresses, a subject heading and formal language.",
+              "Look at the recipient in the question. Words like Headteacher, Chairperson, Manager or Officer usually signal a formal letter."
+            ],
+            "workedExample": {
+              "question": "The question asks you to write to the Headteacher requesting permission to miss school for a medical appointment. Which type of letter is needed?",
+              "steps": [
+                "Step 1: Identify the receiver: Headteacher.",
+                "Step 2: A Headteacher is an official school authority.",
+                "Step 3: Use formal letter format and polite formal language."
+              ],
+              "answer": "A formal letter is needed."
+            },
+            "tryThis": {
+              "question": "Which recipient requires a formal letter?",
+              "choices": ["The District Education Officer", "Your cousin", "Your best friend", "Your grandmother"],
+              "correct": 0,
+              "explanation": "A District Education Officer is an official recipient, so formal format is needed."
+            }
+          },
+          {
+            "moduleId": "letter-marking-rubric",
+            "title": "Letter Writing Marking Checklist",
+            "bigIdea": "A letter can lose marks even when the message is good if the format, tone or paragraphing is wrong.",
+            "learnIt": [
+              "Check format: address, date, greeting, body and ending must be placed correctly.",
+              "Check tone: formal letters must be respectful and direct; informal letters may be friendly but still clear.",
+              "Check body paragraphs: reason for writing, important details, and closing request or message."
+            ],
+            "workedExample": {
+              "question": "Improve this closing in a formal letter: 'Ok bye, see you.'",
+              "steps": [
+                "Step 1: Recognise that the phrase is too casual.",
+                "Step 2: Use a polite formal closing.",
+                "Step 3: Match the closing to the greeting."
+              ],
+              "answer": "Yours faithfully,"
+            },
+            "tryThis": {
+              "question": "A formal letter that begins 'Dear Sir' should usually end with:",
+              "choices": ["Yours faithfully", "Your friend", "Cheers", "Love from"],
+              "correct": 0,
+              "explanation": "Dear Sir/Madam pairs with Yours faithfully."
+            }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Which sign-off is correctly paired with the salutation 'Dear Sir/Madam,'?", "choices": ["Yours faithfully,", "Yours sincerely,", "Your loving friend,", "Yours affectionately,"], "correct": 0, "why": "'Yours faithfully,' is paired with unnamed official salutations." },
       { "q": "In a formal application letter, where is the receiver's address written?", "choices": ["Below the date on the left-hand side", "At the bottom right corner", "Above the sender's address", "On the back page only"], "correct": 0, "why": "The addressee's official address sits below the date on the left margin." },
@@ -380,7 +492,63 @@ export const ENGLISH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-exam-skills",
+        "title": "3. Premium Exam Practice: Instructions and Written Answers",
+        "modules": [
+          {
+            "moduleId": "rubric-reading-mastery",
+            "title": "Reading Examination Instructions",
+            "bigIdea": "Many learners lose marks not because they do not know the answer, but because they ignore the instruction.",
+            "learnIt": [
+              "Underline command words such as choose, rewrite, explain, give, complete, arrange and punctuate.",
+              "Check how many answers are required. If the question asks for two reasons, give exactly two clear reasons.",
+              "Read section instructions before answering. Some papers require all questions in one section and only a number from another section."
+            ],
+            "workedExample": {
+              "question": "The instruction says: 'Give two reasons why candidates should arrive early.' How many reasons should you write?",
+              "steps": [
+                "Step 1: Identify the number word: two.",
+                "Step 2: Do not write one reason only.",
+                "Step 3: Do not waste time writing five reasons unless asked."
+              ],
+              "answer": "Write two reasons."
+            },
+            "tryThis": {
+              "question": "The command word 'rewrite' means you should:",
+              "choices": ["write the sentence again in the required form", "explain the meaning", "draw a picture", "choose any answer"],
+              "correct": 0,
+              "explanation": "Rewrite means write it again after making the requested change."
+            }
+          },
+          {
+            "moduleId": "exam-answer-quality",
+            "title": "Writing Clear Examination Answers",
+            "bigIdea": "A good written answer is short, complete and directly connected to the question.",
+            "learnIt": [
+              "Answer in a full sentence when the question asks 'why', 'how' or 'explain'.",
+              "Do not repeat the question without adding the answer. Make sure the key information is present.",
+              "For grammar transformations, keep the meaning the same while changing only the required structure."
+            ],
+            "workedExample": {
+              "question": "Answer: Why should candidates write their index numbers clearly?",
+              "steps": [
+                "Step 1: Identify the key action: write index numbers clearly.",
+                "Step 2: Give the reason: scripts can be identified and marked correctly.",
+                "Step 3: Write one complete sentence."
+              ],
+              "answer": "Candidates should write their index numbers clearly so that their scripts can be identified and marked correctly."
+            },
+            "tryThis": {
+              "question": "Which is the best answer to 'Why should candidates read instructions?'",
+              "choices": ["They should read instructions so that they answer correctly.", "Instructions.", "Because yes.", "They reading."],
+              "correct": 0,
+              "explanation": "It is a complete sentence and gives a clear reason."
+            }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Complete using Conditional 2: If I knew the invigilator's name, I ___ you.", "choices": ["would tell", "will tell", "would have told", "told"], "correct": 0, "why": "Conditional 2 pairs simple past ('knew') with 'would + base verb' ('would tell')." },
       { "q": "Complete using Conditional 3: If she had revised her notes, she ___ the examination.", "choices": ["would have passed", "would pass", "will pass", "passed"], "correct": 0, "why": "'Had revised' requires 'would have passed'." },
@@ -493,7 +661,63 @@ export const ENGLISH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-media-communication",
+        "title": "3. Premium Exam Practice: Emails, Notices and Media Messages",
+        "modules": [
+          {
+            "moduleId": "email-message-writing",
+            "title": "Writing Clear Emails and Messages",
+            "bigIdea": "Electronic writing should be clear, polite and easy to understand quickly.",
+            "learnIt": [
+              "A good email has a clear subject, greeting, short body and polite closing.",
+              "Avoid slang in formal school emails. Use respectful language just as you would in a formal letter.",
+              "State the purpose early: request, apology, invitation, report or reminder."
+            ],
+            "workedExample": {
+              "question": "Write a subject line for an email asking your teacher for permission to submit homework late.",
+              "steps": [
+                "Step 1: Identify the purpose: permission for late homework.",
+                "Step 2: Keep it short and specific.",
+                "Step 3: Use respectful wording."
+              ],
+              "answer": "Request to Submit Homework Late"
+            },
+            "tryThis": {
+              "question": "Which subject line is clearest?",
+              "choices": ["Request for Science Notes", "Hi", "Important", "Please"],
+              "correct": 0,
+              "explanation": "It clearly tells the reader what the email is about."
+            }
+          },
+          {
+            "moduleId": "media-comprehension",
+            "title": "Reading Online Notices and Broadcast Messages",
+            "bigIdea": "Media messages often answer who, what, where, when and why.",
+            "learnIt": [
+              "When reading a notice or broadcast message, identify the audience first. Is it for learners, parents, teachers or the public?",
+              "Look for action words such as register, attend, download, submit or listen. They tell the reader what to do.",
+              "Check dates and times carefully because electronic messages often give deadlines."
+            ],
+            "workedExample": {
+              "question": "A notice says: 'Parents should download report cards by Friday.' What should parents do?",
+              "steps": [
+                "Step 1: Identify the audience: parents.",
+                "Step 2: Identify the action: download report cards.",
+                "Step 3: Include the deadline if needed."
+              ],
+              "answer": "Parents should download report cards by Friday."
+            },
+            "tryThis": {
+              "question": "In an online notice, the word 'deadline' means:",
+              "choices": ["last allowed time or date", "first person to arrive", "computer password", "radio station"],
+              "correct": 0,
+              "explanation": "A deadline is the final time or date by which something must be done."
+            }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Choose the correct passive voice: They will upload the video tomorrow.", "choices": ["The video will be uploaded by them tomorrow.", "The video is uploaded by them tomorrow.", "The video was uploaded by them tomorrow.", "The video will upload tomorrow."], "correct": 0, "why": "Future simple active ('will upload') becomes future simple passive ('will be uploaded')." },
       { "q": "Complete: I prefer reading storybooks on my tablet ___ playing computer games.", "choices": ["than", "to", "over", "from"], "correct": 1, "why": "'Prefer' takes the preposition 'to'." },
@@ -611,7 +835,63 @@ export const ENGLISH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-rights-comprehension",
+        "title": "3. Premium Exam Practice: Rights Passages and Reported Speech",
+        "modules": [
+          {
+            "moduleId": "rights-passage-reading",
+            "title": "Reading Rights and Responsibility Passages",
+            "bigIdea": "Civic passages test vocabulary, careful reading and the ability to explain duties clearly.",
+            "learnIt": [
+              "Separate rights from responsibilities. A right is something a person is entitled to; a responsibility is a duty or expected action.",
+              "When a passage mentions a problem such as child labour, neglect or abuse, answer with careful respectful language.",
+              "For 'give a reason' questions, write a complete sentence that connects the action to the result."
+            ],
+            "workedExample": {
+              "question": "Why should children respect school property?",
+              "steps": [
+                "Step 1: Identify the responsibility: respect school property.",
+                "Step 2: Explain the result: property remains useful for all learners.",
+                "Step 3: Write a complete answer."
+              ],
+              "answer": "Children should respect school property so that it remains useful for all learners."
+            },
+            "tryThis": {
+              "question": "Which is a responsibility of a learner?",
+              "choices": ["Keeping the classroom clean", "Being denied food", "Being abused", "Missing all lessons"],
+              "correct": 0,
+              "explanation": "Keeping the classroom clean is a duty learners can carry out."
+            }
+          },
+          {
+            "moduleId": "reported-speech-premium",
+            "title": "Reported Speech without Losing Meaning",
+            "bigIdea": "Reported speech changes tense, pronouns and time words while keeping the original meaning.",
+            "learnIt": [
+              "Change pronouns according to the speaker and listener. 'I' may become he, she or I depending on context.",
+              "Common tense backshifts: am/is -> was, are -> were, will -> would, can -> could, has/have -> had.",
+              "Common time changes: today -> that day, tomorrow -> the next day, yesterday -> the previous day, now -> then."
+            ],
+            "workedExample": {
+              "question": "Change to reported speech: 'I can report the case today,' Sarah said.",
+              "steps": [
+                "Step 1: Begin with Sarah said that.",
+                "Step 2: Change I to she.",
+                "Step 3: Change can to could and today to that day."
+              ],
+              "answer": "Sarah said that she could report the case that day."
+            },
+            "tryThis": {
+              "question": "Change 'will' in direct speech to reported speech after 'said that'.",
+              "choices": ["would", "will", "shall", "can"],
+              "correct": 0,
+              "explanation": "Will usually changes to would in reported speech."
+            }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Change to reported speech: 'I will defend my rights tomorrow,' Sarah said.", "choices": ["Sarah said that she would defend her rights the following day.", "Sarah said that she will defend her rights tomorrow.", "Sarah said that she defended her rights the next day.", "Sarah told that she would defend her rights tomorrow."], "correct": 0, "why": "'I will... tomorrow' shifts to 'she would... the following day'." },
       { "q": "Choose the correct sentence:", "choices": ["Despite the challenges, we fulfilled our responsibilities.", "Despite of the challenges, we fulfilled our responsibilities.", "In spite the challenges, we fulfilled our responsibilities.", "Although of the challenges, we fulfilled our responsibilities."], "correct": 0, "why": "'Despite' stands alone without 'of'." },
@@ -723,7 +1003,63 @@ export const ENGLISH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-environment-writing",
+        "title": "3. Premium Exam Practice: Persuasive Environmental Writing",
+        "modules": [
+          {
+            "moduleId": "environment-notice-comprehension",
+            "title": "Reading Environmental Notices",
+            "bigIdea": "Environmental texts often ask learners to identify causes, effects and solutions.",
+            "learnIt": [
+              "A cause explains why a problem happens. An effect explains what happens because of the problem.",
+              "A solution explains what people can do to reduce or stop the problem.",
+              "When reading about pollution, deforestation or poaching, look for words that show cause and effect: because, therefore, as a result, leads to."
+            ],
+            "workedExample": {
+              "question": "A notice says blocked drainage channels cause flooding. What is the cause of flooding?",
+              "steps": [
+                "Step 1: Identify the problem: flooding.",
+                "Step 2: Look for the word cause.",
+                "Step 3: The cause given is blocked drainage channels."
+              ],
+              "answer": "The flooding is caused by blocked drainage channels."
+            },
+            "tryThis": {
+              "question": "Which word best shows an effect?",
+              "choices": ["therefore", "although", "before", "unless"],
+              "correct": 0,
+              "explanation": "Therefore often introduces a result or effect."
+            }
+          },
+          {
+            "moduleId": "environment-persuasive-paragraph",
+            "title": "Writing a Persuasive Environmental Paragraph",
+            "bigIdea": "A strong persuasive paragraph states a problem, gives a reason and asks for action.",
+            "learnIt": [
+              "Begin with a clear topic sentence naming the environmental problem.",
+              "Give one or two reasons why the problem is serious. Use cause-and-effect connectors.",
+              "End with a practical action such as planting trees, sorting rubbish, cleaning drainage channels or reporting poachers."
+            ],
+            "workedExample": {
+              "question": "Write a strong topic sentence about tree cutting.",
+              "steps": [
+                "Step 1: Name the problem: cutting trees carelessly.",
+                "Step 2: Show that it is serious.",
+                "Step 3: Make the sentence clear and direct."
+              ],
+              "answer": "Cutting trees carelessly is a serious problem because it destroys the environment and reduces rainfall."
+            },
+            "tryThis": {
+              "question": "Which sentence is most persuasive?",
+              "choices": ["We should plant trees to protect our environment.", "Trees good.", "I saw tree.", "Environment because."],
+              "correct": 0,
+              "explanation": "It clearly asks for action and gives a reason."
+            }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Complete: This is the factory ___ polluted our community water stream.", "choices": ["which", "who", "whose", "whom"], "correct": 0, "why": "'Which' refers to inanimate things like factories." },
       { "q": "Complete: There goes the village elder ___ tree seedlings were stolen.", "choices": ["whose", "who", "which", "whom"], "correct": 0, "why": "'Whose' indicates possession of the seedlings." },
@@ -831,7 +1167,63 @@ export const ENGLISH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        "subtopicId": "premium-ceremony-programmes",
+        "title": "3. Premium Exam Practice: Programmes, Invitations and Speeches",
+        "modules": [
+          {
+            "moduleId": "ceremony-programme-reading",
+            "title": "Reading Ceremony Programmes",
+            "bigIdea": "Programmes show order of events; learners must read sequence, roles and timing carefully.",
+            "learnIt": [
+              "Read the title to know the ceremony type: wedding, graduation, funeral, baptism or birthday.",
+              "Identify roles such as MC, guest of honour, chairperson, bride, bridegroom, mourner or speaker.",
+              "Use sequence words like first, next, after, before and finally to answer order questions."
+            ],
+            "workedExample": {
+              "question": "A programme lists: 1. Opening prayer 2. Welcome speech 3. Guest speech. What happens after the welcome speech?",
+              "steps": [
+                "Step 1: Find welcome speech in the order.",
+                "Step 2: Look at the next item after it.",
+                "Step 3: The next item is guest speech."
+              ],
+              "answer": "The guest speech happens after the welcome speech."
+            },
+            "tryThis": {
+              "question": "In a programme, MC stands for:",
+              "choices": ["Master of Ceremonies", "Main Candidate", "Morning Class", "Market Chairperson"],
+              "correct": 0,
+              "explanation": "MC means Master of Ceremonies, the person who guides the programme."
+            }
+          },
+          {
+            "moduleId": "ceremony-speech-writing",
+            "title": "Writing Short Ceremony Speeches",
+            "bigIdea": "A good short speech greets people, states the purpose and ends politely.",
+            "learnIt": [
+              "Begin by greeting the people present in order of importance, such as the guest of honour, teachers, parents and learners.",
+              "State the purpose of the ceremony clearly. Do not write unrelated stories.",
+              "End with appreciation, congratulations or a polite closing depending on the ceremony."
+            ],
+            "workedExample": {
+              "question": "Write a good opening line for a graduation speech.",
+              "steps": [
+                "Step 1: Greet the important people present.",
+                "Step 2: Mention the ceremony.",
+                "Step 3: Keep the tone respectful."
+              ],
+              "answer": "The guest of honour, headteacher, teachers, parents and fellow learners, I am happy to welcome you to our graduation ceremony."
+            },
+            "tryThis": {
+              "question": "Which is the best closing for a short appreciation speech?",
+              "choices": ["Thank you for listening.", "I am going away.", "Food is there.", "Because ceremony."],
+              "correct": 0,
+              "explanation": "It is polite and suitable for ending a speech."
+            }
+          }
+        ]
+      }],
     "quiz": [
       { "q": "Add the correct question tag: She rarely misses family ceremonies, ___?", "choices": ["does she?", "doesn't she?", "did she?", "didn't she?"], "correct": 0, "why": "'Rarely' makes the statement negative, requiring the positive tag 'does she?'." },
       { "q": "Add the correct question tag: I am the Master of Ceremonies today, ___?", "choices": ["aren't I?", "amn't I?", "am I?", "don't I?"], "correct": 0, "why": "The standard grammatical tag for 'I am...' is 'aren't I?'." },

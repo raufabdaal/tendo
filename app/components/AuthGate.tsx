@@ -177,7 +177,7 @@ function SignInScreen({ onSignedIn }: { onSignedIn: (session: TendoSession) => v
           </div>
         ) : (
           <label className="auth-field">
-            <span>School name <em>(optional)</em></span>
+            <span>School / centre name <em>(optional)</em></span>
             <input
               value={schoolName}
               onChange={(e) => setSchoolName(e.target.value)}
@@ -192,7 +192,7 @@ function SignInScreen({ onSignedIn }: { onSignedIn: (session: TendoSession) => v
       </button>
 
       <div className="auth-note">
-        v0 uses device sign-in only. Real school accounts can be connected later without changing the experience.
+        v0 uses device sign-in only. Real student and teacher accounts can be connected later without changing the experience.
       </div>
     </section>
   );

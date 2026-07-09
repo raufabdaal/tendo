@@ -1,7 +1,94 @@
 # CHECKLIST — Tendo execution tracker
 
-*Updated: 2026-07-07*
+*Updated: 2026-07-09*
 
+
+
+
+
+
+## Phase 20 — P6 Premium Content Completion
+- [x] Start P6 premium audit
+- [x] Add premium practice subtopics to all 6 P6 Mathematics topics
+- [x] Add premium practice subtopics to all 5 P6 English topics
+- [x] Build passed after P6 Maths/English strengthening (`npm run build`, 188 static pages)
+- [ ] Human/founder review upgraded P6 Mathematics topics
+- [ ] Human/founder review upgraded P6 English topics
+- [x] Audit P6 Science premium standard
+- [x] Add premium practice subtopics to all 5 P6 Science topics
+- [x] Build passed after P6 Science strengthening (`npm run build`, 188 static pages)
+- [ ] Human/founder review upgraded P6 Science topics
+- [x] Audit P6 Social Studies premium standard
+- [x] Add premium practice subtopics to all 6 P6 Social Studies topics
+- [x] Build passed after P6 Social Studies strengthening (`npm run build`, 188 static pages)
+- [ ] Human/founder review upgraded P6 Social Studies topics
+- [x] Audit P6 Religious Education premium standard
+- [x] Add premium practice subtopics to all 6 P6 Religious Education topics
+- [x] Build passed after P6 Religious Education strengthening (`npm run build`, 188 static pages)
+- [ ] Human/founder/teacher review upgraded P6 Religious Education topics
+
+---
+
+## Phase 19 — P7 Premium Content Completion
+- [x] Identify thinnest P7 Maths topics
+- [x] Upgrade P7 Maths: Integers
+- [x] Upgrade P7 Maths: Time
+- [x] Upgrade P7 Maths: Data Handling and Graphs
+- [x] Upgrade P7 Maths: Length, Mass, Capacity and Money
+- [x] Upgrade P7 Maths: Algebra
+- [x] Document P7 Maths premium audit
+- [x] Build passed after P7 Maths strengthening (`npm run build`, 188 static pages)
+- [ ] Human/founder review upgraded P7 Maths topics
+- [x] Start P7 English premium audit
+- [x] Strengthen P7 English comprehension/writing/grammar practice
+- [x] Add premium exam-practice subtopics to all 7 P7 English topics
+- [x] Build passed after P7 English strengthening (`npm run build`, 188 static pages)
+- [ ] Human/founder review upgraded P7 English topics
+- [x] Audit P7 Science premium standard
+- [x] Add premium application subtopics to all 8 P7 Science topics
+- [x] Build passed after P7 Science strengthening (`npm run build`, 188 static pages)
+- [ ] Human/founder/teacher review upgraded P7 Science topics
+- [x] Audit P7 Social Studies premium standard
+- [x] Add premium reasoning subtopics to all 10 P7 Social Studies topics
+- [x] Build passed after P7 Social Studies strengthening (`npm run build`, 188 static pages)
+- [ ] Human/founder review upgraded P7 Social Studies topics
+- [x] Audit P7 Religious Education premium standard
+- [x] Add premium application subtopics to all 14 P7 RE topics
+- [x] Build passed after P7 Religious Education strengthening (`npm run build`, 188 static pages)
+- [ ] Human/founder/teacher review upgraded P7 Religious Education topics
+- [ ] Prepare milestone push file list when founder is ready
+
+---
+
+## Phase 18 — Premium parent/content-first direction
+- [x] Lock premium parent-funded positioning
+- [x] Document working price assumption around UGX 50,000/month
+- [x] Make P7 premium content completion the active priority
+- [x] Document class-by-class content rollout roadmap
+- [x] Document content correction/restructure workflow
+- [x] Document parent dashboard / ROI roadmap
+- [x] Log decision `DEV-028` in `DECISIONS.md`
+- [x] Build passed after premium strategy updates (`npm run build`, 188 static pages)
+- [x] Start P7 Mathematics premium audit and strengthening
+- [x] Upgrade thin P7 Maths topics: Integers, Time, Data Handling, Measurement/Money and Algebra
+- [x] Document P7 Maths premium audit (`docs/ops/p7-math-premium-audit-2026-07-09.md`)
+- [x] Build passed after P7 Maths strengthening (`npm run build`, 188 static pages)
+- [ ] Human/founder review upgraded P7 Maths topics
+- [ ] Design parent dashboard MVP around usage, weaknesses and recommendations
+
+---
+
+## Phase 17 — Strategic pivot to student-first product
+- [x] Lock strategy: Tendo is now student-first/direct-to-learner
+- [x] Archive Trainup as historical context, not active path
+- [x] Remove active `/trainup` app route
+- [x] Update app metadata away from school-sold positioning
+- [x] Update README and START_HERE for student-first direction
+- [x] Add strategic pivot handoff (`docs/ops/strategic-pivot-student-first-2026-07-09.md`)
+- [x] Log decision `DEV-027` in `DECISIONS.md`
+- [x] Build passed after removing Trainup route (`npm run build`, 188 static pages)
+
+---
 
 ## Phase 13 — Role-based UX shell and production declutter
 - [x] Add local/device sign-in gate (`AuthGate.tsx`, `auth-session.ts`)
@@ -224,7 +311,7 @@
 
 ---
 
-## Phase 12 — Pilot readiness
+## Phase 12 — Pilot readiness (archived context)
 - [x] Lesson Structure v2 grouped push verified live
 - [x] Stale Maths home-card wording cleaned
 - [x] Post-push verification note created
@@ -234,8 +321,8 @@
 - [x] Teacher feedback loop v1 created
 - [x] Key-word definitions teacher-voice phrasing pass completed
 - [x] Founder copies/pushes pilot readiness cleanup batch
-- [ ] First teacher/school pilot conversation completed
-- [ ] Feedback summarised into product priorities
+- [x] School-pilot dependency archived by DEV-027
+- [ ] Direct-student feedback summarised into product priorities
 
 ## Phase 13 — Modular topic architecture (v3)
 - [x] v3 architecture problem and data model documented
@@ -320,7 +407,7 @@
 - **Published P7 Religious Education topics:** 14 official NCDC topics (7 CRE topics + 7 IRE topics, 100% enriched against requirement specifications)
 - **Visible maths coming-soon backlog:** 0
 - **Latest grouped push completed:** Social Studies + English + shared docs/app support
-- **Current improvement pass:** Pilot Readiness Pack v1 created after Lesson Structure v2 push verification
-- **Religious Education:** intentionally paused
-- **Pilot school:** Trainup a Child Uganda
+- **Current improvement pass:** student-first UX/auth polish and presentation/live-data readiness
+- **Religious Education:** content exists; future improvements should be driven by learner/teacher feedback
+- **Strategic path:** student-first/direct-to-learner; Trainup pilot archived
 - **Monthly recurring cost:** UGX 0

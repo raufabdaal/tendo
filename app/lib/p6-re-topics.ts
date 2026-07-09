@@ -93,7 +93,19 @@ export const P6_RE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-creation-and-stewardship",
+        title: "Premium Practice: Creation and Stewardship",
+        modules: [{
+          moduleId: "caring-for-god-s-creation",
+          title: "Caring for God's Creation",
+          bigIdea: "CRE answers connect creation to responsibility and care.",
+          learnIt: ["Christians believe God created the world.", "Stewardship means using and protecting creation wisely.", "Good relationships include respect, forgiveness and sharing."],
+          workedExample: { question: "How can a learner care for creation at school?", steps: ["Think of the school environment.", "Avoid littering and care for plants.", "Give a clear action."], answer: "A learner can avoid littering and plant or protect trees." },
+          tryThis: { question: "Which action shows stewardship?", choices: ["Planting trees", "Wasting water", "Destroying flowers", "Littering"], correct: 0, explanation: "Planting trees helps care for creation." }
+        }]
+      }],
     quiz: [
       { q: "Who provides daily sustenance and rain for all living creatures?", choices: ["God the Creator", "Kings", "Traders", "Angels only"], correct: 0, why: "God is the ultimate provider." },
       { q: "How should Christians treat their community neighbors?", choices: ["With love, peace, and helpfulness", "With hatred", "By fighting", "By stealing"], correct: 0, why: "Love your neighbor as yourself." },
@@ -196,7 +208,19 @@ export const P6_RE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-commandments",
+        title: "Premium Practice: Commandments",
+        modules: [{
+          moduleId: "applying-the-ten-commandments",
+          title: "Applying the Ten Commandments",
+          bigIdea: "Commandment questions show how God's law guides behaviour today.",
+          learnIt: ["The commandments guide believers to love God and respect people.", "Honouring parents means respecting and helping them.", "Honesty means avoiding stealing, lying and cheating."],
+          workedExample: { question: "How can a learner avoid false witness?", steps: ["False witness means lying about someone.", "A learner should tell the truth.", "Apply it to school life."], answer: "A learner can tell the truth and not lie about others." },
+          tryThis: { question: "Which commandment teaches honesty?", choices: ["Do not steal", "Pollute water", "Forget parents", "Break promises always"], correct: 0, explanation: "Do not steal teaches respect for property." }
+        }]
+      }],
     quiz: [
       { q: "Where did God give Moses the Ten Commandments on stone tablets?", choices: ["Mount Sinai", "Mount Zion", "Mount Carmel", "Mount Ararat"], correct: 0, why: "Moses received the Law on Mount Sinai." },
       { q: "Which commandment carries the promise of long life?", choices: ["Fifth Commandment (Honor your parents)", "First Commandment", "Eighth Commandment", "Tenth Commandment"], correct: 0, why: "Exodus 20:12 attaches long life to filial honor." },
@@ -299,7 +323,19 @@ export const P6_RE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-miracles-and-compassion",
+        title: "Premium Practice: Miracles and Compassion",
+        modules: [{
+          moduleId: "learning-from-jesus-care",
+          title: "Learning from Jesus' Care",
+          bigIdea: "Miracle questions ask for the event and lesson.",
+          learnIt: ["Jesus' miracles showed power and compassion.", "Healing miracles teach care for the sick.", "Forgiveness and reconciliation are important Christian values."],
+          workedExample: { question: "What lesson comes from Jesus healing the sick?", steps: ["Jesus cared for suffering people.", "Christians should care for the sick.", "State the lesson clearly."], answer: "Christians learn to show compassion and care for the sick." },
+          tryThis: { question: "Which action shows compassion?", choices: ["Helping a sick classmate", "Laughing at the sick", "Refusing to forgive", "Stealing medicine"], correct: 0, explanation: "Helping the sick shows compassion." }
+        }]
+      }],
     quiz: [
       { q: "What blind beggar near Jericho cried out for Jesus to have mercy on him?", choices: ["Bartimaeus", "Zacchaeus", "Lazarus", "Nicodemus"], correct: 0, why: "Bartimaeus received sight in Mark 10." },
       { q: "Why did Jesus perform healing miracles during His earthly ministry?", choices: ["Out of divine compassion and to reveal God's saving power", "To get money", "To show off pride", "To defeat Roman soldiers"], correct: 0, why: "Miracles demonstrated divine mercy and kingdom authority." },
@@ -404,7 +440,19 @@ export const P6_RE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-selected-surahs",
+        title: "Premium Practice: Selected Surahs",
+        modules: [{
+          moduleId: "applying-moral-lessons-from-surahs",
+          title: "Applying Moral Lessons from Surahs",
+          bigIdea: "IRE answers connect a Surah to a daily-life lesson.",
+          learnIt: ["Surah Al-Qadr teaches the importance of Laylatul-Qadr and worship.", "Surah Ad-Dhuha teaches hope, gratitude and care for orphans.", "A strong answer gives a practical example."],
+          workedExample: { question: "What lesson comes from Surah Ad-Dhuha?", steps: ["It encourages care and hope.", "Mention care for needy people or orphans.", "Apply it to daily life."], answer: "Muslims learn to be grateful and care for orphans and needy people." },
+          tryThis: { question: "Which value is shown by caring for orphans?", choices: ["Kindness", "Greed", "Cruelty", "Wastefulness"], correct: 0, explanation: "Caring for orphans shows kindness." }
+        }]
+      }],
     quiz: [
       { q: "In which Islamic month does Laylatul-Qadr (The Night of Decree) occur?", choices: ["Ramadan", "Muharram", "Shawwal", "Rajab"], correct: 0, why: "Laylatul-Qadr falls during the holy month of Ramadan." },
       { q: "According to Surah Al-Qadr, worship on Laylatul-Qadr is better than worship of how many months?", choices: ["A thousand months", "One hundred months", "Ten months", "Five hundred months"], correct: 0, why: "Verse 3 explicitly states 'better than a thousand months'." },
@@ -508,7 +556,19 @@ export const P6_RE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-fasting-and-prayer",
+        title: "Premium Practice: Fasting and Prayer",
+        modules: [{
+          moduleId: "practising-sawm-and-salah",
+          title: "Practising Sawm and Salah",
+          bigIdea: "Pillars questions explain both meaning and practice.",
+          learnIt: ["Sawm means fasting, especially during Ramadan.", "Salah is prayer performed at prescribed times.", "Fasting teaches self-control, patience and care for the poor."],
+          workedExample: { question: "Give one lesson Muslims learn from fasting.", steps: ["Fasting involves self-control.", "It helps Muslims remember needy people.", "State one lesson clearly."], answer: "Muslims learn self-control and care for the poor." },
+          tryThis: { question: "Salah means:", choices: ["prayer", "fasting", "pilgrimage", "charity only"], correct: 0, explanation: "Salah is prayer." }
+        }]
+      }],
     quiz: [
       { q: "Which pillar of Islam mandates fasting during the ninth lunar month?", choices: ["Sawm (Fasting in Ramadan)", "Salah", "Zakat", "Hajj"], correct: 0, why: "Sawm is the fourth pillar observed in Ramadan." },
       { q: "What meal is eaten at sunset to break the daily Ramadan fast?", choices: ["Iftar", "Suhoor", "Lunch", "Eid feast"], correct: 0, why: "Iftar breaks the fast promptly at Maghrib." },
@@ -612,7 +672,19 @@ export const P6_RE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-prophet-muhammad-in-makkah",
+        title: "Premium Practice: Prophet Muhammad in Makkah",
+        modules: [{
+          moduleId: "learning-from-early-dawah",
+          title: "Learning from Early Dawah",
+          bigIdea: "Seerah answers connect events to character lessons.",
+          learnIt: ["Prophet Muhammad was known as Al-Amin, the trustworthy.", "Early Muslims faced hardship in Makkah but remained patient.", "Learners can learn truthfulness, patience, courage and trust in Allah."],
+          workedExample: { question: "What lesson comes from the title Al-Amin?", steps: ["Al-Amin means trustworthy.", "Trustworthy people tell the truth and keep promises.", "Apply it to school life."], answer: "Learners should be truthful and trustworthy." },
+          tryThis: { question: "Al-Amin means:", choices: ["the trustworthy", "the rich", "the traveller", "the writer only"], correct: 0, explanation: "Al-Amin means trustworthy." }
+        }]
+      }],
     quiz: [
       { q: "What title meaning 'The Trustworthy' did Makkans give Prophet Muhammad before prophethood?", choices: ["Al-Amin", "Al-Farooq", "As-Siddiq", "Saifullah"], correct: 0, why: "Al-Amin reflects his spotless trustworthiness." },
       { q: "For how many years did Prophet Muhammad preach Islam secretly in Makkah before preaching openly?", choices: ["Three years", "Ten years", "One year", "Five years"], correct: 0, why: "Secret dawah lasted three years." },

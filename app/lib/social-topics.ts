@@ -409,7 +409,25 @@ export const SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-map-answering",
+        title: "Premium Exam Practice: Map Location Answers",
+        modules: [
+          {
+            moduleId: "map-location-sentence",
+            title: "Writing Accurate Map Location Answers",
+            bigIdea: "A premium map answer uses directions, nearby water bodies and major imaginary lines, not vague statements.",
+            learnIt: [
+              "When asked to locate Africa, mention at least two strong clues: nearby continents, oceans, the Equator, the Prime Meridian or the Tropics.",
+              "Use compass directions correctly. Africa is south of Europe, south-west of Asia, east of the Atlantic Ocean and west of the Indian Ocean.",
+              "Avoid vague answers such as 'Africa is on the map'. A good answer helps someone actually find the continent."
+            ],
+            workedExample: { question: "Describe Africa's location using two oceans and one major line.", steps: ["Step 1: Identify oceans: Atlantic Ocean to the west and Indian Ocean to the east.", "Step 2: Identify a major line: the Equator crosses Africa.", "Step 3: Write one clear sentence."], answer: "Africa lies between the Atlantic Ocean and the Indian Ocean, and it is crossed by the Equator." },
+            tryThis: { question: "Which answer best locates Africa?", choices: ["Africa lies south of Europe and is bordered by the Atlantic and Indian Oceans.", "Africa is somewhere.", "Africa is near all places.", "Africa is only in Uganda."], correct: 0, explanation: "It uses direction and nearby water bodies clearly." }
+          }
+        ]
+      }],
     quiz: [
       { q: "Which continent is the second largest in the world?", choices: ["Africa", "Europe", "Australia", "Antarctica"], correct: 0, why: "Africa is the second largest continent after Asia." },
       { q: "Which line of latitude divides the earth into northern and southern hemispheres?", choices: ["Equator", "Prime Meridian", "Tropic of Cancer only", "International Date Line"], correct: 0, why: "The Equator divides the earth into northern and southern hemispheres." },
@@ -714,7 +732,25 @@ export const SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-physical-features-application",
+        title: "Premium Exam Practice: Feature Formation and Importance",
+        modules: [
+          {
+            moduleId: "relief-feature-reasoning",
+            title: "Explaining Relief Features Clearly",
+            bigIdea: "Physical geography answers should name the feature, explain how it formed and state its importance or problem.",
+            learnIt: [
+              "For mountains, valleys and rift valleys, use process words such as faulting, folding, volcanicity, erosion and deposition.",
+              "For rivers and lakes, explain importance such as transport, fishing, irrigation, hydro-electric power, tourism and water supply.",
+              "For problems, use realistic effects such as flooding, disease vectors, transport barriers, erosion or displacement."
+            ],
+            workedExample: { question: "State two ways rivers are important to people in Africa.", steps: ["Step 1: Think of direct uses of river water.", "Step 2: Rivers can provide water for irrigation and domestic use.", "Step 3: Some rivers can generate hydro-electric power or support fishing."], answer: "Rivers provide water for irrigation and can be used to generate hydro-electric power." },
+            tryThis: { question: "Which process forms a rift valley?", choices: ["Faulting", "Condensation", "Evaporation", "Pollination"], correct: 0, explanation: "Rift valleys form when land sinks between faults." }
+          }
+        ]
+      }],
     quiz: [
       { q: "Which is the highest mountain in Africa?", choices: ["Kilimanjaro", "Rwenzori", "Atlas", "Elgon"], correct: 0, why: "Mount Kilimanjaro in Tanzania is the highest mountain in Africa." },
       { q: "Which river is commonly known as the longest river in Africa?", choices: ["Nile", "Congo", "Niger", "Zambezi"], correct: 0, why: "The Nile is commonly taught as Africa's longest river." },
@@ -1099,7 +1135,37 @@ export const SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-climate-interpretation",
+        title: "Premium Exam Practice: Climate Graphs and Factors",
+        modules: [
+          {
+            moduleId: "climate-graph-reading",
+            title: "Reading Rainfall and Temperature Graphs",
+            bigIdea: "Climate questions often require learners to read a graph before explaining climate conditions.",
+            learnIt: [
+              "Read the title, months and scale first. Check whether bars show rainfall and the line shows temperature.",
+              "High bars show wet months; low bars show dry months. A high temperature line shows hot months.",
+              "After reading the graph, connect it to climate type, farming activities or vegetation."
+            ],
+            workedExample: { question: "A climate graph shows high rainfall in March, April and May. What season is shown?", steps: ["Step 1: High rainfall bars show wet months.", "Step 2: March to May is a wet period in many equatorial areas.", "Step 3: Name it as a rainy/wet season."], answer: "It shows a wet or rainy season." },
+            tryThis: { question: "On a climate graph, rainfall is commonly shown using:", choices: ["Bars", "Compass points", "Political parties", "Railway lines"], correct: 0, explanation: "Rainfall is often shown by bars, while temperature is often shown by a line." }
+          },
+          {
+            moduleId: "climate-factor-answering",
+            title: "Explaining Factors that Influence Climate",
+            bigIdea: "A strong climate answer links each factor to its effect on temperature or rainfall.",
+            learnIt: [
+              "Altitude affects temperature: higher places are cooler than lowlands.",
+              "Distance from the sea affects rainfall and temperature range. Coastal places may be wetter and more moderate.",
+              "Ocean currents and prevailing winds can make places wetter, drier, warmer or cooler depending on where they come from."
+            ],
+            workedExample: { question: "Why are highland areas cooler than lowland areas?", steps: ["Step 1: Identify the factor: altitude.", "Step 2: Temperature decreases as altitude increases.", "Step 3: Therefore highlands are cooler."], answer: "Highland areas are cooler because temperature decreases as altitude increases." },
+            tryThis: { question: "Which factor mainly explains why mountain tops are cooler?", choices: ["Altitude", "Longitude", "Population", "Fishing"], correct: 0, explanation: "Altitude affects temperature." }
+          }
+        ]
+      }],
     quiz: [
       { q: "Climate means:", choices: ["Average weather over a long time", "Weather for one hour", "A capital city", "A mountain only"], correct: 0, why: "Climate is the average weather condition of a place over a long period." },
       { q: "Which factor explains why mountains are cooler?", choices: ["Altitude", "Population only", "Language", "Longitude only"], correct: 0, why: "Temperature decreases with increase in altitude." },
@@ -1387,7 +1453,37 @@ export const SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-vegetation-application",
+        title: "Premium Exam Practice: Vegetation Belts and Human Use",
+        modules: [
+          {
+            moduleId: "vegetation-belt-matching",
+            title: "Matching Vegetation to Climate",
+            bigIdea: "Vegetation belts are closely linked to rainfall and temperature conditions.",
+            learnIt: [
+              "Equatorial forests grow in hot, wet areas with heavy rainfall throughout the year.",
+              "Savanna grasslands grow where there is seasonal rainfall with wet and dry seasons.",
+              "Desert vegetation grows in very dry areas and often has adaptations such as deep roots, small leaves or thick stems."
+            ],
+            workedExample: { question: "Why is savanna vegetation common in areas with wet and dry seasons?", steps: ["Step 1: Savanna vegetation needs some rainfall but can survive dry periods.", "Step 2: Wet seasons allow grass to grow.", "Step 3: Dry seasons limit thick forest growth."], answer: "Savanna grows there because rainfall is seasonal, with enough rain for grass but dry periods that limit dense forest." },
+            tryThis: { question: "Which vegetation type is common in very dry areas?", choices: ["Desert vegetation", "Equatorial forest", "Papyrus swamp", "Mangrove forest only"], correct: 0, explanation: "Desert vegetation is adapted to dry conditions." }
+          },
+          {
+            moduleId: "vegetation-conservation",
+            title: "Conservation and Human Activities",
+            bigIdea: "Vegetation is useful, but careless human activity can destroy it.",
+            learnIt: [
+              "Vegetation provides timber, medicine, pasture, fruits, rainfall support, windbreaks and habitats for wildlife.",
+              "Human activities such as bush burning, overgrazing and deforestation can destroy vegetation cover.",
+              "Conservation actions include afforestation, controlled grazing, fire control, national parks and environmental education."
+            ],
+            workedExample: { question: "Give two ways of conserving natural vegetation.", steps: ["Step 1: Think of actions that protect plant cover.", "Step 2: Planting trees replaces lost vegetation.", "Step 3: Controlled grazing prevents animals from destroying all grass."], answer: "Afforestation and controlled grazing help conserve vegetation." },
+            tryThis: { question: "Which activity destroys vegetation?", choices: ["Bush burning", "Afforestation", "Controlled grazing", "Creating forest reserves"], correct: 0, explanation: "Bush burning destroys plant cover and habitats." }
+          }
+        ]
+      }],
     quiz: [
       { q: "Vegetation means:", choices: ["Plant cover of an area", "Capital city", "All rivers", "Only wild animals"], correct: 0, why: "Vegetation is the natural or planted plant cover of an area." },
       { q: "Which vegetation type is common in areas with heavy rainfall near the Equator?", choices: ["Equatorial rainforest", "Desert vegetation", "Mediterranean scrub only", "Tundra"], correct: 0, why: "Heavy rainfall near the Equator supports equatorial rainforest." },
@@ -1649,7 +1745,37 @@ export const SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-people-settlement-reasoning",
+        title: "Premium Exam Practice: Migration and Settlement Reasoning",
+        modules: [
+          {
+            moduleId: "migration-cause-effect",
+            title: "Explaining Why People Move",
+            bigIdea: "Migration answers should separate causes of movement from effects after settlement.",
+            learnIt: [
+              "Push factors force people away from a place, such as drought, war, famine, land shortage or disease.",
+              "Pull factors attract people to a place, such as fertile land, security, trade, water or jobs.",
+              "Migration can lead to cultural exchange, population growth, conflict over land or growth of towns."
+            ],
+            workedExample: { question: "Give one push factor and one pull factor for migration.", steps: ["Step 1: A push factor makes people leave. War can make people leave.", "Step 2: A pull factor attracts people. Fertile land can attract settlers."], answer: "War is a push factor, while fertile land is a pull factor." },
+            tryThis: { question: "Which is a pull factor?", choices: ["Fertile land", "Famine", "War", "Disease outbreak"], correct: 0, explanation: "Fertile land attracts people to settle in an area." }
+          },
+          {
+            moduleId: "settlement-patterns",
+            title: "Settlement Patterns and Reasons",
+            bigIdea: "Settlement patterns are influenced by water, relief, climate, security and economic activity.",
+            learnIt: [
+              "People often settle near water sources because water is needed for domestic use, farming and animals.",
+              "Flat fertile land encourages farming and dense settlement, while steep mountains or deserts may have sparse settlement.",
+              "Towns grow where there is trade, transport, industry or administration."
+            ],
+            workedExample: { question: "Why do many people settle near lakes and rivers?", steps: ["Step 1: Lakes and rivers provide water.", "Step 2: They may support fishing, farming and transport.", "Step 3: These activities support settlement."], answer: "People settle near lakes and rivers because they provide water and support activities such as fishing and farming." },
+            tryThis: { question: "Sparse settlement is most likely in:", choices: ["deserts", "fertile plains", "trading centres", "well-watered areas"], correct: 0, explanation: "Deserts have little water and harsh conditions, so fewer people settle there." }
+          }
+        ]
+      }],
     quiz: [
       { q: "An ethnic group commonly shares:", choices: ["Culture and origin", "Only shoe size", "Only rainfall", "Only road signs"], correct: 0, why: "Ethnic groups often share culture, language, origin or history." },
       { q: "Migration means:", choices: ["Movement of people from one place to another", "Growth of grass", "Building a dam", "Drawing a map only"], correct: 0, why: "Migration is the movement of people from one place to another." },
@@ -1966,7 +2092,37 @@ export const SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-foreign-influence-analysis",
+        title: "Premium Exam Practice: Foreign Influence Source Questions",
+        modules: [
+          {
+            moduleId: "foreign-influence-timeline",
+            title: "Ordering Foreign Influence Events",
+            bigIdea: "History answers become clearer when learners put events in the correct order.",
+            learnIt: [
+              "Foreign influence in Africa included early trade, missionaries, explorers, chartered companies and colonial rule.",
+              "Missionaries often came to spread Christianity, build schools and hospitals, and sometimes paved the way for colonial influence.",
+              "The Berlin Conference of 1884-1885 formalised European partition of Africa without African consent."
+            ],
+            workedExample: { question: "Why was the Berlin Conference important in African history?", steps: ["Step 1: Identify the date: 1884-1885.", "Step 2: European powers met to divide Africa among themselves.", "Step 3: Africans were not invited to decide their own future."], answer: "It was important because European powers used it to divide Africa among themselves without African consent." },
+            tryThis: { question: "The Berlin Conference took place in:", choices: ["1884-1885", "1962", "1945", "2002"], correct: 0, explanation: "The Berlin Conference was held in 1884-1885." }
+          },
+          {
+            moduleId: "foreign-influence-effects",
+            title: "Effects of Foreign Influence",
+            bigIdea: "Foreign influence had both positive and negative effects, so answers must be balanced and specific.",
+            learnIt: [
+              "Positive effects may include formal education, hospitals, new crops, roads, railways and written languages in some areas.",
+              "Negative effects may include loss of land, forced labour, exploitation, cultural disruption, artificial borders and political domination.",
+              "A premium answer names the effect and explains how it affected Africans."
+            ],
+            workedExample: { question: "Give one negative effect of colonial rule in Africa.", steps: ["Step 1: Choose a specific effect.", "Step 2: Explain it, not just name it.", "Step 3: Example: Africans lost land to colonial settlers or companies."], answer: "One negative effect was loss of land, because some African communities were pushed off fertile land by colonial authorities or settlers." },
+            tryThis: { question: "Which is a negative effect of colonialism?", choices: ["Loss of African land", "Free choice by all Africans", "End of all taxes", "Equal power for all chiefs"], correct: 0, explanation: "Many Africans lost land under colonial rule." }
+          }
+        ]
+      }],
     quiz: [
       { q: "Which group came mainly to spread Christianity?", choices: ["Missionaries", "Only miners", "Only soldiers", "Only farmers"], correct: 0, why: "Missionaries came mainly to spread Christianity and build mission stations." },
       { q: "The scramble for Africa means:", choices: ["European rush to claim African territories", "African football tournament", "Formation of rainfall", "A type of map scale"], correct: 0, why: "The scramble for Africa was the rush by European powers to claim African territories." },
@@ -2348,7 +2504,37 @@ export const SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-nationalism-reasoning",
+        title: "Premium Exam Practice: Nationalism Cause and Effect",
+        modules: [
+          {
+            moduleId: "nationalism-causes",
+            title: "Why Nationalism Grew",
+            bigIdea: "Nationalism grew because Africans wanted freedom, dignity and control of their own resources and governments.",
+            learnIt: [
+              "Causes included unfair taxes, forced labour, land alienation, racial discrimination and lack of political representation.",
+              "Educated Africans, ex-servicemen, trade unions, political parties and newspapers helped spread nationalist ideas.",
+              "World War II weakened European powers and encouraged Africans to demand independence."
+            ],
+            workedExample: { question: "How did education help nationalism grow?", steps: ["Step 1: Education helped Africans read and understand political ideas.", "Step 2: Educated Africans could form parties, write newspapers and demand rights.", "Step 3: This helped spread the desire for independence."], answer: "Education helped Africans understand their rights and organise political movements for independence." },
+            tryThis: { question: "Which group helped spread nationalist ideas?", choices: ["Political parties", "Only wild animals", "Only mountains", "Only rivers"], correct: 0, explanation: "Political parties mobilised people to demand independence." }
+          },
+          {
+            moduleId: "independence-timeline",
+            title: "Independence Timeline Answers",
+            bigIdea: "Road-to-independence questions are easier when learners arrange events and leaders in order.",
+            learnIt: [
+              "Use dates and leaders carefully. Do not mix up countries and independence leaders.",
+              "Many African countries achieved independence through political parties, negotiations, constitutional conferences and sometimes armed struggle.",
+              "A strong answer states the country, leader or party and the method used to fight for independence."
+            ],
+            workedExample: { question: "State one peaceful method Africans used to demand independence.", steps: ["Step 1: Think of methods that do not involve fighting.", "Step 2: Political parties organised people.", "Step 3: Negotiations and constitutional conferences were also used."], answer: "Africans formed political parties and negotiated for independence." },
+            tryThis: { question: "A peaceful method of demanding independence was:", choices: ["forming political parties", "burning all farms", "stopping all schools", "destroying rivers"], correct: 0, explanation: "Political parties were used to organise and demand independence." }
+          }
+        ]
+      }],
     quiz: [
       { q: "Nationalism means:", choices: ["Love for and loyalty to one's nation", "A type of lake", "A climate zone", "A vegetation belt"], correct: 0, why: "Nationalism is love for and loyalty to one's nation, often linked to self-rule." },
       { q: "Pan-Africanism promotes:", choices: ["African unity", "Colonial rule", "Desert expansion", "River flooding only"], correct: 0, why: "Pan-Africanism promotes unity and cooperation among African people." },
@@ -2646,7 +2832,37 @@ export const SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-post-independence-solutions",
+        title: "Premium Exam Practice: Challenges and Solutions",
+        modules: [
+          {
+            moduleId: "post-independence-challenges",
+            title: "Explaining Post-Independence Challenges",
+            bigIdea: "A premium answer names a challenge and explains how it affects people or development.",
+            learnIt: [
+              "Common challenges include poverty, unemployment, corruption, civil wars, tribalism, poor infrastructure, debt and disease outbreaks.",
+              "Do not simply list challenges. Explain one effect, such as slowing development, causing displacement or reducing public services.",
+              "Some challenges were inherited from colonial rule, while others came from poor leadership or conflict after independence."
+            ],
+            workedExample: { question: "How can corruption affect development?", steps: ["Step 1: Corruption means misuse of public resources for private gain.", "Step 2: Money meant for roads, schools or hospitals may be stolen.", "Step 3: This slows development and hurts citizens."], answer: "Corruption slows development because public money may be stolen instead of being used for services." },
+            tryThis: { question: "Which is a post-independence challenge?", choices: ["Corruption", "Equator", "Photosynthesis", "Pinhole camera"], correct: 0, explanation: "Corruption is a governance challenge faced by some countries after independence." }
+          },
+          {
+            moduleId: "post-independence-solutions",
+            title: "Suggesting Practical Solutions",
+            bigIdea: "Social Studies answers should not only name problems; they should suggest realistic solutions.",
+            learnIt: [
+              "Solutions to poverty may include education, job creation, improved farming, trade and better infrastructure.",
+              "Solutions to conflict may include dialogue, fair laws, strong institutions and respect for human rights.",
+              "Regional cooperation helps countries trade, share resources and solve cross-border problems."
+            ],
+            workedExample: { question: "Suggest two ways African countries can reduce unemployment.", steps: ["Step 1: Think of ways people get skills.", "Step 2: Vocational training can prepare people for work.", "Step 3: Supporting industries and small businesses can create jobs."], answer: "They can promote vocational training and support industries or small businesses." },
+            tryThis: { question: "Which action can promote peace?", choices: ["Dialogue", "Tribal hatred", "Election violence", "Corruption"], correct: 0, explanation: "Dialogue helps people solve disagreements peacefully." }
+          }
+        ]
+      }],
     quiz: [
       { q: "The OAU was formed in:", choices: ["1963", "2002", "1884", "1995"], correct: 0, why: "The OAU was formed in 1963." },
       { q: "Which organisation replaced the OAU?", choices: ["AU", "UNICEF", "WHO", "NATO"], correct: 0, why: "The African Union replaced the Organisation of African Unity." },
@@ -3021,7 +3237,37 @@ export const SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-economic-reasoning",
+        title: "Premium Exam Practice: Resources, Trade and Development",
+        modules: [
+          {
+            moduleId: "resource-development-link",
+            title: "Linking Resources to Development",
+            bigIdea: "Economic questions often ask how a resource helps people earn income or develop a country.",
+            learnIt: [
+              "Agriculture provides food, raw materials, employment and export earnings.",
+              "Mining provides minerals for industry and export, but it can cause pollution and land degradation if poorly managed.",
+              "Tourism earns foreign exchange and creates jobs, but it needs peace, transport, hotels and conservation."
+            ],
+            workedExample: { question: "How can tourism help a country develop?", steps: ["Step 1: Tourists spend money on transport, hotels, food and park fees.", "Step 2: This creates jobs and earns foreign exchange.", "Step 3: The money can support development if well managed."], answer: "Tourism creates jobs and earns foreign exchange." },
+            tryThis: { question: "Which activity earns income from visitors seeing wildlife and scenery?", choices: ["Tourism", "Subsistence farming only", "Deforestation", "Smuggling"], correct: 0, explanation: "Tourism earns income from visitors." }
+          },
+          {
+            moduleId: "trade-and-transport-reasoning",
+            title: "Trade, Transport and Development",
+            bigIdea: "Trade grows when goods can move easily from producers to markets.",
+            learnIt: [
+              "Good roads, railways, ports and airports help goods reach markets faster and reduce transport costs.",
+              "Landlocked countries depend on neighbours' ports and transport corridors to import and export goods.",
+              "Trade can be limited by poor roads, insecurity, high taxes, corruption, lack of storage or low production."
+            ],
+            workedExample: { question: "Why are good roads important for farmers?", steps: ["Step 1: Farmers need to take produce to markets.", "Step 2: Good roads reduce delays and damage to produce.", "Step 3: Farmers can sell more easily and earn income."], answer: "Good roads help farmers transport produce to markets quickly and earn income." },
+            tryThis: { question: "A landlocked country mainly needs neighbours for access to:", choices: ["seaports", "deserts", "mountain tops", "rainbows"], correct: 0, explanation: "Landlocked countries have no coastline, so they use neighbours' seaports." }
+          }
+        ]
+      }],
     quiz: [
       { q: "Which is a major economic resource in Nigeria?", choices: ["Oil", "Snowfields", "Polar bears", "Volcanoes only"], correct: 0, why: "Nigeria is well known for oil production." },
       { q: "The Gezira Irrigation Scheme is associated with:", choices: ["Sudan", "South Africa", "Ghana", "Morocco only"], correct: 0, why: "The Gezira Scheme is a major irrigation project in Sudan." },
@@ -3303,7 +3549,37 @@ export const SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-organisation-casework",
+        title: "Premium Exam Practice: Organisation Case Questions",
+        modules: [
+          {
+            moduleId: "agency-function-matching",
+            title: "Matching Organisations to Their Work",
+            bigIdea: "Organisation questions are easiest when learners match each body to its real function.",
+            learnIt: [
+              "UNICEF supports children. WHO supports health. UNHCR supports refugees. FAO supports food and agriculture. UNESCO supports education, science and culture.",
+              "The Security Council is an organ of the UN, not a specialised agency. It focuses on peace and security.",
+              "The Commonwealth is not the same as the United Nations. It is an association of member countries with shared historical links and values."
+            ],
+            workedExample: { question: "A refugee camp needs international support. Which UN agency is most directly concerned?", steps: ["Step 1: Identify the key word: refugee.", "Step 2: UNHCR supports refugees.", "Step 3: Match the need to the agency."], answer: "UNHCR is most directly concerned." },
+            tryThis: { question: "Which agency focuses mainly on health?", choices: ["WHO", "UNICEF", "FAO", "UNHCR"], correct: 0, explanation: "WHO is the World Health Organization." }
+          },
+          {
+            moduleId: "organisation-challenges-casework",
+            title: "Explaining Challenges Faced by World Organisations",
+            bigIdea: "A good answer gives a realistic challenge and explains how it affects the organisation's work.",
+            learnIt: [
+              "Limited funds can stop organisations from reaching all people who need help.",
+              "Wars and insecurity can make it dangerous to deliver food, medicine or education support.",
+              "Political disagreements between member countries can delay decisions and reduce cooperation."
+            ],
+            workedExample: { question: "How can war affect the work of UN agencies?", steps: ["Step 1: War creates danger for workers and civilians.", "Step 2: Roads, hospitals and schools may be destroyed.", "Step 3: It becomes difficult to deliver food, medicine and shelter."], answer: "War can make it dangerous and difficult for UN agencies to deliver help to people in need." },
+            tryThis: { question: "Which is a real challenge faced by world organisations?", choices: ["Limited funds", "Too many equators", "No countries exist", "All problems ended"], correct: 0, explanation: "Limited funds can reduce their ability to serve people." }
+          }
+        ]
+      }],
     quiz: [
       { q: "The United Nations was formed in:", choices: ["1945", "1963", "2002", "1884"], correct: 0, why: "The UN was formed in 1945 after World War II." },
       { q: "Which UN agency focuses mainly on children?", choices: ["UNICEF", "WHO", "FAO", "WFP"], correct: 0, why: "UNICEF supports children's welfare and rights." },

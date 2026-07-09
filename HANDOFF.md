@@ -1,7 +1,89 @@
 # HANDOFF — for the next session
 
-*Written: 2026-07-07*
+*Written: 2026-07-09*
 
+
+
+
+## CURRENT COMMAND CENTER — 2026-07-09
+
+### Active direction
+Build Tendo as a **premium parent-funded, student-first app**. Content quality is now the product. Parent ROI matters more than teacher-dashboard expansion. Trainup/school-first work is archived.
+
+### Active milestone
+**P7 Premium Content Completion**.
+
+Current state of the milestone:
+- P7 content exists in all subjects.
+- P7 Maths premium pass has begun. The thinnest topics upgraded were: Integers, Time, Data Handling and Graphs, Length/Mass/Capacity/Money, Algebra.
+- These upgraded Maths topics still need human/founder review.
+- P7 English premium pass has also started: all 7 topics gained premium exam-practice modules.
+- P7 Science premium pass has also started: all 8 topics gained premium application/case-practice modules.
+- P7 Social Studies premium pass has also started: all 10 topics gained premium reasoning/casework modules.
+- P7 Religious Education premium pass has also started: all 14 topics gained premium application modules.
+- P7 premium strengthening now covers all 5 subjects.
+- P6 premium strengthening has started across all current P6 subjects: Maths, English, Science, Social Studies and Religious Education.
+- Next content work should review P6 additions, then plan the next class expansion.
+
+### Immediate next tasks
+1. Review upgraded P7 Maths topics for correctness and tone.
+2. Review P7 English premium additions for tone/correctness.
+3. Review P7 Science premium additions for scientific accuracy and health-sensitive wording.
+4. Review P7 Social Studies for history balance and map/answer clarity.
+5. Review P7 Religious Education for respectful wording and faith accuracy.
+6. Keep documentation updated after each subject pass.
+7. Do not expand teacher dashboard unless it directly supports parent ROI or learner progress.
+
+### Push status
+Current local workspace includes a large unpushed milestone bundle. Founder has not pushed yet. When founder says “ready to push”, provide:
+- files to overwrite
+- files to add
+- files to delete
+- build status
+- suggested commit message
+
+### Do not forget
+- Do not re-open Trainup as active strategy.
+- Do not make schools the gatekeeper again.
+- Do not create lots of new docs unless necessary; update the core docs first.
+
+---
+
+## Strategic pivot — 2026-07-09
+
+Tendo is now **student-first**. Do not continue building around Trainup a Child Uganda or a school-first sales dependency.
+
+- Trainup is archived historical context.
+- The active path is: make Tendo excellent for target P6/P7 learners and premium parents using it directly.
+- Teachers/tutors and parents remain supporting users.
+- Schools can be optional partners later, not the gatekeepers.
+- The old `/trainup` route has been removed.
+
+Read: `docs/ops/strategic-pivot-student-first-2026-07-09.md`.
+
+---
+
+
+## Premium parent/content-first refinement — 2026-07-09
+
+The student-first pivot is now refined further: Tendo is a **premium parent-funded product**.
+
+- Target parents already spending heavily on education.
+- Working price assumption: about UGX 50,000/month.
+- The main priority is content completion and quality, starting with P7.
+- First P7 Maths premium pass completed for Integers, Time, Data Handling, Measurement/Money and Algebra; human review remains.
+- Teacher dashboard is no longer central; leave it useful but secondary.
+- Parent dashboard/ROI visibility is strategically important because the parent pays.
+- Build class-by-class after P7: P6, then next class down systematically.
+
+Read:
+- `docs/ops/premium-parent-student-first-strategy-2026-07-09.md`
+- `docs/ops/primary-content-completion-roadmap-2026-07-09.md`
+- `docs/ops/p7-math-premium-audit-2026-07-09.md`
+- `docs/ops/content-corrections-workflow-2026-07-09.md`
+- `docs/ops/parent-dashboard-roi-roadmap-2026-07-09.md`
+
+---
 
 ## Latest handoff — 2026-07-07 UX/auth + production declutter
 
@@ -22,6 +104,7 @@ The app now has a local/device sign-in gate and role-specific experiences. This 
 - Auto-populated teacher dashboard with presentation sample data and documented how to turn it off later.
 
 ### Files to understand first
+- `docs/ops/strategic-pivot-student-first-2026-07-09.md`
 - `app/components/AuthGate.tsx`
 - `app/components/AppNav.tsx`
 - `app/components/StudyDirectory.tsx`
@@ -32,10 +115,11 @@ The app now has a local/device sign-in gate and role-specific experiences. This 
 - `docs/ops/parent-teacher-dashboard-requirements-2026-07-07.md`
 - `docs/ops/auth-backend-roadmap-2026-07-07.md`
 
-### Next cleanup tasks
-1. Test manually on 320/340/360/390/414/430px phone widths.
-2. Decide backend auth/provider and data model when ready, especially for cross-device teacher questions and manual marking.
-3. After real-device testing, do a final pass on any screen that still pushes the main action below the fold.
+### Next tasks
+1. Human/founder review upgraded P6 premium additions, then plan the next class expansion.
+2. Design parent dashboard MVP around usage, weaknesses, recommendations and ROI.
+3. Test manually on 320/340/360/390/414/430px phone widths.
+4. Decide backend auth/provider and data model when ready, especially for parent dashboard and cross-device progress.
 
 ---
 

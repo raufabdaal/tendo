@@ -4,6 +4,32 @@
 
 ---
 
+
+
+## DEV-028 · 2026-07-09 · Premium parent-funded positioning and content-first roadmap
+
+**Previous active direction:** Student-first direct-to-learner after archiving Trainup.
+**New refinement:** The direct-to-learner product targets **premium parents** who already spend heavily on education and can pay for visible academic ROI.
+**Working price assumption:** about UGX 50,000/month if Tendo feels premium, complete and trustworthy.
+**Product priority:** finish and audit primary content first, starting with P7, then moving class by class.
+**Dashboard priority:** Parent dashboard/ROI visibility becomes strategically more important than teacher dashboard expansion. Teacher/tutor tools remain useful but secondary.
+**Reasoning:** Premium parents pay when they can see serious study, progress, weaknesses and recommendations. Content quality is the product.
+**Tracked across:** `docs/ops/premium-parent-student-first-strategy-2026-07-09.md`, `docs/ops/primary-content-completion-roadmap-2026-07-09.md`, `docs/ops/parent-dashboard-roi-roadmap-2026-07-09.md`.
+
+---
+
+## DEV-027 · 2026-07-09 · Strategic pivot: student-first product, Trainup archived
+
+**Previous direction:** Tendo was positioned as school-sold/B2B2C, with Trainup a Child Uganda treated as the active first pilot path.
+**New decision:** Tendo is now a **student-first direct-to-parent/direct-to-learner product** for the premium parent market.
+**Trainup status:** Archived historical context. Do not continue building product strategy around Trainup or any single school.
+**Schools going forward:** Optional partners/distribution channels later, not the dependency for product progress.
+**Reasoning:** School prospects can delay or ghost; the app must keep improving for students directly.
+**Implementation:** Removed active `/trainup` route; updated README/START_HERE/STATUS/HANDOFF; created `docs/ops/strategic-pivot-student-first-2026-07-09.md`.
+**Supersedes:** DEV-003 as the active go-to-market assumption and PILOT-001 as active product context. Historical entries remain for audit trail.
+
+---
+
 ## DEV-022 · 2026-07-07 · Local role sign-in replaces visible class-lock onboarding as primary UX
 
 **Previous decision:** DEV-002/DEV-015 style flow avoided login and used learner class lock only.
@@ -46,7 +72,7 @@
 **Decision:** Teacher-set questions are treated as manually marked by default. Students can write free-text answers; teachers enter scores and feedback.
 **Implementation now:** localStorage scaffold via `teacher-questions.ts`, `/teacher/questions`, `/practice/teacher-questions`.
 **Reasoning:** Teacher testers asked for control and trust. Manual marking also supports open-ended questions that multiple-choice cannot handle.
-**Limitation:** Current implementation is device-local only; production requires backend storage and school/class/student relationships.
+**Limitation:** Current implementation is device-local only; production requires backend storage and learner/teacher/class-group relationships. School relationships are optional later, not required for the core product.
 
 ---
 
@@ -69,7 +95,7 @@
 
 ---
 
-## DEV-003 · 2026-06-24 · B2B2C model: sell to schools, schools resell to parents
+## DEV-003 · 2026-06-24 · B2B2C model: sell to schools, schools resell to parents (SUPERSEDED by DEV-027)
 
 **Previous decision:** model was still fluid.
 **New decision:** **Schools are the customer.**
@@ -220,7 +246,7 @@
 
 ---
 
-## PILOT-001 · 2026-06-30 · First pilot customer: Trainup a Child Uganda, starting with one P7 Math class
+## PILOT-001 · 2026-06-30 · First pilot customer: Trainup a Child Uganda, starting with one P7 Math class (ARCHIVED by DEV-027)
 
 **Context:** A real school pilot opportunity exists.
 **Decision:** Start with **one P7 Mathematics class** at Trainup a Child Uganda.

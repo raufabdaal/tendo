@@ -1,17 +1,8 @@
-# Tendo — Next.js app (Phase 1)
+# Tendo — Next.js app
 
-This is the runnable Next.js 15 app for Tendo. The non-code parts of the project (docs, sales, curriculum source) live one level up at `../`.
+This is the runnable Next.js 15 app for Tendo. The non-code parts of the project (docs, curriculum source, ops notes) live one level up at `../`.
 
 ## Run locally
-
-From the project root:
-
-```bash
-./launch.sh        # macOS / Linux
-launch.bat         # Windows
-```
-
-Or directly:
 
 ```bash
 cd app
@@ -20,23 +11,28 @@ npm run dev
 # → http://localhost:3000
 ```
 
+## Build
+
+```bash
+cd app
+npm run build
+```
+
+## Current app shape
+
+- Role-based local/device sign-in (`Student` or `Teacher`).
+- Student home, study, practice and papers.
+- Teacher workspace with dashboard, worksheets, teacher-set questions/manual marking and reports.
+- P6 and P7 content across Mathematics, English, Integrated Science, Social Studies and Religious Education.
+- Presentation/sample teacher dashboard data can be disabled with `NEXT_PUBLIC_TENDO_PRESENTATION_DATA=off`.
+
+## Strategic note
+
+The app is now student-first. The old Trainup/school-specific pilot route has been archived. Future organisation branding should only be added after the direct-to-student product is stable.
+
 ## Deploy to Vercel
 
 Set in Vercel project settings:
-- **Framework Preset:** Next.js (explicit, do not rely on auto-detect)
+
+- **Framework Preset:** Next.js
 - **Root Directory:** `app`
-- **Include source files outside of Root Directory:** off for Phase 1 (we don't read sibling folders yet)
-
-## What's here in Phase 1
-
-- `app/` — App Router pages (`/`, `/math/p7`, `/math/p7/[topic]`)
-- `lib/topics.ts` — three fully-built topics (Venn, Roman, Fractions) as TypeScript data
-- `components/Quiz.tsx` — client-side quiz runner with localStorage persistence
-- `components/ProgressBadge.tsx` — per-topic "best score" badge
-
-## What's not here yet (Phase 2+)
-
-- MDX-driven content (currently inline TypeScript)
-- Past PLE papers
-- Per-school subdomains
-- Teacher report dashboard

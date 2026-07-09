@@ -6,7 +6,7 @@ import AuthGate from "@/components/AuthGate";
 export const metadata: Metadata = {
   title: "Tendo — PLE study",
   description:
-    "A focused, school-sold platform for Ugandan upper-primary PLE study. Topic notes, auto-graded quizzes, and past papers.",
+    "A premium study platform for Ugandan upper-primary learners. Topic notes, practice questions, teacher-set work, parent visibility, and past papers.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

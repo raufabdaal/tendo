@@ -1,12 +1,12 @@
-# Authentication + Backend Roadmap — 2026-07-07
+# Authentication + Backend Roadmap — updated after student-first pivot
+
+*Original auth scaffold: 2026-07-07. Strategic update: 2026-07-09.*
 
 ## Why this matters
 
-The current app now has a role-based sign-in experience, teacher-set questions, student written answers and manual marking. These workflows are currently **local/device-only** so we can test the UX quickly.
+The current app has a role-based sign-in experience, teacher-set questions, student written answers and manual marking. These workflows are currently **local/device-only** so we can test the UX quickly.
 
-Before real school use, this must become real backend authentication and synced data.
-
----
+Before real public use, this must become real backend authentication and synced data.
 
 ## Current state
 
@@ -27,24 +27,31 @@ This is good for demos and UX validation, but it is not enough for production.
 
 ---
 
+## Strategic update — student-first
+
+Tendo is no longer waiting for a school pilot. The backend should be designed for **direct student accounts first**.
+
+Schools/organisations can be added later as optional grouping and distribution channels, but the core backend should not require a school to exist before a learner can use Tendo.
+
+---
+
 ## When we are ready for real auth
 
 We need real accounts for:
 
-- schools
-- teachers
-- classes
 - students
-- maybe parents later
+- teachers/tutors
+- parents/guardians later
+- optional schools/learning centres later
 
 The backend must support:
 
 1. Student progress sync across devices.
-2. Teacher dashboards with real class data.
-3. Teacher-set questions visible to students on their own devices.
-4. Student written submissions.
-5. Teacher manual marking and feedback.
-6. Parent updates or parent dashboard later.
+2. Teacher/tutor-created questions visible to assigned learners or groups.
+3. Student written submissions.
+4. Teacher manual marking and feedback.
+5. Parent/guardian progress visibility or shareable reports later.
+6. Optional class/group dashboards.
 
 ---
 
@@ -52,15 +59,18 @@ The backend must support:
 
 ### Tables / collections
 
-- `schools`
-- `classes`
 - `users`
-- `class_memberships`
+- `learner_profiles`
+- `teacher_profiles`
+- `learning_groups` optional
+- `group_memberships` optional
 - `topic_progress`
 - `paper_attempts`
 - `teacher_questions`
 - `teacher_question_submissions`
 - `content_reports`
+- `guardian_links` later
+- `organisations` later optional
 
 ### Users
 
@@ -69,28 +79,40 @@ Fields:
 - `id`
 - `role`: `student | teacher | parent | admin`
 - `name`
-- `school_id`
+- `phone_or_email`
 - `created_at`
 
-### Classes
+### Learner profiles
+
+Fields:
+
+- `user_id`
+- `grade`: `P6 | P7`
+- `display_name`
+- `created_at`
+
+### Learning groups optional
+
+Groups are useful for teachers/tutors/classes but should not be required for solo learners.
 
 Fields:
 
 - `id`
-- `school_id`
-- `name` e.g. `P7 Blue`
-- `grade`: `P6 | P7`
-- `class_code`
-- `created_by`
+- `name` e.g. `P7 Saturday Maths`
+- `grade`: `P6 | P7 | mixed`
+- `owner_teacher_id`
+- `organisation_id` optional
+- `join_code`
+- `created_at`
 
 ### Teacher questions
 
 Fields:
 
 - `id`
-- `school_id`
-- `class_id`
 - `teacher_id`
+- `group_id` optional
+- `learner_id` optional
 - `grade`
 - `subject`
 - `topic_id` optional
@@ -125,20 +147,22 @@ Even after backend auth, the UX should stay simple:
 - Student signs in and lands on student home.
 - Teacher signs in and lands on teacher home.
 - Students see only their class/grade.
-- Teachers can access dashboard, worksheets, questions, content library and reports.
+- Teachers/tutors can access dashboard, worksheets, questions, content library and reports.
+- Solo students should not be blocked by school/class setup.
 
 Backend should not reintroduce clutter.
 
 ---
 
-## Important product decision for later
+## Important product decisions for later
 
 Before implementation, decide:
 
-1. Do schools create accounts themselves, or do we create them manually during pilots?
-2. Do students use passwords, class codes, PINs, or teacher-created accounts?
-3. Do parents get accounts now, later, or only WhatsApp-style reports first?
-4. Is Supabase still the preferred backend, or should we evaluate alternatives?
+1. Student login method: phone, email, PIN, magic link, Google, or parent-assisted account?
+2. Teacher/tutor login method.
+3. Should teacher-set questions be assigned to groups, individual learners, public class codes, or all three?
+4. Do parents get accounts now, later, or only shareable reports first?
+5. Is Supabase still the preferred backend, or should we evaluate alternatives?
 
 ---
 
@@ -147,5 +171,6 @@ Before implementation, decide:
 Start this work when:
 
 - UX has been tested on real phones.
-- Teacher-set questions/manual marking workflow has been validated with at least one teacher.
-- The pilot school needs cross-device student/teacher data.
+- Student-first home/study/practice flow feels stable.
+- Teacher-set questions/manual marking workflow has been validated locally.
+- We need cross-device student/teacher data.

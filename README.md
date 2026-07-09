@@ -1,30 +1,41 @@
 # Tendo
 
-> *"Tendo"* is Luganda for **praise / commendation** — the word parents say when the PLE results come back.
+> *"Tendo"* is Luganda for **praise / commendation** — the word parents say when PLE results come back.
 
-Tendo is a school-sold study platform for Ugandan upper-primary learners and teachers. It helps **P6 and P7** learners study NCDC-aligned content, practise questions, and attempt PLE-style papers, while giving teachers dashboards, worksheets and lesson-planning inspiration.
+Tendo is a **premium student-first study platform** for Ugandan primary learners. It helps learners study NCDC-aligned content, practise questions, attempt PLE-style papers, and answer teacher/tutor-set work.
 
 ## Who it's for
 
-- **Students** (P6 & P7): a calm, focused place to study by subject, practise, and attempt papers.
-- **Teachers:** class progress, worksheet generation, content reports, past-paper browsing, and access to the same content learners use.
-- **Schools:** a parent-facing value-add that signals exam seriousness without adding heavy teacher workload.
+- **Primary user:** students, starting with P7 and P6.
+- **Paying customer:** premium parents/guardians who want visible academic ROI.
+- **Supporting users:** teachers/tutors who set work, mark answers, create worksheets, and support learners.
 
 ## Current product shape
 
 - Role-based local/device sign-in: Student or Teacher.
 - Students see only their signed-in class (`P6` or `P7`).
 - Teachers use a separate workspace and can browse both P6 and P7 content.
-- All 5 official upper-primary subjects are represented across P6 and P7: Mathematics, English Language, Integrated Science, Social Studies, and Religious Education.
+- P6 and P7 content currently exists across Mathematics, English Language, Integrated Science, Social Studies, and Religious Education.
+- Teacher-set questions and manual marking are scaffolded locally.
 - Progress/session data is currently local-device only; real backend authentication is a future task.
 
-## Project status
+## Strategic direction
 
-See [`STATUS.md`](./STATUS.md). The current focus is **production UX simplification, mobile polish, and pilot readiness**.
+Tendo is no longer dependent on one school pilot or a school-first sales path. The active direction is **premium direct-to-parent / student-first**.
 
-## Start here
+Working commercial assumption:
 
-See [`START_HERE.md`](./START_HERE.md) for the current map and handoff order.
+- target families already investing heavily in education
+- possible price point around **UGX 50,000/month**
+- parent dashboard/ROI visibility is a priority
+
+See:
+
+- [`STATUS.md`](./STATUS.md)
+- [`START_HERE.md`](./START_HERE.md)
+- [`docs/ops/strategic-pivot-student-first-2026-07-09.md`](./docs/ops/strategic-pivot-student-first-2026-07-09.md)
+- [`docs/ops/premium-parent-student-first-strategy-2026-07-09.md`](./docs/ops/premium-parent-student-first-strategy-2026-07-09.md)
+- [`docs/ops/primary-content-completion-roadmap-2026-07-09.md`](./docs/ops/primary-content-completion-roadmap-2026-07-09.md)
 
 ## License & content
 

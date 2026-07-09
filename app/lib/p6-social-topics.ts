@@ -137,7 +137,19 @@ export const P6_SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-locating-east-africa",
+        title: "Premium Practice: Locating East Africa",
+        modules: [{
+          moduleId: "writing-accurate-location-answers",
+          title: "Writing Accurate Location Answers",
+          bigIdea: "A strong location answer uses directions, neighbours, water bodies and major lines.",
+          learnIt: ["East Africa lies in the eastern part of Africa.", "Use compass directions and surrounding water bodies where relevant.", "Landlocked countries have no coastline and depend on neighbours' ports."],
+          workedExample: { question: "Why is Uganda called landlocked?", steps: ["Landlocked means no coastline.", "Uganda has no direct access to the sea.", "It uses neighbours' routes to seaports."], answer: "Uganda has no coastline or direct sea access." },
+          tryThis: { question: "Which East African country is landlocked?", choices: ["Uganda", "Kenya", "Tanzania", "Somalia"], correct: 0, explanation: "Uganda has no coastline." }
+        }]
+      }],
     quiz: [
       { q: "Which imaginary line of latitude (0°) crosses through Uganda and Kenya?", choices: ["The Equator", "Tropic of Cancer", "Tropic of Capricorn", "Arctic Circle"], correct: 0, why: "The Equator crosses southern Uganda and central Kenya." },
       { q: "What ocean forms the eastern coastline of East Africa?", choices: ["Indian Ocean", "Atlantic Ocean", "Pacific Ocean", "Red Sea"], correct: 0, why: "The Indian Ocean borders East Africa to the east." },
@@ -271,7 +283,19 @@ export const P6_SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-physical-features",
+        title: "Premium Practice: Physical Features",
+        modules: [{
+          moduleId: "explaining-formation-and-importance",
+          title: "Explaining Formation and Importance",
+          bigIdea: "Feature answers should name the feature, how it formed or why it matters.",
+          learnIt: ["The Great Rift Valley was formed by faulting.", "Volcanic mountains formed through volcanicity.", "Lakes and rivers support fishing, transport, irrigation and tourism."],
+          workedExample: { question: "How was the Great Rift Valley formed?", steps: ["Identify the process: faulting.", "Land between faults sank down.", "This formed a long valley."], answer: "It was formed by faulting." },
+          tryThis: { question: "Which mountain is volcanic?", choices: ["Kilimanjaro", "Rwenzori", "Plateau", "Valley"], correct: 0, explanation: "Kilimanjaro is volcanic." }
+        }]
+      }],
     quiz: [
       { q: "Which geological process formed the steep-sided East African Rift Valley?", choices: ["Faulting due to tensional forces in the earth's crust", "Volcanic eruption", "River folding", "Wind erosion"], correct: 0, why: "Faulting pulled the crust apart, causing central trough subsidence." },
       { q: "Which mountain is the highest peak in Africa, standing at 5,895 metres above sea level?", choices: ["Mount Kilimanjaro", "Mount Rwenzori", "Mount Kenya", "Mount Elgon"], correct: 0, why: "Kilimanjaro in northern Tanzania is Africa's highest summit." },
@@ -403,7 +427,19 @@ export const P6_SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-climate-and-vegetation",
+        title: "Premium Practice: Climate and Vegetation",
+        modules: [{
+          moduleId: "linking-rainfall-to-vegetation",
+          title: "Linking Rainfall to Vegetation",
+          bigIdea: "Climate and vegetation answers explain how rainfall and temperature affect plants.",
+          learnIt: ["Wet areas support forests, swamps or thick vegetation.", "Drier areas support savanna or semi-arid vegetation.", "Highland areas are cooler than lowlands."],
+          workedExample: { question: "Why are highlands cooler?", steps: ["Identify the factor: altitude.", "Temperature decreases with altitude.", "Highlands are higher."], answer: "Highlands are cooler because temperature decreases with altitude." },
+          tryThis: { question: "Which factor affects highland temperature?", choices: ["Altitude", "Fishing", "Mining", "Longitude only"], correct: 0, explanation: "Altitude affects temperature." }
+        }]
+      }],
     quiz: [
       { q: "Which climatic zone in East Africa is characterized by hot temperatures and heavy, reliable rainfall throughout the year?", choices: ["Equatorial climate", "Tropical Savanna climate", "Semi-arid desert climate", "Polar climate"], correct: 0, why: "Equatorial regions around Lake Victoria receive year-round convectional rain." },
       { q: "Why are high mountain summits such as Mount Kilimanjaro and Mount Rwenzori covered with permanent snow despite being located near the hot Equator?", choices: ["Because ambient air temperature decreases steadily with increasing altitude above sea level", "Because they receive snow from European clouds", "Because volcanos freeze lava", "Because strong winds blow ice from the sea"], correct: 0, why: "High altitude drops temperatures below freezing point." },
@@ -519,7 +555,19 @@ export const P6_SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-people-and-pre-colonial-life",
+        title: "Premium Practice: People and Pre-Colonial Life",
+        modules: [{
+          moduleId: "migration-trade-and-kingdoms",
+          title: "Migration, Trade and Kingdoms",
+          bigIdea: "History answers connect why people moved, traded and formed communities.",
+          learnIt: ["People migrated for pasture, fertile land, water, trade or security.", "Pre-colonial trade involved salt, iron tools, cattle, hides, beads and cloth.", "Kingdoms developed leadership, laws, armies and culture."],
+          workedExample: { question: "Why did pastoral groups migrate?", steps: ["Pastoral groups keep animals.", "Animals need pasture and water.", "Searching for pasture and water caused movement."], answer: "They moved in search of pasture and water." },
+          tryThis: { question: "Which item was traded in pre-colonial East Africa?", choices: ["Salt", "Mobile phones", "Computers", "Petrol cars only"], correct: 0, explanation: "Salt was an important trade item." }
+        }]
+      }],
     quiz: [
       { q: "From which geographical cradle region did the Bantu-speaking peoples migrate into East Africa?", choices: ["The Niger-Congo / Cameroon Highlands basin", "The Arabian Peninsula", "The Nile Delta in Egypt", "The Kalahari Desert"], correct: 0, why: "Bantu expansion originated in central-western Africa." },
       { q: "Which branch of Nilotes migrated along river valleys and settled on the shores of Lake Victoria as fishermen and crop farmers?", choices: ["River-Lake Nilotes (e.g., Luo, Acholi, Alur)", "Plain Nilotes (Masai)", "Highland Nilotes (Kalenjin)", "Cushitic pastoralists"], correct: 0, why: "River-Lake Nilotes adapted their pastoral lifestyle to fishing waterways." },
@@ -634,7 +682,19 @@ export const P6_SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-colonisation-effects",
+        title: "Premium Practice: Colonisation Effects",
+        modules: [{
+          moduleId: "foreign-rule-and-african-responses",
+          title: "Foreign Rule and African Responses",
+          bigIdea: "Colonisation questions should be balanced and specific.",
+          learnIt: ["Europeans used treaties, companies, missionaries, soldiers and administrators.", "Some Africans resisted while others collaborated.", "Effects included schools and roads, but also loss of land, forced labour and taxes."],
+          workedExample: { question: "Why did some Africans resist colonial rule?", steps: ["Colonial rule could take land and independence.", "Resistance defended freedom.", "State the reason clearly."], answer: "They resisted to protect land and independence." },
+          tryThis: { question: "Which was a negative effect of colonial rule?", choices: ["Loss of land", "Complete African control", "No taxation", "No forced labour anywhere"], correct: 0, explanation: "Many Africans lost land." }
+        }]
+      }],
     quiz: [
       { q: "Which Scottish businessman founded the Imperial British East Africa Company (IBEAC) in 1888 to administer British spheres of influence?", choices: ["Sir William Mackinnon", "Captain Frederick Lugard", "Carl Peters", "John Speke"], correct: 0, why: "Mackinnon organized IBEAC under royal charter." },
       { q: "What was the main cause of the Maji Maji Rebellion (1905-1907) against German colonial rule in southern Tanganyika?", choices: ["Forced cultivation of cotton on communal plantations and brutal tax collection by Akidas", "Demand for free railway tickets", "Refusal to speak German", "Conflict over fishing rights"], correct: 0, why: "Forced labor and harsh Akida oppression triggered universal uprising." },
@@ -728,7 +788,19 @@ export const P6_SOCIAL_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-independence-and-eac",
+        title: "Premium Practice: Independence and EAC",
+        modules: [{
+          moduleId: "explaining-cooperation-in-east-africa",
+          title: "Explaining Cooperation in East Africa",
+          bigIdea: "Independence and EAC questions connect freedom, cooperation and development.",
+          learnIt: ["Independence means self-rule.", "East African countries cooperate through trade, transport, education and security.", "The EAC may face trade disagreements, insecurity and political differences."],
+          workedExample: { question: "Why do East African countries cooperate?", steps: ["They share borders and resources.", "Cooperation helps trade and transport.", "It can improve peace and development."], answer: "They cooperate to promote trade, transport, peace and development." },
+          tryThis: { question: "EAC stands for:", choices: ["East African Community", "Eastern Air Company", "European Aid Centre", "East Africa Climate"], correct: 0, explanation: "EAC means East African Community." }
+        }]
+      }],
     quiz: [
       { q: "Who founded the Uganda National Congress (UNC) in 1952, recognized as Uganda's first political party?", choices: ["Ignatius Kangave Musaazi", "Milton Obote", "Benedicto Kiwanuka", "Sir Apolo Kaggwa"], correct: 0, why: "Musaazi organized cooperative farmers into the UNC." },
       { q: "On what historical date did Uganda achieve independence from British colonial rule?", choices: ["9th October 1962", "12th December 1963", "9th December 1961", "1st July 1960"], correct: 0, why: "Uganda celebrates national independence every 9th October." },

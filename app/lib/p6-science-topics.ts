@@ -118,7 +118,19 @@ export const P6_SCIENCE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-classifying-organisms",
+        title: "Premium Practice: Classifying Organisms",
+        modules: [{
+          moduleId: "using-clues-to-classify-living-things",
+          title: "Using Clues to Classify Living Things",
+          bigIdea: "Classification becomes easier when learners look for observable features before naming a group.",
+          learnIt: ["Decide first whether the organism is a plant or an animal.", "For animals, check backbone, body covering, breathing organ and reproduction.", "For plants, check flowers, seeds, spores, leaves and roots."],
+          workedExample: { question: "An animal has feathers, wings, a beak and lays eggs. Which class is it?", steps: ["Feathers and a beak are key clues.", "Laying eggs supports the choice.", "These features identify a bird."], answer: "It is a bird." },
+          tryThis: { question: "Which group has a backbone?", choices: ["Vertebrates", "Invertebrates", "Fungi", "Mosses"], correct: 0, explanation: "Vertebrates have backbones." }
+        }]
+      }],
     quiz: [
       { q: "Which animal group consists of warm-blooded vertebrates covered with feathers that lay hard-shelled eggs?", choices: ["Birds (Aves)", "Mammals", "Reptiles", "Amphibians"], correct: 0, why: "Feathers and hard eggs define avian biology." },
       { q: "What fundamental anatomical feature separates vertebrate animals from invertebrate animals?", choices: ["Vertebrates possess an internal backbone/spine while invertebrates lack a backbone", "Vertebrates live in water only", "Invertebrates have bones", "Vertebrates fly"], correct: 0, why: "The vertebral column distinguishes vertebrates." },
@@ -240,7 +252,19 @@ export const P6_SCIENCE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-sound-in-daily-life",
+        title: "Premium Practice: Sound in Daily Life",
+        modules: [{
+          moduleId: "explaining-echoes-pitch-and-ear-care",
+          title: "Explaining Echoes, Pitch and Ear Care",
+          bigIdea: "Sound questions connect vibration, medium, pitch and safe hearing habits.",
+          learnIt: ["Sound is produced by vibrating objects.", "Pitch depends on frequency of vibration.", "Protect the ear from loud sounds, sharp objects and dirty water."],
+          workedExample: { question: "Why can sound not travel through a vacuum?", steps: ["Sound needs particles to pass vibrations.", "A vacuum has no particles.", "Therefore sound cannot travel through it."], answer: "Because sound needs a material medium." },
+          tryThis: { question: "Which sound has a higher pitch?", choices: ["Fast vibration", "Slow vibration", "No vibration", "Silent object"], correct: 0, explanation: "Higher pitch is caused by faster vibrations." }
+        }]
+      }],
     quiz: [
       { q: "In which physical medium does sound energy travel at the highest speed?", choices: ["Solids (e.g., steel / timber)", "Liquids (water)", "Gases (atmospheric air)", "Vacuum"], correct: 0, why: "Closely bonded solid particles transfer mechanical vibrations instantly." },
       { q: "What is the reflection of a sound wave bouncing back from a hard barrier called?", choices: ["An echo", "A shadow", "A rainbow", "A refraction"], correct: 0, why: "Echoes occur when acoustic waves reflect off hard obstacles." },
@@ -365,7 +389,19 @@ export const P6_SCIENCE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-blood-and-heart-cases",
+        title: "Premium Practice: Blood and Heart Cases",
+        modules: [{
+          moduleId: "explaining-circulation-clearly",
+          title: "Explaining Circulation Clearly",
+          bigIdea: "Circulation questions connect heart, blood vessels and blood components.",
+          learnIt: ["The heart pumps blood around the body.", "Arteries carry blood away from the heart; veins carry blood back.", "Red blood cells carry oxygen, white blood cells fight germs and platelets help clotting."],
+          workedExample: { question: "Why is blood important during exercise?", steps: ["Muscles need more oxygen during exercise.", "Blood carries oxygen to body cells.", "The heart pumps faster to deliver oxygen."], answer: "Blood carries oxygen to working muscles." },
+          tryThis: { question: "Which blood cells fight germs?", choices: ["White blood cells", "Red blood cells", "Platelets", "Plasma only"], correct: 0, explanation: "White blood cells fight germs." }
+        }]
+      }],
     quiz: [
       { q: "Which blood vessel carries deoxygenated blood away from the right ventricle directly to the lungs?", choices: ["Pulmonary artery", "Pulmonary vein", "Aorta", "Vena Cava"], correct: 0, why: "Pulmonary artery is the only artery carrying deoxygenated blood." },
       { q: "Why do internal veins possess one-way pocket valves along their length?", choices: ["To prevent the backward flow of blood moving at low pressure toward the heart", "To increase heart rate", "To destroy platelets", "To generate body heat"], correct: 0, why: "Valves ensure unidirectional low-pressure venous return." },
@@ -459,7 +495,19 @@ export const P6_SCIENCE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-breathing-and-health",
+        title: "Premium Practice: Breathing and Health",
+        modules: [{
+          moduleId: "gas-exchange-and-respiratory-care",
+          title: "Gas Exchange and Respiratory Care",
+          bigIdea: "Respiration questions connect breathing organs to oxygen, carbon dioxide and healthy habits.",
+          learnIt: ["Air enters through the nose and reaches the lungs.", "In air sacs, oxygen enters blood and carbon dioxide leaves blood.", "Smoking, dust and polluted air can damage lungs."],
+          workedExample: { question: "Why are air sacs useful in the lungs?", steps: ["Air sacs have thin walls.", "They are surrounded by capillaries.", "This allows gas exchange."], answer: "They allow exchange of oxygen and carbon dioxide." },
+          tryThis: { question: "Which gas is needed by body cells?", choices: ["Oxygen", "Carbon dioxide", "Smoke", "Dust"], correct: 0, explanation: "Cells use oxygen to release energy." }
+        }]
+      }],
     quiz: [
       { q: "Where inside the human lungs does gas exchange between inhaled air and circulating blood occur?", choices: ["Inside the microscopic air sacs called Alveoli", "Inside the throat", "Inside the stomach", "Inside the kidneys"], correct: 0, why: "Alveoli provide thin vascular surfaces for oxygen diffusion." },
       { q: "Why does the trachea (windpipe) have C-shaped rings of cartilage along its length?", choices: ["To keep the airway tube permanently open and prevent it from collapsing during breathing", "To trap food", "To produce speech", "To digest air"], correct: 0, why: "Cartilaginous rings prevent tracheal tube collapse under pressure changes." },
@@ -574,7 +622,19 @@ export const P6_SCIENCE_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-livestock-management",
+        title: "Premium Practice: Livestock Management",
+        modules: [{
+          moduleId: "choosing-good-animal-care-practices",
+          title: "Choosing Good Animal Care Practices",
+          bigIdea: "Agriculture questions test safe, clean and productive animal-care decisions.",
+          learnIt: ["Good housing protects animals from rain, cold, predators and overcrowding.", "Clean water, balanced feeds and disease control improve animal health.", "Vaccination, isolation and parasite control prevent disease spread."],
+          workedExample: { question: "Why isolate a sick chicken from the flock?", steps: ["Some poultry diseases spread between birds.", "Isolation reduces contact.", "This protects healthy birds."], answer: "To prevent disease from spreading." },
+          tryThis: { question: "Which practice helps control ticks?", choices: ["Dipping or spraying", "Dirty water", "Overcrowding", "Ignoring wounds"], correct: 0, explanation: "Dipping or spraying helps kill ticks." }
+        }]
+      }],
     quiz: [
       { q: "Which exotic breed of dairy cattle originating from Holland is famous for producing high quantities of black-and-white milk?", choices: ["Holstein Friesian", "Hereford", "Ankole Longhorn", "Boran"], correct: 0, why: "Friesian cows excel in volume milk yields." },
       { q: "Which external parasite transmits East Coast Fever to cattle?", choices: ["Brown ear tick", "Tsetse fly", "Housefly", "Mosquito"], correct: 0, why: "Ticks suck blood transferring ECF protozoa." },

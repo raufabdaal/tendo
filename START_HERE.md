@@ -1,27 +1,32 @@
 # START HERE — Tendo
 
-**Tendo** is a child-friendly study platform for Ugandan upper-primary learners and teachers. It serves **Primary Six (P6)** and **Primary Seven (P7 PLE)** across the official NCDC subjects.
+**Tendo** is a premium student-first study platform for Ugandan primary learners. We start with **P7** and **P6**, then move class by class until the full primary app is complete.
 
-> *Tendo* (Luganda): "praise / commendation" — what parents say when PLE results come back.
+> *Tendo* (Luganda): "praise / commendation" — what parents say when results come back.
 
 ---
 
 ## You have 10 seconds. What do I read?
 
-1. **`STATUS.md`** — current state, latest UX/auth changes, and what is still open.
-2. **`HANDOFF.md`** — no-context restart handoff for the next session.
-3. **`CHECKLIST.md`** — execution tracker and remaining production-cleanup tasks.
-4. **`DECISIONS.md`** — architecture/product decisions, including role sign-in and UX declutter rules.
-5. **`CHANGELOG.md`** — dated record of what changed.
-6. **`docs/ops/ux-auth-production-cleanup-2026-07-07.md`** — latest UX/auth/production cleanup handoff.
+1. **`STATUS.md`** — current state and what is still open.
+2. **`HANDOFF.md`** — no-context restart handoff.
+3. **`DECISIONS.md`** — especially `DEV-027` and `DEV-028`.
+4. **`CHECKLIST.md`** — execution tracker and remaining tasks.
+5. **`docs/ops/premium-parent-student-first-strategy-2026-07-09.md`** — premium parent-funded direction.
+6. **`docs/ops/primary-content-completion-roadmap-2026-07-09.md`** — content-first roadmap.
+7. **`docs/ops/content-corrections-workflow-2026-07-09.md`** — how to fix/restructure content safely.
+8. **`docs/ops/parent-dashboard-roi-roadmap-2026-07-09.md`** — parent dashboard direction.
 
 ## You have 60 seconds. What's this project now?
 
-- **For students:** P6 and P7 learners studying Mathematics, English, Integrated Science, Social Studies, and Religious Education.
-- **For teachers:** class dashboard, worksheets, content issue reports, past-paper browsing, and the same content library learners use for lesson inspiration.
-- **Current UX direction:** role-specific experiences. Students see only their signed-in grade; teachers use a separate hamburger-menu workspace and can browse both P6 and P7 content.
+- **Primary user:** students.
+- **Paying customer:** premium parents/guardians who want academic ROI.
+- **Target commercial assumption:** families who can afford around **UGX 50,000/month** for a serious study product.
+- **Current priority:** complete and polish content, starting with **P7**, then move class by class.
+- **Teacher dashboard:** useful but no longer central.
+- **Parent dashboard:** strategically important because the parent pays and needs visibility.
+- **Trainup status:** archived historical context. Do not treat Trainup as the active product path.
 - **Auth status:** local/device sign-in scaffolding only. Real backend authentication is a future task.
-- **Production focus:** reduce clutter, especially on mobile. Remove text that does not help the current user take the next action.
 
 ## Folder map
 
@@ -38,8 +43,8 @@ tendo/
 │  └─ curriculum/             NCDC curriculum maps
 └─ docs/
    ├─ spec/                   specs and content architecture
-   ├─ sales/                  school-facing materials
-   ├─ ops/                    handoffs, audits, deployment notes
+   ├─ sales/                  legacy school-facing materials; not current strategy
+   ├─ ops/                    handoffs, audits, roadmap notes
    └─ prompts/                reusable AI prompts
 ```
 
@@ -71,4 +76,4 @@ Every meaningful product/code session should update:
 
 ---
 
-*Tendo · current product snapshot · 2026-07-07*
+*Tendo · premium parent-funded student-first snapshot · 2026-07-09*

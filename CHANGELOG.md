@@ -1,5 +1,172 @@
 # CHANGELOG — Tendo
 
+## v1.8.12 — 2026-07-09 — P6 Science, Social Studies and Religious Education premium strengthening starts
+
+**Session theme:** Complete the first P6 premium strengthening sweep across the remaining P6 subjects.
+
+**Changed:**
+- Added premium practice/application subtopics to all 5 P6 Science topics in `app/lib/p6-science-topics.ts`.
+- Added premium practice/reasoning subtopics to all 6 P6 Social Studies topics in `app/lib/p6-social-topics.ts`.
+- Added premium practice/application subtopics to all 6 P6 Religious Education topics in `app/lib/p6-re-topics.ts`.
+- Updated roadmap/status/checklist/handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 188 static pages.
+
+**Still needed:**
+- Human/founder/teacher review of upgraded P6 content.
+- Plan next class expansion after P6 review.
+
+---
+
+## v1.8.11 — 2026-07-09 — P6 Mathematics and English premium strengthening starts
+
+**Session theme:** Move from P7 premium strengthening into P6, starting with Mathematics and English.
+
+**Changed:**
+- Added premium practice subtopics/modules to all 6 P6 Mathematics topics in `app/lib/p6-math-topics.ts`.
+- Strengthened P6 Maths real-life word problems, operation choice, large-number reasoning, fractions/money, geometry working, data and simple equations.
+- Added premium practice subtopics/modules to all 5 P6 English topics in `app/lib/p6-english-topics.ts`.
+- Strengthened P6 English road safety messages, debate points, family descriptions, relative clauses and polite dining language.
+- Updated roadmap/status/checklist/handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 188 static pages.
+
+**Still needed:**
+- Human/founder review of P6 Maths and English additions.
+- Continue P6 premium audit with Science next.
+
+---
+
+## v1.8.10 — 2026-07-09 — P7 Social Studies and Religious Education premium strengthening passes begin
+
+**Session theme:** Continue the premium content-first roadmap by adding reasoning/application layers to P7 Social Studies and Religious Education.
+
+**Changed:**
+- Added premium reasoning/casework subtopics to all 10 P7 Social Studies topics in `app/lib/social-topics.ts`.
+- Strengthened map answers, climate graph reasoning, vegetation conservation, migration/settlement reasoning, history chronology, post-independence problem/solution answers, economic development reasoning and organisation casework.
+- Added premium application subtopics to all 14 P7 Religious Education topics in `app/lib/re-topics.ts`.
+- Strengthened respectful CRE/IRE written-answer application around faith, commandments, parables, sacraments, Tawheed, pillars, Qur'an/Hadith, Akhlaq, Seerah and social justice.
+- Updated content roadmap/checklist/handoff/status to show premium strengthening now covers all P7 subjects.
+
+**Verified:**
+- `cd app && npm run build` passed with 188 static pages.
+
+**Still needed:**
+- Human/founder/teacher review of all P7 premium additions.
+- Begin P6 premium audit after P7 review/refinement.
+
+---
+
+## v1.8.9 — 2026-07-09 — P7 Science premium strengthening pass begins
+
+**Session theme:** Continue the premium content-first roadmap by adding application/case-practice layers to all P7 Integrated Science topics.
+
+**Changed:**
+- Added premium application subtopics/modules to all 8 P7 Science topics in `app/lib/science-topics.ts`.
+- Strengthened diagram labelling, circuit troubleshooting, health case reasoning, light/ray interpretation, ecosystem cause-effect reasoning, energy conservation, mechanical advantage and friction decisions.
+- Updated content roadmap/checklist/handoff/status to show P7 Science premium pass has started.
+
+**Verified:**
+- `cd app && npm run build` passed with 188 static pages.
+
+**Still needed:**
+- Human/founder/teacher review of upgraded Science content, especially health-sensitive wording.
+- Continue premium audit with P7 Social Studies next.
+
+---
+
+## v1.8.8 — 2026-07-09 — P7 English premium strengthening pass begins
+
+**Session theme:** Continue the premium content-first roadmap by adding deeper exam-practice layers to all P7 English topics.
+
+**Changed:**
+- Added premium exam-practice subtopics/modules to all 7 P7 English topics in `app/lib/english-topics.ts`.
+- Strengthened comprehension, written-answer quality, letter format decisions, examination rubrics, email/message writing, civic passage reading, environmental persuasive writing and ceremony programme/speech writing.
+- Updated content roadmap/checklist/handoff/status to show P7 English premium pass has started.
+
+**Verified:**
+- `cd app && npm run build` passed with 188 static pages.
+
+**Still needed:**
+- Human/founder review of upgraded English content.
+- Continue premium audit with P7 Science next.
+
+---
+
+## v1.8.7 — 2026-07-09 — Documentation command center tightened
+
+**Session theme:** Make the core docs crystal clear so the project can resume safely even if the assistant context is lost.
+
+**Changed:**
+- Added a current operating snapshot to `STATUS.md`.
+- Added a current command center to `HANDOFF.md`.
+- Added Phase 19 P7 Premium Content Completion checklist.
+- Added manual push task `MT-012` clarifying that the founder has not pushed yet and should request a file list when ready.
+
+**No app code changed in this documentation pass.**
+
+---
+
+## v1.8.6 — 2026-07-09 — P7 Mathematics premium strengthening pass begins
+
+**Session theme:** Start the content-first roadmap by upgrading the thinnest P7 Mathematics topics to a more premium modular standard.
+
+**Changed:**
+- Upgraded `app/lib/topics.ts` for Integers, Time, Data Handling and Graphs, Length/Mass/Capacity/Money, and Algebra.
+- Added deeper subtopics/modules, worked examples, quick checks, common mistakes and stronger quiz explanations.
+- Added visual briefs where useful for Integers, Data Handling and Algebra.
+- Created audit note: `docs/ops/p7-math-premium-audit-2026-07-09.md`.
+
+**Verified:**
+- `cd app && npm run build` passed with 188 static pages.
+
+**Still needed:**
+- Founder/human review of upgraded Maths content.
+- Continue premium audit with P7 English next.
+
+---
+
+## v1.8.5 — 2026-07-09 — Premium parent-funded content-first strategy
+
+**Session theme:** Refine the student-first pivot into a premium parent-funded product strategy and make content completion the absolute priority.
+
+**Changed:**
+- Updated README/START_HERE/STATUS/HANDOFF to reflect premium parent-funded positioning.
+- Added `DEV-028` decision: target premium parents, content-first roadmap, parent dashboard priority.
+- Created premium strategy doc: `docs/ops/premium-parent-student-first-strategy-2026-07-09.md`.
+- Created primary content roadmap: `docs/ops/primary-content-completion-roadmap-2026-07-09.md`.
+- Created content correction/restructure workflow: `docs/ops/content-corrections-workflow-2026-07-09.md`.
+- Created parent dashboard ROI roadmap: `docs/ops/parent-dashboard-roi-roadmap-2026-07-09.md`.
+- Updated app metadata to describe Tendo as a premium study platform.
+
+**Strategic note:**
+- Teacher dashboard is no longer central. Parent dashboard and complete premium content are the priority.
+
+**Verified:**
+- `cd app && npm run build` passed with 188 static pages.
+
+---
+
+## v1.8.4 — 2026-07-09 — Strategic pivot to student-first product
+
+**Session theme:** Lock in the move away from Trainup/school-dependent product strategy and toward a direct student-first Tendo.
+
+**Changed:**
+- Archived Trainup a Child Uganda as historical context, not active product direction.
+- Removed the active `/trainup` route from the Next.js app.
+- Simplified `app/lib/school.ts` back to generic Tendo branding only.
+- Updated app metadata away from “school-sold” positioning.
+- Updated root docs (`README.md`, `START_HERE.md`, `STATUS.md`, `HANDOFF.md`, `CHECKLIST.md`, `DECISIONS.md`).
+- Added strategic pivot handoff: `docs/ops/strategic-pivot-student-first-2026-07-09.md`.
+- Added `DEV-027` decision: Tendo is now student-first/direct-to-learner; schools are optional partners later.
+
+**Verified:**
+- `cd app && npm run build` passed with 188 static pages.
+
+---
+
 ## v1.8.3 — 2026-07-07 — Presentation data polish and auth roadmap documentation
 
 **Session theme:** Make the app feel alive for presentation while keeping an escape hatch for real user data later.

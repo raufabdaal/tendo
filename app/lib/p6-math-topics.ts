@@ -136,7 +136,21 @@ export const P6_MATH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-sorting-and-venn-word-problems",
+        title: "Premium Practice: Sorting and Venn Word Problems",
+        modules: [
+          {
+            moduleId: "sorting-real-objects-into-sets",
+            title: "Sorting Real Objects into Sets",
+            bigIdea: "Set work becomes easier when learners first decide the rule for membership.",
+            learnIt: ["A set must have a clear rule. For example, 'even numbers less than 12' is clear, but 'nice numbers' is not clear.", "When sorting real objects, write members only once even if they seem to fit more than one description.", "For Venn word problems, put the overlap first, then fill only-left and only-right regions."],
+            workedExample: { question: "In a class, 18 pupils like milk, 15 like juice and 7 like both. How many like only milk?", steps: ["Step 1: Identify the total who like milk: 18.", "Step 2: Identify the overlap: 7 like both.", "Step 3: Only milk = 18 - 7 = 11."], answer: "11 pupils like only milk." },
+            tryThis: { question: "If 12 learners play football and 5 also play netball, how many play football only?", choices: ["7", "12", "17", "5"], correct: 0, explanation: "Football only = 12 - 5 = 7." }
+          }
+        ]
+      }],
     quiz: [
       { q: "If P = {1, 3, 5} and Q = {3, 5, 7}, find P ∩ Q.", choices: ["{3, 5}", "{1, 7}", "{1, 3, 5, 7}", "{ }"], correct: 0, why: "3 and 5 are common to both sets." },
       { q: "What symbol represents an empty set?", choices: ["∅ or { }", "E", "U", "∩"], correct: 0, why: "∅ indicates zero elements." },
@@ -274,7 +288,21 @@ export const P6_MATH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-large-numbers-in-real-life",
+        title: "Premium Practice: Large Numbers in Real Life",
+        modules: [
+          {
+            moduleId: "reading-and-checking-large-numbers",
+            title: "Reading and Checking Large Numbers",
+            bigIdea: "Large numbers are easier when learners group digits into periods and check place value carefully.",
+            learnIt: ["Read large numbers in periods: millions, thousands and ones.", "When writing in words, each period is read separately, then the period name is added.", "Use place value to check whether an answer is reasonable, especially in money and population questions."],
+            workedExample: { question: "Write 4,305,216 in words.", steps: ["Step 1: Split into periods: 4 | 305 | 216.", "Step 2: Read 4 as four million.", "Step 3: Read 305 as three hundred five thousand, and 216 as two hundred sixteen."], answer: "Four million, three hundred five thousand, two hundred sixteen." },
+            tryThis: { question: "What is the value of 7 in 27,450,000?", choices: ["7,000,000", "70,000", "700,000", "7,000"], correct: 0, explanation: "The 7 is in the millions place, so its value is 7,000,000." }
+          }
+        ]
+      }],
     quiz: [
       { q: "What is the place value of 7 in 47,205,110?", choices: ["Millions", "Ten Millions", "Hundred Thousands", "Thousands"], correct: 0, why: "7 occupies the seventh column from the right, which is Millions." },
       { q: "Write 604,015 in words.", choices: ["Six hundred four thousand, fifteen", "Six hundred forty thousand, fifteen", "Six million four thousand fifteen", "Sixty-four thousand fifteen"], correct: 0, why: "Grouped by periods: 604 (thousand) and 015 (fifteen)." },
@@ -411,7 +439,21 @@ export const P6_MATH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-multi-step-word-problems",
+        title: "Premium Practice: Multi-Step Word Problems",
+        modules: [
+          {
+            moduleId: "choosing-the-right-operation",
+            title: "Choosing the Right Operation",
+            bigIdea: "A premium learner reads the story, chooses the operation and checks whether the answer makes sense.",
+            learnIt: ["Addition combines quantities. Subtraction finds what is left, the difference or how much more.", "Multiplication is useful for equal groups. Division is useful for sharing or finding how many groups.", "For multi-step questions, write one short line of working for each step so you do not mix operations."],
+            workedExample: { question: "A school bought 24 boxes of books. Each box had 18 books. It gave out 150 books. How many books remained?", steps: ["Step 1: Find total books: 24 \u00d7 18 = 432.", "Step 2: Subtract books given out: 432 - 150 = 282.", "Step 3: State the remaining books."], answer: "282 books remained." },
+            tryThis: { question: "Which operation is best for '6 bags each have 25 mangoes'?", choices: ["Multiplication", "Subtraction", "Division", "Comparison only"], correct: 0, explanation: "Equal groups use multiplication: 6 \u00d7 25." }
+          }
+        ]
+      }],
     quiz: [
       { q: "Work out: 64 ÷ 8 + 12 × 2", choices: ["32", "40", "28", "24"], correct: 0, why: "64 ÷ 8 = 8; 12 × 2 = 24; 8 + 24 = 32." },
       { q: "Find the Greatest Common Factor (GCF) of 16 and 20.", choices: ["4", "80", "2", "8"], correct: 0, why: "Highest number dividing both 16 and 20 without remainder is 4." },
@@ -547,7 +589,21 @@ export const P6_MATH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-fractions-decimals-and-money",
+        title: "Premium Practice: Fractions, Decimals and Money",
+        modules: [
+          {
+            moduleId: "solving-fraction-and-percentage-word-problems",
+            title: "Solving Fraction and Percentage Word Problems",
+            bigIdea: "Fractions and percentages become clearer when learners identify the whole before calculating.",
+            learnIt: ["The 'whole' is the total amount you are finding a fraction or percentage of.", "In word problems, after something is removed or used, the remainder becomes the new amount for the next step.", "Percent means out of 100. For example, 25% = 25/100 = 1/4."],
+            workedExample: { question: "Akello had UGX 40,000. She spent 1/4 of it. How much money remained?", steps: ["Step 1: The whole is UGX 40,000.", "Step 2: 1/4 of 40,000 = 10,000.", "Step 3: Money remaining = 40,000 - 10,000 = 30,000."], answer: "UGX 30,000 remained." },
+            tryThis: { question: "What is 25% of 80?", choices: ["20", "25", "40", "60"], correct: 0, explanation: "25% = 1/4. One quarter of 80 is 20." }
+          }
+        ]
+      }],
     quiz: [
       { q: "Work out: 2/3 + 1/6", choices: ["5/6", "3/9", "1/2", "1/3"], correct: 0, why: "LCM = 6. 4/6 + 1/6 = 5/6." },
       { q: "What is 25% of 200?", choices: ["50", "25", "100", "75"], correct: 0, why: "25% is one quarter. 1/4 of 200 = 50." },
@@ -680,7 +736,21 @@ export const P6_MATH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-draw-measure-and-explain",
+        title: "Premium Practice: Draw, Measure and Explain",
+        modules: [
+          {
+            moduleId: "geometry-with-working",
+            title: "Geometry with Working",
+            bigIdea: "Geometry answers improve when learners draw a simple sketch and label the known values.",
+            learnIt: ["For angle questions, mark the straight line, right angle or intersecting lines before calculating.", "Angles on a straight line add up to 180\u00b0. Angles around a point add up to 360\u00b0.", "For perimeter and area, write the formula first, substitute values, then include units."],
+            workedExample: { question: "Two angles on a straight line are x and 65\u00b0. Find x.", steps: ["Step 1: Angles on a straight line add up to 180\u00b0.", "Step 2: x + 65\u00b0 = 180\u00b0.", "Step 3: x = 180\u00b0 - 65\u00b0 = 115\u00b0."], answer: "x = 115\u00b0." },
+            tryThis: { question: "Angles around a point add up to:", choices: ["360\u00b0", "180\u00b0", "90\u00b0", "45\u00b0"], correct: 0, explanation: "A complete turn around a point is 360\u00b0." }
+          }
+        ]
+      }],
     quiz: [
       { q: "What is the sum of angles on a straight line?", choices: ["180°", "360°", "90°", "270°"], correct: 0, why: "A straight angle is 180°." },
       { q: "Find the area of a triangle with base 10 cm and height 6 cm.", choices: ["30 cm²", "60 cm²", "16 cm²", "15 cm²"], correct: 0, why: "1/2 × 10 × 6 = 30 cm²." },
@@ -811,7 +881,21 @@ export const P6_MATH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-data-stories-and-simple-equations",
+        title: "Premium Practice: Data Stories and Simple Equations",
+        modules: [
+          {
+            moduleId: "reading-data-and-forming-equations",
+            title: "Reading Data and Forming Equations",
+            bigIdea: "Data and algebra questions ask learners to turn information into numbers, then reason step by step.",
+            learnIt: ["Read graph titles, labels and scales before answering. The scale may jump by 2, 5, 10 or more.", "Mean is total divided by number of items; range is highest minus lowest.", "For simple equations, use inverse operations to leave the unknown alone."],
+            workedExample: { question: "The marks of four learners are 6, 8, 10 and 12. Find the mean mark.", steps: ["Step 1: Add the marks: 6 + 8 + 10 + 12 = 36.", "Step 2: There are 4 learners.", "Step 3: Mean = 36 \u00f7 4 = 9."], answer: "The mean mark is 9." },
+            tryThis: { question: "Solve: x + 7 = 19", choices: ["12", "26", "7", "19"], correct: 0, explanation: "Subtract 7 from both sides: x = 12." }
+          }
+        ]
+      }],
     quiz: [
       { q: "Find the mean of: 6, 8, 10, 12, 14.", choices: ["10", "40", "8", "12"], correct: 0, why: "Sum = 50 ÷ 5 = 10." },
       { q: "Find the range of: 25, 14, 38, 19, 11.", choices: ["27", "38", "11", "24"], correct: 0, why: "Highest (38) - Lowest (11) = 27." },

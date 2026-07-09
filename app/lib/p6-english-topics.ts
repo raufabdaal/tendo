@@ -94,7 +94,19 @@ export const P6_ENGLISH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-road-safety-messages",
+        title: "Premium Practice: Road Safety Messages",
+        modules: [{
+          moduleId: "reading-and-writing-road-safety-notices",
+          title: "Reading and Writing Road Safety Notices",
+          bigIdea: "Road safety English becomes useful when learners can understand signs and write clear warnings.",
+          learnIt: ["A road sign or notice should be short, clear and easy to obey.", "Use must for strong rules: Pedestrians must use the zebra crossing.", "Use must not for danger: Learners must not play on the road."],
+          workedExample: { question: "Write a clear warning to pupils who cross the road while using phones.", steps: ["Step 1: Identify the dangerous action: using phones while crossing.", "Step 2: Use must not for a rule.", "Step 3: Make the warning short and direct."], answer: "Pupils must not use phones while crossing the road." },
+          tryThis: { question: "Which sentence is the clearest road safety rule?", choices: ["Pedestrians must use the zebra crossing.", "Road crossing good.", "Cars maybe there.", "Because road."], correct: 0, explanation: "It is complete, clear and uses must for a rule." }
+        }]
+      }],
     quiz: [
       { q: "Complete: Pedestrians ___ walk on the pavement where available.", choices: ["should", "might not", "can not", "never"], correct: 0, why: "'Should' gives correct safety advice." },
       { q: "What is a painted area on the road where pedestrians cross called?", choices: ["Zebra crossing", "Airport", "Railway", "Harbour"], correct: 0, why: "Zebra crossings protect pedestrians." },
@@ -199,7 +211,19 @@ export const P6_ENGLISH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-debate-speeches",
+        title: "Premium Practice: Debate Speeches",
+        modules: [{
+          moduleId: "building-a-short-debate-point",
+          title: "Building a Short Debate Point",
+          bigIdea: "A good debate point states a position, gives a reason and stays polite.",
+          learnIt: ["Begin by saying whether you support or oppose the motion.", "Give one clear reason and, if possible, a simple example.", "Use polite expressions such as I strongly support, I disagree because, or in my opinion."],
+          workedExample: { question: "Write one point supporting the motion: Children should read every day.", steps: ["Step 1: State that you support the motion.", "Step 2: Give a reason: reading improves vocabulary.", "Step 3: Write a complete sentence."], answer: "I support the motion because reading every day improves children's vocabulary." },
+          tryThis: { question: "Which phrase is polite in a debate?", choices: ["I disagree because...", "You are foolish", "Keep quiet", "Your idea is useless"], correct: 0, explanation: "It disagrees respectfully and gives a reason." }
+        }]
+      }],
     quiz: [
       { q: "What is the formal topic discussed during a debate called?", choices: ["Motion", "Notice", "Agenda", "Petition"], correct: 0, why: "A debate centers on a formal motion." },
       { q: "A speaker who argues in support of the debate motion is called a:", choices: ["Proposer", "Opposer", "Timekeeper", "Audience"], correct: 0, why: "Proposers support the motion." },
@@ -305,7 +329,19 @@ export const P6_ENGLISH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-family-descriptions",
+        title: "Premium Practice: Family Descriptions",
+        modules: [{
+          moduleId: "writing-clear-sentences-about-family",
+          title: "Writing Clear Sentences about Family",
+          bigIdea: "Family vocabulary is strongest when learners can use the words in clear sentences.",
+          learnIt: ["A niece is the daughter of one's brother or sister. A nephew is the son of one's brother or sister.", "Use apostrophes carefully: my father's bag means the bag belongs to one father.", "For plural possession, place the apostrophe after s: the girls' dormitory."],
+          workedExample: { question: "Rewrite correctly: The bag of my aunt is red.", steps: ["Step 1: Identify the owner: aunt.", "Step 2: Use possessive apostrophe because one aunt is meant.", "Step 3: Write the sentence naturally."], answer: "My aunt's bag is red." },
+          tryThis: { question: "The son of your sister is your:", choices: ["nephew", "niece", "uncle", "cousin only"], correct: 0, explanation: "A nephew is the son of one's brother or sister." }
+        }]
+      }],
     quiz: [
       { q: "My father's sister is my:", choices: ["Aunt", "Niece", "Cousin", "Mother-in-law"], correct: 0, why: "A sister to a parent is an aunt." },
       { q: "What relation is the daughter of your brother to you?", choices: ["Niece", "Nephew", "Cousin", "Aunt"], correct: 0, why: "Female child of a sibling is a niece." },
@@ -412,7 +448,19 @@ export const P6_ENGLISH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-describing-work",
+        title: "Premium Practice: Describing Work",
+        modules: [{
+          moduleId: "occupations-and-relative-clauses",
+          title: "Occupations and Relative Clauses",
+          bigIdea: "A premium answer names the worker, workplace and the work done.",
+          learnIt: ["Use who for people: A carpenter is a person who makes furniture.", "Use where for places: A clinic is a place where patients are treated.", "Use which for things: A hoe is a tool which farmers use for digging."],
+          workedExample: { question: "Join: A baker is a person. He makes bread.", steps: ["Step 1: The sentence talks about a person.", "Step 2: Use who to join the ideas.", "Step 3: Keep the meaning clear."], answer: "A baker is a person who makes bread." },
+          tryThis: { question: "Choose the correct sentence.", choices: ["A tailor is a person who sews clothes.", "A tailor is a place where sews clothes.", "A tailor is a tool which sews clothes.", "A tailor who clothes."], correct: 0, explanation: "Who is used for people." }
+        }]
+      }],
     quiz: [
       { q: "An artisan who makes and repairs wooden tables and chairs is called a:", choices: ["Carpenter", "Plumber", "Mason", "Cobbler"], correct: 0, why: "Carpenters craft timber products." },
       { q: "Complete: A sewing machine is a device ___ a tailor uses to stitch cloth.", choices: ["which", "who", "where", "whom"], correct: 0, why: "A machine is an inanimate object requiring 'which'." },
@@ -517,7 +565,19 @@ export const P6_ENGLISH_TOPICS: Topic[] = [
           }
         ]
       }
-    ],
+    
+      ,{
+        subtopicId: "premium-premium-practice-ordering-food-politely",
+        title: "Premium Practice: Ordering Food Politely",
+        modules: [{
+          moduleId: "hotel-dialogue-and-quantifiers",
+          title: "Hotel Dialogue and Quantifiers",
+          bigIdea: "Dining English should sound polite, clear and grammatically correct.",
+          learnIt: ["Use polite requests such as Please may I have..., I would like..., and Could you bring...", "Use many with countable plural nouns: many plates, many cups.", "Use much with uncountable nouns: much water, much sugar, much rice."],
+          workedExample: { question: "Complete politely: ___ I have a glass of juice, please?", steps: ["Step 1: It is a polite request.", "Step 2: Use May or Could.", "Step 3: Keep please at the end or beginning."], answer: "May I have a glass of juice, please?" },
+          tryThis: { question: "Choose the correct phrase.", choices: ["much water", "many water", "a few water", "several water"], correct: 0, explanation: "Water is uncountable, so use much." }
+        }]
+      }],
     quiz: [
       { q: "A printed card showing food dishes and their prices in a hotel is a:", choices: ["Menu", "Bill", "Cutlery", "Receipt"], correct: 0, why: "Menus list available dining options." },
       { q: "Complete: How ___ cups of tea did the guests order?", choices: ["many", "much", "little", "deal"], correct: 0, why: "Cups are countable individual items taking 'many'." },

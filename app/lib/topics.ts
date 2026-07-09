@@ -1007,72 +1007,140 @@ export const TOPICS: Topic[] = [
     themeId: "theme-2-numeracy",
     themeName: "Numeracy",
     title: "Integers",
-    estMinutes: 8,
+    estMinutes: 30,
     status: "published",
     reviewStatus: "verified",
     note: {
-      intro: "Why this matters: Mastering Integers builds essential mathematical problem-solving skills tested across Section A and Section B of the PLE examination.",
+      intro: "Integers help learners handle gains and losses, temperatures, debts, number lines and directed movement.",
       learningObjectives: [
-        "Solve numerical and word problems related to Integers (positive, negative, zero).",
+        "Order positive and negative integers on a number line.",
+        "Add, subtract, multiply and divide integers using sign rules.",
+        "Apply integers to real-life situations such as temperature, money, lifts and scores.",
       ],
       whatYouNeedToKnow: [
-        "Integers groups foundational P7 competencies including: Integers (positive, negative, zero).",
-        "Follow step-by-step methods, always show working clearly, and check your units or signs.",
+        "Integers are whole numbers that may be positive, negative or zero.",
+        "On a number line, values increase as you move to the right and decrease as you move to the left.",
+        "For multiplication and division, like signs give a positive answer and unlike signs give a negative answer.",
       ],
       worked: {
-        problem: "Evaluate a basic Integers problem.",
+        problem: "A lift starts on the 2nd floor, goes down 6 floors, then goes up 3 floors. Which floor is it on?",
         steps: [
-          "Identify given values.",
-          "Apply correct formula or operation.",
+          "Start at +2.",
+          "Going down 6 floors means subtract 6: +2 - 6 = -4.",
+          "Going up 3 floors means add 3: -4 + 3 = -1.",
         ],
-        answer: "Correct verified answer.",
+        answer: "The lift is on floor -1.",
       },
+      commonMistakes: [
+        "Thinking -8 is greater than -3 because 8 is greater than 3.",
+        "Forgetting that subtracting a negative becomes addition.",
+        "Using addition rules for multiplication sign rules.",
+      ],
       recap: [
-        "Understand key formulas and rules of Integers.",
-        "Check working step by step and verify units and arithmetic.",
+        "Further right on the number line means greater.",
+        "Adding a negative moves left; subtracting a negative moves right.",
+        "Like signs multiply or divide to give positive; unlike signs give negative.",
       ],
     },
     subtopics: [
       {
-        subtopicId: "integers-core",
-        title: "1. The Number Line, Integers and Real-Life Applications",
+        subtopicId: "integer-number-line",
+        title: "1. Number line and ordering",
         modules: [
           {
-            moduleId: "integers-number-line",
-            title: "Arranging and Operating on Integers",
-            bigIdea: "Integers include positive numbers, negative numbers, and zero ordered sequentially on a number line.",
+            moduleId: "integer-meaning-order",
+            title: "Meaning and order of integers",
+            bigIdea: "Integers are positive and negative whole numbers arranged around zero.",
             learnIt: [
-              "Number line ordering: negative integers lie to the left of zero; positive integers lie to the right. A number further right is always greater.",
-              "Addition rules: adding a positive moves right; adding a negative moves left (-4 + +7 = +3).",
-              "Sign multiplication/division rules: like signs produce positive (+ × + = +; - × - = +); unlike signs produce negative (+ × - = -)."
+              "Zero is neither positive nor negative. Positive integers are written to the right of zero, and negative integers are written to the left of zero.",
+              "The number that is further right on a number line is greater. For example, -2 is greater than -7 because -2 is closer to zero and lies to the right of -7.",
+              "Real-life integer situations include temperatures below zero, debts, losses, floors below ground level and scores gained or lost.",
             ],
+            visual: { title: "Integer number line", kind: "timeline", description: "Draw a horizontal number line with zero in the middle, negatives to the left and positives to the right." },
             workedExample: {
-              question: "Evaluate: -18 ÷ -3 + -4.",
+              question: "Arrange -6, +4, 0, -2 and +1 from smallest to greatest.",
               steps: [
-                "Step 1 (Division): negative divided by negative gives positive: -18 ÷ -3 = +6.",
-                "Step 2 (Addition): expression becomes +6 + -4.",
-                "Step 3: +6 + -4 = +2."
+                "Step 1: Place the numbers on a number line.",
+                "Step 2: Read from left to right because values increase to the right.",
+                "Step 3: The order is -6, -2, 0, +1, +4.",
               ],
-              answer: "The answer is +2."
+              answer: "-6, -2, 0, +1, +4",
             },
             tryThis: {
-              question: "The temperature in a freezer was -5°C. If it dropped further by 8°C, what is the new temperature?",
-              choices: ["+3°C", "-13°C", "-3°C", "+13°C"],
+              question: "Which integer is greatest?",
+              choices: ["-9", "-1", "0", "-4"],
+              correct: 2,
+              explanation: "0 is to the right of all negative numbers, so it is greatest.",
+            },
+          },
+        ],
+      },
+      {
+        subtopicId: "integer-operations",
+        title: "2. Operations on integers",
+        modules: [
+          {
+            moduleId: "integer-add-subtract",
+            title: "Adding and subtracting integers",
+            bigIdea: "Integer addition and subtraction can be understood as movement on a number line.",
+            learnIt: [
+              "Adding a positive number moves to the right. Example: -3 + 5 means start at -3 and move 5 steps right to +2.",
+              "Adding a negative number moves to the left. Example: 4 + (-6) means start at 4 and move 6 steps left to -2.",
+              "Subtracting a negative becomes addition. Example: -4 - (-7) is the same as -4 + 7 = +3.",
+            ],
+            workedExample: {
+              question: "Work out: -12 + 7 - (-5).",
+              steps: [
+                "Step 1: -12 + 7 = -5.",
+                "Step 2: Subtracting -5 means adding +5.",
+                "Step 3: -5 + 5 = 0.",
+              ],
+              answer: "0",
+            },
+            tryThis: {
+              question: "Work out: -8 - (-3)",
+              choices: ["-11", "-5", "+5", "+11"],
               correct: 1,
-              explanation: "-5 - 8 = -13°C."
-            }
-          }
-        ]
-      }
-    ],quiz: [
-      { q: "Work out: \u22125 + +8", choices: ["+3", "\u22123", "+13", "\u221213"], correct: 0, "why": "Starting at \u22125 and moving 8 steps to the right on the number line reaches +3." },
-      { q: "Work out: \u22124 \u2212 \u22129", choices: ["+5", "\u221213", "\u22125", "+13"], correct: 0, "why": "Subtracting a negative is the same as adding a positive: \u22124 + 9 = +5." },
-      { q: "Multiply: \u22126 \u00d7 +4", choices: ["\u221224", "+24", "\u221210", "+10"], correct: 0, "why": "A negative multiplied by a positive gives a negative product: \u221224." },
-      { q: "Divide: \u221236 \u00f7 \u22124", choices: ["+9", "\u22129", "+8", "\u22128"], correct: 0, "why": "A negative divided by a negative gives a positive quotient: +9." },
-      { q: "Solve in finite 7 clock arithmetic: 5 + 4 = ___ (mod 7)", choices: ["2 (mod 7)", "9 (mod 7)", "3 (mod 7)", "1 (mod 7)"], correct: 0, "why": "5 + 4 = 9. Dividing 9 by 7 gives quotient 1 remainder 2. So 2 (mod 7)." },
-      { q: "Solve: 3 \u2212 6 = ___ (mod 5)", choices: ["2 (mod 5)", "3 (mod 5)", "4 (mod 5)", "1 (mod 5)"], correct: 0, "why": "Add 5 to 3 to make 8. Then 8 \u2212 6 = 2 (mod 5)." },
-      { q: "Arrange from smallest to largest: \u22128, 0, \u22123, +5, \u22121", choices: ["\u22128, \u22123, \u22121, 0, +5", "0, \u22121, \u22123, \u22128, +5", "+5, 0, \u22121, \u22123, \u22128", "\u22121, \u22123, \u22128, 0, +5"], correct: 0, "why": "On the number line, negative numbers further left are smaller." },
-      { q: "If the temperature drops from +4\u00b0C by 7\u00b0C, what is the new temperature?", choices: ["\u22123\u00b0C", "+3\u00b0C", "\u221211\u00b0C", "+11\u00b0C"], correct: 0, "why": "4 \u2212 7 = \u22123\u00b0C." },
+              explanation: "-8 - (-3) = -8 + 3 = -5.",
+            },
+          },
+          {
+            moduleId: "integer-multiply-divide",
+            title: "Multiplying and dividing integers",
+            bigIdea: "Sign rules make multiplication and division of integers predictable.",
+            learnIt: [
+              "Positive × positive = positive. Negative × negative = positive. The signs are the same, so the answer is positive.",
+              "Positive × negative = negative. Negative × positive = negative. The signs are different, so the answer is negative.",
+              "The same sign rules apply to division. Always work out the sign first, then the number value.",
+            ],
+            workedExample: {
+              question: "Evaluate: -36 ÷ 4 + (-3 × -5).",
+              steps: [
+                "Step 1: -36 ÷ 4 = -9 because the signs are different.",
+                "Step 2: -3 × -5 = +15 because the signs are the same.",
+                "Step 3: -9 + 15 = +6.",
+              ],
+              answer: "+6",
+            },
+            tryThis: {
+              question: "Work out: -7 × -6",
+              choices: ["-42", "+42", "+13", "-13"],
+              correct: 1,
+              explanation: "A negative times a negative gives a positive. 7 × 6 = 42.",
+            },
+          },
+        ],
+      },
+    ],
+    quiz: [
+      { q: "Which is the greatest integer?", choices: ["-6", "-2", "0", "-9"], correct: 2, why: "0 lies to the right of all negative numbers on the number line." },
+      { q: "Arrange from smallest to greatest: -4, +3, 0, -7", choices: ["-7, -4, 0, +3", "-4, -7, 0, +3", "+3, 0, -4, -7", "0, +3, -4, -7"], correct: 0, why: "Values increase from left to right on a number line." },
+      { q: "Work out: -5 + 8", choices: ["+3", "-3", "+13", "-13"], correct: 0, why: "Start at -5 and move 8 steps right to +3." },
+      { q: "Work out: -4 - (-9)", choices: ["+5", "-13", "-5", "+13"], correct: 0, why: "Subtracting a negative becomes addition: -4 + 9 = +5." },
+      { q: "Multiply: -6 × +4", choices: ["-24", "+24", "-10", "+10"], correct: 0, why: "Different signs give a negative answer. 6 × 4 = 24." },
+      { q: "Divide: -36 ÷ -4", choices: ["+9", "-9", "+8", "-8"], correct: 0, why: "Same signs give a positive answer. 36 ÷ 4 = 9." },
+      { q: "A temperature changes from -3°C to 5°C. By how many degrees did it rise?", choices: ["8°C", "2°C", "-8°C", "5°C"], correct: 0, why: "From -3 to 0 is 3 degrees, then 0 to 5 is 5 degrees. Total rise = 8°C." },
+      { q: "A football team loses 2 points each match for 4 matches. What integer shows the total change?", choices: ["-8", "+8", "-6", "+6"], correct: 0, why: "A loss is negative. 4 × -2 = -8." },
     ],
   },
   {
@@ -1080,100 +1148,141 @@ export const TOPICS: Topic[] = [
     themeId: "theme-3-graphs-data",
     themeName: "Interpretation of Graphs and Data",
     title: "Data Handling and Graphs",
-    estMinutes: 24,
+    estMinutes: 40,
     status: "published",
     reviewStatus: "verified",
     note: {
-      intro: "Why this matters: Mastering Data Handling and Graphs builds essential mathematical problem-solving skills tested across Section A and Section B of the PLE examination.",
+      intro: "Data handling helps learners collect, organise, read and explain information from tables, graphs and charts.",
       learningObjectives: [
-        "Solve numerical and word problems related to Pie charts and travel graphs.",
-        "Solve numerical and word problems related to Coordinates (ordered pairs).",
-        "Solve numerical and word problems related to Mean, median, mode and range.",
+        "Read tables, bar graphs, line graphs, pictograms and pie charts.",
+        "Calculate mean, median, mode and range.",
+        "Interpret coordinates and travel graphs accurately.",
       ],
       whatYouNeedToKnow: [
-        "Data Handling and Graphs groups foundational P7 competencies including: Pie charts and travel graphs, Coordinates (ordered pairs), Mean, median, mode and range.",
-        "Follow step-by-step methods, always show working clearly, and check your units or signs.",
+        "Data becomes easier to understand when it is organised in tables, charts and graphs.",
+        "Averages summarise data: mean, median and mode each answer a different question.",
+        "Graphs must be read carefully using their title, scale, labels and key.",
       ],
       worked: {
-        problem: "Evaluate a basic Data Handling and Graphs problem.",
+        problem: "Find the mean of 4, 6, 7, 8 and 10.",
         steps: [
-          "Identify given values.",
-          "Apply correct formula or operation.",
+          "Add the numbers: 4 + 6 + 7 + 8 + 10 = 35.",
+          "Count how many numbers there are: 5.",
+          "Divide total by count: 35 ÷ 5 = 7.",
         ],
-        answer: "Correct verified answer.",
+        answer: "The mean is 7.",
       },
+      commonMistakes: [
+        "Forgetting to arrange numbers before finding the median.",
+        "Reading graph scales as 1, 2, 3 when the scale jumps by 5 or 10.",
+        "Forgetting that pie chart angles add up to 360°.",
+      ],
       recap: [
-        "Understand key formulas and rules of Data Handling and Graphs.",
-        "Check working step by step and verify units and arithmetic.",
+        "Read graph titles, labels and scales first.",
+        "Mean = total ÷ number of items.",
+        "Median needs ordered data; mode is the most common value; range is highest minus lowest.",
       ],
     },
     subtopics: [
       {
-        subtopicId: "data-handling-graphs",
-        title: "1. Statistical Measures, Pictograms and Travel Graphs",
+        subtopicId: "averages-summary",
+        title: "1. Averages and spread",
         modules: [
           {
-            moduleId: "statistical-averages",
-            title: "Mean, Median, Mode and Range",
-            bigIdea: "Statistical averages summarize data sets into central typical values and spreads.",
+            moduleId: "mean-median-mode-range",
+            title: "Mean, median, mode and range",
+            bigIdea: "Averages describe the centre of a data set, while range shows spread.",
             learnIt: [
-              "Mean (Average) = Sum of all values ÷ Number of terms.",
-              "Median = Middle value when numbers are arranged in ascending or descending order (if two middle numbers exist, add them and divide by 2).",
-              "Mode = Most frequently occurring value in a data set.",
-              "Range = Difference between highest value and lowest value."
+              "Mean is found by adding all values and dividing by the number of values.",
+              "Median is the middle value after arranging values in order. If there are two middle values, find their average.",
+              "Mode is the value that appears most often. Range is highest value minus lowest value.",
             ],
+            visual: { title: "Data summary cards", kind: "cards", description: "Use four cards labelled mean, median, mode and range to remember the different methods." },
             workedExample: {
-              question: "Find the mean and range of the marks: 45, 60, 55, 70, 40.",
+              question: "Find the mean, median, mode and range of 3, 7, 4, 7, 9.",
               steps: [
-                "Step 1: Calculate sum = 45 + 60 + 55 + 70 + 40 = 270.",
-                "Step 2: Calculate mean = 270 ÷ 5 = 54.",
-                "Step 3: Find highest (70) and lowest (40). Range = 70 - 40 = 30."
+                "Step 1: Arrange in order: 3, 4, 7, 7, 9.",
+                "Step 2: Mean = (3 + 4 + 7 + 7 + 9) ÷ 5 = 30 ÷ 5 = 6.",
+                "Step 3: Median is the middle value = 7.",
+                "Step 4: Mode is 7 because it appears twice. Range = 9 - 3 = 6.",
               ],
-              answer: "Mean = 54, and Range = 30."
+              answer: "Mean = 6, median = 7, mode = 7, range = 6.",
             },
             tryThis: {
-              question: "What is the median of the numbers: 8, 3, 11, 5, 14?",
-              choices: ["8", "5", "11", "9"],
+              question: "Find the range of 12, 8, 15, 9 and 20.",
+              choices: ["12", "20", "8", "28"],
               correct: 0,
-              explanation: "Arranged in order: 3, 5, 8, 11, 14. The middle value is 8."
-            }
+              explanation: "Range = highest - lowest = 20 - 8 = 12.",
+            },
+          },
+        ],
+      },
+      {
+        subtopicId: "graphs-and-charts",
+        title: "2. Graphs and charts",
+        modules: [
+          {
+            moduleId: "bar-line-pictograph",
+            title: "Bar graphs, line graphs and pictograms",
+            bigIdea: "Different graphs show data in different ways, but all must be read using the scale and key.",
+            learnIt: [
+              "A bar graph compares quantities using bars of different heights. Always check the scale on the vertical axis.",
+              "A line graph shows changes over time, such as temperature during a day or distance during a journey.",
+              "A pictogram uses pictures or symbols. Always read the key: one symbol may represent 2, 5, 10 or more items.",
+            ],
+            workedExample: {
+              question: "In a pictogram, one book symbol represents 5 books. If P7 has 8 symbols, how many books are there?",
+              steps: [
+                "Step 1: Read the key: 1 symbol = 5 books.",
+                "Step 2: P7 has 8 symbols.",
+                "Step 3: 8 × 5 = 40.",
+              ],
+              answer: "P7 has 40 books.",
+            },
+            tryThis: {
+              question: "A bar graph scale jumps by 10. A bar reaches the 7th mark. What value is shown?",
+              choices: ["70", "7", "17", "700"],
+              correct: 0,
+              explanation: "7 marks of 10 each gives 70.",
+            },
           },
           {
-            moduleId: "pictograms-coordinates",
-            title: "Pictograms, Pie Charts and Coordinate Geometry",
-            bigIdea: "Charts display numerical proportions using picture symbols, 360-degree circles, or Cartesian grids.",
+            moduleId: "pie-charts-coordinates-travel",
+            title: "Pie charts, coordinates and travel graphs",
+            bigIdea: "Some graphs use angles, positions or movement to represent information.",
             learnIt: [
-              "Pictograms: statistical charts using symbol pictures where each picture represents a specified count defined in the Key (e.g., 1 stick figure = 10 pupils).",
-              "Pie charts: circular charts representing data as fractional sectors of 360°. Sector angle = (Category value ÷ Total value) × 360°.",
-              "Cartesian plane: plots ordered pairs (x, y) across four quadrants intersecting at origin (0, 0)."
+              "A pie chart is a circle divided into sectors. The whole circle is 360°. To find a sector angle, use fraction of total × 360°.",
+              "Coordinates are written as (x, y). Move along the x-axis first, then up or down the y-axis.",
+              "A travel graph shows distance against time. A flat horizontal line means no movement; a steeper line means faster movement.",
             ],
             workedExample: {
-              question: "In a class of 40 pupils, 15 prefer football. Calculate the sector angle for football on a pie chart.",
+              question: "In a class of 40 pupils, 10 choose football. Find the football sector angle on a pie chart.",
               steps: [
-                "Step 1: State formula: Sector angle = (Value ÷ Total) × 360°.",
-                "Step 2: Substitute values: (15 ÷ 40) × 360°.",
-                "Step 3: Simplify: 15/40 = 3/8. Then 3/8 × 360° = 3 × 45° = 135°."
+                "Step 1: Fraction choosing football = 10/40 = 1/4.",
+                "Step 2: Whole circle = 360°.",
+                "Step 3: 1/4 × 360° = 90°.",
               ],
-              answer: "The sector angle is 135°."
+              answer: "90°",
             },
             tryThis: {
-              question: "On a Cartesian plane, what are the coordinates of the origin where the horizontal x-axis and vertical y-axis intersect?",
-              choices: ["(0, 0)", "(1, 1)", "(0, 1)", "(1, 0)"],
+              question: "Which coordinate means move 3 right and 5 up?",
+              choices: ["(3, 5)", "(5, 3)", "(-3, 5)", "(3, -5)"],
               correct: 0,
-              explanation: "The origin is the starting zero reference point (0, 0)."
-            }
-          }
-        ]
-      }
-    ],quiz: [
-      { q: "Find the mean (average) of: 6, 8, 10, 12, 14.", choices: ["10", "40", "8", "12"], correct: 0, "why": "Sum = 50. Number of terms = 5. Mean = 50 \u00f7 5 = 10." },
-      { q: "Find the median of: 12, 7, 15, 9, 3.", choices: ["9", "12", "7", "15"], correct: 0, "why": "Arrange in ascending order: 3, 7, 9, 12, 15. The middle value is 9." },
-      { q: "Find the range of: 24, 11, 35, 18, 9.", choices: ["26", "35", "9", "24"], correct: 0, "why": "Range = highest value \u2212 lowest value = 35 \u2212 9 = 26." },
-      { q: "In a pie chart, if football represents 120\u00b0 out of 360\u00b0, what fraction of students prefer football?", choices: ["1/3", "1/4", "1/2", "2/3"], correct: 0, "why": "120 / 360 simplifies to 1 / 3." },
-      { q: "What are the coordinates of the origin on a Cartesian graph?", choices: ["(0, 0)", "(1, 1)", "(0, 1)", "(1, 0)"], correct: 0, "why": "Cartesian Coordinate Geometry: plots points as ordered pairs (x, y) where x is the horizontal axis and y is the vertical axis. The axes cross at the Origin (0, 0) dividing the plane into four quadrants (positive and negative x and y axes). We also represent data using Pictograms: statistical charts using symbols or small pictures where each symbol stands for a fixed number of items defined in a Key." },
-      { q: "If a travel graph shows a horizontal flat line, what is the object doing?", choices: ["Resting / stationary", "Moving at high speed", "Falling down", "Turning left"], correct: 0, "why": "A flat horizontal line indicates time is passing but distance is not changing (the object is resting)." },
-      { q: "A die numbered 1 to 6 is rolled once. What is the probability of rolling an even number?", choices: ["1/2", "1/3", "1/6", "2/3"], correct: 0, "why": "Even numbers are 2, 4, 6 (3 outcomes). Total outcomes = 6. Probability = 3/6 = 1/2." },
-      { q: "Find the mode of: 4, 7, 4, 9, 5, 4, 7.", choices: ["4", "7", "5", "9"], correct: 0, "why": "The mode is the most frequently occurring number. 4 appears three times." },
+              explanation: "Coordinates are written (x, y): x first, then y.",
+            },
+          },
+        ],
+      },
+    ],
+    quiz: [
+      { q: "Find the mean of 5, 6, 8 and 9.", choices: ["7", "8", "6", "28"], correct: 0, why: "Total = 28. There are 4 numbers. Mean = 28 ÷ 4 = 7." },
+      { q: "Find the median of 4, 9, 2, 7, 5.", choices: ["5", "4", "7", "9"], correct: 0, why: "Arrange: 2, 4, 5, 7, 9. The middle value is 5." },
+      { q: "Find the mode of 3, 6, 6, 8, 9, 6.", choices: ["6", "3", "8", "9"], correct: 0, why: "6 appears most often." },
+      { q: "Find the range of 12, 18, 7, 20 and 9.", choices: ["13", "20", "7", "27"], correct: 0, why: "Range = highest - lowest = 20 - 7 = 13." },
+      { q: "One symbol in a pictogram represents 4 pupils. How many pupils do 9 symbols represent?", choices: ["36", "13", "45", "27"], correct: 0, why: "9 × 4 = 36 pupils." },
+      { q: "A pie chart represents 60 learners. 15 learners like netball. What angle represents netball?", choices: ["90°", "60°", "45°", "120°"], correct: 0, why: "15/60 = 1/4. 1/4 × 360° = 90°." },
+      { q: "Which coordinate is plotted by moving 4 right and 2 down from the origin?", choices: ["(4, -2)", "(-4, 2)", "(2, 4)", "(-2, 4)"], correct: 0, why: "Right is positive x and down is negative y, so (4, -2)." },
+      { q: "On a travel graph, a horizontal line usually means:", choices: ["Stopped", "Moving faster", "Moving backwards", "Starting again"], correct: 0, why: "Distance does not change during a horizontal section, so the object is stopped." },
     ],
   },
   {
@@ -1284,73 +1393,141 @@ export const TOPICS: Topic[] = [
     themeId: "theme-5-measurement",
     themeName: "Measurement",
     title: "Time",
-    estMinutes: 16,
+    estMinutes: 30,
     status: "published",
     reviewStatus: "verified",
     note: {
-      intro: "Why this matters: Mastering Time builds essential mathematical problem-solving skills tested across Section A and Section B of the PLE examination.",
+      intro: "Time helps learners read clocks, timetables and durations accurately in daily life and examinations.",
       learningObjectives: [
-        "Solve numerical and word problems related to 12-hour and 24-hour clocks.",
-        "Solve numerical and word problems related to Timetables.",
+        "Convert between 12-hour and 24-hour clock time.",
+        "Calculate time intervals, including intervals that pass midnight.",
+        "Use timetables to solve travel and daily-life problems.",
       ],
       whatYouNeedToKnow: [
-        "Time groups foundational P7 competencies including: 12-hour and 24-hour clocks, Timetables.",
-        "Follow step-by-step methods, always show working clearly, and check your units or signs.",
+        "A day has 24 hours, an hour has 60 minutes and a minute has 60 seconds.",
+        "For p.m. times after 12 noon, add 12 to the hour to write 24-hour time.",
+        "To find duration, count from the starting time to the finishing time in sensible jumps.",
       ],
       worked: {
-        problem: "Evaluate a basic Time problem.",
+        problem: "A bus leaves Kampala at 10:45 p.m. and arrives at 2:20 a.m. How long is the journey?",
         steps: [
-          "Identify given values.",
-          "Apply correct formula or operation.",
+          "From 10:45 p.m. to midnight is 1 hour 15 minutes.",
+          "From midnight to 2:20 a.m. is 2 hours 20 minutes.",
+          "Add: 1 h 15 min + 2 h 20 min = 3 h 35 min.",
         ],
-        answer: "Correct verified answer.",
+        answer: "The journey takes 3 hours 35 minutes.",
       },
+      commonMistakes: [
+        "Adding 12 to 12 noon or 12 midnight incorrectly.",
+        "Forgetting that one hour has 60 minutes, not 100 minutes.",
+        "Getting confused when a time interval passes midnight.",
+      ],
       recap: [
-        "Understand key formulas and rules of Time.",
-        "Check working step by step and verify units and arithmetic.",
+        "Use 60 minutes in every hour.",
+        "For 24-hour p.m. times after noon, add 12 to the hour.",
+        "Break long time intervals into smaller steps.",
       ],
     },
     subtopics: [
       {
-        subtopicId: "time-timetables",
-        title: "1. Time Systems and Travel Timetables",
+        subtopicId: "time-clocks",
+        title: "1. Clocks and time conversion",
         modules: [
           {
-            moduleId: "clock-systems-timetables",
-            title: "12/24-Hour Clocks and Journey Timetables",
-            bigIdea: "Converting clock systems and interpreting timetables enables accurate travel duration reasoning.",
+            moduleId: "time-12-24-hour",
+            title: "12-hour and 24-hour time",
+            bigIdea: "The 24-hour clock removes a.m. and p.m. by numbering hours from 00 to 23.",
             learnIt: [
-              "12-hour clock uses a.m. (morning) and p.m. (afternoon). 24-hour clock counts from 00:00 to 23:59 hours without am/pm.",
-              "Conversion rule: to convert p.m. times after 1:00 p.m. into 24-hour time, add 12 hours (e.g., 3:45 p.m. = 15:45 hours).",
-              "Journey duration = Arrival time - Departure time."
+              "From 1:00 a.m. to 11:59 a.m., the 24-hour time uses the same hour, often with a zero in front: 7:30 a.m. becomes 07:30.",
+              "From 1:00 p.m. to 11:59 p.m., add 12 to the hour: 4:15 p.m. becomes 16:15.",
+              "12 noon is 12:00. 12 midnight is 00:00 or 24:00 depending on the timetable, but 00:00 is the usual start of a new day.",
             ],
             workedExample: {
-              question: "A bus departed from Kampala at 08:30 hours and arrived in Mbarara at 13:15 hours. Calculate the duration of the journey.",
+              question: "Write 9:40 p.m. in 24-hour time.",
               steps: [
-                "Step 1: Write duration formula: Arrival time - Departure time.",
-                "Step 2: Subtract hours and minutes: 13 hrs 15 min - 08 hrs 30 min.",
-                "Step 3: Borrow 1 hour (60 min) from 13 hrs: 12 hrs 75 min - 08 hrs 30 min = 4 hours 45 minutes."
+                "Step 1: It is p.m. and the hour is not 12, so add 12 to the hour.",
+                "Step 2: 9 + 12 = 21.",
+                "Step 3: Keep the minutes the same: 40.",
               ],
-              answer: "The journey took 4 hours and 45 minutes."
+              answer: "21:40",
             },
             tryThis: {
-              question: "Convert 19:20 hours into 12-hour clock time.",
-              choices: ["7:20 p.m.", "7:20 a.m.", "9:20 p.m.", "5:20 p.m."],
+              question: "Write 6:05 a.m. in 24-hour time.",
+              choices: ["06:05", "18:05", "6:50", "16:05"],
               correct: 0,
-              explanation: "19 - 12 = 7, so 19:20 hours corresponds to 7:20 p.m."
-            }
-          }
-        ]
-      }
-    ],quiz: [
-      { q: "Convert 16:45 hours to 12-hour clock time.", choices: ["4:45 p.m.", "4:45 a.m.", "6:45 p.m.", "2:45 p.m."], correct: 0, "why": "Since 16 is greater than 12, subtract 12: 16 \u2212 12 = 4. So 4:45 p.m." },
-      { q: "How many minutes are in 2 1/4 hours?", choices: ["135 minutes", "150 minutes", "125 minutes", "140 minutes"], correct: 0, "why": "2 hours = 120 min. 1/4 hour = 15 min. 120 + 15 = 135 minutes." },
-      { q: "A bus left Kampala at 8:30 a.m. and arrived in Jinja at 11:15 a.m. How long was the journey?", choices: ["2 hours 45 minutes", "3 hours 15 minutes", "2 hours 15 minutes", "3 hours 45 minutes"], correct: 0, "why": "From 8:30 to 11:00 is 2 hours 30 min. Plus 15 min to reach 11:15 = 2 hours 45 min." },
-      { q: "Convert 9:20 p.m. to 24-hour clock time.", choices: ["21:20 hours", "09:20 hours", "19:20 hours", "22:20 hours"], correct: 0, "why": "For p.m. times after 1:00 p.m., add 12 to hours: 9 + 12 = 21. So 21:20 hours." },
-      { q: "If a train travels at 80 km/h, how far will it travel in 3 hours 30 minutes?", choices: ["280 km", "240 km", "300 km", "260 km"], correct: 0, "why": "3 hrs 30 min = 3.5 hours. Distance = 80 \u00d7 3.5 = 280 km." },
-      { q: "An examination started at 9:00 a.m. and lasted for 2 hours 30 minutes. At what time did it end?", choices: ["11:30 a.m.", "11:30 p.m.", "12:00 p.m.", "10:30 a.m."], correct: 0, "why": "9:00 + 2 hrs = 11:00. Plus 30 min = 11:30 a.m." },
-      { q: "How many seconds are in 3.5 minutes?", choices: ["210 seconds", "180 seconds", "240 seconds", "190 seconds"], correct: 0, "why": "3.5 \u00d7 60 = 210 seconds." },
-      { q: "A plane arrived at 00:15 hours. What time is this in 12-hour clock?", choices: ["12:15 a.m.", "12:15 p.m.", "1:15 a.m.", "1:15 p.m."], correct: 0, "why": "00:00 hours corresponds to midnight (12:00 a.m.). So 00:15 is 12:15 a.m." },
+              explanation: "Morning time keeps the same hour with a zero in front: 06:05.",
+            },
+          },
+        ],
+      },
+      {
+        subtopicId: "time-duration",
+        title: "2. Duration and timetables",
+        modules: [
+          {
+            moduleId: "time-duration-method",
+            title: "Finding time intervals",
+            bigIdea: "Duration is the amount of time between a start and an end time.",
+            learnIt: [
+              "Use counting-on for most duration questions. Count from the start time to the next easy time, then to the finish time.",
+              "When minutes are difficult, borrow or count through the next hour. For example, from 8:45 to 10:20: 8:45 to 9:00 is 15 min, 9:00 to 10:00 is 1 h, and 10:00 to 10:20 is 20 min.",
+              "For times crossing midnight, split the work into before midnight and after midnight.",
+            ],
+            workedExample: {
+              question: "Find the time from 8:45 a.m. to 10:20 a.m.",
+              steps: [
+                "Step 1: 8:45 to 9:00 = 15 minutes.",
+                "Step 2: 9:00 to 10:00 = 1 hour.",
+                "Step 3: 10:00 to 10:20 = 20 minutes.",
+                "Step 4: Total = 1 hour 35 minutes.",
+              ],
+              answer: "1 hour 35 minutes",
+            },
+            tryThis: {
+              question: "A lesson starts at 2:10 p.m. and ends at 3:00 p.m. How long is it?",
+              choices: ["50 minutes", "40 minutes", "1 hour 10 minutes", "30 minutes"],
+              correct: 0,
+              explanation: "From 2:10 to 3:00 is 50 minutes.",
+            },
+          },
+          {
+            moduleId: "time-timetable-problems",
+            title: "Timetable word problems",
+            bigIdea: "Timetables show planned times; learners must read rows and columns carefully.",
+            learnIt: [
+              "Always read the heading first: departure, arrival, subject, day, route or activity.",
+              "Check whether times are written in 12-hour or 24-hour format before calculating.",
+              "In travel problems, duration = arrival time - departure time. If there is waiting time, add it separately.",
+            ],
+            workedExample: {
+              question: "A train leaves at 14:35 and arrives at 17:10. How long is the journey?",
+              steps: [
+                "Step 1: 14:35 to 15:00 = 25 minutes.",
+                "Step 2: 15:00 to 17:00 = 2 hours.",
+                "Step 3: 17:00 to 17:10 = 10 minutes.",
+                "Step 4: Total = 2 hours 35 minutes.",
+              ],
+              answer: "2 hours 35 minutes",
+            },
+            tryThis: {
+              question: "A bus leaves at 23:20 and arrives at 01:05. How long is the journey?",
+              choices: ["1 h 45 min", "2 h 15 min", "1 h 25 min", "45 min"],
+              correct: 0,
+              explanation: "23:20 to midnight = 40 min; midnight to 01:05 = 1 h 5 min. Total = 1 h 45 min.",
+            },
+          },
+        ],
+      },
+    ],
+    quiz: [
+      { q: "Write 7:30 p.m. in 24-hour time.", choices: ["19:30", "07:30", "17:30", "20:30"], correct: 0, why: "For p.m. times after noon, add 12 to the hour: 7 + 12 = 19." },
+      { q: "Write 04:45 in 12-hour time.", choices: ["4:45 a.m.", "4:45 p.m.", "12:45 a.m.", "16:45"], correct: 0, why: "04:45 is before 12:00, so it is 4:45 a.m." },
+      { q: "How many minutes are in 2 hours 15 minutes?", choices: ["135", "115", "125", "215"], correct: 0, why: "2 hours = 120 minutes. 120 + 15 = 135 minutes." },
+      { q: "Find the duration from 9:20 a.m. to 11:05 a.m.", choices: ["1 h 45 min", "2 h 15 min", "1 h 25 min", "45 min"], correct: 0, why: "9:20 to 10:00 is 40 min, 10:00 to 11:00 is 1 h, and 11:00 to 11:05 is 5 min." },
+      { q: "A film starts at 8:50 p.m. and ends at 10:15 p.m. How long is it?", choices: ["1 h 25 min", "1 h 35 min", "2 h 25 min", "25 min"], correct: 0, why: "8:50 to 9:00 is 10 min, 9:00 to 10:00 is 1 h, 10:00 to 10:15 is 15 min." },
+      { q: "A journey starts at 22:40 and ends at 01:10. How long is it?", choices: ["2 h 30 min", "3 h 30 min", "1 h 30 min", "2 h 10 min"], correct: 0, why: "22:40 to midnight is 1 h 20 min; midnight to 01:10 is 1 h 10 min. Total = 2 h 30 min." },
+      { q: "What is 12 midnight in 24-hour time?", choices: ["00:00", "12:00", "24:12", "12:24"], correct: 0, why: "Midnight is the start of a new day and is usually written as 00:00." },
+      { q: "A clock gains 5 minutes every hour. How much time will it gain in 6 hours?", choices: ["30 minutes", "11 minutes", "60 minutes", "25 minutes"], correct: 0, why: "5 minutes each hour for 6 hours gives 5 × 6 = 30 minutes." },
     ],
   },
   {
@@ -1358,99 +1535,168 @@ export const TOPICS: Topic[] = [
     themeId: "theme-5-measurement",
     themeName: "Measurement",
     title: "Length, Mass, Capacity and Money",
-    estMinutes: 56,
+    estMinutes: 45,
     status: "published",
     reviewStatus: "verified",
     note: {
-      intro: "Why this matters: Mastering Length, Mass, Capacity and Money builds essential mathematical problem-solving skills tested across Section A and Section B of the PLE examination.",
+      intro: "Measurement connects mathematics to real life: distance, weight, containers, area, volume and money.",
       learningObjectives: [
-        "Solve numerical and word problems related to Length.",
-        "Solve numerical and word problems related to Perimeter.",
-        "Solve numerical and word problems related to Area.",
-        "Solve numerical and word problems related to Volume.",
+        "Convert between common metric units of length, mass and capacity.",
+        "Calculate perimeter, area and volume of common shapes and solids.",
+        "Solve money problems involving profit, loss and simple interest.",
       ],
       whatYouNeedToKnow: [
-        "Length, Mass, Capacity and Money groups foundational P7 competencies including: Length, Perimeter, Area, Volume, Capacity, Mass and weight, Money (profit, loss, discount, interest).",
-        "Follow step-by-step methods, always show working clearly, and check your units or signs.",
+        "Metric conversions use powers of 10, such as 100 cm = 1 m and 1000 g = 1 kg.",
+        "Perimeter is distance around a shape. Area is surface covered. Volume is space occupied.",
+        "Money problems often use percentage profit, percentage loss or simple interest.",
       ],
       worked: {
-        problem: "Evaluate a basic Length, Mass, Capacity and Money problem.",
+        problem: "A rectangular garden is 12 m long and 8 m wide. Find its perimeter and area.",
         steps: [
-          "Identify given values.",
-          "Apply correct formula or operation.",
+          "Perimeter = 2 × (length + width) = 2 × (12 + 8) = 40 m.",
+          "Area = length × width = 12 × 8 = 96 m².",
         ],
-        answer: "Correct verified answer.",
+        answer: "Perimeter = 40 m and area = 96 m².",
       },
+      commonMistakes: [
+        "Confusing perimeter and area.",
+        "Forgetting to square units for area and cube units for volume.",
+        "Calculating percentage profit over selling price instead of cost price.",
+      ],
       recap: [
-        "Understand key formulas and rules of Length, Mass, Capacity and Money.",
-        "Check working step by step and verify units and arithmetic.",
+        "Perimeter uses length units, area uses square units and volume uses cubic units.",
+        "Profit = selling price - cost price.",
+        "Simple interest = (P × R × T) ÷ 100.",
       ],
     },
     subtopics: [
       {
-        subtopicId: "measurement-money",
-        title: "1. Length, Area, Volume, Capacity, Mass and Money",
+        subtopicId: "metric-conversions",
+        title: "1. Metric conversions",
         modules: [
           {
-            moduleId: "area-volume-capacity",
-            title: "Area, 3D Volume and Capacity Conversions",
-            bigIdea: "Measurement calculates 2D surface area and 3D solid volume, converting cubic volume to liquid litres.",
+            moduleId: "length-mass-capacity-units",
+            title: "Length, mass and capacity units",
+            bigIdea: "Metric units convert by multiplying or dividing by 10, 100 or 1000.",
             learnIt: [
-              "Circle formulas: Circumference = 2πr or πd; Area = πr² (using π = 22/7 or 3.14). Trapezium Area = 1/2 × (a + b) × h.",
-              "Volume of 3D prisms = Base Area × Height. For a cuboid: V = l × w × h. For a cylinder: V = πr²h.",
-              "Mandatory capacity conversion rule: exactly 1,000 cubic centimetres (1000 cm³) equals 1 litre."
+              "Length: 10 mm = 1 cm, 100 cm = 1 m, and 1000 m = 1 km.",
+              "Mass: 1000 g = 1 kg, and 1000 kg = 1 tonne.",
+              "Capacity: 1000 ml = 1 litre. Also, 1000 cm³ = 1 litre for volume-capacity problems.",
             ],
             workedExample: {
-              question: "A rectangular water tank measures 50 cm long, 40 cm wide, and 30 cm high. Calculate its capacity in litres.",
+              question: "Convert 3.75 kg to grams.",
               steps: [
-                "Step 1: Calculate volume in cubic cm: V = l × w × h = 50 × 40 × 30 = 60,000 cm³.",
-                "Step 2: Convert cm³ to litres using conversion rule 1000 cm³ = 1 litre.",
-                "Step 3: 60,000 ÷ 1000 = 60 litres."
+                "Step 1: 1 kg = 1000 g.",
+                "Step 2: 3.75 × 1000 = 3750.",
               ],
-              answer: "The tank capacity is 60 litres."
+              answer: "3.75 kg = 3750 g.",
             },
             tryThis: {
-              question: "Calculate the area of a circle whose radius is 7 cm (Take π = 22/7).",
-              choices: ["154 cm²", "44 cm²", "308 cm²", "77 cm²"],
+              question: "Convert 4.2 litres to millilitres.",
+              choices: ["4200 ml", "420 ml", "42 ml", "42000 ml"],
               correct: 0,
-              explanation: "Area = (22/7) × 7 × 7 = 22 × 7 = 154 cm²."
-            }
+              explanation: "1 litre = 1000 ml, so 4.2 × 1000 = 4200 ml.",
+            },
+          },
+        ],
+      },
+      {
+        subtopicId: "perimeter-area-volume",
+        title: "2. Perimeter, area and volume",
+        modules: [
+          {
+            moduleId: "perimeter-area-2d",
+            title: "Perimeter and area of plane shapes",
+            bigIdea: "Perimeter measures distance around a shape; area measures surface covered.",
+            learnIt: [
+              "Rectangle: perimeter = 2(l + w), area = l × w.",
+              "Triangle: area = 1/2 × base × height. The height must be perpendicular to the base.",
+              "Circle: circumference = 2πr or πd; area = πr². Use the value of π given in the question.",
+            ],
+            workedExample: {
+              question: "Find the area of a triangle with base 14 cm and height 9 cm.",
+              steps: [
+                "Step 1: Area = 1/2 × base × height.",
+                "Step 2: Area = 1/2 × 14 × 9.",
+                "Step 3: 7 × 9 = 63.",
+              ],
+              answer: "63 cm²",
+            },
+            tryThis: {
+              question: "Find the perimeter of a rectangle 15 cm long and 6 cm wide.",
+              choices: ["42 cm", "90 cm", "21 cm", "36 cm"],
+              correct: 0,
+              explanation: "Perimeter = 2(15 + 6) = 2 × 21 = 42 cm.",
+            },
           },
           {
-            moduleId: "business-maths-money",
-            title: "Business Mathematics: Profit, Loss and Simple Interest",
-            bigIdea: "Financial arithmetic calculates percentage profit or loss and interest earned over time.",
+            moduleId: "volume-3d-capacity",
+            title: "Volume and capacity",
+            bigIdea: "Volume measures space occupied by a solid and can connect to litres for containers.",
             learnIt: [
-              "Profit = Selling Price (SP) - Cost Price (CP). Percentage Profit = (Profit ÷ Cost Price) × 100%.",
-              "Simple Interest formula: I = (P × R × T) ÷ 100, where P is Principal, R is annual rate percentage, and T is time in years."
+              "Cuboid volume = length × width × height. Use cubic units such as cm³ or m³.",
+              "Cylinder volume = πr²h. Find the circular base area first, then multiply by height.",
+              "For containers, remember 1000 cm³ = 1 litre. This helps change volume into capacity.",
             ],
             workedExample: {
-              question: "Calculate the simple interest earned on UGX 300,000 deposited in a bank for 2 years at an interest rate of 5% per annum.",
+              question: "A tank is 50 cm long, 40 cm wide and 30 cm high. Find its capacity in litres.",
               steps: [
-                "Step 1: State Simple Interest formula: I = (P × R × T) ÷ 100.",
-                "Step 2: Substitute values: I = (300,000 × 5 × 2) ÷ 100.",
-                "Step 3: Simplify: 3,000 × 10 = UGX 30,000."
+                "Step 1: Volume = 50 × 40 × 30 = 60000 cm³.",
+                "Step 2: 1000 cm³ = 1 litre.",
+                "Step 3: 60000 ÷ 1000 = 60 litres.",
               ],
-              answer: "The simple interest earned is UGX 30,000."
+              answer: "60 litres",
             },
             tryThis: {
-              question: "A trader bought a radio for UGX 80,000 and sold it for UGX 100,000. Find the percentage profit.",
-              choices: ["25%", "20%", "15%", "30%"],
+              question: "Find the volume of a cuboid 8 cm by 5 cm by 4 cm.",
+              choices: ["160 cm³", "40 cm³", "80 cm³", "17 cm³"],
               correct: 0,
-              explanation: "Profit = 20,000. % Profit = (20,000 ÷ 80,000) × 100% = 1/4 × 100% = 25%."
-            }
-          }
-        ]
-      }
-    ],quiz: [
-      { q: "Find the area of a circle of radius 7 cm. (Take \u03c0 = 22/7)", choices: ["154 cm\u00b2", "44 cm\u00b2", "308 cm\u00b2", "77 cm\u00b2"], correct: 0, "why": "Area = \u03c0r\u00b2 = (22/7) \u00d7 7 \u00d7 7 = 22 \u00d7 7 = 154 cm\u00b2." },
-      { q: "Find the perimeter of a rectangle whose length is 12 cm and width is 8 cm.", choices: ["40 cm", "96 cm", "20 cm", "48 cm"], correct: 0, "why": "Perimeter = 2(L + W) = 2(12 + 8) = 2 \u00d7 20 = 40 cm." },
-      { q: "Find the volume of a cuboid measuring 10 cm by 5 cm by 4 cm.", choices: ["200 cm\u00b3", "100 cm\u00b3", "400 cm\u00b3", "19 cm\u00b3"], correct: 0, "why": "Volume = L \u00d7 W \u00d7 H = 10 \u00d7 5 \u00d7 4 = 200 cm\u00b3." },
-      { q: "Convert 4.5 litres into millilitres.", choices: ["4,500 ml", "450 ml", "45,000 ml", "45 ml"], correct: 0, "why": "1 litre = 1,000 ml. 4.5 \u00d7 1,000 = 4,500 ml." },
-      { q: "Calculate the simple interest on UGX 200,000 for 2 years at a rate of 5% per annum.", choices: ["UGX 20,000", "UGX 10,000", "UGX 40,000", "UGX 25,000"], correct: 0, "why": "Interest = (P \u00d7 R \u00d7 T) / 100 = (200,000 \u00d7 5 \u00d7 2) / 100 = UGX 20,000." },
-      { q: "A trader bought a goat for UGX 120,000 and sold it for UGX 150,000. Find the percentage profit.", choices: ["25%", "20%", "30%", "15%"], correct: 0, "why": "Profit = 30,000. Profit % = (30,000 / 120,000) \u00d7 100 = 25%." },
-      { q: "Find the area of a trapezium with parallel sides 8 cm and 12 cm and perpendicular height 6 cm.", choices: ["60 cm\u00b2", "120 cm\u00b2", "48 cm\u00b2", "72 cm\u00b2"], correct: 0, "why": "Area = 1/2 \u00d7 (a + b) \u00d7 h = 1/2 \u00d7 (8 + 12) \u00d7 6 = 1/2 \u00d7 20 \u00d7 6 = 60 cm\u00b2." },
-      { q: "Convert 3.2 tonnes into kilograms.", choices: ["3,200 kg", "320 kg", "32,000 kg", "32 kg"], correct: 0, "why": "1 tonne = 1,000 kg. 3.2 \u00d7 1,000 = 3,200 kg." },
+              explanation: "8 × 5 × 4 = 160 cm³.",
+            },
+          },
+        ],
+      },
+      {
+        subtopicId: "money-business",
+        title: "3. Money and business arithmetic",
+        modules: [
+          {
+            moduleId: "profit-loss-interest",
+            title: "Profit, loss and simple interest",
+            bigIdea: "Money questions often compare cost price, selling price and time-based interest.",
+            learnIt: [
+              "Profit = selling price - cost price. Loss = cost price - selling price.",
+              "Percentage profit or loss is calculated over cost price, not selling price.",
+              "Simple interest: I = (P × R × T) ÷ 100, where P is principal, R is rate per year and T is time in years.",
+            ],
+            workedExample: {
+              question: "A trader buys a bag for UGX 80,000 and sells it for UGX 100,000. Find the percentage profit.",
+              steps: [
+                "Step 1: Profit = 100,000 - 80,000 = UGX 20,000.",
+                "Step 2: Percentage profit = (20,000 ÷ 80,000) × 100%.",
+                "Step 3: 20,000/80,000 = 1/4, so 1/4 × 100% = 25%.",
+              ],
+              answer: "25% profit",
+            },
+            tryThis: {
+              question: "Find the simple interest on UGX 300,000 for 2 years at 5% per year.",
+              choices: ["UGX 30,000", "UGX 15,000", "UGX 3000", "UGX 60,000"],
+              correct: 0,
+              explanation: "I = (300,000 × 5 × 2) ÷ 100 = UGX 30,000.",
+            },
+          },
+        ],
+      },
+    ],
+    quiz: [
+      { q: "Convert 3.2 tonnes into kilograms.", choices: ["3200 kg", "320 kg", "32000 kg", "32 kg"], correct: 0, why: "1 tonne = 1000 kg, so 3.2 × 1000 = 3200 kg." },
+      { q: "Convert 4.5 litres into millilitres.", choices: ["4500 ml", "450 ml", "45000 ml", "45 ml"], correct: 0, why: "1 litre = 1000 ml, so 4.5 × 1000 = 4500 ml." },
+      { q: "Find the perimeter of a rectangle 12 cm by 8 cm.", choices: ["40 cm", "96 cm", "20 cm", "48 cm"], correct: 0, why: "Perimeter = 2(12 + 8) = 40 cm." },
+      { q: "Find the area of a circle of radius 7 cm. Take π = 22/7.", choices: ["154 cm²", "44 cm²", "308 cm²", "77 cm²"], correct: 0, why: "Area = πr² = 22/7 × 7 × 7 = 154 cm²." },
+      { q: "Find the volume of a cuboid 10 cm by 5 cm by 4 cm.", choices: ["200 cm³", "100 cm³", "400 cm³", "19 cm³"], correct: 0, why: "Volume = length × width × height = 10 × 5 × 4 = 200 cm³." },
+      { q: "A tank has volume 25000 cm³. What is its capacity in litres?", choices: ["25 litres", "250 litres", "2.5 litres", "25000 litres"], correct: 0, why: "1000 cm³ = 1 litre, so 25000 ÷ 1000 = 25 litres." },
+      { q: "A trader bought a goat for UGX 120,000 and sold it for UGX 150,000. Find the percentage profit.", choices: ["25%", "20%", "30%", "15%"], correct: 0, why: "Profit = 30,000. Profit % = 30,000/120,000 × 100 = 25%." },
+      { q: "Calculate simple interest on UGX 200,000 for 2 years at 5% per year.", choices: ["UGX 20,000", "UGX 10,000", "UGX 40,000", "UGX 25,000"], correct: 0, why: "I = (200,000 × 5 × 2) ÷ 100 = UGX 20,000." },
     ],
   },
   {
@@ -1458,74 +1704,190 @@ export const TOPICS: Topic[] = [
     themeId: "theme-6-algebra",
     themeName: "Algebra",
     title: "Algebra",
-    estMinutes: 40,
+    estMinutes: 45,
     status: "published",
     reviewStatus: "verified",
     note: {
-      intro: "Why this matters: Mastering Algebra builds essential mathematical problem-solving skills tested across Section A and Section B of the PLE examination.",
+      intro: "Algebra uses letters to stand for numbers and helps learners solve unknown values in equations and word problems.",
       learningObjectives: [
-        "Solve numerical and word problems related to Algebraic expressions.",
-        "Solve numerical and word problems related to Substitution.",
-        "Solve numerical and word problems related to Equations.",
-        "Solve numerical and word problems related to Inequalities and solution sets.",
+        "Simplify algebraic expressions by collecting like terms.",
+        "Substitute values into expressions.",
+        "Solve linear equations and inequalities.",
+        "Translate word problems into algebraic statements.",
       ],
       whatYouNeedToKnow: [
-        "Algebra groups foundational P7 competencies including: Algebraic expressions, Substitution, Equations, Inequalities and solution sets, Algebra in real-life situations.",
-        "Follow step-by-step methods, always show working clearly, and check your units or signs.",
+        "A letter such as x or y can represent an unknown number or a changing number.",
+        "Like terms have the same letter part, such as 3a and 5a. Unlike terms cannot be combined.",
+        "Equations are solved by doing the same operation to both sides until the unknown is alone.",
       ],
       worked: {
-        problem: "Evaluate a basic Algebra problem.",
+        problem: "Solve: 3x + 7 = 28.",
         steps: [
-          "Identify given values.",
-          "Apply correct formula or operation.",
+          "Subtract 7 from both sides: 3x = 21.",
+          "Divide both sides by 3: x = 7.",
         ],
-        answer: "Correct verified answer.",
+        answer: "x = 7.",
       },
+      commonMistakes: [
+        "Adding unlike terms such as 3a + 2b and calling it 5ab.",
+        "Changing only one side of an equation.",
+        "Forgetting to flip the inequality sign when multiplying or dividing by a negative number.",
+      ],
       recap: [
-        "Understand key formulas and rules of Algebra.",
-        "Check working step by step and verify units and arithmetic.",
+        "Collect only like terms.",
+        "Substitution means replacing letters with given numbers.",
+        "Solve equations by using inverse operations on both sides.",
       ],
     },
     subtopics: [
       {
-        subtopicId: "algebra-core",
-        title: "1. Expressions, Equations, Inequalities and Word Problems",
+        subtopicId: "algebra-expressions",
+        title: "1. Expressions and substitution",
         modules: [
           {
-            moduleId: "algebraic-equations-inequalities",
-            title: "Linear Equations and Inequalities on a Number Line",
-            bigIdea: "Algebra solves linear equations and inequalities, representing solution sets on number lines.",
+            moduleId: "like-terms-expressions",
+            title: "Simplifying expressions",
+            bigIdea: "Algebraic expressions become simpler when like terms are collected together.",
             learnIt: [
-              "Solving linear equations: perform identical inverse operations on both sides to isolate the variable x.",
-              "Solving linear inequalities: when dividing or multiplying both sides by a negative number, the inequality sign MUST flip direction (< becomes >).",
-              "Number line representation: use an open unfilled circle for < or >, and a closed filled dark circle for ≤ or ≥."
+              "A term is a part of an expression, such as 4a, -2b or 7. Like terms have the same letter part.",
+              "Collect like terms by adding or subtracting their coefficients. For example, 5a - 2a = 3a.",
+              "Constants are number terms without letters. They can be combined with other constants.",
             ],
             workedExample: {
-              question: "Solve the inequality: 3x - 5 < 10.",
+              question: "Simplify: 6x + 4y - 2x + 3y - 5.",
               steps: [
-                "Step 1: Add 5 to both sides: 3x < 10 + 5 -> 3x < 15.",
-                "Step 2: Divide both sides by positive 3: x < 15 ÷ 3 -> x < 5."
+                "Step 1: Group x terms: 6x - 2x = 4x.",
+                "Step 2: Group y terms: 4y + 3y = 7y.",
+                "Step 3: Keep the constant -5.",
               ],
-              answer: "Solution set: x < 5."
+              answer: "4x + 7y - 5",
             },
             tryThis: {
-              question: "Solve for y: 4y + 7 = 27",
-              choices: ["5", "6", "4", "8"],
+              question: "Simplify: 8a - 3a + 2b",
+              choices: ["5a + 2b", "7ab", "5a - 2b", "11a + 2b"],
               correct: 0,
-              explanation: "4y = 27 - 7 = 20 -> y = 20 ÷ 4 = 5."
-            }
-          }
-        ]
-      }
-    ],quiz: [
-      { q: "Solve for y: 4y \u2212 5 = 19", choices: ["6", "5", "7", "4"], correct: 0, "why": "Add 5 to both sides: 4y = 24. Divide by 4: y = 6." },
-      { q: "If p = 3 and q = 5, evaluate 2p + 3q.", choices: ["21", "16", "18", "24"], correct: 0, "why": "2(3) + 3(5) = 6 + 15 = 21." },
-      { q: "Simplify: 5a + 3b \u2212 2a + 4b", choices: ["3a + 7b", "7a + b", "3a \u2212 7b", "8a + 7b"], correct: 0, "why": "Group like terms: (5a \u2212 2a) + (3b + 4b) = 3a + 7b." },
-      { q: "Solve the inequality: 2x + 4 < 12", choices: ["x < 4", "x > 4", "x < 8", "x = 4"], correct: 0, "why": "Solving Linear Inequalities: solve simple and compound inequalities (e.g., -2 < x ≤ 5) by performing identical operations across all inequality signs. Remember: when dividing or multiplying both sides of an inequality by a negative number, the inequality sign MUST flip direction (< becomes >). Number line representation: use an open unfilled circle for < or >, and a closed dark filled circle for ≤ or ≥." },
-      { q: "The sum of three consecutive whole numbers is 36. Find the smallest number.", choices: ["11", "12", "13", "10"], correct: 0, "why": "Let numbers be x, x+1, x+2. 3x + 3 = 36 -> 3x = 33 -> x = 11." },
-      { q: "Expand and simplify: 3(x + 4) \u2212 2(x \u2212 1)", choices: ["x + 14", "x + 10", "5x + 14", "x + 12"], correct: 0, "why": "3x + 12 \u2212 2x + 2 = x + 14." },
-      { q: "If 5 pencils cost UGX 15,000, what is the cost of y pencils?", choices: ["3,000y", "15,000y", "3,000 + y", "15,000/y"], correct: 0, "why": "Cost of 1 pencil = 15,000 \u00f7 5 = 3,000. Cost of y pencils = 3,000y." },
-      { q: "Solve for m: m/3 + 4 = 9", choices: ["15", "5", "12", "27"], correct: 0, "why": "Subtract 4: m/3 = 5. Multiply by 3: m = 15." },
+              explanation: "8a - 3a = 5a. The 2b is unlike, so it remains 2b.",
+            },
+          },
+          {
+            moduleId: "substitution-values",
+            title: "Substitution",
+            bigIdea: "Substitution means replacing letters with given numbers, then calculating carefully.",
+            learnIt: [
+              "When a value is given, put it wherever the letter appears. If p = 4, then 3p means 3 × 4.",
+              "Use brackets when substituting negative numbers to avoid sign mistakes.",
+              "Follow BODMAS/BOOMDAS after substitution: brackets, powers, multiplication/division, addition/subtraction.",
+            ],
+            workedExample: {
+              question: "If a = 3 and b = 5, evaluate 2a + 3b.",
+              steps: [
+                "Step 1: Replace a with 3 and b with 5.",
+                "Step 2: 2a + 3b = 2(3) + 3(5).",
+                "Step 3: 6 + 15 = 21.",
+              ],
+              answer: "21",
+            },
+            tryThis: {
+              question: "If x = 4, find 5x - 6.",
+              choices: ["14", "20", "11", "26"],
+              correct: 0,
+              explanation: "5(4) - 6 = 20 - 6 = 14.",
+            },
+          },
+        ],
+      },
+      {
+        subtopicId: "algebra-equations",
+        title: "2. Equations, inequalities and word problems",
+        modules: [
+          {
+            moduleId: "linear-equations",
+            title: "Solving linear equations",
+            bigIdea: "An equation stays balanced when the same operation is done on both sides.",
+            learnIt: [
+              "Use inverse operations to undo what has been done to the unknown. Addition is undone by subtraction, and multiplication is undone by division.",
+              "Whatever you do to one side of the equation must also be done to the other side.",
+              "Check your answer by substituting it back into the original equation.",
+            ],
+            workedExample: {
+              question: "Solve: 4y - 5 = 19.",
+              steps: [
+                "Step 1: Add 5 to both sides: 4y = 24.",
+                "Step 2: Divide both sides by 4: y = 6.",
+                "Step 3: Check: 4(6) - 5 = 24 - 5 = 19.",
+              ],
+              answer: "y = 6",
+            },
+            tryThis: {
+              question: "Solve: 3m + 4 = 22",
+              choices: ["6", "8", "7", "5"],
+              correct: 0,
+              explanation: "3m = 18, so m = 6.",
+            },
+          },
+          {
+            moduleId: "inequalities-number-lines",
+            title: "Inequalities and solution sets",
+            bigIdea: "Inequalities show a range of possible answers rather than one answer only.",
+            learnIt: [
+              "The signs < and > mean less than and greater than. The signs ≤ and ≥ include equality.",
+              "Solve inequalities like equations, but if you multiply or divide by a negative number, reverse the inequality sign.",
+              "On a number line, use an open circle for < or > and a closed circle for ≤ or ≥.",
+            ],
+            visual: { title: "Inequality number line", kind: "timeline", description: "Use open and closed circles to show whether an endpoint is included in the solution set." },
+            workedExample: {
+              question: "Solve: 2x + 4 < 12.",
+              steps: [
+                "Step 1: Subtract 4 from both sides: 2x < 8.",
+                "Step 2: Divide both sides by positive 2: x < 4.",
+              ],
+              answer: "x < 4",
+            },
+            tryThis: {
+              question: "Solve: -2x > 10",
+              choices: ["x < -5", "x > -5", "x < 5", "x > 5"],
+              correct: 0,
+              explanation: "Divide by -2 and reverse the sign: x < -5.",
+            },
+          },
+          {
+            moduleId: "algebra-word-problems",
+            title: "Algebra word problems",
+            bigIdea: "Word problems become easier when unknowns are represented by letters.",
+            learnIt: [
+              "Choose a letter for the unknown number. Let x be the number unless the question suggests another letter.",
+              "Translate words carefully: 'sum' means add, 'difference' means subtract, 'product' means multiply, and 'quotient' means divide.",
+              "For consecutive numbers, use x, x + 1, x + 2. For consecutive even numbers, use x, x + 2, x + 4.",
+            ],
+            workedExample: {
+              question: "The sum of three consecutive whole numbers is 36. Find the numbers.",
+              steps: [
+                "Step 1: Let the numbers be x, x + 1 and x + 2.",
+                "Step 2: x + x + 1 + x + 2 = 36.",
+                "Step 3: 3x + 3 = 36, so 3x = 33 and x = 11.",
+                "Step 4: The numbers are 11, 12 and 13.",
+              ],
+              answer: "11, 12 and 13",
+            },
+            tryThis: {
+              question: "Five pencils cost UGX 15,000. What is the cost of y pencils?",
+              choices: ["3000y", "15000y", "3000 + y", "15000/y"],
+              correct: 0,
+              explanation: "One pencil costs 15000 ÷ 5 = 3000, so y pencils cost 3000y.",
+            },
+          },
+        ],
+      },
+    ],
+    quiz: [
+      { q: "Simplify: 5a + 3b - 2a + 4b", choices: ["3a + 7b", "7a + b", "3a - 7b", "8a + 7b"], correct: 0, why: "Collect like terms: 5a - 2a = 3a and 3b + 4b = 7b." },
+      { q: "If p = 3 and q = 5, evaluate 2p + 3q.", choices: ["21", "16", "18", "24"], correct: 0, why: "2(3) + 3(5) = 6 + 15 = 21." },
+      { q: "Solve for y: 4y - 5 = 19", choices: ["6", "5", "7", "4"], correct: 0, why: "Add 5 to both sides: 4y = 24. Divide by 4: y = 6." },
+      { q: "Solve: m/3 + 4 = 9", choices: ["15", "5", "12", "27"], correct: 0, why: "Subtract 4: m/3 = 5. Multiply by 3: m = 15." },
+      { q: "Solve the inequality: 2x + 4 < 12", choices: ["x < 4", "x > 4", "x < 8", "x = 4"], correct: 0, why: "2x < 8, so x < 4." },
+      { q: "Solve: -3x ≥ 12", choices: ["x ≤ -4", "x ≥ -4", "x ≤ 4", "x ≥ 4"], correct: 0, why: "Divide by -3 and reverse the inequality sign: x ≤ -4." },
+      { q: "The sum of three consecutive whole numbers is 36. Find the smallest number.", choices: ["11", "12", "13", "10"], correct: 0, why: "Let them be x, x+1, x+2. 3x + 3 = 36, so x = 11." },
+      { q: "Expand and simplify: 3(x + 4) - 2(x - 1)", choices: ["x + 14", "x + 10", "5x + 14", "x + 12"], correct: 0, why: "3x + 12 - 2x + 2 = x + 14." },
     ],
   },
 ];
