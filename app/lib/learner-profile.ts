@@ -1,11 +1,9 @@
-// Frictionless Learner Profile & Class Lock (DEV-015)
-// Stores learner grade choice (P6 vs P7) and optional name in browser storage.
-// Ensures P6 learners see P6 content and P7 learners see P7 content without needing
-// passwords or internet sign-ins.
+// Frictionless Learner Profile & Class Lock (legacy helper)
+// Current primary session handling is in auth-session.ts / AuthGate.tsx.
 
 export interface LearnerProfile {
   name?: string;
-  grade: "P6" | "P7";
+  grade: "P4" | "P5" | "P6" | "P7";
   onboardedAt: string;
 }
 

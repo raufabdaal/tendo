@@ -3,12 +3,27 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { getLearnerProfile, saveLearnerProfile, type LearnerProfile } from "@/lib/learner-profile";
+import type { TendoGrade } from "@/lib/auth-session";
 
-export default function ClassSelector({ activeLevel }: { activeLevel: "P6" | "P7" }) {
+function gradeHome(grade: TendoGrade) {
+  if (grade === "P4") return "/p4-home";
+  if (grade === "P5") return "/p5-home";
+  if (grade === "P6") return "/p6-home";
+  return "/";
+}
+
+function gradeLabel(grade?: TendoGrade) {
+  if (grade === "P4") return "Primary Four (P.4)";
+  if (grade === "P5") return "Primary Five (P.5)";
+  if (grade === "P6") return "Primary Six (P.6)";
+  return "Primary Seven (P.7 PLE)";
+}
+
+export default function ClassSelector({ activeLevel }: { activeLevel: TendoGrade }) {
   const [profile, setProfile] = useState<LearnerProfile | null>(null);
   const [showModal, setShowModal] = useState(false);
   const [tempName, setTempName] = useState("");
-  const [tempGrade, setTempGrade] = useState<"P6" | "P7">(activeLevel);
+  const [tempGrade, setTempGrade] = useState<TendoGrade>(activeLevel);
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
@@ -35,11 +50,8 @@ export default function ClassSelector({ activeLevel }: { activeLevel: "P6" | "P7
     setProfile(newProfile);
     setShowModal(false);
 
-    // If locked into P6 but viewing P7 page (or vice versa), navigate to their grade hub
-    if (tempGrade === "P6" && activeLevel === "P7") {
-      window.location.href = "/p6-home";
-    } else if (tempGrade === "P7" && activeLevel === "P6") {
-      window.location.href = "/";
+    if (tempGrade !== activeLevel) {
+      window.location.href = gradeHome(tempGrade);
     }
   }
 
@@ -85,45 +97,28 @@ export default function ClassSelector({ activeLevel }: { activeLevel: "P6" | "P7
             Select Your Primary Class:
           </label>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
-            <button
-              type="button"
-              onClick={() => setTempGrade("P6")}
-              style={{
-                padding: "16px",
-                borderRadius: 12,
-                textAlign: "left",
-                cursor: "pointer",
-                border: tempGrade === "P6" ? "2px solid #2563eb" : "1px solid #cbd5e1",
-                background: tempGrade === "P6" ? "#eff6ff" : "#ffffff",
-              }}
-            >
-              <strong style={{ display: "block", fontSize: 16, color: tempGrade === "P6" ? "#1d4ed8" : "#0f172a" }}>
-                Primary Six (P.6)
-              </strong>
-              <span style={{ fontSize: 12, color: "#64748b" }}>
-                East African SST, Numeracy, Integrated Science foundation
-              </span>
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setTempGrade("P7")}
-              style={{
-                padding: "16px",
-                borderRadius: 12,
-                textAlign: "left",
-                cursor: "pointer",
-                border: tempGrade === "P7" ? "2px solid #2563eb" : "1px solid #cbd5e1",
-                background: tempGrade === "P7" ? "#eff6ff" : "#ffffff",
-              }}
-            >
-              <strong style={{ display: "block", fontSize: 16, color: tempGrade === "P7" ? "#1d4ed8" : "#0f172a" }}>
-                Primary Seven (P.7 PLE)
-              </strong>
-              <span style={{ fontSize: 12, color: "#64748b" }}>
-                Final PLE candidates, past papers & full syllabus
-              </span>
-            </button>
+            {(["P4", "P5", "P6", "P7"] as TendoGrade[]).map((gradeOption) => (
+              <button
+                key={gradeOption}
+                type="button"
+                onClick={() => setTempGrade(gradeOption)}
+                style={{
+                  padding: "16px",
+                  borderRadius: 12,
+                  textAlign: "left",
+                  cursor: "pointer",
+                  border: tempGrade === gradeOption ? "2px solid #2563eb" : "1px solid #cbd5e1",
+                  background: tempGrade === gradeOption ? "#eff6ff" : "#ffffff",
+                }}
+              >
+                <strong style={{ display: "block", fontSize: 16, color: tempGrade === gradeOption ? "#1d4ed8" : "#0f172a" }}>
+                  {gradeLabel(gradeOption)}
+                </strong>
+                <span style={{ fontSize: 12, color: "#64748b" }}>
+                  NCDC-aligned study path for {gradeOption}
+                </span>
+              </button>
+            ))}
           </div>
         </div>
 
@@ -161,15 +156,15 @@ export default function ClassSelector({ activeLevel }: { activeLevel: "P6" | "P7
       >
         <div>
           <strong style={{ color: "#92400e", display: "block", fontSize: 14 }}>
-            ⚠️ Viewing {activeLevel === "P7" ? "Primary Seven (P.7)" : "Primary Six (P.6)"} Hub
+            ⚠️ Viewing {gradeLabel(activeLevel)} Hub
           </strong>
           <span style={{ fontSize: 13, color: "#78350f" }}>
-            Your profile is currently locked to <strong>{profile.grade === "P6" ? "Primary Six (P.6)" : "Primary Seven (P.7)"}</strong>.
+            Your profile is currently locked to <strong>{gradeLabel(profile.grade)}</strong>.
           </span>
         </div>
         <div style={{ display: "flex", gap: 8 }}>
           <Link
-            href={profile.grade === "P6" ? "/p6-home" : "/"}
+            href={gradeHome(profile.grade)}
             className="btn btn-primary"
             style={{ fontSize: 13, padding: "6px 12px", textDecoration: "none" }}
           >
@@ -203,7 +198,7 @@ export default function ClassSelector({ activeLevel }: { activeLevel: "P6" | "P7
         <span style={{ fontSize: 24 }}>🎓</span>
         <div>
           <strong style={{ display: "block", fontSize: 14, color: "var(--text-main)" }}>
-            {profile?.name ? `${profile.name} · ` : ""}Locked into: {profile?.grade === "P6" ? "Primary Six (P.6 Foundation)" : "Primary Seven (P.7 PLE)"}
+            {profile?.name ? `${profile.name} · ` : ""}Locked into: {gradeLabel(profile?.grade)}
           </strong>
           <span style={{ fontSize: 12, color: "#64748b" }}>
             Showing study content strictly aligned with your {profile?.grade} NCDC syllabus.
@@ -212,11 +207,11 @@ export default function ClassSelector({ activeLevel }: { activeLevel: "P6" | "P7
       </div>
       <div style={{ display: "flex", gap: 8 }}>
         <Link
-          href={activeLevel === "P7" ? "/p6-home" : "/"}
+          href="/study"
           className="btn btn-secondary"
           style={{ fontSize: 12, padding: "6px 12px", textDecoration: "none" }}
         >
-          Browse {activeLevel === "P7" ? "P.6" : "P.7"}
+          Browse other classes
         </Link>
         <button
           type="button"

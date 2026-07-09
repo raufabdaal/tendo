@@ -1,9 +1,10 @@
 export type TendoRole = "student" | "teacher";
+export type TendoGrade = "P4" | "P5" | "P6" | "P7";
 
 export interface TendoSession {
   role: TendoRole;
   name?: string;
-  grade?: "P6" | "P7";
+  grade?: TendoGrade;
   schoolName?: string;
   signedInAt: string;
 }

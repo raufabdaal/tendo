@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Five (P.5)",
+    "subject": "English Language",
+    "examBody": "UNEB",
+    "exam": "PLE Foundation",
+    "source": "NCDC Primary Five Curriculum Set One, August 2010, English section",
+    "verificationStatus": "researched-from-ncdc-set-one-pdf-mirror-needs-official-copy-check",
+    "lastReviewed": "2026-07-09"
+  },
+  "themes": [
+    {
+      "id": "p5-english-set-one",
+      "name": "Primary Five English Language",
+      "topics": [
+        {
+          "id": "p5-vehicle-repair-maintenance",
+          "term": "Term I",
+          "title": "Vehicle Repair and Maintenance",
+          "periods": 23,
+          "subTopics": [
+            "Parts of a vehicle",
+            "Equipment used in vehicle repair",
+            "Present perfect tense using has and have",
+            "Must and mustn't",
+            "Conditionals using if",
+            "In order to"
+          ]
+        },
+        {
+          "id": "p5-print-media",
+          "term": "Term I",
+          "title": "Print Media",
+          "periods": 16,
+          "subTopics": [
+            "Vocabulary of newspapers, magazines, brochures and newsletters",
+            "Articles: a, an and the",
+            "Relative pronouns",
+            "Past simple and future tense",
+            "Writing articles, adverts and stories"
+          ]
+        },
+        {
+          "id": "p5-travelling",
+          "term": "Term I",
+          "title": "Travelling",
+          "periods": 15,
+          "subTopics": [
+            "Vocabulary related to travelling",
+            "Means of transport and travel charts",
+            "Adverbs",
+            "Past continuous tense",
+            "Past simple tense",
+            "Using while and often"
+          ]
+        },
+        {
+          "id": "p5-letter-writing",
+          "term": "Term II",
+          "title": "Letter Writing",
+          "periods": 10,
+          "subTopics": [
+            "Personal letters",
+            "Seasonal greetings and invitations",
+            "Parts of a personal letter",
+            "Interjections",
+            "Punctuation",
+            "Personal pronouns",
+            "Would and could structures"
+          ]
+        },
+        {
+          "id": "p5-communication",
+          "term": "Term II",
+          "title": "Communication",
+          "periods": 74,
+          "subTopics": [
+            "The Post Office",
+            "The Telephone",
+            "The Internet",
+            "Future tense and conjunctions",
+            "Past simple and present simple tense",
+            "Too...to, in order to and so as to"
+          ]
+        },
+        {
+          "id": "p5-culture",
+          "term": "Term II",
+          "title": "Culture",
+          "periods": 29,
+          "subTopics": [
+            "Nationalities",
+            "Languages",
+            "Adjectives and prepositions",
+            "Nouns and passive voice",
+            "Second conditional",
+            "Because and as structures"
+          ]
+        },
+        {
+          "id": "p5-peace-security",
+          "term": "Term III",
+          "title": "Peace and Security",
+          "periods": 15,
+          "subTopics": [
+            "Vocabulary related to peace, security, courts and police",
+            "Conjunctions",
+            "Past simple tense",
+            "Present perfect tense",
+            "So...that, and, has/have and about structures",
+            "Guided compositions and peace-related texts"
+          ]
+        },
+        {
+          "id": "p5-services-banking",
+          "term": "Term III",
+          "title": "Services: Banking",
+          "periods": 16,
+          "subTopics": [
+            "Banking vocabulary",
+            "Reading and interpreting banking information",
+            "Conjunctions",
+            "Past simple, future and present simple tense",
+            "Neither...nor and as soon as structures",
+            "Writing texts related to banking"
+          ]
+        }
+      ]
+    }
+  ]
+}

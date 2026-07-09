@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Four (P.4)",
+    "subject": "Mathematics",
+    "examBody": "UNEB",
+    "exam": "PLE Foundation",
+    "source": "NCDC Primary Four Mathematics Syllabus, 2010",
+    "verificationStatus": "verified-from-official-ncdc-pdf",
+    "lastReviewed": "2026-07-09"
+  },
+  "themes": [
+    {
+      "id": "p4-theme-sets",
+      "name": "Sets",
+      "topics": [
+        {
+          "id": "p4-set-concepts",
+          "term": "Term I",
+          "title": "Set Concepts",
+          "periods": 8,
+          "subTopics": [
+            "Identifying sets",
+            "Naming sets",
+            "Forming sets",
+            "The number of members in a set",
+            "Equivalent sets",
+            "Empty sets",
+            "Identifying common members in given sets"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4-theme-numeracy",
+      "name": "Numeracy",
+      "topics": [
+        {
+          "id": "p4-whole-numbers",
+          "term": "Term I",
+          "title": "Whole Numbers up to 100,000",
+          "periods": 20,
+          "subTopics": [
+            "Reading whole numbers up to 99,999",
+            "Counting whole numbers up to 99,999",
+            "Place value of 5-digit numbers",
+            "Value of digits in 5-digit numbers",
+            "Expanding 5-digit numbers",
+            "Writing in short form",
+            "Writing numbers in words",
+            "Writing numbers in figures",
+            "Rounding off whole numbers to the nearest 10, 100 and 1,000",
+            "Reading and writing Roman numbers up to XX"
+          ]
+        },
+        {
+          "id": "p4-operations-whole-numbers",
+          "term": "Term I",
+          "title": "Operations on Whole Numbers",
+          "periods": 20,
+          "subTopics": [
+            "Adding whole numbers up to 5 digits where the sum does not exceed 99,999 without regrouping",
+            "Adding whole numbers up to 5 digits where the sum does not exceed 99,999 with regrouping",
+            "Forming and solving simple word problems involving addition",
+            "Subtracting whole numbers up to 5 digits where the terms do not exceed 99,999 without regrouping",
+            "Subtracting whole numbers up to 5 digits where the terms do not exceed 99,999 with regrouping",
+            "Forming and solving simple word problems involving subtraction",
+            "Multiplying whole numbers up to 3 digits by 0, 10 and 100",
+            "Multiplying whole numbers up to 3 digits by whole numbers 1 to 9",
+            "Forming and solving simple word problems using multiplication",
+            "Forming and solving simple word problems using division",
+            "Dividing 4-digit numbers by whole numbers from 1 to 10 and 100 without remainders"
+          ]
+        },
+        {
+          "id": "p4-patterns-sequences",
+          "term": "Term I",
+          "title": "Patterns and Sequences",
+          "periods": 12,
+          "subTopics": [
+            "Recognising and naming common shapes",
+            "Identifying even and odd numbers",
+            "Recognising patterns and sequences from given examples",
+            "Forming patterns and sequences"
+          ]
+        },
+        {
+          "id": "p4-fractions",
+          "term": "Term II",
+          "title": "Fractions",
+          "periods": 24,
+          "subTopics": [
+            "Identifying simple equivalent fractions less than 1",
+            "Identifying and naming proper fractions, improper fractions and mixed numbers",
+            "Renaming improper fractions as mixed numbers and vice versa",
+            "Equivalent fractions",
+            "Ordering and comparing fractions with the same denominator using a number line and diagrams",
+            "Finding simple fractions of a group",
+            "Adding fractions with the same denominator",
+            "Subtracting fractions with the same denominator",
+            "Simple word problems involving fractions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4-theme-geometry",
+      "name": "Geometry",
+      "topics": [
+        {
+          "id": "p4-two-dimensional-geometry",
+          "term": "Term II",
+          "title": "2-Dimensional Geometry",
+          "periods": 18,
+          "subTopics": [
+            "Identifying 2-dimensional figures",
+            "Naming 2-dimensional figures",
+            "Using rulers, set squares or compasses to construct equilateral triangles, rectangles, squares, triangles and lines",
+            "Recognising right angles in real-life situations",
+            "Building polygon figures using straws, sticks, reeds or wires",
+            "Introducing perimeter of rectangles, squares and triangles",
+            "Introducing area of squares and rectangles"
+          ]
+        },
+        {
+          "id": "p4-three-dimensional-geometry",
+          "term": "Term II",
+          "title": "3-Dimensional Geometry",
+          "periods": 8,
+          "subTopics": [
+            "Identifying solids: cube, cuboid, sphere, cylinder, pyramid and cone",
+            "Identifying faces, edges and vertices of solids",
+            "Building models of solids"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4-theme-data",
+      "name": "Interpretation of Graphs and Data",
+      "topics": [
+        {
+          "id": "p4-data-handling",
+          "term": "Term II",
+          "title": "Data Handling",
+          "periods": 12,
+          "subTopics": [
+            "Representing and interpreting pictographs",
+            "Representing and interpreting bar graphs",
+            "Representing and interpreting line graphs",
+            "Using tally marks and common counting symbols to collect and group data"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4-theme-measurement",
+      "name": "Measurement",
+      "topics": [
+        {
+          "id": "p4-money",
+          "term": "Term III",
+          "title": "Money",
+          "periods": 16,
+          "subTopics": [
+            "Identifying the coins and notes of Uganda currency",
+            "Adding money",
+            "Subtracting money",
+            "Conversion of money",
+            "Buying and selling with Uganda currency",
+            "Calculating simple profit and loss"
+          ]
+        },
+        {
+          "id": "p4-time",
+          "term": "Term III",
+          "title": "Time",
+          "periods": 16,
+          "subTopics": [
+            "Revising names of days and months in English",
+            "Using calendars",
+            "Telling time in hours and minutes",
+            "Converting measures of time, such as months to days, days to weeks, hours to minutes and vice versa",
+            "Finding duration"
+          ]
+        },
+        {
+          "id": "p4-length-mass-capacity",
+          "term": "Term III",
+          "title": "Length, Mass and Capacity",
+          "periods": 20,
+          "subTopics": [
+            "Identifying standard instruments used for measuring length, mass and capacity",
+            "Using standard units to measure length, mass and capacity",
+            "Distance",
+            "Measuring perimeter of rectangles, squares and triangles",
+            "Calculating the areas of squares and rectangles",
+            "Solving simple problems using standard units of measure"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4-theme-algebra",
+      "name": "Algebra",
+      "topics": [
+        {
+          "id": "p4-equations-without-letters",
+          "term": "Term III",
+          "title": "Equations without Letters",
+          "periods": 8,
+          "subTopics": [
+            "Simple equations without letters",
+            "Using the relationship between addition and subtraction",
+            "Using the relationship between multiplication and division",
+            "Changing simple word problems into simple equations without letters",
+            "Solving equations using the four operations"
+          ]
+        }
+      ]
+    }
+  ]
+}

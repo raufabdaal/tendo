@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Seven (P.7)",
+    "subject": "Religious Education",
+    "examBody": "UNEB",
+    "exam": "PLE",
+    "source": "NCDC Primary Seven Set One Religious Education structure as implemented from prior research pass; verify against official NCDC copy during human review",
+    "verificationStatus": "implemented-needs-official-copy-check",
+    "lastReviewed": "2026-07-09"
+  },
+  "themes": [
+    {
+      "id": "p7-cre",
+      "name": "Christian Religious Education",
+      "topics": [
+        {
+          "id": "cre-theme-witnessing-gifts",
+          "option": "CRE",
+          "term": "Term I",
+          "title": "An Overview of the P7 CRE Curriculum Theme",
+          "subTopics": ["Witnessing for Christ", "God-given talents", "Using talents in service"]
+        },
+        {
+          "id": "cre-ancestors-pioneers-faith",
+          "option": "CRE",
+          "term": "Term I",
+          "title": "Ancestors and Pioneers of Faith",
+          "subTopics": ["Old Testament ancestors", "New Testament pioneers", "Uganda Martyrs and faith examples"]
+        },
+        {
+          "id": "cre-gods-freedom-law",
+          "option": "CRE",
+          "term": "Term I",
+          "title": "God's Freedom and the Law",
+          "subTopics": ["Ten Commandments", "Christian freedom", "Law and daily life"]
+        },
+        {
+          "id": "cre-person-ministry-jesus",
+          "option": "CRE",
+          "term": "Term II",
+          "title": "The Person and Ministry of Jesus Christ",
+          "subTopics": ["Teachings of Jesus", "Parables", "Miracles and compassion"]
+        },
+        {
+          "id": "cre-passion-resurrection",
+          "option": "CRE",
+          "term": "Term II",
+          "title": "Passion, Death, and Resurrection of Christ",
+          "subTopics": ["Passion of Christ", "Death of Christ", "Resurrection and meaning for Christians"]
+        },
+        {
+          "id": "cre-spirit-church-sacraments",
+          "option": "CRE",
+          "term": "Term III",
+          "title": "The Holy Spirit and the Church Today",
+          "subTopics": ["Holy Spirit", "Gifts and fruits", "Sacraments and church life"]
+        },
+        {
+          "id": "cre-citizenship-service",
+          "option": "CRE",
+          "term": "Term III",
+          "title": "Christian Citizenship and Service",
+          "subTopics": ["Christian citizenship", "Work and service", "Social justice and care for others"]
+        }
+      ]
+    },
+    {
+      "id": "p7-ire",
+      "name": "Islamic Religious Education",
+      "topics": [
+        {
+          "id": "ire-tawhid-iman",
+          "option": "IRE",
+          "term": "Term I",
+          "title": "Belief in Allah (Tawhid) and Articles of Faith (Iman)",
+          "subTopics": ["Tawheed", "Pillars of Iman", "Asma-ul-Husna and avoiding shirk"]
+        },
+        {
+          "id": "ire-pillars-ibadah",
+          "option": "IRE",
+          "term": "Term I",
+          "title": "The Five Pillars of Islam (Ibadah / Worship)",
+          "subTopics": ["Shahadah and Salah", "Zakah and Sawm", "Hajj and worship practice"]
+        },
+        {
+          "id": "ire-quran-hadith",
+          "option": "IRE",
+          "term": "Term I",
+          "title": "The Holy Qur'an and Hadith Guidance",
+          "subTopics": ["Revelation of the Qur'an", "Compilation and respect for the Qur'an", "Hadith and guidance"]
+        },
+        {
+          "id": "ire-akhlaq-morals",
+          "option": "IRE",
+          "term": "Term II",
+          "title": "Islamic Morals, Ethics and Social Relations (Akhlaq)",
+          "subTopics": ["Good character", "Family and neighbour relations", "Honesty and modesty"]
+        },
+        {
+          "id": "ire-hadith-sunnah",
+          "option": "IRE",
+          "term": "Term II",
+          "title": "Hadith and Sunnah Guidance",
+          "subTopics": ["Meaning of Hadith and Sunnah", "Prophetic teachings", "Application in daily life"]
+        },
+        {
+          "id": "ire-history-seerah",
+          "option": "IRE",
+          "term": "Term III",
+          "title": "Islamic History, Seerah and the Four Caliphs",
+          "subTopics": ["Prophet Muhammad in Makkah and Madinah", "Hijrah", "Rightly Guided Caliphs"]
+        },
+        {
+          "id": "ire-adab-social-justice",
+          "option": "IRE",
+          "term": "Term III",
+          "title": "Islamic Adab (Etiquette) and Social Justice",
+          "subTopics": ["Adab and etiquette", "Halal and haram basics", "Fairness, trade and social justice"]
+        }
+      ]
+    }
+  ]
+}

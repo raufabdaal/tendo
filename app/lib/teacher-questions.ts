@@ -5,7 +5,7 @@ export interface TeacherQuestion {
   id: string;
   title: string;
   prompt: string;
-  grade: "P6" | "P7";
+  grade: "P4" | "P5" | "P6" | "P7";
   subject: string;
   marks: number;
   markingGuide?: string;

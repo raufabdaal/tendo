@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Four (P.4)",
+    "subject": "Social Studies",
+    "examBody": "UNEB",
+    "exam": "PLE Foundation",
+    "source": "NCDC Primary Four Social Studies Syllabus, 2010",
+    "verificationStatus": "researched-from-ncdc-pdf",
+    "lastReviewed": "2026-07-09"
+  },
+  "themes": [
+    {
+      "id": "p4-sst-living-together-district",
+      "name": "Living Together in Our District",
+      "topics": [
+        {
+          "id": "p4-location-district-uganda",
+          "term": "Term I",
+          "title": "Location of Our District in Uganda",
+          "periods": 16,
+          "subTopics": ["Location of the district", "Neighbouring districts", "Map of Uganda", "Compass directions and map symbols"]
+        },
+        {
+          "id": "p4-physical-features-district",
+          "term": "Term I",
+          "title": "Physical Features in Our District",
+          "periods": 20,
+          "subTopics": ["Physical features in the district", "Rivers, hills, valleys, lakes or swamps", "Importance of physical features", "Problems related to physical features"]
+        },
+        {
+          "id": "p4-vegetation-district",
+          "term": "Term II",
+          "title": "Vegetation in Our District",
+          "periods": 25,
+          "subTopics": ["Types of vegetation", "Uses of vegetation", "Vegetation conservation", "Human activities affecting vegetation"]
+        },
+        {
+          "id": "p4-people-district",
+          "term": "Term II",
+          "title": "People in Our District",
+          "periods": 15,
+          "subTopics": ["People and ethnic groups", "Culture and customs", "Social services", "Living and working together"]
+        },
+        {
+          "id": "p4-leaders-district",
+          "term": "Term III",
+          "title": "Our Leaders in the District",
+          "periods": 25,
+          "subTopics": ["Local leaders", "Roles of leaders", "Qualities of good leaders", "Rights and responsibilities"]
+        },
+        {
+          "id": "p4-meeting-needs-district",
+          "term": "Term III",
+          "title": "How to Meet People's Needs in Our District",
+          "periods": 25,
+          "subTopics": ["People's needs", "Economic activities", "Community services", "Cooperation and problem solving"]
+        }
+      ]
+    }
+  ]
+}

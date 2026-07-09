@@ -8,7 +8,7 @@ export default function LearnerBanner({
   activeLevel,
   subject,
 }: {
-  activeLevel: "P6" | "P7";
+  activeLevel: "P5" | "P6" | "P7";
   subject?: string;
 }) {
   const [profile, setProfile] = useState<LearnerProfile | null>(null);

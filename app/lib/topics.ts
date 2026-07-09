@@ -4,7 +4,8 @@
 //
 // reviewStatus flag (DEV-013):
 //   "verified"  → human-reviewed, safe to demo to schools
-//   "draft"     → AI-drafted, founder spot-checked but not formally verified
+//   "beta"      → live for beta testers, still awaiting official/human review
+//   "draft"     → internal only, not ready for beta
 // In Phase 3 we display a small "Reviewed: pending" pill on draft topics.
 
 export type Choice = string;
@@ -93,7 +94,7 @@ export interface Topic {
   note: TopicNote;
   quiz: QuizQuestion[];
   status: "published" | "coming-soon";
-  reviewStatus: "verified" | "draft";
+  reviewStatus: "verified" | "beta" | "draft";
   /** YouTube / direct video URL to embed in the Watch tab. Undefined = placeholder. */
   videoUrl?: string;
   /** Modular v3 content. If present, the Read tab renders subtopic directory + module viewer. */

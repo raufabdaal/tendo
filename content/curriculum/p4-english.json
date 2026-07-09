@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Four (P.4)",
+    "subject": "English Language",
+    "examBody": "UNEB",
+    "exam": "PLE Foundation",
+    "source": "NCDC Primary Four English Syllabus, 2010",
+    "verificationStatus": "researched-from-ncdc-pdf",
+    "lastReviewed": "2026-07-09"
+  },
+  "themes": [
+    {
+      "id": "p4-english-transition",
+      "name": "Primary Four English Transition Syllabus",
+      "topics": [
+        {
+          "id": "p4-describing-people-objects",
+          "term": "Term I",
+          "title": "Describing People and Objects",
+          "periods": 22,
+          "subTopics": ["Describing people", "Describing objects", "Vocabulary for appearance and qualities", "Sentence construction"]
+        },
+        {
+          "id": "p4-giving-directions",
+          "term": "Term I",
+          "title": "Giving Directions",
+          "periods": null,
+          "subTopics": ["Directing people to places", "Direction vocabulary", "Imperatives and polite directions", "Reading simple maps and routes"]
+        },
+        {
+          "id": "p4-likes-feelings",
+          "term": "Term I",
+          "title": "What I Like and How I Feel",
+          "periods": null,
+          "subTopics": ["What I like", "How I feel", "Vocabulary for likes and feelings", "Expressing preferences and emotions"]
+        },
+        {
+          "id": "p4-behaviour",
+          "term": "Term II",
+          "title": "Behaviour",
+          "periods": null,
+          "subTopics": ["Good behaviour", "Bad behaviour", "Vocabulary for conduct", "Sentence structures for advice and description"]
+        },
+        {
+          "id": "p4-buying-selling",
+          "term": "Term II",
+          "title": "Buying and Selling",
+          "periods": null,
+          "subTopics": ["Market vocabulary", "Buying and selling conversations", "Prices and items", "Polite requests"]
+        },
+        {
+          "id": "p4-time",
+          "term": "Term II",
+          "title": "Time",
+          "periods": null,
+          "subTopics": ["Past simple tense", "Past continuous tense", "Time expressions", "Reading and writing about time"]
+        },
+        {
+          "id": "p4-future-expression",
+          "term": "Term III",
+          "title": "Expression of the Future",
+          "periods": null,
+          "subTopics": ["Expression of the future", "Keeping a diary", "Using study time", "Future tense and planning language"]
+        },
+        {
+          "id": "p4-democracy",
+          "term": "Term III",
+          "title": "Democracy",
+          "periods": null,
+          "subTopics": ["Games and sports", "Music, Dance and Drama", "Elections", "Vocabulary of participation and choice"]
+        }
+      ]
+    }
+  ]
+}

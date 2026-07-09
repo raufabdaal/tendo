@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Five (P.5)",
+    "subject": "Mathematics",
+    "examBody": "UNEB",
+    "exam": "PLE Foundation",
+    "source": "NCDC Primary Five Curriculum Set One, August 2010, Mathematics section",
+    "verificationStatus": "researched-from-ncdc-set-one-pdf-mirror-needs-official-copy-check",
+    "lastReviewed": "2026-07-09"
+  },
+  "themes": [
+    {
+      "id": "p5-theme-sets",
+      "name": "Sets",
+      "topics": [
+        {
+          "id": "p5-set-concepts",
+          "term": "Term I",
+          "title": "Set Concepts",
+          "periods": null,
+          "subTopics": [
+            "Forming sets",
+            "Equal and equivalent sets",
+            "Empty sets",
+            "Union of sets",
+            "Intersection of sets",
+            "Venn diagrams"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5-theme-numeracy",
+      "name": "Numeracy",
+      "topics": [
+        {
+          "id": "p5-whole-numbers",
+          "term": "Term I",
+          "title": "Whole Numbers",
+          "periods": null,
+          "subTopics": [
+            "Natural numbers up to 999,999",
+            "Place values up to six digits",
+            "Values of digits",
+            "Expanded form",
+            "Rounding off whole numbers to the nearest ten thousands",
+            "Roman numerals up to fifty"
+          ]
+        },
+        {
+          "id": "p5-operations-whole-numbers",
+          "term": "Term I",
+          "title": "Operations on Whole Numbers",
+          "periods": null,
+          "subTopics": [
+            "Addition of whole numbers",
+            "Subtraction of whole numbers",
+            "Multiplication of whole numbers",
+            "Division of whole numbers",
+            "Word problems involving operations"
+          ]
+        },
+        {
+          "id": "p5-patterns-sequences",
+          "term": "Term I",
+          "title": "Patterns and Sequences",
+          "periods": null,
+          "subTopics": [
+            "Number patterns",
+            "Sequences",
+            "Rules for continuing patterns",
+            "Problem solving using patterns"
+          ]
+        },
+        {
+          "id": "p5-fractions",
+          "term": "Term II",
+          "title": "Fractions",
+          "periods": null,
+          "subTopics": [
+            "Tenths and hundredths",
+            "Decimal fractions",
+            "Fractions on a number line",
+            "Ordering decimal fractions",
+            "Converting decimals to vulgar fractions",
+            "Addition and subtraction of decimal fractions",
+            "Simple word problems involving decimals"
+          ]
+        },
+        {
+          "id": "p5-integers",
+          "term": "Term III",
+          "title": "Integers",
+          "periods": null,
+          "subTopics": [
+            "Positive and negative numbers",
+            "Ordering integers",
+            "Integers on a number line",
+            "Simple real-life integer situations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5-theme-geometry",
+      "name": "Geometry",
+      "topics": [
+        {
+          "id": "p5-lines-angles-geometrical-figures",
+          "term": "Term II",
+          "title": "Lines, Angles and Geometrical Figures",
+          "periods": null,
+          "subTopics": [
+            "Parallel and perpendicular lines",
+            "Drawing and measuring angles",
+            "Circles and regular hexagons",
+            "Simple lines of folding symmetry",
+            "Rotations and revolutions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5-theme-graphs-data",
+      "name": "Interpretation of Graphs and Data",
+      "topics": [
+        {
+          "id": "p5-data-handling",
+          "term": "Term II",
+          "title": "Data Handling",
+          "periods": null,
+          "subTopics": [
+            "Scales on horizontal and vertical axes",
+            "Bar graphs",
+            "Line graphs",
+            "Representing and interpreting data",
+            "Average of given data"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5-theme-measurement",
+      "name": "Measurements",
+      "topics": [
+        {
+          "id": "p5-time",
+          "term": "Term II",
+          "title": "Time",
+          "periods": null,
+          "subTopics": [
+            "Time on the 12-hour clock",
+            "Hours, minutes and seconds",
+            "Duration",
+            "Time, distance and speed"
+          ]
+        },
+        {
+          "id": "p5-money",
+          "term": "Term III",
+          "title": "Money",
+          "periods": null,
+          "subTopics": [
+            "Uganda currency",
+            "Buying and selling",
+            "Costs and prices",
+            "Simple profit and loss"
+          ]
+        },
+        {
+          "id": "p5-length-mass-capacity",
+          "term": "Term III",
+          "title": "Length, Mass and Capacity",
+          "periods": null,
+          "subTopics": [
+            "Length in metres, centimetres and millimetres",
+            "Perimeter in centimetres and millimetres",
+            "Area in square metres and square centimetres",
+            "Mass in kilograms and grams",
+            "Capacity in litres and millilitres",
+            "Word problems involving length, mass and capacity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5-theme-algebra",
+      "name": "Algebra",
+      "topics": [
+        {
+          "id": "p5-algebra",
+          "term": "Term III",
+          "title": "Algebra",
+          "periods": null,
+          "subTopics": [
+            "Simple algebraic statements",
+            "Unknown values",
+            "Simple equations",
+            "Word problems involving algebra"
+          ]
+        }
+      ]
+    }
+  ]
+}

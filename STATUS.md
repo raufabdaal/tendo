@@ -7,6 +7,36 @@
 
 
 
+
+# NON-NEGOTIABLE RULE: NCDC FIRST, BUILD SECOND
+
+For every class and every subject, Tendo must follow this order:
+
+1. **Research the official NCDC curriculum requirements.**
+2. **Document the subject/class structure clearly.**
+3. **Create or update the curriculum map.**
+4. **Build learner-facing content from that map only.**
+5. **Review and correct content before exposing it as premium-ready.**
+
+If a topic, route, subject, class or practice bank is not aligned to the NCDC curriculum, it should not be treated as valid product work. We are building the curriculum in a better app form — not inventing our own syllabus.
+
+---
+
+# BETA QUALITY RULE: LIVE BETA DOES NOT MEAN ROUGH DRAFT
+
+When content is marked beta, it should still be built to the best standard we can produce ourselves. Beta means it is live for testers to review and catch remaining mistakes; it does **not** mean incomplete, careless, filler or low-quality work is acceptable.
+
+Builder responsibility before beta:
+1. Follow the NCDC map.
+2. Build complete lessons, examples, checks and quizzes.
+3. Do our own correction pass.
+4. Run the build.
+5. Then expose for beta review.
+
+Reviewers are a second safety layer, not a replacement for our own quality work.
+
+---
+
 ## CURRENT OPERATING SNAPSHOT — READ FIRST
 
 ### Strategy
@@ -16,12 +46,16 @@ Tendo is now a **premium parent-funded, student-first study product**. We are no
 Premium parents/guardians who already spend heavily on education and can justify around **UGX 50,000/month** if Tendo shows clear academic ROI.
 
 ### Primary user
-Students, starting with **P7** and **P6**. Teachers/tutors remain supporting users. Parent visibility is strategically more important than expanding the teacher dashboard right now.
+Students, starting with **P7**, **P6**, **P5**, and **P4 live beta**. Teachers/tutors remain supporting users. Parent visibility is strategically more important than expanding the teacher dashboard right now.
 
 ### Current product status
 - P7 content exists across all 5 subjects.
 - P6 content exists across all 5 subjects.
 - P6 Mathematics, English, Science, Social Studies and Religious Education premium strengthening have started; all current P6 topics gained premium practice/application subtopics.
+- P5 curriculum maps have been corrected against researched NCDC P5 Set One structure for all 5 subjects.
+- The earlier P5 Mathematics/English draft routes were removed because P5 must not be exposed prematurely.
+- P5 Mathematics, English, Science, Social Studies and Religious Education are now live as beta: sign-in supports P5, `/p5-home` exists, all P5 subject routes are live, and content is marked beta for tester review.
+- P4 curriculum research has started. English, Integrated Science, Social Studies and Religious Education maps exist; P4 Mathematics has been verified and corrected against the official NCDC P4 Mathematics PDF. P4 Religious Education is mapped from the NCDC/MoES Primary 4 Abridged Curriculum and still needs a full standard P4 RE syllabus check before premium-final status. P4 is now live beta across all 5 app subjects: Mathematics, English, Integrated Science, Social Studies and Religious Education. P4 RE is built from the NCDC/MoES Primary 4 Abridged Curriculum and remains beta until full standard P4 CRE/IRE syllabus confirmation.
 - P7 Mathematics has started its premium-strengthening pass; the thinnest five topics were upgraded.
 - P7 English premium strengthening has started; all 7 topics gained premium exam-practice subtopics for comprehension/writing/grammar quality.
 - P7 Science premium strengthening has started; all 8 topics gained premium application/case-practice subtopics.
@@ -32,7 +66,7 @@ Students, starting with **P7** and **P6**. Teachers/tutors remain supporting use
 - Teacher dashboard now auto-populates with presentation/sample data unless `NEXT_PUBLIC_TENDO_PRESENTATION_DATA=off`.
 
 ### Current active milestone
-**P7 Premium Content Completion.**
+**P4 Live Beta Complete + P5–P7 Live Beta Curriculum Alignment/Review.**
 
 Immediate sequence:
 1. Human/founder review upgraded P7 Mathematics topics.
@@ -41,7 +75,9 @@ Immediate sequence:
 4. Human/founder review P7 Social Studies premium additions.
 5. Human/founder/teacher review P7 Religious Education premium additions.
 6. Human/founder review upgraded P6 premium additions.
-7. Then move class-by-class downward.
+7. Internally improve P5 beta content quality, especially English/Science/SST/RE, while keeping it mapped to NCDC.
+8. Review all P4 live beta subjects for correctness, tone, local-district fit, health-sensitive wording, respectful RE wording and P4 readability before marking anything premium-final.
+9. Continue P4 RE source work: find the full standard P4 CRE/IRE syllabus to confirm the NCDC-abridged map.
 
 ### Push status
 Founder has **not pushed** the current milestone bundle yet. Do not assume the remote repo has these latest changes. When founder is ready, provide a clear overwrite/add file list for the whole milestone.
@@ -52,6 +88,10 @@ Founder has **not pushed** the current milestone bundle yet. Do not assume the r
 - `DECISIONS.md` — DEV-027 and DEV-028 are the active strategic decisions.
 - `docs/ops/primary-content-completion-roadmap-2026-07-09.md` — content rollout plan.
 - `docs/ops/content-corrections-workflow-2026-07-09.md` — how to fix/restructure content safely.
+- `docs/ops/ncdc-p5-curriculum-research-2026-07-09.md` — researched P5 curriculum structure and correction note.
+- `docs/ops/ncdc-p4-curriculum-research-2026-07-09.md` — P4 curriculum research, verified Mathematics correction, P4 RE abridged-map limitation, and full P4 live-beta rollout.
+- `docs/ops/p4-live-beta-completion-audit-2026-07-09.md` — P4 completion audit, file list, source limits and review checklist.
+- `docs/ops/curriculum-alignment-audit-p5-p7-2026-07-09.md` — current P5/P6/P7 topic alignment audit.
 
 ---
 

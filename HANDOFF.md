@@ -5,13 +5,43 @@
 
 
 
+
+# NON-NEGOTIABLE RULE: NCDC FIRST, BUILD SECOND
+
+For every class and every subject, Tendo must follow this order:
+
+1. **Research the official NCDC curriculum requirements.**
+2. **Document the subject/class structure clearly.**
+3. **Create or update the curriculum map.**
+4. **Build learner-facing content from that map only.**
+5. **Review and correct content before exposing it as premium-ready.**
+
+If a topic, route, subject, class or practice bank is not aligned to the NCDC curriculum, it should not be treated as valid product work. We are building the curriculum in a better app form — not inventing our own syllabus.
+
+---
+
+# BETA QUALITY RULE: LIVE BETA DOES NOT MEAN ROUGH DRAFT
+
+When content is marked beta, it should still be built to the best standard we can produce ourselves. Beta means it is live for testers to review and catch remaining mistakes; it does **not** mean incomplete, careless, filler or low-quality work is acceptable.
+
+Builder responsibility before beta:
+1. Follow the NCDC map.
+2. Build complete lessons, examples, checks and quizzes.
+3. Do our own correction pass.
+4. Run the build.
+5. Then expose for beta review.
+
+Reviewers are a second safety layer, not a replacement for our own quality work.
+
+---
+
 ## CURRENT COMMAND CENTER — 2026-07-09
 
 ### Active direction
 Build Tendo as a **premium parent-funded, student-first app**. Content quality is now the product. Parent ROI matters more than teacher-dashboard expansion. Trainup/school-first work is archived.
 
 ### Active milestone
-**P7 Premium Content Completion**.
+**P4 Live Beta Complete + P5–P7 Live Beta Curriculum Alignment/Review**.
 
 Current state of the milestone:
 - P7 content exists in all subjects.
@@ -23,7 +53,12 @@ Current state of the milestone:
 - P7 Religious Education premium pass has also started: all 14 topics gained premium application modules.
 - P7 premium strengthening now covers all 5 subjects.
 - P6 premium strengthening has started across all current P6 subjects: Maths, English, Science, Social Studies and Religious Education.
-- Next content work should review P6 additions, then plan the next class expansion.
+- P5 curriculum research has been corrected against NCDC P5 Set One structure.
+- The premature P5 Mathematics/English draft app routes were removed.
+- P5 Mathematics, English, Science, Social Studies and Religious Education are now live beta: P5 sign-in, `/p5-home`, and all P5 subject routes are active. They are marked beta, not draft.
+- P4 curriculum research has started: English, Science, SST and RE maps exist; P4 Mathematics has been verified and corrected against the official NCDC P4 Mathematics PDF; P4 RE is mapped from the NCDC/MoES Primary 4 Abridged Curriculum but still needs a full standard P4 RE syllabus check. P4 is now live beta across all 5 app subjects: Mathematics, English, Integrated Science, Social Studies and Religious Education. P4 RE is from the NCDC/MoES abridged source and remains beta until full standard P4 CRE/IRE syllabus confirmation.
+- Curriculum alignment audit now shows zero missing top-level topics across P5, P6 and P7.
+- Next content work should prepare the milestone push package when founder says ready, or do a P4 review pass across all 5 live beta subjects if there is time before pushing.
 
 ### Immediate next tasks
 1. Review upgraded P7 Maths topics for correctness and tone.
@@ -31,8 +66,10 @@ Current state of the milestone:
 3. Review P7 Science premium additions for scientific accuracy and health-sensitive wording.
 4. Review P7 Social Studies for history balance and map/answer clarity.
 5. Review P7 Religious Education for respectful wording and faith accuracy.
-6. Keep documentation updated after each subject pass.
-7. Do not expand teacher dashboard unless it directly supports parent ROI or learner progress.
+6. Review P4 Mathematics beta for correctness/readability, P4 English beta for language level/tone, P4 Science beta for scientific accuracy and health-sensitive wording, P4 Social Studies beta for local-district fit/civic balance, and P4 RE beta for respectful faith wording/source limitations.
+7. Continue P4 RE research by finding the full standard P4 CRE/IRE syllabus; current `p4-re.json` is from the NCDC/MoES abridged curriculum and P4 RE must stay beta until confirmed.
+8. Keep documentation updated after each subject/research pass.
+9. Do not expand teacher dashboard unless it directly supports parent ROI or learner progress.
 
 ### Push status
 Current local workspace includes a large unpushed milestone bundle. Founder has not pushed yet. When founder says “ready to push”, provide:
@@ -79,6 +116,9 @@ The student-first pivot is now refined further: Tendo is a **premium parent-fund
 Read:
 - `docs/ops/premium-parent-student-first-strategy-2026-07-09.md`
 - `docs/ops/primary-content-completion-roadmap-2026-07-09.md`
+- `docs/ops/ncdc-p5-curriculum-research-2026-07-09.md`
+- `docs/ops/ncdc-p4-curriculum-research-2026-07-09.md`
+- `docs/ops/curriculum-alignment-audit-p5-p7-2026-07-09.md`
 - `docs/ops/p7-math-premium-audit-2026-07-09.md`
 - `docs/ops/content-corrections-workflow-2026-07-09.md`
 - `docs/ops/parent-dashboard-roi-roadmap-2026-07-09.md`
@@ -116,10 +156,13 @@ The app now has a local/device sign-in gate and role-specific experiences. This 
 - `docs/ops/auth-backend-roadmap-2026-07-07.md`
 
 ### Next tasks
-1. Human/founder review upgraded P6 premium additions, then plan the next class expansion.
-2. Design parent dashboard MVP around usage, weaknesses, recommendations and ROI.
-3. Test manually on 320/340/360/390/414/430px phone widths.
-4. Decide backend auth/provider and data model when ready, especially for parent dashboard and cross-device progress.
+1. Human/founder review upgraded P7/P6 premium additions.
+2. Review live P5 Mathematics, P5 English and P5 Science beta against researched NCDC maps.
+3. Review all P5 beta content against researched NCDC maps and improve weak areas.
+4. Continue verifying P5 maps against official/trusted NCDC material as we refine.
+5. Design parent dashboard MVP around usage, weaknesses, recommendations and ROI.
+6. Test manually on 320/340/360/390/414/430px phone widths.
+7. Decide backend auth/provider and data model when ready, especially for parent dashboard and cross-device progress.
 
 ---
 

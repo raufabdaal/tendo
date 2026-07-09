@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Five (P.5)",
+    "subject": "Integrated Science",
+    "examBody": "UNEB",
+    "exam": "PLE Foundation",
+    "source": "NCDC Primary Five Curriculum Set One, August 2010, Integrated Science section",
+    "verificationStatus": "researched-from-ncdc-set-one-pdf-mirror-needs-official-copy-check",
+    "lastReviewed": "2026-07-09"
+  },
+  "themes": [
+    {
+      "id": "p5-science-human-activities",
+      "name": "Science in Human Activities and Occupations",
+      "topics": [
+        {
+          "id": "p5-keeping-poultry-bees",
+          "term": "Term I",
+          "title": "Keeping Poultry and Bees",
+          "periods": null,
+          "subTopics": [
+            "Types of poultry management",
+            "Proper feeding and housing of poultry",
+            "Pest and disease control in poultry",
+            "Life history and types of bees",
+            "Importance and conditions for rearing bees"
+          ]
+        },
+        {
+          "id": "p5-crop-growing",
+          "term": "Term III",
+          "title": "Occupations in Our Community: Crop Growing",
+          "periods": null,
+          "subTopics": [
+            "Common crops",
+            "Farm tools",
+            "Soil preparation",
+            "Crop care",
+            "Harvesting and storage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5-science-matter-energy",
+      "name": "Matter and Energy",
+      "topics": [
+        {
+          "id": "p5-measurement-science",
+          "term": "Term I",
+          "title": "Measurement",
+          "periods": null,
+          "subTopics": [
+            "Measuring length",
+            "Measuring mass",
+            "Measuring capacity",
+            "Measuring time",
+            "Using standard instruments accurately"
+          ]
+        },
+        {
+          "id": "p5-heat-energy",
+          "term": "Term II",
+          "title": "Heat Energy",
+          "periods": null,
+          "subTopics": [
+            "Sources of heat",
+            "Effects of heat",
+            "Expansion and contraction",
+            "Safe use of heat in daily life"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5-science-human-health",
+      "name": "Human Health",
+      "topics": [
+        {
+          "id": "p5-immunisation",
+          "term": "Term I",
+          "title": "Immunisation",
+          "periods": null,
+          "subTopics": [
+            "Meaning of immunisation",
+            "Childhood immunisable diseases",
+            "Importance of immunisation",
+            "Immunisation schedules and health care"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5-science-human-body",
+      "name": "Human Body",
+      "topics": [
+        {
+          "id": "p5-digestive-system",
+          "term": "Term II",
+          "title": "The Digestive System",
+          "periods": null,
+          "subTopics": [
+            "Parts of the digestive system",
+            "Digestion of food",
+            "Teeth and chewing",
+            "Care of the digestive system",
+            "Balanced diet and food hygiene"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5-science-environment",
+      "name": "The Environment",
+      "topics": [
+        {
+          "id": "p5-components-environment-soil",
+          "term": "Term II",
+          "title": "Components of the Environment: Soil",
+          "periods": null,
+          "subTopics": [
+            "Components of soil",
+            "Types of soil",
+            "Uses of soil",
+            "Soil conservation",
+            "Causes and prevention of soil erosion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5-science-living-things",
+      "name": "The World of Living Things",
+      "topics": [
+        {
+          "id": "p5-bacteria-fungi",
+          "term": "Term III",
+          "title": "Bacteria and Fungi",
+          "periods": null,
+          "subTopics": [
+            "Characteristics of bacteria and fungi",
+            "Useful and harmful bacteria",
+            "Useful and harmful fungi",
+            "Diseases and food spoilage",
+            "Hygiene and prevention"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5-science-environmental-change",
+      "name": "Managing Changes in the Environment",
+      "topics": [
+        {
+          "id": "p5-types-of-changes",
+          "term": "Term III",
+          "title": "Types of Changes: Biological, Physical and Chemical Changes",
+          "periods": null,
+          "subTopics": [
+            "Biological changes",
+            "Physical changes",
+            "Chemical changes",
+            "Reversible and irreversible changes",
+            "Examples of changes in daily life"
+          ]
+        }
+      ]
+    }
+  ]
+}

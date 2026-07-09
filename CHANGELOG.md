@@ -1,5 +1,348 @@
 # CHANGELOG — Tendo
 
+## v1.8.30 — 2026-07-09 — P4 Religious Education live beta added and P4 completed
+
+**Session theme:** Finish P4 live beta across all five app subjects while keeping the P4 RE source limitation explicit.
+
+**Changed:**
+- Added `app/lib/p4-re-topics.ts` with 25 P4 Religious Education beta topics matching `content/curriculum/p4-re.json`.
+- Added live beta routes: `/re/p4` and `/re/p4/[topic]`.
+- Updated `/p4-home` to show all five P4 subjects.
+- Added P4 RE to the Study directory and practice suggestions.
+- Updated status/checklist/handoff/roadmap/P4 research docs.
+- Added P4 completion audit doc: `docs/ops/p4-live-beta-completion-audit-2026-07-09.md`.
+
+**Important:**
+- P4 is now live beta across all five app subjects: Mathematics, English, Integrated Science, Social Studies and Religious Education.
+- P4 RE is live beta from the NCDC/MoES Primary 4 Abridged Curriculum and still needs confirmation against the full standard P4 CRE/IRE syllabus or qualified RE teacher review before premium-final status.
+
+**Verified:**
+- P4 RE topic IDs match `content/curriculum/p4-re.json`.
+- `cd app && npm run build` passed with 324 static pages.
+
+---
+
+## v1.8.29 — 2026-07-09 — P4 Social Studies live beta added
+
+**Session theme:** Complete the currently safe P4 official-source subject rollout by adding Social Studies.
+
+**Changed:**
+- Added `app/lib/p4-social-topics.ts` with 6 P4 Social Studies beta topics matching `content/curriculum/p4-social-studies.json`.
+- Added live beta routes: `/social-studies/p4` and `/social-studies/p4/[topic]`.
+- Updated `/p4-home` to show P4 Mathematics, English, Integrated Science and Social Studies.
+- Added P4 Social Studies to the Study directory and practice suggestions.
+- Updated status/checklist/handoff/roadmap/P4 research docs.
+
+**Important:**
+- P4 Mathematics, English, Integrated Science and Social Studies are live beta.
+- P4 Religious Education remains map/planning only because its current map is from the NCDC/MoES abridged curriculum and still needs full standard-syllabus confirmation before premium-final status.
+
+**Verified:**
+- P4 Social Studies topic IDs match `content/curriculum/p4-social-studies.json`.
+- `cd app && npm run build` passed with 298 static pages.
+
+---
+
+## v1.8.28 — 2026-07-09 — P4 Integrated Science live beta added
+
+**Session theme:** Continue P4 with the next NCDC-backed subject: Integrated Science.
+
+**Changed:**
+- Added `app/lib/p4-science-topics.ts` with 12 P4 Integrated Science beta topics matching `content/curriculum/p4-science.json`.
+- Added live beta routes: `/science/p4` and `/science/p4/[topic]`.
+- Updated `/p4-home` to show P4 Mathematics, English and Integrated Science.
+- Added P4 Science to the Study directory and practice suggestions.
+- Updated status/checklist/handoff/roadmap/P4 research docs.
+
+**Important:**
+- P4 Mathematics, P4 English and P4 Integrated Science are live beta.
+- P4 Social Studies and Religious Education remain map/planning only.
+- P4 Science health-sensitive wording needs human/teacher review before premium-final status.
+
+**Verified:**
+- P4 Science topic IDs match `content/curriculum/p4-science.json`.
+- `cd app && npm run build` passed with 291 static pages.
+
+---
+
+## v1.8.27 — 2026-07-09 — P4 English live beta added
+
+**Session theme:** Continue P4 systematically by adding the next official-source subject: English.
+
+**Changed:**
+- Added `app/lib/p4-english-topics.ts` with 8 P4 English beta topics matching `content/curriculum/p4-english.json`.
+- Added live beta routes: `/english/p4` and `/english/p4/[topic]`.
+- Updated `/p4-home` to show P4 Mathematics and P4 English.
+- Added P4 English to the Study directory and practice suggestions.
+- Updated status/checklist/handoff/roadmap/P4 research docs.
+
+**Important:**
+- P4 Mathematics and P4 English are live beta.
+- P4 Science, Social Studies and Religious Education remain map/planning only.
+- P4 RE still needs full standard-syllabus confirmation before premium-final status.
+
+**Verified:**
+- P4 English topic IDs match `content/curriculum/p4-english.json`.
+- `cd app && npm run build` passed with 278 static pages.
+
+---
+
+## v1.8.26 — 2026-07-09 — P4 Mathematics live beta started
+
+**Session theme:** Start P4 learner-facing content only where the NCDC map is verified: Mathematics first.
+
+**Changed:**
+- Added `app/lib/p4-math-topics.ts` with 12 P4 Mathematics beta topics matching `content/curriculum/p4-math.json`.
+- Added `/p4-home`.
+- Added live beta routes: `/math/p4` and `/math/p4/[topic]`.
+- Extended local student sign-in, session routing, navigation and learner profile typing to include P4.
+- Added P4 Mathematics to the Study directory and practice suggestions.
+- Extended teacher-set question grade options to include P4.
+- Updated status/checklist/handoff/roadmap/P4 research docs.
+
+**Important:**
+- Only P4 Mathematics is live beta.
+- P4 English, Science, Social Studies and Religious Education remain map/planning only.
+- P4 RE is still based on NCDC/MoES abridged curriculum and needs full standard-syllabus confirmation before premium-final status.
+
+**Verified:**
+- `cd app && npm run build` passed with 269 static pages.
+
+---
+
+## v1.8.25 — 2026-07-09 — P4 Mathematics verified against official NCDC PDF
+
+**Session theme:** Continue P4 the right way: verify curriculum maps before building learner-facing routes.
+
+**Changed:**
+- Corrected `content/curriculum/p4-math.json` against the official NCDC P4 Mathematics Syllabus PDF.
+- Expanded P4 Mathematics from the earlier extract-based 10-topic map to the official 12-topic structure, adding `2-Dimensional Geometry`, `3-Dimensional Geometry`, and `Equations without Letters`.
+- Updated `docs/ops/ncdc-p4-curriculum-research-2026-07-09.md` with verified Mathematics structure and a clearer Religious Education source block.
+- Updated `STATUS.md`, `HANDOFF.md`, `CHECKLIST.md`, `START_HERE.md`, and the primary content roadmap with the P4 state.
+
+**Important:**
+- No P4 app routes or learner-facing content were added.
+- `content/curriculum/p4-re.json` is still missing by design because a reliable P4 CRE/IRE topic list has not been found. Do not invent it.
+
+**Verified:**
+- `cd app && npm run build` passed with 255 static pages.
+
+---
+
+## v1.8.24 — 2026-07-09 — P4 curriculum research and maps started
+
+**Session theme:** Move beyond P5 by beginning P4 the correct way: research and curriculum maps first, no learner-facing content yet.
+
+**Changed:**
+- Added `content/curriculum/p4-english.json` from NCDC P4 English syllabus structure.
+- Added `content/curriculum/p4-science.json` from NCDC P4 Integrated Science syllabus structure.
+- Added `content/curriculum/p4-social-studies.json` from NCDC P4 Social Studies syllabus structure.
+- Added `content/curriculum/p4-math.json` from NCDC P4 Mathematics PDF extract; marked for clean-copy verification.
+- Added `docs/ops/ncdc-p4-curriculum-research-2026-07-09.md`.
+
+**Important:**
+- No P4 app routes or content layers were added.
+- P4 Religious Education is not mapped yet because a reliable topic list was not found in this pass.
+
+---
+
+## v1.8.23 — 2026-07-09 — P5/P6/P7 curriculum alignment audit completed
+
+**Session theme:** Confirm that live beta content matches curriculum maps at top-level topic coverage before moving forward.
+
+**Changed:**
+- Added `content/curriculum/p7-re.json` so P7 Religious Education has a curriculum map.
+- Audited P5, P6 and P7 curriculum maps against app content files.
+- Confirmed zero missing top-level topics across all mapped P5/P6/P7 subjects.
+- Added audit doc: `docs/ops/curriculum-alignment-audit-p5-p7-2026-07-09.md`.
+- Updated status/checklist/handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 255 static pages.
+
+**Important:**
+- This proves top-level topic coverage, not perfection of every explanation/answer. Human review is still required.
+
+---
+
+## v1.8.22 — 2026-07-09 — P5 Religious Education made live beta
+
+**Session theme:** Complete the first live-beta P5 subject sweep by adding CRE/IRE Religious Education.
+
+**Changed:**
+- Added P5 Religious Education beta content layer: `app/lib/p5-re-topics.ts`.
+- Added live beta P5 RE routes: `/re/p5` and `/re/p5/[topic]`.
+- Added P5 RE to Study directory and P5 practice suggestions.
+- Updated roadmap/status/checklist/handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 255 static pages.
+
+**Important:**
+- All current P5 subjects are now live beta. They still require NCDC/human review before public-final release.
+
+---
+
+## v1.8.21 — 2026-07-09 — P5 Social Studies made live beta
+
+**Session theme:** Continue live-beta P5 expansion with Social Studies while keeping NCDC-first and beta-quality rules.
+
+**Changed:**
+- Added P5 Social Studies beta content layer: `app/lib/p5-social-topics.ts`.
+- Added live beta P5 Social Studies routes: `/social-studies/p5` and `/social-studies/p5/[topic]`.
+- Added P5 Social Studies to Study directory and P5 practice suggestions.
+- Updated roadmap/status/checklist/handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 234 static pages.
+
+**Important:**
+- P5 Social Studies is live for beta testers, not public-final. It still requires NCDC/human review.
+
+---
+
+## v1.8.20 — 2026-07-09 — P5 Science made live beta
+
+**Session theme:** Continue live-beta P5 expansion with Integrated Science while keeping NCDC-first and beta-quality rules.
+
+**Changed:**
+- Added P5 Science beta content layer: `app/lib/p5-science-topics.ts`.
+- Added live beta P5 Science routes: `/science/p5` and `/science/p5/[topic]`.
+- Added P5 Science to Study directory and P5 practice suggestions.
+- Updated roadmap/status/checklist/handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 221 static pages.
+
+**Important:**
+- P5 Science is live for beta testers, not public-final. It still requires NCDC/human review.
+
+---
+
+## v1.8.19 — 2026-07-09 — P5 English made live beta and beta quality rule locked
+
+**Session theme:** Continue the live-beta approach while making clear that beta still requires our best internal quality.
+
+**Changed:**
+- Added P5 English beta content layer: `app/lib/p5-english-topics.ts`.
+- Added live beta P5 English routes: `/english/p5` and `/english/p5/[topic]`.
+- Added P5 English to Study directory and P5 practice suggestions.
+- Added beta quality rule to core docs: beta does not mean rough draft.
+- Logged decision `DEV-030` in `DECISIONS.md`.
+
+**Verified:**
+- `cd app && npm run build` passed with 211 static pages.
+
+---
+
+## v1.8.18 — 2026-07-09 — P5 Mathematics made live beta
+
+**Session theme:** Change from hidden draft content to live beta content for tester review.
+
+**Changed:**
+- Added P5 as a student sign-in option.
+- Added `/p5-home`.
+- Added live beta P5 Mathematics routes: `/math/p5` and `/math/p5/[topic]`.
+- Marked P5 Mathematics topics as `reviewStatus: "beta"` instead of draft.
+- Added P5 Mathematics to the Study directory for P5 learners and teacher content library.
+- Added P5 practice cards that point learners into P5 Maths topic quizzes.
+- Extended teacher-set question grade support to P5.
+
+**Verified:**
+- `cd app && npm run build` passed with 202 static pages.
+
+**Important:**
+- P5 Mathematics is live for beta testers, not public-final. It still requires NCDC/human review.
+
+---
+
+## v1.8.17 — 2026-07-09 — Corrected P5 Mathematics draft content layer added
+
+**Session theme:** Resume P5 build carefully under the NCDC-first rule, without exposing routes prematurely.
+
+**Changed:**
+- Added `app/lib/p5-math-topics.ts` with 12 draft P5 Mathematics topics aligned to the researched P5 Mathematics map.
+- Did not add P5 learner-facing routes or navigation.
+- Updated roadmap/status/checklist/handoff to show P5 Mathematics content exists for internal review only.
+
+**Verified:**
+- `cd app && npm run build` passed with 188 static pages.
+
+**Important:**
+- P5 Mathematics remains draft/internal-review only until checked against official/trusted NCDC material.
+
+---
+
+## v1.8.16 — 2026-07-09 — NCDC-first rule promoted to top-level documentation
+
+**Session theme:** Make the curriculum-alignment rule impossible to miss.
+
+**Changed:**
+- Added a major heading to `STATUS.md`, `HANDOFF.md`, `START_HERE.md`, `docs/ops/content-corrections-workflow-2026-07-09.md`, and `docs/ops/primary-content-completion-roadmap-2026-07-09.md`: **NON-NEGOTIABLE RULE: NCDC FIRST, BUILD SECOND**.
+- Logged decision `DEV-029` in `DECISIONS.md`.
+- Updated `CHECKLIST.md` to record the rule as locked.
+
+**Rule:** Research NCDC → document structure → create/update curriculum map → build content → review/correct → expose as premium-ready.
+
+---
+
+## v1.8.15 — 2026-07-09 — P5 curriculum research correction and premature routes removed
+
+**Session theme:** Enforce strict NCDC-first workflow before further P5 buildout.
+
+**Changed:**
+- Downloaded/parsed a P5 Set One curriculum copy attributed to NCDC and cross-checked with catalogue evidence.
+- Corrected `content/curriculum/p5-math.json` to the researched NCDC 12-topic Mathematics structure.
+- Corrected `content/curriculum/p5-english.json` to the researched NCDC 8-topic English structure.
+- Corrected `content/curriculum/p5-science.json`, `p5-social-studies.json`, and `p5-re.json` to researched P5 Set One topic structures.
+- Removed premature P5 Maths/English draft app routes and content layers because P5 learner-facing content must be built only after verified curriculum mapping.
+- Added `docs/ops/ncdc-p5-curriculum-research-2026-07-09.md`.
+
+**Verified:**
+- `cd app && npm run build` passed with 188 static pages.
+
+**Important:**
+- Do not build P5 learner-facing content again until the updated maps are verified against an official/trusted NCDC copy.
+
+---
+
+## v1.8.14 — 2026-07-09 — P5 Mathematics and English draft content/routes added
+
+**Session theme:** Continue P5 expansion structure by adding the first draft learner-facing content layers for internal review.
+
+**Changed:**
+- Added `app/lib/p5-math-topics.ts` with 6 draft P5 Mathematics topics.
+- Added `/math/p5` and `/math/p5/[topic]` routes.
+- Added `app/lib/p5-english-topics.ts` with 5 draft P5 English topics.
+- Added `/english/p5` and `/english/p5/[topic]` routes.
+- Updated roadmap/status/checklist/handoff.
+
+**Important:**
+- P5 remains draft/internal-review only and is not yet linked into student sign-in or the main Study directory.
+- Verify against official NCDC P5 materials before exposing it as a product option.
+
+**Verified:**
+- `cd app && npm run build` passed with 201 static pages.
+
+---
+
+## v1.8.13 — 2026-07-09 — P5 draft curriculum planning maps added
+
+**Session theme:** Start the next class expansion at planning level while founder reviews the pushed P7/P6 content.
+
+**Changed:**
+- Added `content/curriculum/p5-math.json` with 6 draft P5 Mathematics topics.
+- Added `content/curriculum/p5-english.json` with 5 draft P5 English topics.
+- Added `content/curriculum/p5-science.json` with 5 draft P5 Integrated Science topics.
+- Added `content/curriculum/p5-social-studies.json` with 5 draft P5 Social Studies topics.
+- Added `content/curriculum/p5-re.json` with 6 draft P5 Religious Education topics.
+- Updated roadmap/status/checklist/handoff.
+
+**Important:**
+- P5 maps are marked `draft-needs-ncdc-review`. They are planning scaffolds only and must be verified against official NCDC P5 materials before learner-facing content/routes are built.
+
+---
+
 ## v1.8.12 — 2026-07-09 — P6 Science, Social Studies and Religious Education premium strengthening starts
 
 **Session theme:** Complete the first P6 premium strengthening sweep across the remaining P6 subjects.

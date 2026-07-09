@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Four (P.4)",
+    "subject": "Religious Education (CRE and IRE)",
+    "examBody": "UNEB",
+    "exam": "PLE Foundation",
+    "source": "NCDC/MoES Primary 4 Abridged Curriculum for Uganda, 2022, Religious Education sections; source copy located through UNEB NCDC abridged-curricula listing and Sharebility mirror",
+    "verificationStatus": "mapped-from-ncdc-abridged-curriculum-needs-standard-p4-re-syllabus-check",
+    "lastReviewed": "2026-07-09",
+    "sourceNotes": "This is an official NCDC/MoES abridged-curriculum source, not yet the full standard P4 RE syllabus. Use for planning and beta mapping only until a full standard P4 CRE/IRE syllabus is found. Do not treat P4 RE as premium-final from this map alone."
+  },
+  "themes": [
+    {
+      "id": "p4-cre",
+      "name": "Christian Religious Education",
+      "topics": [
+        {
+          "id": "p4-cre-traditions",
+          "term": "Term I",
+          "title": "Traditions",
+          "periods": null,
+          "subTopics": [
+            "Traditional customs, practices and values",
+            "Importance of traditions, customs and practices",
+            "Traditions and customs from other cultures",
+            "Christian practices and their importance"
+          ]
+        },
+        {
+          "id": "p4-cre-messengers-of-god",
+          "term": "Term I",
+          "title": "Messengers of God",
+          "periods": null,
+          "subTopics": [
+            "Meaning of messenger",
+            "Different ways God speaks to His people",
+            "Qualities of God's messengers",
+            "Examples of God's messengers such as Elijah and Isaiah",
+            "Angels as messengers of God",
+            "Jesus as a special messenger"
+          ]
+        },
+        {
+          "id": "p4-cre-gods-continuing-love",
+          "term": "Term I",
+          "title": "God's Continuing Love for His People",
+          "periods": null,
+          "subTopics": [
+            "Creation",
+            "The order of creation",
+            "Caring for God's creation",
+            "The fall of human beings",
+            "Disobedience and its consequences",
+            "Asking forgiveness when we do wrong",
+            "John the Baptist and Jesus' coming"
+          ]
+        },
+        {
+          "id": "p4-cre-gods-people-law",
+          "term": "Term I",
+          "title": "God's People and the Law",
+          "periods": null,
+          "subTopics": [
+            "God's covenant with His people",
+            "Noah's faithfulness to God",
+            "God's promises to Abraham",
+            "God's promises to Jacob",
+            "Moses and the Exodus story",
+            "The Ten Commandments",
+            "How God's law guides His people"
+          ]
+        },
+        {
+          "id": "p4-cre-following-jesus-leader",
+          "term": "Term II",
+          "title": "Following Jesus as a Leader",
+          "periods": null,
+          "subTopics": [
+            "Jesus as a leader",
+            "Jesus' authority",
+            "Confidence in Jesus' authority",
+            "Jesus' instructions to His disciples",
+            "Jesus' promises to His disciples",
+            "Following Jesus in daily life"
+          ]
+        },
+        {
+          "id": "p4-cre-jesus-christ-our-saviour",
+          "term": "Term II",
+          "title": "Jesus Christ Our Saviour",
+          "periods": null,
+          "subTopics": [
+            "Jesus' suffering",
+            "Jesus' death",
+            "Jesus' burial and resurrection",
+            "Jesus saves people from sin",
+            "Lessons from Jesus' suffering, death and resurrection"
+          ]
+        },
+        {
+          "id": "p4-cre-worshipping-community",
+          "term": "Term II",
+          "title": "The Worshipping Community",
+          "periods": null,
+          "subTopics": [
+            "Christian activities in worshipping God",
+            "Christian joint activities and experiences",
+            "Importance of Christian joint activities",
+            "Christian life in worship",
+            "Types of prayer",
+            "Confession, thanksgiving and petition prayers"
+          ]
+        },
+        {
+          "id": "p4-cre-christian-community",
+          "term": "Term II",
+          "title": "The Christian Community",
+          "periods": null,
+          "subTopics": [
+            "Meaning of the Church",
+            "Events and activities of the Early Church",
+            "Missionary work in the first century",
+            "Missionary work in Uganda",
+            "Uganda Martyrs and the growth of the Church",
+            "The Church and its denominations",
+            "The coming and work of the Holy Spirit in the Church"
+          ]
+        },
+        {
+          "id": "p4-cre-jesus-example-service",
+          "term": "Term III",
+          "title": "Jesus Our Example in Service",
+          "periods": null,
+          "subTopics": [
+            "Ways Jesus served others",
+            "Jesus serving His parents and other people",
+            "Good service in the community",
+            "Unpaid service",
+            "Voluntary service",
+            "Co-operating in voluntary service",
+            "Planning and evaluating a voluntary service project"
+          ]
+        },
+        {
+          "id": "p4-cre-decisions-as-christians",
+          "term": "Term III",
+          "title": "Making Our Decisions as Christians",
+          "periods": null,
+          "subTopics": [
+            "Meaning of decision-making",
+            "Good and bad decisions",
+            "Importance and consequences of decisions",
+            "Decisions in the Bible",
+            "How decisions can change one's direction in life",
+            "Making good decisions with God's help"
+          ]
+        },
+        {
+          "id": "p4-cre-peace",
+          "term": "Term III",
+          "title": "Peace",
+          "periods": null,
+          "subTopics": [
+            "Meaning of peace",
+            "Keeping peace through prayer and obedience to God's commandments",
+            "Peace in African societies",
+            "Peace in the Bible",
+            "Need for reconciliation",
+            "Effective ways of keeping peace"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p4-ire",
+      "name": "Islamic Religious Education",
+      "topics": [
+        {
+          "id": "p4-ire-surat-al-asr",
+          "term": null,
+          "title": "Surat Al-Asr",
+          "periods": 6,
+          "subTopics": [
+            "Reciting Surat Al-Asr",
+            "Meaning of Surat Al-Asr",
+            "Importance of Surat Al-Asr",
+            "Lessons from Surat Al-Asr",
+            "Value of time, faith and patience"
+          ]
+        },
+        {
+          "id": "p4-ire-prophet-messenger",
+          "term": null,
+          "title": "Prophet/Messenger",
+          "periods": 6,
+          "subTopics": [
+            "Meaning of prophet and messenger",
+            "Relationship between prophet and messenger",
+            "Duties of prophets and messengers",
+            "Qualities of a prophet",
+            "Delivering Allah's message",
+            "Good leadership and patience"
+          ]
+        },
+        {
+          "id": "p4-ire-dress-for-prayer",
+          "term": null,
+          "title": "Dress for Prayer",
+          "periods": 6,
+          "subTopics": [
+            "Usefulness of serving Allah and being peaceful",
+            "Acceptable male dress for prayer",
+            "Acceptable female dress for prayer",
+            "Importance of Muslim dress for prayer",
+            "Respecting Islamic symbols"
+          ]
+        },
+        {
+          "id": "p4-ire-impurities",
+          "term": null,
+          "title": "Impurities",
+          "periods": 6,
+          "subTopics": [
+            "Meaning of impurities",
+            "Types of impurities",
+            "Examples of impure things",
+            "Cleanliness before prayer",
+            "Removing impurities",
+            "Importance of purity in Islam"
+          ]
+        },
+        {
+          "id": "p4-ire-early-converts-islam",
+          "term": null,
+          "title": "Early Converts in Islam",
+          "periods": 6,
+          "subTopics": [
+            "Meaning of early converts",
+            "Names of early converts in Islam",
+            "Importance of early converts",
+            "Challenges faced by early Muslims",
+            "Lessons from early converts"
+          ]
+        },
+        {
+          "id": "p4-ire-surat-al-humaza",
+          "term": null,
+          "title": "Surat Al-Humaza",
+          "periods": 6,
+          "subTopics": [
+            "Reciting Surat Al-Humaza",
+            "Meaning of Surat Al-Humaza",
+            "Importance of Surat Al-Humaza",
+            "Lessons from Surat Al-Humaza",
+            "Avoiding bad speech and harmful behaviour"
+          ]
+        },
+        {
+          "id": "p4-ire-twenty-five-prophets",
+          "term": null,
+          "title": "The 25 Prophets",
+          "periods": 6,
+          "subTopics": [
+            "Names of the 25 prophets mentioned in the Qur'an",
+            "More prophets beyond the 25 named prophets",
+            "Duties of prophets",
+            "Qualities of prophets",
+            "Lessons from the prophets"
+          ]
+        },
+        {
+          "id": "p4-ire-imaan-forgiveness",
+          "term": null,
+          "title": "Imaan and Forgiveness",
+          "periods": 6,
+          "subTopics": [
+            "Meaning of Imaan",
+            "Articles of Imaan",
+            "Meaning of forgiveness",
+            "Importance of forgiveness",
+            "Seeking Allah's forgiveness",
+            "Forgiving other people"
+          ]
+        },
+        {
+          "id": "p4-ire-congregational-prayer",
+          "term": null,
+          "title": "Congregational Prayer (Swalat Al-Jama-a)",
+          "periods": 6,
+          "subTopics": [
+            "Meaning of congregational prayer",
+            "Importance of Swalat Al-Jama-a",
+            "How Muslims pray together",
+            "Roles in congregational prayer",
+            "Good conduct during prayer"
+          ]
+        },
+        {
+          "id": "p4-ire-night-journey-israi-miraj",
+          "term": null,
+          "title": "The Night Journey (Israi and Miraj)",
+          "periods": 6,
+          "subTopics": [
+            "Meaning of Israi",
+            "Meaning of Miraj",
+            "The night journey of Prophet Muhammad (PBUH)",
+            "Lessons from the night journey",
+            "Allah's power and the gift of prayer"
+          ]
+        },
+        {
+          "id": "p4-ire-surat-al-falaq",
+          "term": null,
+          "title": "Surat Al-Falaq (113)",
+          "periods": 6,
+          "subTopics": [
+            "Reciting Surat Al-Falaq",
+            "Meaning of Surat Al-Falaq",
+            "Importance of Surat Al-Falaq",
+            "Seeking Allah's protection",
+            "Avoiding mischief, harmful creatures and wickedness"
+          ]
+        },
+        {
+          "id": "p4-ire-unique-nature-muhammad-messengership",
+          "term": null,
+          "title": "Unique Nature of Muhammad's (PBUH) Messengership",
+          "periods": 6,
+          "subTopics": [
+            "Reasons why Muhammad (PBUH) went to the cave",
+            "Nature of Prophet Muhammad's (PBUH) messengership",
+            "Aspects that made Prophet Muhammad's (PBUH) message unique",
+            "How Muhammad's (PBUH) message differed from predecessors",
+            "Lessons from Prophet Muhammad's (PBUH) messengership"
+          ]
+        },
+        {
+          "id": "p4-ire-conduct-after-swalat",
+          "term": null,
+          "title": "Conduct after Swalat",
+          "periods": 6,
+          "subTopics": [
+            "Dua for acquisition of knowledge",
+            "Behaviour after Swalat",
+            "Adhkar after Swalat",
+            "Activities after Swalat",
+            "Importance of duas and supplications",
+            "Asking Allah for forgiveness and needs"
+          ]
+        },
+        {
+          "id": "p4-ire-dress-cleanliness",
+          "term": null,
+          "title": "Dress and Cleanliness",
+          "periods": 6,
+          "subTopics": [
+            "Hadith concerning cleanliness",
+            "Prophetic teaching on cleanliness",
+            "Purity and decency in Islam",
+            "Substances which are unclean and can spoil Swalat",
+            "Dress in a way accepted by Allah",
+            "Cleanliness in daily life"
+          ]
+        }
+      ]
+    }
+  ]
+}

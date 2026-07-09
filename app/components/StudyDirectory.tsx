@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { getSession, type TendoSession } from "@/lib/auth-session";
+import { getSession, type TendoGrade, type TendoSession } from "@/lib/auth-session";
 
 const p7Subjects = [
   ["/math/p7", "➗", "accent-math", "Mathematics", "Sets, numbers, geometry and algebra", "11 topics"],
@@ -10,7 +10,7 @@ const p7Subjects = [
   ["/science/p7", "🔬", "accent-science", "Integrated Science", "Body systems, energy and health", "8 topics"],
   ["/social-studies/p7", "🌍", "accent-sst", "Social Studies", "Africa, maps, people and history", "10 topics"],
   ["/re/p7", "🕊️", "accent-re", "Religious Education", "Choose CRE or IRE", "14 topics"],
-];
+] as const;
 
 const p6Subjects = [
   ["/math/p6", "➗", "accent-math", "Mathematics", "Numbers, fractions, geometry and data", "6 topics"],
@@ -18,11 +18,35 @@ const p6Subjects = [
   ["/science/p6", "🔬", "accent-science", "Integrated Science", "Living things, sound and body systems", "5 topics"],
   ["/social-studies/p6", "🌍", "accent-sst", "Social Studies", "People and resources of East Africa", "6 topics"],
   ["/re/p6", "🕊️", "accent-re", "Religious Education", "CRE and IRE foundations", "6 topics"],
-];
+] as const;
 
-type SubjectTuple = typeof p7Subjects[number];
 
-function SubjectGrid({ subjects }: { subjects: SubjectTuple[] }) {
+const p4Subjects = [
+  ["/math/p4", "➗", "accent-math", "Mathematics", "Sets, numbers, fractions, geometry and measurement", "12 topics"],
+  ["/english/p4", "📖", "accent-english", "English", "Descriptions, directions, feelings and writing", "8 topics"],
+  ["/science/p4", "🔬", "accent-science", "Integrated Science", "Plants, crops, weather, health, food and animals", "12 topics"],
+  ["/social-studies/p4", "🌍", "accent-sst", "Social Studies", "Living together in our district", "6 topics"],
+  ["/re/p4", "🕊️", "accent-re", "Religious Education", "CRE and IRE beta from NCDC abridged source", "25 topics"],
+] as const;
+
+const p5Subjects = [
+  ["/math/p5", "➗", "accent-math", "Mathematics", "Numbers, operations, measures and algebra", "12 topics"],
+  ["/english/p5", "📖", "accent-english", "English", "Vehicle repair, print media, travelling and writing", "8 topics"],
+  ["/science/p5", "🔬", "accent-science", "Science", "Poultry, health, soil, heat and changes", "9 topics"],
+  ["/social-studies/p5", "🌍", "accent-sst", "Social Studies", "Uganda, people, government and resources", "12 topics"],
+  ["/re/p5", "🕊️", "accent-re", "Religious Education", "CRE and IRE faith foundations", "20 topics"],
+] as const;
+
+type SubjectTuple = typeof p7Subjects[number] | typeof p6Subjects[number] | typeof p5Subjects[number] | typeof p4Subjects[number];
+
+function subjectsForGrade(grade: TendoGrade): readonly SubjectTuple[] {
+  if (grade === "P4") return p4Subjects;
+  if (grade === "P5") return p5Subjects;
+  if (grade === "P6") return p6Subjects;
+  return p7Subjects;
+}
+
+function SubjectGrid({ subjects }: { subjects: readonly SubjectTuple[] }) {
   return (
     <div className="subject-card-grid polished-subject-grid">
       {subjects.map(([href, icon, accent, title, sub, count]) => (
@@ -55,7 +79,7 @@ export default function StudyDirectory() {
 
   const isTeacher = session?.role === "teacher";
   const studentGrade = session?.grade ?? "P7";
-  const studentSubjects = studentGrade === "P6" ? p6Subjects : p7Subjects;
+  const studentSubjects = subjectsForGrade(studentGrade);
 
   if (!isTeacher) {
     return (
@@ -102,6 +126,27 @@ export default function StudyDirectory() {
           </div>
         </div>
         <SubjectGrid subjects={p6Subjects} />
+      </section>
+
+
+      <section className="teacher-library-section">
+        <div className="section-heading compact-heading">
+          <div>
+            <div className="eyebrow">Primary Four</div>
+            <h2>P4 beta content</h2>
+          </div>
+        </div>
+        <SubjectGrid subjects={p4Subjects} />
+      </section>
+
+      <section className="teacher-library-section">
+        <div className="section-heading compact-heading">
+          <div>
+            <div className="eyebrow">Primary Five</div>
+            <h2>P5 beta content</h2>
+          </div>
+        </div>
+        <SubjectGrid subjects={p5Subjects} />
       </section>
     </div>
   );

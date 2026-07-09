@@ -6,6 +6,36 @@
 
 ---
 
+
+# NON-NEGOTIABLE RULE: NCDC FIRST, BUILD SECOND
+
+For every class and every subject, Tendo must follow this order:
+
+1. **Research the official NCDC curriculum requirements.**
+2. **Document the subject/class structure clearly.**
+3. **Create or update the curriculum map.**
+4. **Build learner-facing content from that map only.**
+5. **Review and correct content before exposing it as premium-ready.**
+
+If a topic, route, subject, class or practice bank is not aligned to the NCDC curriculum, it should not be treated as valid product work. We are building the curriculum in a better app form — not inventing our own syllabus.
+
+---
+
+# BETA QUALITY RULE: LIVE BETA DOES NOT MEAN ROUGH DRAFT
+
+When content is marked beta, it should still be built to the best standard we can produce ourselves. Beta means it is live for testers to review and catch remaining mistakes; it does **not** mean incomplete, careless, filler or low-quality work is acceptable.
+
+Builder responsibility before beta:
+1. Follow the NCDC map.
+2. Build complete lessons, examples, checks and quizzes.
+3. Do our own correction pass.
+4. Run the build.
+5. Then expose for beta review.
+
+Reviewers are a second safety layer, not a replacement for our own quality work.
+
+---
+
 ## You have 10 seconds. What do I read?
 
 1. **`STATUS.md`** — current state and what is still open.
@@ -22,11 +52,12 @@
 - **Primary user:** students.
 - **Paying customer:** premium parents/guardians who want academic ROI.
 - **Target commercial assumption:** families who can afford around **UGX 50,000/month** for a serious study product.
-- **Current priority:** complete and polish content, starting with **P7**, then move class by class.
+- **Current priority:** complete and polish P7/P6/P5 beta content, while P4 begins carefully from verified maps. P4 is now live beta across all 5 app subjects. P4 RE is from NCDC/MoES abridged curriculum and remains beta until full standard-syllabus confirmation.
 - **Teacher dashboard:** useful but no longer central.
 - **Parent dashboard:** strategically important because the parent pays and needs visibility.
 - **Trainup status:** archived historical context. Do not treat Trainup as the active product path.
 - **Auth status:** local/device sign-in scaffolding only. Real backend authentication is a future task.
+- **P4 status:** English/Math/Science/SST/RE maps exist; P4 Math is verified from official NCDC PDF and live beta; P4 English is live beta from official NCDC syllabus; P4 Science is live beta from NCDC Integrated Science syllabus; P4 Social Studies is live beta from official NCDC syllabus; P4 RE is live beta from NCDC/MoES abridged curriculum; P4 RE is mapped from NCDC/MoES abridged curriculum and still needs full standard-syllabus confirmation.
 
 ## Folder map
 

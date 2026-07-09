@@ -7,6 +7,140 @@
 
 
 
+
+
+
+
+
+
+
+
+## Phase 28 — P4 Religious Education Live Beta and P4 Class Completion
+- [x] Build P4 Religious Education beta content from `content/curriculum/p4-re.json`
+- [x] Add P4 RE topic data (`app/lib/p4-re-topics.ts`)
+- [x] Add `/re/p4` and `/re/p4/[topic]` routes
+- [x] Add P4 RE to `/p4-home`, Study directory and practice suggestions
+- [x] Confirm P4 RE top-level topic IDs match `content/curriculum/p4-re.json`
+- [x] Build passed after P4 RE live beta (`npm run build`, 324 static pages)
+- [x] P4 live beta complete across all 5 app subjects
+- [ ] Human/founder/teacher review P4 RE respectful faith wording and source limitations
+- [ ] Verify P4 RE map against full standard P4 CRE/IRE syllabus when found
+
+---
+
+## Phase 27 — P4 Social Studies Live Beta
+- [x] Build P4 Social Studies beta content from official NCDC P4 SST map
+- [x] Add P4 Social Studies topic data (`app/lib/p4-social-topics.ts`)
+- [x] Add `/social-studies/p4` and `/social-studies/p4/[topic]` routes
+- [x] Add P4 Social Studies to `/p4-home`, Study directory and practice suggestions
+- [x] Confirm P4 Social Studies top-level topic IDs match `content/curriculum/p4-social-studies.json`
+- [x] Build passed after P4 Social Studies live beta (`npm run build`, 298 static pages)
+- [ ] Human/founder/teacher review P4 Social Studies local-district examples and civic balance
+
+---
+
+## Phase 26 — P4 Integrated Science Live Beta
+- [x] Build P4 Integrated Science beta content from NCDC P4 Integrated Science map
+- [x] Add P4 Science topic data (`app/lib/p4-science-topics.ts`)
+- [x] Add `/science/p4` and `/science/p4/[topic]` routes
+- [x] Add P4 Science to `/p4-home`, Study directory and practice suggestions
+- [x] Confirm P4 Science top-level topic IDs match `content/curriculum/p4-science.json`
+- [x] Build passed after P4 Science live beta (`npm run build`, 291 static pages)
+- [ ] Human/founder/teacher review P4 Science accuracy and health-sensitive wording
+
+---
+
+## Phase 25 — P4 English Live Beta
+- [x] Build P4 English beta content from official NCDC P4 English map
+- [x] Add P4 English topic data (`app/lib/p4-english-topics.ts`)
+- [x] Add `/english/p4` and `/english/p4/[topic]` routes
+- [x] Add P4 English to `/p4-home`, Study directory and practice suggestions
+- [x] Confirm P4 English top-level topic IDs match `content/curriculum/p4-english.json`
+- [x] Build passed after P4 English live beta (`npm run build`, 278 static pages)
+- [ ] Human/founder/teacher review P4 English language level, tone and source fidelity
+
+---
+
+## Phase 24 — P4 Mathematics Live Beta
+- [x] Build P4 Mathematics beta content from verified NCDC P4 Mathematics map
+- [x] Add P4 Mathematics topic data (`app/lib/p4-math-topics.ts`)
+- [x] Add `/math/p4` and `/math/p4/[topic]` routes
+- [x] Add `/p4-home` route
+- [x] Extend local student sign-in/session guard to P4
+- [x] Add P4 Mathematics to study directory and practice suggestions
+- [x] Build passed after P4 Mathematics live beta (`npm run build`, 269 static pages)
+- [ ] Human/founder/teacher review P4 Mathematics beta arithmetic and P4 readability
+
+---
+
+## Phase 23 — P4 Curriculum Research and Mapping
+- [x] Research P4 English NCDC syllabus structure
+- [x] Research P4 Social Studies NCDC syllabus structure
+- [x] Research P4 Integrated Science NCDC syllabus structure
+- [x] Add P4 English curriculum map
+- [x] Add initial P4 Mathematics curriculum map from NCDC PDF extract
+- [x] Add P4 Integrated Science curriculum map
+- [x] Add P4 Social Studies curriculum map
+- [x] Document P4 curriculum research (`docs/ops/ncdc-p4-curriculum-research-2026-07-09.md`)
+- [x] Verify and correct P4 Mathematics map against official NCDC PDF
+- [x] Find NCDC-backed P4 Religious Education CRE/IRE topic list in NCDC/MoES Primary 4 Abridged Curriculum
+- [x] Add `content/curriculum/p4-re.json` from the NCDC/MoES abridged source
+- [ ] Verify P4 RE map against full standard P4 CRE/IRE syllabus
+- [x] Build passed after P4 Mathematics official verification (`npm run build`, 255 static pages)
+- [x] Build all five P4 app subjects as live beta after map/source checks
+
+---
+
+## Phase 22 — P5 to P7 Curriculum Alignment Audit
+- [x] Add P7 Religious Education curriculum map
+- [x] Compare P7 curriculum maps against app content
+- [x] Compare P6 curriculum maps against app content
+- [x] Compare P5 curriculum maps against app content
+- [x] Confirm zero missing top-level topics across P5/P6/P7 maps
+- [x] Document audit (`docs/ops/curriculum-alignment-audit-p5-p7-2026-07-09.md`)
+- [x] Build passed after audit (`npm run build`, 255 static pages)
+- [ ] Human/founder/teacher review content details beyond top-level topic coverage
+
+---
+
+## Phase 21 — P5 Curriculum Research and Expansion Planning
+- [x] Lock beta quality rule in docs
+- [x] Lock non-negotiable NCDC-first build rule in docs
+- [x] Research P5 Set One curriculum source
+- [x] Correct P5 Mathematics curriculum map to official 12-topic structure
+- [x] Correct P5 English curriculum map to official 8-topic structure
+- [x] Correct P5 Integrated Science curriculum map to researched official topic structure
+- [x] Correct P5 Social Studies curriculum map to official 12-topic structure
+- [x] Correct P5 Religious Education curriculum map to CRE/IRE topic structure
+- [x] Remove premature P5 Mathematics/English draft app routes and content layers
+- [x] Document P5 curriculum research (`docs/ops/ncdc-p5-curriculum-research-2026-07-09.md`)
+- [x] Build passed after P5 correction (`npm run build`, 188 static pages)
+- [ ] Verify updated P5 maps against an official/trusted NCDC copy
+- [x] Build P5 Mathematics beta content layer from researched map
+- [x] Add P5 sign-in/home/study support and live P5 Mathematics routes
+- [x] Mark P5 Mathematics as beta, not draft
+- [x] Build passed after live P5 Mathematics beta (`npm run build`, 202 static pages)
+- [ ] Human/founder review P5 Mathematics beta content
+- [x] Build P5 English beta content layer from researched map
+- [x] Add live P5 English beta routes
+- [x] Build passed after live P5 English beta (`npm run build`, 211 static pages)
+- [ ] Human/founder review P5 English beta content
+- [x] Build P5 Science beta content layer from researched map
+- [x] Add live P5 Science beta routes
+- [x] Build passed after live P5 Science beta (`npm run build`, 221 static pages)
+- [ ] Human/founder review P5 Science beta content
+- [x] Build P5 Social Studies beta content layer from researched map
+- [x] Add live P5 Social Studies beta routes
+- [x] Build passed after live P5 Social Studies beta (`npm run build`, 234 static pages)
+- [ ] Human/founder review P5 Social Studies beta content
+- [x] Build P5 Religious Education beta content layer from researched map
+- [x] Add live P5 Religious Education beta routes
+- [x] Build passed after live P5 Religious Education beta (`npm run build`, 255 static pages)
+- [ ] Human/founder/teacher review P5 Religious Education beta content
+- [x] All current P5 subjects live as beta
+
+---
+
 ## Phase 20 — P6 Premium Content Completion
 - [x] Start P6 premium audit
 - [x] Add premium practice subtopics to all 6 P6 Mathematics topics

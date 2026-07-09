@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Four (P.4)",
+    "subject": "Integrated Science",
+    "examBody": "UNEB",
+    "exam": "PLE Foundation",
+    "source": "NCDC Primary Four Integrated Science Syllabus, April 2009",
+    "verificationStatus": "researched-from-ncdc-pdf",
+    "lastReviewed": "2026-07-09"
+  },
+  "themes": [
+    {
+      "id": "p4-science-living-things",
+      "name": "The World of Living Things",
+      "topics": [
+        { "id": "p4-plant-life", "term": "Term I", "title": "Plant Life", "periods": null, "subTopics": ["Flowering plants", "Parts of plants", "Plant needs", "Uses and care of plants"] },
+        { "id": "p4-growing-crops", "term": "Term I", "title": "Growing Crops", "periods": null, "subTopics": ["Crop growing", "Soil preparation", "Planting and crop care", "Harvesting"] },
+        { "id": "p4-animal-life", "term": "Term III", "title": "Animal Life", "periods": null, "subTopics": ["Common animals", "Animal needs", "Animal care", "Uses of animals"] }
+      ]
+    },
+    {
+      "id": "p4-science-environment",
+      "name": "Our Environment",
+      "topics": [
+        { "id": "p4-weather-changes", "term": "Term I", "title": "Weather Changes Around Us", "periods": null, "subTopics": ["Weather elements", "Weather changes", "Weather symbols", "Effects of weather"] }
+      ]
+    },
+    {
+      "id": "p4-science-human-health",
+      "name": "Human Health",
+      "topics": [
+        { "id": "p4-personal-hygiene", "term": "Term I", "title": "Personal Hygiene", "periods": null, "subTopics": ["Body cleanliness", "Clothes cleanliness", "Good hygiene habits", "Prevention of disease"] },
+        { "id": "p4-sanitation", "term": "Term II", "title": "Sanitation", "periods": null, "subTopics": ["Clean home and school environment", "Safe disposal of waste", "Latrine use", "Clean water"] },
+        { "id": "p4-communicable-intestinal-diseases-worms", "term": "Term III", "title": "Communicable Intestinal Diseases and Worm Infestation", "periods": null, "subTopics": ["Communicable diseases", "Intestinal diseases", "Worm infestation", "Prevention and hygiene"] },
+        { "id": "p4-vectors-diseases", "term": "Term III", "title": "Vectors and Diseases", "periods": null, "subTopics": ["Common vectors", "Diseases spread by vectors", "Vector control", "Personal and community protection"] },
+        { "id": "p4-accidents-poisoning-first-aid", "term": "Term III", "title": "Accidents, Poisoning and First Aid", "periods": null, "subTopics": ["Common accidents", "Poisoning", "First aid basics", "Safety at home and school"] }
+      ]
+    },
+    {
+      "id": "p4-science-human-body",
+      "name": "Human Body",
+      "topics": [
+        { "id": "p4-our-food", "term": "Term II", "title": "Our Food", "periods": null, "subTopics": ["Food types", "Balanced diet", "Food hygiene", "Uses of food"] },
+        { "id": "p4-human-body-organs", "term": "Term II", "title": "Human Body Organs", "periods": null, "subTopics": ["Major body organs", "Functions of organs", "Care for body organs", "Body systems introduction"] },
+        { "id": "p4-teeth", "term": "Term II", "title": "The Teeth", "periods": null, "subTopics": ["Types of teeth", "Functions of teeth", "Tooth care", "Tooth decay prevention"] }
+      ]
+    }
+  ]
+}

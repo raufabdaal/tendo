@@ -3,12 +3,21 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import type { TendoSession } from "@/lib/auth-session";
+import type { TendoGrade, TendoSession } from "@/lib/auth-session";
 
-function gradeFromPath(pathname: string, session: TendoSession): "P6" | "P7" {
+function gradeFromPath(pathname: string, session: TendoSession): TendoGrade {
   if (session.role === "student" && session.grade) return session.grade;
+  if (pathname === "/p4-home" || pathname.includes("/p4")) return "P4";
+  if (pathname === "/p5-home" || pathname.includes("/p5")) return "P5";
   if (pathname === "/p6-home" || pathname.includes("/p6")) return "P6";
   return "P7";
+}
+
+function homeForGrade(grade: TendoGrade) {
+  if (grade === "P4") return "/p4-home";
+  if (grade === "P5") return "/p5-home";
+  if (grade === "P6") return "/p6-home";
+  return "/";
 }
 
 function activeSection(pathname: string, role: TendoSession["role"]): "home" | "study" | "practice" | "papers" | "teacher" | "worksheet" | "questions" | "reports" {
@@ -40,7 +49,7 @@ export default function AppNav({
   const [teacherMenuOpen, setTeacherMenuOpen] = useState(false);
   const grade = gradeFromPath(pathname, session);
   const active = activeSection(pathname, session.role);
-  const homeHref = session.role === "teacher" ? "/teacher" : grade === "P6" ? "/p6-home" : "/";
+  const homeHref = session.role === "teacher" ? "/teacher" : homeForGrade(grade);
 
   useEffect(() => {
     setTeacherMenuOpen(false);
@@ -78,13 +87,7 @@ export default function AppNav({
 
           <div className="teacher-menu-wrap">
             <span className="teacher-account-pill">👩🏾‍🏫 {firstName || "Teacher"}</span>
-            <button
-              type="button"
-              className="teacher-menu-button"
-              aria-label={teacherMenuOpen ? "Close teacher menu" : "Open teacher menu"}
-              aria-expanded={teacherMenuOpen}
-              onClick={() => setTeacherMenuOpen((open) => !open)}
-            >
+            <button type="button" className="teacher-menu-button" aria-label={teacherMenuOpen ? "Close teacher menu" : "Open teacher menu"} aria-expanded={teacherMenuOpen} onClick={() => setTeacherMenuOpen((open) => !open)}>
               <span />
               <span />
               <span />
@@ -94,12 +97,7 @@ export default function AppNav({
 
         {teacherMenuOpen && (
           <>
-            <button
-              type="button"
-              className="teacher-menu-backdrop"
-              aria-label="Close menu"
-              onClick={() => setTeacherMenuOpen(false)}
-            />
+            <button type="button" className="teacher-menu-backdrop" aria-label="Close menu" onClick={() => setTeacherMenuOpen(false)} />
             <div className="teacher-menu-popover" role="dialog" aria-label="Teacher navigation menu">
               <div className="teacher-menu-head">
                 <span>👩🏾‍🏫</span>
@@ -111,11 +109,7 @@ export default function AppNav({
 
               <nav className="teacher-menu-list" aria-label="Teacher navigation">
                 {teacherItems.map((item) => (
-                  <Link
-                    key={item.id}
-                    href={item.href}
-                    className={active === item.id ? "active" : undefined}
-                  >
+                  <Link key={item.id} href={item.href} className={active === item.id ? "active" : undefined}>
                     <span aria-hidden="true">{item.emoji}</span>
                     <strong>{item.label}</strong>
                   </Link>
@@ -145,11 +139,7 @@ export default function AppNav({
 
         <nav className="top-nav" aria-label="Main navigation">
           {learnerItems.map((item) => (
-            <Link
-              key={item.id}
-              href={item.href}
-              className={active === item.id ? "active" : undefined}
-            >
+            <Link key={item.id} href={item.href} className={active === item.id ? "active" : undefined}>
               <span aria-hidden="true">{item.emoji}</span>
               {item.label}
             </Link>
@@ -158,19 +148,13 @@ export default function AppNav({
 
         <div className="account-tools">
           <span className="student-class-pill">🎓 {grade}</span>
-          <button type="button" className="sign-out-btn" onClick={onSignOut}>
-            Switch
-          </button>
+          <button type="button" className="sign-out-btn" onClick={onSignOut}>Switch</button>
         </div>
       </div>
 
       <nav className="bottom-nav" aria-label="Mobile navigation">
         {learnerItems.map((item) => (
-          <Link
-            key={item.id}
-            href={item.href}
-            className={active === item.id ? "active" : undefined}
-          >
+          <Link key={item.id} href={item.href} className={active === item.id ? "active" : undefined}>
             <span aria-hidden="true">{item.emoji}</span>
             <small>{item.label}</small>
           </Link>

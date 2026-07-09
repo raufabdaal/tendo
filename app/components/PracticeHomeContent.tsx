@@ -44,6 +44,119 @@ const p7Sets: PracticeSet[] = [
   },
 ];
 
+
+
+const p4Sets: PracticeSet[] = [
+  {
+    href: "/math/p4/p4-set-concepts",
+    icon: "🌱",
+    title: "P4 Maths beta practice",
+    sub: "Sets and common members",
+    tone: "accent-math",
+  },
+  {
+    href: "/math/p4/p4-whole-numbers",
+    icon: "🔢",
+    title: "Whole numbers",
+    sub: "Place value, rounding and Roman numerals",
+    tone: "accent-math",
+  },
+  {
+    href: "/english/p4/p4-describing-people-objects",
+    icon: "📝",
+    title: "P4 English descriptions",
+    sub: "Describing people and objects",
+    tone: "accent-english",
+  },
+  {
+    href: "/science/p4/p4-personal-hygiene",
+    icon: "🧼",
+    title: "P4 Science health",
+    sub: "Personal hygiene and disease prevention",
+    tone: "accent-science",
+  },
+  {
+    href: "/social-studies/p4/p4-location-district-uganda",
+    icon: "🗺️",
+    title: "P4 SST district map",
+    sub: "Location of our district in Uganda",
+    tone: "accent-sst",
+  },
+  {
+    href: "/re/p4/p4-cre-traditions",
+    icon: "🕊️",
+    title: "P4 RE values",
+    sub: "Traditions and respectful conduct",
+    tone: "accent-re",
+  },
+  {
+    href: "/math/p4/p4-fractions",
+    icon: "🍕",
+    title: "Fractions",
+    sub: "Equivalent fractions and same-denominator work",
+    tone: "accent-math",
+  },
+  {
+    href: "/math/p4/p4-time",
+    icon: "⏰",
+    title: "Time",
+    sub: "Calendars, duration and conversions",
+    tone: "accent-math",
+  },
+];
+
+const p5Sets: PracticeSet[] = [
+  {
+    href: "/math/p5/p5-set-concepts",
+    icon: "🌱",
+    title: "P5 Maths beta practice",
+    sub: "Sets and Venn diagrams",
+    tone: "accent-math",
+  },
+  {
+    href: "/math/p5/p5-whole-numbers",
+    icon: "🔢",
+    title: "Whole numbers",
+    sub: "Place value and rounding",
+    tone: "accent-math",
+  },
+  {
+    href: "/math/p5/p5-operations-whole-numbers",
+    icon: "➕",
+    title: "Operations",
+    sub: "Add, subtract, multiply and divide",
+    tone: "accent-math",
+  },
+  {
+    href: "/english/p5/p5-letter-writing",
+    icon: "✉️",
+    title: "Letter writing",
+    sub: "Personal letters and invitations",
+    tone: "accent-english",
+  },
+  {
+    href: "/science/p5/p5-digestive-system",
+    icon: "🍽️",
+    title: "Digestive system",
+    sub: "Food, teeth and body health",
+    tone: "accent-science",
+  },
+  {
+    href: "/social-studies/p5/p5-location-uganda-map-east-africa",
+    icon: "🗺️",
+    title: "Uganda map",
+    sub: "Location and neighbours",
+    tone: "accent-sst",
+  },
+  {
+    href: "/re/p5/p5-cre-faith",
+    icon: "🕊️",
+    title: "Faith",
+    sub: "CRE and daily life",
+    tone: "accent-re",
+  },
+];
+
 const p6Sets: PracticeSet[] = [
   {
     href: "/math/p6/p6-fractions-decimals/practice",
@@ -107,7 +220,7 @@ export default function PracticeHomeContent() {
   if (!ready) return <div className="auth-loading">Loading practice…</div>;
 
   const grade = session?.grade ?? "P7";
-  const sets = grade === "P6" ? p6Sets : p7Sets;
+  const sets = grade === "P4" ? p4Sets : grade === "P5" ? p5Sets : grade === "P6" ? p6Sets : p7Sets;
   const finalSets = teacherQuestionCount > 0
     ? [{ href: "/practice/teacher-questions", icon: "📝", title: "Teacher questions", sub: `${teacherQuestionCount} question${teacherQuestionCount === 1 ? "" : "s"} to answer`, tone: "accent-english" }, ...sets]
     : sets;

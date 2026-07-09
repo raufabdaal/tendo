@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Five (P.5)",
+    "subject": "Religious Education",
+    "examBody": "UNEB",
+    "exam": "PLE Foundation",
+    "source": "NCDC Primary Five Curriculum Set One, August 2010, Religious Education section",
+    "verificationStatus": "researched-from-ncdc-set-one-pdf-mirror-needs-official-copy-check",
+    "lastReviewed": "2026-07-09"
+  },
+  "themes": [
+    {
+      "id": "p5-cre",
+      "name": "Christian Religious Education",
+      "topics": [
+        { "id": "p5-cre-faith", "option": "CRE", "term": "Term I", "title": "Faith", "periods": null, "subTopics": ["Meaning of faith", "Faith in God", "Examples of faith", "Living by faith"] },
+        { "id": "p5-cre-christianity-islam", "option": "CRE", "term": "Term I", "title": "Christianity and Islam", "periods": null, "subTopics": ["Christianity", "Islam", "Similarities and differences", "Respect for different faiths"] },
+        { "id": "p5-cre-gods-word-for-us", "option": "CRE", "term": "Term I", "title": "God's Word for Us", "periods": null, "subTopics": ["Bible as God's word", "Listening to God's word", "Obeying God's word", "Using scripture in daily life"] },
+        { "id": "p5-cre-gods-word-jesus", "option": "CRE", "term": "Term II", "title": "God's Word for Us: Jesus", "periods": null, "subTopics": ["Jesus as God's word", "Teachings of Jesus", "Miracles of Jesus", "Lessons from Jesus"] },
+        { "id": "p5-cre-new-people-spirit", "option": "CRE", "term": "Term II", "title": "We are the New People of God in the Spirit", "periods": null, "subTopics": ["Holy Spirit", "New life in Christ", "Gifts and fruits", "Christian behaviour"] },
+        { "id": "p5-cre-we-are-church", "option": "CRE", "term": "Term II", "title": "We are the Church", "periods": null, "subTopics": ["Meaning of church", "Church community", "Roles in the church", "Serving in church"] },
+        { "id": "p5-cre-witness", "option": "CRE", "term": "Term III", "title": "Witness", "periods": null, "subTopics": ["Meaning of witness", "Witnessing by words and actions", "Courage and honesty", "Christian examples"] },
+        { "id": "p5-cre-discipleship-rewards", "option": "CRE", "term": "Term III", "title": "Discipleship and its Rewards", "periods": null, "subTopics": ["Meaning of discipleship", "Following Jesus", "Challenges of discipleship", "Rewards of discipleship"] },
+        { "id": "p5-cre-relationship-with-god", "option": "CRE", "term": "Term III", "title": "Relationship with God", "periods": null, "subTopics": ["Prayer", "Worship", "Trust in God", "Living close to God"] },
+        { "id": "p5-cre-hope", "option": "CRE", "term": "Term III", "title": "Hope", "periods": null, "subTopics": ["Meaning of hope", "Hope in God", "Hope during difficulties", "Christian encouragement"] }
+      ]
+    },
+    {
+      "id": "p5-ire",
+      "name": "Islamic Religious Education",
+      "topics": [
+        { "id": "p5-ire-surat-al-zilzala", "option": "IRE", "term": "Term I", "title": "Surat Al-Zilzala", "periods": null, "subTopics": ["Reading", "Meaning", "Lessons", "Application in daily life"] },
+        { "id": "p5-ire-settlement-debts", "option": "IRE", "term": "Term I", "title": "Hadith: Settlement of Debts", "periods": null, "subTopics": ["Meaning of debt", "Settling debts", "Honesty", "Responsibility"] },
+        { "id": "p5-ire-resurrection-judgment", "option": "IRE", "term": "Term I", "title": "Resurrection and Judgment", "periods": null, "subTopics": ["Belief in resurrection", "Judgment", "Accountability", "Good deeds"] },
+        { "id": "p5-ire-fasting", "option": "IRE", "term": "Term II", "title": "Fasting", "periods": null, "subTopics": ["Meaning of fasting", "Ramadan", "Benefits of fasting", "Who may fast"] },
+        { "id": "p5-ire-prophet-madina", "option": "IRE", "term": "Term II", "title": "Prophet Muhammad at Madina", "periods": null, "subTopics": ["Hijrah to Madina", "Community life", "Leadership", "Lessons from Madina"] },
+        { "id": "p5-ire-surat-al-kauthar", "option": "IRE", "term": "Term II", "title": "Surat Al-Kauthar", "periods": null, "subTopics": ["Reading", "Meaning", "Lessons", "Gratitude and worship"] },
+        { "id": "p5-ire-good-neighbourliness", "option": "IRE", "term": "Term III", "title": "Hadith: Good Neighbourliness", "periods": null, "subTopics": ["Rights of neighbours", "Kindness", "Helping others", "Peaceful living"] },
+        { "id": "p5-ire-paradise-hell", "option": "IRE", "term": "Term III", "title": "Paradise and Hell", "periods": null, "subTopics": ["Belief in Paradise", "Belief in Hell", "Good and bad deeds", "Accountability"] },
+        { "id": "p5-ire-tarawiih-idd-prayers", "option": "IRE", "term": "Term III", "title": "Tarawiih and Idd Prayers", "periods": null, "subTopics": ["Tarawiih prayer", "Idd prayers", "Congregational prayer", "Community celebration"] },
+        { "id": "p5-ire-last-days-prophet", "option": "IRE", "term": "Term III", "title": "Last Days of Prophet Muhammad (PBUH)", "periods": null, "subTopics": ["Sickness and death of the Prophet", "Lessons from the Prophet's life", "Leadership", "Kindness, patience and trustworthiness"] }
+      ]
+    }
+  ]
+}

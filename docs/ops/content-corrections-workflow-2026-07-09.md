@@ -1,5 +1,35 @@
 # Content Corrections and Restructure Workflow — 2026-07-09
 
+
+# NON-NEGOTIABLE RULE: NCDC FIRST, BUILD SECOND
+
+For every class and every subject, Tendo must follow this order:
+
+1. **Research the official NCDC curriculum requirements.**
+2. **Document the subject/class structure clearly.**
+3. **Create or update the curriculum map.**
+4. **Build learner-facing content from that map only.**
+5. **Review and correct content before exposing it as premium-ready.**
+
+If a topic, route, subject, class or practice bank is not aligned to the NCDC curriculum, it should not be treated as valid product work. We are building the curriculum in a better app form — not inventing our own syllabus.
+
+---
+
+# BETA QUALITY RULE: LIVE BETA DOES NOT MEAN ROUGH DRAFT
+
+When content is marked beta, it should still be built to the best standard we can produce ourselves. Beta means it is live for testers to review and catch remaining mistakes; it does **not** mean incomplete, careless, filler or low-quality work is acceptable.
+
+Builder responsibility before beta:
+1. Follow the NCDC map.
+2. Build complete lessons, examples, checks and quizzes.
+3. Do our own correction pass.
+4. Run the build.
+5. Then expose for beta review.
+
+Reviewers are a second safety layer, not a replacement for our own quality work.
+
+---
+
 ## Why this exists
 
 As Tendo becomes a premium paid product, content mistakes must be easy to fix without breaking the app. We need a clean way to restructure content, correct errors and keep stable routes.

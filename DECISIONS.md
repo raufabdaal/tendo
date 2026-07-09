@@ -6,6 +6,26 @@
 
 
 
+
+
+## DEV-030 · 2026-07-09 · Beta content must be built to premium standard before review
+
+**Decision:** Live beta does not mean rough draft. Any content exposed to beta testers should be built to the best standard we can produce ourselves before external review.
+**Reasoning:** Reviewers are a second safety layer, not a substitute for our own curriculum alignment and quality work. Premium parents will judge quality even during beta.
+**Implementation effect:** P5 Mathematics and P5 English are marked beta and live, but they must still follow NCDC maps, contain complete lessons/examples/checks/quizzes, and receive internal passes before broader release.
+
+---
+
+## DEV-029 · 2026-07-09 · Non-negotiable content workflow: NCDC first, build second
+
+**Decision:** No learner-facing class, subject, topic, practice bank or route should be treated as valid product work unless it starts from researched NCDC curriculum requirements.
+**Required order:** research NCDC → document structure → create/update curriculum map → build content → review/correct → expose as premium-ready.
+**Reasoning:** Tendo is the Ugandan primary curriculum in a better app form. If the app drifts away from NCDC, the product fails regardless of design quality.
+**Implementation effect:** P5 draft app routes/content that were built before strict verification were removed; P5 remains at researched curriculum-map stage until verified.
+**Tracked across:** `STATUS.md`, `HANDOFF.md`, `START_HERE.md`, `docs/ops/content-corrections-workflow-2026-07-09.md`, `docs/ops/primary-content-completion-roadmap-2026-07-09.md`.
+
+---
+
 ## DEV-028 · 2026-07-09 · Premium parent-funded positioning and content-first roadmap
 
 **Previous active direction:** Student-first direct-to-learner after archiving Trainup.

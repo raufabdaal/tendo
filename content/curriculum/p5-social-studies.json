@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Five (P.5)",
+    "subject": "Social Studies",
+    "examBody": "UNEB",
+    "exam": "PLE Foundation",
+    "source": "NCDC Primary Five Curriculum Set One, August 2010, Social Studies section",
+    "verificationStatus": "researched-from-ncdc-set-one-pdf-mirror-needs-official-copy-check",
+    "lastReviewed": "2026-07-09"
+  },
+  "themes": [
+    {
+      "id": "p5-sst-uganda",
+      "name": "Primary Five Social Studies: Uganda",
+      "topics": [
+        {
+          "id": "p5-location-uganda-map-east-africa",
+          "term": "Term I",
+          "title": "Location of Uganda on the Map of East Africa",
+          "periods": null,
+          "subTopics": ["Location of Uganda", "Neighbouring countries", "Map of East Africa", "Compass directions"]
+        },
+        {
+          "id": "p5-physical-features-uganda",
+          "term": "Term I",
+          "title": "Physical Features in Uganda",
+          "periods": null,
+          "subTopics": ["Mountains", "Lakes and rivers", "Rift valley", "Plains and plateaus", "Importance of physical features"]
+        },
+        {
+          "id": "p5-climate-uganda",
+          "term": "Term I",
+          "title": "Climate of Uganda",
+          "periods": null,
+          "subTopics": ["Elements of weather and climate", "Rainfall", "Temperature", "Factors influencing climate", "Effects of climate on people"]
+        },
+        {
+          "id": "p5-vegetation-uganda",
+          "term": "Term II",
+          "title": "Vegetation in Uganda",
+          "periods": null,
+          "subTopics": ["Types of vegetation", "Uses of vegetation", "Vegetation conservation", "Human activities affecting vegetation"]
+        },
+        {
+          "id": "p5-natural-resources-uganda",
+          "term": "Term II",
+          "title": "Natural Resources in Uganda",
+          "periods": null,
+          "subTopics": ["Meaning of natural resources", "Examples of resources", "Uses of resources", "Conservation of resources"]
+        },
+        {
+          "id": "p5-people-precolonial-uganda",
+          "term": "Term II",
+          "title": "The People of Pre-Colonial Uganda",
+          "periods": null,
+          "subTopics": ["Ethnic groups", "Migration and settlement", "Pre-colonial societies", "Culture and leadership"]
+        },
+        {
+          "id": "p5-foreign-influence-uganda",
+          "term": "Term II",
+          "title": "Foreign Influence in Uganda",
+          "periods": null,
+          "subTopics": ["Early foreigners", "Missionaries", "Explorers", "Traders", "Effects of foreign influence"]
+        },
+        {
+          "id": "p5-how-uganda-became-nation",
+          "term": "Term III",
+          "title": "How Uganda Became a Nation",
+          "periods": null,
+          "subTopics": ["Coming of colonial rule", "Protectorate period", "Administrative changes", "Growth of Uganda as one country"]
+        },
+        {
+          "id": "p5-road-to-independence",
+          "term": "Term III",
+          "title": "The Road to Independence",
+          "periods": null,
+          "subTopics": ["Nationalism", "Political parties", "Leaders", "Events leading to independence"]
+        },
+        {
+          "id": "p5-independent-uganda",
+          "term": "Term III",
+          "title": "Uganda as an Independent Nation",
+          "periods": null,
+          "subTopics": ["Meaning of independence", "Symbols of Uganda", "Responsibilities of citizens", "Benefits and challenges of independence"]
+        },
+        {
+          "id": "p5-government-uganda",
+          "term": "Term III",
+          "title": "The Government of Uganda",
+          "periods": null,
+          "subTopics": ["Arms of government", "Leaders and their roles", "Rights and responsibilities", "Local government"]
+        },
+        {
+          "id": "p5-population-size-distribution",
+          "term": "Term III",
+          "title": "Population, Size and Distribution",
+          "periods": null,
+          "subTopics": ["Meaning of population", "Population distribution", "Factors influencing settlement", "Population problems and solutions"]
+        }
+      ]
+    }
+  ]
+}
