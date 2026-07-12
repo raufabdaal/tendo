@@ -1,5 +1,20 @@
 # CHANGELOG — Tendo
 
+## v1.8.43 — 2026-07-12 — V4 mobile module stepper added
+
+**Session theme:** Make the v4 content structure mobile-first and less overwhelming.
+
+**Changed:**
+- Reworked `app/components/V4LessonViews.tsx` so v4 content renders one module/block at a time instead of one long scroll.
+- Added module progress: `Module X of Y`, progress meter, horizontal module strip, Previous/Next buttons and Finish lesson CTA.
+- Added mobile-first v4 stepper styles and larger image treatment in `app/app/globals.css`.
+- Updated `docs/ops/v4-content-architecture-pilot-2026-07-12.md` and checklist.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
 ## v1.8.42 — 2026-07-12 — V4 lesson block pilot implemented
 
 **Session theme:** Move from documentation to implementation of the NCDC-native v4 content structure.

@@ -1,3 +1,6 @@
+"use client";
+
+import { useMemo, useState } from "react";
 import type {
   ActivityBlock,
   CategoryBlock,
@@ -21,16 +24,15 @@ export function LowerPrimaryLessonView({ lessons }: { lessons: LowerPrimaryLesso
   return (
     <section className="v4-lesson-shell v4-lower-shell" aria-label="Lower primary lesson">
       {lessons.map((lesson) => (
-        <article className="v4-lesson-card" key={lesson.id}>
-          <div className="v4-kicker">{lesson.classLevel} · {lesson.term} · {lesson.learningArea}</div>
-          <h2>{lesson.lessonTitle}</h2>
-          <p className="v4-subtitle">{lesson.themeTitle} · {lesson.subThemeTitle}</p>
-          <div className="v4-block-list">
-            {lesson.blocks.map((block, index) => (
-              <LowerPrimaryBlockView block={block} index={index} key={`${block.kind}-${index}`} />
-            ))}
-          </div>
-        </article>
+        <LessonStepper
+          key={lesson.id}
+          lessonId={lesson.id}
+          kicker={`${lesson.classLevel} · ${lesson.term} · ${lesson.learningArea}`}
+          title={lesson.lessonTitle}
+          subtitle={`${lesson.themeTitle} · ${lesson.subThemeTitle}`}
+          blocks={lesson.blocks}
+          renderBlock={(block, index) => <LowerPrimaryBlockView block={block} index={index} />}
+        />
       ))}
     </section>
   );
@@ -40,19 +42,113 @@ export function UpperPrimaryLessonView({ lessons }: { lessons: UpperPrimaryLesso
   return (
     <section className="v4-lesson-shell v4-upper-shell" aria-label="Upper primary lesson">
       {lessons.map((lesson) => (
-        <article className="v4-lesson-card" key={lesson.id}>
-          <div className="v4-kicker">{lesson.classLevel} · {lesson.term} · {lesson.subject}</div>
-          <h2>{lesson.subTopicTitle}</h2>
-          <p className="v4-subtitle">{lesson.topicTitle}</p>
-          <div className="v4-block-list">
-            {lesson.blocks.map((block, index) => (
-              <UpperPrimaryBlockView block={block} index={index} key={`${block.kind}-${index}`} />
-            ))}
-          </div>
-        </article>
+        <LessonStepper
+          key={lesson.id}
+          lessonId={lesson.id}
+          kicker={`${lesson.classLevel} · ${lesson.term} · ${lesson.subject}`}
+          title={lesson.subTopicTitle}
+          subtitle={lesson.topicTitle}
+          blocks={lesson.blocks}
+          renderBlock={(block, index) => <UpperPrimaryBlockView block={block} index={index} />}
+        />
       ))}
     </section>
   );
+}
+
+function LessonStepper<TBlock extends LowerPrimaryContentBlock | UpperPrimaryContentBlock>({
+  lessonId,
+  kicker,
+  title,
+  subtitle,
+  blocks,
+  renderBlock,
+}: {
+  lessonId: string;
+  kicker: string;
+  title: string;
+  subtitle: string;
+  blocks: TBlock[];
+  renderBlock: (block: TBlock, index: number) => React.ReactNode;
+}) {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const activeBlock = blocks[activeIndex];
+  const total = blocks.length;
+  const percent = useMemo(() => `${Math.round(((activeIndex + 1) / total) * 100)}%`, [activeIndex, total]);
+
+  return (
+    <article className="v4-lesson-card" id={lessonId}>
+      <div className="v4-kicker">{kicker}</div>
+      <h2>{title}</h2>
+      <p className="v4-subtitle">{subtitle}</p>
+
+      <div className="v4-stepper-head" aria-label="Lesson progress">
+        <div>
+          <strong>Module {activeIndex + 1} of {total}</strong>
+          <span>{getBlockLabel(activeBlock)}</span>
+        </div>
+        <div className="v4-step-meter" aria-hidden="true"><span style={{ width: percent }} /></div>
+      </div>
+
+      <div className="v4-module-strip" aria-label="Lesson modules">
+        {blocks.map((block, index) => (
+          <button
+            key={`${getBlockLabel(block)}-${index}`}
+            type="button"
+            className={index === activeIndex ? "active" : undefined}
+            onClick={() => setActiveIndex(index)}
+          >
+            <small>{index + 1}</small>
+            <span>{getBlockLabel(block)}</span>
+          </button>
+        ))}
+      </div>
+
+      <div className="v4-block-list v4-single-module">
+        {renderBlock(activeBlock, activeIndex)}
+      </div>
+
+      <div className="v4-stepper-actions">
+        <button
+          type="button"
+          className="btn btn-secondary"
+          disabled={activeIndex === 0}
+          onClick={() => setActiveIndex((index) => Math.max(0, index - 1))}
+        >
+          ← Previous
+        </button>
+        <div className="v4-completion-note">{percent} done</div>
+        {activeIndex < total - 1 ? (
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={() => setActiveIndex((index) => Math.min(total - 1, index + 1))}
+          >
+            Next module →
+          </button>
+        ) : (
+          <a className="btn btn-primary" href="#quick-quiz">Finish lesson →</a>
+        )}
+      </div>
+    </article>
+  );
+}
+
+function getBlockLabel(block: LowerPrimaryContentBlock | UpperPrimaryContentBlock): string {
+  if (block.kind === "vocabulary") return block.title ?? "New words";
+  if (block.kind === "story") return block.title;
+  if (block.kind === "definition") return `What is ${block.term}?`;
+  if (block.kind === "identification") return block.title;
+  if (block.kind === "categories") return block.title;
+  if (block.kind === "examples") return block.title;
+  if (block.kind === "characteristics") return block.title;
+  if (block.kind === "uses") return block.title;
+  if (block.kind === "phonics") return "Say the sound";
+  if (block.kind === "numeracy") return "Count / sort / match";
+  if (block.kind === "diagram") return block.title;
+  if (block.kind === "activity") return block.title;
+  if (block.kind === "worked-example") return "Worked example";
+  return block.title ?? "Exercise";
 }
 
 function LowerPrimaryBlockView({ block, index }: { block: LowerPrimaryContentBlock; index: number }) {
@@ -202,8 +298,8 @@ function ActivityView({ block, index }: { block: ActivityBlock; index: number })
 function DiagramView({ block, index }: { block: DiagramBlock; index: number }) {
   return (
     <BlockFrame index={index} label={block.title}>
-      <div className="module-image-card">
-        <img src={block.imageUrl} alt={block.caption} className="module-image" loading="lazy" />
+      <div className="module-image-card v4-image-card">
+        <img src={block.imageUrl} alt={block.caption} className="module-image v4-module-image" loading="lazy" />
         <p className="module-image-caption">{block.caption}</p>
       </div>
       {block.labels && <div className="v4-pill-row">{block.labels.map((label) => <span key={label}>{label}</span>)}</div>}

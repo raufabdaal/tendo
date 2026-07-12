@@ -4345,3 +4345,174 @@ input, select, textarea, button { max-width: 100%; }
     height: 30px;
   }
 }
+
+/* V4 mobile-first lesson stepper */
+.v4-stepper-head {
+  display: grid;
+  gap: 10px;
+  background: #17212b;
+  color: #fff;
+  border-radius: 18px;
+  padding: 14px 16px;
+  margin: 14px 0;
+}
+
+.v4-stepper-head strong,
+.v4-stepper-head span {
+  display: block;
+}
+
+.v4-stepper-head span {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.92rem;
+  margin-top: 2px;
+}
+
+.v4-step-meter {
+  height: 9px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.v4-step-meter span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #f6ad55, #68d391);
+}
+
+.v4-module-strip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 4px 2px 12px;
+  margin: 0 -2px 8px;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+}
+
+.v4-module-strip button {
+  flex: 0 0 min(215px, 72vw);
+  scroll-snap-align: start;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  align-items: center;
+  text-align: left;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  color: #334155;
+  border-radius: 14px;
+  padding: 10px;
+  min-height: 54px;
+  cursor: pointer;
+}
+
+.v4-module-strip button small {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: #334155;
+  font-weight: 900;
+}
+
+.v4-module-strip button span {
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.v4-module-strip button.active {
+  border-color: #17212b;
+  background: #fff7ed;
+  color: #17212b;
+  box-shadow: 0 8px 18px rgba(23, 33, 43, 0.08);
+}
+
+.v4-module-strip button.active small {
+  background: #17212b;
+  color: #fff;
+}
+
+.v4-single-module {
+  margin-top: 8px;
+}
+
+.v4-stepper-actions {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.v4-completion-note {
+  text-align: center;
+  color: #64748b;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.v4-image-card {
+  padding: 8px;
+  background: #fffaf0;
+}
+
+.v4-module-image {
+  width: 100%;
+  min-height: 180px;
+  object-fit: contain;
+}
+
+@media (max-width: 560px) {
+  .v4-lesson-card {
+    padding: 14px;
+    border-radius: 18px;
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+
+  .v4-stepper-head {
+    border-radius: 16px;
+    padding: 12px;
+  }
+
+  .v4-module-strip {
+    margin-left: -14px;
+    margin-right: -14px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .v4-block {
+    padding: 14px;
+    min-height: 320px;
+  }
+
+  .v4-vocab-grid,
+  .v4-category-grid,
+  .v4-example-list {
+    grid-template-columns: 1fr;
+  }
+
+  .v4-module-image {
+    min-height: 220px;
+  }
+
+  .v4-stepper-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .v4-completion-note {
+    order: -1;
+  }
+
+  .v4-stepper-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -31,6 +31,9 @@
 - [x] Hide old P3 expected-outcome/theme-guide meta panel on v4 lower-primary pilot route
 - [x] Document pilot (`docs/ops/v4-content-architecture-pilot-2026-07-12.md`)
 - [x] Build passed after v4 pilot (`npm install && npm run build`, 356 static pages)
+- [x] Convert v4 pilot renderer from long-scroll blocks to mobile-first module/stepper flow
+- [x] Add v4 mobile image and module navigation styling
+- [x] Build passed after v4 module stepper (`npm run build`, 356 static pages)
 - [ ] Founder review v4 pilot before broad migration (`/p3/theme/p3-theme-6-plants`, `/science/p5/p5-keeping-poultry-bees`)
 - [ ] Migrate P3/P4/P5 away from meta-module learner UI after pilot approval
 

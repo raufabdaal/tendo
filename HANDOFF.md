@@ -67,7 +67,7 @@ Current state of the milestone:
 1. Review the v4 pilot routes:
    - `/p3/theme/p3-theme-6-plants`
    - `/science/p5/p5-keeping-poultry-bees`
-2. Decide whether this v4 block order and UI should become the migration standard.
+2. Review the new v4 mobile module/stepper flow and decide whether it should become the migration standard.
 3. If approved, add a lesson/sub-topic selector for topics with many v4 lessons.
 4. Migrate all P3 thematic sub-themes to v4 first.
 5. Then migrate P4/P5 Science, followed by remaining P4/P5 subjects.

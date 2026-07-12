@@ -263,3 +263,55 @@ Content: add NCDC-native v4 lesson pilot
 ```
 
 or wait until the v4 pilot is reviewed and refined.
+
+---
+
+## Mobile module stepper update — same pass
+
+Founder review of the first v4 pilot confirmed that the content itself was much better, but the single long list was still too overwhelming on mobile.
+
+Implemented update:
+
+- V4 lessons now render as a **module/stepper flow**.
+- One content block/module is shown at a time.
+- Learners see:
+  - `Module X of Y`,
+  - module title,
+  - progress meter,
+  - horizontal module strip,
+  - Previous / Next module buttons,
+  - Finish lesson button on the last module.
+- This gives pupils a sense of completion and reduces long scrolling.
+
+Updated file:
+
+- `app/components/V4LessonViews.tsx`
+
+Mobile-first style updates:
+
+- bigger image treatment inside v4 modules,
+- horizontal scrollable module strip,
+- full-width mobile navigation buttons,
+- minimum module height for breathing space,
+- single-column cards on small screens.
+
+Updated file:
+
+- `app/app/globals.css`
+
+Current pilot routes remain:
+
+```txt
+/p3/theme/p3-theme-6-plants
+/science/p5/p5-keeping-poultry-bees
+```
+
+Build result:
+
+```txt
+cd app && npm run build
+✓ Compiled successfully
+✓ Generating static pages (356/356)
+```
+
+This stepper/module presentation is now the preferred v4 learner-facing structure for P3–P7 migration.
