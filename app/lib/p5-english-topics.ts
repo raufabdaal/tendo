@@ -4,13 +4,46 @@ import type { Topic } from "@/lib/topics";
 // Source map: content/curriculum/p5-english.json.
 // Rule: NCDC first, build second. This follows the researched P5 Set One English structure.
 
-export const P5_ENGLISH_TOPICS: Topic[] = [
+
+function balanceTopicAnswers(topics: Topic[]): Topic[] {
+  let nextCorrectIndex = 0;
+
+  function visit(value: unknown): void {
+    if (Array.isArray(value)) {
+      value.forEach(visit);
+      return;
+    }
+    if (!value || typeof value !== "object") return;
+
+    const record = value as Record<string, unknown>;
+    if (Array.isArray(record.choices) && typeof record.correct === "number" && record.choices.length === 4) {
+      const choices = record.choices as string[];
+      const currentCorrect = record.correct;
+      if (currentCorrect >= 0 && currentCorrect < choices.length) {
+        const answer = choices[currentCorrect];
+        const remaining = choices.filter((_, index) => index !== currentCorrect);
+        const targetIndex = nextCorrectIndex % 4;
+        remaining.splice(targetIndex, 0, answer);
+        record.choices = remaining;
+        record.correct = targetIndex;
+        nextCorrectIndex += 1;
+      }
+    }
+
+    Object.values(record).forEach(visit);
+  }
+
+  visit(topics);
+  return topics;
+}
+
+const P5_ENGLISH_TOPIC_DATA: Topic[] = [
   {
     "id": "p5-vehicle-repair-maintenance",
     "themeId": "p5-english-set-one",
     "themeName": "Primary Five English Language",
     "title": "Vehicle Repair and Maintenance",
-    "estMinutes": 35,
+    "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -72,7 +105,9 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "Brakes help a vehicle stop."
-            }
+            },
+            "imageUrl": "/images/english/p5-travel-dialogue.svg",
+            "imageCaption": "Travel and vehicle communication language."
           }
         ]
       },
@@ -100,13 +135,54 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Complete: You ___ drive with flat tyres.",
               "choices": [
-                "mustn't",
                 "must",
+                "mustn't",
                 "has",
                 "were"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Driving with flat tyres is dangerous, so use mustn't."
+            },
+            "imageUrl": "/images/english/p5-travel-dialogue.svg",
+            "imageCaption": "Travel and vehicle communication language."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p5-vehicle-repair-maintenance-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p5-vehicle-repair-maintenance-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p5-travel-dialogue.svg",
+            "imageCaption": "Travel and vehicle communication language.",
+            "learnIt": [
+              "Plan before writing about Vehicle Repair and Maintenance.",
+              "Use the correct vocabulary and sentence structure from the topic.",
+              "Write for a real reader: friend, parent, teacher, customer or community member.",
+              "Revise for punctuation, spelling and clear purpose."
+            ],
+            "workedExample": {
+              "question": "Write a short paragraph, message or dialogue using the topic Vehicle Repair and Maintenance.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer is clear, purposeful and uses vehicle repair and maintenance language correctly."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "random words",
+                "without punctuation",
+                "clear, complete and polite",
+                "copied without meaning"
+              ],
+              "correct": 2,
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -116,12 +192,12 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Which part helps a driver see behind?",
         "choices": [
-          "mirror",
           "engine",
           "seat",
-          "boot"
+          "boot",
+          "mirror"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "A mirror helps a driver see behind."
       },
       {
@@ -138,34 +214,34 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Complete: You ___ repair broken brakes.",
         "choices": [
-          "must",
           "mustn't",
+          "must",
           "where",
           "because"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Must shows a strong safety rule."
       },
       {
         "q": "Complete: If the tyre is flat, the driver ___ repair it.",
         "choices": [
-          "will",
           "were",
           "did",
+          "will",
           "has"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "If can pair with will."
       },
       {
         "q": "Which is a repair tool?",
         "choices": [
-          "spanner",
           "windscreen",
           "seat belt",
-          "head lamp"
+          "head lamp",
+          "spanner"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "A spanner is a tool."
       },
       {
@@ -182,23 +258,23 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "The word indicator shows:",
         "choices": [
-          "turning direction",
           "fuel price",
+          "turning direction",
           "driver's name",
           "number of passengers"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Indicators show turning direction."
       },
       {
         "q": "Why should vehicles be maintained?",
         "choices": [
-          "To reduce accidents",
           "To spoil tyres",
           "To hide mirrors",
+          "To reduce accidents",
           "To make roads dirty"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Well-maintained vehicles are safer."
       }
     ]
@@ -208,7 +284,7 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
     "themeId": "p5-english-set-one",
     "themeName": "Primary Five English Language",
     "title": "Print Media",
-    "estMinutes": 30,
+    "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -264,14 +340,16 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "A person who writes news stories is a:",
               "choices": [
-                "journalist",
                 "driver",
                 "nurse",
-                "farmer"
+                "farmer",
+                "journalist"
               ],
-              "correct": 0,
+              "correct": 3,
               "explanation": "A journalist writes or reports news."
-            }
+            },
+            "imageUrl": "/images/english/p5-communication-media.svg",
+            "imageCaption": "Communication and print media language."
           }
         ]
       },
@@ -306,6 +384,47 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "Cartoon is a thing, so use which."
+            },
+            "imageUrl": "/images/english/p5-communication-media.svg",
+            "imageCaption": "Communication and print media language."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p5-print-media-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p5-print-media-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p5-communication-media.svg",
+            "imageCaption": "Communication and print media language.",
+            "learnIt": [
+              "Plan before writing about Print Media.",
+              "Use the correct vocabulary and sentence structure from the topic.",
+              "Write for a real reader: friend, parent, teacher, customer or community member.",
+              "Revise for punctuation, spelling and clear purpose."
+            ],
+            "workedExample": {
+              "question": "Write a short paragraph, message or dialogue using the topic Print Media.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer is clear, purposeful and uses print media language correctly."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "random words",
+                "clear, complete and polite",
+                "without punctuation",
+                "copied without meaning"
+              ],
+              "correct": 1,
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -315,23 +434,23 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Which is print media?",
         "choices": [
-          "newspaper",
           "radio only",
           "telephone call",
+          "newspaper",
           "rainfall"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Newspapers are print media."
       },
       {
         "q": "Choose correctly: ___ editor checked the story.",
         "choices": [
-          "An",
           "A",
           "Thee",
-          "At"
+          "At",
+          "An"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Editor begins with a vowel sound."
       },
       {
@@ -348,34 +467,34 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "The article ___ appeared yesterday was interesting.",
         "choices": [
-          "which",
           "who",
+          "which",
           "where",
           "why"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Article is a thing, so use which."
       },
       {
         "q": "An advertisement is used to:",
         "choices": [
-          "promote or announce something",
           "hide news",
           "cook food",
+          "promote or announce something",
           "repair shoes"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Advertisements promote goods, events or services."
       },
       {
         "q": "Which is part of a newspaper?",
         "choices": [
-          "front page",
           "car jack",
           "stethoscope",
-          "hoe"
+          "hoe",
+          "front page"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Front page is part of a newspaper."
       },
       {
@@ -392,12 +511,12 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "A cartoon is usually:",
         "choices": [
-          "a drawing or humorous picture",
           "a bank account",
+          "a drawing or humorous picture",
           "a vehicle engine",
           "a type of rain"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Cartoons are drawings or humorous pictures."
       }
     ]
@@ -407,7 +526,7 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
     "themeId": "p5-english-set-one",
     "themeName": "Primary Five English Language",
     "title": "Travelling",
-    "estMinutes": 28,
+    "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -460,14 +579,16 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "The money paid for a journey is called:",
               "choices": [
-                "fare",
                 "luggage",
                 "speed",
+                "fare",
                 "seat"
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "Fare is transport money."
-            }
+            },
+            "imageUrl": "/images/english/p5-travel-dialogue.svg",
+            "imageCaption": "Travel and vehicle communication language."
           }
         ]
       },
@@ -495,13 +616,54 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Choose the correct sentence.",
               "choices": [
-                "While the bus was moving, the baby slept.",
                 "While bus moving baby slept.",
                 "While was bus move.",
-                "Baby bus while sleep."
+                "Baby bus while sleep.",
+                "While the bus was moving, the baby slept."
+              ],
+              "correct": 3,
+              "explanation": "It uses while and past continuous correctly."
+            },
+            "imageUrl": "/images/english/p5-travel-dialogue.svg",
+            "imageCaption": "Travel and vehicle communication language."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p5-travelling-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p5-travelling-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p5-travel-dialogue.svg",
+            "imageCaption": "Travel and vehicle communication language.",
+            "learnIt": [
+              "Plan before writing about Travelling.",
+              "Use the correct vocabulary and sentence structure from the topic.",
+              "Write for a real reader: friend, parent, teacher, customer or community member.",
+              "Revise for punctuation, spelling and clear purpose."
+            ],
+            "workedExample": {
+              "question": "Write a short paragraph, message or dialogue using the topic Travelling.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer is clear, purposeful and uses travelling language correctly."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "clear, complete and polite",
+                "random words",
+                "without punctuation",
+                "copied without meaning"
               ],
               "correct": 0,
-              "explanation": "It uses while and past continuous correctly."
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -511,34 +673,34 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Money paid for transport is called:",
         "choices": [
-          "fare",
           "luggage",
+          "fare",
           "ticket only",
           "destination"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Fare is transport money."
       },
       {
         "q": "The place a traveller is going to is the:",
         "choices": [
-          "destination",
           "departure",
           "speed",
+          "destination",
           "seat"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Destination is the end point."
       },
       {
         "q": "Complete: While he ___ travelling, he lost his ticket.",
         "choices": [
-          "was",
           "were",
           "is",
-          "are"
+          "are",
+          "was"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "He was travelling."
       },
       {
@@ -555,34 +717,34 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Which is a means of transport?",
         "choices": [
-          "taxi",
           "newspaper",
+          "taxi",
           "paragraph",
           "kettle"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "A taxi is used for transport."
       },
       {
         "q": "Complete: I often travel ___ bus.",
         "choices": [
-          "by",
           "on",
           "at",
+          "by",
           "of"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "We say travel by bus."
       },
       {
         "q": "The opposite of arrive is:",
         "choices": [
-          "leave",
           "reach",
           "stop",
-          "sit"
+          "sit",
+          "leave"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Leave means go away."
       },
       {
@@ -603,104 +765,176 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
     "themeId": "p5-english-set-one",
     "themeName": "Primary Five English Language",
     "title": "Letter Writing",
-    "estMinutes": 30,
+    "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
-      "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Learners write personal letters, greetings and invitations.",
+      "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Letter Writing helps learners communicate politely through personal letters, invitations and short messages.",
       "learningObjectives": [
-        "Use vocabulary for letter writing.",
-        "Use would, could, punctuation and personal pronouns.",
-        "Read and write short functional texts."
+        "Identify parts of a friendly letter.",
+        "Write addresses, dates, greetings and closings correctly.",
+        "Use polite invitation and reply language.",
+        "Write a short clear letter for a real purpose."
       ],
       "whatYouNeedToKnow": [
-        "Important vocabulary includes address, date, greeting, body, closing and signature.",
-        "Important structures include would, could, punctuation and personal pronouns.",
-        "A clear answer uses full sentences and exact vocabulary."
+        "A friendly letter has an address, date, greeting, body, closing and name/signature.",
+        "The body gives the message in clear paragraphs.",
+        "Invitation letters should say the event, date, place and time.",
+        "A reply should accept or decline politely."
       ],
       "worked": {
-        "problem": "Write one clear sentence about letter writing.",
+        "problem": "Write a polite opening for a letter inviting a friend to a birthday party.",
         "steps": [
-          "Choose the key vocabulary.",
-          "Use the correct structure.",
-          "Write a complete sentence."
+          "Begin with a greeting such as Dear Sarah,",
+          "State the reason for writing.",
+          "Mention the event clearly."
         ],
-        "answer": "This is a clear sentence about letter writing."
+        "answer": "Dear Sarah, I am writing to invite you to my birthday party."
       },
       "recap": [
-        "Use exact vocabulary.",
-        "Use the target structure correctly.",
-        "Write complete sentences."
+        "Include address and date.",
+        "Use a polite greeting and closing.",
+        "State the purpose clearly."
+      ],
+      "commonMistakes": [
+        "Forgetting the address or date.",
+        "Using rude or unclear invitation language.",
+        "Writing one long paragraph without clear message.",
+        "Forgetting the closing."
+      ],
+      "writingTasks": [
+        {
+          "title": "Write an invitation letter",
+          "prompt": "Write a short letter inviting a friend to a school music, dance and drama day.",
+          "planningSteps": [
+            "Write your address and date.",
+            "Greet your friend.",
+            "Mention the event, place, date and time.",
+            "Close politely."
+          ],
+          "checklist": [
+            "I included address and date.",
+            "I gave event details.",
+            "I used polite words.",
+            "I used a closing and name."
+          ],
+          "modelOpening": "Dear Maria, I am writing to invite you to our school music, dance and drama day."
+        }
       ]
     },
     "subtopics": [
       {
-        "subtopicId": "p5-letter-writing-vocabulary",
-        "title": "1. Vocabulary and meaning",
+        "subtopicId": "p5-letter-parts",
+        "title": "1. Parts of a friendly letter",
         "modules": [
           {
-            "moduleId": "p5-letter-writing-words",
-            "title": "Key Words",
-            "bigIdea": "This module teaches the key words for letter writing.",
+            "moduleId": "p5-letter-parts-module",
+            "title": "Address, date, greeting and body",
+            "bigIdea": "A good letter is organised so the reader knows who wrote, when and why.",
             "learnIt": [
-              "Learn and pronounce the important words: address, date, greeting, body, closing and signature.",
-              "Use each word in a short sentence.",
-              "Check spelling carefully."
+              "Write the address at the top as taught by your teacher.",
+              "Write the date below the address.",
+              "Begin with a greeting such as Dear Uncle or Dear Amina.",
+              "Use the body to explain the message clearly."
             ],
             "workedExample": {
-              "question": "Use one key word from Letter Writing in a sentence.",
+              "question": "Name three parts of a friendly letter.",
               "steps": [
-                "Choose a relevant word.",
-                "Write a complete sentence."
+                "Think of the beginning and ending of a letter.",
+                "Choose important parts."
               ],
-              "answer": "The sentence should use a letter writing word correctly."
+              "answer": "Address, date and greeting are three parts of a friendly letter."
             },
             "tryThis": {
-              "question": "Which word belongs to this topic?",
+              "question": "Which belongs in a friendly letter?",
               "choices": [
-                "address",
-                "mountain",
-                "triangle",
-                "oxygen"
+                "division sign",
+                "date",
+                "thermometer",
+                "vector"
               ],
-              "correct": 0,
-              "explanation": "address belongs to Letter Writing."
-            }
+              "correct": 1,
+              "explanation": "A date tells when the letter was written."
+            },
+            "imageUrl": "/images/english/p5-letter-message.svg",
+            "imageCaption": "Letter and message writing plan."
           }
         ]
       },
       {
-        "subtopicId": "p5-letter-writing-writing",
-        "title": "2. Functional writing",
+        "subtopicId": "p5-invitation-reply",
+        "title": "2. Invitations and replies",
         "modules": [
           {
-            "moduleId": "p5-letter-writing-structures",
-            "title": "Structures and Writing",
-            "bigIdea": "This module helps learners write correctly about letter writing.",
+            "moduleId": "p5-invitation-reply-module",
+            "title": "Writing invitations politely",
+            "bigIdea": "An invitation should give enough details for the reader to attend.",
             "learnIt": [
-              "Practise would, could, punctuation and personal pronouns.",
-              "Write short, clear sentences.",
-              "For written tasks, include the important details and correct punctuation."
+              "Say what the event is.",
+              "Give date, time and place.",
+              "Use polite words such as please, kindly and thank you.",
+              "A reply should clearly accept or decline."
             ],
             "workedExample": {
-              "question": "Write a short message related to Letter Writing.",
+              "question": "Write one sentence inviting a friend to a debate on Friday.",
               "steps": [
-                "Identify the purpose.",
-                "Include the key detail.",
-                "Use correct punctuation."
+                "Name the event: debate.",
+                "Mention the day: Friday.",
+                "Use polite wording."
               ],
-              "answer": "The answer should be clear, polite and complete."
+              "answer": "Please come for our class debate on Friday."
             },
             "tryThis": {
-              "question": "A good written answer should be:",
+              "question": "Which detail is important in an invitation?",
               "choices": [
-                "clear and complete",
-                "hidden",
-                "unfinished",
-                "only one random word"
+                "only shoe size",
+                "only weather",
+                "time and place",
+                "only a joke"
               ],
-              "correct": 0,
-              "explanation": "A good answer is clear and complete."
+              "correct": 2,
+              "explanation": "The invited person needs time and place."
+            },
+            "imageUrl": "/images/english/p5-letter-message.svg",
+            "imageCaption": "Letter and message writing plan."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p5-letter-writing-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p5-letter-writing-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p5-letter-message.svg",
+            "imageCaption": "Letter and message writing plan.",
+            "learnIt": [
+              "Plan before writing about Letter Writing.",
+              "Use the correct vocabulary and sentence structure from the topic.",
+              "Write for a real reader: friend, parent, teacher, customer or community member.",
+              "Revise for punctuation, spelling and clear purpose."
+            ],
+            "workedExample": {
+              "question": "Write a short paragraph, message or dialogue using the topic Letter Writing.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer is clear, purposeful and uses letter writing language correctly."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "random words",
+                "without punctuation",
+                "copied without meaning",
+                "clear, complete and polite"
+              ],
+              "correct": 3,
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -708,92 +942,70 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
     ],
     "quiz": [
       {
-        "q": "Which word belongs to Letter Writing?",
+        "q": "A friendly letter should have:",
         "choices": [
-          "address",
-          "photosynthesis",
-          "isosceles",
-          "evaporation only"
+          "address and date",
+          "a price list only",
+          "a map key only",
+          "a multiplication table"
         ],
         "correct": 0,
-        "why": "address is part of Letter Writing vocabulary."
+        "why": "Letters need address/date."
       },
       {
-        "q": "A good sentence should be:",
+        "q": "The body of a letter contains:",
         "choices": [
-          "complete",
-          "confusing",
-          "half-written",
-          "without meaning"
+          "only the stamp",
+          "the main message",
+          "only the envelope",
+          "only the closing"
         ],
-        "correct": 0,
-        "why": "A good sentence has complete meaning."
+        "correct": 1,
+        "why": "The body carries the message."
       },
       {
-        "q": "Which is important in functional writing?",
+        "q": "Which greeting is polite?",
         "choices": [
-          "clear purpose",
-          "random words",
-          "no punctuation",
-          "hidden message"
+          "Hey you!",
+          "Move there!",
+          "Dear Aunt Mary,",
+          "No greeting"
         ],
-        "correct": 0,
-        "why": "Functional writing should have a clear purpose."
+        "correct": 2,
+        "why": "Dear Aunt Mary is polite."
       },
       {
-        "q": "Which skill helps in this topic?",
+        "q": "An invitation should include:",
         "choices": [
-          "spelling words correctly",
-          "tearing books",
-          "ignoring instructions",
-          "guessing only"
+          "only a colour",
+          "only an animal",
+          "only a proverb",
+          "date, time and place"
         ],
-        "correct": 0,
-        "why": "Correct spelling supports clear writing."
+        "correct": 3,
+        "why": "These details help the reader attend."
       },
       {
-        "q": "Choose the complete sentence.",
+        "q": "A polite closing is:",
         "choices": [
-          "The learner wrote a clear message.",
-          "Learner wrote.",
-          "Because message.",
-          "Clear the."
+          "Your friend,",
+          "Go away,",
+          "No name",
+          "Wrong you"
         ],
         "correct": 0,
-        "why": "It has complete meaning."
+        "why": "Your friend is a friendly closing."
       },
       {
-        "q": "Why should learners read instructions carefully?",
+        "q": "A reply to an invitation should:",
         "choices": [
-          "To answer correctly",
-          "To waste time",
-          "To avoid learning",
-          "To hide answers"
+          "insult the writer",
+          "accept or decline politely",
+          "hide the answer",
+          "change the event"
         ],
-        "correct": 0,
-        "why": "Instructions guide the answer."
-      },
-      {
-        "q": "Which word shows politeness?",
-        "choices": [
-          "please",
-          "never mind you",
-          "go away",
-          "nonsense"
-        ],
-        "correct": 0,
-        "why": "Please is polite."
-      },
-      {
-        "q": "Before writing, a learner should first:",
-        "choices": [
-          "understand the task",
-          "close the book",
-          "ignore the question",
-          "write random words"
-        ],
-        "correct": 0,
-        "why": "Understanding the task helps produce a correct answer."
+        "correct": 1,
+        "why": "Replies should be clear and polite."
       }
     ]
   },
@@ -806,100 +1018,170 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
     "status": "published",
     "reviewStatus": "beta",
     "note": {
-      "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Learners use language for the post office, telephone and internet.",
+      "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Communication helps learners send, receive and respond to messages clearly and politely.",
       "learningObjectives": [
-        "Use vocabulary for communication.",
-        "Use future tense, conjunctions, unless, either...or, too...to and in order to.",
-        "Read and write short functional texts."
+        "Explain communication as sending and receiving messages.",
+        "Name means of communication.",
+        "Use polite telephone and message language.",
+        "Write short clear messages."
       ],
       "whatYouNeedToKnow": [
-        "Important vocabulary includes stamp, parcel, telephone, airtime, email, website, save and delete.",
-        "Important structures include future tense, conjunctions, unless, either...or, too...to and in order to.",
-        "A clear answer uses full sentences and exact vocabulary."
+        "Communication is sharing information between people.",
+        "Means of communication include speaking, letters, phones, radio, television, newspapers and notices.",
+        "A good message should be clear, brief and polite.",
+        "The receiver should listen or read carefully before responding."
       ],
       "worked": {
-        "problem": "Write one clear sentence about communication.",
+        "problem": "Write a clear phone message for your mother: Teacher called a meeting tomorrow at 9 a.m.",
         "steps": [
-          "Choose the key vocabulary.",
-          "Use the correct structure.",
-          "Write a complete sentence."
+          "Say who called.",
+          "State the meeting time.",
+          "Keep the message short and clear."
         ],
-        "answer": "This is a clear sentence about communication."
+        "answer": "Teacher called a meeting tomorrow at 9 a.m."
       },
       "recap": [
-        "Use exact vocabulary.",
-        "Use the target structure correctly.",
-        "Write complete sentences."
+        "Communication shares messages.",
+        "Messages need sender and receiver.",
+        "Good messages are clear and polite."
+      ],
+      "commonMistakes": [
+        "Leaving out important time or place details.",
+        "Using rude telephone language.",
+        "Writing unclear messages.",
+        "Not listening before replying."
+      ],
+      "writingTasks": [
+        {
+          "title": "Write a phone message",
+          "prompt": "Write a short phone message telling your parent about a school meeting.",
+          "planningSteps": [
+            "Say who sent the message.",
+            "Give the day and time.",
+            "Give the place.",
+            "Keep it short and polite."
+          ],
+          "checklist": [
+            "I included day/time.",
+            "I included place.",
+            "The message is clear.",
+            "The tone is polite."
+          ],
+          "modelOpening": "Teacher sent a message that parents will meet at school on Friday at 10 a.m."
+        }
       ]
     },
     "subtopics": [
       {
-        "subtopicId": "p5-communication-vocabulary",
-        "title": "1. Vocabulary and meaning",
+        "subtopicId": "p5-means-communication",
+        "title": "1. Means of communication",
         "modules": [
           {
-            "moduleId": "p5-communication-words",
-            "title": "Key Words",
-            "bigIdea": "This module teaches the key words for communication.",
+            "moduleId": "p5-means-communication-module",
+            "title": "Ways people send messages",
+            "bigIdea": "Different means of communication fit different situations.",
             "learnIt": [
-              "Learn and pronounce the important words: stamp, parcel, telephone, airtime, email, website, save and delete.",
-              "Use each word in a short sentence.",
-              "Check spelling carefully."
+              "Speaking is useful when people are near each other.",
+              "Letters and notices are written means of communication.",
+              "Phones, radio and television can send messages quickly to many people."
             ],
             "workedExample": {
-              "question": "Use one key word from Communication in a sentence.",
+              "question": "Name two means of written communication.",
               "steps": [
-                "Choose a relevant word.",
-                "Write a complete sentence."
+                "Think of communication that uses writing.",
+                "Letters and notices are written."
               ],
-              "answer": "The sentence should use a communication word correctly."
+              "answer": "Letters and notices are written means of communication."
             },
             "tryThis": {
-              "question": "Which word belongs to this topic?",
+              "question": "Which is a means of communication?",
               "choices": [
-                "stamp",
-                "mountain",
-                "triangle",
-                "oxygen"
+                "molar",
+                "swamp",
+                "radio",
+                "fraction"
               ],
-              "correct": 0,
-              "explanation": "stamp belongs to Communication."
-            }
+              "correct": 2,
+              "explanation": "Radio sends messages to listeners."
+            },
+            "imageUrl": "/images/english/p5-communication-media.svg",
+            "imageCaption": "Communication and print media language."
           }
         ]
       },
       {
-        "subtopicId": "p5-communication-writing",
-        "title": "2. Functional writing",
+        "subtopicId": "p5-clear-messages",
+        "title": "2. Clear messages and telephone language",
         "modules": [
           {
-            "moduleId": "p5-communication-structures",
-            "title": "Structures and Writing",
-            "bigIdea": "This module helps learners write correctly about communication.",
+            "moduleId": "p5-message-telephone-module",
+            "title": "Polite communication",
+            "bigIdea": "A clear message helps the receiver understand and act correctly.",
             "learnIt": [
-              "Practise future tense, conjunctions, unless, either...or, too...to and in order to.",
-              "Write short, clear sentences.",
-              "For written tasks, include the important details and correct punctuation."
+              "Start a phone conversation politely.",
+              "State the message clearly.",
+              "Include important details such as name, place, date and time.",
+              "End politely."
             ],
             "workedExample": {
-              "question": "Write a short message related to Communication.",
+              "question": "Write a polite phone opening.",
               "steps": [
-                "Identify the purpose.",
-                "Include the key detail.",
-                "Use correct punctuation."
+                "Begin with a greeting.",
+                "Identify yourself."
               ],
-              "answer": "The answer should be clear, polite and complete."
+              "answer": "Good morning, this is Amina speaking."
             },
             "tryThis": {
-              "question": "A good written answer should be:",
+              "question": "Which message is clearest?",
               "choices": [
-                "clear and complete",
-                "hidden",
-                "unfinished",
-                "only one random word"
+                "Come there.",
+                "That thing is soon.",
+                "You know it.",
+                "The meeting is tomorrow at 2 p.m. in P5 class."
+              ],
+              "correct": 3,
+              "explanation": "It gives time and place."
+            },
+            "imageUrl": "/images/english/p5-communication-media.svg",
+            "imageCaption": "Communication and print media language."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p5-communication-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p5-communication-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p5-communication-media.svg",
+            "imageCaption": "Communication and print media language.",
+            "learnIt": [
+              "Plan before writing about Communication.",
+              "Use the correct vocabulary and sentence structure from the topic.",
+              "Write for a real reader: friend, parent, teacher, customer or community member.",
+              "Revise for punctuation, spelling and clear purpose."
+            ],
+            "workedExample": {
+              "question": "Write a short paragraph, message or dialogue using the topic Communication.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer is clear, purposeful and uses communication language correctly."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "clear, complete and polite",
+                "random words",
+                "without punctuation",
+                "copied without meaning"
               ],
               "correct": 0,
-              "explanation": "A good answer is clear and complete."
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -907,92 +1189,70 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
     ],
     "quiz": [
       {
-        "q": "Which word belongs to Communication?",
+        "q": "Communication means:",
         "choices": [
-          "stamp",
-          "photosynthesis",
-          "isosceles",
-          "evaporation only"
+          "digging soil",
+          "sharing information",
+          "counting teeth",
+          "measuring mass"
         ],
-        "correct": 0,
-        "why": "stamp is part of Communication vocabulary."
+        "correct": 1,
+        "why": "Communication shares information."
       },
       {
-        "q": "A good sentence should be:",
+        "q": "A receiver is the person who:",
         "choices": [
-          "complete",
+          "sells goods",
+          "makes rain",
+          "gets the message",
+          "draws angles"
+        ],
+        "correct": 2,
+        "why": "The receiver gets the message."
+      },
+      {
+        "q": "Which is written communication?",
+        "choices": [
+          "drum only",
+          "handshake only",
+          "walking",
+          "letter"
+        ],
+        "correct": 3,
+        "why": "A letter is written."
+      },
+      {
+        "q": "A good message should be:",
+        "choices": [
+          "clear and polite",
           "confusing",
-          "half-written",
-          "without meaning"
+          "rude",
+          "empty"
         ],
         "correct": 0,
-        "why": "A good sentence has complete meaning."
+        "why": "Clear polite messages work best."
       },
       {
-        "q": "Which is important in functional writing?",
+        "q": "Which detail is important in a meeting message?",
         "choices": [
-          "clear purpose",
-          "random words",
-          "no punctuation",
-          "hidden message"
+          "shoe colour only",
+          "time",
+          "favourite food only",
+          "height only"
         ],
-        "correct": 0,
-        "why": "Functional writing should have a clear purpose."
+        "correct": 1,
+        "why": "Meeting messages need time."
       },
       {
-        "q": "Which skill helps in this topic?",
+        "q": "A polite telephone opening is:",
         "choices": [
-          "spelling words correctly",
-          "tearing books",
-          "ignoring instructions",
-          "guessing only"
+          "You! Listen!",
+          "Who are you?",
+          "Good morning, this is...",
+          "No greeting"
         ],
-        "correct": 0,
-        "why": "Correct spelling supports clear writing."
-      },
-      {
-        "q": "Choose the complete sentence.",
-        "choices": [
-          "The learner wrote a clear message.",
-          "Learner wrote.",
-          "Because message.",
-          "Clear the."
-        ],
-        "correct": 0,
-        "why": "It has complete meaning."
-      },
-      {
-        "q": "Why should learners read instructions carefully?",
-        "choices": [
-          "To answer correctly",
-          "To waste time",
-          "To avoid learning",
-          "To hide answers"
-        ],
-        "correct": 0,
-        "why": "Instructions guide the answer."
-      },
-      {
-        "q": "Which word shows politeness?",
-        "choices": [
-          "please",
-          "never mind you",
-          "go away",
-          "nonsense"
-        ],
-        "correct": 0,
-        "why": "Please is polite."
-      },
-      {
-        "q": "Before writing, a learner should first:",
-        "choices": [
-          "understand the task",
-          "close the book",
-          "ignore the question",
-          "write random words"
-        ],
-        "correct": 0,
-        "why": "Understanding the task helps produce a correct answer."
+        "correct": 2,
+        "why": "This opening is polite."
       }
     ]
   },
@@ -1001,104 +1261,173 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
     "themeId": "p5-english-set-one",
     "themeName": "Primary Five English Language",
     "title": "Culture",
-    "estMinutes": 32,
+    "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
-      "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Learners talk respectfully about nationalities, languages and culture.",
+      "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Culture helps learners describe people’s ways of life respectfully.",
       "learningObjectives": [
-        "Use vocabulary for culture.",
-        "Use adjectives, prepositions, passive voice and conditionals.",
-        "Read and write short functional texts."
+        "Explain culture in simple English.",
+        "Name examples of culture.",
+        "Use respectful vocabulary for cultural practices.",
+        "Write a short description of a cultural event or practice."
       ],
       "whatYouNeedToKnow": [
-        "Important vocabulary includes Ugandan, Kenyan, Tanzanian, Luganda, Kiswahili and English.",
-        "Important structures include adjectives, prepositions, passive voice and conditionals.",
-        "A clear answer uses full sentences and exact vocabulary."
+        "Culture is the way of life of a group of people.",
+        "Culture includes language, food, dress, music, dance, stories, ceremonies and values.",
+        "Good English about culture should be respectful and clear.",
+        "Learners should avoid mocking other people’s customs."
       ],
       "worked": {
-        "problem": "Write one clear sentence about culture.",
+        "problem": "Write two sentences about a cultural dance.",
         "steps": [
-          "Choose the key vocabulary.",
-          "Use the correct structure.",
-          "Write a complete sentence."
+          "Name the dance or event.",
+          "Use respectful describing words.",
+          "Write complete sentences."
         ],
-        "answer": "This is a clear sentence about culture."
+        "answer": "The dancers wore colourful clothes. They danced to traditional drums."
       },
       "recap": [
-        "Use exact vocabulary.",
-        "Use the target structure correctly.",
-        "Write complete sentences."
+        "Culture means way of life.",
+        "Describe customs respectfully.",
+        "Use clear adjectives and full sentences."
+      ],
+      "commonMistakes": [
+        "Mocking other people’s customs.",
+        "Writing culture as if it only means dancing.",
+        "Using unclear pronouns without naming the event.",
+        "Forgetting capital letters for names of people or places."
+      ],
+      "writingTasks": [
+        {
+          "title": "Describe a cultural event",
+          "prompt": "Write a short paragraph about a cultural ceremony, dance, food or story you know.",
+          "planningSteps": [
+            "Name the practice/event.",
+            "Describe what people do.",
+            "Say why it is important.",
+            "Use respectful words."
+          ],
+          "checklist": [
+            "I explained culture respectfully.",
+            "I used full sentences.",
+            "I avoided insults.",
+            "I checked punctuation."
+          ],
+          "modelOpening": "At the ceremony, people wore traditional clothes and sang songs."
+        }
       ]
     },
     "subtopics": [
       {
-        "subtopicId": "p5-culture-vocabulary",
-        "title": "1. Vocabulary and meaning",
+        "subtopicId": "p5-culture-meaning",
+        "title": "1. Meaning and examples of culture",
         "modules": [
           {
-            "moduleId": "p5-culture-words",
-            "title": "Key Words",
-            "bigIdea": "This module teaches the key words for culture.",
+            "moduleId": "p5-culture-meaning-module",
+            "title": "Culture as a way of life",
+            "bigIdea": "Culture is seen in how people speak, dress, eat, celebrate and teach values.",
             "learnIt": [
-              "Learn and pronounce the important words: Ugandan, Kenyan, Tanzanian, Luganda, Kiswahili and English.",
-              "Use each word in a short sentence.",
-              "Check spelling carefully."
+              "Languages are part of culture.",
+              "Traditional foods and dress show culture.",
+              "Stories, proverbs, songs and dances pass knowledge to younger people."
             ],
             "workedExample": {
-              "question": "Use one key word from Culture in a sentence.",
+              "question": "Name three examples of culture.",
               "steps": [
-                "Choose a relevant word.",
-                "Write a complete sentence."
+                "Think of ways people live.",
+                "Choose three examples."
               ],
-              "answer": "The sentence should use a culture word correctly."
+              "answer": "Language, food and dance are examples of culture."
             },
             "tryThis": {
-              "question": "Which word belongs to this topic?",
+              "question": "Which is part of culture?",
               "choices": [
-                "Ugandan",
-                "mountain",
-                "triangle",
-                "oxygen"
+                "division only",
+                "thermometer",
+                "bank note only",
+                "traditional food"
               ],
-              "correct": 0,
-              "explanation": "Ugandan belongs to Culture."
-            }
+              "correct": 3,
+              "explanation": "Food can be part of culture."
+            },
+            "imageUrl": "/images/english/p5-culture-peace-banking.svg",
+            "imageCaption": "Culture, peace, security and banking language."
           }
         ]
       },
       {
-        "subtopicId": "p5-culture-writing",
-        "title": "2. Functional writing",
+        "subtopicId": "p5-respect-culture",
+        "title": "2. Respectful cultural description",
         "modules": [
           {
-            "moduleId": "p5-culture-structures",
-            "title": "Structures and Writing",
-            "bigIdea": "This module helps learners write correctly about culture.",
+            "moduleId": "p5-culture-respect-module",
+            "title": "Writing respectfully about culture",
+            "bigIdea": "A respectful description explains without insulting.",
             "learnIt": [
-              "Practise adjectives, prepositions, passive voice and conditionals.",
-              "Write short, clear sentences.",
-              "For written tasks, include the important details and correct punctuation."
+              "Use words such as traditional, colourful, respectful and meaningful.",
+              "Avoid words that mock or belittle a group.",
+              "Explain what people do and why it is important."
             ],
             "workedExample": {
-              "question": "Write a short message related to Culture.",
+              "question": "Rewrite politely: Their clothes are funny.",
               "steps": [
-                "Identify the purpose.",
-                "Include the key detail.",
-                "Use correct punctuation."
+                "The sentence mocks people.",
+                "Use respectful words."
               ],
-              "answer": "The answer should be clear, polite and complete."
+              "answer": "Their traditional clothes are colourful."
             },
             "tryThis": {
-              "question": "A good written answer should be:",
+              "question": "Which sentence is respectful?",
               "choices": [
-                "clear and complete",
-                "hidden",
-                "unfinished",
-                "only one random word"
+                "The ceremony was important to the family.",
+                "Their customs are stupid.",
+                "They dress badly.",
+                "I laughed at them."
               ],
               "correct": 0,
-              "explanation": "A good answer is clear and complete."
+              "explanation": "It describes without insulting."
+            },
+            "imageUrl": "/images/english/p5-culture-peace-banking.svg",
+            "imageCaption": "Culture, peace, security and banking language."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p5-culture-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p5-culture-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p5-culture-peace-banking.svg",
+            "imageCaption": "Culture, peace, security and banking language.",
+            "learnIt": [
+              "Plan before writing about Culture.",
+              "Use the correct vocabulary and sentence structure from the topic.",
+              "Write for a real reader: friend, parent, teacher, customer or community member.",
+              "Revise for punctuation, spelling and clear purpose."
+            ],
+            "workedExample": {
+              "question": "Write a short paragraph, message or dialogue using the topic Culture.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer is clear, purposeful and uses culture language correctly."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "random words",
+                "clear, complete and polite",
+                "without punctuation",
+                "copied without meaning"
+              ],
+              "correct": 1,
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -1106,92 +1435,70 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
     ],
     "quiz": [
       {
-        "q": "Which word belongs to Culture?",
+        "q": "Culture means:",
         "choices": [
-          "Ugandan",
-          "photosynthesis",
-          "isosceles",
-          "evaporation only"
+          "weather only",
+          "money only",
+          "way of life",
+          "road only"
         ],
-        "correct": 0,
-        "why": "Ugandan is part of Culture vocabulary."
+        "correct": 2,
+        "why": "Culture is people’s way of life."
       },
       {
-        "q": "A good sentence should be:",
+        "q": "Which is part of culture?",
         "choices": [
-          "complete",
-          "confusing",
-          "half-written",
-          "without meaning"
+          "litre",
+          "magnet",
+          "fraction",
+          "language"
         ],
-        "correct": 0,
-        "why": "A good sentence has complete meaning."
+        "correct": 3,
+        "why": "Language is culture."
       },
       {
-        "q": "Which is important in functional writing?",
+        "q": "When writing about culture, use:",
         "choices": [
-          "clear purpose",
-          "random words",
-          "no punctuation",
-          "hidden message"
+          "respectful words",
+          "insults",
+          "mockery",
+          "rude jokes"
         ],
         "correct": 0,
-        "why": "Functional writing should have a clear purpose."
+        "why": "Respect is important."
       },
       {
-        "q": "Which skill helps in this topic?",
+        "q": "A traditional dance may use:",
         "choices": [
-          "spelling words correctly",
-          "tearing books",
-          "ignoring instructions",
-          "guessing only"
+          "thermometers only",
+          "drums",
+          "bank cards only",
+          "compasses only"
         ],
-        "correct": 0,
-        "why": "Correct spelling supports clear writing."
+        "correct": 1,
+        "why": "Drums may be used in dances."
       },
       {
-        "q": "Choose the complete sentence.",
+        "q": "Which sentence is respectful?",
         "choices": [
-          "The learner wrote a clear message.",
-          "Learner wrote.",
-          "Because message.",
-          "Clear the."
+          "Their food is nonsense.",
+          "I hate their customs.",
+          "The food is traditional.",
+          "They are backward."
         ],
-        "correct": 0,
-        "why": "It has complete meaning."
+        "correct": 2,
+        "why": "It uses respectful wording."
       },
       {
-        "q": "Why should learners read instructions carefully?",
+        "q": "Stories and proverbs can teach:",
         "choices": [
-          "To answer correctly",
-          "To waste time",
-          "To avoid learning",
-          "To hide answers"
+          "only prices",
+          "only angles",
+          "only rainfall",
+          "values"
         ],
-        "correct": 0,
-        "why": "Instructions guide the answer."
-      },
-      {
-        "q": "Which word shows politeness?",
-        "choices": [
-          "please",
-          "never mind you",
-          "go away",
-          "nonsense"
-        ],
-        "correct": 0,
-        "why": "Please is polite."
-      },
-      {
-        "q": "Before writing, a learner should first:",
-        "choices": [
-          "understand the task",
-          "close the book",
-          "ignore the question",
-          "write random words"
-        ],
-        "correct": 0,
-        "why": "Understanding the task helps produce a correct answer."
+        "correct": 3,
+        "why": "They pass values and knowledge."
       }
     ]
   },
@@ -1200,104 +1507,174 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
     "themeId": "p5-english-set-one",
     "themeName": "Primary Five English Language",
     "title": "Peace and Security",
-    "estMinutes": 28,
+    "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
-      "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Learners use language for peaceful living, reporting and resolving conflict.",
+      "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Peace and Security helps learners use English for safety, conflict resolution and community protection.",
       "learningObjectives": [
-        "Use vocabulary for peace and security.",
-        "Use conjunctions, past tense and present perfect.",
-        "Read and write short functional texts."
+        "Use vocabulary of peace and security.",
+        "Describe causes of conflict and unsafe situations.",
+        "Give advice for keeping peace.",
+        "Write a short safety message or report."
       ],
       "whatYouNeedToKnow": [
-        "Important vocabulary includes peace, security, police, court, witness, report and statement.",
-        "Important structures include conjunctions, past tense and present perfect.",
-        "A clear answer uses full sentences and exact vocabulary."
+        "Peace means living without violence, fear or serious quarrels.",
+        "Security means protection of people and property.",
+        "Conflict can be reduced through dialogue, fairness, forgiveness and respect.",
+        "Safety messages should be clear and practical."
       ],
       "worked": {
-        "problem": "Write one clear sentence about peace and security.",
+        "problem": "Write one sentence advising learners not to fight.",
         "steps": [
-          "Choose the key vocabulary.",
-          "Use the correct structure.",
-          "Write a complete sentence."
+          "Use should or must not.",
+          "Name the action: fighting.",
+          "Give a peaceful alternative."
         ],
-        "answer": "This is a clear sentence about peace and security."
+        "answer": "Learners must not fight; they should report problems to a teacher."
       },
       "recap": [
-        "Use exact vocabulary.",
-        "Use the target structure correctly.",
-        "Write complete sentences."
+        "Peace needs respect and dialogue.",
+        "Security protects people and property.",
+        "Safety messages should be clear."
+      ],
+      "commonMistakes": [
+        "Using violent language in a peace message.",
+        "Giving advice without saying what to do instead.",
+        "Confusing peace with silence only.",
+        "Forgetting to mention adults/security when danger is serious."
+      ],
+      "writingTasks": [
+        {
+          "title": "Write a safety message",
+          "prompt": "Write four sentences advising learners how to keep peace and security at school.",
+          "planningSteps": [
+            "Name one danger or conflict.",
+            "Give peaceful advice.",
+            "Mention reporting serious problems.",
+            "End with a positive message."
+          ],
+          "checklist": [
+            "I used peace/security words.",
+            "My advice is safe.",
+            "I used should or must not.",
+            "My sentences are clear."
+          ],
+          "modelOpening": "Learners should solve small disagreements by talking politely."
+        }
       ]
     },
     "subtopics": [
       {
-        "subtopicId": "p5-peace-security-vocabulary",
-        "title": "1. Vocabulary and meaning",
+        "subtopicId": "p5-peace-words",
+        "title": "1. Peace and security vocabulary",
         "modules": [
           {
-            "moduleId": "p5-peace-security-words",
-            "title": "Key Words",
-            "bigIdea": "This module teaches the key words for peace and security.",
+            "moduleId": "p5-peace-vocabulary-module",
+            "title": "Words for safe living",
+            "bigIdea": "Peace and security vocabulary helps learners talk about problems and solutions.",
             "learnIt": [
-              "Learn and pronounce the important words: peace, security, police, court, witness, report and statement.",
-              "Use each word in a short sentence.",
-              "Check spelling carefully."
+              "Useful words include peace, security, danger, conflict, forgive, report, protect and reconcile.",
+              "Dialogue means talking to solve a problem.",
+              "A security officer helps protect people and property."
             ],
             "workedExample": {
-              "question": "Use one key word from Peace and Security in a sentence.",
+              "question": "Use conflict in a sentence.",
               "steps": [
-                "Choose a relevant word.",
-                "Write a complete sentence."
+                "Think of a disagreement.",
+                "Write a sentence showing a quarrel or disagreement."
               ],
-              "answer": "The sentence should use a peace and security word correctly."
+              "answer": "The teacher helped the learners solve their conflict."
             },
             "tryThis": {
-              "question": "Which word belongs to this topic?",
+              "question": "Security means:",
               "choices": [
-                "peace",
-                "mountain",
-                "triangle",
-                "oxygen"
+                "protection",
+                "dancing",
+                "buying",
+                "digging"
               ],
               "correct": 0,
-              "explanation": "peace belongs to Peace and Security."
-            }
+              "explanation": "Security is protection."
+            },
+            "imageUrl": "/images/english/p5-culture-peace-banking.svg",
+            "imageCaption": "Culture, peace, security and banking language."
           }
         ]
       },
       {
-        "subtopicId": "p5-peace-security-writing",
-        "title": "2. Functional writing",
+        "subtopicId": "p5-safety-message",
+        "title": "2. Writing safety messages",
         "modules": [
           {
-            "moduleId": "p5-peace-security-structures",
-            "title": "Structures and Writing",
-            "bigIdea": "This module helps learners write correctly about peace and security.",
+            "moduleId": "p5-safety-message-module",
+            "title": "Clear safety communication",
+            "bigIdea": "A safety message should tell people what danger to avoid and what safe action to take.",
             "learnIt": [
-              "Practise conjunctions, past tense and present perfect.",
-              "Write short, clear sentences.",
-              "For written tasks, include the important details and correct punctuation."
+              "Use must not for dangerous actions.",
+              "Use should for good advice.",
+              "Report serious danger to a trusted adult or authority."
             ],
             "workedExample": {
-              "question": "Write a short message related to Peace and Security.",
+              "question": "Write a safety message about strangers near school.",
               "steps": [
-                "Identify the purpose.",
-                "Include the key detail.",
-                "Use correct punctuation."
+                "Mention the danger.",
+                "Give a safe action.",
+                "Use clear language."
               ],
-              "answer": "The answer should be clear, polite and complete."
+              "answer": "Do not follow strangers; report them to a teacher or parent."
             },
             "tryThis": {
-              "question": "A good written answer should be:",
+              "question": "Which is a good safety message?",
               "choices": [
-                "clear and complete",
-                "hidden",
-                "unfinished",
-                "only one random word"
+                "Hide all danger.",
+                "Report broken glass to a teacher.",
+                "Fight everyone.",
+                "Run into traffic."
               ],
-              "correct": 0,
-              "explanation": "A good answer is clear and complete."
+              "correct": 1,
+              "explanation": "It gives a safe action."
+            },
+            "imageUrl": "/images/english/p5-culture-peace-banking.svg",
+            "imageCaption": "Culture, peace, security and banking language."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p5-peace-security-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p5-peace-security-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p5-culture-peace-banking.svg",
+            "imageCaption": "Culture, peace, security and banking language.",
+            "learnIt": [
+              "Plan before writing about Peace and Security.",
+              "Use the correct vocabulary and sentence structure from the topic.",
+              "Write for a real reader: friend, parent, teacher, customer or community member.",
+              "Revise for punctuation, spelling and clear purpose."
+            ],
+            "workedExample": {
+              "question": "Write a short paragraph, message or dialogue using the topic Peace and Security.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer is clear, purposeful and uses peace and security language correctly."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "random words",
+                "without punctuation",
+                "clear, complete and polite",
+                "copied without meaning"
+              ],
+              "correct": 2,
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -1305,92 +1682,70 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
     ],
     "quiz": [
       {
-        "q": "Which word belongs to Peace and Security?",
+        "q": "Peace means:",
         "choices": [
-          "peace",
-          "photosynthesis",
-          "isosceles",
-          "evaporation only"
+          "fighting",
+          "stealing",
+          "fear only",
+          "living without violence"
         ],
-        "correct": 0,
-        "why": "peace is part of Peace and Security vocabulary."
+        "correct": 3,
+        "why": "Peace is safety and harmony."
       },
       {
-        "q": "A good sentence should be:",
+        "q": "Security means:",
         "choices": [
-          "complete",
+          "protection",
+          "a song",
+          "a food",
+          "a hill"
+        ],
+        "correct": 0,
+        "why": "Security is protection."
+      },
+      {
+        "q": "Dialogue means:",
+        "choices": [
+          "fighting",
+          "talking to solve a problem",
+          "hiding",
+          "stealing"
+        ],
+        "correct": 1,
+        "why": "Dialogue solves problems peacefully."
+      },
+      {
+        "q": "Learners should report danger to:",
+        "choices": [
+          "a stranger only",
+          "no one",
+          "a trusted adult",
+          "a rumour"
+        ],
+        "correct": 2,
+        "why": "Trusted adults can help."
+      },
+      {
+        "q": "Which word fits peace?",
+        "choices": [
+          "revenge",
+          "violence",
+          "insult",
+          "forgiveness"
+        ],
+        "correct": 3,
+        "why": "Forgiveness supports peace."
+      },
+      {
+        "q": "A safety message should be:",
+        "choices": [
+          "clear and practical",
           "confusing",
-          "half-written",
-          "without meaning"
+          "rude",
+          "empty"
         ],
         "correct": 0,
-        "why": "A good sentence has complete meaning."
-      },
-      {
-        "q": "Which is important in functional writing?",
-        "choices": [
-          "clear purpose",
-          "random words",
-          "no punctuation",
-          "hidden message"
-        ],
-        "correct": 0,
-        "why": "Functional writing should have a clear purpose."
-      },
-      {
-        "q": "Which skill helps in this topic?",
-        "choices": [
-          "spelling words correctly",
-          "tearing books",
-          "ignoring instructions",
-          "guessing only"
-        ],
-        "correct": 0,
-        "why": "Correct spelling supports clear writing."
-      },
-      {
-        "q": "Choose the complete sentence.",
-        "choices": [
-          "The learner wrote a clear message.",
-          "Learner wrote.",
-          "Because message.",
-          "Clear the."
-        ],
-        "correct": 0,
-        "why": "It has complete meaning."
-      },
-      {
-        "q": "Why should learners read instructions carefully?",
-        "choices": [
-          "To answer correctly",
-          "To waste time",
-          "To avoid learning",
-          "To hide answers"
-        ],
-        "correct": 0,
-        "why": "Instructions guide the answer."
-      },
-      {
-        "q": "Which word shows politeness?",
-        "choices": [
-          "please",
-          "never mind you",
-          "go away",
-          "nonsense"
-        ],
-        "correct": 0,
-        "why": "Please is polite."
-      },
-      {
-        "q": "Before writing, a learner should first:",
-        "choices": [
-          "understand the task",
-          "close the book",
-          "ignore the question",
-          "write random words"
-        ],
-        "correct": 0,
-        "why": "Understanding the task helps produce a correct answer."
+        "why": "Clear safety messages help people."
       }
     ]
   },
@@ -1399,104 +1754,175 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
     "themeId": "p5-english-set-one",
     "themeName": "Primary Five English Language",
     "title": "Services: Banking",
-    "estMinutes": 28,
+    "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
-      "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Learners use banking language for saving, depositing, withdrawing and reading account information.",
+      "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Services: Banking helps learners use English for saving, depositing, withdrawing and asking for help at a bank.",
       "learningObjectives": [
-        "Use vocabulary for services: banking.",
-        "Use neither...nor, as soon as, past simple, future and present simple.",
-        "Read and write short functional texts."
+        "Use basic banking vocabulary.",
+        "Explain services offered by a bank.",
+        "Use polite language at a bank counter.",
+        "Write a short banking dialogue or form-like message."
       ],
       "whatYouNeedToKnow": [
-        "Important vocabulary includes bank, teller, deposit, withdraw, account, balance, cheque and ATM.",
-        "Important structures include neither...nor, as soon as, past simple, future and present simple.",
-        "A clear answer uses full sentences and exact vocabulary."
+        "A bank is a place where people keep and manage money.",
+        "Banking services include saving, depositing, withdrawing, lending and keeping money safe.",
+        "A customer should speak politely and give clear information.",
+        "Important words include account, deposit, withdraw, balance, teller, loan and savings."
       ],
       "worked": {
-        "problem": "Write one clear sentence about services: banking.",
+        "problem": "Write a polite request to withdraw money at a bank.",
         "steps": [
-          "Choose the key vocabulary.",
-          "Use the correct structure.",
-          "Write a complete sentence."
+          "Start politely.",
+          "State the service needed.",
+          "Mention the amount if needed."
         ],
-        "answer": "This is a clear sentence about services: banking."
+        "answer": "Good morning. I would like to withdraw fifty thousand shillings, please."
       },
       "recap": [
-        "Use exact vocabulary.",
-        "Use the target structure correctly.",
-        "Write complete sentences."
+        "Deposit means put money in.",
+        "Withdraw means take money out.",
+        "Use polite clear banking language."
+      ],
+      "commonMistakes": [
+        "Using rude commands at the bank.",
+        "Confusing deposit and withdraw.",
+        "Writing amounts unclearly.",
+        "Sharing secret account information carelessly."
+      ],
+      "writingTasks": [
+        {
+          "title": "Write a banking dialogue",
+          "prompt": "Write a short dialogue between a bank teller and a customer who wants to deposit money.",
+          "planningSteps": [
+            "Start with greetings.",
+            "Let the customer state the service.",
+            "Let the teller respond politely.",
+            "End with thanks."
+          ],
+          "checklist": [
+            "I used deposit/withdraw correctly.",
+            "The dialogue is polite.",
+            "The amount is clear.",
+            "Each speaker is labelled."
+          ],
+          "modelOpening": "Teller: Good morning. How may I help you?"
+        }
       ]
     },
     "subtopics": [
       {
-        "subtopicId": "p5-services-banking-vocabulary",
-        "title": "1. Vocabulary and meaning",
+        "subtopicId": "p5-banking-words",
+        "title": "1. Banking vocabulary",
         "modules": [
           {
-            "moduleId": "p5-services-banking-words",
-            "title": "Key Words",
-            "bigIdea": "This module teaches the key words for services: banking.",
+            "moduleId": "p5-banking-vocabulary-module",
+            "title": "Words used in a bank",
+            "bigIdea": "Banking vocabulary helps learners understand financial services.",
             "learnIt": [
-              "Learn and pronounce the important words: bank, teller, deposit, withdraw, account, balance, cheque and ATM.",
-              "Use each word in a short sentence.",
-              "Check spelling carefully."
+              "Deposit means putting money into an account.",
+              "Withdraw means taking money out of an account.",
+              "Balance means the amount of money left in an account.",
+              "A teller serves customers at a bank counter."
             ],
             "workedExample": {
-              "question": "Use one key word from Services: Banking in a sentence.",
+              "question": "What is the difference between deposit and withdraw?",
               "steps": [
-                "Choose a relevant word.",
-                "Write a complete sentence."
+                "Deposit means put money in.",
+                "Withdraw means take money out."
               ],
-              "answer": "The sentence should use a services: banking word correctly."
+              "answer": "Deposit is putting money into an account; withdraw is taking money out."
             },
             "tryThis": {
-              "question": "Which word belongs to this topic?",
+              "question": "A person served at a bank is a:",
               "choices": [
-                "bank",
-                "mountain",
-                "triangle",
-                "oxygen"
+                "patient",
+                "customer",
+                "pilot",
+                "referee"
               ],
-              "correct": 0,
-              "explanation": "bank belongs to Services: Banking."
-            }
+              "correct": 1,
+              "explanation": "Bank clients are customers."
+            },
+            "imageUrl": "/images/english/p5-culture-peace-banking.svg",
+            "imageCaption": "Culture, peace, security and banking language."
           }
         ]
       },
       {
-        "subtopicId": "p5-services-banking-writing",
-        "title": "2. Functional writing",
+        "subtopicId": "p5-bank-dialogue",
+        "title": "2. Polite banking dialogue",
         "modules": [
           {
-            "moduleId": "p5-services-banking-structures",
-            "title": "Structures and Writing",
-            "bigIdea": "This module helps learners write correctly about services: banking.",
+            "moduleId": "p5-bank-dialogue-module",
+            "title": "Speaking politely at a bank",
+            "bigIdea": "Polite banking language is clear, respectful and accurate.",
             "learnIt": [
-              "Practise neither...nor, as soon as, past simple, future and present simple.",
-              "Write short, clear sentences.",
-              "For written tasks, include the important details and correct punctuation."
+              "Use greetings such as Good morning.",
+              "Say the service you need clearly.",
+              "Say thank you after being helped.",
+              "Do not share secret information with strangers."
             ],
             "workedExample": {
-              "question": "Write a short message related to Services: Banking.",
+              "question": "Write a teller question asking a customer what they need.",
               "steps": [
-                "Identify the purpose.",
-                "Include the key detail.",
-                "Use correct punctuation."
+                "Use polite question language.",
+                "Mention service."
               ],
-              "answer": "The answer should be clear, polite and complete."
+              "answer": "Good morning. How may I help you?"
             },
             "tryThis": {
-              "question": "A good written answer should be:",
+              "question": "Which sentence is polite at a bank?",
               "choices": [
-                "clear and complete",
-                "hidden",
-                "unfinished",
-                "only one random word"
+                "Give me now!",
+                "You there!",
+                "I would like to deposit money, please.",
+                "Money!"
               ],
-              "correct": 0,
-              "explanation": "A good answer is clear and complete."
+              "correct": 2,
+              "explanation": "It uses polite request language."
+            },
+            "imageUrl": "/images/english/p5-culture-peace-banking.svg",
+            "imageCaption": "Culture, peace, security and banking language."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p5-services-banking-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p5-services-banking-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p5-culture-peace-banking.svg",
+            "imageCaption": "Culture, peace, security and banking language.",
+            "learnIt": [
+              "Plan before writing about Services: Banking.",
+              "Use the correct vocabulary and sentence structure from the topic.",
+              "Write for a real reader: friend, parent, teacher, customer or community member.",
+              "Revise for punctuation, spelling and clear purpose."
+            ],
+            "workedExample": {
+              "question": "Write a short paragraph, message or dialogue using the topic Services: Banking.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer is clear, purposeful and uses services: banking language correctly."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "random words",
+                "without punctuation",
+                "copied without meaning",
+                "clear, complete and polite"
+              ],
+              "correct": 3,
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -1504,96 +1930,76 @@ export const P5_ENGLISH_TOPICS: Topic[] = [
     ],
     "quiz": [
       {
-        "q": "Which word belongs to Services: Banking?",
+        "q": "A bank helps people to:",
         "choices": [
-          "bank",
-          "photosynthesis",
-          "isosceles",
-          "evaporation only"
+          "keep and manage money",
+          "grow teeth",
+          "make rainfall",
+          "draw maps only"
         ],
         "correct": 0,
-        "why": "bank is part of Services: Banking vocabulary."
+        "why": "Banks manage money."
       },
       {
-        "q": "A good sentence should be:",
+        "q": "Deposit means:",
         "choices": [
-          "complete",
-          "confusing",
-          "half-written",
-          "without meaning"
+          "take money out",
+          "put money in",
+          "tear a letter",
+          "measure time"
         ],
-        "correct": 0,
-        "why": "A good sentence has complete meaning."
+        "correct": 1,
+        "why": "Deposit puts money in."
       },
       {
-        "q": "Which is important in functional writing?",
+        "q": "Withdraw means:",
         "choices": [
-          "clear purpose",
-          "random words",
-          "no punctuation",
-          "hidden message"
+          "put money in",
+          "sing",
+          "take money out",
+          "vote"
         ],
-        "correct": 0,
-        "why": "Functional writing should have a clear purpose."
+        "correct": 2,
+        "why": "Withdraw takes money out."
       },
       {
-        "q": "Which skill helps in this topic?",
+        "q": "A teller works at:",
         "choices": [
-          "spelling words correctly",
-          "tearing books",
-          "ignoring instructions",
-          "guessing only"
+          "a swamp",
+          "a poultry house",
+          "a football pitch",
+          "a bank counter"
         ],
-        "correct": 0,
-        "why": "Correct spelling supports clear writing."
+        "correct": 3,
+        "why": "Tellers serve bank customers."
       },
       {
-        "q": "Choose the complete sentence.",
+        "q": "A polite banking request is:",
         "choices": [
-          "The learner wrote a clear message.",
-          "Learner wrote.",
-          "Because message.",
-          "Clear the."
+          "I would like to save money, please.",
+          "Give money now!",
+          "You! Money!",
+          "No greeting"
         ],
         "correct": 0,
-        "why": "It has complete meaning."
+        "why": "It is polite and clear."
       },
       {
-        "q": "Why should learners read instructions carefully?",
+        "q": "Balance means:",
         "choices": [
-          "To answer correctly",
-          "To waste time",
-          "To avoid learning",
-          "To hide answers"
+          "a type of dance",
+          "money left in an account",
+          "a vehicle part",
+          "a crop pest"
         ],
-        "correct": 0,
-        "why": "Instructions guide the answer."
-      },
-      {
-        "q": "Which word shows politeness?",
-        "choices": [
-          "please",
-          "never mind you",
-          "go away",
-          "nonsense"
-        ],
-        "correct": 0,
-        "why": "Please is polite."
-      },
-      {
-        "q": "Before writing, a learner should first:",
-        "choices": [
-          "understand the task",
-          "close the book",
-          "ignore the question",
-          "write random words"
-        ],
-        "correct": 0,
-        "why": "Understanding the task helps produce a correct answer."
+        "correct": 1,
+        "why": "Balance is account amount left."
       }
     ]
   }
 ];
+
+export const P5_ENGLISH_TOPICS: Topic[] = balanceTopicAnswers(P5_ENGLISH_TOPIC_DATA);
 
 export function getP5EnglishTopic(id: string): Topic | undefined {
   return P5_ENGLISH_TOPICS.find((topic) => topic.id === id);

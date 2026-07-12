@@ -11,7 +11,7 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "themeId": "p4-science-living-things",
     "themeName": "The World of Living Things",
     "title": "Plant Life",
-    "estMinutes": 30,
+    "estMinutes": 40,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -82,6 +82,117 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "Roots absorb water from soil."
+            },
+            "imageUrl": "/images/science/flowering-plant-parts.svg",
+            "imageCaption": "Diagram of flowering plant parts and their functions."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-plant-flowers-fruits-seeds",
+        "title": "2. Flowers, fruits and seeds",
+        "modules": [
+          {
+            "moduleId": "p4-flowers-fruits-seeds",
+            "title": "From Flower to Fruit and Seed",
+            "bigIdea": "Flowering plants reproduce by forming fruits and seeds after flowers are pollinated.",
+            "imageUrl": "/images/science/flowering-plant-parts.svg",
+            "imageCaption": "Flowering plant parts: flowers help plants form fruits and seeds.",
+            "learnIt": [
+              "A flower is the part of many plants that helps in reproduction.",
+              "After pollination and fertilisation, some flowers develop into fruits.",
+              "Fruits protect seeds. Seeds can grow into new plants when conditions are suitable.",
+              "Seeds need air, water and warmth to germinate."
+            ],
+            "workedExample": {
+              "question": "Why are seeds important to flowering plants?",
+              "steps": [
+                "Seeds can grow into new young plants.",
+                "This helps the plant kind continue."
+              ],
+              "answer": "Seeds are important because they can grow into new plants."
+            },
+            "tryThis": {
+              "question": "Which plant part can develop into a fruit?",
+              "choices": [
+                "root",
+                "flower",
+                "stem only",
+                "leaf only"
+              ],
+              "correct": 1,
+              "explanation": "In many flowering plants, the flower can develop into a fruit after pollination and fertilisation."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-plant-germination",
+        "title": "3. Germination and plant needs",
+        "modules": [
+          {
+            "moduleId": "p4-seed-germination-needs",
+            "title": "Seed Germination and Plant Needs",
+            "bigIdea": "A seed germinates when it has the right conditions, and the young plant then needs light, water, air and good soil.",
+            "learnIt": [
+              "Germination is the beginning of growth of a seed into a seedling.",
+              "A seed usually needs water, air and warmth to germinate.",
+              "After germination, the seedling needs sunlight to make food in its leaves.",
+              "Good soil gives support and mineral salts."
+            ],
+            "workedExample": {
+              "question": "A seed is put in dry soil and does not germinate. What is missing?",
+              "steps": [
+                "Seeds need water for germination.",
+                "Dry soil has too little water."
+              ],
+              "answer": "Water is missing."
+            },
+            "tryThis": {
+              "question": "Which condition is needed for germination?",
+              "choices": [
+                "a bank account",
+                "a compass",
+                "water",
+                "a mirror"
+              ],
+              "correct": 2,
+              "explanation": "Seeds need water to germinate."
+            }
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-plant-life-application",
+        "title": "2. Observing and caring for plants",
+        "modules": [
+          {
+            "moduleId": "p4-plant-life-application-module",
+            "title": "Plant observation and care",
+            "bigIdea": "A good P4 science learner can observe a plant and explain how to care for it.",
+            "learnIt": [
+              "Observe a real plant and name its visible parts before writing notes.",
+              "Check whether the plant has enough water, sunlight and space.",
+              "Do not uproot young plants carelessly during observation."
+            ],
+            "workedExample": {
+              "question": "A bean seedling is yellow and weak because it has been kept in a dark box. What should be changed?",
+              "steps": [
+                "Plants need sunlight for healthy growth.",
+                "Move the seedling to a safe place with enough light and continue watering it."
+              ],
+              "answer": "Move it to a place with sunlight and care for it properly."
+            },
+            "tryThis": {
+              "question": "A safe way to observe roots is to:",
+              "choices": [
+                "uproot every plant in the garden",
+                "cut all roots",
+                "throw soil in class",
+                "look at a drawn diagram or teacher sample"
+              ],
+              "correct": 3,
+              "explanation": "Learners should avoid destroying plants unnecessarily."
             }
           }
         ]
@@ -102,34 +213,34 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "Leaves mainly help a plant to:",
         "choices": [
-          "make food",
           "walk",
+          "make food",
           "chew",
           "hear"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Leaves make food."
       },
       {
         "q": "Plants need:",
         "choices": [
-          "water, air and sunlight",
           "only stones",
           "only darkness",
+          "water, air and sunlight",
           "salt only"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Plants need water, air and sunlight."
       },
       {
         "q": "A fruit usually contains:",
         "choices": [
-          "seeds",
           "teeth",
           "bones",
-          "lungs"
+          "lungs",
+          "seeds"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Fruits contain seeds."
       },
       {
@@ -146,12 +257,12 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "We care for young plants by:",
         "choices": [
-          "watering them",
           "uprooting them",
+          "watering them",
           "stepping on them",
           "burning them"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Watering helps them grow."
       }
     ]
@@ -161,7 +272,7 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "themeId": "p4-science-living-things",
     "themeName": "The World of Living Things",
     "title": "Growing Crops",
-    "estMinutes": 30,
+    "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -225,13 +336,51 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which is a crop-care practice?",
               "choices": [
-                "weeding",
                 "breaking all stems",
                 "throwing rubbish",
+                "weeding",
                 "harvesting immature crops"
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "Weeding is a crop-care practice."
+            },
+            "imageUrl": "/images/science/crop-growing-cycle.svg",
+            "imageCaption": "Crop-growing cycle from soil preparation to harvest."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-growing-crops-application",
+        "title": "2. Crop problems and good farming choices",
+        "modules": [
+          {
+            "moduleId": "p4-growing-crops-application-module",
+            "title": "Solving crop-growing problems",
+            "bigIdea": "Crop growing involves making good choices when plants face problems.",
+            "learnIt": [
+              "If seedlings wilt, check water, shade and soil condition.",
+              "If pests attack crops, ask an adult for safe control methods.",
+              "Harvest only when crops are mature and handle them carefully."
+            ],
+            "workedExample": {
+              "question": "A farmer notices insects eating young cabbage leaves. What should the farmer do first?",
+              "steps": [
+                "Identify the problem as pests.",
+                "Ask an experienced adult/agricultural worker for a safe control method.",
+                "Avoid using unknown chemicals carelessly."
+              ],
+              "answer": "Seek safe pest-control advice and protect the crop."
+            },
+            "tryThis": {
+              "question": "Which is safest for a child?",
+              "choices": [
+                "spray unknown chemicals alone",
+                "taste pesticides",
+                "ignore all pests",
+                "ask an adult before using pest control"
+              ],
+              "correct": 3,
+              "explanation": "Children should not handle unknown chemicals."
             }
           }
         ]
@@ -252,34 +401,34 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "Weeds compete with crops for:",
         "choices": [
-          "water and nutrients",
           "school fees",
+          "water and nutrients",
           "books",
           "chalk"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Weeds take water and nutrients."
       },
       {
         "q": "Mulching helps soil to:",
         "choices": [
-          "keep moisture",
           "burn quickly",
           "lose all water",
+          "keep moisture",
           "become plastic"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Mulch reduces water loss."
       },
       {
         "q": "Harvesting means:",
         "choices": [
-          "collecting mature crops",
           "planting seeds",
           "watering soil",
-          "naming animals"
+          "naming animals",
+          "collecting mature crops"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Harvesting collects mature crops."
       },
       {
@@ -296,12 +445,12 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "Good seeds should be:",
         "choices": [
-          "healthy and mature",
           "broken and rotten",
+          "healthy and mature",
           "eaten by pests",
           "burnt"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Healthy mature seeds grow better."
       }
     ]
@@ -311,7 +460,7 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "themeId": "p4-science-living-things",
     "themeName": "The World of Living Things",
     "title": "Animal Life",
-    "estMinutes": 28,
+    "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -376,13 +525,51 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which is a need of animals?",
               "choices": [
-                "water",
                 "chalk",
                 "a blackboard",
+                "water",
                 "a ruler"
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "Animals need water to live."
+            },
+            "imageUrl": "/images/science/p4-animal-care.svg",
+            "imageCaption": "Animal needs and care summary."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-animal-life-application",
+        "title": "2. Animal safety and kindness",
+        "modules": [
+          {
+            "moduleId": "p4-animal-life-application-module",
+            "title": "Responsible animal care",
+            "bigIdea": "Animals are useful, but learners must care for them safely and kindly.",
+            "learnIt": [
+              "Do not tease or beat animals because they can be hurt or may attack.",
+              "Wash hands after handling animals or cleaning animal houses.",
+              "Sick animals should be reported to an adult or veterinary worker."
+            ],
+            "workedExample": {
+              "question": "A dog at home refuses to eat and looks weak. What should a learner do?",
+              "steps": [
+                "The animal may be sick.",
+                "A learner should not guess treatment.",
+                "Tell an adult so a veterinary worker can help."
+              ],
+              "answer": "Tell an adult and seek veterinary help."
+            },
+            "tryThis": {
+              "question": "A kind way to care for animals is to:",
+              "choices": [
+                "throw stones at them",
+                "deny them food",
+                "keep them in dirty places",
+                "give clean water"
+              ],
+              "correct": 3,
+              "explanation": "Clean water is part of animal care."
             }
           }
         ]
@@ -403,34 +590,34 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "Animals need shelter to:",
         "choices": [
-          "protect them from weather and enemies",
           "help them read",
+          "protect them from weather and enemies",
           "make them plants",
           "turn them into stones"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Shelter protects animals."
       },
       {
         "q": "A dog may help people by:",
         "choices": [
-          "guarding a home",
           "making leaves",
           "laying eggs always",
+          "guarding a home",
           "measuring length"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Dogs can provide security."
       },
       {
         "q": "Animal houses should be:",
         "choices": [
-          "clean",
           "dirty",
           "flooded",
-          "broken"
+          "broken",
+          "clean"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Clean houses reduce disease."
       },
       {
@@ -447,12 +634,12 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "Wild animals usually live:",
         "choices": [
-          "in natural habitats",
           "inside exercise books",
+          "in natural habitats",
           "in cups",
           "on desks only"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Wild animals live in natural habitats."
       }
     ]
@@ -462,7 +649,7 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "themeId": "p4-science-environment",
     "themeName": "Our Environment",
     "title": "Weather Changes Around Us",
-    "estMinutes": 30,
+    "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -527,13 +714,50 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which is a weather element?",
               "choices": [
-                "rain",
                 "tooth",
                 "root",
+                "rain",
                 "profit"
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "Rain is a weather element."
+            },
+            "imageUrl": "/images/science/weather-symbols-chart.svg",
+            "imageCaption": "Simple weather symbols for daily observation."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-weather-changes-application",
+        "title": "2. Weather decisions in daily life",
+        "modules": [
+          {
+            "moduleId": "p4-weather-changes-application-module",
+            "title": "Using weather information",
+            "bigIdea": "Weather observations help learners make safe daily choices.",
+            "learnIt": [
+              "Cloudy skies may warn people to carry raincoats or protect drying crops.",
+              "Strong wind may make dust, falling branches or unsafe water travel.",
+              "Weather records help farmers plan planting and harvesting."
+            ],
+            "workedExample": {
+              "question": "The sky is dark with heavy clouds before school. What should a learner carry?",
+              "steps": [
+                "Dark heavy clouds may show rain is likely.",
+                "A raincoat or umbrella can keep the learner dry."
+              ],
+              "answer": "A raincoat or umbrella."
+            },
+            "tryThis": {
+              "question": "Which activity is risky during heavy rain?",
+              "choices": [
+                "staying indoors",
+                "wearing a raincoat",
+                "protecting books",
+                "crossing a flooded stream"
+              ],
+              "correct": 3,
+              "explanation": "Flooded streams can be dangerous."
             }
           }
         ]
@@ -554,34 +778,34 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "Which is a weather element?",
         "choices": [
-          "wind",
           "root",
+          "wind",
           "profit",
           "molar"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Wind is a weather element."
       },
       {
         "q": "A rain symbol helps us:",
         "choices": [
-          "record rainy weather",
           "cook food",
           "measure teeth",
+          "record rainy weather",
           "sell goods"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Weather symbols record weather."
       },
       {
         "q": "Farmers need rain because crops need:",
         "choices": [
-          "water",
           "stones only",
           "darkness only",
-          "smoke"
+          "smoke",
+          "water"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Crops need water."
       },
       {
@@ -598,12 +822,12 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "A thermometer measures:",
         "choices": [
-          "temperature",
           "wind direction only",
+          "temperature",
           "rain drops only",
           "plant roots"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Temperature is measured with a thermometer."
       }
     ]
@@ -613,7 +837,7 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "themeId": "p4-science-human-health",
     "themeName": "Human Health",
     "title": "Personal Hygiene",
-    "estMinutes": 30,
+    "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -678,13 +902,50 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which habit prevents disease?",
               "choices": [
-                "washing hands with soap",
                 "eating with dirty hands",
                 "wearing wet clothes",
+                "washing hands with soap",
                 "not bathing"
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "Handwashing removes many germs."
+            },
+            "imageUrl": "/images/science/personal-hygiene-handwashing.svg",
+            "imageCaption": "Personal hygiene habits that help prevent disease."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-personal-hygiene-application",
+        "title": "2. Hygiene decisions at school",
+        "modules": [
+          {
+            "moduleId": "p4-personal-hygiene-application-module",
+            "title": "Choosing healthy habits",
+            "bigIdea": "Personal hygiene becomes useful when learners practise it at the right times.",
+            "learnIt": [
+              "Wash hands before eating, after latrine use and after cleaning dirty places.",
+              "Keep nails short and clean because dirt can hide under nails.",
+              "Do not share personal items such as toothbrushes."
+            ],
+            "workedExample": {
+              "question": "A learner wants to eat after playing in soil. What should happen first?",
+              "steps": [
+                "Soil can carry germs or worm eggs.",
+                "The learner should wash hands with clean water and soap before eating."
+              ],
+              "answer": "Wash hands with clean water and soap."
+            },
+            "tryThis": {
+              "question": "Which item should not be shared?",
+              "choices": [
+                "football",
+                "class reader",
+                "chalkboard",
+                "toothbrush"
+              ],
+              "correct": 3,
+              "explanation": "A toothbrush is a personal hygiene item."
             }
           }
         ]
@@ -705,34 +966,34 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "We should wash hands after:",
         "choices": [
-          "using a latrine",
           "reading a poem",
+          "using a latrine",
           "seeing the sun",
           "drawing a line"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Hands may get germs after latrine use."
       },
       {
         "q": "Soap helps to:",
         "choices": [
-          "remove germs and dirt",
           "grow teeth",
           "make wind",
+          "remove germs and dirt",
           "measure mass"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Soap helps remove dirt and germs."
       },
       {
         "q": "Dirty clothes may cause:",
         "choices": [
-          "skin infections",
           "good health always",
           "more sunlight",
-          "clean air"
+          "clean air",
+          "skin infections"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Dirty clothes can carry germs."
       },
       {
@@ -749,12 +1010,12 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "A clean learner should:",
         "choices": [
-          "bathe regularly",
           "never wash",
+          "bathe regularly",
           "share dirty towels",
           "eat with dirty hands"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Regular bathing is hygienic."
       }
     ]
@@ -764,7 +1025,7 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "themeId": "p4-science-human-health",
     "themeName": "Human Health",
     "title": "Sanitation",
-    "estMinutes": 28,
+    "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -829,13 +1090,50 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Where should rubbish be put?",
               "choices": [
-                "dustbin or rubbish pit",
                 "classroom floor",
                 "water source",
+                "dustbin or rubbish pit",
                 "roadside"
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "Rubbish should be disposed of safely."
+            },
+            "imageUrl": "/images/science/p4-sanitation-clean-environment.svg",
+            "imageCaption": "Sanitation practices for clean surroundings."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-sanitation-application",
+        "title": "2. Sanitation problem solving",
+        "modules": [
+          {
+            "moduleId": "p4-sanitation-application-module",
+            "title": "Keeping shared places clean",
+            "bigIdea": "Sanitation protects everyone because dirty places can spread disease.",
+            "learnIt": [
+              "Classrooms, latrines, kitchens and water points should be kept clean.",
+              "Rubbish should be sorted or placed in the correct pit/bin.",
+              "Community sanitation improves when everyone takes responsibility."
+            ],
+            "workedExample": {
+              "question": "A rubbish pit is overflowing near a classroom. What problem can this cause?",
+              "steps": [
+                "Overflowing rubbish attracts flies, rats and bad smell.",
+                "These can spread germs and make the school unhealthy."
+              ],
+              "answer": "It can attract pests and spread disease."
+            },
+            "tryThis": {
+              "question": "A good sanitation action is to:",
+              "choices": [
+                "throw rubbish anywhere",
+                "leave latrines dirty",
+                "keep stagnant water",
+                "empty or manage rubbish safely"
+              ],
+              "correct": 3,
+              "explanation": "Safe waste management improves sanitation."
             }
           }
         ]
@@ -856,34 +1154,34 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "Stagnant water may breed:",
         "choices": [
-          "mosquitoes",
           "books",
+          "mosquitoes",
           "teeth",
           "flowers only"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Mosquitoes breed in stagnant water."
       },
       {
         "q": "Rubbish should be put in:",
         "choices": [
-          "a dustbin or rubbish pit",
           "a water pot",
           "the classroom floor",
+          "a dustbin or rubbish pit",
           "a plate"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Safe disposal reduces pests."
       },
       {
         "q": "After using a latrine, we should:",
         "choices": [
-          "wash hands",
           "eat immediately with dirty hands",
           "touch food",
-          "leave the door open"
+          "leave the door open",
+          "wash hands"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Handwashing prevents germs."
       },
       {
@@ -900,12 +1198,12 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "Drinking water should be stored:",
         "choices": [
-          "covered and clean",
           "open and dirty",
+          "covered and clean",
           "near rubbish",
           "in a broken container"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Covered clean storage protects water."
       }
     ]
@@ -915,7 +1213,7 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "themeId": "p4-science-human-body",
     "themeName": "Human Body",
     "title": "Our Food",
-    "estMinutes": 30,
+    "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -980,13 +1278,51 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which is protective food?",
               "choices": [
-                "orange",
                 "posho",
                 "meat",
+                "orange",
                 "sugar"
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "Fruits such as oranges are protective foods."
+            },
+            "imageUrl": "/images/science/p4-balanced-diet.svg",
+            "imageCaption": "Balanced diet and food hygiene summary."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-our-food-application",
+        "title": "2. Planning a balanced meal",
+        "modules": [
+          {
+            "moduleId": "p4-our-food-application-module",
+            "title": "Healthy food choices",
+            "bigIdea": "A balanced meal combines food groups in a way the body can use.",
+            "learnIt": [
+              "A meal of only one food group is usually not balanced.",
+              "Add body-building and protective foods to energy-giving foods.",
+              "Food hygiene matters: wash, cook and cover food properly."
+            ],
+            "workedExample": {
+              "question": "Improve this meal: posho only.",
+              "steps": [
+                "Posho mainly gives energy.",
+                "Add beans for body-building food.",
+                "Add greens or fruit for protective food."
+              ],
+              "answer": "Add beans and vegetables or fruit to make it more balanced."
+            },
+            "tryThis": {
+              "question": "Which meal is more balanced?",
+              "choices": [
+                "sweets only",
+                "cassava only",
+                "soda only",
+                "posho, beans and greens"
+              ],
+              "correct": 3,
+              "explanation": "It has energy, body-building and protective foods."
             }
           }
         ]
@@ -1007,34 +1343,34 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "Beans are mainly:",
         "choices": [
-          "body-building foods",
           "weather symbols",
+          "body-building foods",
           "vectors",
           "teeth"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Beans have proteins."
       },
       {
         "q": "Fruits and vegetables are:",
         "choices": [
-          "protective foods",
           "only energy foods",
           "poisons",
+          "protective foods",
           "waste"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "They protect the body."
       },
       {
         "q": "A balanced diet has:",
         "choices": [
-          "different food groups",
           "only sweets",
           "only water",
-          "only salt"
+          "only salt",
+          "different food groups"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Balanced means varied and useful."
       },
       {
@@ -1051,12 +1387,12 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "Before eating fruits, we should:",
         "choices": [
-          "wash them",
           "throw them in dust",
+          "wash them",
           "step on them",
           "leave them near flies"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Washing removes dirt and germs."
       }
     ]
@@ -1066,7 +1402,7 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "themeId": "p4-science-human-body",
     "themeName": "Human Body",
     "title": "Human Body Organs",
-    "estMinutes": 30,
+    "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -1131,13 +1467,50 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which organ controls thinking?",
               "choices": [
-                "brain",
                 "stomach",
                 "tooth",
+                "brain",
                 "skin only"
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "The brain controls thinking and body activities."
+            },
+            "imageUrl": "/images/science/p4-body-organs.svg",
+            "imageCaption": "Major body organs and functions."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-human-body-organs-application",
+        "title": "2. Protecting body organs",
+        "modules": [
+          {
+            "moduleId": "p4-human-body-organs-application-module",
+            "title": "Healthy habits for organs",
+            "bigIdea": "Body organs work best when learners practise safe and healthy habits.",
+            "learnIt": [
+              "Exercise helps the heart and lungs.",
+              "Balanced food helps the stomach, blood and body growth.",
+              "Avoid smoke, unknown medicines and poisonous substances because they can harm organs."
+            ],
+            "workedExample": {
+              "question": "Why is cigarette smoke bad for the lungs?",
+              "steps": [
+                "Lungs help breathing.",
+                "Smoke can damage lungs and make breathing difficult."
+              ],
+              "answer": "Smoke can harm the lungs and breathing."
+            },
+            "tryThis": {
+              "question": "Which habit protects body organs?",
+              "choices": [
+                "taking unknown tablets",
+                "breathing smoke",
+                "never resting",
+                "eating balanced food"
+              ],
+              "correct": 3,
+              "explanation": "Balanced food supports body organs."
             }
           }
         ]
@@ -1158,34 +1531,34 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "The lungs help us:",
         "choices": [
-          "breathe",
           "chew",
+          "breathe",
           "think only",
           "walk only"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Lungs are for breathing."
       },
       {
         "q": "The brain controls:",
         "choices": [
-          "body activities",
           "digestion only",
           "tooth decay",
+          "body activities",
           "rain"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "The brain controls body activities."
       },
       {
         "q": "The stomach helps to:",
         "choices": [
-          "digest food",
           "pump blood",
           "make rain",
-          "measure length"
+          "measure length",
+          "digest food"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "The stomach digests food."
       },
       {
@@ -1202,12 +1575,12 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "An organ is:",
         "choices": [
-          "a body part with a special job",
           "a type of weather",
+          "a body part with a special job",
           "a crop disease",
           "a graph"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Organs do special work."
       }
     ]
@@ -1217,7 +1590,7 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "themeId": "p4-science-human-body",
     "themeName": "Human Body",
     "title": "The Teeth",
-    "estMinutes": 30,
+    "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -1282,13 +1655,50 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which teeth grind food?",
               "choices": [
-                "molars",
                 "canines",
                 "incisors only",
+                "molars",
                 "tongue"
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "Molars grind food."
+            },
+            "imageUrl": "/images/science/teeth-types-functions.svg",
+            "imageCaption": "Types of teeth and their functions."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-teeth-application",
+        "title": "2. Preventing tooth decay",
+        "modules": [
+          {
+            "moduleId": "p4-teeth-application-module",
+            "title": "Daily tooth care",
+            "bigIdea": "Tooth care is daily work, not only something done when teeth hurt.",
+            "learnIt": [
+              "Brush teeth after meals or at least morning and night where possible.",
+              "Reduce sugary snacks and rinse/clean teeth after eating.",
+              "Do not use teeth to crack hard objects or open bottles."
+            ],
+            "workedExample": {
+              "question": "A learner often eats sweets and sleeps without brushing. What may happen?",
+              "steps": [
+                "Sugar and food particles can remain on teeth.",
+                "Germs use them and may cause tooth decay."
+              ],
+              "answer": "The learner may get tooth decay."
+            },
+            "tryThis": {
+              "question": "Which protects teeth?",
+              "choices": [
+                "opening bottles with teeth",
+                "eating sweets all day",
+                "never cleaning teeth",
+                "brushing regularly"
+              ],
+              "correct": 3,
+              "explanation": "Regular brushing protects teeth."
             }
           }
         ]
@@ -1309,34 +1719,34 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "Canines are used for:",
         "choices": [
-          "tearing food",
           "grinding only",
+          "tearing food",
           "making saliva",
           "hearing"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Canines tear food."
       },
       {
         "q": "Molars help to:",
         "choices": [
-          "grind food",
           "cut paper",
           "pump blood",
+          "grind food",
           "make rain"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Molars grind food."
       },
       {
         "q": "Too many sweets may cause:",
         "choices": [
-          "tooth decay",
           "stronger teeth always",
           "rain",
-          "clean water"
+          "clean water",
+          "tooth decay"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Sugar can contribute to tooth decay."
       },
       {
@@ -1353,12 +1763,12 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "A person who treats teeth is a:",
         "choices": [
-          "dentist",
           "driver",
+          "dentist",
           "tailor",
           "farmer"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Dentists treat teeth."
       }
     ]
@@ -1433,13 +1843,50 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which habit prevents worms?",
               "choices": [
-                "wearing shoes",
                 "walking barefoot in dirty soil",
                 "eating unwashed fruit",
+                "wearing shoes",
                 "not washing hands"
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "Shoes protect feet from some worm infections and injuries."
+            },
+            "imageUrl": "/images/science/p4-worms-disease-prevention.svg",
+            "imageCaption": "Ways to prevent intestinal diseases and worms."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-communicable-intestinal-diseases-worms-application",
+        "title": "2. Breaking the disease path",
+        "modules": [
+          {
+            "moduleId": "p4-communicable-intestinal-diseases-worms-application-module",
+            "title": "Stopping germs and worms",
+            "bigIdea": "Prevention works by stopping germs and worms from entering the body.",
+            "learnIt": [
+              "Use latrines so faeces do not contaminate soil and water.",
+              "Wash hands and food before eating.",
+              "Wear shoes in risky dirty places and drink safe water."
+            ],
+            "workedExample": {
+              "question": "A child eats mangoes picked from the ground without washing them. What risk is there?",
+              "steps": [
+                "The mangoes may have dirt or germs on them.",
+                "Eating them unwashed may cause stomach illness."
+              ],
+              "answer": "The child may swallow germs and get sick."
+            },
+            "tryThis": {
+              "question": "Which breaks the disease path?",
+              "choices": [
+                "eating with dirty hands",
+                "drinking unsafe water",
+                "walking barefoot in dirty soil",
+                "washing fruits before eating"
+              ],
+              "correct": 3,
+              "explanation": "Washing fruits removes dirt and many germs."
             }
           }
         ]
@@ -1460,34 +1907,34 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "One way to prevent intestinal disease is:",
         "choices": [
-          "washing hands",
           "eating dirty food",
+          "washing hands",
           "drinking unsafe water",
           "leaving food open"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Handwashing removes germs."
       },
       {
         "q": "Safe drinking water should be:",
         "choices": [
-          "boiled or treated",
           "dirty",
           "from any puddle",
+          "boiled or treated",
           "stored open near animals"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Safe water reduces disease."
       },
       {
         "q": "Worm infestation may be prevented by:",
         "choices": [
-          "wearing shoes",
           "walking barefoot everywhere",
           "not using latrines",
-          "eating soil"
+          "eating soil",
+          "wearing shoes"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Shoes protect feet."
       },
       {
@@ -1504,12 +1951,12 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "A latrine helps to:",
         "choices": [
-          "dispose of faeces safely",
           "store food",
+          "dispose of faeces safely",
           "wash clothes only",
           "grow flowers inside"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Latrines improve sanitation."
       }
     ]
@@ -1519,7 +1966,7 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "themeId": "p4-science-human-health",
     "themeName": "Human Health",
     "title": "Vectors and Diseases",
-    "estMinutes": 30,
+    "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -1584,13 +2031,50 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which vector spreads malaria?",
               "choices": [
-                "mosquito",
                 "goat",
                 "hen",
+                "mosquito",
                 "earthworm"
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "Mosquitoes can spread malaria."
+            },
+            "imageUrl": "/images/science/vectors-disease-control.svg",
+            "imageCaption": "Common vectors and ways to control them."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-vectors-diseases-application",
+        "title": "2. Vector-control choices",
+        "modules": [
+          {
+            "moduleId": "p4-vectors-diseases-application-module",
+            "title": "Stopping vectors before disease spreads",
+            "bigIdea": "The best vector control removes the places vectors live, feed or breed.",
+            "learnIt": [
+              "Mosquito control includes draining stagnant water and sleeping under nets where needed.",
+              "Fly control includes covering food and keeping latrines clean.",
+              "Rat control includes proper storage and waste management."
+            ],
+            "workedExample": {
+              "question": "A home has many mosquitoes because tins collect rainwater. What should be done?",
+              "steps": [
+                "Mosquitoes breed in stagnant water.",
+                "Empty, cover or remove tins that collect water."
+              ],
+              "answer": "Remove or empty stagnant water containers."
+            },
+            "tryThis": {
+              "question": "Which controls flies?",
+              "choices": [
+                "leaving food open",
+                "keeping latrines dirty",
+                "dumping rubbish everywhere",
+                "covering food"
+              ],
+              "correct": 3,
+              "explanation": "Covered food reduces contamination by flies."
             }
           }
         ]
@@ -1611,34 +2095,34 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "Mosquitoes may spread:",
         "choices": [
-          "malaria",
           "tooth decay",
+          "malaria",
           "profit",
           "weather"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Mosquitoes can spread malaria."
       },
       {
         "q": "Flies can contaminate:",
         "choices": [
-          "food",
           "chalk only",
           "rulers only",
+          "food",
           "books only"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Flies can land on food."
       },
       {
         "q": "Stagnant water should be:",
         "choices": [
-          "drained",
           "kept open",
           "used for rubbish",
-          "covered with food"
+          "covered with food",
+          "drained"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Draining reduces mosquito breeding."
       },
       {
@@ -1655,12 +2139,12 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "Clean surroundings help:",
         "choices": [
-          "reduce vectors",
           "increase flies",
+          "reduce vectors",
           "store germs",
           "breed rats"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Cleanliness reduces vectors."
       }
     ]
@@ -1736,13 +2220,51 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "First aid means:",
               "choices": [
-                "first help before full medical help",
                 "playing with tablets",
                 "hiding injuries",
+                "first help before full medical help",
                 "full surgery"
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "First aid is immediate first help."
+            },
+            "imageUrl": "/images/science/p4-first-aid-safety.svg",
+            "imageCaption": "Safe first aid and poisoning response reminders."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-accidents-poisoning-first-aid-application",
+        "title": "2. Emergency choices",
+        "modules": [
+          {
+            "moduleId": "p4-accidents-poisoning-first-aid-application-module",
+            "title": "Safe action during accidents",
+            "bigIdea": "First aid must be safe for both the injured person and the helper.",
+            "learnIt": [
+              "Call an adult quickly when an injury or poisoning is serious.",
+              "Do not give unknown medicine or force vomiting after poisoning.",
+              "Keep dangerous items such as paraffin, pesticides, tablets and sharp tools away from children."
+            ],
+            "workedExample": {
+              "question": "A child swallows unknown tablets. What should be done immediately?",
+              "steps": [
+                "This is possible poisoning.",
+                "Do not guess treatment.",
+                "Call an adult and seek urgent health-worker help."
+              ],
+              "answer": "Call an adult and get urgent medical help."
+            },
+            "tryThis": {
+              "question": "Which first action is safest for poisoning?",
+              "choices": [
+                "force vomiting immediately",
+                "give more tablets",
+                "hide the problem",
+                "call an adult and health worker"
+              ],
+              "correct": 3,
+              "explanation": "Poisoning needs urgent adult/health-worker help."
             }
           }
         ]
@@ -1763,34 +2285,34 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "First aid is:",
         "choices": [
-          "first help before full treatment",
           "a game",
+          "first help before full treatment",
           "a graph",
           "a type of crop"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "First aid is first help."
       },
       {
         "q": "Medicines should be kept:",
         "choices": [
-          "away from children",
           "in sweets tins for play",
           "on the floor",
+          "away from children",
           "in dirty water"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Medicines can poison if misused."
       },
       {
         "q": "For suspected poisoning, a child should:",
         "choices": [
-          "call an adult immediately",
           "hide",
           "drink more unknown chemicals",
-          "sleep without telling anyone"
+          "sleep without telling anyone",
+          "call an adult immediately"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Poisoning needs urgent adult help."
       },
       {
@@ -1807,12 +2329,12 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
       {
         "q": "To prevent accidents, learners should:",
         "choices": [
-          "follow safety rules",
           "play with fire",
+          "follow safety rules",
           "run across roads",
           "touch electric wires"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Safety rules prevent accidents."
       }
     ]

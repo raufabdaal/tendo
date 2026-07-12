@@ -1,5 +1,104 @@
 # CHANGELOG — Tendo
 
+## v1.8.33 — 2026-07-09 — P4/P5 visuals-depth pass closed
+
+**Session theme:** Close the P4/P5 fullness pass before starting P3 research.
+
+**Changed:**
+- Ran final P4/P5 module/image audit.
+- Confirmed every P4/P5 topic has at least 2 modules and at least 1 visual/image attachment.
+- Confirmed rebuilt P5 Science and P5 Social Studies have 3 modules and 3 visuals per topic.
+- Confirmed P4 English, P4 RE and P5 English have 3 modules and 3 visuals per topic.
+- Confirmed P5 RE generates 3 modules per topic with visual support.
+- Updated status/checklist/handoff to make P3 NCDC research the next active milestone.
+
+**Verified:**
+- `cd app && npm run build` passed with 324 static pages.
+
+**Important:**
+- Step 1 and Step 2 are closed at AI-builder level.
+- P3 must start with NCDC research and mapping, not routes/content.
+
+---
+
+## v1.8.32 — 2026-07-09 — P4/P5 visuals and depth pass started
+
+**Session theme:** Respond to fullness concern: coverage is not enough; P4/P5 need diagrams and deeper topic modules before P3.
+
+**Changed:**
+- Added local SVG diagrams for P4/P5 Math, Science and Social Studies under `app/public/images/`.
+- Attached diagrams to P4 Math, P4 Science, P4 Social Studies, P5 Math, P5 Science and P5 Social Studies topic modules.
+- Deepened P4 Science Plant Life / Flowering Plants with flowers, fruits, seeds and germination modules.
+- Deepened thin P5 Mathematics topics with practical/application modules.
+- Filled additional P4 no-image topic gaps across Math, Science and Social Studies.
+- Corrected P5 Science and P5 Social Studies visual attachments so all P5 Science/SST topics now have images.
+- Rebuilt P5 Integrated Science to 3 modules per topic with visuals, practical applications and safer health/science wording.
+- Rebuilt P5 Social Studies to 3 modules per topic with visuals and stronger map/history/civic reasoning.
+- Deepened P5 Religious Education with CRE/IRE visuals and a third reasoning/application module per topic.
+- Deepened P4 English and P5 English with visuals and third writing/speaking practice modules.
+- Deepened P4 Religious Education with visuals and third reasoning/respectful-application modules.
+- Added `docs/ops/p4-p5-visuals-depth-pass-2026-07-09.md`.
+- Updated checklist to enforce the exact order: visuals → depth → P3 research.
+
+**Verified:**
+- `cd app && npm run build` passed with 324 static pages.
+- Final P4/P5 module/image audit passed; Step 1 and Step 2 closed at AI-builder level.
+- `cd app && npm run build` passed after additional P4 visual gap fill with 324 static pages.
+- `cd app && npm run build` passed after P5 Science/SST visual coverage fix with 324 static pages.
+- `cd app && npm run build` passed after P5 Science full depth rebuild with 324 static pages.
+- `cd app && npm run build` passed after P5 Social Studies full depth rebuild with 324 static pages.
+- `cd app && npm run build` passed after P5 RE depth/visual upgrade with 324 static pages.
+- `cd app && npm run build` passed after English/RE depth upgrade with 324 static pages.
+
+**Important:**
+- P3 should not start until the P4/P5 visuals/depth pass is intentionally closed.
+
+---
+
+## v1.8.31 — 2026-07-09 — P4–P7 review pass started before next class
+
+**Session theme:** Pause after P4 completion and run the routine review gate before moving to the next class.
+
+**Changed:**
+- Re-audited P4/P5/P6/P7 curriculum-map topic IDs against app topic IDs.
+- Confirmed zero missing top-level mapped topics across P4–P7 live classes.
+- Corrected stale P5 Mathematics comment from “draft” to “live beta”.
+- Balanced P4 quiz/try-this correct answer positions across A/B/C/D in all five P4 topic libraries.
+- Checked P4 Mathematics worked examples and quiz answers for arithmetic/readability; no arithmetic corrections needed.
+- Deepened P4 Science by adding a second practical/health-safety application module to all 12 P4 Science topics.
+- Rebalanced P4 answer positions again after Science deepening.
+- Improved P4 RE topic-specific daily-life applications, quiz prompts and respectful Prophet Muhammad (PBUH) wording while keeping abridged-source limitation visible.
+- Completed P4 quick AI-builder quality pass across Math, English, Science, SST and RE; human/teacher review remains open before premium-final status.
+- Balanced P5 quiz/try-this correct answer positions across A/B/C/D in all five P5 topic libraries.
+- Improved P5 English template-like topics: Letter Writing, Communication, Culture, Peace and Security, and Services: Banking now have topic-specific examples/quizzes/writing tasks.
+- Improved P5 RE respectful IRE wording so Prophet Muhammad references include (PBUH) where applicable.
+- Completed P5 AI-level quality pass for this round; human/teacher review remains open.
+- Balanced P6 answer positions across A/B/C/D, spot-checked P6 Science/SST, and fixed P6 RE Prophet Muhammad (PBUH) wording.
+- Completed P6 AI-level premium additions review for this round; human/teacher review remains open.
+- Balanced P7 answer positions across A/B/C/D and spot-checked P7 Math/Science/SST/RE high-risk wording.
+- Completed P7 AI-level premium additions review for this round; human/teacher PLE review remains open.
+- Marked P4–P7 AI-level review/improvement pass complete for this round.
+- Rebalanced P4 answer positions again after RE improvement.
+- Added `docs/ops/p4-p7-live-beta-review-pass-2026-07-09.md`.
+- Updated status/checklist/handoff/manual tasks to make review pass the next step before P3.
+
+**Verified:**
+- `cd app && npm install && npm run build` passed with 324 static pages.
+- `cd app && npm run build` passed again after P4 answer distribution fix with 324 static pages.
+- `cd app && npm run build` passed again after P4 Science deepening with 324 static pages.
+- `cd app && npm run build` passed again after P4 RE improvement with 324 static pages.
+- `cd app && npm run build` passed after P5 answer distribution fix with 324 static pages.
+- `cd app && npm run build` passed after P5 English quality pass with 324 static pages.
+- `cd app && npm run build` passed after P5 RE wording fix with 324 static pages.
+- `cd app && npm run build` passed after P6 review fixes with 324 static pages.
+- `cd app && npm run build` passed after P7 review fixes with 324 static pages.
+
+**Important:**
+- This pass confirms top-level coverage and build health, not premium-final quality.
+- Do not start P3 until P4/P5/P6/P7 review/improvement tasks are documented and intentionally closed or deferred.
+
+---
+
 ## v1.8.30 — 2026-07-09 — P4 Religious Education live beta added and P4 completed
 
 **Session theme:** Finish P4 live beta across all five app subjects while keeping the P4 RE source limitation explicit.

@@ -80,7 +80,9 @@ export const P4_MATH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "Even numbers less than 10 is clear: 2, 4, 6, 8."
-            }
+            },
+            "imageUrl": "/images/math/p4-sets-common-members.svg",
+            "imageCaption": "Sets and common members reminder."
           }
         ]
       },
@@ -109,12 +111,12 @@ export const P4_MATH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which set is empty?",
               "choices": [
-                "Months with 40 days",
                 "Vowels in English",
+                "Months with 40 days",
                 "Odd numbers less than 5",
                 "Fingers on one hand"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "There is no month with 40 days."
             }
           }
@@ -125,23 +127,23 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "A set is:",
         "choices": [
-          "a clear collection",
           "a random list",
           "a story",
+          "a clear collection",
           "a ruler"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "A set must be clearly defined."
       },
       {
         "q": "n({a,b,c}) is:",
         "choices": [
-          "3",
           "2",
           "1",
-          "0"
+          "0",
+          "3"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "There are 3 members."
       },
       {
@@ -158,34 +160,34 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "An empty set has:",
         "choices": [
-          "no members",
           "one member",
+          "no members",
           "all members",
           "two members"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Empty means none."
       },
       {
         "q": "Common members of {2,4,6} and {4,6,8} are:",
         "choices": [
-          "{4,6}",
           "{2,8}",
           "{2,4,6,8}",
+          "{4,6}",
           "{ }"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "4 and 6 are in both sets."
       },
       {
         "q": "Equal sets have:",
         "choices": [
-          "the same members",
           "only the same number",
           "no members",
-          "different members"
+          "different members",
+          "the same members"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Equal sets contain exactly the same members."
       }
     ]
@@ -267,7 +269,9 @@ export const P4_MATH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "The 9 is in the thousands place."
-            }
+            },
+            "imageUrl": "/images/math/p4-place-value-chart.svg",
+            "imageCaption": "Place-value chart for reading and expanding 5-digit numbers."
           }
         ]
       },
@@ -296,12 +300,12 @@ export const P4_MATH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "What is 14 in Roman numerals?",
               "choices": [
-                "XIV",
                 "XVI",
+                "XIV",
                 "IIIIX",
                 "VX"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "10 + 4 is XIV."
             }
           }
@@ -312,23 +316,23 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "What is the value of 5 in 35,920?",
         "choices": [
-          "5,000",
           "50,000",
           "500",
+          "5,000",
           "50"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "5 is in the thousands place."
       },
       {
         "q": "Write 42,006 in words.",
         "choices": [
-          "forty-two thousand six",
           "four thousand two hundred six",
           "forty-two thousand sixty",
-          "four hundred twenty-six"
+          "four hundred twenty-six",
+          "forty-two thousand six"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "42,006 is forty-two thousand six."
       },
       {
@@ -345,34 +349,34 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "Round 18,420 to the nearest 1,000.",
         "choices": [
-          "18,000",
           "19,000",
+          "18,000",
           "18,400",
           "20,000"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "The hundreds digit is 4, so round down."
       },
       {
         "q": "XX means:",
         "choices": [
-          "20",
           "10",
           "15",
+          "20",
           "19"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "X is 10, so XX is 20."
       },
       {
         "q": "Expanded form of 9,305 is:",
         "choices": [
-          "9,000 + 300 + 5",
           "9,000 + 30 + 5",
           "900 + 300 + 5",
-          "9,305 + 0"
+          "9,305 + 0",
+          "9,000 + 300 + 5"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "There are 9 thousands, 3 hundreds and 5 ones."
       }
     ]
@@ -452,7 +456,9 @@ export const P4_MATH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "8,000 - 3,475 = 4,525."
-            }
+            },
+            "imageUrl": "/images/math/p4-four-operations.svg",
+            "imageCaption": "Choosing and checking the four operations."
           }
         ]
       },
@@ -481,12 +487,12 @@ export const P4_MATH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Find 4,800 ÷ 100.",
               "choices": [
-                "48",
                 "480",
+                "48",
                 "4,700",
                 "4"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Dividing by 100 moves two places: 4,800 ÷ 100 = 48."
             }
           }
@@ -497,23 +503,23 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "Find 24,316 + 12,405",
         "choices": [
-          "36,721",
           "35,721",
           "12,721",
+          "36,721",
           "37,721"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Add in columns."
       },
       {
         "q": "Find 70,000 - 12,500",
         "choices": [
-          "57,500",
           "58,500",
           "82,500",
-          "52,500"
+          "52,500",
+          "57,500"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "70,000 - 12,500 = 57,500."
       },
       {
@@ -530,34 +536,34 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "205 × 0 =",
         "choices": [
-          "0",
           "205",
+          "0",
           "1",
           "2,050"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Any number multiplied by 0 is 0."
       },
       {
         "q": "Find 936 ÷ 9",
         "choices": [
-          "104",
           "94",
           "106",
+          "104",
           "9"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "9 × 104 = 936."
       },
       {
         "q": "A farmer packs 240 eggs equally in 10 trays. Eggs per tray?",
         "choices": [
-          "24",
           "240",
           "2,400",
-          "10"
+          "10",
+          "24"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "240 ÷ 10 = 24."
       }
     ]
@@ -637,7 +643,9 @@ export const P4_MATH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "38 ends in 8, so it is even."
-            }
+            },
+            "imageUrl": "/images/math/p4-patterns-sequences.svg",
+            "imageCaption": "Patterns, shapes and even/odd number reminders."
           }
         ]
       },
@@ -666,12 +674,12 @@ export const P4_MATH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "What comes next: triangle, circle, triangle, circle, __?",
               "choices": [
-                "triangle",
                 "circle",
+                "triangle",
                 "square",
                 "rectangle"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "The shapes alternate triangle and circle."
             }
           }
@@ -682,23 +690,23 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "Which number is odd?",
         "choices": [
-          "25",
           "24",
           "36",
+          "25",
           "80"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "25 ends in 5."
       },
       {
         "q": "What comes next: 4, 8, 12, 16, __?",
         "choices": [
-          "20",
           "18",
           "24",
-          "12"
+          "12",
+          "20"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Add 4 each time."
       },
       {
@@ -715,34 +723,34 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "Which is a common shape?",
         "choices": [
-          "triangle",
           "temperature",
+          "triangle",
           "profit",
           "capacity"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Triangle is a shape."
       },
       {
         "q": "Even numbers can be shared into:",
         "choices": [
-          "two equal groups",
           "three unequal groups",
           "no groups",
+          "two equal groups",
           "one group only"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Even means divisible by 2."
       },
       {
         "q": "Next shape: square, square, circle, square, square, circle, __",
         "choices": [
-          "square",
           "circle",
           "triangle",
-          "rectangle"
+          "rectangle",
+          "square"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "The pattern repeats square, square, circle."
       }
     ]
@@ -824,7 +832,9 @@ export const P4_MATH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "5 is greater than 3."
-            }
+            },
+            "imageUrl": "/images/math/fraction-strips.svg",
+            "imageCaption": "Fraction strips showing equivalent and same-denominator parts."
           }
         ]
       },
@@ -852,12 +862,12 @@ export const P4_MATH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which is greater?",
               "choices": [
-                "5/8",
                 "3/8",
+                "5/8",
                 "1/8",
                 "They are equal"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Same denominator, compare numerators: 5 is greatest."
             }
           }
@@ -868,23 +878,23 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "Which is equivalent to 1/2?",
         "choices": [
-          "2/4",
           "1/3",
           "3/5",
+          "2/4",
           "4/5"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "2/4 is the same as 1/2."
       },
       {
         "q": "Which fraction is proper?",
         "choices": [
-          "3/7",
           "8/5",
           "6/6",
-          "9/4"
+          "9/4",
+          "3/7"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "3 is less than 7."
       },
       {
@@ -901,34 +911,34 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "Add 2/5 + 1/5",
         "choices": [
-          "3/5",
           "3/10",
+          "3/5",
           "2/10",
           "1/5"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Add numerators only."
       },
       {
         "q": "Subtract 5/6 - 2/6",
         "choices": [
-          "3/6",
           "3/0",
           "7/6",
+          "3/6",
           "2/6"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "5 - 2 = 3, denominator remains 6."
       },
       {
         "q": "Find 1/3 of 18",
         "choices": [
-          "6",
           "3",
           "9",
-          "18"
+          "18",
+          "6"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "18 ÷ 3 = 6."
       }
     ]
@@ -1009,7 +1019,9 @@ export const P4_MATH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "A square has 4 equal sides and 4 right angles."
-            }
+            },
+            "imageUrl": "/images/math/2d-geometry-perimeter-area.svg",
+            "imageCaption": "2-D shapes with right angles, perimeter and area reminders."
           }
         ]
       },
@@ -1037,12 +1049,12 @@ export const P4_MATH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Perimeter means:",
               "choices": [
-                "distance around a shape",
                 "space inside a shape",
+                "distance around a shape",
                 "number of colours",
                 "a curved line"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Perimeter is the total distance around."
             }
           }
@@ -1053,23 +1065,23 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "A 2-D figure is:",
         "choices": [
-          "flat",
           "solid",
           "always round",
+          "flat",
           "always heavy"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "2-D figures are flat."
       },
       {
         "q": "A right angle is:",
         "choices": [
-          "90 degrees",
           "45 degrees",
           "180 degrees",
-          "10 degrees"
+          "10 degrees",
+          "90 degrees"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "A right angle is 90°."
       },
       {
@@ -1086,34 +1098,34 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "Perimeter of a square side 4 cm is:",
         "choices": [
-          "16 cm",
           "8 cm",
+          "16 cm",
           "12 cm",
           "4 cm"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "4 + 4 + 4 + 4 = 16 cm."
       },
       {
         "q": "Area of a rectangle 7 cm by 3 cm is:",
         "choices": [
-          "21 square cm",
           "20 cm",
           "10 square cm",
+          "21 square cm",
           "14 cm"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "7 × 3 = 21."
       },
       {
         "q": "A polygon must have:",
         "choices": [
-          "straight sides and be closed",
           "only curves",
           "no corners",
-          "one side"
+          "one side",
+          "straight sides and be closed"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Polygons are closed straight-sided figures."
       }
     ]
@@ -1195,7 +1207,9 @@ export const P4_MATH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "A tin has circular ends and a curved side."
-            }
+            },
+            "imageUrl": "/images/math/3d-solids-faces-edges-vertices.svg",
+            "imageCaption": "3-D solids showing faces, edges and vertices."
           }
         ]
       },
@@ -1223,12 +1237,12 @@ export const P4_MATH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Where two faces meet, we get:",
               "choices": [
-                "an edge",
                 "a face",
+                "an edge",
                 "a circle",
                 "a capacity"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "An edge is where faces meet."
             }
           }
@@ -1239,23 +1253,23 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "A cube is:",
         "choices": [
-          "3-D",
           "2-D",
           "a line",
+          "3-D",
           "a number"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "A cube is a solid."
       },
       {
         "q": "A sphere looks like:",
         "choices": [
-          "a ball",
           "a box",
           "a door",
-          "a book"
+          "a book",
+          "a ball"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "A ball is spherical."
       },
       {
@@ -1272,34 +1286,34 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "A cube has how many faces?",
         "choices": [
-          "6",
           "8",
+          "6",
           "12",
           "4"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "A cube has 6 faces."
       },
       {
         "q": "A vertex is:",
         "choices": [
-          "a corner",
           "a face",
           "a side only",
+          "a corner",
           "a circle"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "A vertex is a corner."
       },
       {
         "q": "A cone has:",
         "choices": [
-          "one pointed top",
           "only square faces",
           "no curved surface",
-          "six faces"
+          "six faces",
+          "one pointed top"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "A cone has one vertex and a circular base."
       }
     ]
@@ -1380,7 +1394,9 @@ export const P4_MATH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "Tally marks are grouped in fives."
-            }
+            },
+            "imageUrl": "/images/math/p5-data-bar-line-graphs.svg",
+            "imageCaption": "Data-handling diagram for tally, pictograph, bar and line graphs."
           }
         ]
       },
@@ -1408,12 +1424,12 @@ export const P4_MATH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "A line graph is best for showing:",
               "choices": [
-                "change over time",
                 "members of a set only",
+                "change over time",
                 "faces of a cube",
                 "Roman numerals"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Line graphs show changes over time."
             }
           }
@@ -1424,23 +1440,23 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "Data means:",
         "choices": [
-          "collected information",
           "a prayer",
           "a polygon",
+          "collected information",
           "a Roman numeral"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Data is information."
       },
       {
         "q": "A tally group of 5 has:",
         "choices": [
-          "four lines and a crossing fifth",
           "five pictures",
           "one bar",
-          "two circles"
+          "two circles",
+          "four lines and a crossing fifth"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "That is the standard tally group."
       },
       {
@@ -1457,34 +1473,34 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "A bar graph uses:",
         "choices": [
-          "bars",
           "only circles",
+          "bars",
           "only words",
           "Roman numerals"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Bars compare quantities."
       },
       {
         "q": "A graph key tells:",
         "choices": [
-          "what symbols represent",
           "the answer always",
           "the date only",
+          "what symbols represent",
           "the ruler length"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "The key explains symbols."
       },
       {
         "q": "Which graph shows change over days well?",
         "choices": [
-          "line graph",
           "set only",
           "solid model",
-          "number name"
+          "number name",
+          "line graph"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Line graphs show change over time."
       }
     ]
@@ -1565,7 +1581,9 @@ export const P4_MATH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "5,000 - 3,500 = 1,500."
-            }
+            },
+            "imageUrl": "/images/math/p4-money-profit-loss.svg",
+            "imageCaption": "Money, change, profit and loss reminder."
           }
         ]
       },
@@ -1593,12 +1611,12 @@ export const P4_MATH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Bought at UGX 2,000, sold at UGX 2,600. Result?",
               "choices": [
-                "UGX 600 profit",
                 "UGX 600 loss",
+                "UGX 600 profit",
                 "UGX 4,600 profit",
                 "No profit"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "2,600 - 2,000 = 600 profit."
             }
           }
@@ -1609,23 +1627,23 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "Uganda currency is counted in:",
         "choices": [
-          "shillings",
           "dollars only",
           "metres",
+          "shillings",
           "litres"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Ugandan money is in shillings."
       },
       {
         "q": "UGX 1,200 + UGX 800 =",
         "choices": [
-          "UGX 2,000",
           "UGX 1,000",
           "UGX 400",
-          "UGX 2,800"
+          "UGX 2,800",
+          "UGX 2,000"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "1,200 + 800 = 2,000."
       },
       {
@@ -1642,34 +1660,34 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "Profit is found by:",
         "choices": [
-          "selling price - buying price",
           "buying price + selling price",
+          "selling price - buying price",
           "buying price only",
           "selling price only"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Profit compares SP and CP."
       },
       {
         "q": "If CP is UGX 5,000 and SP is UGX 4,500, there is:",
         "choices": [
-          "loss",
           "profit",
           "no change",
+          "loss",
           "double profit"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "The item sold for less than it cost."
       },
       {
         "q": "A loss of UGX 300 means:",
         "choices": [
-          "selling price was 300 less than buying price",
           "selling price was 300 more",
           "item was free",
-          "buyer paid twice"
+          "buyer paid twice",
+          "selling price was 300 less than buying price"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Loss is when selling price is lower."
       }
     ]
@@ -1751,7 +1769,9 @@ export const P4_MATH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "A year has 12 months."
-            }
+            },
+            "imageUrl": "/images/math/time-clock-duration.svg",
+            "imageCaption": "Clock and calendar facts for time and duration."
           }
         ]
       },
@@ -1779,12 +1799,12 @@ export const P4_MATH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "From 2:00 p.m. to 4:00 p.m. is:",
               "choices": [
-                "2 hours",
                 "4 hours",
+                "2 hours",
                 "1 hour",
                 "6 hours"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Count 2 to 3, then 3 to 4."
             }
           }
@@ -1795,23 +1815,23 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "1 hour equals:",
         "choices": [
-          "60 minutes",
           "30 minutes",
           "100 minutes",
+          "60 minutes",
           "7 minutes"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "An hour has 60 minutes."
       },
       {
         "q": "There are how many days in a week?",
         "choices": [
-          "7",
           "5",
           "10",
-          "12"
+          "12",
+          "7"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "A week has 7 days."
       },
       {
@@ -1828,34 +1848,34 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "A meeting from 8:00 to 9:30 lasts:",
         "choices": [
-          "1 hour 30 minutes",
           "30 minutes",
+          "1 hour 30 minutes",
           "2 hours",
           "9 hours"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "8 to 9 is 1 hour, plus 30 minutes."
       },
       {
         "q": "2 hours =",
         "choices": [
-          "120 minutes",
           "60 minutes",
           "200 minutes",
+          "120 minutes",
           "20 minutes"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "2 × 60 = 120."
       },
       {
         "q": "A calendar helps us find:",
         "choices": [
-          "dates and days",
           "mass",
           "capacity",
-          "faces"
+          "faces",
+          "dates and days"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Calendars show dates and days."
       }
     ]
@@ -1936,7 +1956,9 @@ export const P4_MATH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "Capacity is measured in litres or millilitres."
-            }
+            },
+            "imageUrl": "/images/math/measurement-units.svg",
+            "imageCaption": "Measurement units and instruments for length, mass and capacity."
           }
         ]
       },
@@ -1965,12 +1987,12 @@ export const P4_MATH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "2 kg equals:",
               "choices": [
-                "2,000 g",
                 "200 g",
+                "2,000 g",
                 "20 g",
                 "2 g"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "1 kg = 1,000 g, so 2 kg = 2,000 g."
             }
           }
@@ -1981,23 +2003,23 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "A ruler measures:",
         "choices": [
-          "length",
           "mass",
           "capacity",
+          "length",
           "time"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Rulers measure length."
       },
       {
         "q": "1 m =",
         "choices": [
-          "100 cm",
           "10 cm",
           "1,000 cm",
-          "60 cm"
+          "60 cm",
+          "100 cm"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "One metre has 100 centimetres."
       },
       {
@@ -2014,34 +2036,34 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "1 litre =",
         "choices": [
-          "1,000 ml",
           "100 ml",
+          "1,000 ml",
           "10 ml",
           "60 ml"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "One litre has 1,000 millilitres."
       },
       {
         "q": "Best unit for distance from Kampala to Jinja:",
         "choices": [
-          "kilometres",
           "millimetres",
           "grams",
+          "kilometres",
           "litres"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Long distances use kilometres."
       },
       {
         "q": "Perimeter of a triangle with sides 3 cm, 4 cm, 5 cm is:",
         "choices": [
-          "12 cm",
           "20 cm",
           "6 cm",
-          "60 cm"
+          "60 cm",
+          "12 cm"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "3 + 4 + 5 = 12 cm."
       }
     ]
@@ -2123,7 +2145,9 @@ export const P4_MATH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "27 ÷ 3 = 9."
-            }
+            },
+            "imageUrl": "/images/math/p4-equations-boxes.svg",
+            "imageCaption": "Missing-number equation strategies."
           }
         ]
       },
@@ -2152,12 +2176,12 @@ export const P4_MATH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "A number divided by 5 is 6. The number is:",
               "choices": [
-                "30",
                 "11",
+                "30",
                 "1",
                 "6"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "If □ ÷ 5 = 6, then □ = 6 × 5 = 30."
             }
           }
@@ -2168,23 +2192,23 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "Solve □ + 6 = 14",
         "choices": [
-          "8",
           "20",
           "6",
+          "8",
           "14"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "14 - 6 = 8."
       },
       {
         "q": "Solve □ - 5 = 9",
         "choices": [
-          "14",
           "4",
           "45",
-          "9"
+          "9",
+          "14"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "9 + 5 = 14."
       },
       {
@@ -2201,34 +2225,34 @@ export const P4_MATH_TOPICS: Topic[] = [
       {
         "q": "Solve □ ÷ 6 = 7",
         "choices": [
-          "42",
           "13",
+          "42",
           "1",
           "6"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "7 × 6 = 42."
       },
       {
         "q": "An equation must:",
         "choices": [
-          "balance both sides",
           "always have a letter",
           "never use numbers",
+          "balance both sides",
           "always be a story"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Both sides of an equation are equal."
       },
       {
         "q": "A number plus 10 equals 25. The number is:",
         "choices": [
-          "15",
           "35",
           "10",
-          "25"
+          "25",
+          "15"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "25 - 10 = 15."
       }
     ]

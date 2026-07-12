@@ -66,18 +66,14 @@ Students, starting with **P7**, **P6**, **P5**, and **P4 live beta**. Teachers/t
 - Teacher dashboard now auto-populates with presentation/sample data unless `NEXT_PUBLIC_TENDO_PRESENTATION_DATA=off`.
 
 ### Current active milestone
-**P4 Live Beta Complete + P5–P7 Live Beta Curriculum Alignment/Review.**
+**P3 NCDC research and curriculum mapping.**
 
 Immediate sequence:
-1. Human/founder review upgraded P7 Mathematics topics.
-2. Human/founder review P7 English premium additions.
-3. Human/founder/teacher review P7 Science premium additions.
-4. Human/founder review P7 Social Studies premium additions.
-5. Human/founder/teacher review P7 Religious Education premium additions.
-6. Human/founder review upgraded P6 premium additions.
-7. Internally improve P5 beta content quality, especially English/Science/SST/RE, while keeping it mapped to NCDC.
-8. Review all P4 live beta subjects for correctness, tone, local-district fit, health-sensitive wording, respectful RE wording and P4 readability before marking anything premium-final.
-9. Continue P4 RE source work: find the full standard P4 CRE/IRE syllabus to confirm the NCDC-abridged map.
+1. Step 1 and Step 2 are closed at AI-builder level: P4/P5 visuals and depth pass passed final module/image audit.
+2. Start P3 NCDC research and curriculum mapping.
+3. Do not build P3 app routes/content until official/reliable P3 curriculum structure is researched and documented.
+4. Continue P4 RE source work: find the full standard P4 CRE/IRE syllabus to confirm the NCDC-abridged map.
+5. Human/teacher review remains open across P4–P7 before premium-final status.
 
 ### Push status
 Founder has **not pushed** the current milestone bundle yet. Do not assume the remote repo has these latest changes. When founder is ready, provide a clear overwrite/add file list for the whole milestone.
@@ -91,6 +87,8 @@ Founder has **not pushed** the current milestone bundle yet. Do not assume the r
 - `docs/ops/ncdc-p5-curriculum-research-2026-07-09.md` — researched P5 curriculum structure and correction note.
 - `docs/ops/ncdc-p4-curriculum-research-2026-07-09.md` — P4 curriculum research, verified Mathematics correction, P4 RE abridged-map limitation, and full P4 live-beta rollout.
 - `docs/ops/p4-live-beta-completion-audit-2026-07-09.md` — P4 completion audit, file list, source limits and review checklist.
+- `docs/ops/p4-p7-live-beta-review-pass-2026-07-09.md` — P4–P7 AI-level review pass before starting the next class.
+- `docs/ops/p4-p5-visuals-depth-pass-2026-07-09.md` — current visuals/depth pass before P3.
 - `docs/ops/curriculum-alignment-audit-p5-p7-2026-07-09.md` — current P5/P6/P7 topic alignment audit.
 
 ---

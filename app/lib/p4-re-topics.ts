@@ -11,7 +11,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-cre",
     "themeName": "Christian Religious Education",
     "title": "Traditions",
-    "estMinutes": 26,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -23,7 +23,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "Useful traditions can teach respect, unity and responsibility.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Traditional customs, practices and values.",
         "This topic includes: Importance of traditions, customs and practices.",
@@ -37,7 +37,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Traditions by choosing respectful words, doing what is right, and helping other people."
+        "answer": "A P4 learner can apply Traditions by choosing to respect useful traditions while rejecting harmful practices."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -46,7 +46,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "Useful traditions can teach respect, unity and responsibility.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Traditional customs, practices and values."
       ]
@@ -85,8 +85,10 @@ export const P4_RE_TOPICS: Topic[] = [
                 "A weather graph only"
               ],
               "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-cre-god-love-law.svg",
+            "imageCaption": "CRE creation, God’s love, messengers and law."
           }
         ]
       },
@@ -97,11 +99,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-cre-traditions-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Christian values through action, not words only.",
+            "bigIdea": "Useful traditions can teach respect, unity and responsibility.",
             "learnIt": [
-              "Use the lesson to make good choices at home and school.",
-              "Speak respectfully about God, people and communities.",
-              "Choose peace, honesty, service and care where the topic calls for them."
+              "A learner can apply this topic by choosing to respect useful traditions while rejecting harmful practices.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -110,18 +112,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Traditions by choosing respectful words, doing what is right, and helping other people."
+              "answer": "A P4 learner can apply Traditions by choosing to respect useful traditions while rejecting harmful practices."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
+                "choose to respect useful traditions while rejecting harmful practices",
                 "spread quarrels",
                 "ignore good advice"
               ],
-              "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "correct": 1,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-cre-god-love-law.svg",
+            "imageCaption": "CRE creation, God’s love, messengers and law."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-cre-traditions-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-cre-traditions-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-cre-god-love-law.svg",
+            "imageCaption": "CRE creation, God’s love, messengers and law.",
+            "learnIt": [
+              "Name the main teaching in Traditions.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about faith, worship and other people."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Traditions can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Traditions and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "memorise words only",
+                "explain and apply the teaching respectfully",
+                "ignore daily life"
+              ],
+              "correct": 2,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -131,56 +174,56 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Traditions should help a learner:",
         "choices": [
-          "live with good values",
           "mock other people",
-          "steal",
-          "fight"
+          "steal from others",
+          "spread fights",
+          "choose to respect useful traditions while rejecting harmful practices"
         ],
-        "correct": 0,
-        "why": "RE should guide good conduct."
+        "correct": 3,
+        "why": "Useful traditions can teach respect, unity and responsibility."
       },
       {
-        "q": "A good CRE answer should connect teaching to:",
+        "q": "A good CRE answer should connect Bible/faith teaching to:",
         "choices": [
-          "daily life",
+          "daily life and good conduct",
           "only noise",
           "only money",
           "only roads"
         ],
         "correct": 0,
-        "why": "CRE connects faith and life."
+        "why": "CRE should connect faith teaching to daily life."
       },
       {
-        "q": "Christians should speak about other people respectfully because:",
+        "q": "When speaking about people and beliefs, a learner should be:",
         "choices": [
-          "respect promotes peace",
-          "mockery is best",
-          "fighting is worship",
-          "truth is useless"
+          "insulting",
+          "respectful",
+          "careless",
+          "violent"
         ],
-        "correct": 0,
-        "why": "Respect promotes peace."
+        "correct": 1,
+        "why": "Respectful speech supports peace and good learning."
       },
       {
         "q": "This topic includes Traditional customs, practices and values.",
         "choices": [
-          "True",
           "False",
           "Only for P7",
+          "True",
           "Only for Mathematics"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Traditional customs, practices and values is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Importance of traditions, customs and practices",
           "weather instruments only",
           "money conversion only",
-          "road construction only"
+          "road construction only",
+          "Importance of traditions, customs and practices"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Importance of traditions, customs and practices is part of the topic scope."
       },
       {
@@ -201,7 +244,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-cre",
     "themeName": "Christian Religious Education",
     "title": "Messengers of God",
-    "estMinutes": 26,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -213,7 +256,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "A messenger must be truthful and faithful to the message.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Meaning of messenger.",
         "This topic includes: Different ways God speaks to His people.",
@@ -227,7 +270,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Messengers of God by choosing respectful words, doing what is right, and helping other people."
+        "answer": "A P4 learner can apply Messengers of God by choosing to deliver messages truthfully and listen carefully to good guidance."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -236,7 +279,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "A messenger must be truthful and faithful to the message.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Meaning of messenger."
       ]
@@ -270,14 +313,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to Messengers of God?",
               "choices": [
-                "Meaning of messenger",
                 "A random mathematics formula",
+                "Meaning of messenger",
                 "A road distance only",
                 "A weather graph only"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 1,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-cre-god-love-law.svg",
+            "imageCaption": "CRE creation, God’s love, messengers and law."
           }
         ]
       },
@@ -288,11 +333,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-cre-messengers-of-god-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Christian values through action, not words only.",
+            "bigIdea": "A messenger must be truthful and faithful to the message.",
             "learnIt": [
-              "Use the lesson to make good choices at home and school.",
-              "Speak respectfully about God, people and communities.",
-              "Choose peace, honesty, service and care where the topic calls for them."
+              "A learner can apply this topic by choosing to deliver messages truthfully and listen carefully to good guidance.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -301,18 +346,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Messengers of God by choosing respectful words, doing what is right, and helping other people."
+              "answer": "A P4 learner can apply Messengers of God by choosing to deliver messages truthfully and listen carefully to good guidance."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
                 "spread quarrels",
+                "choose to deliver messages truthfully and listen carefully to good guidance",
                 "ignore good advice"
               ],
-              "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "correct": 2,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-cre-god-love-law.svg",
+            "imageCaption": "CRE creation, God’s love, messengers and law."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-cre-messengers-of-god-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-cre-messengers-of-god-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-cre-god-love-law.svg",
+            "imageCaption": "CRE creation, God’s love, messengers and law.",
+            "learnIt": [
+              "Name the main teaching in Messengers of God.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about faith, worship and other people."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Messengers of God can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Messengers of God and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "memorise words only",
+                "ignore daily life",
+                "explain and apply the teaching respectfully"
+              ],
+              "correct": 3,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -322,45 +408,45 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Messengers of God should help a learner:",
         "choices": [
-          "live with good values",
+          "choose to deliver messages truthfully and listen carefully to good guidance",
           "mock other people",
-          "steal",
-          "fight"
+          "steal from others",
+          "spread fights"
         ],
         "correct": 0,
-        "why": "RE should guide good conduct."
+        "why": "A messenger must be truthful and faithful to the message."
       },
       {
-        "q": "A good CRE answer should connect teaching to:",
+        "q": "A good CRE answer should connect Bible/faith teaching to:",
         "choices": [
-          "daily life",
           "only noise",
+          "daily life and good conduct",
           "only money",
           "only roads"
         ],
-        "correct": 0,
-        "why": "CRE connects faith and life."
+        "correct": 1,
+        "why": "CRE should connect faith teaching to daily life."
       },
       {
-        "q": "Christians should speak about other people respectfully because:",
+        "q": "When speaking about people and beliefs, a learner should be:",
         "choices": [
-          "respect promotes peace",
-          "mockery is best",
-          "fighting is worship",
-          "truth is useless"
+          "insulting",
+          "careless",
+          "respectful",
+          "violent"
         ],
-        "correct": 0,
-        "why": "Respect promotes peace."
+        "correct": 2,
+        "why": "Respectful speech supports peace and good learning."
       },
       {
         "q": "This topic includes Meaning of messenger.",
         "choices": [
-          "True",
           "False",
           "Only for P7",
-          "Only for Mathematics"
+          "Only for Mathematics",
+          "True"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Meaning of messenger is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
@@ -377,12 +463,12 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
+          "acting respectfully",
           "hiding all mistakes",
           "refusing peace"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -392,7 +478,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-cre",
     "themeName": "Christian Religious Education",
     "title": "God's Continuing Love for His People",
-    "estMinutes": 26,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -404,7 +490,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "God’s continuing love calls learners to care, repentance and forgiveness.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Creation.",
         "This topic includes: The order of creation.",
@@ -418,7 +504,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply God's Continuing Love for His People by choosing respectful words, doing what is right, and helping other people."
+        "answer": "A P4 learner can apply God's Continuing Love for His People by choosing to care for creation, repent after doing wrong and forgive others."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -427,7 +513,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "God’s continuing love calls learners to care, repentance and forgiveness.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Creation."
       ]
@@ -461,14 +547,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to God's Continuing Love for His People?",
               "choices": [
-                "Creation",
                 "A random mathematics formula",
                 "A road distance only",
+                "Creation",
                 "A weather graph only"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 2,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-cre-god-love-law.svg",
+            "imageCaption": "CRE creation, God’s love, messengers and law."
           }
         ]
       },
@@ -479,11 +567,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-cre-gods-continuing-love-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Christian values through action, not words only.",
+            "bigIdea": "God’s continuing love calls learners to care, repentance and forgiveness.",
             "learnIt": [
-              "Use the lesson to make good choices at home and school.",
-              "Speak respectfully about God, people and communities.",
-              "Choose peace, honesty, service and care where the topic calls for them."
+              "A learner can apply this topic by choosing to care for creation, repent after doing wrong and forgive others.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -492,18 +580,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply God's Continuing Love for His People by choosing respectful words, doing what is right, and helping other people."
+              "answer": "A P4 learner can apply God's Continuing Love for His People by choosing to care for creation, repent after doing wrong and forgive others."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
                 "spread quarrels",
-                "ignore good advice"
+                "ignore good advice",
+                "choose to care for creation, repent after doing wrong and forgive others"
+              ],
+              "correct": 3,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-cre-god-love-law.svg",
+            "imageCaption": "CRE creation, God’s love, messengers and law."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-cre-gods-continuing-love-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-cre-gods-continuing-love-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-cre-god-love-law.svg",
+            "imageCaption": "CRE creation, God’s love, messengers and law.",
+            "learnIt": [
+              "Name the main teaching in God's Continuing Love for His People.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about faith, worship and other people."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how God's Continuing Love for His People can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains God's Continuing Love for His People and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "explain and apply the teaching respectfully",
+                "mock other people",
+                "memorise words only",
+                "ignore daily life"
               ],
               "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -513,35 +642,35 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "God's Continuing Love for His People should help a learner:",
         "choices": [
-          "live with good values",
           "mock other people",
-          "steal",
-          "fight"
+          "choose to care for creation, repent after doing wrong and forgive others",
+          "steal from others",
+          "spread fights"
         ],
-        "correct": 0,
-        "why": "RE should guide good conduct."
+        "correct": 1,
+        "why": "God’s continuing love calls learners to care, repentance and forgiveness."
       },
       {
-        "q": "A good CRE answer should connect teaching to:",
+        "q": "A good CRE answer should connect Bible/faith teaching to:",
         "choices": [
-          "daily life",
           "only noise",
           "only money",
+          "daily life and good conduct",
           "only roads"
         ],
-        "correct": 0,
-        "why": "CRE connects faith and life."
+        "correct": 2,
+        "why": "CRE should connect faith teaching to daily life."
       },
       {
-        "q": "Christians should speak about other people respectfully because:",
+        "q": "When speaking about people and beliefs, a learner should be:",
         "choices": [
-          "respect promotes peace",
-          "mockery is best",
-          "fighting is worship",
-          "truth is useless"
+          "insulting",
+          "careless",
+          "violent",
+          "respectful"
         ],
-        "correct": 0,
-        "why": "Respect promotes peace."
+        "correct": 3,
+        "why": "Respectful speech supports peace and good learning."
       },
       {
         "q": "This topic includes Creation.",
@@ -557,23 +686,23 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "The order of creation",
           "weather instruments only",
+          "The order of creation",
           "money conversion only",
           "road construction only"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "The order of creation is part of the topic scope."
       },
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
           "hiding all mistakes",
+          "acting respectfully",
           "refusing peace"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -583,7 +712,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-cre",
     "themeName": "Christian Religious Education",
     "title": "God's People and the Law",
-    "estMinutes": 26,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -595,7 +724,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "God’s law guides people to live rightly with God and others.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: God's covenant with His people.",
         "This topic includes: Noah's faithfulness to God.",
@@ -609,7 +738,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply God's People and the Law by choosing respectful words, doing what is right, and helping other people."
+        "answer": "A P4 learner can apply God's People and the Law by choosing to obey good rules, tell the truth and respect parents and neighbours."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -618,7 +747,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "God’s law guides people to live rightly with God and others.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: God's covenant with His people."
       ]
@@ -652,14 +781,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to God's People and the Law?",
               "choices": [
-                "God's covenant with His people",
                 "A random mathematics formula",
                 "A road distance only",
-                "A weather graph only"
+                "A weather graph only",
+                "God's covenant with His people"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 3,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-cre-god-love-law.svg",
+            "imageCaption": "CRE creation, God’s love, messengers and law."
           }
         ]
       },
@@ -670,11 +801,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-cre-gods-people-law-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Christian values through action, not words only.",
+            "bigIdea": "God’s law guides people to live rightly with God and others.",
             "learnIt": [
-              "Use the lesson to make good choices at home and school.",
-              "Speak respectfully about God, people and communities.",
-              "Choose peace, honesty, service and care where the topic calls for them."
+              "A learner can apply this topic by choosing to obey good rules, tell the truth and respect parents and neighbours.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -683,18 +814,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply God's People and the Law by choosing respectful words, doing what is right, and helping other people."
+              "answer": "A P4 learner can apply God's People and the Law by choosing to obey good rules, tell the truth and respect parents and neighbours."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "choose to obey good rules, tell the truth and respect parents and neighbours",
+                "mock other people",
                 "spread quarrels",
                 "ignore good advice"
               ],
               "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-cre-god-love-law.svg",
+            "imageCaption": "CRE creation, God’s love, messengers and law."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-cre-gods-people-law-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-cre-gods-people-law-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-cre-god-love-law.svg",
+            "imageCaption": "CRE creation, God’s love, messengers and law.",
+            "learnIt": [
+              "Name the main teaching in God's People and the Law.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about faith, worship and other people."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how God's People and the Law can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains God's People and the Law and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "explain and apply the teaching respectfully",
+                "memorise words only",
+                "ignore daily life"
+              ],
+              "correct": 1,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -704,67 +876,67 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "God's People and the Law should help a learner:",
         "choices": [
-          "live with good values",
           "mock other people",
-          "steal",
-          "fight"
+          "steal from others",
+          "choose to obey good rules, tell the truth and respect parents and neighbours",
+          "spread fights"
         ],
-        "correct": 0,
-        "why": "RE should guide good conduct."
+        "correct": 2,
+        "why": "God’s law guides people to live rightly with God and others."
       },
       {
-        "q": "A good CRE answer should connect teaching to:",
+        "q": "A good CRE answer should connect Bible/faith teaching to:",
         "choices": [
-          "daily life",
           "only noise",
           "only money",
-          "only roads"
+          "only roads",
+          "daily life and good conduct"
         ],
-        "correct": 0,
-        "why": "CRE connects faith and life."
+        "correct": 3,
+        "why": "CRE should connect faith teaching to daily life."
       },
       {
-        "q": "Christians should speak about other people respectfully because:",
+        "q": "When speaking about people and beliefs, a learner should be:",
         "choices": [
-          "respect promotes peace",
-          "mockery is best",
-          "fighting is worship",
-          "truth is useless"
+          "respectful",
+          "insulting",
+          "careless",
+          "violent"
         ],
         "correct": 0,
-        "why": "Respect promotes peace."
+        "why": "Respectful speech supports peace and good learning."
       },
       {
         "q": "This topic includes God's covenant with His people.",
         "choices": [
-          "True",
           "False",
+          "True",
           "Only for P7",
           "Only for Mathematics"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "God's covenant with His people is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Noah's faithfulness to God",
           "weather instruments only",
           "money conversion only",
+          "Noah's faithfulness to God",
           "road construction only"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Noah's faithfulness to God is part of the topic scope."
       },
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
           "hiding all mistakes",
-          "refusing peace"
+          "refusing peace",
+          "acting respectfully"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -774,7 +946,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-cre",
     "themeName": "Christian Religious Education",
     "title": "Following Jesus as a Leader",
-    "estMinutes": 26,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -786,7 +958,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "Jesus’ leadership shows service, humility and care.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Jesus as a leader.",
         "This topic includes: Jesus' authority.",
@@ -800,7 +972,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Following Jesus as a Leader by choosing respectful words, doing what is right, and helping other people."
+        "answer": "A P4 learner can apply Following Jesus as a Leader by choosing to lead by serving, helping and setting a good example."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -809,7 +981,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "Jesus’ leadership shows service, humility and care.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Jesus as a leader."
       ]
@@ -849,8 +1021,10 @@ export const P4_RE_TOPICS: Topic[] = [
                 "A weather graph only"
               ],
               "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace."
           }
         ]
       },
@@ -861,11 +1035,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-cre-following-jesus-leader-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Christian values through action, not words only.",
+            "bigIdea": "Jesus’ leadership shows service, humility and care.",
             "learnIt": [
-              "Use the lesson to make good choices at home and school.",
-              "Speak respectfully about God, people and communities.",
-              "Choose peace, honesty, service and care where the topic calls for them."
+              "A learner can apply this topic by choosing to lead by serving, helping and setting a good example.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -874,18 +1048,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Following Jesus as a Leader by choosing respectful words, doing what is right, and helping other people."
+              "answer": "A P4 learner can apply Following Jesus as a Leader by choosing to lead by serving, helping and setting a good example."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
+                "choose to lead by serving, helping and setting a good example",
                 "spread quarrels",
                 "ignore good advice"
               ],
-              "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "correct": 1,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-cre-following-jesus-leader-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-cre-following-jesus-leader-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace.",
+            "learnIt": [
+              "Name the main teaching in Following Jesus as a Leader.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about faith, worship and other people."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Following Jesus as a Leader can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Following Jesus as a Leader and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "memorise words only",
+                "explain and apply the teaching respectfully",
+                "ignore daily life"
+              ],
+              "correct": 2,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -895,56 +1110,56 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Following Jesus as a Leader should help a learner:",
         "choices": [
-          "live with good values",
           "mock other people",
-          "steal",
-          "fight"
+          "steal from others",
+          "spread fights",
+          "choose to lead by serving, helping and setting a good example"
         ],
-        "correct": 0,
-        "why": "RE should guide good conduct."
+        "correct": 3,
+        "why": "Jesus’ leadership shows service, humility and care."
       },
       {
-        "q": "A good CRE answer should connect teaching to:",
+        "q": "A good CRE answer should connect Bible/faith teaching to:",
         "choices": [
-          "daily life",
+          "daily life and good conduct",
           "only noise",
           "only money",
           "only roads"
         ],
         "correct": 0,
-        "why": "CRE connects faith and life."
+        "why": "CRE should connect faith teaching to daily life."
       },
       {
-        "q": "Christians should speak about other people respectfully because:",
+        "q": "When speaking about people and beliefs, a learner should be:",
         "choices": [
-          "respect promotes peace",
-          "mockery is best",
-          "fighting is worship",
-          "truth is useless"
+          "insulting",
+          "respectful",
+          "careless",
+          "violent"
         ],
-        "correct": 0,
-        "why": "Respect promotes peace."
+        "correct": 1,
+        "why": "Respectful speech supports peace and good learning."
       },
       {
         "q": "This topic includes Jesus as a leader.",
         "choices": [
-          "True",
           "False",
           "Only for P7",
+          "True",
           "Only for Mathematics"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Jesus as a leader is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Jesus' authority",
           "weather instruments only",
           "money conversion only",
-          "road construction only"
+          "road construction only",
+          "Jesus' authority"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Jesus' authority is part of the topic scope."
       },
       {
@@ -965,7 +1180,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-cre",
     "themeName": "Christian Religious Education",
     "title": "Jesus Christ Our Saviour",
-    "estMinutes": 26,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -977,7 +1192,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "Christians call Jesus Saviour because they believe He saves people from sin.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Jesus' suffering.",
         "This topic includes: Jesus' death.",
@@ -991,7 +1206,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Jesus Christ Our Saviour by choosing respectful words, doing what is right, and helping other people."
+        "answer": "A P4 learner can apply Jesus Christ Our Saviour by choosing to forgive others, choose hope and avoid revenge."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -1000,7 +1215,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "Christians call Jesus Saviour because they believe He saves people from sin.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Jesus' suffering."
       ]
@@ -1034,14 +1249,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to Jesus Christ Our Saviour?",
               "choices": [
-                "Jesus' suffering",
                 "A random mathematics formula",
+                "Jesus' suffering",
                 "A road distance only",
                 "A weather graph only"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 1,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-cre-god-love-law.svg",
+            "imageCaption": "CRE creation, God’s love, messengers and law."
           }
         ]
       },
@@ -1052,11 +1269,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-cre-jesus-christ-our-saviour-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Christian values through action, not words only.",
+            "bigIdea": "Christians call Jesus Saviour because they believe He saves people from sin.",
             "learnIt": [
-              "Use the lesson to make good choices at home and school.",
-              "Speak respectfully about God, people and communities.",
-              "Choose peace, honesty, service and care where the topic calls for them."
+              "A learner can apply this topic by choosing to forgive others, choose hope and avoid revenge.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -1065,18 +1282,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Jesus Christ Our Saviour by choosing respectful words, doing what is right, and helping other people."
+              "answer": "A P4 learner can apply Jesus Christ Our Saviour by choosing to forgive others, choose hope and avoid revenge."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
                 "spread quarrels",
+                "choose to forgive others, choose hope and avoid revenge",
                 "ignore good advice"
               ],
-              "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "correct": 2,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-cre-god-love-law.svg",
+            "imageCaption": "CRE creation, God’s love, messengers and law."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-cre-jesus-christ-our-saviour-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-cre-jesus-christ-our-saviour-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-cre-god-love-law.svg",
+            "imageCaption": "CRE creation, God’s love, messengers and law.",
+            "learnIt": [
+              "Name the main teaching in Jesus Christ Our Saviour.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about faith, worship and other people."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Jesus Christ Our Saviour can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Jesus Christ Our Saviour and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "memorise words only",
+                "ignore daily life",
+                "explain and apply the teaching respectfully"
+              ],
+              "correct": 3,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -1086,45 +1344,45 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Jesus Christ Our Saviour should help a learner:",
         "choices": [
-          "live with good values",
+          "choose to forgive others, choose hope and avoid revenge",
           "mock other people",
-          "steal",
-          "fight"
+          "steal from others",
+          "spread fights"
         ],
         "correct": 0,
-        "why": "RE should guide good conduct."
+        "why": "Christians call Jesus Saviour because they believe He saves people from sin."
       },
       {
-        "q": "A good CRE answer should connect teaching to:",
+        "q": "A good CRE answer should connect Bible/faith teaching to:",
         "choices": [
-          "daily life",
           "only noise",
+          "daily life and good conduct",
           "only money",
           "only roads"
         ],
-        "correct": 0,
-        "why": "CRE connects faith and life."
+        "correct": 1,
+        "why": "CRE should connect faith teaching to daily life."
       },
       {
-        "q": "Christians should speak about other people respectfully because:",
+        "q": "When speaking about people and beliefs, a learner should be:",
         "choices": [
-          "respect promotes peace",
-          "mockery is best",
-          "fighting is worship",
-          "truth is useless"
+          "insulting",
+          "careless",
+          "respectful",
+          "violent"
         ],
-        "correct": 0,
-        "why": "Respect promotes peace."
+        "correct": 2,
+        "why": "Respectful speech supports peace and good learning."
       },
       {
         "q": "This topic includes Jesus' suffering.",
         "choices": [
-          "True",
           "False",
           "Only for P7",
-          "Only for Mathematics"
+          "Only for Mathematics",
+          "True"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Jesus' suffering is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
@@ -1141,12 +1399,12 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
+          "acting respectfully",
           "hiding all mistakes",
           "refusing peace"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -1156,7 +1414,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-cre",
     "themeName": "Christian Religious Education",
     "title": "The Worshipping Community",
-    "estMinutes": 26,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -1168,7 +1426,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "A worshipping community honours God together through prayer and praise.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Christian activities in worshipping God.",
         "This topic includes: Christian joint activities and experiences.",
@@ -1182,7 +1440,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply The Worshipping Community by choosing respectful words, doing what is right, and helping other people."
+        "answer": "A P4 learner can apply The Worshipping Community by choosing to pray, sing, give thanks and take part respectfully in worship."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -1191,7 +1449,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "A worshipping community honours God together through prayer and praise.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Christian activities in worshipping God."
       ]
@@ -1225,14 +1483,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to The Worshipping Community?",
               "choices": [
-                "Christian activities in worshipping God",
                 "A random mathematics formula",
                 "A road distance only",
+                "Christian activities in worshipping God",
                 "A weather graph only"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 2,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace."
           }
         ]
       },
@@ -1243,11 +1503,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-cre-worshipping-community-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Christian values through action, not words only.",
+            "bigIdea": "A worshipping community honours God together through prayer and praise.",
             "learnIt": [
-              "Use the lesson to make good choices at home and school.",
-              "Speak respectfully about God, people and communities.",
-              "Choose peace, honesty, service and care where the topic calls for them."
+              "A learner can apply this topic by choosing to pray, sing, give thanks and take part respectfully in worship.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -1256,18 +1516,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply The Worshipping Community by choosing respectful words, doing what is right, and helping other people."
+              "answer": "A P4 learner can apply The Worshipping Community by choosing to pray, sing, give thanks and take part respectfully in worship."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
                 "spread quarrels",
-                "ignore good advice"
+                "ignore good advice",
+                "choose to pray, sing, give thanks and take part respectfully in worship"
+              ],
+              "correct": 3,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-cre-worshipping-community-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-cre-worshipping-community-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace.",
+            "learnIt": [
+              "Name the main teaching in The Worshipping Community.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about faith, worship and other people."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how The Worshipping Community can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains The Worshipping Community and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "explain and apply the teaching respectfully",
+                "mock other people",
+                "memorise words only",
+                "ignore daily life"
               ],
               "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -1277,35 +1578,35 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "The Worshipping Community should help a learner:",
         "choices": [
-          "live with good values",
           "mock other people",
-          "steal",
-          "fight"
+          "choose to pray, sing, give thanks and take part respectfully in worship",
+          "steal from others",
+          "spread fights"
         ],
-        "correct": 0,
-        "why": "RE should guide good conduct."
+        "correct": 1,
+        "why": "A worshipping community honours God together through prayer and praise."
       },
       {
-        "q": "A good CRE answer should connect teaching to:",
+        "q": "A good CRE answer should connect Bible/faith teaching to:",
         "choices": [
-          "daily life",
           "only noise",
           "only money",
+          "daily life and good conduct",
           "only roads"
         ],
-        "correct": 0,
-        "why": "CRE connects faith and life."
+        "correct": 2,
+        "why": "CRE should connect faith teaching to daily life."
       },
       {
-        "q": "Christians should speak about other people respectfully because:",
+        "q": "When speaking about people and beliefs, a learner should be:",
         "choices": [
-          "respect promotes peace",
-          "mockery is best",
-          "fighting is worship",
-          "truth is useless"
+          "insulting",
+          "careless",
+          "violent",
+          "respectful"
         ],
-        "correct": 0,
-        "why": "Respect promotes peace."
+        "correct": 3,
+        "why": "Respectful speech supports peace and good learning."
       },
       {
         "q": "This topic includes Christian activities in worshipping God.",
@@ -1321,23 +1622,23 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Christian joint activities and experiences",
           "weather instruments only",
+          "Christian joint activities and experiences",
           "money conversion only",
           "road construction only"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Christian joint activities and experiences is part of the topic scope."
       },
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
           "hiding all mistakes",
+          "acting respectfully",
           "refusing peace"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -1347,7 +1648,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-cre",
     "themeName": "Christian Religious Education",
     "title": "The Christian Community",
-    "estMinutes": 26,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -1359,7 +1660,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "The Christian community grows through fellowship, service and unity.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Meaning of the Church.",
         "This topic includes: Events and activities of the Early Church.",
@@ -1373,7 +1674,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply The Christian Community by choosing respectful words, doing what is right, and helping other people."
+        "answer": "A P4 learner can apply The Christian Community by choosing to share, help needy people and speak respectfully about denominations."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -1382,7 +1683,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "The Christian community grows through fellowship, service and unity.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Meaning of the Church."
       ]
@@ -1416,14 +1717,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to The Christian Community?",
               "choices": [
-                "Meaning of the Church",
                 "A random mathematics formula",
                 "A road distance only",
-                "A weather graph only"
+                "A weather graph only",
+                "Meaning of the Church"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 3,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace."
           }
         ]
       },
@@ -1434,11 +1737,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-cre-christian-community-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Christian values through action, not words only.",
+            "bigIdea": "The Christian community grows through fellowship, service and unity.",
             "learnIt": [
-              "Use the lesson to make good choices at home and school.",
-              "Speak respectfully about God, people and communities.",
-              "Choose peace, honesty, service and care where the topic calls for them."
+              "A learner can apply this topic by choosing to share, help needy people and speak respectfully about denominations.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -1447,18 +1750,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply The Christian Community by choosing respectful words, doing what is right, and helping other people."
+              "answer": "A P4 learner can apply The Christian Community by choosing to share, help needy people and speak respectfully about denominations."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "choose to share, help needy people and speak respectfully about denominations",
+                "mock other people",
                 "spread quarrels",
                 "ignore good advice"
               ],
               "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-cre-christian-community-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-cre-christian-community-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace.",
+            "learnIt": [
+              "Name the main teaching in The Christian Community.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about faith, worship and other people."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how The Christian Community can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains The Christian Community and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "explain and apply the teaching respectfully",
+                "memorise words only",
+                "ignore daily life"
+              ],
+              "correct": 1,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -1468,67 +1812,67 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "The Christian Community should help a learner:",
         "choices": [
-          "live with good values",
           "mock other people",
-          "steal",
-          "fight"
+          "steal from others",
+          "choose to share, help needy people and speak respectfully about denominations",
+          "spread fights"
         ],
-        "correct": 0,
-        "why": "RE should guide good conduct."
+        "correct": 2,
+        "why": "The Christian community grows through fellowship, service and unity."
       },
       {
-        "q": "A good CRE answer should connect teaching to:",
+        "q": "A good CRE answer should connect Bible/faith teaching to:",
         "choices": [
-          "daily life",
           "only noise",
           "only money",
-          "only roads"
+          "only roads",
+          "daily life and good conduct"
         ],
-        "correct": 0,
-        "why": "CRE connects faith and life."
+        "correct": 3,
+        "why": "CRE should connect faith teaching to daily life."
       },
       {
-        "q": "Christians should speak about other people respectfully because:",
+        "q": "When speaking about people and beliefs, a learner should be:",
         "choices": [
-          "respect promotes peace",
-          "mockery is best",
-          "fighting is worship",
-          "truth is useless"
+          "respectful",
+          "insulting",
+          "careless",
+          "violent"
         ],
         "correct": 0,
-        "why": "Respect promotes peace."
+        "why": "Respectful speech supports peace and good learning."
       },
       {
         "q": "This topic includes Meaning of the Church.",
         "choices": [
-          "True",
           "False",
+          "True",
           "Only for P7",
           "Only for Mathematics"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Meaning of the Church is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Events and activities of the Early Church",
           "weather instruments only",
           "money conversion only",
+          "Events and activities of the Early Church",
           "road construction only"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Events and activities of the Early Church is part of the topic scope."
       },
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
           "hiding all mistakes",
-          "refusing peace"
+          "refusing peace",
+          "acting respectfully"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -1538,7 +1882,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-cre",
     "themeName": "Christian Religious Education",
     "title": "Jesus Our Example in Service",
-    "estMinutes": 26,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -1550,7 +1894,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "Jesus’ example teaches humble and voluntary service.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "Service should be practical, safe and helpful to other people.",
         "This topic includes: Ways Jesus served others.",
@@ -1565,7 +1909,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Jesus Our Example in Service by choosing respectful words, doing what is right, and helping other people."
+        "answer": "A P4 learner can apply Jesus Our Example in Service by choosing to serve at home, school and community without demanding payment."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -1574,7 +1918,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "Jesus’ example teaches humble and voluntary service.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "Service should be practical, safe and helpful to other people."
       ]
@@ -1614,8 +1958,10 @@ export const P4_RE_TOPICS: Topic[] = [
                 "A weather graph only"
               ],
               "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace."
           }
         ]
       },
@@ -1626,11 +1972,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-cre-jesus-example-service-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Christian values through action, not words only.",
+            "bigIdea": "Jesus’ example teaches humble and voluntary service.",
             "learnIt": [
-              "Use the lesson to make good choices at home and school.",
-              "Speak respectfully about God, people and communities.",
-              "Choose peace, honesty, service and care where the topic calls for them."
+              "A learner can apply this topic by choosing to serve at home, school and community without demanding payment.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -1639,18 +1985,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Jesus Our Example in Service by choosing respectful words, doing what is right, and helping other people."
+              "answer": "A P4 learner can apply Jesus Our Example in Service by choosing to serve at home, school and community without demanding payment."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
+                "choose to serve at home, school and community without demanding payment",
                 "spread quarrels",
                 "ignore good advice"
               ],
-              "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "correct": 1,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-cre-jesus-example-service-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-cre-jesus-example-service-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace.",
+            "learnIt": [
+              "Name the main teaching in Jesus Our Example in Service.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about faith, worship and other people."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Jesus Our Example in Service can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Jesus Our Example in Service and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "memorise words only",
+                "explain and apply the teaching respectfully",
+                "ignore daily life"
+              ],
+              "correct": 2,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -1660,56 +2047,56 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Jesus Our Example in Service should help a learner:",
         "choices": [
-          "live with good values",
           "mock other people",
-          "steal",
-          "fight"
+          "steal from others",
+          "spread fights",
+          "choose to serve at home, school and community without demanding payment"
         ],
-        "correct": 0,
-        "why": "RE should guide good conduct."
+        "correct": 3,
+        "why": "Jesus’ example teaches humble and voluntary service."
       },
       {
-        "q": "A good CRE answer should connect teaching to:",
+        "q": "A good CRE answer should connect Bible/faith teaching to:",
         "choices": [
-          "daily life",
+          "daily life and good conduct",
           "only noise",
           "only money",
           "only roads"
         ],
         "correct": 0,
-        "why": "CRE connects faith and life."
+        "why": "CRE should connect faith teaching to daily life."
       },
       {
-        "q": "Christians should speak about other people respectfully because:",
+        "q": "When speaking about people and beliefs, a learner should be:",
         "choices": [
-          "respect promotes peace",
-          "mockery is best",
-          "fighting is worship",
-          "truth is useless"
+          "insulting",
+          "respectful",
+          "careless",
+          "violent"
         ],
-        "correct": 0,
-        "why": "Respect promotes peace."
+        "correct": 1,
+        "why": "Respectful speech supports peace and good learning."
       },
       {
         "q": "This topic includes Ways Jesus served others.",
         "choices": [
-          "True",
           "False",
           "Only for P7",
+          "True",
           "Only for Mathematics"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Ways Jesus served others is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Jesus serving His parents and other people",
           "weather instruments only",
           "money conversion only",
-          "road construction only"
+          "road construction only",
+          "Jesus serving His parents and other people"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Jesus serving His parents and other people is part of the topic scope."
       },
       {
@@ -1730,7 +2117,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-cre",
     "themeName": "Christian Religious Education",
     "title": "Making Our Decisions as Christians",
-    "estMinutes": 26,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -1742,7 +2129,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "Christian decision-making considers God, consequences and other people.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Meaning of decision-making.",
         "This topic includes: Good and bad decisions.",
@@ -1756,7 +2143,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Making Our Decisions as Christians by choosing respectful words, doing what is right, and helping other people."
+        "answer": "A P4 learner can apply Making Our Decisions as Christians by choosing to pray, seek wise advice and choose what is right before acting."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -1765,7 +2152,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "Christian decision-making considers God, consequences and other people.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "This topic includes: Meaning of decision-making."
       ]
@@ -1799,14 +2186,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to Making Our Decisions as Christians?",
               "choices": [
-                "Meaning of decision-making",
                 "A random mathematics formula",
+                "Meaning of decision-making",
                 "A road distance only",
                 "A weather graph only"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 1,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace."
           }
         ]
       },
@@ -1817,11 +2206,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-cre-decisions-as-christians-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Christian values through action, not words only.",
+            "bigIdea": "Christian decision-making considers God, consequences and other people.",
             "learnIt": [
-              "Use the lesson to make good choices at home and school.",
-              "Speak respectfully about God, people and communities.",
-              "Choose peace, honesty, service and care where the topic calls for them."
+              "A learner can apply this topic by choosing to pray, seek wise advice and choose what is right before acting.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -1830,18 +2219,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Making Our Decisions as Christians by choosing respectful words, doing what is right, and helping other people."
+              "answer": "A P4 learner can apply Making Our Decisions as Christians by choosing to pray, seek wise advice and choose what is right before acting."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
                 "spread quarrels",
+                "choose to pray, seek wise advice and choose what is right before acting",
                 "ignore good advice"
               ],
-              "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "correct": 2,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-cre-decisions-as-christians-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-cre-decisions-as-christians-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace.",
+            "learnIt": [
+              "Name the main teaching in Making Our Decisions as Christians.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about faith, worship and other people."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Making Our Decisions as Christians can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Making Our Decisions as Christians and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "memorise words only",
+                "ignore daily life",
+                "explain and apply the teaching respectfully"
+              ],
+              "correct": 3,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -1851,45 +2281,45 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Making Our Decisions as Christians should help a learner:",
         "choices": [
-          "live with good values",
+          "choose to pray, seek wise advice and choose what is right before acting",
           "mock other people",
-          "steal",
-          "fight"
+          "steal from others",
+          "spread fights"
         ],
         "correct": 0,
-        "why": "RE should guide good conduct."
+        "why": "Christian decision-making considers God, consequences and other people."
       },
       {
-        "q": "A good CRE answer should connect teaching to:",
+        "q": "A good CRE answer should connect Bible/faith teaching to:",
         "choices": [
-          "daily life",
           "only noise",
+          "daily life and good conduct",
           "only money",
           "only roads"
         ],
-        "correct": 0,
-        "why": "CRE connects faith and life."
+        "correct": 1,
+        "why": "CRE should connect faith teaching to daily life."
       },
       {
-        "q": "Christians should speak about other people respectfully because:",
+        "q": "When speaking about people and beliefs, a learner should be:",
         "choices": [
-          "respect promotes peace",
-          "mockery is best",
-          "fighting is worship",
-          "truth is useless"
+          "insulting",
+          "careless",
+          "respectful",
+          "violent"
         ],
-        "correct": 0,
-        "why": "Respect promotes peace."
+        "correct": 2,
+        "why": "Respectful speech supports peace and good learning."
       },
       {
         "q": "This topic includes Meaning of decision-making.",
         "choices": [
-          "True",
           "False",
           "Only for P7",
-          "Only for Mathematics"
+          "Only for Mathematics",
+          "True"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Meaning of decision-making is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
@@ -1906,12 +2336,12 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
+          "acting respectfully",
           "hiding all mistakes",
           "refusing peace"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -1921,7 +2351,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-cre",
     "themeName": "Christian Religious Education",
     "title": "Peace",
-    "estMinutes": 26,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -1933,7 +2363,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "Peace is kept through forgiveness, respect and reconciliation.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "Peace requires forgiveness, dialogue, respect and reconciliation.",
         "This topic includes: Meaning of peace.",
@@ -1948,7 +2378,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Peace by choosing respectful words, doing what is right, and helping other people."
+        "answer": "A P4 learner can apply Peace by choosing to apologise, forgive, use dialogue and seek reconciliation."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -1957,7 +2387,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This CRE topic should be studied respectfully using the Bible, teacher guidance and daily-life examples.",
+        "Peace is kept through forgiveness, respect and reconciliation.",
         "Learners should connect the teaching to values such as love, obedience, service, forgiveness, peace and respect.",
         "Peace requires forgiveness, dialogue, respect and reconciliation."
       ]
@@ -1991,14 +2421,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to Peace?",
               "choices": [
-                "Meaning of peace",
                 "A random mathematics formula",
                 "A road distance only",
+                "Meaning of peace",
                 "A weather graph only"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 2,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace."
           }
         ]
       },
@@ -2009,11 +2441,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-cre-peace-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Christian values through action, not words only.",
+            "bigIdea": "Peace is kept through forgiveness, respect and reconciliation.",
             "learnIt": [
-              "Use the lesson to make good choices at home and school.",
-              "Speak respectfully about God, people and communities.",
-              "Choose peace, honesty, service and care where the topic calls for them."
+              "A learner can apply this topic by choosing to apologise, forgive, use dialogue and seek reconciliation.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -2022,18 +2454,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Peace by choosing respectful words, doing what is right, and helping other people."
+              "answer": "A P4 learner can apply Peace by choosing to apologise, forgive, use dialogue and seek reconciliation."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
                 "spread quarrels",
-                "ignore good advice"
+                "ignore good advice",
+                "choose to apologise, forgive, use dialogue and seek reconciliation"
+              ],
+              "correct": 3,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-cre-peace-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-cre-peace-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-cre-community-service-peace.svg",
+            "imageCaption": "CRE community, service, decision-making and peace.",
+            "learnIt": [
+              "Name the main teaching in Peace.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about faith, worship and other people."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Peace can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Peace and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "explain and apply the teaching respectfully",
+                "mock other people",
+                "memorise words only",
+                "ignore daily life"
               ],
               "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -2043,35 +2516,35 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Peace should help a learner:",
         "choices": [
-          "live with good values",
           "mock other people",
-          "steal",
-          "fight"
+          "choose to apologise, forgive, use dialogue and seek reconciliation",
+          "steal from others",
+          "spread fights"
         ],
-        "correct": 0,
-        "why": "RE should guide good conduct."
+        "correct": 1,
+        "why": "Peace is kept through forgiveness, respect and reconciliation."
       },
       {
-        "q": "A good CRE answer should connect teaching to:",
+        "q": "A good CRE answer should connect Bible/faith teaching to:",
         "choices": [
-          "daily life",
           "only noise",
           "only money",
+          "daily life and good conduct",
           "only roads"
         ],
-        "correct": 0,
-        "why": "CRE connects faith and life."
+        "correct": 2,
+        "why": "CRE should connect faith teaching to daily life."
       },
       {
-        "q": "Christians should speak about other people respectfully because:",
+        "q": "When speaking about people and beliefs, a learner should be:",
         "choices": [
-          "respect promotes peace",
-          "mockery is best",
-          "fighting is worship",
-          "truth is useless"
+          "insulting",
+          "careless",
+          "violent",
+          "respectful"
         ],
-        "correct": 0,
-        "why": "Respect promotes peace."
+        "correct": 3,
+        "why": "Respectful speech supports peace and good learning."
       },
       {
         "q": "This topic includes Meaning of peace.",
@@ -2087,23 +2560,23 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Keeping peace through prayer and obedience to God's commandments",
           "weather instruments only",
+          "Keeping peace through prayer and obedience to God's commandments",
           "money conversion only",
           "road construction only"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Keeping peace through prayer and obedience to God's commandments is part of the topic scope."
       },
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
           "hiding all mistakes",
+          "acting respectfully",
           "refusing peace"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -2113,7 +2586,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-ire",
     "themeName": "Islamic Religious Education",
     "title": "Surat Al-Asr",
-    "estMinutes": 24,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -2125,7 +2598,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Surat Al-Asr teaches the value of time, faith, good deeds, truth and patience.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Recitation should be practised with a teacher or knowledgeable adult, and learners should also understand the lesson for daily life.",
         "This topic includes: Reciting Surat Al-Asr.",
@@ -2140,7 +2613,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Surat Al-Asr by worshipping respectfully, keeping clean conduct, and treating other people well."
+        "answer": "A P4 learner can apply Surat Al-Asr by choosing to keep time, do good deeds, speak truth and remain patient."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -2149,7 +2622,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Surat Al-Asr teaches the value of time, faith, good deeds, truth and patience.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Recitation should be practised with a teacher or knowledgeable adult, and learners should also understand the lesson for daily life."
       ]
@@ -2183,14 +2656,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to Surat Al-Asr?",
               "choices": [
-                "Reciting Surat Al-Asr",
                 "A random mathematics formula",
                 "A road distance only",
-                "A weather graph only"
+                "A weather graph only",
+                "Reciting Surat Al-Asr"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 3,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
           }
         ]
       },
@@ -2201,11 +2676,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-ire-surat-al-asr-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Islamic values through clean habits, respectful speech and good actions.",
+            "bigIdea": "Surat Al-Asr teaches the value of time, faith, good deeds, truth and patience.",
             "learnIt": [
-              "Use the lesson to make good choices at home, school and mosque.",
-              "Speak respectfully about Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
-              "Choose cleanliness, patience, truthfulness and respect where the topic calls for them."
+              "A learner can apply this topic by choosing to keep time, do good deeds, speak truth and remain patient.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -2214,18 +2689,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Surat Al-Asr by worshipping respectfully, keeping clean conduct, and treating other people well."
+              "answer": "A P4 learner can apply Surat Al-Asr by choosing to keep time, do good deeds, speak truth and remain patient."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "choose to keep time, do good deeds, speak truth and remain patient",
+                "mock other people",
                 "spread quarrels",
                 "ignore good advice"
               ],
               "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-ire-surat-al-asr-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-ire-surat-al-asr-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness.",
+            "learnIt": [
+              "Name the main teaching in Surat Al-Asr.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about Allah, the Qur’an, prayer and Prophet Muhammad (PBUH)."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Surat Al-Asr can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Surat Al-Asr and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "explain and apply the teaching respectfully",
+                "memorise words only",
+                "ignore daily life"
+              ],
+              "correct": 1,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -2235,24 +2751,24 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Surat Al-Asr should help a learner:",
         "choices": [
-          "live with good Islamic conduct",
           "mock prayer",
-          "be careless",
-          "steal"
+          "be careless with worship",
+          "choose to keep time, do good deeds, speak truth and remain patient",
+          "spread insults"
         ],
-        "correct": 0,
-        "why": "IRE should guide good conduct."
+        "correct": 2,
+        "why": "Surat Al-Asr teaches the value of time, faith, good deeds, truth and patience."
       },
       {
-        "q": "A good IRE answer should be:",
+        "q": "A good IRE answer should connect Islamic teaching to:",
         "choices": [
-          "respectful and clear",
-          "mocking",
-          "careless",
-          "full of insults"
+          "only noise",
+          "only money",
+          "only roads",
+          "daily life and good conduct"
         ],
-        "correct": 0,
-        "why": "Religious answers need respect."
+        "correct": 3,
+        "why": "IRE should connect Islamic teaching to daily life."
       },
       {
         "q": "When unsure about a religious practice, a learner should:",
@@ -2268,34 +2784,34 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "This topic includes Reciting Surat Al-Asr.",
         "choices": [
-          "True",
           "False",
+          "True",
           "Only for P7",
           "Only for Mathematics"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Reciting Surat Al-Asr is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Meaning of Surat Al-Asr",
           "weather instruments only",
           "money conversion only",
+          "Meaning of Surat Al-Asr",
           "road construction only"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Meaning of Surat Al-Asr is part of the topic scope."
       },
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
           "hiding all mistakes",
-          "refusing peace"
+          "refusing peace",
+          "acting respectfully"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -2305,7 +2821,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-ire",
     "themeName": "Islamic Religious Education",
     "title": "Prophet/Messenger",
-    "estMinutes": 24,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -2317,7 +2833,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Prophets and messengers deliver Allah’s message and guide people to right conduct.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "This topic includes: Meaning of prophet and messenger.",
         "This topic includes: Relationship between prophet and messenger.",
@@ -2331,7 +2847,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Prophet/Messenger by worshipping respectfully, keeping clean conduct, and treating other people well."
+        "answer": "A P4 learner can apply Prophet/Messenger by choosing to be truthful, patient and trustworthy when given responsibility."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -2340,7 +2856,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Prophets and messengers deliver Allah’s message and guide people to right conduct.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "This topic includes: Meaning of prophet and messenger."
       ]
@@ -2380,8 +2896,10 @@ export const P4_RE_TOPICS: Topic[] = [
                 "A weather graph only"
               ],
               "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values."
           }
         ]
       },
@@ -2392,11 +2910,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-ire-prophet-messenger-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Islamic values through clean habits, respectful speech and good actions.",
+            "bigIdea": "Prophets and messengers deliver Allah’s message and guide people to right conduct.",
             "learnIt": [
-              "Use the lesson to make good choices at home, school and mosque.",
-              "Speak respectfully about Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
-              "Choose cleanliness, patience, truthfulness and respect where the topic calls for them."
+              "A learner can apply this topic by choosing to be truthful, patient and trustworthy when given responsibility.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -2405,18 +2923,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Prophet/Messenger by worshipping respectfully, keeping clean conduct, and treating other people well."
+              "answer": "A P4 learner can apply Prophet/Messenger by choosing to be truthful, patient and trustworthy when given responsibility."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
+                "choose to be truthful, patient and trustworthy when given responsibility",
                 "spread quarrels",
                 "ignore good advice"
               ],
-              "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "correct": 1,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-ire-prophet-messenger-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-ire-prophet-messenger-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values.",
+            "learnIt": [
+              "Name the main teaching in Prophet/Messenger.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about Allah, the Qur’an, prayer and Prophet Muhammad (PBUH)."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Prophet/Messenger can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Prophet/Messenger and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "memorise words only",
+                "explain and apply the teaching respectfully",
+                "ignore daily life"
+              ],
+              "correct": 2,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -2426,56 +2985,56 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Prophet/Messenger should help a learner:",
         "choices": [
-          "live with good Islamic conduct",
           "mock prayer",
-          "be careless",
-          "steal"
+          "be careless with worship",
+          "spread insults",
+          "choose to be truthful, patient and trustworthy when given responsibility"
         ],
-        "correct": 0,
-        "why": "IRE should guide good conduct."
+        "correct": 3,
+        "why": "Prophets and messengers deliver Allah’s message and guide people to right conduct."
       },
       {
-        "q": "A good IRE answer should be:",
+        "q": "A good IRE answer should connect Islamic teaching to:",
         "choices": [
-          "respectful and clear",
-          "mocking",
-          "careless",
-          "full of insults"
+          "daily life and good conduct",
+          "only noise",
+          "only money",
+          "only roads"
         ],
         "correct": 0,
-        "why": "Religious answers need respect."
+        "why": "IRE should connect Islamic teaching to daily life."
       },
       {
         "q": "When unsure about a religious practice, a learner should:",
         "choices": [
-          "ask a teacher or trusted adult",
           "guess carelessly",
+          "ask a teacher or trusted adult",
           "mock it",
           "ignore learning"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Trusted guidance prevents mistakes."
       },
       {
         "q": "This topic includes Meaning of prophet and messenger.",
         "choices": [
-          "True",
           "False",
           "Only for P7",
+          "True",
           "Only for Mathematics"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Meaning of prophet and messenger is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Relationship between prophet and messenger",
           "weather instruments only",
           "money conversion only",
-          "road construction only"
+          "road construction only",
+          "Relationship between prophet and messenger"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Relationship between prophet and messenger is part of the topic scope."
       },
       {
@@ -2496,7 +3055,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-ire",
     "themeName": "Islamic Religious Education",
     "title": "Dress for Prayer",
-    "estMinutes": 24,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -2508,7 +3067,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Dress for prayer should show cleanliness, modesty and respect for Swalat.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Prayer topics require attention to cleanliness, order, humility and respect for worship.",
         "Cleanliness and decent conduct should be explained as part of worship and healthy daily life.",
@@ -2523,7 +3082,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Dress for Prayer by worshipping respectfully, keeping clean conduct, and treating other people well."
+        "answer": "A P4 learner can apply Dress for Prayer by choosing to prepare for prayer by dressing cleanly, decently and respectfully."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -2532,7 +3091,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Dress for prayer should show cleanliness, modesty and respect for Swalat.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Prayer topics require attention to cleanliness, order, humility and respect for worship."
       ]
@@ -2566,14 +3125,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to Dress for Prayer?",
               "choices": [
-                "Usefulness of serving Allah and being peaceful",
                 "A random mathematics formula",
+                "Usefulness of serving Allah and being peaceful",
                 "A road distance only",
                 "A weather graph only"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 1,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
           }
         ]
       },
@@ -2584,11 +3145,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-ire-dress-for-prayer-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Islamic values through clean habits, respectful speech and good actions.",
+            "bigIdea": "Dress for prayer should show cleanliness, modesty and respect for Swalat.",
             "learnIt": [
-              "Use the lesson to make good choices at home, school and mosque.",
-              "Speak respectfully about Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
-              "Choose cleanliness, patience, truthfulness and respect where the topic calls for them."
+              "A learner can apply this topic by choosing to prepare for prayer by dressing cleanly, decently and respectfully.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -2597,18 +3158,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Dress for Prayer by worshipping respectfully, keeping clean conduct, and treating other people well."
+              "answer": "A P4 learner can apply Dress for Prayer by choosing to prepare for prayer by dressing cleanly, decently and respectfully."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
                 "spread quarrels",
+                "choose to prepare for prayer by dressing cleanly, decently and respectfully",
                 "ignore good advice"
               ],
-              "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "correct": 2,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-ire-dress-for-prayer-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-ire-dress-for-prayer-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness.",
+            "learnIt": [
+              "Name the main teaching in Dress for Prayer.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about Allah, the Qur’an, prayer and Prophet Muhammad (PBUH)."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Dress for Prayer can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Dress for Prayer and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "memorise words only",
+                "ignore daily life",
+                "explain and apply the teaching respectfully"
+              ],
+              "correct": 3,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -2618,45 +3220,45 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Dress for Prayer should help a learner:",
         "choices": [
-          "live with good Islamic conduct",
+          "choose to prepare for prayer by dressing cleanly, decently and respectfully",
           "mock prayer",
-          "be careless",
-          "steal"
+          "be careless with worship",
+          "spread insults"
         ],
         "correct": 0,
-        "why": "IRE should guide good conduct."
+        "why": "Dress for prayer should show cleanliness, modesty and respect for Swalat."
       },
       {
-        "q": "A good IRE answer should be:",
+        "q": "A good IRE answer should connect Islamic teaching to:",
         "choices": [
-          "respectful and clear",
-          "mocking",
-          "careless",
-          "full of insults"
+          "only noise",
+          "daily life and good conduct",
+          "only money",
+          "only roads"
         ],
-        "correct": 0,
-        "why": "Religious answers need respect."
+        "correct": 1,
+        "why": "IRE should connect Islamic teaching to daily life."
       },
       {
         "q": "When unsure about a religious practice, a learner should:",
         "choices": [
-          "ask a teacher or trusted adult",
           "guess carelessly",
           "mock it",
+          "ask a teacher or trusted adult",
           "ignore learning"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Trusted guidance prevents mistakes."
       },
       {
         "q": "This topic includes Usefulness of serving Allah and being peaceful.",
         "choices": [
-          "True",
           "False",
           "Only for P7",
-          "Only for Mathematics"
+          "Only for Mathematics",
+          "True"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Usefulness of serving Allah and being peaceful is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
@@ -2673,12 +3275,12 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
+          "acting respectfully",
           "hiding all mistakes",
           "refusing peace"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -2688,7 +3290,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-ire",
     "themeName": "Islamic Religious Education",
     "title": "Impurities",
-    "estMinutes": 24,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -2700,7 +3302,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Avoiding impurities helps a Muslim prepare respectfully for worship.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Cleanliness and decent conduct should be explained as part of worship and healthy daily life.",
         "This topic includes: Meaning of impurities.",
@@ -2715,7 +3317,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Impurities by worshipping respectfully, keeping clean conduct, and treating other people well."
+        "answer": "A P4 learner can apply Impurities by choosing to keep the body, clothes and prayer place clean before worship."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -2724,7 +3326,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Avoiding impurities helps a Muslim prepare respectfully for worship.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Cleanliness and decent conduct should be explained as part of worship and healthy daily life."
       ]
@@ -2758,14 +3360,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to Impurities?",
               "choices": [
-                "Meaning of impurities",
                 "A random mathematics formula",
                 "A road distance only",
+                "Meaning of impurities",
                 "A weather graph only"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 2,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
           }
         ]
       },
@@ -2776,11 +3380,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-ire-impurities-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Islamic values through clean habits, respectful speech and good actions.",
+            "bigIdea": "Avoiding impurities helps a Muslim prepare respectfully for worship.",
             "learnIt": [
-              "Use the lesson to make good choices at home, school and mosque.",
-              "Speak respectfully about Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
-              "Choose cleanliness, patience, truthfulness and respect where the topic calls for them."
+              "A learner can apply this topic by choosing to keep the body, clothes and prayer place clean before worship.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -2789,18 +3393,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Impurities by worshipping respectfully, keeping clean conduct, and treating other people well."
+              "answer": "A P4 learner can apply Impurities by choosing to keep the body, clothes and prayer place clean before worship."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
                 "spread quarrels",
-                "ignore good advice"
+                "ignore good advice",
+                "choose to keep the body, clothes and prayer place clean before worship"
+              ],
+              "correct": 3,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-ire-impurities-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-ire-impurities-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness.",
+            "learnIt": [
+              "Name the main teaching in Impurities.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about Allah, the Qur’an, prayer and Prophet Muhammad (PBUH)."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Impurities can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Impurities and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "explain and apply the teaching respectfully",
+                "mock other people",
+                "memorise words only",
+                "ignore daily life"
               ],
               "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -2810,34 +3455,34 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Impurities should help a learner:",
         "choices": [
-          "live with good Islamic conduct",
           "mock prayer",
-          "be careless",
-          "steal"
+          "choose to keep the body, clothes and prayer place clean before worship",
+          "be careless with worship",
+          "spread insults"
         ],
-        "correct": 0,
-        "why": "IRE should guide good conduct."
+        "correct": 1,
+        "why": "Avoiding impurities helps a Muslim prepare respectfully for worship."
       },
       {
-        "q": "A good IRE answer should be:",
+        "q": "A good IRE answer should connect Islamic teaching to:",
         "choices": [
-          "respectful and clear",
-          "mocking",
-          "careless",
-          "full of insults"
+          "only noise",
+          "only money",
+          "daily life and good conduct",
+          "only roads"
         ],
-        "correct": 0,
-        "why": "Religious answers need respect."
+        "correct": 2,
+        "why": "IRE should connect Islamic teaching to daily life."
       },
       {
         "q": "When unsure about a religious practice, a learner should:",
         "choices": [
-          "ask a teacher or trusted adult",
           "guess carelessly",
           "mock it",
-          "ignore learning"
+          "ignore learning",
+          "ask a teacher or trusted adult"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Trusted guidance prevents mistakes."
       },
       {
@@ -2854,23 +3499,23 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Types of impurities",
           "weather instruments only",
+          "Types of impurities",
           "money conversion only",
           "road construction only"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Types of impurities is part of the topic scope."
       },
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
           "hiding all mistakes",
+          "acting respectfully",
           "refusing peace"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -2880,7 +3525,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-ire",
     "themeName": "Islamic Religious Education",
     "title": "Early Converts in Islam",
-    "estMinutes": 24,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -2892,7 +3537,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Early converts in Islam teach courage, faith and patience during difficulty.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "This topic includes: Meaning of early converts.",
         "This topic includes: Names of early converts in Islam.",
@@ -2906,7 +3551,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Early Converts in Islam by worshipping respectfully, keeping clean conduct, and treating other people well."
+        "answer": "A P4 learner can apply Early Converts in Islam by choosing to show courage and patience when choosing what is right."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -2915,7 +3560,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Early converts in Islam teach courage, faith and patience during difficulty.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "This topic includes: Meaning of early converts."
       ]
@@ -2949,14 +3594,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to Early Converts in Islam?",
               "choices": [
-                "Meaning of early converts",
                 "A random mathematics formula",
                 "A road distance only",
-                "A weather graph only"
+                "A weather graph only",
+                "Meaning of early converts"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 3,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values."
           }
         ]
       },
@@ -2967,11 +3614,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-ire-early-converts-islam-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Islamic values through clean habits, respectful speech and good actions.",
+            "bigIdea": "Early converts in Islam teach courage, faith and patience during difficulty.",
             "learnIt": [
-              "Use the lesson to make good choices at home, school and mosque.",
-              "Speak respectfully about Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
-              "Choose cleanliness, patience, truthfulness and respect where the topic calls for them."
+              "A learner can apply this topic by choosing to show courage and patience when choosing what is right.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -2980,18 +3627,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Early Converts in Islam by worshipping respectfully, keeping clean conduct, and treating other people well."
+              "answer": "A P4 learner can apply Early Converts in Islam by choosing to show courage and patience when choosing what is right."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "choose to show courage and patience when choosing what is right",
+                "mock other people",
                 "spread quarrels",
                 "ignore good advice"
               ],
               "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-ire-early-converts-islam-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-ire-early-converts-islam-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values.",
+            "learnIt": [
+              "Name the main teaching in Early Converts in Islam.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about Allah, the Qur’an, prayer and Prophet Muhammad (PBUH)."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Early Converts in Islam can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Early Converts in Islam and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "explain and apply the teaching respectfully",
+                "memorise words only",
+                "ignore daily life"
+              ],
+              "correct": 1,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -3001,24 +3689,24 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Early Converts in Islam should help a learner:",
         "choices": [
-          "live with good Islamic conduct",
           "mock prayer",
-          "be careless",
-          "steal"
+          "be careless with worship",
+          "choose to show courage and patience when choosing what is right",
+          "spread insults"
         ],
-        "correct": 0,
-        "why": "IRE should guide good conduct."
+        "correct": 2,
+        "why": "Early converts in Islam teach courage, faith and patience during difficulty."
       },
       {
-        "q": "A good IRE answer should be:",
+        "q": "A good IRE answer should connect Islamic teaching to:",
         "choices": [
-          "respectful and clear",
-          "mocking",
-          "careless",
-          "full of insults"
+          "only noise",
+          "only money",
+          "only roads",
+          "daily life and good conduct"
         ],
-        "correct": 0,
-        "why": "Religious answers need respect."
+        "correct": 3,
+        "why": "IRE should connect Islamic teaching to daily life."
       },
       {
         "q": "When unsure about a religious practice, a learner should:",
@@ -3034,34 +3722,34 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "This topic includes Meaning of early converts.",
         "choices": [
-          "True",
           "False",
+          "True",
           "Only for P7",
           "Only for Mathematics"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Meaning of early converts is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Names of early converts in Islam",
           "weather instruments only",
           "money conversion only",
+          "Names of early converts in Islam",
           "road construction only"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Names of early converts in Islam is part of the topic scope."
       },
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
           "hiding all mistakes",
-          "refusing peace"
+          "refusing peace",
+          "acting respectfully"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -3071,7 +3759,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-ire",
     "themeName": "Islamic Religious Education",
     "title": "Surat Al-Humaza",
-    "estMinutes": 24,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -3083,7 +3771,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Surat Al-Humaza warns against harmful speech and mockery.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Recitation should be practised with a teacher or knowledgeable adult, and learners should also understand the lesson for daily life.",
         "This topic includes: Reciting Surat Al-Humaza.",
@@ -3098,7 +3786,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Surat Al-Humaza by worshipping respectfully, keeping clean conduct, and treating other people well."
+        "answer": "A P4 learner can apply Surat Al-Humaza by choosing to avoid mockery, insults, rumours and backbiting."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -3107,7 +3795,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Surat Al-Humaza warns against harmful speech and mockery.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Recitation should be practised with a teacher or knowledgeable adult, and learners should also understand the lesson for daily life."
       ]
@@ -3147,8 +3835,10 @@ export const P4_RE_TOPICS: Topic[] = [
                 "A weather graph only"
               ],
               "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
           }
         ]
       },
@@ -3159,11 +3849,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-ire-surat-al-humaza-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Islamic values through clean habits, respectful speech and good actions.",
+            "bigIdea": "Surat Al-Humaza warns against harmful speech and mockery.",
             "learnIt": [
-              "Use the lesson to make good choices at home, school and mosque.",
-              "Speak respectfully about Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
-              "Choose cleanliness, patience, truthfulness and respect where the topic calls for them."
+              "A learner can apply this topic by choosing to avoid mockery, insults, rumours and backbiting.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -3172,18 +3862,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Surat Al-Humaza by worshipping respectfully, keeping clean conduct, and treating other people well."
+              "answer": "A P4 learner can apply Surat Al-Humaza by choosing to avoid mockery, insults, rumours and backbiting."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
+                "choose to avoid mockery, insults, rumours and backbiting",
                 "spread quarrels",
                 "ignore good advice"
               ],
-              "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "correct": 1,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-ire-surat-al-humaza-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-ire-surat-al-humaza-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness.",
+            "learnIt": [
+              "Name the main teaching in Surat Al-Humaza.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about Allah, the Qur’an, prayer and Prophet Muhammad (PBUH)."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Surat Al-Humaza can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Surat Al-Humaza and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "memorise words only",
+                "explain and apply the teaching respectfully",
+                "ignore daily life"
+              ],
+              "correct": 2,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -3193,56 +3924,56 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Surat Al-Humaza should help a learner:",
         "choices": [
-          "live with good Islamic conduct",
           "mock prayer",
-          "be careless",
-          "steal"
+          "be careless with worship",
+          "spread insults",
+          "choose to avoid mockery, insults, rumours and backbiting"
         ],
-        "correct": 0,
-        "why": "IRE should guide good conduct."
+        "correct": 3,
+        "why": "Surat Al-Humaza warns against harmful speech and mockery."
       },
       {
-        "q": "A good IRE answer should be:",
+        "q": "A good IRE answer should connect Islamic teaching to:",
         "choices": [
-          "respectful and clear",
-          "mocking",
-          "careless",
-          "full of insults"
+          "daily life and good conduct",
+          "only noise",
+          "only money",
+          "only roads"
         ],
         "correct": 0,
-        "why": "Religious answers need respect."
+        "why": "IRE should connect Islamic teaching to daily life."
       },
       {
         "q": "When unsure about a religious practice, a learner should:",
         "choices": [
-          "ask a teacher or trusted adult",
           "guess carelessly",
+          "ask a teacher or trusted adult",
           "mock it",
           "ignore learning"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Trusted guidance prevents mistakes."
       },
       {
         "q": "This topic includes Reciting Surat Al-Humaza.",
         "choices": [
-          "True",
           "False",
           "Only for P7",
+          "True",
           "Only for Mathematics"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Reciting Surat Al-Humaza is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Meaning of Surat Al-Humaza",
           "weather instruments only",
           "money conversion only",
-          "road construction only"
+          "road construction only",
+          "Meaning of Surat Al-Humaza"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Meaning of Surat Al-Humaza is part of the topic scope."
       },
       {
@@ -3263,7 +3994,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-ire",
     "themeName": "Islamic Religious Education",
     "title": "The 25 Prophets",
-    "estMinutes": 24,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -3275,7 +4006,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "The prophets guided people to worship Allah and do what is right.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "This topic includes: Names of the 25 prophets mentioned in the Qur'an.",
         "This topic includes: More prophets beyond the 25 named prophets.",
@@ -3289,7 +4020,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply The 25 Prophets by worshipping respectfully, keeping clean conduct, and treating other people well."
+        "answer": "A P4 learner can apply The 25 Prophets by choosing to learn from the prophets by practising patience, obedience and truthfulness."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -3298,7 +4029,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "The prophets guided people to worship Allah and do what is right.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "This topic includes: Names of the 25 prophets mentioned in the Qur'an."
       ]
@@ -3332,14 +4063,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to The 25 Prophets?",
               "choices": [
-                "Names of the 25 prophets mentioned in the Qur'an",
                 "A random mathematics formula",
+                "Names of the 25 prophets mentioned in the Qur'an",
                 "A road distance only",
                 "A weather graph only"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 1,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values."
           }
         ]
       },
@@ -3350,11 +4083,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-ire-twenty-five-prophets-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Islamic values through clean habits, respectful speech and good actions.",
+            "bigIdea": "The prophets guided people to worship Allah and do what is right.",
             "learnIt": [
-              "Use the lesson to make good choices at home, school and mosque.",
-              "Speak respectfully about Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
-              "Choose cleanliness, patience, truthfulness and respect where the topic calls for them."
+              "A learner can apply this topic by choosing to learn from the prophets by practising patience, obedience and truthfulness.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -3363,18 +4096,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply The 25 Prophets by worshipping respectfully, keeping clean conduct, and treating other people well."
+              "answer": "A P4 learner can apply The 25 Prophets by choosing to learn from the prophets by practising patience, obedience and truthfulness."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
                 "spread quarrels",
+                "choose to learn from the prophets by practising patience, obedience and truthfulness",
                 "ignore good advice"
               ],
-              "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "correct": 2,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-ire-twenty-five-prophets-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-ire-twenty-five-prophets-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values.",
+            "learnIt": [
+              "Name the main teaching in The 25 Prophets.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about Allah, the Qur’an, prayer and Prophet Muhammad (PBUH)."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how The 25 Prophets can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains The 25 Prophets and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "memorise words only",
+                "ignore daily life",
+                "explain and apply the teaching respectfully"
+              ],
+              "correct": 3,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -3384,45 +4158,45 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "The 25 Prophets should help a learner:",
         "choices": [
-          "live with good Islamic conduct",
+          "choose to learn from the prophets by practising patience, obedience and truthfulness",
           "mock prayer",
-          "be careless",
-          "steal"
+          "be careless with worship",
+          "spread insults"
         ],
         "correct": 0,
-        "why": "IRE should guide good conduct."
+        "why": "The prophets guided people to worship Allah and do what is right."
       },
       {
-        "q": "A good IRE answer should be:",
+        "q": "A good IRE answer should connect Islamic teaching to:",
         "choices": [
-          "respectful and clear",
-          "mocking",
-          "careless",
-          "full of insults"
+          "only noise",
+          "daily life and good conduct",
+          "only money",
+          "only roads"
         ],
-        "correct": 0,
-        "why": "Religious answers need respect."
+        "correct": 1,
+        "why": "IRE should connect Islamic teaching to daily life."
       },
       {
         "q": "When unsure about a religious practice, a learner should:",
         "choices": [
-          "ask a teacher or trusted adult",
           "guess carelessly",
           "mock it",
+          "ask a teacher or trusted adult",
           "ignore learning"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Trusted guidance prevents mistakes."
       },
       {
         "q": "This topic includes Names of the 25 prophets mentioned in the Qur'an.",
         "choices": [
-          "True",
           "False",
           "Only for P7",
-          "Only for Mathematics"
+          "Only for Mathematics",
+          "True"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Names of the 25 prophets mentioned in the Qur'an is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
@@ -3439,12 +4213,12 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
+          "acting respectfully",
           "hiding all mistakes",
           "refusing peace"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -3454,7 +4228,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-ire",
     "themeName": "Islamic Religious Education",
     "title": "Imaan and Forgiveness",
-    "estMinutes": 24,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -3466,7 +4240,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Imaan guides belief and forgiveness restores relationships.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "This topic includes: Meaning of Imaan.",
         "This topic includes: Articles of Imaan.",
@@ -3480,7 +4254,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Imaan and Forgiveness by worshipping respectfully, keeping clean conduct, and treating other people well."
+        "answer": "A P4 learner can apply Imaan and Forgiveness by choosing to strengthen faith, ask Allah for forgiveness and forgive others."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -3489,7 +4263,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Imaan guides belief and forgiveness restores relationships.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "This topic includes: Meaning of Imaan."
       ]
@@ -3523,14 +4297,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to Imaan and Forgiveness?",
               "choices": [
-                "Meaning of Imaan",
                 "A random mathematics formula",
                 "A road distance only",
+                "Meaning of Imaan",
                 "A weather graph only"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 2,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values."
           }
         ]
       },
@@ -3541,11 +4317,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-ire-imaan-forgiveness-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Islamic values through clean habits, respectful speech and good actions.",
+            "bigIdea": "Imaan guides belief and forgiveness restores relationships.",
             "learnIt": [
-              "Use the lesson to make good choices at home, school and mosque.",
-              "Speak respectfully about Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
-              "Choose cleanliness, patience, truthfulness and respect where the topic calls for them."
+              "A learner can apply this topic by choosing to strengthen faith, ask Allah for forgiveness and forgive others.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -3554,18 +4330,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Imaan and Forgiveness by worshipping respectfully, keeping clean conduct, and treating other people well."
+              "answer": "A P4 learner can apply Imaan and Forgiveness by choosing to strengthen faith, ask Allah for forgiveness and forgive others."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
                 "spread quarrels",
-                "ignore good advice"
+                "ignore good advice",
+                "choose to strengthen faith, ask Allah for forgiveness and forgive others"
+              ],
+              "correct": 3,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-ire-imaan-forgiveness-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-ire-imaan-forgiveness-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values.",
+            "learnIt": [
+              "Name the main teaching in Imaan and Forgiveness.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about Allah, the Qur’an, prayer and Prophet Muhammad (PBUH)."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Imaan and Forgiveness can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Imaan and Forgiveness and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "explain and apply the teaching respectfully",
+                "mock other people",
+                "memorise words only",
+                "ignore daily life"
               ],
               "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -3575,34 +4392,34 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Imaan and Forgiveness should help a learner:",
         "choices": [
-          "live with good Islamic conduct",
           "mock prayer",
-          "be careless",
-          "steal"
+          "choose to strengthen faith, ask Allah for forgiveness and forgive others",
+          "be careless with worship",
+          "spread insults"
         ],
-        "correct": 0,
-        "why": "IRE should guide good conduct."
+        "correct": 1,
+        "why": "Imaan guides belief and forgiveness restores relationships."
       },
       {
-        "q": "A good IRE answer should be:",
+        "q": "A good IRE answer should connect Islamic teaching to:",
         "choices": [
-          "respectful and clear",
-          "mocking",
-          "careless",
-          "full of insults"
+          "only noise",
+          "only money",
+          "daily life and good conduct",
+          "only roads"
         ],
-        "correct": 0,
-        "why": "Religious answers need respect."
+        "correct": 2,
+        "why": "IRE should connect Islamic teaching to daily life."
       },
       {
         "q": "When unsure about a religious practice, a learner should:",
         "choices": [
-          "ask a teacher or trusted adult",
           "guess carelessly",
           "mock it",
-          "ignore learning"
+          "ignore learning",
+          "ask a teacher or trusted adult"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Trusted guidance prevents mistakes."
       },
       {
@@ -3619,23 +4436,23 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Articles of Imaan",
           "weather instruments only",
+          "Articles of Imaan",
           "money conversion only",
           "road construction only"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Articles of Imaan is part of the topic scope."
       },
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
           "hiding all mistakes",
+          "acting respectfully",
           "refusing peace"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -3645,7 +4462,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-ire",
     "themeName": "Islamic Religious Education",
     "title": "Congregational Prayer (Swalat Al-Jama-a)",
-    "estMinutes": 24,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -3657,7 +4474,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Congregational prayer promotes unity, discipline and respectful worship.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Prayer topics require attention to cleanliness, order, humility and respect for worship.",
         "This topic includes: Meaning of congregational prayer.",
@@ -3672,7 +4489,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Congregational Prayer (Swalat Al-Jama-a) by worshipping respectfully, keeping clean conduct, and treating other people well."
+        "answer": "A P4 learner can apply Congregational Prayer (Swalat Al-Jama-a) by choosing to join prayer respectfully, keep order and follow the Imam."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -3681,7 +4498,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Congregational prayer promotes unity, discipline and respectful worship.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Prayer topics require attention to cleanliness, order, humility and respect for worship."
       ]
@@ -3715,14 +4532,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to Congregational Prayer (Swalat Al-Jama-a)?",
               "choices": [
-                "Meaning of congregational prayer",
                 "A random mathematics formula",
                 "A road distance only",
-                "A weather graph only"
+                "A weather graph only",
+                "Meaning of congregational prayer"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 3,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
           }
         ]
       },
@@ -3733,11 +4552,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-ire-congregational-prayer-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Islamic values through clean habits, respectful speech and good actions.",
+            "bigIdea": "Congregational prayer promotes unity, discipline and respectful worship.",
             "learnIt": [
-              "Use the lesson to make good choices at home, school and mosque.",
-              "Speak respectfully about Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
-              "Choose cleanliness, patience, truthfulness and respect where the topic calls for them."
+              "A learner can apply this topic by choosing to join prayer respectfully, keep order and follow the Imam.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -3746,18 +4565,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Congregational Prayer (Swalat Al-Jama-a) by worshipping respectfully, keeping clean conduct, and treating other people well."
+              "answer": "A P4 learner can apply Congregational Prayer (Swalat Al-Jama-a) by choosing to join prayer respectfully, keep order and follow the Imam."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "choose to join prayer respectfully, keep order and follow the Imam",
+                "mock other people",
                 "spread quarrels",
                 "ignore good advice"
               ],
               "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-ire-congregational-prayer-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-ire-congregational-prayer-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness.",
+            "learnIt": [
+              "Name the main teaching in Congregational Prayer (Swalat Al-Jama-a).",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about Allah, the Qur’an, prayer and Prophet Muhammad (PBUH)."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Congregational Prayer (Swalat Al-Jama-a) can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Congregational Prayer (Swalat Al-Jama-a) and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "explain and apply the teaching respectfully",
+                "memorise words only",
+                "ignore daily life"
+              ],
+              "correct": 1,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -3767,24 +4627,24 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Congregational Prayer (Swalat Al-Jama-a) should help a learner:",
         "choices": [
-          "live with good Islamic conduct",
           "mock prayer",
-          "be careless",
-          "steal"
+          "be careless with worship",
+          "choose to join prayer respectfully, keep order and follow the Imam",
+          "spread insults"
         ],
-        "correct": 0,
-        "why": "IRE should guide good conduct."
+        "correct": 2,
+        "why": "Congregational prayer promotes unity, discipline and respectful worship."
       },
       {
-        "q": "A good IRE answer should be:",
+        "q": "A good IRE answer should connect Islamic teaching to:",
         "choices": [
-          "respectful and clear",
-          "mocking",
-          "careless",
-          "full of insults"
+          "only noise",
+          "only money",
+          "only roads",
+          "daily life and good conduct"
         ],
-        "correct": 0,
-        "why": "Religious answers need respect."
+        "correct": 3,
+        "why": "IRE should connect Islamic teaching to daily life."
       },
       {
         "q": "When unsure about a religious practice, a learner should:",
@@ -3800,34 +4660,34 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "This topic includes Meaning of congregational prayer.",
         "choices": [
-          "True",
           "False",
+          "True",
           "Only for P7",
           "Only for Mathematics"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Meaning of congregational prayer is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Importance of Swalat Al-Jama-a",
           "weather instruments only",
           "money conversion only",
+          "Importance of Swalat Al-Jama-a",
           "road construction only"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Importance of Swalat Al-Jama-a is part of the topic scope."
       },
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
           "hiding all mistakes",
-          "refusing peace"
+          "refusing peace",
+          "acting respectfully"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -3836,8 +4696,8 @@ export const P4_RE_TOPICS: Topic[] = [
     "id": "p4-ire-night-journey-israi-miraj",
     "themeId": "p4-ire",
     "themeName": "Islamic Religious Education",
-    "title": "The Night Journey (Israi and Miraj)",
-    "estMinutes": 24,
+    "title": "The Night Journey (Isra/Israi and Miraj)",
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -3849,7 +4709,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Isra/Israi and Miraj teach Allah’s power and the importance of prayer.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "This topic includes: Meaning of Israi.",
         "This topic includes: Meaning of Miraj.",
@@ -3863,7 +4723,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply The Night Journey (Israi and Miraj) by worshipping respectfully, keeping clean conduct, and treating other people well."
+        "answer": "A P4 learner can apply The Night Journey (Isra/Israi and Miraj) by choosing to value Swalat and speak respectfully about sacred events."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -3872,7 +4732,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Isra/Israi and Miraj teach Allah’s power and the importance of prayer.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "This topic includes: Meaning of Israi."
       ]
@@ -3912,8 +4772,10 @@ export const P4_RE_TOPICS: Topic[] = [
                 "A weather graph only"
               ],
               "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values."
           }
         ]
       },
@@ -3924,11 +4786,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-ire-night-journey-israi-miraj-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Islamic values through clean habits, respectful speech and good actions.",
+            "bigIdea": "Isra/Israi and Miraj teach Allah’s power and the importance of prayer.",
             "learnIt": [
-              "Use the lesson to make good choices at home, school and mosque.",
-              "Speak respectfully about Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
-              "Choose cleanliness, patience, truthfulness and respect where the topic calls for them."
+              "A learner can apply this topic by choosing to value Swalat and speak respectfully about sacred events.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -3937,18 +4799,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply The Night Journey (Israi and Miraj) by worshipping respectfully, keeping clean conduct, and treating other people well."
+              "answer": "A P4 learner can apply The Night Journey (Isra/Israi and Miraj) by choosing to value Swalat and speak respectfully about sacred events."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
+                "choose to value Swalat and speak respectfully about sacred events",
                 "spread quarrels",
                 "ignore good advice"
               ],
-              "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "correct": 1,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-ire-night-journey-israi-miraj-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-ire-night-journey-israi-miraj-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values.",
+            "learnIt": [
+              "Name the main teaching in The Night Journey (Isra/Israi and Miraj).",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about Allah, the Qur’an, prayer and Prophet Muhammad (PBUH)."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how The Night Journey (Isra/Israi and Miraj) can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains The Night Journey (Isra/Israi and Miraj) and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "memorise words only",
+                "explain and apply the teaching respectfully",
+                "ignore daily life"
+              ],
+              "correct": 2,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -3956,58 +4859,58 @@ export const P4_RE_TOPICS: Topic[] = [
     ],
     "quiz": [
       {
-        "q": "The Night Journey (Israi and Miraj) should help a learner:",
+        "q": "The Night Journey (Isra/Israi and Miraj) should help a learner:",
         "choices": [
-          "live with good Islamic conduct",
           "mock prayer",
-          "be careless",
-          "steal"
+          "be careless with worship",
+          "spread insults",
+          "choose to value Swalat and speak respectfully about sacred events"
         ],
-        "correct": 0,
-        "why": "IRE should guide good conduct."
+        "correct": 3,
+        "why": "Isra/Israi and Miraj teach Allah’s power and the importance of prayer."
       },
       {
-        "q": "A good IRE answer should be:",
+        "q": "A good IRE answer should connect Islamic teaching to:",
         "choices": [
-          "respectful and clear",
-          "mocking",
-          "careless",
-          "full of insults"
+          "daily life and good conduct",
+          "only noise",
+          "only money",
+          "only roads"
         ],
         "correct": 0,
-        "why": "Religious answers need respect."
+        "why": "IRE should connect Islamic teaching to daily life."
       },
       {
         "q": "When unsure about a religious practice, a learner should:",
         "choices": [
-          "ask a teacher or trusted adult",
           "guess carelessly",
+          "ask a teacher or trusted adult",
           "mock it",
           "ignore learning"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Trusted guidance prevents mistakes."
       },
       {
         "q": "This topic includes Meaning of Israi.",
         "choices": [
-          "True",
           "False",
           "Only for P7",
+          "True",
           "Only for Mathematics"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Meaning of Israi is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Meaning of Miraj",
           "weather instruments only",
           "money conversion only",
-          "road construction only"
+          "road construction only",
+          "Meaning of Miraj"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Meaning of Miraj is part of the topic scope."
       },
       {
@@ -4028,7 +4931,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-ire",
     "themeName": "Islamic Religious Education",
     "title": "Surat Al-Falaq (113)",
-    "estMinutes": 24,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -4040,7 +4943,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Surat Al-Falaq teaches seeking Allah’s protection from harm.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Recitation should be practised with a teacher or knowledgeable adult, and learners should also understand the lesson for daily life.",
         "This topic includes: Reciting Surat Al-Falaq.",
@@ -4055,7 +4958,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Surat Al-Falaq (113) by worshipping respectfully, keeping clean conduct, and treating other people well."
+        "answer": "A P4 learner can apply Surat Al-Falaq (113) by choosing to seek Allah’s protection and avoid envy or harmful actions."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -4064,7 +4967,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Surat Al-Falaq teaches seeking Allah’s protection from harm.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Recitation should be practised with a teacher or knowledgeable adult, and learners should also understand the lesson for daily life."
       ]
@@ -4098,14 +5001,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to Surat Al-Falaq (113)?",
               "choices": [
-                "Reciting Surat Al-Falaq",
                 "A random mathematics formula",
+                "Reciting Surat Al-Falaq",
                 "A road distance only",
                 "A weather graph only"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 1,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
           }
         ]
       },
@@ -4116,11 +5021,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-ire-surat-al-falaq-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Islamic values through clean habits, respectful speech and good actions.",
+            "bigIdea": "Surat Al-Falaq teaches seeking Allah’s protection from harm.",
             "learnIt": [
-              "Use the lesson to make good choices at home, school and mosque.",
-              "Speak respectfully about Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
-              "Choose cleanliness, patience, truthfulness and respect where the topic calls for them."
+              "A learner can apply this topic by choosing to seek Allah’s protection and avoid envy or harmful actions.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -4129,18 +5034,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Surat Al-Falaq (113) by worshipping respectfully, keeping clean conduct, and treating other people well."
+              "answer": "A P4 learner can apply Surat Al-Falaq (113) by choosing to seek Allah’s protection and avoid envy or harmful actions."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
                 "spread quarrels",
+                "choose to seek Allah’s protection and avoid envy or harmful actions",
                 "ignore good advice"
               ],
-              "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "correct": 2,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-ire-surat-al-falaq-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-ire-surat-al-falaq-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness.",
+            "learnIt": [
+              "Name the main teaching in Surat Al-Falaq (113).",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about Allah, the Qur’an, prayer and Prophet Muhammad (PBUH)."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Surat Al-Falaq (113) can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Surat Al-Falaq (113) and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "memorise words only",
+                "ignore daily life",
+                "explain and apply the teaching respectfully"
+              ],
+              "correct": 3,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -4150,45 +5096,45 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Surat Al-Falaq (113) should help a learner:",
         "choices": [
-          "live with good Islamic conduct",
+          "choose to seek Allah’s protection and avoid envy or harmful actions",
           "mock prayer",
-          "be careless",
-          "steal"
+          "be careless with worship",
+          "spread insults"
         ],
         "correct": 0,
-        "why": "IRE should guide good conduct."
+        "why": "Surat Al-Falaq teaches seeking Allah’s protection from harm."
       },
       {
-        "q": "A good IRE answer should be:",
+        "q": "A good IRE answer should connect Islamic teaching to:",
         "choices": [
-          "respectful and clear",
-          "mocking",
-          "careless",
-          "full of insults"
+          "only noise",
+          "daily life and good conduct",
+          "only money",
+          "only roads"
         ],
-        "correct": 0,
-        "why": "Religious answers need respect."
+        "correct": 1,
+        "why": "IRE should connect Islamic teaching to daily life."
       },
       {
         "q": "When unsure about a religious practice, a learner should:",
         "choices": [
-          "ask a teacher or trusted adult",
           "guess carelessly",
           "mock it",
+          "ask a teacher or trusted adult",
           "ignore learning"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Trusted guidance prevents mistakes."
       },
       {
         "q": "This topic includes Reciting Surat Al-Falaq.",
         "choices": [
-          "True",
           "False",
           "Only for P7",
-          "Only for Mathematics"
+          "Only for Mathematics",
+          "True"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Reciting Surat Al-Falaq is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
@@ -4205,12 +5151,12 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
+          "acting respectfully",
           "hiding all mistakes",
           "refusing peace"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -4219,8 +5165,8 @@ export const P4_RE_TOPICS: Topic[] = [
     "id": "p4-ire-unique-nature-muhammad-messengership",
     "themeId": "p4-ire",
     "themeName": "Islamic Religious Education",
-    "title": "Unique Nature of Muhammad's (PBUH) Messengership",
-    "estMinutes": 24,
+    "title": "Unique Nature of Prophet Muhammad's (PBUH) Messengership",
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -4232,7 +5178,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Prophet Muhammad’s (PBUH) messengership is central to Islamic teaching.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "This topic includes: Reasons why Muhammad (PBUH) went to the cave.",
         "This topic includes: Nature of Prophet Muhammad's (PBUH) messengership.",
@@ -4246,7 +5192,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Unique Nature of Muhammad's (PBUH) Messengership by worshipping respectfully, keeping clean conduct, and treating other people well."
+        "answer": "A P4 learner can apply Unique Nature of Prophet Muhammad's (PBUH) Messengership by choosing to respect Prophet Muhammad (PBUH) and follow truthful, merciful conduct."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -4255,7 +5201,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Prophet Muhammad’s (PBUH) messengership is central to Islamic teaching.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "This topic includes: Reasons why Muhammad (PBUH) went to the cave."
       ]
@@ -4289,14 +5235,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to Unique Nature of Muhammad's (PBUH) Messengership?",
               "choices": [
-                "Reasons why Muhammad (PBUH) went to the cave",
                 "A random mathematics formula",
                 "A road distance only",
+                "Reasons why Muhammad (PBUH) went to the cave",
                 "A weather graph only"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 2,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values."
           }
         ]
       },
@@ -4307,11 +5255,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-ire-unique-nature-muhammad-messengership-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Islamic values through clean habits, respectful speech and good actions.",
+            "bigIdea": "Prophet Muhammad’s (PBUH) messengership is central to Islamic teaching.",
             "learnIt": [
-              "Use the lesson to make good choices at home, school and mosque.",
-              "Speak respectfully about Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
-              "Choose cleanliness, patience, truthfulness and respect where the topic calls for them."
+              "A learner can apply this topic by choosing to respect Prophet Muhammad (PBUH) and follow truthful, merciful conduct.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -4320,18 +5268,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Unique Nature of Muhammad's (PBUH) Messengership by worshipping respectfully, keeping clean conduct, and treating other people well."
+              "answer": "A P4 learner can apply Unique Nature of Prophet Muhammad's (PBUH) Messengership by choosing to respect Prophet Muhammad (PBUH) and follow truthful, merciful conduct."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
                 "spread quarrels",
-                "ignore good advice"
+                "ignore good advice",
+                "choose to respect Prophet Muhammad (PBUH) and follow truthful, merciful conduct"
+              ],
+              "correct": 3,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-ire-unique-nature-muhammad-messengership-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-ire-unique-nature-muhammad-messengership-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-ire-prophets-values.svg",
+            "imageCaption": "IRE prophets, Imaan and values.",
+            "learnIt": [
+              "Name the main teaching in Unique Nature of Prophet Muhammad's (PBUH) Messengership.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about Allah, the Qur’an, prayer and Prophet Muhammad (PBUH)."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Unique Nature of Prophet Muhammad's (PBUH) Messengership can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Unique Nature of Prophet Muhammad's (PBUH) Messengership and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "explain and apply the teaching respectfully",
+                "mock other people",
+                "memorise words only",
+                "ignore daily life"
               ],
               "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -4339,36 +5328,36 @@ export const P4_RE_TOPICS: Topic[] = [
     ],
     "quiz": [
       {
-        "q": "Unique Nature of Muhammad's (PBUH) Messengership should help a learner:",
+        "q": "Unique Nature of Prophet Muhammad's (PBUH) Messengership should help a learner:",
         "choices": [
-          "live with good Islamic conduct",
           "mock prayer",
-          "be careless",
-          "steal"
+          "choose to respect Prophet Muhammad (PBUH) and follow truthful, merciful conduct",
+          "be careless with worship",
+          "spread insults"
         ],
-        "correct": 0,
-        "why": "IRE should guide good conduct."
+        "correct": 1,
+        "why": "Prophet Muhammad’s (PBUH) messengership is central to Islamic teaching."
       },
       {
-        "q": "A good IRE answer should be:",
+        "q": "A good IRE answer should connect Islamic teaching to:",
         "choices": [
-          "respectful and clear",
-          "mocking",
-          "careless",
-          "full of insults"
+          "only noise",
+          "only money",
+          "daily life and good conduct",
+          "only roads"
         ],
-        "correct": 0,
-        "why": "Religious answers need respect."
+        "correct": 2,
+        "why": "IRE should connect Islamic teaching to daily life."
       },
       {
         "q": "When unsure about a religious practice, a learner should:",
         "choices": [
-          "ask a teacher or trusted adult",
           "guess carelessly",
           "mock it",
-          "ignore learning"
+          "ignore learning",
+          "ask a teacher or trusted adult"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Trusted guidance prevents mistakes."
       },
       {
@@ -4385,23 +5374,23 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Nature of Prophet Muhammad's (PBUH) messengership",
           "weather instruments only",
+          "Nature of Prophet Muhammad's (PBUH) messengership",
           "money conversion only",
           "road construction only"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Nature of Prophet Muhammad's (PBUH) messengership is part of the topic scope."
       },
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
           "hiding all mistakes",
+          "acting respectfully",
           "refusing peace"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -4411,7 +5400,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-ire",
     "themeName": "Islamic Religious Education",
     "title": "Conduct after Swalat",
-    "estMinutes": 24,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -4423,7 +5412,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Conduct after Swalat includes dua, adhkar and respectful remembrance of Allah.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Prayer topics require attention to cleanliness, order, humility and respect for worship.",
         "This topic includes: Dua for acquisition of knowledge.",
@@ -4438,7 +5427,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Conduct after Swalat by worshipping respectfully, keeping clean conduct, and treating other people well."
+        "answer": "A P4 learner can apply Conduct after Swalat by choosing to make dua, remember Allah and behave calmly after Swalat."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -4447,7 +5436,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Conduct after Swalat includes dua, adhkar and respectful remembrance of Allah.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Prayer topics require attention to cleanliness, order, humility and respect for worship."
       ]
@@ -4481,14 +5470,16 @@ export const P4_RE_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which belongs to Conduct after Swalat?",
               "choices": [
-                "Dua for acquisition of knowledge",
                 "A random mathematics formula",
                 "A road distance only",
-                "A weather graph only"
+                "A weather graph only",
+                "Dua for acquisition of knowledge"
               ],
-              "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "correct": 3,
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
           }
         ]
       },
@@ -4499,11 +5490,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-ire-conduct-after-swalat-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Islamic values through clean habits, respectful speech and good actions.",
+            "bigIdea": "Conduct after Swalat includes dua, adhkar and respectful remembrance of Allah.",
             "learnIt": [
-              "Use the lesson to make good choices at home, school and mosque.",
-              "Speak respectfully about Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
-              "Choose cleanliness, patience, truthfulness and respect where the topic calls for them."
+              "A learner can apply this topic by choosing to make dua, remember Allah and behave calmly after Swalat.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -4512,18 +5503,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Conduct after Swalat by worshipping respectfully, keeping clean conduct, and treating other people well."
+              "answer": "A P4 learner can apply Conduct after Swalat by choosing to make dua, remember Allah and behave calmly after Swalat."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "choose to make dua, remember Allah and behave calmly after Swalat",
+                "mock other people",
                 "spread quarrels",
                 "ignore good advice"
               ],
               "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-ire-conduct-after-swalat-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-ire-conduct-after-swalat-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness.",
+            "learnIt": [
+              "Name the main teaching in Conduct after Swalat.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about Allah, the Qur’an, prayer and Prophet Muhammad (PBUH)."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Conduct after Swalat can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Conduct after Swalat and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "explain and apply the teaching respectfully",
+                "memorise words only",
+                "ignore daily life"
+              ],
+              "correct": 1,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -4533,24 +5565,24 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Conduct after Swalat should help a learner:",
         "choices": [
-          "live with good Islamic conduct",
           "mock prayer",
-          "be careless",
-          "steal"
+          "be careless with worship",
+          "choose to make dua, remember Allah and behave calmly after Swalat",
+          "spread insults"
         ],
-        "correct": 0,
-        "why": "IRE should guide good conduct."
+        "correct": 2,
+        "why": "Conduct after Swalat includes dua, adhkar and respectful remembrance of Allah."
       },
       {
-        "q": "A good IRE answer should be:",
+        "q": "A good IRE answer should connect Islamic teaching to:",
         "choices": [
-          "respectful and clear",
-          "mocking",
-          "careless",
-          "full of insults"
+          "only noise",
+          "only money",
+          "only roads",
+          "daily life and good conduct"
         ],
-        "correct": 0,
-        "why": "Religious answers need respect."
+        "correct": 3,
+        "why": "IRE should connect Islamic teaching to daily life."
       },
       {
         "q": "When unsure about a religious practice, a learner should:",
@@ -4566,34 +5598,34 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "This topic includes Dua for acquisition of knowledge.",
         "choices": [
-          "True",
           "False",
+          "True",
           "Only for P7",
           "Only for Mathematics"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Dua for acquisition of knowledge is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Behaviour after Swalat",
           "weather instruments only",
           "money conversion only",
+          "Behaviour after Swalat",
           "road construction only"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Behaviour after Swalat is part of the topic scope."
       },
       {
         "q": "A learner shows good Religious Education learning by:",
         "choices": [
-          "acting respectfully",
           "insulting others",
           "hiding all mistakes",
-          "refusing peace"
+          "refusing peace",
+          "acting respectfully"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Religious Education should shape respectful conduct."
       }
     ]
@@ -4603,7 +5635,7 @@ export const P4_RE_TOPICS: Topic[] = [
     "themeId": "p4-ire",
     "themeName": "Islamic Religious Education",
     "title": "Dress and Cleanliness",
-    "estMinutes": 24,
+    "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -4615,7 +5647,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Answer simple P4 Religious Education questions in full sentences."
       ],
       "whatYouNeedToKnow": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Islam teaches cleanliness, purity and decent dress.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Cleanliness and decent conduct should be explained as part of worship and healthy daily life.",
         "This topic includes: Hadith concerning cleanliness.",
@@ -4630,7 +5662,7 @@ export const P4_RE_TOPICS: Topic[] = [
           "Choose a real school situation.",
           "Write one respectful action a learner can take."
         ],
-        "answer": "A P4 learner can apply Dress and Cleanliness by worshipping respectfully, keeping clean conduct, and treating other people well."
+        "answer": "A P4 learner can apply Dress and Cleanliness by choosing to keep clothes, body and worship places clean and decent."
       },
       "commonMistakes": [
         "Writing one-word answers without explanation.",
@@ -4639,7 +5671,7 @@ export const P4_RE_TOPICS: Topic[] = [
         "Treating this beta source as premium-final before the full standard P4 RE syllabus is checked."
       ],
       "recap": [
-        "This IRE topic should be studied respectfully using the Qur'an/Hadith where applicable, teacher guidance and daily-life examples.",
+        "Islam teaches cleanliness, purity and decent dress.",
         "Learners should use respectful wording for Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
         "Cleanliness and decent conduct should be explained as part of worship and healthy daily life."
       ]
@@ -4679,8 +5711,10 @@ export const P4_RE_TOPICS: Topic[] = [
                 "A weather graph only"
               ],
               "correct": 0,
-              "explanation": "The first choice is part of the mapped topic."
-            }
+              "explanation": "The correct choice is part of the mapped topic."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
           }
         ]
       },
@@ -4691,11 +5725,11 @@ export const P4_RE_TOPICS: Topic[] = [
           {
             "moduleId": "p4-ire-dress-cleanliness-life",
             "title": "Applying the lesson",
-            "bigIdea": "A learner should show Islamic values through clean habits, respectful speech and good actions.",
+            "bigIdea": "Islam teaches cleanliness, purity and decent dress.",
             "learnIt": [
-              "Use the lesson to make good choices at home, school and mosque.",
-              "Speak respectfully about Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).",
-              "Choose cleanliness, patience, truthfulness and respect where the topic calls for them."
+              "A learner can apply this topic by choosing to keep clothes, body and worship places clean and decent.",
+              "The answer should be respectful, practical and connected to daily life.",
+              "If the question is about worship or scripture, learners should ask a teacher or trusted adult for correct details."
             ],
             "workedExample": {
               "question": "Write one respectful action connected to this topic.",
@@ -4704,18 +5738,59 @@ export const P4_RE_TOPICS: Topic[] = [
                 "Think of home, school or community.",
                 "Write a practical action."
               ],
-              "answer": "A P4 learner can apply Dress and Cleanliness by worshipping respectfully, keeping clean conduct, and treating other people well."
+              "answer": "A P4 learner can apply Dress and Cleanliness by choosing to keep clothes, body and worship places clean and decent."
             },
             "tryThis": {
               "question": "The best way to apply Religious Education is to:",
               "choices": [
-                "do what is right respectfully",
-                "mock others",
+                "mock other people",
+                "choose to keep clothes, body and worship places clean and decent",
                 "spread quarrels",
                 "ignore good advice"
               ],
-              "correct": 0,
-              "explanation": "Religious Education should guide respectful good action."
+              "correct": 1,
+              "explanation": "This action applies the topic respectfully in daily life."
+            },
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-ire-dress-cleanliness-reasoning",
+        "title": "3. Reasoning and respectful application",
+        "modules": [
+          {
+            "moduleId": "p4-ire-dress-cleanliness-reasoning-module",
+            "title": "Reasoning and respectful application",
+            "bigIdea": "Religious Education should shape respectful thinking and daily conduct, not only memorisation.",
+            "imageUrl": "/images/re/p4-ire-quran-prayer-cleanliness.svg",
+            "imageCaption": "IRE Qur’an, prayer and cleanliness.",
+            "learnIt": [
+              "Name the main teaching in Dress and Cleanliness.",
+              "Explain the value behind the teaching in simple words.",
+              "Give one practical action a P4 learner can do at home, school or community.",
+              "Use respectful language about Allah, the Qur’an, prayer and Prophet Muhammad (PBUH)."
+            ],
+            "workedExample": {
+              "question": "Write two sentences showing how Dress and Cleanliness can guide a P4 learner.",
+              "steps": [
+                "Name the teaching.",
+                "Explain the value.",
+                "Give a practical respectful action."
+              ],
+              "answer": "A good answer explains Dress and Cleanliness and gives a respectful daily-life action."
+            },
+            "tryThis": {
+              "question": "A strong RE answer should:",
+              "choices": [
+                "mock other people",
+                "memorise words only",
+                "explain and apply the teaching respectfully",
+                "ignore daily life"
+              ],
+              "correct": 2,
+              "explanation": "A strong answer explains the teaching and applies it respectfully."
             }
           }
         ]
@@ -4725,56 +5800,56 @@ export const P4_RE_TOPICS: Topic[] = [
       {
         "q": "Dress and Cleanliness should help a learner:",
         "choices": [
-          "live with good Islamic conduct",
           "mock prayer",
-          "be careless",
-          "steal"
+          "be careless with worship",
+          "spread insults",
+          "choose to keep clothes, body and worship places clean and decent"
         ],
-        "correct": 0,
-        "why": "IRE should guide good conduct."
+        "correct": 3,
+        "why": "Islam teaches cleanliness, purity and decent dress."
       },
       {
-        "q": "A good IRE answer should be:",
+        "q": "A good IRE answer should connect Islamic teaching to:",
         "choices": [
-          "respectful and clear",
-          "mocking",
-          "careless",
-          "full of insults"
+          "daily life and good conduct",
+          "only noise",
+          "only money",
+          "only roads"
         ],
         "correct": 0,
-        "why": "Religious answers need respect."
+        "why": "IRE should connect Islamic teaching to daily life."
       },
       {
         "q": "When unsure about a religious practice, a learner should:",
         "choices": [
-          "ask a teacher or trusted adult",
           "guess carelessly",
+          "ask a teacher or trusted adult",
           "mock it",
           "ignore learning"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Trusted guidance prevents mistakes."
       },
       {
         "q": "This topic includes Hadith concerning cleanliness.",
         "choices": [
-          "True",
           "False",
           "Only for P7",
+          "True",
           "Only for Mathematics"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Hadith concerning cleanliness is listed in the NCDC/MoES P4 abridged map for this topic."
       },
       {
         "q": "Which is connected to this topic?",
         "choices": [
-          "Prophetic teaching on cleanliness",
           "weather instruments only",
           "money conversion only",
-          "road construction only"
+          "road construction only",
+          "Prophetic teaching on cleanliness"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Prophetic teaching on cleanliness is part of the topic scope."
       },
       {

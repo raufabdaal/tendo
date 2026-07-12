@@ -1,6 +1,37 @@
 import type { Topic } from "@/lib/topics";
 
-export const P6_SCIENCE_TOPICS: Topic[] = [
+
+function balanceTopicAnswers(topics: Topic[]): Topic[] {
+  let nextCorrectIndex = 0;
+
+  function visit(value: unknown): void {
+    if (Array.isArray(value)) {
+      value.forEach(visit);
+      return;
+    }
+    if (!value || typeof value !== "object") return;
+    const record = value as Record<string, unknown>;
+    if (Array.isArray(record.choices) && typeof record.correct === "number" && record.choices.length === 4) {
+      const choices = record.choices as string[];
+      const currentCorrect = record.correct;
+      if (currentCorrect >= 0 && currentCorrect < choices.length) {
+        const answer = choices[currentCorrect];
+        const remaining = choices.filter((_, index) => index !== currentCorrect);
+        const targetIndex = nextCorrectIndex % 4;
+        remaining.splice(targetIndex, 0, answer);
+        record.choices = remaining;
+        record.correct = targetIndex;
+        nextCorrectIndex += 1;
+      }
+    }
+    Object.values(record).forEach(visit);
+  }
+
+  visit(topics);
+  return topics;
+}
+
+const P6_SCIENCE_TOPICS_DATA: Topic[] = [
   {
     id: "p6-classification-living-things",
     themeId: "p6-science-living-things",
@@ -647,6 +678,8 @@ export const P6_SCIENCE_TOPICS: Topic[] = [
     ]
   }
 ];
+
+export const P6_SCIENCE_TOPICS: Topic[] = balanceTopicAnswers(P6_SCIENCE_TOPICS_DATA);
 
 export function getP6ScienceTopic(id: string): Topic | undefined {
   return P6_SCIENCE_TOPICS.find((topic) => topic.id === id);

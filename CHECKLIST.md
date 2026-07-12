@@ -15,6 +15,81 @@
 
 
 
+
+
+## Phase 30 — P4/P5 Visuals and Depth Pass Before P3
+- [x] Create local SVG visual assets for P4/P5 Math, Science and Social Studies
+- [x] Attach diagrams to P4 Math modules
+- [x] Attach diagrams to P4 Science modules
+- [x] Attach diagrams to P4 Social Studies modules
+- [x] Attach diagrams to P5 Math modules
+- [x] Attach diagrams to P5 Science modules
+- [x] Attach diagrams to P5 Social Studies modules
+- [x] Complete P5 Science visual attachment audit: all 9 topics have images
+- [x] Complete P5 Social Studies visual attachment audit: all 12 topics have images
+- [x] Deepen P4 Science Plant Life / Flowering Plants with flowers, fruits, seeds and germination modules
+- [x] Deepen thin P5 Mathematics topics with practical/application modules
+- [x] Build passed after visuals/depth changes (`npm run build`, 324 static pages)
+- [x] Fill additional P4 no-image topic gaps across Math, Science and Social Studies
+- [x] Build passed after additional visual gap fill (`npm run build`, 324 static pages)
+- [x] Build passed after P5 Science/SST visual coverage fix (`npm run build`, 324 static pages)
+- [x] Document visuals/depth pass (`docs/ops/p4-p5-visuals-depth-pass-2026-07-09.md`)
+- [x] Rebuild P5 Science to 3 modules per topic with visuals and practical applications
+- [x] Build passed after P5 Science full depth rebuild (`npm run build`, 324 static pages)
+- [x] Rebuild P5 Social Studies to 3 modules per topic with visuals and stronger reasoning
+- [x] Build passed after P5 Social Studies full depth rebuild (`npm run build`, 324 static pages)
+- [x] Deepen P5 Religious Education with visuals and third reasoning/application module per topic
+- [x] Build passed after P5 RE depth/visual upgrade (`npm run build`, 324 static pages)
+- [x] Deepen P4 English with visuals and third writing/speaking module per topic
+- [x] Deepen P4 RE with visuals and third reasoning/application module per topic
+- [x] Deepen P5 English with visuals and third writing/speaking module per topic
+- [x] Deepen P5 RE with visuals and third reasoning/exam-practice module per topic
+- [x] Build passed after English/RE depth upgrade (`npm run build`, 324 static pages)
+- [x] Run final P4/P5 module/image audit and close visuals/depth pass if clean
+- [x] Close Step 1 and Step 2 at AI-builder level
+- [ ] Start P3 NCDC research and curriculum mapping
+- [x] Visuals/depth pass intentionally closed before P3 research
+
+---
+
+## Phase 29 — P4 to P7 Review Pass Before Next Class
+- [x] Re-audit P4/P5/P6/P7 curriculum map topic IDs against app topic IDs
+- [x] Confirm zero missing top-level mapped topics across P4–P7
+- [x] Run build after dependency reinstall (`npm run build`, 324 static pages)
+- [x] Fix stale P5 Mathematics comment from draft to live beta
+- [x] Balance P4 quiz/try-this correct answer positions across A/B/C/D
+- [x] Build passed after P4 answer distribution fix (`npm run build`, 324 static pages)
+- [x] Document review pass (`docs/ops/p4-p7-live-beta-review-pass-2026-07-09.md`)
+- [x] Quick AI review P4 Mathematics arithmetic/readability
+- [x] Quick AI review P4 English language level/tone
+- [x] Deepen P4 Science with practical/health-safety application modules
+- [x] Quick AI review P4 Science health-sensitive wording
+- [x] Quick AI review P4 Social Studies district/civic wording
+- [x] Quick AI review and improve P4 RE respectful wording/source limitation
+- [x] Balance P5 quiz/try-this correct answer positions across A/B/C/D
+- [x] Build passed after P5 answer distribution fix (`npm run build`, 324 static pages)
+- [x] P5 English quality pass: replace generic examples in Letter Writing, Communication, Culture, Peace/Security and Banking
+- [x] Quick AI review P5 Science health/science-sensitive wording
+- [x] Quick AI review P5 Social Studies historical/civic wording
+- [x] Quick AI review and improve P5 RE respectful wording
+- [x] P5 AI-level quality pass complete; human review remains open
+- [x] Balance P6 quiz/try-this correct answer positions across A/B/C/D
+- [x] Quick AI review P6 Science health/science-sensitive wording
+- [x] Quick AI review P6 Social Studies historical/civic wording
+- [x] Quick AI review and fix P6 RE respectful Prophet Muhammad (PBUH) wording
+- [x] Build passed after P6 review fixes (`npm run build`, 324 static pages)
+- [x] P6 AI-level premium additions review complete; human review remains open
+- [x] Balance P7 quiz/try-this correct answer positions across A/B/C/D
+- [x] Quick AI review P7 Science health-sensitive wording
+- [x] Quick AI review P7 Social Studies historical/civic wording
+- [x] Quick AI review P7 RE respectful wording
+- [x] Build passed after P7 review fixes (`npm run build`, 324 static pages)
+- [x] P7 AI-level premium additions review complete; human review remains open
+- [x] P4–P7 AI-level review/improvement pass documented
+- [ ] Start next class only after founder approves moving from review to P3 research
+
+---
+
 ## Phase 28 — P4 Religious Education Live Beta and P4 Class Completion
 - [x] Build P4 Religious Education beta content from `content/curriculum/p4-re.json`
 - [x] Add P4 RE topic data (`app/lib/p4-re-topics.ts`)

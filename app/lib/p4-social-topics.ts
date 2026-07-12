@@ -103,7 +103,9 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "North is a compass direction."
-            }
+            },
+            "imageUrl": "/images/social-studies/p4-district-map-compass.svg",
+            "imageCaption": "District map skills: title, key and compass directions."
           }
         ]
       },
@@ -131,12 +133,12 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
             "tryThis": {
               "question": "A neighbouring district is one that:",
               "choices": [
-                "shares a boundary",
                 "is always across an ocean",
+                "shares a boundary",
                 "has no people",
                 "is a school building"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Neighbouring districts share boundaries."
             }
           }
@@ -147,23 +149,23 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
       {
         "q": "A map is:",
         "choices": [
-          "a drawing of a place from above",
           "a type of leader",
           "a food group",
+          "a drawing of a place from above",
           "a river only"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "A map shows places from above."
       },
       {
         "q": "Which is a compass direction?",
         "choices": [
-          "east",
           "behind",
           "near",
-          "market"
+          "market",
+          "east"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "East is a compass direction."
       },
       {
@@ -180,34 +182,34 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
       {
         "q": "A district is:",
         "choices": [
-          "an administrative area",
           "a tooth",
+          "an administrative area",
           "a crop pest",
           "a shop item"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "A district is an administrative area."
       },
       {
         "q": "A hospital is important because it provides:",
         "choices": [
-          "health services",
           "fuel only",
           "elections only",
+          "health services",
           "rain"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Hospitals provide health services."
       },
       {
         "q": "Neighbouring districts:",
         "choices": [
-          "share boundaries",
           "are always islands",
           "have no leaders",
-          "are inside one classroom"
+          "are inside one classroom",
+          "share boundaries"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Neighbours share boundaries."
       }
     ]
@@ -289,7 +291,9 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "A river is natural."
-            }
+            },
+            "imageUrl": "/images/social-studies/p4-physical-features-district.svg",
+            "imageCaption": "Physical features commonly found in districts."
           }
         ]
       },
@@ -319,12 +323,12 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
             "tryThis": {
               "question": "One solution to soil erosion is:",
               "choices": [
-                "planting trees",
                 "cutting all trees",
+                "planting trees",
                 "burning grass",
                 "digging everywhere"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Trees help hold soil."
             }
           }
@@ -335,23 +339,23 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
       {
         "q": "A physical feature is:",
         "choices": [
-          "natural",
           "always man-made",
           "a classroom object",
+          "natural",
           "a title"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Physical features are natural."
       },
       {
         "q": "Which is a physical feature?",
         "choices": [
-          "hill",
           "shop",
           "clinic",
-          "police post"
+          "police post",
+          "hill"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "A hill is natural."
       },
       {
@@ -368,34 +372,34 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
       {
         "q": "Floods can happen after:",
         "choices": [
-          "heavy rain",
           "brushing teeth",
+          "heavy rain",
           "voting",
           "reading"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Heavy rain may cause floods."
       },
       {
         "q": "Trees on hills help reduce:",
         "choices": [
-          "soil erosion",
           "tooth decay",
           "road signs",
+          "soil erosion",
           "school fees"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Roots hold soil."
       },
       {
         "q": "Wetlands should be:",
         "choices": [
-          "protected",
           "filled with rubbish",
           "burnt",
-          "ignored"
+          "ignored",
+          "protected"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Wetlands are useful ecosystems."
       }
     ]
@@ -477,7 +481,9 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "Vegetation is plant cover."
-            }
+            },
+            "imageUrl": "/images/social-studies/p4-vegetation-conservation.svg",
+            "imageCaption": "Vegetation types and conservation reminders."
           }
         ]
       },
@@ -506,12 +512,12 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which action conserves vegetation?",
               "choices": [
-                "planting trees",
                 "burning forests",
+                "planting trees",
                 "cutting all trees",
                 "dumping rubbish in wetlands"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Tree planting conserves vegetation."
             }
           }
@@ -522,23 +528,23 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
       {
         "q": "Vegetation means:",
         "choices": [
-          "plant cover",
           "money",
           "roads",
+          "plant cover",
           "weather symbols"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Vegetation is plant cover."
       },
       {
         "q": "A forest has many:",
         "choices": [
-          "trees",
           "cars",
           "desks",
-          "clocks"
+          "clocks",
+          "trees"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Forests have many trees."
       },
       {
@@ -555,34 +561,34 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
       {
         "q": "Tree roots help to:",
         "choices": [
-          "hold soil",
           "spoil water",
+          "hold soil",
           "make plastic",
           "measure time"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Roots reduce erosion."
       },
       {
         "q": "Which destroys vegetation?",
         "choices": [
-          "bush burning",
           "tree planting",
           "protecting forests",
+          "bush burning",
           "watering seedlings"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Bush burning can destroy plants."
       },
       {
         "q": "Conservation means:",
         "choices": [
-          "wise protection and use",
           "wasting resources",
           "burning all plants",
-          "ignoring plants"
+          "ignoring plants",
+          "wise protection and use"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Conservation protects resources."
       }
     ]
@@ -683,7 +689,9 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "Language and food are parts of culture."
-            }
+            },
+            "imageUrl": "/images/social-studies/p4-people-culture-services.svg",
+            "imageCaption": "People, culture and services in a district."
           }
         ]
       },
@@ -712,12 +720,12 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which is a social service?",
               "choices": [
-                "health care",
                 "a hill",
+                "health care",
                 "a swamp",
                 "a proverb only"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Health care is a social service."
             }
           }
@@ -728,23 +736,23 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
       {
         "q": "Culture includes:",
         "choices": [
-          "language, food and dress",
           "only maps",
           "only money",
+          "language, food and dress",
           "only teeth"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Culture is people's way of life."
       },
       {
         "q": "A school provides:",
         "choices": [
-          "education",
           "medicine only",
           "rain",
-          "fish only"
+          "fish only",
+          "education"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Schools provide education."
       },
       {
@@ -761,34 +769,34 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
       {
         "q": "People live peacefully when they:",
         "choices": [
-          "respect one another",
           "mock cultures",
+          "respect one another",
           "fight always",
           "steal"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Respect promotes peace."
       },
       {
         "q": "A district may have:",
         "choices": [
-          "many groups of people",
           "only one family",
           "no leaders",
+          "many groups of people",
           "no services"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Districts have many people."
       },
       {
         "q": "Cooperation means:",
         "choices": [
-          "working together",
           "hiding from others",
           "destroying services",
-          "refusing rules"
+          "refusing rules",
+          "working together"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Cooperation is working together."
       }
     ]
@@ -870,7 +878,9 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "Good leaders serve and guide."
-            }
+            },
+            "imageUrl": "/images/social-studies/p4-district-leaders-services.svg",
+            "imageCaption": "District leaders and services they help organise."
           }
         ]
       },
@@ -899,12 +909,12 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which is a good leader quality?",
               "choices": [
-                "honesty",
                 "greed",
+                "honesty",
                 "laziness",
                 "fighting"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Honesty is a good quality."
             }
           }
@@ -915,23 +925,23 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
       {
         "q": "A leader's work is to:",
         "choices": [
-          "guide and serve people",
           "steal public property",
           "spread diseases",
+          "guide and serve people",
           "destroy roads"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Leaders guide and serve."
       },
       {
         "q": "An elected leader is chosen by:",
         "choices": [
-          "voters",
           "rain",
           "mountains",
-          "teeth"
+          "teeth",
+          "voters"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Voters choose elected leaders."
       },
       {
@@ -948,34 +958,34 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
       {
         "q": "Citizens should:",
         "choices": [
-          "obey laws",
           "break laws",
+          "obey laws",
           "destroy property",
           "fight leaders"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Citizens have responsibilities."
       },
       {
         "q": "A school head teacher is a:",
         "choices": [
-          "school leader",
           "weather symbol",
           "physical feature",
+          "school leader",
           "crop pest"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Head teachers lead schools."
       },
       {
         "q": "Fairness means:",
         "choices": [
-          "treating people justly",
           "favouring only friends",
           "lying",
-          "hiding resources"
+          "hiding resources",
+          "treating people justly"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Fair leaders are just."
       }
     ]
@@ -1076,7 +1086,9 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "Water is needed for life."
-            }
+            },
+            "imageUrl": "/images/social-studies/p4-district-leaders-services.svg",
+            "imageCaption": "Services and work that help meet people’s needs in a district."
           }
         ]
       },
@@ -1105,12 +1117,12 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which service meets education needs?",
               "choices": [
-                "school",
                 "swamp",
+                "school",
                 "hill",
                 "forest"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Schools provide education."
             }
           }
@@ -1121,23 +1133,23 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
       {
         "q": "A basic need is:",
         "choices": [
-          "water",
           "a luxury toy",
           "extra sweets",
+          "water",
           "a decoration"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Water is necessary for life."
       },
       {
         "q": "Farming can provide:",
         "choices": [
-          "food and income",
           "weather symbols",
           "votes only",
-          "teeth"
+          "teeth",
+          "food and income"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Farming produces food and income."
       },
       {
@@ -1154,34 +1166,34 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
       {
         "q": "A health centre meets:",
         "choices": [
-          "health needs",
           "transport only",
+          "health needs",
           "vegetation only",
           "games only"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Health centres provide medical care."
       },
       {
         "q": "Community problems are solved better by:",
         "choices": [
-          "cooperation",
           "fighting",
           "destroying services",
+          "cooperation",
           "refusing meetings"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Cooperation helps problem solving."
       },
       {
         "q": "Roads help people to:",
         "choices": [
-          "move goods and reach services",
           "brush teeth",
           "make rain",
-          "grow hair"
+          "grow hair",
+          "move goods and reach services"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Roads support transport."
       }
     ]

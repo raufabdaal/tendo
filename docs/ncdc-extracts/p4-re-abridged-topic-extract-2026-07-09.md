@@ -75,3 +75,9 @@ Builder note:
 - Do not treat this as a premium-final RE source.
 - If P4 content is built from this map, mark it beta and keep a visible review requirement.
 - Continue searching for the full standard P4 CRE/IRE syllabus or official book scan.
+
+---
+
+## Display wording note
+
+For learner-facing content, the topic originally extracted as “Unique Nature of Muhammad's (PBUH) Messengership” is displayed as “Unique Nature of Prophet Muhammad's (PBUH) Messengership” for respectful clarity. The topic ID remains unchanged. The Night Journey topic is displayed as “Isra/Israi and Miraj” to preserve the source spelling while clarifying the common term.

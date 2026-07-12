@@ -1,6 +1,32 @@
 import type { Topic } from "@/lib/topics";
 
-export const CRE_TOPICS: Topic[] = [
+
+function balanceTopicAnswers(topics: Topic[]): Topic[] {
+  let nextCorrectIndex = 0;
+  function visit(value: unknown): void {
+    if (Array.isArray(value)) { value.forEach(visit); return; }
+    if (!value || typeof value !== "object") return;
+    const record = value as Record<string, unknown>;
+    if (Array.isArray(record.choices) && typeof record.correct === "number" && record.choices.length === 4) {
+      const choices = record.choices as string[];
+      const currentCorrect = record.correct;
+      if (currentCorrect >= 0 && currentCorrect < choices.length) {
+        const answer = choices[currentCorrect];
+        const remaining = choices.filter((_, index) => index !== currentCorrect);
+        const targetIndex = nextCorrectIndex % 4;
+        remaining.splice(targetIndex, 0, answer);
+        record.choices = remaining;
+        record.correct = targetIndex;
+        nextCorrectIndex += 1;
+      }
+    }
+    Object.values(record).forEach(visit);
+  }
+  visit(topics);
+  return topics;
+}
+
+const CRE_TOPICS_DATA: Topic[] = [
   {
     "id": "cre-theme-witnessing-gifts",
     "themeId": "cre-term-1",
@@ -843,7 +869,9 @@ export const CRE_TOPICS: Topic[] = [
   }
 ];
 
-export const IRE_TOPICS: Topic[] = [
+export const CRE_TOPICS: Topic[] = balanceTopicAnswers(CRE_TOPICS_DATA);
+
+const IRE_TOPICS_DATA: Topic[] = [
   {
     "id": "ire-tawhid-iman",
     "themeId": "ire-term-1",
@@ -1566,6 +1594,8 @@ export const IRE_TOPICS: Topic[] = [
     ]
   }
 ];
+
+export const IRE_TOPICS: Topic[] = balanceTopicAnswers(IRE_TOPICS_DATA);
 
 export const RE_TOPICS: Topic[] = [...CRE_TOPICS, ...IRE_TOPICS];
 

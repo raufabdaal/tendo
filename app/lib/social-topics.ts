@@ -1,6 +1,32 @@
 import type { Topic } from "@/lib/topics";
 
-export const SOCIAL_TOPICS: Topic[] = [
+
+function balanceTopicAnswers(topics: Topic[]): Topic[] {
+  let nextCorrectIndex = 0;
+  function visit(value: unknown): void {
+    if (Array.isArray(value)) { value.forEach(visit); return; }
+    if (!value || typeof value !== "object") return;
+    const record = value as Record<string, unknown>;
+    if (Array.isArray(record.choices) && typeof record.correct === "number" && record.choices.length === 4) {
+      const choices = record.choices as string[];
+      const currentCorrect = record.correct;
+      if (currentCorrect >= 0 && currentCorrect < choices.length) {
+        const answer = choices[currentCorrect];
+        const remaining = choices.filter((_, index) => index !== currentCorrect);
+        const targetIndex = nextCorrectIndex % 4;
+        remaining.splice(targetIndex, 0, answer);
+        record.choices = remaining;
+        record.correct = targetIndex;
+        nextCorrectIndex += 1;
+      }
+    }
+    Object.values(record).forEach(visit);
+  }
+  visit(topics);
+  return topics;
+}
+
+const SOCIAL_TOPICS_DATA: Topic[] = [
   {
     id: "location-of-africa",
     themeId: "sst-living-together-africa",
@@ -3591,6 +3617,8 @@ export const SOCIAL_TOPICS: Topic[] = [
     ],
   },
 ];
+
+export const SOCIAL_TOPICS: Topic[] = balanceTopicAnswers(SOCIAL_TOPICS_DATA);
 
 export function getSocialTopic(id: string): Topic | undefined {
   return SOCIAL_TOPICS.find((topic) => topic.id === id);

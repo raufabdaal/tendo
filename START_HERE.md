@@ -46,18 +46,20 @@ Reviewers are a second safety layer, not a replacement for our own quality work.
 6. **`docs/ops/primary-content-completion-roadmap-2026-07-09.md`** — content-first roadmap.
 7. **`docs/ops/content-corrections-workflow-2026-07-09.md`** — how to fix/restructure content safely.
 8. **`docs/ops/parent-dashboard-roi-roadmap-2026-07-09.md`** — parent dashboard direction.
+9. **`docs/ops/p4-p7-live-beta-review-pass-2026-07-09.md`** — review gate before the next class.
+10. **`docs/ops/p4-p5-visuals-depth-pass-2026-07-09.md`** — current visuals/depth pass before P3.
 
 ## You have 60 seconds. What's this project now?
 
 - **Primary user:** students.
 - **Paying customer:** premium parents/guardians who want academic ROI.
 - **Target commercial assumption:** families who can afford around **UGX 50,000/month** for a serious study product.
-- **Current priority:** complete and polish P7/P6/P5 beta content, while P4 begins carefully from verified maps. P4 is now live beta across all 5 app subjects. P4 RE is from NCDC/MoES abridged curriculum and remains beta until full standard-syllabus confirmation.
+- **Current priority:** start P3 NCDC research and curriculum mapping. P4/P5 visuals and depth pass is closed at AI-builder level. P4 RE remains beta from NCDC/MoES abridged curriculum until full standard-syllabus confirmation.
 - **Teacher dashboard:** useful but no longer central.
 - **Parent dashboard:** strategically important because the parent pays and needs visibility.
 - **Trainup status:** archived historical context. Do not treat Trainup as the active product path.
 - **Auth status:** local/device sign-in scaffolding only. Real backend authentication is a future task.
-- **P4 status:** English/Math/Science/SST/RE maps exist; P4 Math is verified from official NCDC PDF and live beta; P4 English is live beta from official NCDC syllabus; P4 Science is live beta from NCDC Integrated Science syllabus; P4 Social Studies is live beta from official NCDC syllabus; P4 RE is live beta from NCDC/MoES abridged curriculum; P4 RE is mapped from NCDC/MoES abridged curriculum and still needs full standard-syllabus confirmation.
+- **P4 status:** live beta across English/Math/Science/SST/RE. Math, English, Science and SST are from NCDC subject syllabi/maps; RE is from the NCDC/MoES abridged curriculum and still needs full standard-syllabus confirmation.
 
 ## Folder map
 

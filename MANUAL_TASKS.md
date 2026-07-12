@@ -5,23 +5,33 @@
 ---
 
 
+## MT-013 · Human review P4–P7 live beta before starting P3
+**Status:** Open · **Blocks:** Premium-final confidence and next-class expansion · **Estimated time:** Ongoing · **Cost:** Free if internal reviewers
+
+**Why:** P4 is now live beta across all five app subjects, and P5/P6/P7 are also live. Before starting P3, do a review pass so the product improves instead of only expanding downward.
+
+**Review order:**
+1. P4 — review Maths, English, Science, Social Studies and RE first because it was just completed.
+2. P5 — improve beta content quality, especially template-like English/Science/SST/RE sections.
+3. P6 — review premium additions for correctness and age-appropriateness.
+4. P7 — review premium additions with PLE correctness and parent ROI in mind.
+
+**Special note:** P4 RE is built from the NCDC/MoES Primary 4 Abridged Curriculum. Keep it beta until confirmed against the full standard P4 CRE/IRE syllabus or reviewed by qualified RE teachers.
+
+---
+
 ## MT-012 · Push current student-first/premium milestone when founder is ready
-**Status:** Waiting · **Blocks:** Remote/live update · **Estimated time:** 10–20 min · **Cost:** Free
+**Status:** Superseded / mostly done · **Blocks:** None if latest P4 deploy is live · **Estimated time:** 10–20 min · **Cost:** Free
 
-**Why:** The local workspace contains a large milestone bundle that has not yet been pushed: student-first pivot, premium parent strategy docs, role-based auth scaffold, UX declutter, teacher-set questions/manual marking, writing spaces, presentation data, and P7 Maths premium strengthening.
+**Why:** This older push task was created before the P4 live-beta completion milestone. The founder has since pushed/deployed enough that the current live app appears to be working. Keep this entry only as historical context.
 
-**Do not push until founder says they are ready.**
-
-**When ready, ask the agent for:**
+**Current push routine:** when a new major milestone is ready, ask the agent for:
 1. Files to overwrite.
 2. Files to add.
 3. Files to delete.
 4. Build status.
 5. Suggested commit message.
 6. Post-deploy smoke-test checklist.
-
-**Suggested commit message when ready:**
-`Student-first premium pivot, UX cleanup, teacher questions, P7 Maths premium pass`
 
 ---
 

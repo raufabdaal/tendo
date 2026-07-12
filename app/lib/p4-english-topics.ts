@@ -11,7 +11,7 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "themeId": "p4-english-transition",
     "themeName": "Primary Four English Transition Syllabus",
     "title": "Describing People and Objects",
-    "estMinutes": 34,
+    "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -101,7 +101,9 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "John is one person, so use is."
-            }
+            },
+            "imageUrl": "/images/english/p4-describing-adjectives.svg",
+            "imageCaption": "Describing words and complete sentences."
           }
         ]
       },
@@ -130,13 +132,54 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which word describes texture?",
               "choices": [
-                "rough",
                 "green",
+                "rough",
                 "round",
                 "heavy"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Rough tells how a surface feels."
+            },
+            "imageUrl": "/images/english/p4-describing-adjectives.svg",
+            "imageCaption": "Describing words and complete sentences."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-describing-people-objects-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p4-describing-people-objects-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p4-describing-adjectives.svg",
+            "imageCaption": "Describing words and complete sentences.",
+            "learnIt": [
+              "Use the words from Describing People and Objects in complete P4 sentences.",
+              "Say the sentence aloud first, then write it clearly.",
+              "Check capital letters, spacing and full stops.",
+              "If it is a dialogue or message, make it polite and easy to understand."
+            ],
+            "workedExample": {
+              "question": "Write three clear sentences or a short dialogue about describing people and objects.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer uses describing people and objects vocabulary in complete, polite sentences."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "random words",
+                "without punctuation",
+                "clear, complete and polite",
+                "copied without meaning"
+              ],
+              "correct": 2,
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -146,12 +189,12 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Which word describes appearance?",
         "choices": [
-          "tall",
           "quickly",
           "yesterday",
-          "under"
+          "under",
+          "tall"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Tall describes how someone looks."
       },
       {
@@ -168,34 +211,34 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Which is a superlative?",
         "choices": [
-          "tallest",
           "taller",
+          "tallest",
           "tall",
           "more tall"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Tallest compares three or more."
       },
       {
         "q": "Which word describes shape?",
         "choices": [
-          "round",
           "kind",
           "polite",
+          "round",
           "late"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Round is a shape word."
       },
       {
         "q": "Complete: My bag ___ heavy.",
         "choices": [
-          "is",
           "are",
           "am",
-          "were"
+          "were",
+          "is"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Bag is one object, so use is."
       },
       {
@@ -216,7 +259,7 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "themeId": "p4-english-transition",
     "themeName": "Primary Four English Transition Syllabus",
     "title": "Giving Directions",
-    "estMinutes": 32,
+    "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -300,14 +343,16 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which word shows position?",
               "choices": [
-                "behind",
                 "eating",
+                "behind",
                 "beautiful",
                 "slowly"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Behind tells where something is."
-            }
+            },
+            "imageUrl": "/images/english/p4-giving-directions.svg",
+            "imageCaption": "Direction words and route writing."
           }
         ]
       },
@@ -336,13 +381,54 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which is polite?",
               "choices": [
-                "Please turn left at the signpost.",
                 "Move!",
                 "You there, go!",
+                "Please turn left at the signpost.",
                 "Left now."
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "Please makes the direction polite."
+            },
+            "imageUrl": "/images/english/p4-giving-directions.svg",
+            "imageCaption": "Direction words and route writing."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-giving-directions-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p4-giving-directions-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p4-giving-directions.svg",
+            "imageCaption": "Direction words and route writing.",
+            "learnIt": [
+              "Use the words from Giving Directions in complete P4 sentences.",
+              "Say the sentence aloud first, then write it clearly.",
+              "Check capital letters, spacing and full stops.",
+              "If it is a dialogue or message, make it polite and easy to understand."
+            ],
+            "workedExample": {
+              "question": "Write three clear sentences or a short dialogue about giving directions.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer uses giving directions vocabulary in complete, polite sentences."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "random words",
+                "without punctuation",
+                "copied without meaning",
+                "clear, complete and polite"
+              ],
+              "correct": 3,
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -363,34 +449,34 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Complete: The clinic is ___ the school.",
         "choices": [
-          "opposite",
           "polite",
+          "opposite",
           "round",
           "heavy"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Opposite tells position."
       },
       {
         "q": "A good route should start with:",
         "choices": [
-          "a starting point",
           "the last step",
           "a joke",
+          "a starting point",
           "only the destination"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "The listener needs to know where to begin."
       },
       {
         "q": "Which sentence is an instruction?",
         "choices": [
-          "Turn right at the tree.",
           "The tree is tall.",
           "I like mangoes.",
-          "Yesterday was hot."
+          "Yesterday was hot.",
+          "Turn right at the tree."
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Turn right gives an instruction."
       },
       {
@@ -407,12 +493,12 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "What punctuation ends a question asking for directions?",
         "choices": [
-          "?",
           ".",
+          "?",
           ",",
           "!"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "A question mark ends a question."
       }
     ]
@@ -422,7 +508,7 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "themeId": "p4-english-transition",
     "themeName": "Primary Four English Transition Syllabus",
     "title": "What I Like and How I Feel",
-    "estMinutes": 30,
+    "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -505,14 +591,16 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Complete: I ___ reading story books.",
               "choices": [
-                "enjoy",
                 "enjoys",
                 "enjoying",
+                "enjoy",
                 "enjoyed are"
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "Use enjoy after I in the present simple."
-            }
+            },
+            "imageUrl": "/images/english/p4-feelings-preferences.svg",
+            "imageCaption": "Likes, preferences and feelings."
           }
         ]
       },
@@ -540,13 +628,54 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which is a feeling word?",
               "choices": [
-                "worried",
                 "football",
                 "market",
-                "yellow"
+                "yellow",
+                "worried"
+              ],
+              "correct": 3,
+              "explanation": "Worried is a feeling."
+            },
+            "imageUrl": "/images/english/p4-feelings-preferences.svg",
+            "imageCaption": "Likes, preferences and feelings."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-likes-feelings-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p4-likes-feelings-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p4-feelings-preferences.svg",
+            "imageCaption": "Likes, preferences and feelings.",
+            "learnIt": [
+              "Use the words from What I Like and How I Feel in complete P4 sentences.",
+              "Say the sentence aloud first, then write it clearly.",
+              "Check capital letters, spacing and full stops.",
+              "If it is a dialogue or message, make it polite and easy to understand."
+            ],
+            "workedExample": {
+              "question": "Write three clear sentences or a short dialogue about what i like and how i feel.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer uses what i like and how i feel vocabulary in complete, polite sentences."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "clear, complete and polite",
+                "random words",
+                "without punctuation",
+                "copied without meaning"
               ],
               "correct": 0,
-              "explanation": "Worried is a feeling."
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -556,34 +685,34 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Complete: I ___ swimming.",
         "choices": [
-          "like",
           "likes",
+          "like",
           "liking",
           "liked is"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Use like after I."
       },
       {
         "q": "Which is a feeling?",
         "choices": [
-          "happy",
           "matooke",
           "classroom",
+          "happy",
           "round"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Happy is a feeling."
       },
       {
         "q": "Why do we use because?",
         "choices": [
-          "to give a reason",
           "to name a person",
           "to count objects",
-          "to make a plural"
+          "to make a plural",
+          "to give a reason"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Because introduces a reason."
       },
       {
@@ -600,23 +729,23 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Which sentence is correct?",
         "choices": [
-          "I prefer music to dance.",
           "I prefers music to dance.",
+          "I prefer music to dance.",
           "I prefer music than dance.",
           "Prefer I music."
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Prefer goes with I and can use to."
       },
       {
         "q": "Favourite means:",
         "choices": [
-          "liked most",
           "hated most",
           "very heavy",
+          "liked most",
           "near"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Favourite is what someone likes most."
       }
     ]
@@ -626,7 +755,7 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "themeId": "p4-english-transition",
     "themeName": "Primary Four English Transition Syllabus",
     "title": "Behaviour",
-    "estMinutes": 30,
+    "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -709,14 +838,16 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which is good behaviour?",
               "choices": [
-                "helping a friend",
                 "stealing a pen",
                 "fighting",
-                "telling lies"
+                "telling lies",
+                "helping a friend"
               ],
-              "correct": 0,
+              "correct": 3,
               "explanation": "Helping is good behaviour."
-            }
+            },
+            "imageUrl": "/images/english/p4-behaviour-advice.svg",
+            "imageCaption": "Behaviour and advice language."
           }
         ]
       },
@@ -752,6 +883,47 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "Should gives advice."
+            },
+            "imageUrl": "/images/english/p4-behaviour-advice.svg",
+            "imageCaption": "Behaviour and advice language."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-behaviour-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p4-behaviour-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p4-behaviour-advice.svg",
+            "imageCaption": "Behaviour and advice language.",
+            "learnIt": [
+              "Use the words from Behaviour in complete P4 sentences.",
+              "Say the sentence aloud first, then write it clearly.",
+              "Check capital letters, spacing and full stops.",
+              "If it is a dialogue or message, make it polite and easy to understand."
+            ],
+            "workedExample": {
+              "question": "Write three clear sentences or a short dialogue about behaviour.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer uses behaviour vocabulary in complete, polite sentences."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "random words",
+                "clear, complete and polite",
+                "without punctuation",
+                "copied without meaning"
+              ],
+              "correct": 1,
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -761,23 +933,23 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Behaviour means:",
         "choices": [
-          "how a person acts",
           "how tall a person is",
           "a colour",
+          "how a person acts",
           "a direction"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Behaviour is action or conduct."
       },
       {
         "q": "Which is bad behaviour?",
         "choices": [
-          "fighting",
           "sharing",
           "helping",
-          "greeting"
+          "greeting",
+          "fighting"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Fighting is bad behaviour."
       },
       {
@@ -794,34 +966,34 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Must not means:",
         "choices": [
-          "forbidden",
           "allowed always",
+          "forbidden",
           "past time",
           "a place"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Must not tells us not to do something."
       },
       {
         "q": "Honesty means:",
         "choices": [
-          "telling the truth",
           "being tall",
           "being near",
+          "telling the truth",
           "running fast"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Honesty is truthfulness."
       },
       {
         "q": "Which sentence is polite advice?",
         "choices": [
-          "You should say sorry.",
           "You bad child!",
           "Go away!",
-          "Wrong you!"
+          "Wrong you!",
+          "You should say sorry."
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Should gives polite advice."
       }
     ]
@@ -831,7 +1003,7 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "themeId": "p4-english-transition",
     "themeName": "Primary Four English Transition Syllabus",
     "title": "Buying and Selling",
-    "estMinutes": 32,
+    "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -921,7 +1093,9 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "A shopkeeper sells goods."
-            }
+            },
+            "imageUrl": "/images/english/p4-buying-selling-dialogue.svg",
+            "imageCaption": "Buying and selling dialogue language."
           }
         ]
       },
@@ -950,13 +1124,54 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which is polite?",
               "choices": [
-                "Please give me a pencil.",
                 "Give me now!",
+                "Please give me a pencil.",
                 "You seller!",
                 "Pencil here."
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Please makes the request polite."
+            },
+            "imageUrl": "/images/english/p4-buying-selling-dialogue.svg",
+            "imageCaption": "Buying and selling dialogue language."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-buying-selling-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p4-buying-selling-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p4-buying-selling-dialogue.svg",
+            "imageCaption": "Buying and selling dialogue language.",
+            "learnIt": [
+              "Use the words from Buying and Selling in complete P4 sentences.",
+              "Say the sentence aloud first, then write it clearly.",
+              "Check capital letters, spacing and full stops.",
+              "If it is a dialogue or message, make it polite and easy to understand."
+            ],
+            "workedExample": {
+              "question": "Write three clear sentences or a short dialogue about buying and selling.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer uses buying and selling vocabulary in complete, polite sentences."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "random words",
+                "without punctuation",
+                "clear, complete and polite",
+                "copied without meaning"
+              ],
+              "correct": 2,
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -966,12 +1181,12 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "A person who buys is a:",
         "choices": [
-          "buyer",
           "seller",
           "driver",
-          "teacher"
+          "teacher",
+          "buyer"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "A buyer buys."
       },
       {
@@ -988,34 +1203,34 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Which question asks for price?",
         "choices": [
-          "How much is this book?",
           "Where is the book?",
+          "How much is this book?",
           "Who is the book?",
           "Why book?"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "How much asks price."
       },
       {
         "q": "Which word is polite?",
         "choices": [
-          "please",
           "grab",
           "shout",
+          "please",
           "rough"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Please is polite."
       },
       {
         "q": "A customer is:",
         "choices": [
-          "a buyer of goods or services",
           "a vehicle part",
           "a direction",
-          "a shape"
+          "a shape",
+          "a buyer of goods or services"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Customers buy goods or services."
       },
       {
@@ -1036,7 +1251,7 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "themeId": "p4-english-transition",
     "themeName": "Primary Four English Transition Syllabus",
     "title": "Time",
-    "estMinutes": 32,
+    "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -1119,14 +1334,16 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which verb is past simple?",
               "choices": [
-                "played",
                 "playing",
+                "played",
                 "plays",
                 "play"
               ],
-              "correct": 0,
+              "correct": 1,
               "explanation": "Played shows past time."
-            }
+            },
+            "imageUrl": "/images/english/p4-time-tenses.svg",
+            "imageCaption": "Past and future time expressions."
           }
         ]
       },
@@ -1154,13 +1371,54 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Complete: I ___ sweeping the compound.",
               "choices": [
-                "was",
                 "were",
                 "am",
+                "was",
                 "are"
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "Use was with I in past continuous."
+            },
+            "imageUrl": "/images/english/p4-time-tenses.svg",
+            "imageCaption": "Past and future time expressions."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-time-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p4-time-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p4-time-tenses.svg",
+            "imageCaption": "Past and future time expressions.",
+            "learnIt": [
+              "Use the words from Time in complete P4 sentences.",
+              "Say the sentence aloud first, then write it clearly.",
+              "Check capital letters, spacing and full stops.",
+              "If it is a dialogue or message, make it polite and easy to understand."
+            ],
+            "workedExample": {
+              "question": "Write three clear sentences or a short dialogue about time.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer uses time vocabulary in complete, polite sentences."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "random words",
+                "without punctuation",
+                "copied without meaning",
+                "clear, complete and polite"
+              ],
+              "correct": 3,
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -1181,34 +1439,34 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Complete: We ___ playing netball.",
         "choices": [
-          "were",
           "was",
+          "were",
           "is",
           "am"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Use were with we."
       },
       {
         "q": "Complete: He ___ reading.",
         "choices": [
-          "was",
           "were",
           "are",
+          "was",
           "am"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Use was with he."
       },
       {
         "q": "Yesterday is a:",
         "choices": [
-          "past time expression",
           "future word",
           "direction word",
-          "price word"
+          "price word",
+          "past time expression"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Yesterday shows past time."
       },
       {
@@ -1225,12 +1483,12 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Past continuous uses:",
         "choices": [
-          "was/were + -ing",
           "will + verb",
+          "was/were + -ing",
           "has + noun",
           "many + price"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Past continuous is formed with was/were and -ing."
       }
     ]
@@ -1240,7 +1498,7 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "themeId": "p4-english-transition",
     "themeName": "Primary Four English Transition Syllabus",
     "title": "Expression of the Future",
-    "estMinutes": 30,
+    "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -1322,14 +1580,16 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "Which is future?",
               "choices": [
-                "I will sweep later.",
                 "I swept yesterday.",
                 "I am sweeping now.",
+                "I will sweep later.",
                 "I sweep daily."
               ],
-              "correct": 0,
+              "correct": 2,
               "explanation": "Will and later show future time."
-            }
+            },
+            "imageUrl": "/images/english/p4-time-tenses.svg",
+            "imageCaption": "Past and future time expressions."
           }
         ]
       },
@@ -1358,13 +1618,54 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "A study plan should be:",
               "choices": [
-                "clear and realistic",
                 "confusing",
                 "without time",
-                "only drawings"
+                "only drawings",
+                "clear and realistic"
+              ],
+              "correct": 3,
+              "explanation": "A useful plan is clear and realistic."
+            },
+            "imageUrl": "/images/english/p4-time-tenses.svg",
+            "imageCaption": "Past and future time expressions."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-future-expression-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p4-future-expression-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p4-time-tenses.svg",
+            "imageCaption": "Past and future time expressions.",
+            "learnIt": [
+              "Use the words from Expression of the Future in complete P4 sentences.",
+              "Say the sentence aloud first, then write it clearly.",
+              "Check capital letters, spacing and full stops.",
+              "If it is a dialogue or message, make it polite and easy to understand."
+            ],
+            "workedExample": {
+              "question": "Write three clear sentences or a short dialogue about expression of the future.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer uses expression of the future vocabulary in complete, polite sentences."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "clear, complete and polite",
+                "random words",
+                "without punctuation",
+                "copied without meaning"
               ],
               "correct": 0,
-              "explanation": "A useful plan is clear and realistic."
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -1374,34 +1675,34 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Which word shows future time?",
         "choices": [
-          "tomorrow",
           "yesterday",
+          "tomorrow",
           "last week",
           "ago"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Tomorrow is future time."
       },
       {
         "q": "Complete: I ___ help my sister later.",
         "choices": [
-          "will",
           "was",
           "were",
+          "will",
           "went"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Will marks future action."
       },
       {
         "q": "Correct sentence:",
         "choices": [
-          "We are going to play.",
           "We going play.",
           "We is going to play.",
-          "We are go to played."
+          "We are go to played.",
+          "We are going to play."
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Going to uses are with we."
       },
       {
@@ -1418,23 +1719,23 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Future actions:",
         "choices": [
-          "have not happened yet",
           "already happened",
+          "have not happened yet",
           "are always yesterday",
           "never use verbs"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Future means later."
       },
       {
         "q": "Complete: He is going ___ read.",
         "choices": [
-          "to",
           "too",
           "two",
+          "to",
           "at"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Going to is the correct phrase."
       }
     ]
@@ -1444,7 +1745,7 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "themeId": "p4-english-transition",
     "themeName": "Primary Four English Transition Syllabus",
     "title": "Democracy",
-    "estMinutes": 32,
+    "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
     "note": {
@@ -1526,14 +1827,16 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
             "tryThis": {
               "question": "What does vote mean?",
               "choices": [
-                "show a choice",
                 "run very fast",
                 "buy goods",
-                "draw a shape"
+                "draw a shape",
+                "show a choice"
               ],
-              "correct": 0,
+              "correct": 3,
               "explanation": "A vote shows a choice."
-            }
+            },
+            "imageUrl": "/images/english/p4-democracy-election.svg",
+            "imageCaption": "Democracy, voting and fair play words."
           }
         ]
       },
@@ -1569,6 +1872,47 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
               ],
               "correct": 0,
               "explanation": "Fair play means following rules and respecting others."
+            },
+            "imageUrl": "/images/english/p4-democracy-election.svg",
+            "imageCaption": "Democracy, voting and fair play words."
+          }
+        ]
+      },
+      {
+        "subtopicId": "p4-democracy-practice",
+        "title": "3. Writing and speaking practice",
+        "modules": [
+          {
+            "moduleId": "p4-democracy-writing-speaking-module",
+            "title": "Writing and speaking practice",
+            "bigIdea": "English becomes useful when learners practise real communication, not only definitions.",
+            "imageUrl": "/images/english/p4-democracy-election.svg",
+            "imageCaption": "Democracy, voting and fair play words.",
+            "learnIt": [
+              "Use the words from Democracy in complete P4 sentences.",
+              "Say the sentence aloud first, then write it clearly.",
+              "Check capital letters, spacing and full stops.",
+              "If it is a dialogue or message, make it polite and easy to understand."
+            ],
+            "workedExample": {
+              "question": "Write three clear sentences or a short dialogue about democracy.",
+              "steps": [
+                "Choose the audience and purpose.",
+                "Use the topic vocabulary.",
+                "Write complete sentences and check punctuation."
+              ],
+              "answer": "A good answer uses democracy vocabulary in complete, polite sentences."
+            },
+            "tryThis": {
+              "question": "A strong English answer should be:",
+              "choices": [
+                "random words",
+                "clear, complete and polite",
+                "without punctuation",
+                "copied without meaning"
+              ],
+              "correct": 1,
+              "explanation": "Clear complete writing shows understanding."
             }
           }
         ]
@@ -1578,23 +1922,23 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Democracy involves:",
         "choices": [
-          "choice and participation",
           "only fighting",
           "no rules",
+          "choice and participation",
           "stealing"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "Democracy includes choice and participation."
       },
       {
         "q": "A candidate is:",
         "choices": [
-          "a person who wants to be chosen",
           "a shop item",
           "a direction",
-          "a shape"
+          "a shape",
+          "a person who wants to be chosen"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "A candidate stands for selection."
       },
       {
@@ -1611,34 +1955,34 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
       {
         "q": "Fair play means:",
         "choices": [
-          "following rules",
           "cheating",
+          "following rules",
           "shouting",
           "hiding the ball"
         ],
-        "correct": 0,
+        "correct": 1,
         "why": "Fair play follows rules."
       },
       {
         "q": "MDD stands for:",
         "choices": [
-          "Music, Dance and Drama",
           "Market, Door and Desk",
           "Money, Date and Day",
+          "Music, Dance and Drama",
           "Map, Direction and Distance"
         ],
-        "correct": 0,
+        "correct": 2,
         "why": "MDD means Music, Dance and Drama."
       },
       {
         "q": "A good leader should:",
         "choices": [
-          "serve people",
           "cheat people",
           "ignore rules",
-          "insult others"
+          "insult others",
+          "serve people"
         ],
-        "correct": 0,
+        "correct": 3,
         "why": "Good leaders serve and respect people."
       }
     ]

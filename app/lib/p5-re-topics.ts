@@ -30,12 +30,15 @@ type Seed = {
 };
 
 function makeTopic(seed: Seed): Topic {
+  const meaningModules = seed.modules.slice(0, 1).map((m) => moduleToContent(m, seed));
+  const applicationModules = seed.modules.slice(1).map((m) => moduleToContent(m, seed));
+
   return {
     id: seed.id,
     themeId: seed.option === "CRE" ? "p5-cre" : "p5-ire",
     themeName: seed.theme,
     title: seed.title,
-    estMinutes: seed.minutes,
+    estMinutes: Math.max(seed.minutes, 32),
     status: "published",
     reviewStatus: "beta",
     note: {
@@ -49,27 +52,130 @@ function makeTopic(seed: Seed): Topic {
       {
         subtopicId: `${seed.id}-meaning`,
         title: "1. Meaning and key teaching",
-        modules: seed.modules.slice(0, 1).map(moduleToContent),
+        modules: meaningModules,
       },
       {
         subtopicId: `${seed.id}-application`,
         title: "2. Daily-life application",
-        modules: seed.modules.slice(1).map(moduleToContent),
+        modules: applicationModules,
+      },
+      {
+        subtopicId: `${seed.id}-reasoning`,
+        title: "3. Reasoning and exam practice",
+        modules: [reasoningModule(seed)],
       },
     ],
     quiz: seed.quiz.map((item) => ({ ...item, correct: 0 })),
   };
 }
 
-function moduleToContent(m: Seed["modules"][number]) {
+function imageForSeed(seed: Seed): { imageUrl: string; imageCaption: string } {
+  if (seed.option === "CRE") {
+    if (/church|witness/i.test(seed.title)) {
+      return { imageUrl: "/images/re/p5-cre-church-community.svg", imageCaption: "Christian community, worship, witness and service." };
+    }
+    if (/discipleship|relationship|hope|spirit/i.test(seed.title)) {
+      return { imageUrl: "/images/re/p5-cre-discipleship-hope.svg", imageCaption: "Discipleship, relationship with God and hope." };
+    }
+    return { imageUrl: "/images/re/p5-cre-faith-values.svg", imageCaption: "Faith and Christian values in daily life." };
+  }
+
+  if (/surat|surah|kauthar|zilzala/i.test(seed.title)) {
+    return { imageUrl: "/images/re/p5-ire-surahs-quran.svg", imageCaption: "Surah recitation, meaning and daily lessons." };
+  }
+  if (/fasting|tarawiih|idd|madina|last days/i.test(seed.title)) {
+    return { imageUrl: "/images/re/p5-ire-worship-prayer.svg", imageCaption: "Islamic worship, prayer and disciplined conduct." };
+  }
+  return { imageUrl: "/images/re/p5-ire-akhlaq-values.svg", imageCaption: "Islamic values, accountability and good conduct." };
+}
+
+function moduleToContent(m: Seed["modules"][number], seed: Seed) {
+  const image = imageForSeed(seed);
   return {
     moduleId: m.id,
     title: m.title,
     bigIdea: m.bigIdea,
+    imageUrl: image.imageUrl,
+    imageCaption: image.imageCaption,
     learnIt: m.learn,
     workedExample: { question: m.question, steps: m.steps, answer: m.answer },
     tryThis: { question: m.tryQ, choices: m.choices, correct: 0, explanation: m.explanation },
   };
+}
+
+function reasoningModule(seed: Seed) {
+  const image = imageForSeed(seed);
+  const faithWord = seed.option === "CRE" ? "Christian" : "Muslim";
+  const sourceWord = seed.option === "CRE" ? "Bible teaching and Christian values" : "Qur'an/Hadith teaching and Islamic values";
+  const respectfulReminder = seed.option === "CRE"
+    ? "Use respectful language about God, Jesus, the Church and other people."
+    : "Use respectful language about Allah, the Qur'an, prayer and Prophet Muhammad (PBUH).";
+
+  return {
+    moduleId: `${seed.id}-reasoning-module`,
+    title: "Reasoning and exam-style application",
+    bigIdea: `${seed.title} should help a learner explain a belief and then apply it in a real-life situation.`,
+    imageUrl: image.imageUrl,
+    imageCaption: image.imageCaption,
+    learnIt: [
+      `A strong ${faithWord} Religious Education answer does not stop at naming a term; it explains the value behind it.`,
+      `Connect the answer to ${sourceWord}, then show how a learner can practise it at home, school or in the community.`,
+      respectfulReminder,
+      "Use full sentences: name the teaching, explain it, and give a practical example.",
+    ],
+    workedExample: {
+      question: `Write a two-sentence answer showing how ${seed.title} can guide a P5 learner at school.`,
+      steps: [
+        "Start by naming the main teaching from the topic.",
+        "Add one school action that shows the teaching in practice.",
+        "Keep the tone respectful and specific.",
+      ],
+      answer: `${seed.know[0]} At school, a learner can show this by choosing honest, respectful and helpful behaviour.`,
+    },
+    tryThis: {
+      question: `Which answer best applies ${seed.title} in daily life?`,
+      choices: [
+        "Use the teaching to act honestly and respectfully.",
+        "Ignore the teaching after the lesson.",
+        "Mock people who believe differently.",
+        "Use the topic only to memorise words without changing behaviour.",
+      ],
+      correct: 0,
+      explanation: "Religious Education should guide respectful conduct, not just memorisation.",
+    },
+  };
+}
+
+function balanceTopicAnswers(topics: Topic[]): Topic[] {
+  let nextCorrectIndex = 0;
+
+  function visit(value: unknown): void {
+    if (Array.isArray(value)) {
+      value.forEach(visit);
+      return;
+    }
+    if (!value || typeof value !== "object") return;
+
+    const record = value as Record<string, unknown>;
+    if (Array.isArray(record.choices) && typeof record.correct === "number" && record.choices.length === 4) {
+      const choices = record.choices as string[];
+      const currentCorrect = record.correct;
+      if (currentCorrect >= 0 && currentCorrect < choices.length) {
+        const answer = choices[currentCorrect];
+        const remaining = choices.filter((_, index) => index !== currentCorrect);
+        const targetIndex = nextCorrectIndex % 4;
+        remaining.splice(targetIndex, 0, answer);
+        record.choices = remaining;
+        record.correct = targetIndex;
+        nextCorrectIndex += 1;
+      }
+    }
+
+    Object.values(record).forEach(visit);
+  }
+
+  visit(topics);
+  return topics;
 }
 
 const CRE_SEEDS: Seed[] = [
@@ -104,7 +210,7 @@ const CRE_SEEDS: Seed[] = [
     minutes: 26,
     intro: "Learners compare Christianity and Islam respectfully and learn to live peacefully with people of different faiths.",
     objectives: ["Name key beliefs/practices in Christianity and Islam.", "Identify similarities and differences respectfully.", "Explain why respect between religions is important."],
-    know: ["Christians worship God and follow Jesus Christ.", "Muslims worship Allah and follow the teachings of Prophet Muhammad.", "Both religions teach prayer, respect, charity and good conduct."],
+    know: ["Christians worship God and follow Jesus Christ.", "Muslims worship Allah and follow the teachings of Prophet Muhammad (PBUH).", "Both religions teach prayer, respect, charity and good conduct."],
     worked: { problem: "Give one similarity between Christianity and Islam.", steps: ["Think of what both faiths teach.", "Both teach prayer and respect for God.", "Write respectfully."], answer: "Both Christianity and Islam teach prayer and respect for God." },
     modules: [
       { id: "christianity-islam-basics", title: "Basic Similarities and Differences", bigIdea: "A respectful answer names facts without insulting either religion.", learn: ["Christians worship in churches and Muslims worship in mosques.", "Christians read the Bible and Muslims read the Qur'an.", "Both faiths encourage prayer, honesty, respect and charity."], question: "Name a holy book used in Christianity and one used in Islam.", steps: ["Christianity uses the Bible.", "Islam uses the Qur'an."], answer: "Christians use the Bible and Muslims use the Qur'an.", tryQ: "Muslims worship in a:", choices: ["mosque", "church only", "court", "market"], explanation: "A mosque is a Muslim place of worship." },
@@ -402,12 +508,12 @@ const IRE_SEEDS: Seed[] = [
     id: "p5-ire-prophet-madina",
     option: "IRE",
     theme: "Islamic Religious Education",
-    title: "Prophet Muhammad at Madina",
+    title: "Prophet Muhammad (PBUH) at Madina",
     minutes: 26,
     intro: "Learners study the Prophet's life in Madina and lessons on leadership, unity and community building.",
     objectives: ["Describe the Prophet's life in Madina.", "Explain community lessons from Madina.", "Apply lessons of leadership and cooperation."],
-    know: ["The Hijrah was the migration from Makkah to Madina.", "In Madina, Muslims built a community based on faith, brotherhood and cooperation.", "Prophet Muhammad showed leadership, kindness, justice and patience."],
-    worked: { problem: "Give one lesson from Prophet Muhammad's life in Madina.", steps: ["He built a united community.", "He promoted cooperation and justice."], answer: "Muslims learn to cooperate and live peacefully in the community." },
+    know: ["The Hijrah was the migration from Makkah to Madina.", "In Madina, Muslims built a community based on faith, brotherhood and cooperation.", "Prophet Muhammad (PBUH) showed leadership, kindness, justice and patience."],
+    worked: { problem: "Give one lesson from Prophet Muhammad (PBUH)'s life in Madina.", steps: ["He built a united community.", "He promoted cooperation and justice."], answer: "Muslims learn to cooperate and live peacefully in the community." },
     modules: [
       { id: "hijrah-madina", title: "Hijrah and Life in Madina", bigIdea: "Madina became an important centre of Muslim community life.", learn: ["Hijrah means migration from Makkah to Madina.", "Muslims in Madina built brotherhood and cooperation.", "The Prophet guided the community with justice and kindness."], question: "What was the Hijrah?", steps: ["It was a migration.", "It was from Makkah to Madina."], answer: "Hijrah was the migration from Makkah to Madina." , tryQ: "Hijrah was from:", choices: ["Makkah to Madina", "Uganda to Kenya", "Rome to Egypt", "Madinah to London"], explanation: "Hijrah refers to migration from Makkah to Madina." },
       { id: "madina-lessons", title: "Lessons from Madina", bigIdea: "Madina teaches leadership, unity and peaceful community life.", learn: ["The Prophet encouraged cooperation between Muslims.", "He showed fairness in leadership.", "Learners can apply these lessons through teamwork and respect."], question: "How can learners practise unity?", steps: ["They can work together.", "They can respect classmates and avoid quarrels."], answer: "Learners practise unity by cooperating and respecting one another." , tryQ: "Which value is shown by community cooperation?", choices: ["unity", "hatred", "cheating", "greed"], explanation: "Cooperation supports unity." },
@@ -519,16 +625,16 @@ const IRE_SEEDS: Seed[] = [
     theme: "Islamic Religious Education",
     title: "Last Days of Prophet Muhammad (PBUH)",
     minutes: 26,
-    intro: "Learners study the last days of Prophet Muhammad and the lessons from his life.",
+    intro: "Learners study the last days of Prophet Muhammad (PBUH) and the lessons from his life.",
     objectives: ["Describe the sickness and death of the Prophet respectfully.", "State lessons from his life.", "Apply values such as trustworthiness, kindness and patience."],
-    know: ["Prophet Muhammad's life teaches truthfulness, trustworthiness, kindness, patience and leadership.", "His final days remind Muslims to remain faithful and united.", "Learners should speak about the Prophet respectfully."],
-    worked: { problem: "Give two lessons from Prophet Muhammad's life.", steps: ["Think of his character.", "He was truthful and trustworthy.", "He was kind and patient."], answer: "Muslims learn truthfulness, trustworthiness, kindness and patience from his life." },
+    know: ["Prophet Muhammad (PBUH)'s life teaches truthfulness, trustworthiness, kindness, patience and leadership.", "His final days remind Muslims to remain faithful and united.", "Learners should speak about the Prophet respectfully."],
+    worked: { problem: "Give two lessons from Prophet Muhammad (PBUH)'s life.", steps: ["Think of his character.", "He was truthful and trustworthy.", "He was kind and patient."], answer: "Muslims learn truthfulness, trustworthiness, kindness and patience from his life." },
     modules: [
-      { id: "last-days", title: "Last Days and Respect", bigIdea: "The Prophet's final days are studied with respect and focus on lessons for life.", learn: ["Muslims speak respectfully about Prophet Muhammad.", "His sickness and death were important events for the Muslim community.", "The community had to remain faithful and united."], question: "How should learners speak about Prophet Muhammad?", steps: ["He is highly respected in Islam.", "Use respectful language."], answer: "Learners should speak about him respectfully." , tryQ: "The Prophet should be spoken about with:", choices: ["respect", "mockery", "insults", "carelessness"], explanation: "Respect is required." },
+      { id: "last-days", title: "Last Days and Respect", bigIdea: "The Prophet's final days are studied with respect and focus on lessons for life.", learn: ["Muslims speak respectfully about Prophet Muhammad (PBUH).", "His sickness and death were important events for the Muslim community.", "The community had to remain faithful and united."], question: "How should learners speak about Prophet Muhammad?", steps: ["He is highly respected in Islam.", "Use respectful language."], answer: "Learners should speak about him respectfully." , tryQ: "The Prophet should be spoken about with:", choices: ["respect", "mockery", "insults", "carelessness"], explanation: "Respect is required." },
       { id: "lessons-prophet-life", title: "Lessons from the Prophet's Life", bigIdea: "The Prophet's life gives moral lessons for daily conduct.", learn: ["He was known for truthfulness and trustworthiness.", "He showed kindness and patience.", "He demonstrated leadership and concern for the community."], question: "How can a learner practise trustworthiness?", steps: ["A trustworthy person can be relied on.", "At school, this means telling the truth and keeping promises."], answer: "A learner practises trustworthiness by telling the truth and keeping promises." , tryQ: "Which value is learnt from the Prophet's life?", choices: ["truthfulness", "lying", "cruelty", "stealing"], explanation: "Truthfulness is a key lesson." },
     ],
     quiz: [
-      { q: "Prophet Muhammad should be spoken about with:", choices: ["respect", "mockery", "insults", "carelessness"], why: "Respect is required." },
+      { q: "Prophet Muhammad (PBUH) should be spoken about with:", choices: ["respect", "mockery", "insults", "carelessness"], why: "Respect is required." },
       { q: "One lesson from his life is:", choices: ["truthfulness", "lying", "cheating", "cruelty"], why: "He taught and showed truthfulness." },
       { q: "Trustworthiness means:", choices: ["being reliable", "stealing", "lying", "breaking promises"], why: "A trustworthy person can be relied on." },
       { q: "Which value did the Prophet show?", choices: ["kindness", "hatred", "greed", "dishonesty"], why: "Kindness is a lesson from his life." },
@@ -538,9 +644,9 @@ const IRE_SEEDS: Seed[] = [
   },
 ];
 
-export const P5_RE_TOPICS: Topic[] = [...CRE_SEEDS, ...IRE_SEEDS].map(makeTopic);
-export const P5_CRE_TOPICS: Topic[] = CRE_SEEDS.map(makeTopic);
-export const P5_IRE_TOPICS: Topic[] = IRE_SEEDS.map(makeTopic);
+export const P5_RE_TOPICS: Topic[] = balanceTopicAnswers([...CRE_SEEDS, ...IRE_SEEDS].map(makeTopic));
+export const P5_CRE_TOPICS: Topic[] = balanceTopicAnswers(CRE_SEEDS.map(makeTopic));
+export const P5_IRE_TOPICS: Topic[] = balanceTopicAnswers(IRE_SEEDS.map(makeTopic));
 
 export function getP5ReTopic(id: string): Topic | undefined {
   return P5_RE_TOPICS.find((topic) => topic.id === id);

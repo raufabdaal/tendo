@@ -41,7 +41,7 @@ Reviewers are a second safety layer, not a replacement for our own quality work.
 Build Tendo as a **premium parent-funded, student-first app**. Content quality is now the product. Parent ROI matters more than teacher-dashboard expansion. Trainup/school-first work is archived.
 
 ### Active milestone
-**P4 Live Beta Complete + P5–P7 Live Beta Curriculum Alignment/Review**.
+**P3 NCDC research and curriculum mapping**.
 
 Current state of the milestone:
 - P7 content exists in all subjects.
@@ -58,18 +58,16 @@ Current state of the milestone:
 - P5 Mathematics, English, Science, Social Studies and Religious Education are now live beta: P5 sign-in, `/p5-home`, and all P5 subject routes are active. They are marked beta, not draft.
 - P4 curriculum research has started: English, Science, SST and RE maps exist; P4 Mathematics has been verified and corrected against the official NCDC P4 Mathematics PDF; P4 RE is mapped from the NCDC/MoES Primary 4 Abridged Curriculum but still needs a full standard P4 RE syllabus check. P4 is now live beta across all 5 app subjects: Mathematics, English, Integrated Science, Social Studies and Religious Education. P4 RE is from the NCDC/MoES abridged source and remains beta until full standard P4 CRE/IRE syllabus confirmation.
 - Curriculum alignment audit now shows zero missing top-level topics across P5, P6 and P7.
-- Next content work should prepare the milestone push package when founder says ready, or do a P4 review pass across all 5 live beta subjects if there is time before pushing.
+- Next content work should begin P3 NCDC research and curriculum mapping. Do not build P3 routes before official/reliable curriculum maps exist.
 
 ### Immediate next tasks
-1. Review upgraded P7 Maths topics for correctness and tone.
-2. Review P7 English premium additions for tone/correctness.
-3. Review P7 Science premium additions for scientific accuracy and health-sensitive wording.
-4. Review P7 Social Studies for history balance and map/answer clarity.
-5. Review P7 Religious Education for respectful wording and faith accuracy.
-6. Review P4 Mathematics beta for correctness/readability, P4 English beta for language level/tone, P4 Science beta for scientific accuracy and health-sensitive wording, P4 Social Studies beta for local-district fit/civic balance, and P4 RE beta for respectful faith wording/source limitations.
-7. Continue P4 RE research by finding the full standard P4 CRE/IRE syllabus; current `p4-re.json` is from the NCDC/MoES abridged curriculum and P4 RE must stay beta until confirmed.
-8. Keep documentation updated after each subject/research pass.
-9. Do not expand teacher dashboard unless it directly supports parent ROI or learner progress.
+1. Continue Step 1: complete P4/P5 visuals/diagram attachments for Math, Science and SST.
+2. Continue Step 2: P5 Math, Science, Social Studies and Religious Education are deepened; run final P4/P5 module/image audit and close the pass if clean.
+3. Only after Step 2 is intentionally closed, start Step 3: P3 NCDC research and curriculum mapping.
+4. Continue P4 RE research by finding the full standard P4 CRE/IRE syllabus; current `p4-re.json` is from the NCDC/MoES abridged curriculum and P4 RE must stay beta until confirmed.
+5. Keep documentation updated after each subject/research pass.
+6. Do not expand teacher dashboard unless it directly supports parent ROI or learner progress.
+7. Do not build P3 routes before P3 maps exist.
 
 ### Push status
 Current local workspace includes a large unpushed milestone bundle. Founder has not pushed yet. When founder says “ready to push”, provide:

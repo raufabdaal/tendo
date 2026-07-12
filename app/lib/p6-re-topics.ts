@@ -1,6 +1,37 @@
 import type { Topic } from "@/lib/topics";
 
-export const P6_RE_TOPICS: Topic[] = [
+
+function balanceTopicAnswers(topics: Topic[]): Topic[] {
+  let nextCorrectIndex = 0;
+
+  function visit(value: unknown): void {
+    if (Array.isArray(value)) {
+      value.forEach(visit);
+      return;
+    }
+    if (!value || typeof value !== "object") return;
+    const record = value as Record<string, unknown>;
+    if (Array.isArray(record.choices) && typeof record.correct === "number" && record.choices.length === 4) {
+      const choices = record.choices as string[];
+      const currentCorrect = record.correct;
+      if (currentCorrect >= 0 && currentCorrect < choices.length) {
+        const answer = choices[currentCorrect];
+        const remaining = choices.filter((_, index) => index !== currentCorrect);
+        const targetIndex = nextCorrectIndex % 4;
+        remaining.splice(targetIndex, 0, answer);
+        record.choices = remaining;
+        record.correct = targetIndex;
+        nextCorrectIndex += 1;
+      }
+    }
+    Object.values(record).forEach(visit);
+  }
+
+  visit(topics);
+  return topics;
+}
+
+const P6_RE_TOPICS_DATA: Topic[] = [
   // ──────────────────────── PART I: CRE ────────────────────────
   {
     id: "p6-cre-gods-family",
@@ -584,15 +615,15 @@ export const P6_RE_TOPICS: Topic[] = [
     id: "p6-ire-prophet-makkah",
     themeId: "p6-ire",
     themeName: "IRE · Primary Six",
-    title: "Life of Prophet Muhammad in Makkah",
+    title: "Life of Prophet Muhammad (PBUH) in Makkah",
     estMinutes: 25,
     status: "published",
     reviewStatus: "verified",
     note: {
-      intro: "Why this matters: Prophet Muhammad's early dawah in Makkah models immense patience under persecution and unwavering commitment to truth and moral integrity.",
+      intro: "Why this matters: Prophet Muhammad (PBUH)'s early dawah in Makkah models immense patience under persecution and unwavering commitment to truth and moral integrity.",
       learningObjectives: [
         "Describe early secret and open dawah in Makkah and patience under Quraysh persecution.",
-        "Explain exemplary ethics of Prophet Muhammad (Al-Amin - The Trustworthy, As-Sadiq - The Truthful)."
+        "Explain exemplary ethics of Prophet Muhammad (PBUH) (Al-Amin - The Trustworthy, As-Sadiq - The Truthful)."
       ],
       whatYouNeedToKnow: [
         "For three years, the Prophet preached secretly to close family and friends (Khadijah, Abu Bakr, Ali, Zayd).",
@@ -656,7 +687,7 @@ export const P6_RE_TOPICS: Topic[] = [
               "Ethics: Hadith teaches that a true believer is one from whose tongue and hand others are safe."
             ],
             workedExample: {
-              question: "What does the title 'Al-Amin' given to Prophet Muhammad mean in English?",
+              question: "What does the title 'Al-Amin' given to Prophet Muhammad (PBUH) mean in English?",
               steps: [
                 "Recall Arabic root for trust/Amanah.",
                 "Translate Al-Amin = The Trustworthy."
@@ -675,28 +706,30 @@ export const P6_RE_TOPICS: Topic[] = [
     
       ,{
         subtopicId: "premium-premium-practice-prophet-muhammad-in-makkah",
-        title: "Premium Practice: Prophet Muhammad in Makkah",
+        title: "Premium Practice: Prophet Muhammad (PBUH) in Makkah",
         modules: [{
           moduleId: "learning-from-early-dawah",
           title: "Learning from Early Dawah",
           bigIdea: "Seerah answers connect events to character lessons.",
-          learnIt: ["Prophet Muhammad was known as Al-Amin, the trustworthy.", "Early Muslims faced hardship in Makkah but remained patient.", "Learners can learn truthfulness, patience, courage and trust in Allah."],
+          learnIt: ["Prophet Muhammad (PBUH) was known as Al-Amin, the trustworthy.", "Early Muslims faced hardship in Makkah but remained patient.", "Learners can learn truthfulness, patience, courage and trust in Allah."],
           workedExample: { question: "What lesson comes from the title Al-Amin?", steps: ["Al-Amin means trustworthy.", "Trustworthy people tell the truth and keep promises.", "Apply it to school life."], answer: "Learners should be truthful and trustworthy." },
           tryThis: { question: "Al-Amin means:", choices: ["the trustworthy", "the rich", "the traveller", "the writer only"], correct: 0, explanation: "Al-Amin means trustworthy." }
         }]
       }],
     quiz: [
-      { q: "What title meaning 'The Trustworthy' did Makkans give Prophet Muhammad before prophethood?", choices: ["Al-Amin", "Al-Farooq", "As-Siddiq", "Saifullah"], correct: 0, why: "Al-Amin reflects his spotless trustworthiness." },
-      { q: "For how many years did Prophet Muhammad preach Islam secretly in Makkah before preaching openly?", choices: ["Three years", "Ten years", "One year", "Five years"], correct: 0, why: "Secret dawah lasted three years." },
+      { q: "What title meaning 'The Trustworthy' did Makkans give Prophet Muhammad (PBUH) before prophethood?", choices: ["Al-Amin", "Al-Farooq", "As-Siddiq", "Saifullah"], correct: 0, why: "Al-Amin reflects his spotless trustworthiness." },
+      { q: "For how many years did Prophet Muhammad (PBUH) preach Islam secretly in Makkah before preaching openly?", choices: ["Three years", "Ten years", "One year", "Five years"], correct: 0, why: "Secret dawah lasted three years." },
       { q: "At which hill in Makkah did the Prophet publicly assemble the Quraysh clans to announce Islam?", choices: ["Mount Safa", "Mount Uhud", "Mount Sinai", "Mount Judi"], correct: 0, why: "He proclaimed open monotheism from Mount Safa." },
       { q: "Who was the first close adult male companion to accept Islam outside the Prophet's household?", choices: ["Abu Bakr As-Siddiq (RA)", "Umar ibn Al-Khattab (RA)", "Uthman ibn Affan (RA)", "Hamza (RA)"], correct: 0, why: "Abu Bakr accepted Islam without hesitation." },
-      { q: "How did Prophet Muhammad respond when Quraysh leaders offered him wealth to abandon preaching Islam?", choices: ["He firmly rejected their offers, remaining devoted to Allah's mission", "He took the money and stopped", "He ran away to Egypt", "He agreed to worship idols on weekends"], correct: 0, why: "No material wealth could compromise his prophetic duty." },
-      { q: "Which title meaning 'The Truthful' was given to Prophet Muhammad due to his honesty?", choices: ["As-Sadiq", "Al-Ghani", "Al-Malik", "An-Noor"], correct: 0, why: "As-Sadiq honors his truthfulness." },
+      { q: "How did Prophet Muhammad (PBUH) respond when Quraysh leaders offered him wealth to abandon preaching Islam?", choices: ["He firmly rejected their offers, remaining devoted to Allah's mission", "He took the money and stopped", "He ran away to Egypt", "He agreed to worship idols on weekends"], correct: 0, why: "No material wealth could compromise his prophetic duty." },
+      { q: "Which title meaning 'The Truthful' was given to Prophet Muhammad (PBUH) due to his honesty?", choices: ["As-Sadiq", "Al-Ghani", "Al-Malik", "An-Noor"], correct: 0, why: "As-Sadiq honors his truthfulness." },
       { q: "What lesson do modern P6 learners gain from early Muslims persecuted in Makkah?", choices: ["Patience (Sabr), steadfast faith, and moral courage during hardship", "Revenge and hatred", "Fear and cowardice", "Cheating to escape"], correct: 0, why: "Sabr under trial is a hallmark of true faith." },
       { q: "Whose house served as the first secret educational center for early Muslims in Makkah?", choices: ["Dar al-Arqam (House of Al-Arqam)", "Dar al-Nadwa", "Kaaba courtyard", "Palace of Abu Jahl"], correct: 0, why: "Al-Arqam opened his home for early Quranic instruction." }
     ]
   }
 ];
+
+export const P6_RE_TOPICS: Topic[] = balanceTopicAnswers(P6_RE_TOPICS_DATA);
 
 export function getP6ReTopic(id: string): Topic | undefined {
   return P6_RE_TOPICS.find((topic) => topic.id === id);
