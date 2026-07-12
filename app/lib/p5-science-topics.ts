@@ -119,6 +119,567 @@ const P5_POULTRY_BREEDS_V4: UpperPrimaryLesson = {
   ],
 };
 
+const P5_DIGESTIVE_SYSTEM_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-digestion-meaning-pathway",
+    classLevel: "P5",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "The Digestive System",
+    subTopicTitle: "Meaning and Food Pathway",
+    lessonTitle: "Meaning and Food Pathway",
+    blocks: [
+      { kind: "definition", term: "digestion", definition: "is the process by which food is broken down into simpler soluble substances that the body can use.", simpleCheck: "Chewing food into smaller pieces is the beginning of digestion." },
+      { kind: "categories", title: "Main parts of the digestive system", categories: [
+        { name: "Mouth", definition: "where digestion begins; teeth chew food and saliva moistens it", examples: ["teeth", "tongue", "saliva"] },
+        { name: "Oesophagus", definition: "the tube that carries swallowed food from the mouth to the stomach", examples: ["food pipe"] },
+        { name: "Stomach", definition: "a muscular bag that churns food and mixes it with digestive juices", examples: ["churning", "temporary food storage"] },
+        { name: "Small intestine", definition: "where most digestion ends and useful digested food is absorbed", examples: ["absorption of nutrients"] },
+        { name: "Large intestine", definition: "where water is absorbed from undigested food", examples: ["formation of faeces"] },
+        { name: "Rectum and anus", definition: "parts that store and remove faeces from the body", examples: ["egestion"] },
+      ] },
+      { kind: "diagram", title: "Digestive system diagram", imageUrl: "/images/science/p5-digestive-system-simple.svg", caption: "The food pathway through the digestive system.", labels: ["mouth", "oesophagus", "stomach", "small intestine", "large intestine", "anus"] },
+      { kind: "characteristics", title: "Food pathway", points: ["Food enters the mouth.", "Teeth chew food into small pieces.", "Saliva moistens food and starts digestion of starch.", "Food passes through the oesophagus to the stomach.", "Food is churned in the stomach.", "Useful digested food is absorbed in the small intestine.", "Water is absorbed in the large intestine.", "Waste leaves the body through the anus." ] },
+      { kind: "worked-example", question: "Why is chewing important in digestion?", steps: ["Chewing breaks food into smaller pieces.", "Small pieces mix better with saliva and digestive juices.", "This makes digestion easier."], answer: "Chewing helps break food into small pieces so digestion becomes easier." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is digestion?", answer: "Breaking food into simpler soluble substances the body can use." },
+        { type: "short-answer", prompt: "Name four parts of the digestive system.", answer: "Mouth, oesophagus, stomach, small intestine, large intestine, rectum or anus." },
+        { type: "multiple-choice", prompt: "Where does digestion begin?", choices: ["mouth", "foot", "ear", "hand"], answer: "mouth" },
+      ] },
+    ],
+  },
+  {
+    id: "p5-v4-teeth-saliva-digestion",
+    classLevel: "P5",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "The Digestive System",
+    subTopicTitle: "Teeth, Saliva and Digestion",
+    lessonTitle: "Teeth, Saliva and Digestion",
+    blocks: [
+      { kind: "definition", term: "saliva", definition: "is a liquid produced in the mouth that moistens food and starts digestion of starch.", simpleCheck: "Dry food becomes easier to swallow when mixed with saliva." },
+      { kind: "categories", title: "Mouth parts and their roles", categories: [
+        { name: "Teeth", definition: "break food into small pieces by biting, tearing, crushing and grinding", examples: ["incisors", "canines", "premolars", "molars"] },
+        { name: "Tongue", definition: "mixes food with saliva and helps push food for swallowing", examples: ["tasting", "mixing", "swallowing"] },
+        { name: "Saliva", definition: "moistens food and begins chemical digestion of starch", examples: ["softening food", "making swallowing easier"] },
+      ] },
+      { kind: "characteristics", title: "Mechanical and chemical digestion", points: ["Mechanical digestion is physical breaking of food into smaller pieces, such as chewing.", "Chemical digestion uses digestive juices to change food into simpler substances.", "Teeth mainly help mechanical digestion.", "Saliva begins chemical digestion in the mouth." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is saliva?", answer: "A liquid in the mouth that moistens food and starts digestion of starch." },
+        { type: "short-answer", prompt: "Give two functions of the tongue during digestion.", answer: "Mixes food with saliva and helps swallowing." },
+        { type: "multiple-choice", prompt: "Which liquid moistens food in the mouth?", choices: ["saliva", "urine", "sweat", "blood"], answer: "saliva" },
+      ] },
+    ],
+  },
+  {
+    id: "p5-v4-care-digestive-system",
+    classLevel: "P5",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "The Digestive System",
+    subTopicTitle: "Care of the Digestive System",
+    lessonTitle: "Care of the Digestive System",
+    blocks: [
+      { kind: "definition", term: "care of the digestive system", definition: "means doing healthy things that help digestion and prevent stomach diseases.", simpleCheck: "Eating clean food and drinking safe water helps care for the digestive system." },
+      { kind: "categories", title: "Healthy digestion habits", categories: [
+        { name: "Balanced diet", definition: "eating foods from different food groups in the right amounts", examples: ["energy foods", "body-building foods", "protective foods", "water"] },
+        { name: "Food hygiene", definition: "keeping food clean and safe from germs", examples: ["wash hands", "cover food", "wash fruits", "use clean utensils"] },
+        { name: "Safe water", definition: "water that is clean enough to drink", examples: ["boiled water", "treated water", "protected water source"] },
+        { name: "Good eating habits", definition: "ways of eating that help digestion", examples: ["chew food well", "eat enough fibre", "avoid too much junk food"] },
+      ] },
+      { kind: "characteristics", title: "Diseases and problems to prevent", points: ["Diarrhoea can come from dirty food or unsafe water.", "Constipation can happen when a person eats too little fibre or drinks too little water.", "Worms can enter through dirty hands, contaminated food or bare feet in contaminated soil.", "Stomach pain should be reported to an adult or health worker." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Give four ways to care for the digestive system.", answer: "Eat a balanced diet, wash hands, drink safe water, chew food well, eat fibre and avoid dirty food." },
+        { type: "short-answer", prompt: "Why should food be covered?", answer: "To keep away flies, dust and germs." },
+        { type: "multiple-choice", prompt: "Which food habit is good?", choices: ["eating clean food", "drinking dirty water", "eating spoiled food", "not washing hands"], answer: "eating clean food" },
+      ] },
+    ],
+  },
+];
+
+const P5_SOIL_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-soil-components",
+    classLevel: "P5",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Components of the Environment: Soil",
+    subTopicTitle: "Components of Soil",
+    lessonTitle: "Components of Soil",
+    blocks: [
+      { kind: "definition", term: "soil", definition: "is the top layer of the earth where many plants grow.", simpleCheck: "Garden crops grow in soil because soil supports roots and provides water and mineral salts." },
+      { kind: "categories", title: "Components of soil", categories: [
+        { name: "Mineral particles", definition: "small pieces of rock that make up soil", examples: ["sand", "silt", "clay"] },
+        { name: "Humus", definition: "dead plant and animal matter in soil", examples: ["rotting leaves", "decayed grass", "manure"] },
+        { name: "Air", definition: "gas found in spaces between soil particles", examples: ["needed by roots and soil organisms"] },
+        { name: "Water", definition: "moisture held in soil spaces", examples: ["water for plant roots"] },
+        { name: "Living organisms", definition: "small living things in soil", examples: ["earthworms", "bacteria", "fungi", "insects"] },
+      ] },
+      { kind: "diagram", title: "Soil layers and components", imageUrl: "/images/science/p5-soil-layers.svg", caption: "Soil contains mineral particles, humus, air, water and living organisms.", labels: ["humus", "sand", "clay", "air", "water", "organisms"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is soil?", answer: "The top layer of the earth where many plants grow." },
+        { type: "short-answer", prompt: "Name five components of soil.", answer: "Mineral particles, humus, air, water and living organisms." },
+        { type: "multiple-choice", prompt: "Dead plant and animal matter in soil is called:", choices: ["humus", "plastic", "glass", "smoke"], answer: "humus" },
+      ] },
+    ],
+  },
+  {
+    id: "p5-v4-soil-types-properties",
+    classLevel: "P5",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Components of the Environment: Soil",
+    subTopicTitle: "Types of Soil and Properties",
+    lessonTitle: "Types of Soil and Properties",
+    blocks: [
+      { kind: "definition", term: "soil type", definition: "is a group of soil with similar particles, texture and water-holding ability.", simpleCheck: "Sandy soil feels different from clay soil because its particles are larger." },
+      { kind: "categories", title: "Types of soil", categories: [
+        { name: "Sandy soil", definition: "soil with large loose particles and large air spaces", examples: ["lets water pass quickly", "not very sticky", "less fertile unless improved"] },
+        { name: "Clay soil", definition: "soil with very fine particles and small air spaces", examples: ["holds water", "sticky when wet", "hard when dry"] },
+        { name: "Loam soil", definition: "a mixture of sand, clay, silt and humus", examples: ["fertile", "holds some water", "good for many crops"] },
+      ] },
+      { kind: "characteristics", title: "Properties to compare", points: ["Texture: how soil feels.", "Water retention: how much water soil holds.", "Drainage: how fast water passes through soil.", "Air spaces: spaces between particles.", "Fertility: how well soil supports plant growth." ] },
+      { kind: "worked-example", question: "Which soil is usually best for crop growing and why?", steps: ["Loam contains sand, clay and humus.", "It holds enough water but also drains fairly well.", "Humus provides nutrients for plants."], answer: "Loam soil is usually best because it is fertile and holds enough water without becoming waterlogged." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Name three types of soil.", answer: "Sandy, clay and loam soil." },
+        { type: "short-answer", prompt: "State two properties of clay soil.", answer: "Fine particles, sticky when wet, holds water, hard when dry." },
+        { type: "multiple-choice", prompt: "Which soil is usually best for growing crops?", choices: ["loam", "glass", "plastic", "ash only"], answer: "loam" },
+      ] },
+    ],
+  },
+  {
+    id: "p5-v4-soil-erosion-conservation",
+    classLevel: "P5",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Components of the Environment: Soil",
+    subTopicTitle: "Soil Erosion and Conservation",
+    lessonTitle: "Soil Erosion and Conservation",
+    blocks: [
+      { kind: "definition", term: "soil erosion", definition: "is the removal of topsoil by water, wind, animals or human activities.", simpleCheck: "Rainwater carrying away garden soil is soil erosion." },
+      { kind: "definition", term: "soil conservation", definition: "is protecting soil from being washed or blown away and keeping it useful for plant growth.", simpleCheck: "Planting grass on bare soil helps conserve soil." },
+      { kind: "categories", title: "Causes and prevention", categories: [
+        { name: "Causes of erosion", definition: "things that remove topsoil", examples: ["running water", "wind", "overgrazing", "deforestation", "poor farming"] },
+        { name: "Effects of erosion", definition: "problems caused when topsoil is removed", examples: ["poor crop growth", "bare land", "silt in rivers", "gullies"] },
+        { name: "Conservation methods", definition: "ways of protecting soil", examples: ["mulching", "terracing", "contour ploughing", "planting trees", "cover crops"] },
+      ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is soil erosion?", answer: "Removal of topsoil by water, wind, animals or human activities." },
+        { type: "short-answer", prompt: "Give three ways of conserving soil.", answer: "Mulching, terracing, contour ploughing, planting trees/grass or cover crops." },
+        { type: "multiple-choice", prompt: "Which practice conserves soil?", choices: ["mulching", "deforestation", "overgrazing", "burning bushes"], answer: "mulching" },
+      ] },
+    ],
+  },
+];
+
+const P5_HEAT_ENERGY_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-sources-uses-heat",
+    classLevel: "P5",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Heat Energy",
+    subTopicTitle: "Sources and Uses of Heat",
+    lessonTitle: "Sources and Uses of Heat",
+    blocks: [
+      { kind: "definition", term: "heat", definition: "is a form of energy that makes things hot or warmer.", simpleCheck: "A fire gives heat energy for cooking." },
+      { kind: "categories", title: "Sources of heat", categories: [
+        { name: "Sun", definition: "a natural source of heat and light", examples: ["drying clothes", "warming soil", "helping plants grow"] },
+        { name: "Fire and fuels", definition: "heat from burning materials", examples: ["firewood", "charcoal", "paraffin", "gas"] },
+        { name: "Electricity", definition: "can produce heat in appliances", examples: ["electric iron", "kettle", "cooker"] },
+        { name: "Friction", definition: "heat produced when surfaces rub together", examples: ["rubbing hands", "brakes getting hot"] },
+      ] },
+      { kind: "uses", title: "Uses of heat", points: ["Cooking food.", "Boiling water.", "Drying clothes and crops.", "Keeping bodies warm.", "Ironing clothes.", "Changing states of matter such as melting wax or ice." ] },
+      { kind: "diagram", title: "Heat transfer card", imageUrl: "/images/science/p5-heat-transfer.svg", caption: "Heat sources, uses and movement by conduction, convection and radiation.", labels: ["sun", "fire", "electricity", "friction", "heat" ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is heat?", answer: "A form of energy that makes things hot or warmer." },
+        { type: "short-answer", prompt: "Name four sources of heat.", answer: "Sun, fire, electricity, friction or fuels." },
+        { type: "multiple-choice", prompt: "Which is a natural source of heat?", choices: ["sun", "shoe", "stone", "chair"], answer: "sun" },
+      ] },
+    ],
+  },
+  {
+    id: "p5-v4-heat-effects-transfer",
+    classLevel: "P5",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Heat Energy",
+    subTopicTitle: "Effects and Transfer of Heat",
+    lessonTitle: "Effects and Transfer of Heat",
+    blocks: [
+      { kind: "definition", term: "heat transfer", definition: "is the movement of heat from a hotter place or object to a cooler one.", simpleCheck: "Heat moves from a hot saucepan to the food inside it." },
+      { kind: "categories", title: "Ways heat moves", categories: [
+        { name: "Conduction", definition: "heat movement through solids", examples: ["metal spoon getting hot", "saucepan handle heating"] },
+        { name: "Convection", definition: "heat movement in liquids and gases", examples: ["boiling water moving", "warm air rising"] },
+        { name: "Radiation", definition: "heat movement through space without needing a material", examples: ["heat from the sun", "heat felt near a fire"] },
+      ] },
+      { kind: "characteristics", title: "Effects of heat", points: ["Heat can make things expand.", "Heat can make solids melt.", "Heat can make liquids evaporate.", "Heat can cook food.", "Heat can dry wet clothes or crops.", "Too much heat can burn or damage things." ] },
+      { kind: "worked-example", question: "Why does a metal spoon in hot tea become hot?", steps: ["The spoon touches hot tea.", "Heat moves through the metal spoon.", "This movement through a solid is conduction."], answer: "The spoon becomes hot because heat moves through it by conduction." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is conduction?", answer: "Heat movement through solids." },
+        { type: "short-answer", prompt: "Name three ways heat moves.", answer: "Conduction, convection and radiation." },
+        { type: "multiple-choice", prompt: "Heat from the sun reaches us mainly by:", choices: ["radiation", "digestion", "pollination", "germination"], answer: "radiation" },
+      ] },
+    ],
+  },
+  {
+    id: "p5-v4-expansion-contraction-safety",
+    classLevel: "P5",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Heat Energy",
+    subTopicTitle: "Expansion, Contraction and Safety",
+    lessonTitle: "Expansion, Contraction and Safety",
+    blocks: [
+      { kind: "definition", term: "expansion", definition: "is the increase in size of a material when heated.", simpleCheck: "Many metals expand when heated." },
+      { kind: "definition", term: "contraction", definition: "is the decrease in size of a material when cooled.", simpleCheck: "Many metals contract when cooled." },
+      { kind: "categories", title: "Expansion, contraction and safety", categories: [
+        { name: "Expansion in solids", definition: "solids get slightly bigger when heated", examples: ["railway lines", "bridge parts", "metal lids"] },
+        { name: "Contraction in solids", definition: "solids get smaller when cooled", examples: ["metal shrinking when cold"] },
+        { name: "Safety with heat", definition: "ways of avoiding burns and fire accidents", examples: ["use pot holders", "keep children away from fire", "do not touch hot metal"] },
+      ] },
+      { kind: "characteristics", title: "Why expansion gaps are important", points: ["Rails and bridges can expand on hot days.", "Small gaps give materials space to expand.", "Without gaps, materials may bend, crack or break.", "Hot objects should be handled with protection and adult guidance." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is expansion?", answer: "Increase in size when heated." },
+        { type: "short-answer", prompt: "What is contraction?", answer: "Decrease in size when cooled." },
+        { type: "short-answer", prompt: "Why are gaps left between railway lines?", answer: "To allow expansion when the metal gets hot." },
+        { type: "multiple-choice", prompt: "Which safety practice is correct?", choices: ["use a pot holder", "touch hot metal", "play with fire", "carry hot water carelessly"], answer: "use a pot holder" },
+      ] },
+    ],
+  },
+];
+
+const P5_POULTRY_V4: UpperPrimaryLesson[] = [
+  P5_POULTRY_BREEDS_V4,
+  {
+    id: "p5-v4-poultry-management-care",
+    classLevel: "P5",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Keeping Poultry and Bees",
+    subTopicTitle: "Poultry Management, Feeding and Housing",
+    lessonTitle: "Poultry Management, Feeding and Housing",
+    blocks: [
+      { kind: "definition", term: "poultry management", definition: "is the proper care of domestic birds kept for eggs, meat, manure, feathers or income.", simpleCheck: "Good poultry management includes housing, feeding, watering and disease control." },
+      { kind: "categories", title: "Good poultry management", categories: [
+        { name: "Housing", definition: "providing a safe house for poultry", examples: ["dry house", "well-ventilated house", "safe from predators", "easy to clean"] },
+        { name: "Feeding", definition: "giving poultry enough balanced feeds for their age and purpose", examples: ["chick mash", "growers mash", "layers mash", "broiler feed"] },
+        { name: "Watering", definition: "providing clean water every day", examples: ["clean drinkers", "fresh water", "water away from droppings"] },
+        { name: "Disease control", definition: "preventing and managing poultry diseases", examples: ["vaccination", "clean housing", "separating sick birds", "veterinary guidance"] },
+      ] },
+      { kind: "characteristics", title: "Qualities of a good poultry house", points: ["It is dry and clean.", "It is well ventilated.", "It protects birds from rain, sun, thieves and predators.", "It has enough space to avoid overcrowding.", "It is easy to clean and disinfect." ] },
+      { kind: "worked-example", question: "Why should a farmer separate a sick chicken from healthy birds?", steps: ["Some poultry diseases spread from one bird to another.", "Separating the sick bird reduces contact.", "The farmer can then ask a veterinary worker for advice."], answer: "To reduce spread of disease and get proper help." },
+      { kind: "diagram", title: "Poultry and bee keeping card", imageUrl: "/images/science/p5-poultry-bees.svg", caption: "Poultry need good housing, feeding, clean water and disease control.", labels: ["housing", "feeding", "water", "disease control", "hygiene"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is poultry management?", answer: "Proper care of domestic birds kept for eggs, meat or income." },
+        { type: "short-answer", prompt: "Give four qualities of a good poultry house.", answer: "Dry, clean, ventilated, enough space and safe from predators." },
+        { type: "multiple-choice", prompt: "Which practice helps prevent poultry diseases?", choices: ["cleaning the house", "giving dirty water", "overcrowding", "mixing sick birds"], answer: "cleaning the house" },
+      ] },
+    ],
+  },
+  {
+    id: "p5-v4-bees-life-products-importance",
+    classLevel: "P5",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Keeping Poultry and Bees",
+    subTopicTitle: "Bee Keeping, Bee Products and Pollination",
+    lessonTitle: "Bee Keeping, Bee Products and Pollination",
+    blocks: [
+      { kind: "definition", term: "bee keeping", definition: "is the rearing of bees in hives for honey, wax, pollination or income.", simpleCheck: "A farmer who keeps bees in a hive is practising bee keeping." },
+      { kind: "categories", title: "Types of bees in a colony", categories: [
+        { name: "Queen bee", definition: "the female bee that lays eggs in a colony", examples: ["one queen in most colonies"] },
+        { name: "Worker bees", definition: "female bees that collect nectar, make honey, clean the hive and care for young bees", examples: ["many workers in a hive"] },
+        { name: "Drones", definition: "male bees whose main role is mating with the queen", examples: ["male bees"] },
+      ] },
+      { kind: "uses", title: "Importance of bees", points: ["Bees produce honey used as food and medicine with guidance.", "Bees produce wax used for candles and polish.", "Bees pollinate flowers, helping fruits and seeds to form.", "Bee keeping can provide income.", "Bees support crop production through pollination." ] },
+      { kind: "characteristics", title: "Conditions for safe bee keeping", points: ["Keep hives away from busy paths and homes.", "Place hives where bees can find flowers and water.", "Use protective clothing when handling hives.", "Bee keeping should be done by trained adults or under adult guidance.", "Do not disturb bees unnecessarily." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is bee keeping?", answer: "Rearing bees in hives for honey, wax, pollination or income." },
+        { type: "short-answer", prompt: "Name three types of bees in a colony.", answer: "Queen, workers and drones." },
+        { type: "short-answer", prompt: "Give three uses of bees.", answer: "Honey, wax, pollination and income." },
+        { type: "multiple-choice", prompt: "Which bee lays eggs?", choices: ["queen", "worker", "drone", "larva"], answer: "queen" },
+      ] },
+    ],
+  },
+];
+
+const P5_MEASUREMENT_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-measuring-length-mass-capacity-time",
+    classLevel: "P5",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Measurement",
+    subTopicTitle: "Measuring Length, Mass, Capacity and Time",
+    lessonTitle: "Measuring Length, Mass, Capacity and Time",
+    blocks: [
+      { kind: "definition", term: "measurement", definition: "is the process of finding the size, amount or quantity of something using standard units and instruments.", simpleCheck: "Using a ruler to find length is measurement." },
+      { kind: "categories", title: "Quantities, instruments and units", categories: [
+        { name: "Length", definition: "distance from one point to another", examples: ["ruler", "tape measure", "metre (m)", "centimetre (cm)"] },
+        { name: "Mass", definition: "amount of matter in an object", examples: ["beam balance", "spring balance", "kilogram (kg)", "gram (g)"] },
+        { name: "Capacity", definition: "amount a container can hold", examples: ["measuring cylinder", "litre (L)", "millilitre (ml)"] },
+        { name: "Time", definition: "duration of events", examples: ["clock", "watch", "seconds", "minutes", "hours"] },
+      ] },
+      { kind: "characteristics", title: "Rules for accurate measurement", points: ["Choose the correct instrument.", "Use the correct unit.", "Read scales from eye level.", "Start reading from zero where needed.", "Record the unit with the number." ] },
+      { kind: "worked-example", question: "Why should a pupil read a measuring cylinder at eye level?", steps: ["Liquid level can look higher or lower from an angle.", "Eye-level reading reduces error.", "The pupil should read the bottom of the meniscus where guided."], answer: "To avoid parallax error and get a more accurate reading." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is measurement?", answer: "Finding the size, amount or quantity of something." },
+        { type: "short-answer", prompt: "Name instruments for length, mass, capacity and time.", answer: "Ruler/tape, balance, measuring cylinder, clock/watch." },
+        { type: "multiple-choice", prompt: "Which unit measures mass?", choices: ["kilogram", "metre", "litre", "hour"], answer: "kilogram" },
+      ] },
+    ],
+  },
+  {
+    id: "p5-v4-measurement-daily-life",
+    classLevel: "P5",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Measurement",
+    subTopicTitle: "Measurement in Daily Life",
+    lessonTitle: "Measurement in Daily Life",
+    blocks: [
+      { kind: "definition", term: "standard unit", definition: "is a unit accepted and used by many people for accurate measurement.", simpleCheck: "Metre, kilogram, litre and second are standard units." },
+      { kind: "examples", title: "Daily uses of measurement", examples: [
+        { name: "medicine", explanation: "health workers measure correct amounts of medicine" },
+        { name: "building", explanation: "builders measure length and width" },
+        { name: "cooking", explanation: "people measure ingredients and time" },
+        { name: "farming", explanation: "farmers measure land, seeds and chemicals with adult guidance" },
+      ] },
+      { kind: "uses", title: "Importance of measurement", points: ["It helps avoid waste.", "It helps people be accurate.", "It helps health workers give correct doses.", "It helps traders sell fairly.", "It helps builders and farmers plan well." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Give four uses of measurement in daily life.", answer: "Medicine, cooking, building, farming, trading or travel time." },
+        { type: "short-answer", prompt: "Why are standard units important?", answer: "They help people measure accurately and fairly." },
+        { type: "multiple-choice", prompt: "Which instrument measures time?", choices: ["clock", "ruler", "balance", "measuring cylinder"], answer: "clock" },
+      ] },
+    ],
+  },
+];
+
+const P5_IMMUNISATION_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-immunisation-meaning-importance",
+    classLevel: "P5",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Immunisation",
+    subTopicTitle: "Meaning and Importance of Immunisation",
+    lessonTitle: "Meaning and Importance of Immunisation",
+    blocks: [
+      { kind: "definition", term: "immunisation", definition: "is the process of giving a vaccine to help the body protect itself against specific diseases.", simpleCheck: "A child may be immunised against measles to help prevent measles." },
+      { kind: "categories", title: "Immunisable childhood diseases", categories: [
+        { name: "Measles", definition: "a communicable disease that can cause fever and rash", examples: ["prevented by immunisation"] },
+        { name: "Polio", definition: "a disease that can cause paralysis", examples: ["prevented by polio vaccine"] },
+        { name: "Tuberculosis (TB)", definition: "a disease that commonly affects the lungs", examples: ["BCG vaccine helps protect children"] },
+        { name: "Tetanus", definition: "a serious disease that can enter through wounds", examples: ["tetanus immunisation"] },
+      ] },
+      { kind: "diagram", title: "Immunisation card", imageUrl: "/images/science/p5-immunisation-card.svg", caption: "A health card helps parents and health workers track immunisation dates.", labels: ["vaccine", "health card", "return date", "health worker"] },
+      { kind: "uses", title: "Importance of immunisation", points: ["It helps protect children from dangerous diseases.", "It reduces spread of some communicable diseases.", "It helps communities stay healthier.", "Health cards help families remember return dates." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is immunisation?", answer: "Giving a vaccine to help the body protect itself against specific diseases." },
+        { type: "short-answer", prompt: "Name three immunisable diseases.", answer: "Measles, polio, TB, tetanus or whooping cough." },
+        { type: "multiple-choice", prompt: "Who should guide immunisation?", choices: ["health worker", "toy seller", "unknown child", "football referee"], answer: "health worker" },
+      ] },
+    ],
+  },
+  {
+    id: "p5-v4-immunisation-schedule-safety",
+    classLevel: "P5",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Immunisation",
+    subTopicTitle: "Health Cards, Schedules and Safe Decisions",
+    lessonTitle: "Health Cards, Schedules and Safe Decisions",
+    blocks: [
+      { kind: "definition", term: "immunisation schedule", definition: "is a plan showing when a child should receive vaccines.", simpleCheck: "A return date on a health card helps families know when to go back." },
+      { kind: "categories", title: "Immunisation records", categories: [
+        { name: "Health card", definition: "a card that records vaccines and dates", examples: ["child health card", "clinic card"] },
+        { name: "Return date", definition: "the date when a child should go back for another vaccine or check", examples: ["next clinic date"] },
+        { name: "Safe decision", definition: "a choice guided by correct health advice", examples: ["ask a health worker", "keep the health card", "do not hide missed dates"] },
+      ] },
+      { kind: "characteristics", title: "Safety notes", points: ["Vaccines should be given by trained health workers.", "Parents and guardians should keep health cards safely.", "If a vaccine date is missed, ask a health worker what to do.", "Do not believe rumours; ask trained health workers for guidance." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is an immunisation schedule?", answer: "A plan showing when vaccines should be given." },
+        { type: "short-answer", prompt: "Why is a health card important?", answer: "It records vaccines and return dates." },
+        { type: "multiple-choice", prompt: "If a return date is missed, a parent should:", choices: ["ask a health worker", "hide the card", "throw it away", "guess"], answer: "ask a health worker" },
+      ] },
+    ],
+  },
+];
+
+const P5_CROP_GROWING_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-common-crops-tools",
+    classLevel: "P5",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Occupations in Our Community: Crop Growing",
+    subTopicTitle: "Common Crops and Farm Tools",
+    lessonTitle: "Common Crops and Farm Tools",
+    blocks: [
+      { kind: "definition", term: "crop growing", definition: "is the occupation of preparing land, planting, caring for crops, harvesting and storing crops.", simpleCheck: "A farmer who grows maize and beans is doing crop growing." },
+      { kind: "categories", title: "Common crops and tools", categories: [
+        { name: "Food crops", definition: "crops grown mainly for food", examples: ["maize", "beans", "cassava", "rice", "sweet potatoes"] },
+        { name: "Cash crops", definition: "crops grown mainly for sale", examples: ["coffee", "cotton", "tea", "sugarcane"] },
+        { name: "Farm tools", definition: "tools used in crop growing", examples: ["hoe", "panga", "rake", "watering can", "slasher"] },
+      ] },
+      { kind: "characteristics", title: "Tool safety", points: ["Use tools for their proper purpose.", "Carry sharp tools carefully with adult guidance.", "Clean tools after use.", "Store tools safely away from young children.", "Do not play with pangas, hoes or slashers." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is crop growing?", answer: "Preparing land, planting, caring, harvesting and storing crops." },
+        { type: "short-answer", prompt: "Name three farm tools.", answer: "Hoe, panga, rake, slasher or watering can." },
+        { type: "multiple-choice", prompt: "Which tool is used for digging?", choices: ["hoe", "cup", "plate", "shoe"], answer: "hoe" },
+      ] },
+    ],
+  },
+  {
+    id: "p5-v4-land-preparation-crop-care-storage",
+    classLevel: "P5",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Occupations in Our Community: Crop Growing",
+    subTopicTitle: "Land Preparation, Crop Care, Harvesting and Storage",
+    lessonTitle: "Land Preparation, Crop Care, Harvesting and Storage",
+    blocks: [
+      { kind: "definition", term: "crop care", definition: "means doing activities that help crops grow well and stay healthy until harvesting.", simpleCheck: "Watering, weeding, mulching and pest control are crop-care practices." },
+      { kind: "categories", title: "Steps in crop growing", categories: [
+        { name: "Land preparation", definition: "making land ready for planting", examples: ["clearing", "digging", "making seedbeds", "adding manure"] },
+        { name: "Planting", definition: "putting seeds or seedlings into soil", examples: ["sowing maize", "transplanting cabbage"] },
+        { name: "Crop care", definition: "looking after crops as they grow", examples: ["watering", "weeding", "mulching", "pest control"] },
+        { name: "Harvesting and storage", definition: "collecting mature crops and keeping them safely", examples: ["drying maize", "storing beans", "protecting from rats"] },
+      ] },
+      { kind: "diagram", title: "Crop growing cycle", imageUrl: "/images/science/crop-growing-cycle.svg", caption: "Crop growing moves from land preparation to planting, care, harvesting and storage.", labels: ["prepare", "plant", "care", "harvest", "store"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Give four steps in crop growing.", answer: "Land preparation, planting, crop care, harvesting and storage." },
+        { type: "short-answer", prompt: "Why should harvested crops be dried?", answer: "To prevent rotting and mould during storage." },
+        { type: "multiple-choice", prompt: "Removing unwanted plants is called:", choices: ["weeding", "digestion", "measurement", "immunisation"], answer: "weeding" },
+      ] },
+    ],
+  },
+];
+
+const P5_BACTERIA_FUNGI_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-bacteria-fungi-meaning",
+    classLevel: "P5",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Bacteria and Fungi",
+    subTopicTitle: "Characteristics and Examples",
+    lessonTitle: "Characteristics and Examples",
+    blocks: [
+      { kind: "definition", term: "bacteria", definition: "are very tiny living things, many of which can only be seen with a microscope.", simpleCheck: "Some bacteria are useful, while others cause diseases or spoil food." },
+      { kind: "definition", term: "fungi", definition: "are living things such as moulds, mushrooms and yeast that do not make their own food like green plants.", simpleCheck: "Mould growing on bread is a fungus." },
+      { kind: "categories", title: "Examples and characteristics", categories: [
+        { name: "Bacteria", definition: "tiny living things that multiply quickly in suitable conditions", examples: ["useful bacteria in yoghurt", "disease-causing bacteria", "decay bacteria"] },
+        { name: "Fungi", definition: "living things that feed on dead or living matter", examples: ["mushrooms", "mould", "yeast"] },
+        { name: "Where they grow", definition: "places with warmth, moisture and food", examples: ["spoiled food", "damp bread", "dead leaves", "dirty places"] },
+      ] },
+      { kind: "diagram", title: "Microbes card", imageUrl: "/images/science/p5-microbes-bacteria-fungi.svg", caption: "Bacteria and fungi may be useful or harmful.", labels: ["bacteria", "fungi", "mould", "yeast", "mushroom"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What are bacteria?", answer: "Very tiny living things, many seen only with a microscope." },
+        { type: "short-answer", prompt: "Give three examples of fungi.", answer: "Mushrooms, moulds and yeast." },
+        { type: "multiple-choice", prompt: "Which one is a fungus?", choices: ["mould", "stone", "metal spoon", "glass"], answer: "mould" },
+      ] },
+    ],
+  },
+  {
+    id: "p5-v4-useful-harmful-microbes",
+    classLevel: "P5",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Bacteria and Fungi",
+    subTopicTitle: "Useful and Harmful Bacteria and Fungi",
+    lessonTitle: "Useful and Harmful Bacteria and Fungi",
+    blocks: [
+      { kind: "definition", term: "microbe", definition: "is a very small living thing, such as a bacterium or some fungi, that may be useful or harmful.", simpleCheck: "Yeast is a useful fungus used in baking bread." },
+      { kind: "categories", title: "Useful and harmful roles", categories: [
+        { name: "Useful bacteria", definition: "bacteria that help people or the environment", examples: ["making yoghurt", "decaying dead matter", "helping soil fertility"] },
+        { name: "Harmful bacteria", definition: "bacteria that cause diseases or food spoilage", examples: ["cholera bacteria", "typhoid bacteria", "food poisoning"] },
+        { name: "Useful fungi", definition: "fungi that people use", examples: ["yeast for bread", "edible mushrooms", "some medicines"] },
+        { name: "Harmful fungi", definition: "fungi that cause disease or spoil food", examples: ["mould on bread", "ringworm", "rotting fruits"] },
+      ] },
+      { kind: "characteristics", title: "Hygiene and prevention", points: ["Wash hands before eating.", "Cover food.", "Eat properly cooked food.", "Do not eat mouldy food.", "Keep the body and clothes clean.", "Store food in clean, dry places." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Give two useful roles of bacteria or fungi.", answer: "Making yoghurt, making bread, decomposing dead matter or improving soil." },
+        { type: "short-answer", prompt: "Give two harmful effects of bacteria or fungi.", answer: "Diseases, food spoilage, ringworm or rotting food." },
+        { type: "multiple-choice", prompt: "Which fungus is used in baking bread?", choices: ["yeast", "mosquito", "rat", "sand"], answer: "yeast" },
+      ] },
+    ],
+  },
+];
+
+const P5_TYPES_CHANGES_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-biological-physical-chemical-changes",
+    classLevel: "P5",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Types of Changes: Biological, Physical and Chemical Changes",
+    subTopicTitle: "Biological, Physical and Chemical Changes",
+    lessonTitle: "Biological, Physical and Chemical Changes",
+    blocks: [
+      { kind: "definition", term: "change", definition: "is when something becomes different from what it was before.", simpleCheck: "Melting ice is a change because solid ice becomes liquid water." },
+      { kind: "categories", title: "Types of changes", categories: [
+        { name: "Biological change", definition: "a change that happens in living things", examples: ["growth of a plant", "germination", "rotting of fruit", "growth of a child"] },
+        { name: "Physical change", definition: "a change where no new substance is formed", examples: ["melting ice", "cutting paper", "breaking a cup", "freezing water"] },
+        { name: "Chemical change", definition: "a change where a new substance is formed", examples: ["burning wood", "rusting iron", "cooking an egg", "rotting food"] },
+      ] },
+      { kind: "diagram", title: "Types of changes card", imageUrl: "/images/science/p5-types-of-changes.svg", caption: "Examples of biological, physical and chemical changes.", labels: ["biological", "physical", "chemical", "reversible", "irreversible"] },
+      { kind: "worked-example", question: "Is burning paper a physical or chemical change?", steps: ["Burning forms ash and smoke.", "New substances are formed.", "A change that forms new substances is chemical."], answer: "Burning paper is a chemical change." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is a biological change?", answer: "A change that happens in living things." },
+        { type: "short-answer", prompt: "Give two examples of physical changes.", answer: "Melting ice, freezing water, cutting paper or breaking glass." },
+        { type: "short-answer", prompt: "Give two examples of chemical changes.", answer: "Burning wood, rusting iron, cooking an egg or rotting fruit." },
+        { type: "multiple-choice", prompt: "Which is a biological change?", choices: ["germination", "melting wax", "breaking a plate", "cutting paper"], answer: "germination" },
+      ] },
+    ],
+  },
+  {
+    id: "p5-v4-reversible-irreversible-changes",
+    classLevel: "P5",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Types of Changes: Biological, Physical and Chemical Changes",
+    subTopicTitle: "Reversible and Irreversible Changes",
+    lessonTitle: "Reversible and Irreversible Changes",
+    blocks: [
+      { kind: "definition", term: "reversible change", definition: "is a change that can be changed back to the original form.", simpleCheck: "Ice can melt into water and water can freeze back into ice." },
+      { kind: "definition", term: "irreversible change", definition: "is a change that cannot easily be changed back to the original form.", simpleCheck: "Burnt paper cannot easily become paper again." },
+      { kind: "categories", title: "Reversible and irreversible examples", categories: [
+        { name: "Reversible changes", definition: "changes that can be undone", examples: ["melting ice", "freezing water", "evaporating and condensing water", "stretching a rubber band gently"] },
+        { name: "Irreversible changes", definition: "changes that cannot easily be undone", examples: ["burning paper", "cooking food", "rusting iron", "rotting fruit"] },
+      ] },
+      { kind: "characteristics", title: "How to identify changes", points: ["Ask whether a new substance has formed.", "Ask whether the material can return to its original form.", "Physical changes are often reversible, but not always.", "Chemical changes are usually irreversible.", "Biological changes happen in living things and are often not easily reversed." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is a reversible change?", answer: "A change that can be changed back." },
+        { type: "short-answer", prompt: "What is an irreversible change?", answer: "A change that cannot easily be changed back." },
+        { type: "multiple-choice", prompt: "Which change is reversible?", choices: ["freezing water", "burning wood", "cooking an egg", "rusting iron"], answer: "freezing water" },
+      ] },
+    ],
+  },
+];
+
 const P5_SCIENCE_TOPIC_DATA: Topic[] = [
   {
     "id": "p5-keeping-poultry-bees",
@@ -129,7 +690,8 @@ const P5_SCIENCE_TOPIC_DATA: Topic[] = [
     "status": "published",
     "reviewStatus": "beta",
     "contentFormat": "upper-primary-v4",
-    "upperPrimaryLessons": [P5_POULTRY_BREEDS_V4],
+    "upperPrimaryLessons": P5_POULTRY_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Science beta: built from researched NCDC Primary Five Integrated Science Set One structure; human science/health review still required before premium-final release. Keeping Poultry and Bees connects science ideas to health, farming, environment and daily life.",
       "learningObjectives": [
@@ -363,6 +925,8 @@ const P5_SCIENCE_TOPIC_DATA: Topic[] = [
     "estMinutes": 38,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_MEASUREMENT_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Science beta: built from researched NCDC Primary Five Integrated Science Set One structure; human science/health review still required before premium-final release. Measurement connects science ideas to health, farming, environment and daily life.",
       "learningObjectives": [
@@ -593,6 +1157,8 @@ const P5_SCIENCE_TOPIC_DATA: Topic[] = [
     "estMinutes": 38,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_IMMUNISATION_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Science beta: built from researched NCDC Primary Five Integrated Science Set One structure; human science/health review still required before premium-final release. Immunisation connects science ideas to health, farming, environment and daily life.",
       "learningObjectives": [
@@ -823,6 +1389,8 @@ const P5_SCIENCE_TOPIC_DATA: Topic[] = [
     "estMinutes": 42,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_DIGESTIVE_SYSTEM_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Science beta: built from researched NCDC Primary Five Integrated Science Set One structure; human science/health review still required before premium-final release. The Digestive System connects science ideas to health, farming, environment and daily life.",
       "learningObjectives": [
@@ -1056,6 +1624,8 @@ const P5_SCIENCE_TOPIC_DATA: Topic[] = [
     "estMinutes": 40,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_SOIL_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Science beta: built from researched NCDC Primary Five Integrated Science Set One structure; human science/health review still required before premium-final release. Components of the Environment: Soil connects science ideas to health, farming, environment and daily life.",
       "learningObjectives": [
@@ -1285,6 +1855,8 @@ const P5_SCIENCE_TOPIC_DATA: Topic[] = [
     "estMinutes": 40,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_HEAT_ENERGY_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Science beta: built from researched NCDC Primary Five Integrated Science Set One structure; human science/health review still required before premium-final release. Heat Energy connects science ideas to health, farming, environment and daily life.",
       "learningObjectives": [
@@ -1513,6 +2085,8 @@ const P5_SCIENCE_TOPIC_DATA: Topic[] = [
     "estMinutes": 40,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_CROP_GROWING_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Science beta: built from researched NCDC Primary Five Integrated Science Set One structure; human science/health review still required before premium-final release. Occupations in Our Community: Crop Growing connects science ideas to health, farming, environment and daily life.",
       "learningObjectives": [
@@ -1741,6 +2315,8 @@ const P5_SCIENCE_TOPIC_DATA: Topic[] = [
     "estMinutes": 38,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_BACTERIA_FUNGI_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Science beta: built from researched NCDC Primary Five Integrated Science Set One structure; human science/health review still required before premium-final release. Bacteria and Fungi connects science ideas to health, farming, environment and daily life.",
       "learningObjectives": [
@@ -1970,6 +2546,8 @@ const P5_SCIENCE_TOPIC_DATA: Topic[] = [
     "estMinutes": 38,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_TYPES_CHANGES_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Science beta: built from researched NCDC Primary Five Integrated Science Set One structure; human science/health review still required before premium-final release. Types of Changes: Biological, Physical and Chemical Changes connects science ideas to health, farming, environment and daily life.",
       "learningObjectives": [

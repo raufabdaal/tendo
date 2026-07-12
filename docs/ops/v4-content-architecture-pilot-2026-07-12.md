@@ -850,3 +850,28 @@ Remaining:
 - real-phone founder review,
 - qualified CRE/IRE teacher review,
 - corrections from review.
+
+---
+
+## Mobile responsiveness guard update — same cycle
+
+Founder review found that the v4 pages still looked like they did not fit cleanly on a phone screen.
+
+Additional global CSS guard added in `app/app/globals.css`:
+
+- Prevent page-wide horizontal overflow on `html`, `body`, `main.app-main` and major lesson containers.
+- Force v4 shells/cards/blocks to respect `max-width: 100%` and `min-width: 0`.
+- Make buttons wrap instead of forcing wide layouts.
+- Keep v4 lesson and module strips inside the viewport.
+- Make v4 images scale to phone width by default.
+- Keep small-screen padding consistent.
+
+Build result after the responsiveness guard:
+
+```txt
+cd app && npm install && npm run build
+✓ Compiled successfully
+✓ Generating static pages (356/356)
+```
+
+Note: `npm install` was needed again because `node_modules` was missing in the sandbox.

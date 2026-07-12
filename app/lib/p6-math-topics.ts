@@ -1,4 +1,5 @@
 import type { Topic } from "@/lib/topics";
+import { addUpperPrimaryMathV4 } from "@/lib/v4-math-helpers";
 
 
 function balanceTopicAnswers(topics: Topic[]): Topic[] {
@@ -30,6 +31,15 @@ function balanceTopicAnswers(topics: Topic[]): Topic[] {
   visit(topics);
   return topics;
 }
+
+const P6_MATH_TERMS: Record<string, "Term I" | "Term II" | "Term III"> = {
+  "p6-sets": "Term I",
+  "p6-whole-numbers": "Term I",
+  "p6-operations": "Term I",
+  "p6-fractions-decimals": "Term II",
+  "p6-geometry": "Term II",
+  "p6-data-algebra": "Term III"
+};
 
 const P6_MATH_TOPICS_DATA: Topic[] = [
   {
@@ -940,7 +950,7 @@ const P6_MATH_TOPICS_DATA: Topic[] = [
   }
 ];
 
-export const P6_MATH_TOPICS: Topic[] = balanceTopicAnswers(P6_MATH_TOPICS_DATA);
+export const P6_MATH_TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimaryMathV4(P6_MATH_TOPICS_DATA, "P6", P6_MATH_TERMS));
 
 export function getP6MathTopic(id: string): Topic | undefined {
   return P6_MATH_TOPICS.find((topic) => topic.id === id);

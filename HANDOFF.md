@@ -41,38 +41,36 @@ Reviewers are a second safety layer, not a replacement for our own quality work.
 Build Tendo as a **premium parent-funded, student-first app**. Content quality is now the product. Parent ROI matters more than teacher-dashboard expansion. Trainup/school-first work is archived.
 
 ### Active milestone
-**Content architecture correction before premium-final push.**
+**P3–P7 are now structurally on NCDC-native v4; next is review + targeted deepening.**
 
-Founder review found that the current “more modules” approach is structurally wrong for child-facing content, especially P3/P4/P5. Do not keep expanding content in the same meta-module style. Read `docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md` and implement v4 block structure before premium-final messaging.
+Founder review found that “more modules” was structurally wrong when the child-facing page still sounded like a curriculum guide. The locked direction is v4: mobile-first lesson selector/module stepper with direct teaching blocks (definitions, classifications, examples, diagrams/worked examples, activities and evaluation).
 
 Current state of the milestone:
-- P7 content exists in all subjects.
-- P7 Maths premium pass has begun. The thinnest topics upgraded were: Integers, Time, Data Handling and Graphs, Length/Mass/Capacity/Money, Algebra.
-- These upgraded Maths topics still need human/founder review.
-- P7 English premium pass has also started: all 7 topics gained premium exam-practice modules.
-- P7 Science premium pass has also started: all 8 topics gained premium application/case-practice modules.
-- P7 Social Studies premium pass has also started: all 10 topics gained premium reasoning/casework modules.
-- P7 Religious Education premium pass has also started: all 14 topics gained premium application modules.
-- P7 premium strengthening now covers all 5 subjects.
-- P6 premium strengthening has started across all current P6 subjects: Maths, English, Science, Social Studies and Religious Education.
-- P5 curriculum research has been corrected against NCDC P5 Set One structure.
-- The premature P5 Mathematics/English draft app routes were removed.
-- P5 Mathematics, English, Science, Social Studies and Religious Education are now live beta: P5 sign-in, `/p5-home`, and all P5 subject routes are active. They are marked beta, not draft.
-- P3 is confirmed as thematic lower-primary curriculum; maps exist. P3 thematic beta is built and internally polished across all 12 official themes: `/p3-home` plus 12 `/p3/theme/[theme]` pages, 36 sub-themes, 108 thematic modules and 36 sub-theme visuals. P3 RE beta is also built separately at `/p3/re` and `/p3/re/[topic]` with 18 CRE/IRE topics, 54 RE modules and trusted-source cross-checks; qualified CRE/IRE teacher review remains required.
-- P4 curriculum research has started: English, Science, SST and RE maps exist; P4 Mathematics has been verified and corrected against the official NCDC P4 Mathematics PDF; P4 RE is mapped from the NCDC/MoES Primary 4 Abridged Curriculum but still needs a full standard P4 RE syllabus check. P4 is now live beta across all 5 app subjects: Mathematics, English, Integrated Science, Social Studies and Religious Education. P4 RE is from the NCDC/MoES abridged source and remains beta until full standard P4 CRE/IRE syllabus confirmation.
-- Curriculum alignment audit now shows zero missing top-level topics across P5, P6 and P7.
-- P3 NCDC research/mapping, full thematic beta build, internal thematic polish, first P3 RE beta build and follow-up QA tightening are complete at AI-builder level. Next work is human/teacher review and corrections.
+- P3 thematic is migrated and manually deepened in lower-primary v4 across all 12 official themes.
+- P3 Religious Education is migrated to lower-primary v4 across 18 CRE/IRE topics and still needs qualified CRE/IRE review.
+- P4/P5 Science, Mathematics, English and Social Studies are complete at AI-builder v4 level after structural migration + manual deepening.
+- P4/P5 Religious Education is structurally migrated to upper-primary v4, but still requires qualified CRE/IRE review; P4 RE also needs full standard syllabus confirmation beyond the abridged source.
+- P6 and P7 have now been structurally migrated to upper-primary v4 across all 5 subjects.
+- P6/P7 structural batch coverage: 78 topics and 278 generated v4 lessons from current app subtopic libraries.
+- Social Studies v4 helper now uses the right context by class: district (P4), Uganda (P5), East Africa (P6), Africa/world (P7).
+- Latest build passed: `cd app && npm run build` → `✓ Generating static pages (356/356)`.
 
 ### Immediate next tasks
-1. Review the v4 pilot routes:
-   - `/p3/theme/p3-theme-6-plants`
-   - `/science/p5/p5-keeping-poultry-bees`
-2. V4 mobile lesson selector + module stepper is now the migration standard unless founder requests more UI changes.
-3. If approved, add a lesson/sub-topic selector for topics with many v4 lessons.
-4. Continue manual deepening of P3 v4 content; all 12 P3 thematic routes are now manually deepened in v4 lower-primary lesson selector + mobile module stepper format.
-5. P3 thematic manual deepening and P3 RE v4 migration are complete. P4/P5 Science structural v4 migration is also complete via `app/lib/v4-science-helpers.ts`. Next work: continue P4/P5 Science manual deepening. P4 Science has 8 hand-deepened v4 topics. Remaining P4 Science topics are Communicable Intestinal Diseases/Worms, Vectors and Diseases, Accidents/Poisoning/First Aid, and Our Food. Then continue P5 Digestive System/Soil/Heat. After that, migrate P4/P5 Science, followed by remaining P4/P5 subjects.
-6. Then migrate P6/P7 high-value topics.
-7. Do not start P1/P2 yet; they will be same-app later, after P3–P7 structure is corrected.
+1. Real-phone smoke test representative v4 pages:
+   - `/math/p6/p6-sets`
+   - `/science/p6/p6-classification-living-things`
+   - `/social-studies/p6/p6-location-east-africa`
+   - `/math/p7/set-concepts`
+   - `/science/p7/muscular-skeletal-system`
+   - `/social-studies/p7/location-of-africa`
+   - `/re/p7/cre-ancestors-pioneers-faith`
+2. Start targeted hand-deepening of P6/P7 PLE-heavy topics in v4. Recommended first set:
+   - P7 Mathematics: Set Concepts, Fractions, Data Handling, Construction, Algebra
+   - P7 Science: Muscular-Skeletal System, Electricity and Magnetism, Light Energy, Population and Health
+   - P7 Social Studies: Location/Physical Features of Africa, Foreign Influence, Nationalism, Major World Organisations
+   - P6 bridge topics that prepare P7/PLE work in Maths, Science and SST
+3. Keep all RE migration notes visible: P3/P4/P5/P6/P7 CRE/IRE content must be reviewed by qualified teachers before premium-final status.
+4. Do not start P1/P2 yet; they will be in the same app later, after P3–P7 v4 restructure and review.
 
 ### Push status
 Current local workspace includes a large unpushed milestone bundle. Founder has not pushed yet. When founder says “ready to push”, provide:

@@ -1,4 +1,6 @@
+import type { UpperPrimaryLesson } from "@/lib/content-blocks";
 import type { Topic } from "@/lib/topics";
+import { addUpperPrimaryEnglishV4 } from "@/lib/v4-english-helpers";
 
 // P5 English beta content layer.
 // Source map: content/curriculum/p5-english.json.
@@ -37,6 +39,510 @@ function balanceTopicAnswers(topics: Topic[]): Topic[] {
   return topics;
 }
 
+const P5_LETTER_WRITING_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-friendly-letter-parts",
+    classLevel: "P5",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Letter Writing",
+    subTopicTitle: "Parts of a Friendly Letter",
+    lessonTitle: "Parts of a Friendly Letter",
+    blocks: [
+      { kind: "vocabulary", title: "Letter words", words: [
+        { word: "address", meaning: "where the writer lives or receives letters" },
+        { word: "date", meaning: "the day, month and year when the letter is written" },
+        { word: "greeting", meaning: "the opening words of a letter" },
+        { word: "body", meaning: "the main message in the letter" },
+        { word: "closing", meaning: "the ending words of a letter" },
+        { word: "signature", meaning: "the writer's name at the end" },
+      ] },
+      { kind: "definition", term: "friendly letter", definition: "is a personal letter written to someone known well, such as a friend or relative.", simpleCheck: "A letter to your cousin inviting him to visit is a friendly letter." },
+      { kind: "categories", title: "Parts of a friendly letter", categories: [
+        { name: "Address", definition: "writer's address at the top", examples: ["P.O. Box 12, Jinja"] },
+        { name: "Date", definition: "when the letter is written", examples: ["12 July 2026"] },
+        { name: "Greeting", definition: "opening words", examples: ["Dear Sarah,"] },
+        { name: "Body", definition: "main message", examples: ["invitation, thanks, news"] },
+        { name: "Closing", definition: "ending words", examples: ["Your friend,"] },
+      ] },
+      { kind: "diagram", title: "Letter layout", imageUrl: "/images/english/p5-letter-layouts.svg", caption: "Friendly letter layout: address, date, greeting, body and closing.", labels: ["address", "date", "greeting", "body", "closing"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Name five parts of a friendly letter.", answer: "Address, date, greeting, body, closing and signature." },
+        { type: "written", prompt: "Write a correct greeting for a letter to your friend Sarah.", answer: "Dear Sarah," },
+        { type: "multiple-choice", prompt: "The main message of a letter is the:", choices: ["body", "stamp", "envelope", "road"], answer: "body" },
+      ] },
+    ],
+  },
+  {
+    id: "p5-v4-invitations-replies",
+    classLevel: "P5",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Letter Writing",
+    subTopicTitle: "Invitations and Replies",
+    lessonTitle: "Invitations and Replies",
+    blocks: [
+      { kind: "definition", term: "invitation", definition: "is a message asking someone to come to an event or activity.", simpleCheck: "Please come for my birthday party on Saturday." },
+      { kind: "categories", title: "What an invitation should include", categories: [
+        { name: "Event", definition: "what the person is invited to", examples: ["birthday", "debate", "wedding", "class party"] },
+        { name: "Date and time", definition: "when the event will happen", examples: ["Friday at 2 p.m."] },
+        { name: "Place", definition: "where the event will happen", examples: ["school hall", "home", "church"] },
+        { name: "Polite request", definition: "kind words asking the person to come", examples: ["Please come", "You are invited"] },
+      ] },
+      { kind: "examples", title: "Model invitation", examples: [
+        { name: "Please come for our class debate on Friday at 2 p.m. in the school hall.", explanation: "mentions event, day, time and place" },
+        { name: "Thank you for inviting me. I will come.", explanation: "positive reply" },
+        { name: "Thank you for inviting me. I am sorry I will not come.", explanation: "polite refusal" },
+      ] },
+      { kind: "activity", title: "Write now", instructions: ["Choose an event.", "Write the date, time and place.", "Use polite words.", "Write a short reply accepting or refusing."], safetyNote: "Invitations should be shared with permission from parents or teachers." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "written", prompt: "Write one sentence inviting a friend to a debate on Friday." },
+        { type: "written", prompt: "Write one polite reply accepting an invitation." },
+        { type: "multiple-choice", prompt: "An invitation should include:", choices: ["place and time", "only insults", "no message", "only drawings"], answer: "place and time" },
+      ] },
+    ],
+  },
+];
+
+const P5_COMMUNICATION_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-communication-means",
+    classLevel: "P5",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Communication",
+    subTopicTitle: "Means of Communication",
+    lessonTitle: "Means of Communication",
+    blocks: [
+      { kind: "vocabulary", title: "Communication words", words: [
+        { word: "communication", meaning: "sending and receiving messages" },
+        { word: "post office", meaning: "a place where letters and parcels are sent or received" },
+        { word: "telephone", meaning: "a device used for speaking to someone far away" },
+        { word: "internet", meaning: "a network used to send, receive and find information" },
+        { word: "message", meaning: "information sent to someone" },
+      ] },
+      { kind: "definition", term: "communication", definition: "is the sending and receiving of messages between people.", simpleCheck: "A phone call is communication." },
+      { kind: "categories", title: "Means of communication", categories: [
+        { name: "Post office", definition: "used for sending letters and parcels", examples: ["letter", "parcel", "stamp"] },
+        { name: "Telephone", definition: "used for speaking or sending messages", examples: ["phone call", "SMS"] },
+        { name: "Internet", definition: "used for messages, learning and information", examples: ["email", "website", "online lesson"] },
+        { name: "Radio and television", definition: "send information to many people", examples: ["news", "announcements"] },
+      ] },
+      { kind: "diagram", title: "Communication card", imageUrl: "/images/english/p5-communication-message.svg", caption: "Ways people send messages clearly and politely.", labels: ["phone", "letter", "internet", "message"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is communication?", answer: "Sending and receiving messages." },
+        { type: "short-answer", prompt: "Name four means of communication.", answer: "Post office, telephone, internet, radio, television or letters." },
+        { type: "multiple-choice", prompt: "Which one is used to send a letter?", choices: ["post office", "hoe", "basket", "plate"], answer: "post office" },
+      ] },
+    ],
+  },
+  {
+    id: "p5-v4-clear-messages-telephone",
+    classLevel: "P5",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Communication",
+    subTopicTitle: "Clear Messages and Telephone Language",
+    lessonTitle: "Clear Messages and Telephone Language",
+    blocks: [
+      { kind: "definition", term: "clear message", definition: "is a message that gives the correct information in a way the receiver can understand.", simpleCheck: "Parents will meet at school on Friday at 10 a.m. is clear." },
+      { kind: "categories", title: "Parts of a clear message", categories: [
+        { name: "Who", definition: "the person or group involved", examples: ["parents", "teacher", "pupils"] },
+        { name: "What", definition: "the event or action", examples: ["meeting", "debate", "homework"] },
+        { name: "When", definition: "time and date", examples: ["Friday at 10 a.m."] },
+        { name: "Where", definition: "place", examples: ["school hall", "classroom"] },
+        { name: "Polite telephone language", definition: "kind words used on a call", examples: ["Hello", "May I speak to...?", "Thank you"] },
+      ] },
+      { kind: "activity", title: "Write a phone message", instructions: ["Say who called.", "Write the message clearly.", "Include time and place where needed.", "Check spelling and punctuation."], safetyNote: "Use phones and internet with adult guidance." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "written", prompt: "Write a message: Teacher says parents will meet at school on Friday at 10 a.m." },
+        { type: "written", prompt: "Write a polite phone greeting." },
+        { type: "multiple-choice", prompt: "A clear message should include:", choices: ["important details", "only jokes", "unclear words", "no time ever"], answer: "important details" },
+      ] },
+    ],
+  },
+];
+
+const P5_PRINT_MEDIA_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-print-media-vocabulary",
+    classLevel: "P5",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Print Media",
+    subTopicTitle: "Print Media Vocabulary",
+    lessonTitle: "Print Media Vocabulary",
+    blocks: [
+      { kind: "vocabulary", title: "Print media words", words: [
+        { word: "newspaper", meaning: "printed pages with news and information" },
+        { word: "magazine", meaning: "a printed book with stories, pictures and articles" },
+        { word: "brochure", meaning: "a small printed paper giving information" },
+        { word: "newsletter", meaning: "a printed update for a group or organisation" },
+        { word: "article", meaning: "a written piece in a newspaper or magazine" },
+        { word: "advert", meaning: "a notice that tells people about something to buy or attend" },
+      ] },
+      { kind: "definition", term: "print media", definition: "means printed materials used to share information, news, stories or adverts.", simpleCheck: "A newspaper is print media." },
+      { kind: "categories", title: "Types of print media", categories: [
+        { name: "Newspapers", definition: "printed news and information", examples: ["daily newspaper", "school newspaper"] },
+        { name: "Magazines", definition: "printed material with articles, stories and pictures", examples: ["children's magazine", "sports magazine"] },
+        { name: "Brochures", definition: "small printed papers giving information", examples: ["school brochure", "health brochure"] },
+        { name: "Newsletters", definition: "printed updates for a group", examples: ["school newsletter", "club newsletter"] },
+      ] },
+      { kind: "diagram", title: "Print media card", imageUrl: "/images/english/p5-print-media.svg", caption: "Newspapers, magazines, brochures and newsletters share information.", labels: ["newspaper", "magazine", "article", "advert"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is print media?", answer: "Printed materials used to share information." },
+        { type: "short-answer", prompt: "Name four types of print media.", answer: "Newspaper, magazine, brochure and newsletter." },
+        { type: "multiple-choice", prompt: "A written piece in a newspaper is an:", choices: ["article", "engine", "spanner", "river"], answer: "article" },
+      ] },
+    ],
+  },
+  {
+    id: "p5-v4-articles-relative-pronouns-writing",
+    classLevel: "P5",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Print Media",
+    subTopicTitle: "Articles, Relative Pronouns and Writing",
+    lessonTitle: "Articles, Relative Pronouns and Writing",
+    blocks: [
+      { kind: "definition", term: "article", definition: "is a word used before a noun: a, an or the.", simpleCheck: "Use an before a vowel sound: an orange." },
+      { kind: "categories", title: "Grammar for print media", categories: [
+        { name: "A", definition: "used before a singular noun beginning with a consonant sound", examples: ["a newspaper", "a story"] },
+        { name: "An", definition: "used before a singular noun beginning with a vowel sound", examples: ["an article", "an advert"] },
+        { name: "The", definition: "used when the reader knows the exact thing", examples: ["the school newsletter"] },
+        { name: "Who / which", definition: "relative pronouns used to add information", examples: ["The editor who wrote the article", "The paper which was printed"] },
+      ] },
+      { kind: "activity", title: "Write a short article", instructions: ["Choose a school event.", "Write a title.", "Write who was involved.", "Write what happened, where and when.", "Check articles, punctuation and spelling."], safetyNote: "Do not write false news or words that insult people." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Fill in: ___ article was interesting. (A/An)", answer: "An" },
+        { type: "written", prompt: "Write one sentence using who." },
+        { type: "multiple-choice", prompt: "Which is correct?", choices: ["an advert", "a advert", "the an advert", "an newspaper"], answer: "an advert" },
+      ] },
+    ],
+  },
+];
+
+const P4_LIKES_FEELINGS_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-likes-preferences",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "What I Like and How I Feel",
+    subTopicTitle: "Likes, Preferences and Feelings",
+    lessonTitle: "Likes, Preferences and Feelings",
+    blocks: [
+      { kind: "vocabulary", title: "Words for likes and feelings", words: [
+        { word: "like", meaning: "to enjoy something" }, { word: "prefer", meaning: "to like one thing more than another" }, { word: "happy", meaning: "feeling glad" }, { word: "sad", meaning: "feeling unhappy" }, { word: "afraid", meaning: "feeling fear" }, { word: "because", meaning: "a word used to give a reason" }
+      ] },
+      { kind: "definition", term: "preference", definition: "is something a person likes more than another thing.", simpleCheck: "I prefer mangoes to oranges." },
+      { kind: "categories", title: "Sentence patterns", categories: [
+        { name: "Likes", definition: "sentences that tell what someone enjoys", examples: ["I like reading.", "She likes netball."] },
+        { name: "Preferences", definition: "sentences comparing what someone likes more", examples: ["I prefer rice to posho.", "He prefers football to volleyball."] },
+        { name: "Feelings with reasons", definition: "sentences that tell a feeling and why", examples: ["I am happy because I passed.", "She is afraid because it is dark."] }
+      ] },
+      { kind: "diagram", title: "Feelings and preferences", imageUrl: "/images/english/p4-feelings-preferences.svg", caption: "Use like, prefer and because to talk about feelings and choices.", labels: ["like", "prefer", "happy", "sad", "because"] },
+      { kind: "activity", title: "Speaking and writing practice", instructions: ["Say two things you like.", "Say one thing you prefer and give a reason.", "Write three sentences about your feelings using because."], safetyNote: "Do not laugh at another learner's feelings or choices." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "written", prompt: "Write one sentence using like." },
+        { type: "written", prompt: "Write one sentence using prefer." },
+        { type: "multiple-choice", prompt: "Choose the correct sentence.", choices: ["I am happy because I passed.", "I happy because passed.", "Happy I because.", "I am because happy passed."], answer: "I am happy because I passed." }
+      ] }
+    ]
+  }
+];
+
+const P4_BEHAVIOUR_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-behaviour-advice",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Behaviour",
+    subTopicTitle: "Good Behaviour and Advice",
+    lessonTitle: "Good Behaviour and Advice",
+    blocks: [
+      { kind: "vocabulary", title: "Behaviour words", words: [
+        { word: "behaviour", meaning: "the way a person acts" }, { word: "honest", meaning: "telling the truth" }, { word: "polite", meaning: "showing good manners" }, { word: "careless", meaning: "not taking care" }, { word: "should", meaning: "used to give advice" }, { word: "must", meaning: "used for a strong rule" }
+      ] },
+      { kind: "definition", term: "good behaviour", definition: "is acting in a respectful, safe and responsible way.", simpleCheck: "Saying please and thank you shows good behaviour." },
+      { kind: "categories", title: "Advice structures", categories: [
+        { name: "Should", definition: "used to give advice", examples: ["You should greet elders.", "You should keep time."] },
+        { name: "Must", definition: "used for a strong rule", examples: ["You must wash your hands.", "You must respect others."] },
+        { name: "Must not", definition: "used for forbidden actions", examples: ["You must not fight.", "You must not steal."] }
+      ] },
+      { kind: "diagram", title: "Behaviour advice", imageUrl: "/images/english/p4-behaviour-advice.svg", caption: "Use should, must and must not to give advice about behaviour.", labels: ["should", "must", "must not", "good", "bad"] },
+      { kind: "activity", title: "Advice practice", instructions: ["Choose one good behaviour.", "Write a sentence using should.", "Choose one bad behaviour.", "Write a sentence using must not."], safetyNote: "Use advice to help others, not to insult them." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "written", prompt: "Write one sentence using should." },
+        { type: "written", prompt: "Write one sentence using must not." },
+        { type: "multiple-choice", prompt: "Which sentence gives good advice?", choices: ["You should respect elders.", "You must fight.", "You should steal.", "You must break desks."], answer: "You should respect elders." }
+      ] }
+    ]
+  }
+];
+
+const P4_TIME_ENGLISH_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-past-tenses-time",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Time",
+    subTopicTitle: "Past Simple and Past Continuous",
+    lessonTitle: "Past Simple and Past Continuous",
+    blocks: [
+      { kind: "vocabulary", title: "Time words", words: [
+        { word: "yesterday", meaning: "the day before today" }, { word: "last week", meaning: "the week before this week" }, { word: "was", meaning: "past form used with I, he, she or it" }, { word: "were", meaning: "past form used with you, we or they" }, { word: "while", meaning: "during the time that something was happening" }
+      ] },
+      { kind: "definition", term: "past simple tense", definition: "is used to talk about an action that happened and ended in the past.", simpleCheck: "I played yesterday." },
+      { kind: "definition", term: "past continuous tense", definition: "is used to talk about an action that was happening at a certain time in the past.", simpleCheck: "I was reading when Mother came." },
+      { kind: "categories", title: "Past tense structures", categories: [
+        { name: "Past simple", definition: "subject + past verb", examples: ["I walked home.", "She cooked food."] },
+        { name: "Past continuous", definition: "was/were + verb-ing", examples: ["I was reading.", "They were playing."] },
+        { name: "While", definition: "shows two actions happening around the same time", examples: ["While I was reading, it rained."] }
+      ] },
+      { kind: "diagram", title: "Time tenses", imageUrl: "/images/english/p4-time-tenses.svg", caption: "Use past simple and past continuous to write about time.", labels: ["yesterday", "was", "were", "-ing", "while"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "written", prompt: "Write one sentence about what you did yesterday." },
+        { type: "written", prompt: "Write one sentence using was or were + -ing." },
+        { type: "multiple-choice", prompt: "Choose the correct sentence.", choices: ["I was reading.", "I were reading.", "I reading was.", "Reading I was."], answer: "I was reading." }
+      ] }
+    ]
+  }
+];
+
+const P4_FUTURE_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-future-expression",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Expression of the Future",
+    subTopicTitle: "Future Language and Planning",
+    lessonTitle: "Future Language and Planning",
+    blocks: [
+      { kind: "vocabulary", title: "Future words", words: [
+        { word: "tomorrow", meaning: "the day after today" }, { word: "next week", meaning: "the week after this week" }, { word: "will", meaning: "used to talk about future actions" }, { word: "going to", meaning: "used for future plans" }, { word: "diary", meaning: "a book for writing plans or events" }
+      ] },
+      { kind: "definition", term: "future tense", definition: "is used to talk about actions that have not happened yet.", simpleCheck: "I will read tomorrow." },
+      { kind: "categories", title: "Future structures", categories: [
+        { name: "Will", definition: "used for future actions or decisions", examples: ["I will revise English.", "She will visit her aunt."] },
+        { name: "Going to", definition: "used for planned future actions", examples: ["I am going to read.", "We are going to plant trees."] },
+        { name: "Diary plan", definition: "writing planned activities with time", examples: ["Monday: read a story", "Tuesday: practise sums"] }
+      ] },
+      { kind: "activity", title: "Write a study plan", instructions: ["Write three things you will do next week.", "Use will or going to.", "Put each activity on a different day."], safetyNote: "Choose safe and helpful plans." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "written", prompt: "Write one sentence using will." },
+        { type: "written", prompt: "Write one sentence using going to." },
+        { type: "multiple-choice", prompt: "Which sentence talks about the future?", choices: ["I will read tomorrow.", "I read yesterday.", "I am reading now.", "I ate food."], answer: "I will read tomorrow." }
+      ] }
+    ]
+  }
+];
+
+const P4_DEMOCRACY_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-democracy-election",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Democracy",
+    subTopicTitle: "Elections, Participation and Fair Play",
+    lessonTitle: "Elections, Participation and Fair Play",
+    blocks: [
+      { kind: "vocabulary", title: "Democracy words", words: [
+        { word: "democracy", meaning: "a way of choosing leaders by people's choice" }, { word: "election", meaning: "a process of choosing a leader by voting" }, { word: "candidate", meaning: "a person who wants to be chosen" }, { word: "vote", meaning: "to choose a leader or option" }, { word: "majority", meaning: "the greater number" }, { word: "fair play", meaning: "playing or competing honestly and respectfully" }
+      ] },
+      { kind: "definition", term: "democracy", definition: "is a system where people take part in choosing leaders or making decisions fairly.", simpleCheck: "Choosing a class monitor by voting is a simple democratic activity." },
+      { kind: "categories", title: "Participation words", categories: [
+        { name: "Candidate", definition: "a person who wants to be chosen", examples: ["Sarah is a candidate for class monitor."] },
+        { name: "Vote", definition: "to choose someone or something", examples: ["Pupils vote for a leader."] },
+        { name: "Majority", definition: "the greater number of votes", examples: ["The candidate with most votes wins."] },
+        { name: "MDD / Games / Sports", definition: "activities where learners participate and express ideas", examples: ["music", "dance", "drama", "football"] }
+      ] },
+      { kind: "diagram", title: "Class election", imageUrl: "/images/english/p4-democracy-election.svg", caption: "Election and participation vocabulary.", labels: ["vote", "candidate", "leader", "majority", "fair play"] },
+      { kind: "activity", title: "Class election report", instructions: ["Name the candidates.", "Say how pupils voted.", "Say who won by majority.", "Write a short report using polite words."], safetyNote: "Do not insult candidates or voters." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Who is a candidate?", answer: "A person who wants to be chosen." },
+        { type: "written", prompt: "Write one sentence using vote." },
+        { type: "multiple-choice", prompt: "MDD means:", choices: ["Music, Dance and Drama", "Money Day Desk", "Market Door Drum", "Map Drawing Day"], answer: "Music, Dance and Drama" }
+      ] }
+    ]
+  }
+];
+
+const P5_VEHICLE_REPAIR_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-vehicle-repair-maintenance",
+    classLevel: "P5",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Vehicle Repair and Maintenance",
+    subTopicTitle: "Vehicle Parts, Tools and Safety Language",
+    lessonTitle: "Vehicle Parts, Tools and Safety Language",
+    blocks: [
+      { kind: "vocabulary", title: "Vehicle words", words: [
+        { word: "engine", meaning: "the part that powers a vehicle" }, { word: "brakes", meaning: "parts that help a vehicle stop" }, { word: "mirror", meaning: "helps a driver see behind or beside" }, { word: "jack", meaning: "a tool used to lift a vehicle" }, { word: "spanner", meaning: "a tool used to tighten or loosen nuts" }, { word: "mustn't", meaning: "must not; used for forbidden actions" }
+      ] },
+      { kind: "definition", term: "maintenance", definition: "means keeping something in good working condition by checking and repairing it.", simpleCheck: "Repairing bad brakes is vehicle maintenance." },
+      { kind: "categories", title: "Language structures", categories: [
+        { name: "Has / have", definition: "used to show possession", examples: ["The bicycle has a bell.", "The cars have mirrors."] },
+        { name: "Must / mustn't", definition: "used for rules and safety", examples: ["You must repair brakes.", "You mustn't drive with flat tyres."] },
+        { name: "If", definition: "used for condition and result", examples: ["If the tyre is flat, use a jack."] },
+        { name: "In order to", definition: "used to show purpose", examples: ["He used a jack in order to lift the car."] }
+      ] },
+      { kind: "diagram", title: "Vehicle and travel language", imageUrl: "/images/english/p5-travel-dialogue.svg", caption: "Vehicle repair and travel communication language.", labels: ["engine", "brakes", "mirror", "jack", "mustn't"] },
+      { kind: "activity", title: "Safety sentences", instructions: ["Name one vehicle part.", "Name one repair tool.", "Write one sentence using must.", "Write one sentence using if."], safetyNote: "Do not touch or repair real vehicles without a trained adult." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Which tool lifts a car?", answer: "A jack." },
+        { type: "written", prompt: "Write one sentence using mustn't." },
+        { type: "multiple-choice", prompt: "Which part helps a vehicle stop?", choices: ["brakes", "seat", "boot", "saddle"], answer: "brakes" }
+      ] }
+    ]
+  }
+];
+
+const P5_TRAVELLING_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-travelling-language",
+    classLevel: "P5",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Travelling",
+    subTopicTitle: "Travel Vocabulary and Past Continuous",
+    lessonTitle: "Travel Vocabulary and Past Continuous",
+    blocks: [
+      { kind: "vocabulary", title: "Travel words", words: [
+        { word: "fare", meaning: "money paid for transport" }, { word: "ticket", meaning: "a paper or record showing payment for travel" }, { word: "destination", meaning: "the place someone is going to" }, { word: "journey", meaning: "travel from one place to another" }, { word: "while", meaning: "during the time that" }, { word: "often", meaning: "many times" }
+      ] },
+      { kind: "definition", term: "travelling", definition: "means moving from one place to another.", simpleCheck: "Moving from Kampala to Jinja by bus is travelling." },
+      { kind: "categories", title: "Travel grammar", categories: [
+        { name: "Past simple", definition: "used for completed past actions", examples: ["I travelled yesterday.", "She bought a ticket."] },
+        { name: "Past continuous", definition: "was/were + verb-ing", examples: ["I was travelling.", "They were waiting."] },
+        { name: "While", definition: "connects actions happening at the same time", examples: ["While I was travelling, it rained."] },
+        { name: "Adverbs", definition: "words that tell how, when or how often", examples: ["quickly", "slowly", "often"] }
+      ] },
+      { kind: "diagram", title: "Travel dialogue", imageUrl: "/images/english/p5-travel-dialogue.svg", caption: "Travel vocabulary and dialogue practice.", labels: ["fare", "ticket", "destination", "journey"] },
+      { kind: "activity", title: "Travel dialogue", instructions: ["Write a dialogue at a bus park.", "Ask for the fare.", "Say your destination.", "Use while or often in one sentence."], safetyNote: "Travel with trusted adults and follow road safety rules." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is fare?", answer: "Money paid for transport." },
+        { type: "written", prompt: "Write one sentence using while." },
+        { type: "multiple-choice", prompt: "The place someone is going to is the:", choices: ["destination", "engine", "receipt", "paragraph"], answer: "destination" }
+      ] }
+    ]
+  }
+];
+
+const P5_CULTURE_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-culture-language",
+    classLevel: "P5",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Culture",
+    subTopicTitle: "Culture, Language and Respectful Description",
+    lessonTitle: "Culture, Language and Respectful Description",
+    blocks: [
+      { kind: "vocabulary", title: "Culture words", words: [
+        { word: "culture", meaning: "the way of life of a group of people" }, { word: "nationality", meaning: "belonging to a country" }, { word: "language", meaning: "words people use to communicate" }, { word: "custom", meaning: "a way people do things" }, { word: "respect", meaning: "treating people well" }, { word: "because", meaning: "used to give a reason" }
+      ] },
+      { kind: "definition", term: "culture", definition: "is the way of life of a group of people, including language, food, dress, music, dance and customs.", simpleCheck: "Greeting elders politely can be part of culture." },
+      { kind: "categories", title: "Writing about culture", categories: [
+        { name: "Nationalities", definition: "words naming people from countries", examples: ["Ugandan", "Kenyan", "Tanzanian"] },
+        { name: "Languages", definition: "ways people speak", examples: ["Luganda", "Runyankore", "English", "Kiswahili"] },
+        { name: "Adjectives and prepositions", definition: "words used to describe and show position/relationship", examples: ["proud of", "known for", "rich in"] },
+        { name: "Respectful writing", definition: "writing that does not mock a culture", examples: ["Their dance is beautiful.", "They speak Lusoga."] }
+      ] },
+      { kind: "diagram", title: "Culture, peace and banking card", imageUrl: "/images/english/p5-culture-peace-banking.svg", caption: "Culture should be described respectfully and clearly.", labels: ["culture", "language", "customs", "respect"] },
+      { kind: "activity", title: "Describe a cultural event", instructions: ["Name the event.", "Say where it happened.", "Describe clothes, music, food or language respectfully.", "Use because or as to give a reason."], safetyNote: "Do not insult or belittle any culture or language." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is culture?", answer: "The way of life of a group of people." },
+        { type: "written", prompt: "Write two respectful sentences about a cultural event." },
+        { type: "multiple-choice", prompt: "Which sentence is respectful?", choices: ["Their dance is beautiful.", "Their customs are stupid.", "Their language is useless.", "They are all bad."], answer: "Their dance is beautiful." }
+      ] }
+    ]
+  }
+];
+
+const P5_PEACE_SECURITY_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-peace-security-language",
+    classLevel: "P5",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Peace and Security",
+    subTopicTitle: "Peace, Security and Safety Messages",
+    lessonTitle: "Peace, Security and Safety Messages",
+    blocks: [
+      { kind: "vocabulary", title: "Peace and security words", words: [
+        { word: "peace", meaning: "living without fighting or fear" }, { word: "security", meaning: "safety and protection" }, { word: "court", meaning: "a place where legal cases are heard" }, { word: "police", meaning: "people who help keep law and order" }, { word: "danger", meaning: "something that can harm people" }, { word: "message", meaning: "information sent to someone" }
+      ] },
+      { kind: "definition", term: "safety message", definition: "is a clear message that tells people what danger to avoid and what safe action to take.", simpleCheck: "Do not play near the road. Use the footpath." },
+      { kind: "categories", title: "Language structures", categories: [
+        { name: "Conjunctions", definition: "words that join ideas", examples: ["and", "because", "so that"] },
+        { name: "Past simple", definition: "used for completed actions", examples: ["The police helped the child."] },
+        { name: "Present perfect", definition: "has/have + past participle", examples: ["The guard has closed the gate."] },
+        { name: "So...that", definition: "shows result", examples: ["The road was so busy that we waited."] }
+      ] },
+      { kind: "activity", title: "Write a safety message", instructions: ["Choose one danger.", "Tell people what not to do.", "Tell people the safe action.", "Use clear and polite words."], safetyNote: "Do not tell learners to hide danger. Report danger to trusted adults." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is peace?", answer: "Living without fighting or fear." },
+        { type: "written", prompt: "Write one safety message about road safety." },
+        { type: "multiple-choice", prompt: "A safety message should be:", choices: ["clear", "hidden", "rude", "false"], answer: "clear" }
+      ] }
+    ]
+  }
+];
+
+const P5_BANKING_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p5-v4-banking-language",
+    classLevel: "P5",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Services: Banking",
+    subTopicTitle: "Banking Vocabulary and Dialogue",
+    lessonTitle: "Banking Vocabulary and Dialogue",
+    blocks: [
+      { kind: "vocabulary", title: "Banking words", words: [
+        { word: "bank", meaning: "a place where people keep, send or receive money" }, { word: "account", meaning: "a record of money kept in a bank" }, { word: "deposit", meaning: "to put money into an account" }, { word: "withdraw", meaning: "to take money from an account" }, { word: "balance", meaning: "money left in an account" }, { word: "cashier", meaning: "a person who serves customers with money transactions" }
+      ] },
+      { kind: "definition", term: "banking", definition: "is the service of keeping, saving, sending, receiving or withdrawing money through a bank or financial institution.", simpleCheck: "Putting money into an account is banking." },
+      { kind: "categories", title: "Banking language", categories: [
+        { name: "Deposit", definition: "putting money into an account", examples: ["I want to deposit UGX 10,000."] },
+        { name: "Withdraw", definition: "taking money from an account", examples: ["She withdrew money for school fees."] },
+        { name: "Balance", definition: "money left in an account", examples: ["My balance is UGX 25,000."] },
+        { name: "Neither...nor", definition: "used to join two negative ideas", examples: ["Neither John nor Mary went to the bank."] },
+        { name: "As soon as", definition: "used to show one action follows another", examples: ["As soon as I reached the bank, I joined the queue."] }
+      ] },
+      { kind: "diagram", title: "Banking language card", imageUrl: "/images/english/p5-culture-peace-banking.svg", caption: "Banking vocabulary and polite service dialogue.", labels: ["bank", "account", "deposit", "withdraw", "balance"] },
+      { kind: "activity", title: "Banking dialogue", instructions: ["Act as customer and cashier.", "Ask to deposit or withdraw money politely.", "Use account, balance or receipt in a sentence.", "Say thank you at the end."], safetyNote: "Do not share real account details, PINs or private family money information." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is a bank?", answer: "A place where people keep, send or receive money." },
+        { type: "written", prompt: "Write one sentence using deposit." },
+        { type: "multiple-choice", prompt: "Money left in an account is called:", choices: ["balance", "engine", "brake", "custom"], answer: "balance" }
+      ] }
+    ]
+  }
+];
+
 const P5_ENGLISH_TOPIC_DATA: Topic[] = [
   {
     "id": "p5-vehicle-repair-maintenance",
@@ -46,6 +552,8 @@ const P5_ENGLISH_TOPIC_DATA: Topic[] = [
     "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_VEHICLE_REPAIR_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Learners use English to identify vehicle parts, repair tools and safety rules.",
       "learningObjectives": [
@@ -287,6 +795,8 @@ const P5_ENGLISH_TOPIC_DATA: Topic[] = [
     "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_PRINT_MEDIA_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Learners read and write about newspapers, magazines, articles and advertisements.",
       "learningObjectives": [
@@ -529,6 +1039,8 @@ const P5_ENGLISH_TOPIC_DATA: Topic[] = [
     "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_TRAVELLING_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Learners use vocabulary and structures for journeys, transport and travel reports.",
       "learningObjectives": [
@@ -768,6 +1280,8 @@ const P5_ENGLISH_TOPIC_DATA: Topic[] = [
     "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_LETTER_WRITING_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Letter Writing helps learners communicate politely through personal letters, invitations and short messages.",
       "learningObjectives": [
@@ -1017,6 +1531,8 @@ const P5_ENGLISH_TOPIC_DATA: Topic[] = [
     "estMinutes": 38,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_COMMUNICATION_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Communication helps learners send, receive and respond to messages clearly and politely.",
       "learningObjectives": [
@@ -1264,6 +1780,8 @@ const P5_ENGLISH_TOPIC_DATA: Topic[] = [
     "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_CULTURE_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Culture helps learners describe people’s ways of life respectfully.",
       "learningObjectives": [
@@ -1510,6 +2028,8 @@ const P5_ENGLISH_TOPIC_DATA: Topic[] = [
     "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_PEACE_SECURITY_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Peace and Security helps learners use English for safety, conflict resolution and community protection.",
       "learningObjectives": [
@@ -1757,6 +2277,8 @@ const P5_ENGLISH_TOPIC_DATA: Topic[] = [
     "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_BANKING_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 beta content: verify against official NCDC Primary Five English before public-final release. Services: Banking helps learners use English for saving, depositing, withdrawing and asking for help at a bank.",
       "learningObjectives": [
@@ -1999,7 +2521,18 @@ const P5_ENGLISH_TOPIC_DATA: Topic[] = [
   }
 ];
 
-export const P5_ENGLISH_TOPICS: Topic[] = balanceTopicAnswers(P5_ENGLISH_TOPIC_DATA);
+const P5_ENGLISH_TERMS = {
+  "p5-vehicle-repair-maintenance": "Term I" as const,
+  "p5-print-media": "Term I" as const,
+  "p5-travelling": "Term I" as const,
+  "p5-letter-writing": "Term II" as const,
+  "p5-communication": "Term II" as const,
+  "p5-culture": "Term II" as const,
+  "p5-peace-security": "Term III" as const,
+  "p5-services-banking": "Term III" as const
+};
+
+export const P5_ENGLISH_TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimaryEnglishV4(P5_ENGLISH_TOPIC_DATA, "P5", P5_ENGLISH_TERMS));
 
 export function getP5EnglishTopic(id: string): Topic | undefined {
   return P5_ENGLISH_TOPICS.find((topic) => topic.id === id);

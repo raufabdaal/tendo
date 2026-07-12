@@ -1,4 +1,5 @@
 import type { Topic } from "@/lib/topics";
+import { addUpperPrimaryReV4 } from "@/lib/v4-re-helpers";
 
 // P5 Religious Education beta content layer.
 // Source map: content/curriculum/p5-re.json.
@@ -644,9 +645,32 @@ const IRE_SEEDS: Seed[] = [
   },
 ];
 
-export const P5_RE_TOPICS: Topic[] = balanceTopicAnswers([...CRE_SEEDS, ...IRE_SEEDS].map(makeTopic));
-export const P5_CRE_TOPICS: Topic[] = balanceTopicAnswers(CRE_SEEDS.map(makeTopic));
-export const P5_IRE_TOPICS: Topic[] = balanceTopicAnswers(IRE_SEEDS.map(makeTopic));
+const P5_RE_TERMS = {
+  "p5-cre-faith": "Term I" as const,
+  "p5-cre-christianity-islam": "Term I" as const,
+  "p5-cre-gods-word-for-us": "Term I" as const,
+  "p5-cre-gods-word-jesus": "Term II" as const,
+  "p5-cre-new-people-spirit": "Term II" as const,
+  "p5-cre-we-are-church": "Term II" as const,
+  "p5-cre-witness": "Term III" as const,
+  "p5-cre-discipleship-rewards": "Term III" as const,
+  "p5-cre-relationship-with-god": "Term III" as const,
+  "p5-cre-hope": "Term III" as const,
+  "p5-ire-surat-al-zilzala": "Term I" as const,
+  "p5-ire-settlement-debts": "Term I" as const,
+  "p5-ire-resurrection-judgment": "Term I" as const,
+  "p5-ire-fasting": "Term II" as const,
+  "p5-ire-prophet-madina": "Term II" as const,
+  "p5-ire-surat-al-kauthar": "Term II" as const,
+  "p5-ire-good-neighbourliness": "Term III" as const,
+  "p5-ire-paradise-hell": "Term III" as const,
+  "p5-ire-tarawiih-idd-prayers": "Term III" as const,
+  "p5-ire-last-days-prophet": "Term III" as const
+};
+
+export const P5_RE_TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimaryReV4([...CRE_SEEDS, ...IRE_SEEDS].map(makeTopic), "P5", P5_RE_TERMS));
+export const P5_CRE_TOPICS: Topic[] = P5_RE_TOPICS.filter((topic) => topic.themeId === "p5-cre");
+export const P5_IRE_TOPICS: Topic[] = P5_RE_TOPICS.filter((topic) => topic.themeId === "p5-ire");
 
 export function getP5ReTopic(id: string): Topic | undefined {
   return P5_RE_TOPICS.find((topic) => topic.id === id);

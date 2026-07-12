@@ -1,11 +1,73 @@
+import type { UpperPrimaryLesson } from "@/lib/content-blocks";
 import type { Topic } from "@/lib/topics";
+import { addUpperPrimarySocialV4 } from "@/lib/v4-social-helpers";
 
 // P4 Social Studies live beta content layer.
 // Source map: content/curriculum/p4-social-studies.json
 // Rule: NCDC first, build second. This file follows the official NCDC Primary Four Social Studies Syllabus, 2010.
 // Status: live beta until checked by a human reviewer for district-local examples, tone and source fidelity.
 
-export const P4_SOCIAL_TOPICS: Topic[] = [
+const P4_LOCATION_DISTRICT_V4: UpperPrimaryLesson[] = [
+  { id: "p4-v4-district-location", classLevel: "P4", term: "Term I", curriculumMode: "subject", subject: "Social Studies", topicTitle: "Location of Our District in Uganda", subTopicTitle: "District Location and Map Skills", lessonTitle: "District Location and Map Skills", blocks: [
+    { kind: "definition", term: "district", definition: "is an administrative area in Uganda with leaders, people, services and important places.", simpleCheck: "Kampala, Wakiso, Gulu and Mbale are examples of districts." },
+    { kind: "categories", title: "Map skills", categories: [{ name: "Map", definition: "a drawing of a place as seen from above", examples: ["map of Uganda", "map of a district"] }, { name: "Map title", definition: "tells what the map is about", examples: ["Map of Uganda"] }, { name: "Map key", definition: "explains symbols used on a map", examples: ["road symbol", "river symbol", "school symbol"] }, { name: "Compass directions", definition: "north, east, south and west", examples: ["Kenya is east of Uganda"] }] },
+    { kind: "diagram", title: "District map and compass", imageUrl: "/images/social-studies/p4-district-map-compass.svg", caption: "Use map title, key and compass directions to locate a district.", labels: ["title", "key", "north", "east", "south", "west"] },
+    { kind: "activity", title: "Map practice", instructions: ["Name your district.", "Name one neighbouring district.", "Draw a simple map with a title and key.", "Use north, east, south or west in one sentence."], safetyNote: "Use real local examples respectfully and ask a teacher if you are unsure." },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "short-answer", prompt: "What is a district?", answer: "An administrative area in Uganda." }, { type: "short-answer", prompt: "What does a map key do?", answer: "It explains map symbols." }, { type: "multiple-choice", prompt: "Which is a compass direction?", choices: ["east", "market", "river", "near"], answer: "east" }] }
+  ] }
+];
+
+const P4_PHYSICAL_FEATURES_V4: UpperPrimaryLesson[] = [
+  { id: "p4-v4-physical-features", classLevel: "P4", term: "Term I", curriculumMode: "subject", subject: "Social Studies", topicTitle: "Physical Features in Our District", subTopicTitle: "Physical Features, Importance and Problems", lessonTitle: "Physical Features, Importance and Problems", blocks: [
+    { kind: "definition", term: "physical feature", definition: "is a natural feature found on the earth's surface.", simpleCheck: "A river is a physical feature; a classroom is not." },
+    { kind: "categories", title: "Types of physical features", categories: [{ name: "Raised land", definition: "high landforms", examples: ["hills", "mountains"] }, { name: "Low land", definition: "lower landforms", examples: ["valleys", "plains"] }, { name: "Water features", definition: "natural places with water", examples: ["rivers", "lakes", "swamps"] }] },
+    { kind: "diagram", title: "Physical features", imageUrl: "/images/social-studies/p4-physical-features-district.svg", caption: "Common physical features in a district and their importance.", labels: ["hill", "valley", "river", "lake", "swamp"] },
+    { kind: "uses", title: "Importance and problems", points: ["Rivers and lakes provide water and fish.", "Hills and mountains may attract tourists.", "Valleys may have fertile soils.", "Swamps store water and provide papyrus.", "Some features may flood, be dangerous or be polluted.", "People should protect water sources and avoid dumping rubbish."] },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "short-answer", prompt: "What is a physical feature?", answer: "A natural feature on the earth's surface." }, { type: "short-answer", prompt: "Name three physical features in a district.", answer: "Hill, valley, river, lake, swamp or mountain." }, { type: "multiple-choice", prompt: "Which feature provides water?", choices: ["river", "desk", "shoe", "clock"], answer: "river" }] }
+  ] }
+];
+
+const P4_VEGETATION_V4: UpperPrimaryLesson[] = [
+  { id: "p4-v4-vegetation", classLevel: "P4", term: "Term II", curriculumMode: "subject", subject: "Social Studies", topicTitle: "Vegetation in Our District", subTopicTitle: "Types, Uses and Conservation of Vegetation", lessonTitle: "Types, Uses and Conservation of Vegetation", blocks: [
+    { kind: "definition", term: "vegetation", definition: "is the plant cover growing in an area.", simpleCheck: "Grass, forests, crops and shrubs are vegetation." },
+    { kind: "categories", title: "Types of vegetation", categories: [{ name: "Natural vegetation", definition: "plants that grow without being planted by people", examples: ["forests", "grasslands", "wetlands"] }, { name: "Planted vegetation", definition: "plants grown by people", examples: ["crops", "tree plantations", "flowers"] }, { name: "Wetland vegetation", definition: "plants that grow in wet places", examples: ["papyrus", "reeds"] }] },
+    { kind: "diagram", title: "Vegetation conservation", imageUrl: "/images/social-studies/p4-vegetation-conservation.svg", caption: "Vegetation gives food, timber, shade, medicine and habitats.", labels: ["forest", "grass", "wetland", "conservation"] },
+    { kind: "uses", title: "Uses and conservation", points: ["Vegetation provides food, firewood, timber, medicine, shade and habitats.", "Vegetation protects soil from erosion.", "People conserve vegetation by planting trees, avoiding bush burning and protecting wetlands.", "Cutting many trees can cause soil erosion and loss of habitats."] },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "short-answer", prompt: "What is vegetation?", answer: "Plant cover in an area." }, { type: "short-answer", prompt: "Give three uses of vegetation.", answer: "Food, timber, firewood, medicine, shade or habitats." }, { type: "multiple-choice", prompt: "Which action conserves vegetation?", choices: ["planting trees", "bush burning", "cutting all trees", "destroying wetlands"], answer: "planting trees" }] }
+  ] }
+];
+
+const P4_PEOPLE_DISTRICT_V4: UpperPrimaryLesson[] = [
+  { id: "p4-v4-people-district", classLevel: "P4", term: "Term II", curriculumMode: "subject", subject: "Social Studies", topicTitle: "People in Our District", subTopicTitle: "People, Culture, Services and Cooperation", lessonTitle: "People, Culture, Services and Cooperation", blocks: [
+    { kind: "definition", term: "people in a district", definition: "are the families, groups, leaders, workers and learners who live or work in a district.", simpleCheck: "Teachers, pupils, farmers, traders and leaders are people in a district." },
+    { kind: "categories", title: "People and services", categories: [{ name: "Ethnic groups", definition: "groups of people with shared origin, language or culture", examples: ["local examples from the district"] }, { name: "Culture and customs", definition: "ways of life of people", examples: ["language", "food", "dress", "music"] }, { name: "Social services", definition: "services that help people live better", examples: ["schools", "health centres", "roads", "water sources"] }] },
+    { kind: "diagram", title: "People and services", imageUrl: "/images/social-studies/p4-people-culture-services.svg", caption: "People in a district live together through culture, services and cooperation.", labels: ["people", "culture", "school", "health centre", "market"] },
+    { kind: "characteristics", title: "Living together", points: ["People in a district may have different languages and customs.", "People should respect one another.", "Social services help meet people's needs.", "Cooperation helps communities solve problems."] },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "short-answer", prompt: "Name two social services in a district.", answer: "School, health centre, road, market, water source or police station." }, { type: "short-answer", prompt: "Why should people respect culture?", answer: "Respect helps people live peacefully." }, { type: "multiple-choice", prompt: "A school provides:", choices: ["education", "rain", "teeth", "fire"], answer: "education" }] }
+  ] }
+];
+
+const P4_LEADERS_DISTRICT_V4: UpperPrimaryLesson[] = [
+  { id: "p4-v4-leaders-district", classLevel: "P4", term: "Term III", curriculumMode: "subject", subject: "Social Studies", topicTitle: "Our Leaders in the District", subTopicTitle: "Leaders, Roles and Responsibilities", lessonTitle: "Leaders, Roles and Responsibilities", blocks: [
+    { kind: "definition", term: "leader", definition: "is a person who guides, serves and organises other people.", simpleCheck: "A head teacher is a school leader." },
+    { kind: "categories", title: "Types of leaders", categories: [{ name: "Family leaders", definition: "people who guide families", examples: ["parents", "guardians"] }, { name: "School leaders", definition: "people who guide a school", examples: ["head teacher", "teachers", "prefects"] }, { name: "Local leaders", definition: "leaders in the community or district", examples: ["LC leaders", "district chairperson"] }, { name: "Religious/cultural leaders", definition: "leaders who guide people in faith or culture", examples: ["priests", "imams", "clan leaders"] }] },
+    { kind: "diagram", title: "District leaders and services", imageUrl: "/images/social-studies/p4-district-leaders-services.svg", caption: "Leaders guide, serve and organise people in a district.", labels: ["leader", "roles", "service", "responsibility"] },
+    { kind: "characteristics", title: "Qualities and roles", points: ["Good leaders are honest, fair, responsible and hardworking.", "Leaders settle disputes and guide people.", "Leaders plan development and organise services.", "Citizens also have rights and responsibilities." ] },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "short-answer", prompt: "What is a leader?", answer: "A person who guides, serves and organises others." }, { type: "short-answer", prompt: "Give three qualities of a good leader.", answer: "Honest, fair, responsible, caring or hardworking." }, { type: "multiple-choice", prompt: "A good leader should:", choices: ["serve people", "cheat people", "ignore rules", "insult others"], answer: "serve people" }] }
+  ] }
+];
+
+const P4_MEETING_NEEDS_V4: UpperPrimaryLesson[] = [
+  { id: "p4-v4-meeting-needs", classLevel: "P4", term: "Term III", curriculumMode: "subject", subject: "Social Studies", topicTitle: "How to Meet People's Needs in Our District", subTopicTitle: "Needs, Work, Services and Problem Solving", lessonTitle: "Needs, Work, Services and Problem Solving", blocks: [
+    { kind: "definition", term: "need", definition: "is something important that people require to live well.", simpleCheck: "Food, water, shelter, clothing, education and health care are needs." },
+    { kind: "categories", title: "Ways needs are met", categories: [{ name: "Basic needs", definition: "things people need for life and growth", examples: ["food", "water", "shelter", "clothing"] }, { name: "Economic activities", definition: "work people do to get income and goods", examples: ["farming", "trading", "fishing", "crafts"] }, { name: "Community services", definition: "services that help people", examples: ["schools", "health centres", "roads", "security"] }, { name: "Cooperation", definition: "working together", examples: ["community cleaning", "road repair", "saving groups"] }] },
+    { kind: "diagram", title: "District needs and services", imageUrl: "/images/social-studies/p4-district-leaders-services.svg", caption: "People meet needs through work, services and cooperation.", labels: ["needs", "work", "services", "cooperation"] },
+    { kind: "characteristics", title: "Problem solving", points: ["People identify the need or problem.", "They choose safe solutions.", "They work with leaders and community members.", "They care for public services and resources." ] },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "short-answer", prompt: "Name four basic needs.", answer: "Food, water, shelter, clothing, education or health care." }, { type: "short-answer", prompt: "Give two economic activities in a district.", answer: "Farming, trading, fishing, transport, crafts or building." }, { type: "multiple-choice", prompt: "Roads help people to:", choices: ["move goods and reach services", "brush teeth", "make rain", "grow hair"], answer: "move goods and reach services" }] }
+  ] }
+];
+
+const P4_SOCIAL_TOPIC_DATA: Topic[] = [
   {
     "id": "p4-location-district-uganda",
     "themeId": "p4-sst-living-together-district",
@@ -14,6 +76,8 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 34,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_LOCATION_DISTRICT_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Social Studies beta: built from the official NCDC Primary Four Social Studies Syllabus, 2010; human review still required before premium-final release. Location of Our District in Uganda helps P4 learners understand and describe life in their district.",
       "learningObjectives": [
@@ -222,6 +286,8 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 34,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_PHYSICAL_FEATURES_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Social Studies beta: built from the official NCDC Primary Four Social Studies Syllabus, 2010; human review still required before premium-final release. Physical Features in Our District helps P4 learners understand and describe life in their district.",
       "learningObjectives": [
@@ -412,6 +478,8 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_VEGETATION_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Social Studies beta: built from the official NCDC Primary Four Social Studies Syllabus, 2010; human review still required before premium-final release. Vegetation in Our District helps P4 learners understand and describe life in their district.",
       "learningObjectives": [
@@ -601,6 +669,8 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_PEOPLE_DISTRICT_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Social Studies beta: built from the official NCDC Primary Four Social Studies Syllabus, 2010; human review still required before premium-final release. People in Our District helps P4 learners understand and describe life in their district.",
       "learningObjectives": [
@@ -809,6 +879,8 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 34,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_LEADERS_DISTRICT_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Social Studies beta: built from the official NCDC Primary Four Social Studies Syllabus, 2010; human review still required before premium-final release. Our Leaders in the District helps P4 learners understand and describe life in their district.",
       "learningObjectives": [
@@ -998,6 +1070,8 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 34,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_MEETING_NEEDS_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Social Studies beta: built from the official NCDC Primary Four Social Studies Syllabus, 2010; human review still required before premium-final release. How to Meet People's Needs in Our District helps P4 learners understand and describe life in their district.",
       "learningObjectives": [
@@ -1199,6 +1273,17 @@ export const P4_SOCIAL_TOPICS: Topic[] = [
     ]
   }
 ];
+
+const P4_SOCIAL_TERMS = {
+  "p4-location-district-uganda": "Term I" as const,
+  "p4-physical-features-district": "Term I" as const,
+  "p4-vegetation-district": "Term II" as const,
+  "p4-people-district": "Term II" as const,
+  "p4-leaders-district": "Term III" as const,
+  "p4-meeting-needs-district": "Term III" as const
+};
+
+export const P4_SOCIAL_TOPICS: Topic[] = addUpperPrimarySocialV4(P4_SOCIAL_TOPIC_DATA, "P4", P4_SOCIAL_TERMS);
 
 export function getP4SocialTopic(id: string): Topic | undefined {
   return P4_SOCIAL_TOPICS.find((topic) => topic.id === id);

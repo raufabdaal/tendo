@@ -39,6 +39,8 @@
 - [x] Add final mobile polish for compact module chips and readable/swipeable images
 - [x] Log `DEV-035` mobile-first v4 module/stepper decision
 - [x] Build passed after v4 mobile polish and P3 Plants migration (`npm run build`, 356 static pages)
+- [x] Add final global mobile overflow guard for v4/content pages
+- [x] Build passed after mobile responsiveness guard (`npm install && npm run build`, 356 static pages)
 - [x] Migrate all 12 P3 thematic routes to lower-primary v4 renderer as structural first pass
 - [x] Keep P3 Theme 6 Plants as first hand-deepened v4 model
 - [x] Manually deepen all remaining P3 thematic v4 themes after structural migration
@@ -74,17 +76,87 @@
 - [x] Hand-deepen P4 Science Weather Changes in v4
 - [x] Hand-deepen P4 Science Personal Hygiene / Sanitation in v4
 - [x] Build passed after P4 Animal Life / Weather / Hygiene / Sanitation deepening (`npm run build`, 356 static pages)
-- [ ] Hand-deepen P4 Science Communicable Intestinal Diseases and Worm Infestation in v4
-- [ ] Hand-deepen P4 Science Vectors and Diseases in v4
-- [ ] Hand-deepen P4 Science Accidents, Poisoning and First Aid in v4
-- [ ] Hand-deepen P4 Science Our Food in v4
-- [ ] Hand-deepen P5 Science Digestive System in v4
-- [ ] Hand-deepen P5 Science Soil in v4
-- [ ] Continue P4/P5 Science manual deepening topic-by-topic
-- [x] Build passed after completing P3 thematic v4 migration (`npm run build`, 356 static pages)
-- [x] Build passed after full P3 thematic structural v4 migration (`npm run build`, 356 static pages)
-- [ ] Founder review v4 pilot before broad migration (`/p3/theme/p3-theme-6-plants`, `/science/p5/p5-keeping-poultry-bees`)
-- [ ] Migrate P3/P4/P5 away from meta-module learner UI after pilot approval
+- [x] Hand-deepen P4 Science Communicable Intestinal Diseases and Worm Infestation in v4
+- [x] Hand-deepen P4 Science Vectors and Diseases in v4
+- [x] Hand-deepen P4 Science Accidents, Poisoning and First Aid in v4
+- [x] Hand-deepen P4 Science Our Food in v4
+- [x] Complete P4 Integrated Science v4 manual deepening across all 12 topics
+- [x] Build passed after completing P4 Science v4 (`npm run build`, 356 static pages)
+- [x] Hand-deepen P5 Science Digestive System in v4
+- [x] Hand-deepen P5 Science Soil in v4
+- [x] Hand-deepen P5 Science Heat Energy in v4
+- [x] Build passed after P5 Digestive System / Soil / Heat deepening (`npm run build`, 356 static pages)
+- [x] Hand-deepen P5 Science Measurement in v4
+- [x] Hand-deepen P5 Science Immunisation in v4
+- [x] Hand-deepen P5 Science Crop Growing in v4
+- [x] Hand-deepen P5 Science Bacteria and Fungi in v4
+- [x] Hand-deepen P5 Science Types of Changes in v4
+- [x] Complete P5 Integrated Science v4 manual deepening across all 9 topics
+- [x] Build passed after completing P5 Science v4 (`npm run build`, 356 static pages)
+- [x] Add shared upper-primary Mathematics v4 migrator (`app/lib/v4-math-helpers.ts`)
+- [x] Structurally migrate all P4 Mathematics topics to upper-primary v4
+- [x] Structurally migrate all P5 Mathematics topics to upper-primary v4
+- [x] Document P4/P5 Mathematics v4 migration (`docs/ops/v4-p4-p5-math-migration-2026-07-12.md`)
+- [x] Build passed after P4/P5 Mathematics structural v4 migration (`npm run build`, 356 static pages)
+- [x] Hand-deepen P4 Mathematics Whole Numbers / Operations / Fractions in v4
+- [x] Hand-deepen P5 Mathematics Fractions / Operations in v4
+- [x] Document P4/P5 Mathematics priority deepening (`docs/ops/v4-p4-p5-math-priority-deepening-2026-07-12.md`)
+- [x] Build passed after P4/P5 Mathematics priority deepening (`npm run build`, 356 static pages)
+- [x] Hand-deepen P4 Mathematics 2-D Geometry / Money / Time / Measurement in v4
+- [x] Hand-deepen P5 Mathematics Whole Numbers / Money / Measurement / Algebra in v4
+- [x] Build passed after second P4/P5 Mathematics deepening batch (`npm run build`, 356 static pages)
+- [x] Finish remaining P4/P5 Mathematics manual deepening topics
+- [x] Complete P4 Mathematics v4 manual deepening across all 12 topics
+- [x] Complete P5 Mathematics v4 manual deepening across all 12 topics
+- [x] Build passed after completing P4/P5 Mathematics v4 (`npm run build`, 356 static pages)
+- [x] Add shared upper-primary English v4 migrator (`app/lib/v4-english-helpers.ts`)
+- [x] Extend upper-primary v4 renderer for English vocabulary/story/activity blocks
+- [x] Structurally migrate all P4 English topics to upper-primary v4
+- [x] Structurally migrate all P5 English topics to upper-primary v4
+- [x] Document P4/P5 English v4 migration (`docs/ops/v4-p4-p5-english-migration-2026-07-12.md`)
+- [x] Build passed after P4/P5 English structural v4 migration (`npm run build`, 356 static pages)
+- [x] Hand-deepen priority P4/P5 English topics in v4
+- [x] Hand-deepen P4 English Describing / Directions / Buying and Selling in v4
+- [x] Hand-deepen P5 English Letter Writing / Communication / Print Media in v4
+- [x] Build passed after P4/P5 English priority deepening (`npm run build`, 356 static pages)
+- [x] Finish remaining P4/P5 English manual deepening topics
+- [x] Complete P4 English v4 manual deepening across all 8 topics
+- [x] Complete P5 English v4 manual deepening across all 8 topics
+- [x] Add shared upper-primary Social Studies v4 migrator (`app/lib/v4-social-helpers.ts`)
+- [x] Structurally migrate all P4 Social Studies topics to upper-primary v4
+- [x] Structurally migrate all P5 Social Studies topics to upper-primary v4
+- [x] Document P4/P5 Social Studies v4 migration (`docs/ops/v4-p4-p5-social-studies-migration-2026-07-12.md`)
+- [x] Build passed after P4/P5 Social Studies structural v4 migration (`npm run build`, 356 static pages)
+- [x] Enrich shared Social Studies v4 helper with vocabulary/read-and-talk/local-example modules
+- [x] Add shared upper-primary Religious Education v4 migrator (`app/lib/v4-re-helpers.ts`)
+- [x] Structurally migrate all P4 Religious Education topics to upper-primary v4
+- [x] Structurally migrate all P5 Religious Education topics to upper-primary v4
+- [x] Document P4/P5 Religious Education v4 migration (`docs/ops/v4-p4-p5-re-migration-2026-07-12.md`)
+- [x] Build passed after SST helper enrichment and P4/P5 RE v4 migration (`npm install && npm run build`, 356 static pages)
+- [x] Hand-deepen all 6 P4 Social Studies topics in v4
+- [x] Hand-deepen priority P5 Social Studies topics: Location, Physical Features, Government, Independence, Population
+- [x] Build passed after P4 SST complete + P5 SST priority deepening (`npm run build`, 356 static pages)
+- [x] Hand-deepen remaining P5 Social Studies topics in v4
+- [x] Complete P5 Social Studies v4 manual deepening across all 12 topics
+- [x] Complete P4/P5 Social Studies at AI-builder v4 level
+- [x] Build passed after completing P5 SST v4 (`npm run build`, 356 static pages)
+- [x] Start P6/P7 structural v4 migration after P4/P5 priority pass
+- [x] Structurally migrate all P6 Mathematics topics to upper-primary v4
+- [x] Structurally migrate all P6 Integrated Science topics to upper-primary v4
+- [x] Structurally migrate all P6 English topics to upper-primary v4
+- [x] Structurally migrate all P6 Social Studies topics to upper-primary v4
+- [x] Structurally migrate all P6 Religious Education topics to upper-primary v4
+- [x] Structurally migrate all P7 Mathematics topics to upper-primary v4
+- [x] Structurally migrate all P7 Integrated Science topics to upper-primary v4
+- [x] Structurally migrate all P7 English topics to upper-primary v4
+- [x] Structurally migrate all P7 Social Studies topics to upper-primary v4
+- [x] Structurally migrate all P7 Religious Education CRE/IRE topics to upper-primary v4
+- [x] Improve Social Studies v4 helper so P6 uses East Africa context and P7 uses Africa/world context
+- [x] Document P6/P7 structural v4 migration (`docs/ops/v4-p6-p7-structural-migration-2026-07-12.md`)
+- [x] Build passed after P6/P7 structural v4 migration (`npm run build`, 356 static pages)
+- [ ] Real-phone smoke test selected P6/P7 v4 topic pages
+- [ ] Hand-deepen priority P6/P7 PLE-heavy topics in v4 after structural migration
+- [ ] Qualified CRE/IRE teacher review P6/P7 Religious Education before premium-final status
 
 ---
 

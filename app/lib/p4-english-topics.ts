@@ -1,11 +1,226 @@
+import type { UpperPrimaryLesson } from "@/lib/content-blocks";
 import type { Topic } from "@/lib/topics";
+import { addUpperPrimaryEnglishV4 } from "@/lib/v4-english-helpers";
 
 // P4 English live beta content layer.
 // Source map: content/curriculum/p4-english.json
 // Rule: NCDC first, build second. This file follows the official NCDC Primary Four English Syllabus, 2010.
 // Status: live beta until checked by a human reviewer for language level, tone and source fidelity.
 
-export const P4_ENGLISH_TOPICS: Topic[] = [
+const P4_DESCRIBING_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-describing-people",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Describing People and Objects",
+    subTopicTitle: "Describing People",
+    lessonTitle: "Describing People",
+    blocks: [
+      { kind: "vocabulary", title: "Words for people", words: [
+        { word: "tall", meaning: "having more height than many others" },
+        { word: "short", meaning: "having less height" },
+        { word: "polite", meaning: "showing good manners" },
+        { word: "kind", meaning: "helpful and caring" },
+        { word: "honest", meaning: "telling the truth" },
+        { word: "smart", meaning: "clean, neat or clever depending on use" },
+      ] },
+      { kind: "definition", term: "adjective", definition: "is a word that describes a person, animal, place or thing.", simpleCheck: "Tall, kind and smart are adjectives." },
+      { kind: "categories", title: "Types of describing words", categories: [
+        { name: "Appearance", definition: "words that tell how a person looks", examples: ["tall", "short", "smart", "dark-skinned", "light-skinned"] },
+        { name: "Character", definition: "words that tell how a person behaves", examples: ["kind", "polite", "honest", "careless"] },
+        { name: "Present simple with is/are", definition: "use is for one person and are for many people", examples: ["Amina is polite.", "The boys are smart."] },
+      ] },
+      { kind: "examples", title: "Model sentences", examples: [
+        { name: "Amina is tall and polite.", explanation: "describes appearance and character" },
+        { name: "My teacher is smart and kind.", explanation: "uses is for one person" },
+        { name: "The pupils are clean and happy.", explanation: "uses are for many people" },
+      ] },
+      { kind: "diagram", title: "Describing words", imageUrl: "/images/english/p4-describing-adjectives.svg", caption: "Adjectives help describe people and objects in complete sentences.", labels: ["appearance", "character", "is", "are", "adjectives"] },
+      { kind: "activity", title: "Speaking and writing practice", instructions: ["Choose one friend or family member.", "Say two appearance words.", "Say two character words.", "Write four complete sentences."], safetyNote: "Do not use words that insult or mock someone's body, tribe, skin colour or disability." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is an adjective?", answer: "A word that describes a person, animal, place or thing." },
+        { type: "written", prompt: "Write two sentences describing your teacher.", answer: "Example: My teacher is kind. She is smart." },
+        { type: "multiple-choice", prompt: "Which sentence is correct?", choices: ["John is polite.", "John are polite.", "Polite John.", "John polite is."], answer: "John is polite." },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-describing-objects",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Describing People and Objects",
+    subTopicTitle: "Describing Objects",
+    lessonTitle: "Describing Objects",
+    blocks: [
+      { kind: "vocabulary", title: "Words for objects", words: [
+        { word: "round", meaning: "shaped like a circle or ball" },
+        { word: "rectangular", meaning: "having the shape of a rectangle" },
+        { word: "smooth", meaning: "not rough" },
+        { word: "rough", meaning: "not smooth" },
+        { word: "heavy", meaning: "having much weight" },
+        { word: "light", meaning: "not heavy" },
+      ] },
+      { kind: "definition", term: "object description", definition: "is a sentence that tells the colour, size, shape, texture or weight of a thing.", simpleCheck: "The box is rectangular and heavy." },
+      { kind: "categories", title: "Ways to describe objects", categories: [
+        { name: "Colour", definition: "what colour something is", examples: ["red", "blue", "green"] },
+        { name: "Shape", definition: "the form of an object", examples: ["round", "flat", "rectangular"] },
+        { name: "Texture", definition: "how a surface feels", examples: ["smooth", "rough", "soft"] },
+        { name: "Comparison", definition: "showing how two things differ", examples: ["longer than", "heavier than", "smoother than"] },
+      ] },
+      { kind: "examples", title: "Model sentences", examples: [
+        { name: "The red pencil is longer than the blue pencil.", explanation: "compares two pencils" },
+        { name: "This stone is rough and heavy.", explanation: "describes texture and weight" },
+        { name: "These books are clean and new.", explanation: "uses these and are for many objects" },
+      ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "written", prompt: "Describe your school bag using two adjectives.", answer: "Example: My school bag is blue and heavy." },
+        { type: "short-answer", prompt: "Write one word that describes texture.", answer: "Smooth, rough or soft." },
+        { type: "multiple-choice", prompt: "Which word describes shape?", choices: ["round", "quickly", "yesterday", "under"], answer: "round" },
+      ] },
+    ],
+  },
+];
+
+const P4_DIRECTIONS_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-giving-directions",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Giving Directions",
+    subTopicTitle: "Direction Vocabulary and Polite Routes",
+    lessonTitle: "Giving Directions",
+    blocks: [
+      { kind: "vocabulary", title: "Direction words", words: [
+        { word: "straight ahead", meaning: "continue moving forward" },
+        { word: "turn left", meaning: "move to the left side" },
+        { word: "turn right", meaning: "move to the right side" },
+        { word: "opposite", meaning: "on the other side facing something" },
+        { word: "near", meaning: "close to something" },
+        { word: "between", meaning: "in the middle of two things" },
+      ] },
+      { kind: "definition", term: "directions", definition: "are words or sentences that tell someone how to get to a place.", simpleCheck: "Go straight ahead and turn left at the shop." },
+      { kind: "categories", title: "Parts of good directions", categories: [
+        { name: "Start point", definition: "where the person begins", examples: ["from the school gate", "from the market"] },
+        { name: "Movement words", definition: "words that tell how to move", examples: ["go", "turn", "cross", "walk"] },
+        { name: "Place markers", definition: "places that help the listener find the way", examples: ["shop", "church", "mosque", "clinic", "big tree"] },
+        { name: "Polite language", definition: "kind words used when helping someone", examples: ["please", "excuse me", "thank you"] },
+      ] },
+      { kind: "examples", title: "Model directions", examples: [
+        { name: "Go straight ahead up to the road.", explanation: "gives movement" },
+        { name: "Turn left at the shop.", explanation: "uses a place marker" },
+        { name: "The clinic is opposite the market.", explanation: "uses opposite" },
+      ] },
+      { kind: "diagram", title: "Direction language", imageUrl: "/images/english/p4-directions-map.svg", caption: "Use simple map and direction words to guide someone politely.", labels: ["left", "right", "near", "opposite", "between"] },
+      { kind: "activity", title: "Speaking practice", instructions: ["Choose a place in your school.", "Tell a friend how to get there in three steps.", "Use please or excuse me.", "Let your friend repeat the directions."], safetyNote: "Do not send a child outside the school or home compound without adult permission." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "written", prompt: "Write three sentences directing someone from your classroom to the school gate." },
+        { type: "multiple-choice", prompt: "Which sentence is polite?", choices: ["Please turn left at the office.", "Move!", "You are lost.", "Go away."], answer: "Please turn left at the office." },
+      ] },
+    ],
+  },
+];
+
+const P4_BUYING_SELLING_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-buying-selling-dialogues",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "English",
+    topicTitle: "Buying and Selling",
+    subTopicTitle: "Market Vocabulary and Polite Conversations",
+    lessonTitle: "Buying and Selling Conversations",
+    blocks: [
+      { kind: "vocabulary", title: "Market words", words: [
+        { word: "buyer", meaning: "a person who buys goods" },
+        { word: "seller", meaning: "a person who sells goods" },
+        { word: "price", meaning: "the money needed to buy something" },
+        { word: "change", meaning: "money returned after paying more than the cost" },
+        { word: "receipt", meaning: "a paper showing what was bought and paid" },
+        { word: "customer", meaning: "a person who buys goods or services" },
+      ] },
+      { kind: "definition", term: "buying and selling conversation", definition: "is a polite talk between a buyer and seller about goods, prices and payment.", simpleCheck: "How much is this book? It is two thousand shillings." },
+      { kind: "categories", title: "Useful sentence structures", categories: [
+        { name: "Asking price", definition: "asking how much something costs", examples: ["How much is this?", "What is the price of a mango?"] },
+        { name: "Requesting politely", definition: "asking for an item respectfully", examples: ["May I have two pencils, please?", "Please give me a receipt."] },
+        { name: "Answering as a seller", definition: "replying clearly to a customer", examples: ["It costs UGX 1,000.", "Here is your change."] },
+      ] },
+      { kind: "examples", title: "Model dialogue", examples: [
+        { name: "Buyer: How much is this ruler?", explanation: "asks price" },
+        { name: "Seller: It is one thousand shillings.", explanation: "answers clearly" },
+        { name: "Buyer: May I have one, please?", explanation: "polite request" },
+      ] },
+      { kind: "diagram", title: "Market dialogue", imageUrl: "/images/english/p4-buying-selling-dialogue.svg", caption: "Use polite words when buying and selling.", labels: ["buyer", "seller", "price", "change", "please"] },
+      { kind: "activity", title: "Role-play", instructions: ["Act as buyer and seller.", "Ask for the price politely.", "Buy one item.", "Say thank you and give change in the dialogue."], safetyNote: "Use pretend money unless a teacher or parent gives permission." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "written", prompt: "Write a short dialogue between a buyer and seller." },
+        { type: "short-answer", prompt: "Who is a seller?", answer: "A person who sells goods." },
+        { type: "multiple-choice", prompt: "Which word is polite?", choices: ["please", "give me now!", "move", "shut up"], answer: "please" },
+      ] },
+    ],
+  },
+];
+
+const P4_LIKES_FEELINGS_V4: UpperPrimaryLesson[] = [
+  { id: "p4-v4-likes-feelings", classLevel: "P4", term: "Term I", curriculumMode: "subject", subject: "English", topicTitle: "What I Like and How I Feel", subTopicTitle: "Likes, Preferences and Feelings", lessonTitle: "Likes, Preferences and Feelings", blocks: [
+    { kind: "vocabulary", title: "Words for likes and feelings", words: [{ word: "like", meaning: "to enjoy something" }, { word: "prefer", meaning: "to like one thing more than another" }, { word: "happy", meaning: "feeling glad" }, { word: "sad", meaning: "feeling unhappy" }, { word: "afraid", meaning: "feeling fear" }, { word: "because", meaning: "used to give a reason" }] },
+    { kind: "definition", term: "preference", definition: "is something a person likes more than another thing.", simpleCheck: "I prefer mangoes to oranges." },
+    { kind: "categories", title: "Sentence patterns", categories: [{ name: "Likes", definition: "tell what someone enjoys", examples: ["I like reading.", "She likes netball."] }, { name: "Preferences", definition: "tell what someone likes more", examples: ["I prefer rice to posho."] }, { name: "Feelings with reasons", definition: "tell a feeling and why", examples: ["I am happy because I passed."] }] },
+    { kind: "diagram", title: "Feelings and preferences", imageUrl: "/images/english/p4-feelings-preferences.svg", caption: "Use like, prefer and because to talk about feelings and choices.", labels: ["like", "prefer", "happy", "sad", "because"] },
+    { kind: "activity", title: "Speaking and writing practice", instructions: ["Say two things you like.", "Say one thing you prefer and give a reason.", "Write three sentences about your feelings using because."], safetyNote: "Do not laugh at another learner's feelings or choices." },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "written", prompt: "Write one sentence using like." }, { type: "written", prompt: "Write one sentence using prefer." }, { type: "multiple-choice", prompt: "Choose the correct sentence.", choices: ["I am happy because I passed.", "I happy because passed.", "Happy I because.", "I am because happy passed."], answer: "I am happy because I passed." }] }
+  ] }
+];
+
+const P4_BEHAVIOUR_V4: UpperPrimaryLesson[] = [
+  { id: "p4-v4-behaviour", classLevel: "P4", term: "Term II", curriculumMode: "subject", subject: "English", topicTitle: "Behaviour", subTopicTitle: "Good Behaviour and Advice", lessonTitle: "Good Behaviour and Advice", blocks: [
+    { kind: "vocabulary", title: "Behaviour words", words: [{ word: "behaviour", meaning: "the way a person acts" }, { word: "honest", meaning: "telling the truth" }, { word: "polite", meaning: "showing good manners" }, { word: "careless", meaning: "not taking care" }, { word: "should", meaning: "used to give advice" }, { word: "must", meaning: "used for a strong rule" }] },
+    { kind: "definition", term: "good behaviour", definition: "is acting in a respectful, safe and responsible way.", simpleCheck: "Saying please and thank you shows good behaviour." },
+    { kind: "categories", title: "Advice structures", categories: [{ name: "Should", definition: "used to give advice", examples: ["You should greet elders."] }, { name: "Must", definition: "used for a strong rule", examples: ["You must wash your hands."] }, { name: "Must not", definition: "used for forbidden actions", examples: ["You must not fight."] }] },
+    { kind: "diagram", title: "Behaviour advice", imageUrl: "/images/english/p4-behaviour-advice.svg", caption: "Use should, must and must not to give advice about behaviour.", labels: ["should", "must", "must not", "good", "bad"] },
+    { kind: "activity", title: "Advice practice", instructions: ["Choose one good behaviour.", "Write a sentence using should.", "Choose one bad behaviour.", "Write a sentence using must not."], safetyNote: "Use advice to help others, not to insult them." },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "written", prompt: "Write one sentence using should." }, { type: "written", prompt: "Write one sentence using must not." }, { type: "multiple-choice", prompt: "Which sentence gives good advice?", choices: ["You should respect elders.", "You must fight.", "You should steal.", "You must break desks."], answer: "You should respect elders." }] }
+  ] }
+];
+
+const P4_TIME_ENGLISH_V4: UpperPrimaryLesson[] = [
+  { id: "p4-v4-time-english", classLevel: "P4", term: "Term II", curriculumMode: "subject", subject: "English", topicTitle: "Time", subTopicTitle: "Past Simple and Past Continuous", lessonTitle: "Past Simple and Past Continuous", blocks: [
+    { kind: "vocabulary", title: "Time words", words: [{ word: "yesterday", meaning: "the day before today" }, { word: "last week", meaning: "the week before this week" }, { word: "was", meaning: "past form used with I, he, she or it" }, { word: "were", meaning: "past form used with you, we or they" }, { word: "while", meaning: "during the time that something was happening" }] },
+    { kind: "definition", term: "past simple tense", definition: "is used to talk about an action that happened and ended in the past.", simpleCheck: "I played yesterday." },
+    { kind: "definition", term: "past continuous tense", definition: "is used to talk about an action that was happening at a certain time in the past.", simpleCheck: "I was reading when Mother came." },
+    { kind: "categories", title: "Past tense structures", categories: [{ name: "Past simple", definition: "subject + past verb", examples: ["I walked home."] }, { name: "Past continuous", definition: "was/were + verb-ing", examples: ["They were playing."] }, { name: "While", definition: "connects actions happening around the same time", examples: ["While I was reading, it rained."] }] },
+    { kind: "diagram", title: "Time tenses", imageUrl: "/images/english/p4-time-tenses.svg", caption: "Use past simple and past continuous to write about time.", labels: ["yesterday", "was", "were", "-ing", "while"] },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "written", prompt: "Write one sentence about what you did yesterday." }, { type: "written", prompt: "Write one sentence using was or were + -ing." }, { type: "multiple-choice", prompt: "Choose the correct sentence.", choices: ["I was reading.", "I were reading.", "I reading was.", "Reading I was."], answer: "I was reading." }] }
+  ] }
+];
+
+const P4_FUTURE_V4: UpperPrimaryLesson[] = [
+  { id: "p4-v4-future", classLevel: "P4", term: "Term III", curriculumMode: "subject", subject: "English", topicTitle: "Expression of the Future", subTopicTitle: "Future Language and Planning", lessonTitle: "Future Language and Planning", blocks: [
+    { kind: "vocabulary", title: "Future words", words: [{ word: "tomorrow", meaning: "the day after today" }, { word: "next week", meaning: "the week after this week" }, { word: "will", meaning: "used to talk about future actions" }, { word: "going to", meaning: "used for future plans" }, { word: "diary", meaning: "a book for writing plans or events" }] },
+    { kind: "definition", term: "future tense", definition: "is used to talk about actions that have not happened yet.", simpleCheck: "I will read tomorrow." },
+    { kind: "categories", title: "Future structures", categories: [{ name: "Will", definition: "used for future actions or decisions", examples: ["I will revise English."] }, { name: "Going to", definition: "used for planned future actions", examples: ["I am going to read."] }, { name: "Diary plan", definition: "writing planned activities with time", examples: ["Monday: read a story"] }] },
+    { kind: "activity", title: "Write a study plan", instructions: ["Write three things you will do next week.", "Use will or going to.", "Put each activity on a different day."], safetyNote: "Choose safe and helpful plans." },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "written", prompt: "Write one sentence using will." }, { type: "written", prompt: "Write one sentence using going to." }, { type: "multiple-choice", prompt: "Which sentence talks about the future?", choices: ["I will read tomorrow.", "I read yesterday.", "I am reading now.", "I ate food."], answer: "I will read tomorrow." }] }
+  ] }
+];
+
+const P4_DEMOCRACY_V4: UpperPrimaryLesson[] = [
+  { id: "p4-v4-democracy", classLevel: "P4", term: "Term III", curriculumMode: "subject", subject: "English", topicTitle: "Democracy", subTopicTitle: "Elections, Participation and Fair Play", lessonTitle: "Elections, Participation and Fair Play", blocks: [
+    { kind: "vocabulary", title: "Democracy words", words: [{ word: "democracy", meaning: "a way of choosing leaders by people's choice" }, { word: "election", meaning: "a process of choosing a leader by voting" }, { word: "candidate", meaning: "a person who wants to be chosen" }, { word: "vote", meaning: "to choose a leader or option" }, { word: "majority", meaning: "the greater number" }, { word: "fair play", meaning: "playing or competing honestly and respectfully" }] },
+    { kind: "definition", term: "democracy", definition: "is a system where people take part in choosing leaders or making decisions fairly.", simpleCheck: "Choosing a class monitor by voting is a simple democratic activity." },
+    { kind: "categories", title: "Participation words", categories: [{ name: "Candidate", definition: "a person who wants to be chosen", examples: ["Sarah is a candidate for class monitor."] }, { name: "Vote", definition: "to choose someone or something", examples: ["Pupils vote for a leader."] }, { name: "Majority", definition: "the greater number of votes", examples: ["The candidate with most votes wins."] }, { name: "MDD / Games / Sports", definition: "activities where learners participate and express ideas", examples: ["music", "dance", "drama", "football"] }] },
+    { kind: "diagram", title: "Class election", imageUrl: "/images/english/p4-democracy-election.svg", caption: "Election and participation vocabulary.", labels: ["vote", "candidate", "leader", "majority", "fair play"] },
+    { kind: "activity", title: "Class election report", instructions: ["Name the candidates.", "Say how pupils voted.", "Say who won by majority.", "Write a short report using polite words."], safetyNote: "Do not insult candidates or voters." },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "short-answer", prompt: "Who is a candidate?", answer: "A person who wants to be chosen." }, { type: "written", prompt: "Write one sentence using vote." }, { type: "multiple-choice", prompt: "MDD means:", choices: ["Music, Dance and Drama", "Money Day Desk", "Market Door Drum", "Map Drawing Day"], answer: "Music, Dance and Drama" }] }
+  ] }
+];
+const P4_ENGLISH_TOPIC_DATA: Topic[] = [
   {
     "id": "p4-describing-people-objects",
     "themeId": "p4-english-transition",
@@ -14,6 +229,8 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_DESCRIBING_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 English beta: built from the official NCDC Primary Four English Syllabus, 2010; human language review still required before premium-final release. Describing People and Objects helps a P4 learner use English clearly in daily life and classroom work.",
       "learningObjectives": [
@@ -262,6 +479,8 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_DIRECTIONS_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 English beta: built from the official NCDC Primary Four English Syllabus, 2010; human language review still required before premium-final release. Giving Directions helps a P4 learner use English clearly in daily life and classroom work.",
       "learningObjectives": [
@@ -511,6 +730,8 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_LIKES_FEELINGS_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 English beta: built from the official NCDC Primary Four English Syllabus, 2010; human language review still required before premium-final release. What I Like and How I Feel helps a P4 learner use English clearly in daily life and classroom work.",
       "learningObjectives": [
@@ -758,6 +979,8 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_BEHAVIOUR_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 English beta: built from the official NCDC Primary Four English Syllabus, 2010; human language review still required before premium-final release. Behaviour helps a P4 learner use English clearly in daily life and classroom work.",
       "learningObjectives": [
@@ -1006,6 +1229,8 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_BUYING_SELLING_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 English beta: built from the official NCDC Primary Four English Syllabus, 2010; human language review still required before premium-final release. Buying and Selling helps a P4 learner use English clearly in daily life and classroom work.",
       "learningObjectives": [
@@ -1254,6 +1479,8 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_TIME_ENGLISH_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 English beta: built from the official NCDC Primary Four English Syllabus, 2010; human language review still required before premium-final release. Time helps a P4 learner use English clearly in daily life and classroom work.",
       "learningObjectives": [
@@ -1501,6 +1728,8 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_FUTURE_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 English beta: built from the official NCDC Primary Four English Syllabus, 2010; human language review still required before premium-final release. Expression of the Future helps a P4 learner use English clearly in daily life and classroom work.",
       "learningObjectives": [
@@ -1748,6 +1977,8 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     "estMinutes": 36,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_DEMOCRACY_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 English beta: built from the official NCDC Primary Four English Syllabus, 2010; human language review still required before premium-final release. Democracy helps a P4 learner use English clearly in daily life and classroom work.",
       "learningObjectives": [
@@ -1988,6 +2219,19 @@ export const P4_ENGLISH_TOPICS: Topic[] = [
     ]
   }
 ];
+
+const P4_ENGLISH_TERMS = {
+  "p4-describing-people-objects": "Term I" as const,
+  "p4-giving-directions": "Term I" as const,
+  "p4-likes-feelings": "Term I" as const,
+  "p4-behaviour": "Term II" as const,
+  "p4-buying-selling": "Term II" as const,
+  "p4-time": "Term II" as const,
+  "p4-future-expression": "Term III" as const,
+  "p4-democracy": "Term III" as const
+};
+
+export const P4_ENGLISH_TOPICS: Topic[] = addUpperPrimaryEnglishV4(P4_ENGLISH_TOPIC_DATA, "P4", P4_ENGLISH_TERMS);
 
 export function getP4EnglishTopic(id: string): Topic | undefined {
   return P4_ENGLISH_TOPICS.find((topic) => topic.id === id);

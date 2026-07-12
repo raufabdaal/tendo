@@ -1,3 +1,4 @@
+import { addUpperPrimaryMathV4 } from "@/lib/v4-math-helpers";
 // Phase 1 + 3 content layer.
 // Topics structured as typed data (DEV-006). MDX migration deferred until topic count justifies it.
 // Voice and structure per docs/spec/content-guidelines.md.
@@ -136,6 +137,20 @@ function balanceTopicAnswers(topics: Topic[]): Topic[] {
   visit(topics);
   return topics;
 }
+
+const P7_MATH_TERMS: Record<string, "Term I" | "Term II" | "Term III"> = {
+  "set-concepts": "Term I",
+  "whole-numbers": "Term I",
+  "operations-on-whole-numbers": "Term I",
+  "patterns-and-sequences": "Term I",
+  "fractions": "Term II",
+  "integers": "Term II",
+  "data-handling": "Term II",
+  "construction": "Term II",
+  "time": "Term II",
+  "length-mass-capacity": "Term III",
+  "algebra": "Term III"
+};
 
 const TOPICS_DATA: Topic[] = [
   // ──────────────────────── Phase 1 (verified) ────────────────────────export const TOPICS: Topic[] = [
@@ -1931,7 +1946,7 @@ const TOPICS_DATA: Topic[] = [
 
 export const COMING_SOON: Array<{ id?: string; themeName: string; title: string; whyLater: string }> = [];
 
-export const TOPICS: Topic[] = balanceTopicAnswers(TOPICS_DATA);
+export const TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimaryMathV4(TOPICS_DATA, "P7", P7_MATH_TERMS));
 
 export function getTopic(id: string): Topic | undefined {
   const direct = TOPICS.find((t) => t.id === id);

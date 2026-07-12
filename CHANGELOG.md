@@ -1,5 +1,301 @@
 # CHANGELOG — Tendo
 
+## v1.8.70 — 2026-07-12 — P6/P7 structurally migrated to v4 across all subjects
+
+**Session theme:** Major upward v4 migration after completing P4/P5 priority structure.
+
+**Changed:**
+- Structurally migrated all P6 topic libraries to upper-primary v4: Mathematics, Integrated Science, English, Social Studies and Religious Education.
+- Structurally migrated all P7 topic libraries to upper-primary v4: Mathematics, Integrated Science, English, Social Studies and Religious Education.
+- Added term maps for all migrated P6/P7 subject libraries from the existing curriculum JSON maps.
+- Reused existing v4 helpers for Maths, Science, English, Social Studies and RE.
+- Improved the Social Studies v4 helper so P6 lessons use East Africa context and P7 lessons use Africa/world context instead of generic P5/Uganda wording.
+- Added migration note: `docs/ops/v4-p6-p7-structural-migration-2026-07-12.md`.
+- Updated checklist, status and handoff.
+
+**Coverage:**
+- 78 P6/P7 topics now render through upper-primary v4.
+- 278 P6/P7 v4 lessons are generated from current app subtopic libraries.
+
+**Important:**
+- This is the big structural migration, not premium-final hand-deepening of every P6/P7 topic.
+- P6/P7 now need real-phone smoke testing and targeted hand-deepening of PLE-heavy topics.
+- P6/P7 RE remains pending qualified CRE/IRE review.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.69 — 2026-07-12 — P5 Social Studies v4 manual deepening complete
+
+**Session theme:** Finish P4/P5 Social Studies before moving upward.
+
+**Changed:**
+- Hand-deepened remaining P5 SST topics: Climate, Vegetation, Natural Resources, Pre-Colonial People, Foreign Influence, How Uganda Became a Nation and Road to Independence.
+- P5 Social Studies is now complete at AI-builder v4 level across all 12 topics.
+- P4/P5 Social Studies are now complete at AI-builder v4 level.
+- Updated SST migration docs, checklist, status and handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.68 — 2026-07-12 — P4 SST complete and P5 SST priority topics deepened in v4
+
+**Session theme:** Take a bigger Social Studies deepening leap while staying quality-conscious.
+
+**Changed:**
+- Hand-deepened all 6 P4 Social Studies topics in v4.
+- Hand-deepened 5 priority P5 Social Studies topics in v4: Location, Physical Features, Government, Independence and Population.
+- Set `useOnlyV4Lessons: true` for those hand-built SST topics.
+- Updated SST migration docs, checklist, status and handoff.
+
+**Current SST status:**
+- P4 Social Studies complete at AI-builder v4 level.
+- P5 Social Studies structurally migrated; priority topics hand-deepened.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.67 — 2026-07-12 — Social helper enriched and P4/P5 RE structurally migrated to v4
+
+**Session theme:** Take a bigger migration leap after P4/P5 Social Studies structural migration.
+
+**Changed:**
+- Enriched `app/lib/v4-social-helpers.ts` with vocabulary, read-and-talk context, stronger definitions and local-example guidance.
+- Added shared Religious Education v4 migrator: `app/lib/v4-re-helpers.ts`.
+- Updated `app/lib/p4-re-topics.ts` so all 25 P4 RE topics render through upper-primary v4.
+- Updated `app/lib/p5-re-topics.ts` so all 20 P5 RE topics render through upper-primary v4.
+- Added migration note: `docs/ops/v4-p4-p5-re-migration-2026-07-12.md`.
+- Updated SST migration note, checklist, status and handoff.
+
+**Important:**
+- P4/P5 RE structural migration is not a substitute for CRE/IRE teacher review.
+- P4 RE still needs full standard syllabus confirmation beyond the abridged source.
+
+**Verified:**
+- `cd app && npm install && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.66 — 2026-07-12 — P4/P5 Social Studies structurally migrated to v4
+
+**Session theme:** Move v4 migration into Social Studies.
+
+**Changed:**
+- Added shared Social Studies v4 migrator: `app/lib/v4-social-helpers.ts`.
+- Updated `app/lib/p4-social-topics.ts` so all 6 P4 Social Studies topics render through upper-primary v4.
+- Updated `app/lib/p5-social-topics.ts` so all 12 P5 Social Studies topics render through upper-primary v4.
+- Added migration note: `docs/ops/v4-p4-p5-social-studies-migration-2026-07-12.md`.
+- Updated checklist, status and handoff.
+
+**Important:**
+- This is a structural v4 migration, not final manual deepening of every Social Studies topic.
+- Next SST work should hand-deepen priority topics.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.65 — 2026-07-12 — P4/P5 English v4 manual deepening complete
+
+**Session theme:** Finish P4/P5 English in full migration mode.
+
+**Changed:**
+- Hand-deepened remaining P4 English topics: Likes/Feelings, Behaviour, Time, Future Expression and Democracy.
+- Hand-deepened remaining P5 English topics: Vehicle Repair and Maintenance, Travelling, Culture, Peace and Security, and Services: Banking.
+- P4 English is now complete at AI-builder v4 level across all 8 topics.
+- P5 English is now complete at AI-builder v4 level across all 8 topics.
+- Updated English migration docs, checklist, status and handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.64 — 2026-07-12 — P4/P5 English priority topics hand-deepened in v4
+
+**Session theme:** Start manual deepening of English after structural v4 migration.
+
+**Changed:**
+- Hand-deepened P4 Describing People and Objects.
+- Hand-deepened P4 Giving Directions.
+- Hand-deepened P4 Buying and Selling.
+- Hand-deepened P5 Letter Writing.
+- Hand-deepened P5 Communication.
+- Hand-deepened P5 Print Media.
+- Set `useOnlyV4Lessons: true` for these topics.
+- Updated English migration docs, checklist, status and handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.63 — 2026-07-12 — P4/P5 English structurally migrated to v4
+
+**Session theme:** Move v4 migration into English.
+
+**Changed:**
+- Added shared English v4 migrator: `app/lib/v4-english-helpers.ts`.
+- Extended upper-primary v4 blocks/rendering to support vocabulary, story and activity blocks.
+- Updated `app/lib/p4-english-topics.ts` so all 8 P4 English topics render through upper-primary v4.
+- Updated `app/lib/p5-english-topics.ts` so all 8 P5 English topics render through upper-primary v4.
+- Added migration note: `docs/ops/v4-p4-p5-english-migration-2026-07-12.md`.
+- Updated checklist, status and handoff.
+
+**Important:**
+- This is a structural v4 migration, not final manual deepening of every English topic.
+- Next English work should hand-deepen priority topics.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.62 — 2026-07-12 — P4/P5 Mathematics v4 manual deepening complete
+
+**Session theme:** Finish P4/P5 Mathematics in full migration mode.
+
+**Changed:**
+- Hand-deepened remaining P4 Mathematics topics: Set Concepts, Patterns and Sequences, 3-D Geometry, Data Handling and Equations without Letters.
+- Hand-deepened remaining P5 Mathematics topics: Set Concepts, Patterns and Sequences, Integers, Lines/Angles/Geometrical Figures, Data Handling and Time.
+- P4 Mathematics is now complete at AI-builder v4 level across all 12 topics.
+- P5 Mathematics is now complete at AI-builder v4 level across all 12 topics.
+- Updated Maths migration docs, checklist, status and handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.61 — 2026-07-12 — Second P4/P5 Mathematics deepening batch completed
+
+**Session theme:** Continue v4 Maths migration and deepen more high-impact topics.
+
+**Changed:**
+- Hand-deepened P4 2-D Geometry, Money, Time and Length/Mass/Capacity in v4.
+- Hand-deepened P5 Whole Numbers, Money, Length/Mass/Capacity and Algebra in v4.
+- Set `useOnlyV4Lessons: true` for these topics.
+- Updated Maths migration note, checklist, status and handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.60 — 2026-07-12 — P4/P5 Mathematics priority topics hand-deepened in v4
+
+**Session theme:** Continue v4 migration by deepening high-impact Maths foundations.
+
+**Changed:**
+- Added hand-built v4 lessons for P4 Whole Numbers.
+- Added hand-built v4 lessons for P4 Operations on Whole Numbers.
+- Added hand-built v4 lessons for P4 Fractions.
+- Added hand-built v4 lessons for P5 Operations on Whole Numbers.
+- Added hand-built v4 lessons for P5 Fractions.
+- Set `useOnlyV4Lessons: true` for these priority Maths topics.
+- Added priority deepening note: `docs/ops/v4-p4-p5-math-priority-deepening-2026-07-12.md`.
+- Updated checklist, status and handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.59 — 2026-07-12 — P4/P5 Mathematics structurally migrated to v4
+
+**Session theme:** Continue full migration mode after Science.
+
+**Changed:**
+- Added shared Mathematics v4 migrator: `app/lib/v4-math-helpers.ts`.
+- Updated `app/lib/p4-math-topics.ts` so all 12 P4 Mathematics topics render through upper-primary v4.
+- Updated `app/lib/p5-math-topics.ts` so all 12 P5 Mathematics topics render through upper-primary v4.
+- Added migration note: `docs/ops/v4-p4-p5-math-migration-2026-07-12.md`.
+- Updated checklist, status and handoff.
+
+**Important:**
+- This is a structural v4 migration, not final manual deepening of every Maths topic.
+- Next Maths work should hand-deepen priority P4/P5 topics.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.58 — 2026-07-12 — P5 Integrated Science v4 manual deepening complete
+
+**Session theme:** Finish P5 Science in full migration mode.
+
+**Changed:**
+- Completed full P5 Keeping Poultry and Bees v4 beyond the original breeds model.
+- Hand-deepened P5 Measurement in v4.
+- Hand-deepened P5 Immunisation in v4.
+- Hand-deepened P5 Crop Growing in v4.
+- Hand-deepened P5 Bacteria and Fungi in v4.
+- Hand-deepened P5 Types of Changes in v4.
+- P5 Integrated Science is now complete at AI-builder v4 level across all 9 topics.
+- Updated P4/P5 Science migration docs, checklist, status and handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.57 — 2026-07-12 — P5 Science Digestive System, Soil and Heat Energy hand-deepened in v4
+
+**Session theme:** Continue P5 Science v4 manual deepening.
+
+**Changed:**
+- Added hand-built v4 lessons for P5 Digestive System.
+- Added hand-built v4 lessons for P5 Soil.
+- Added hand-built v4 lessons for P5 Heat Energy.
+- Set `useOnlyV4Lessons: true` for these topics.
+- Updated P4/P5 Science migration docs, checklist, status and handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.56 — 2026-07-12 — P4 Integrated Science v4 manual deepening complete
+
+**Session theme:** Finish P4 Science in full migration mode.
+
+**Changed:**
+- Hand-deepened P4 Communicable Intestinal Diseases and Worm Infestation in v4.
+- Hand-deepened P4 Vectors and Diseases in v4.
+- Hand-deepened P4 Accidents, Poisoning and First Aid in v4.
+- Hand-deepened P4 Our Food in v4.
+- P4 Integrated Science is now complete at AI-builder v4 level across all 12 topics.
+- Updated P4/P5 Science migration docs, checklist, status and handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.55 — 2026-07-12 — V4 mobile overflow guard added
+
+**Session theme:** Fix mobile responsiveness before continuing migration.
+
+**Changed:**
+- Added final mobile overflow/responsiveness guard to `app/app/globals.css`.
+- Prevented page-wide horizontal overflow across app shell, v4 lessons, cards, module strips, images, grids and buttons.
+- Adjusted v4 images to scale to phone width by default.
+- Ensured buttons and text wrap instead of forcing the phone viewport wider.
+- Updated v4 ops note and checklist.
+
+**Verified:**
+- `cd app && npm install && npm run build` passed with 356 static pages.
+
+---
+
 ## v1.8.54 — 2026-07-12 — P4 Science Animal Life, Weather, Hygiene and Sanitation hand-deepened in v4
 
 **Session theme:** Continue P4 Science v4 manual deepening.

@@ -477,3 +477,277 @@ Remaining P4 Science manual deepening:
 - Vectors and Diseases
 - Accidents, Poisoning and First Aid
 - Our Food
+
+---
+
+## Manual deepening update — P4 Science v4 complete
+
+The remaining P4 Science topics have now been hand-deepened in upper-primary v4.
+
+### Completed final P4 Science topics
+
+1. **Communicable Intestinal Diseases and Worm Infestation**
+   - communicable disease definition
+   - intestinal disease definition
+   - diarrhoea, dysentery, typhoid and cholera
+   - worm infestation definition
+   - roundworms, hookworms and tapeworms
+   - spread and prevention
+
+2. **Vectors and Diseases**
+   - vector definition
+   - mosquito, housefly, tsetse fly, rat, louse, flea and bed-bug
+   - vector-borne diseases
+   - vector control and protection
+
+3. **Accidents, Poisoning and First Aid**
+   - accident definition
+   - first aid definition
+   - cuts, burns, falls and road accidents
+   - poison definition
+   - medicines, household chemicals and farm chemicals
+   - poisoning safety actions
+
+4. **Our Food**
+   - food definition
+   - balanced diet definition
+   - energy-giving, body-building and protective foods
+   - food hygiene
+   - uses of food
+   - dangers of poor food hygiene
+
+Implementation:
+
+- Added `P4_INTESTINAL_DISEASES_WORMS_V4`.
+- Added `P4_VECTORS_DISEASES_V4`.
+- Added `P4_ACCIDENTS_FIRST_AID_V4`.
+- Added `P4_OUR_FOOD_V4`.
+- Set `useOnlyV4Lessons: true` for these topics.
+
+Updated file:
+
+- `app/lib/p4-science-topics.ts`
+
+Build result:
+
+```txt
+cd app && npm run build
+✓ Compiled successfully
+✓ Generating static pages (356/356)
+```
+
+P4 Science status:
+
+- 12/12 topics structurally migrated to v4.
+- 12/12 topics now hand-deepened in v4.
+- P4 Science is complete at AI-builder v4 level.
+
+Remaining review:
+
+- human/teacher science review,
+- mobile real-device review,
+- health/safety wording review for disease, poisoning and first aid topics.
+
+Next recommended migration:
+
+- P5 Science manual deepening, starting with Digestive System, Soil and Heat Energy.
+
+---
+
+## Manual deepening update — P5 Digestive System, Soil and Heat Energy complete
+
+Three P5 Science topics have now been hand-deepened in upper-primary v4.
+
+### P5 Digestive System
+
+Route:
+
+```txt
+/science/p5/p5-digestive-system
+```
+
+Hand-deepened lessons:
+
+1. Meaning and Food Pathway
+2. Teeth, Saliva and Digestion
+3. Care of the Digestive System
+
+Key content:
+
+- digestion definition,
+- mouth, oesophagus, stomach, small intestine, large intestine, rectum and anus,
+- mechanical and chemical digestion,
+- role of teeth, tongue and saliva,
+- balanced diet, food hygiene and safe water.
+
+### P5 Soil
+
+Route:
+
+```txt
+/science/p5/p5-components-environment-soil
+```
+
+Hand-deepened lessons:
+
+1. Components of Soil
+2. Types of Soil and Properties
+3. Soil Erosion and Conservation
+
+Key content:
+
+- soil definition,
+- mineral particles, humus, air, water and living organisms,
+- sandy, clay and loam soils,
+- texture, drainage, water retention and fertility,
+- soil erosion and conservation.
+
+### P5 Heat Energy
+
+Route:
+
+```txt
+/science/p5/p5-heat-energy
+```
+
+Hand-deepened lessons:
+
+1. Sources and Uses of Heat
+2. Effects and Transfer of Heat
+3. Expansion, Contraction and Safety
+
+Key content:
+
+- heat definition,
+- sun, fire/fuels, electricity and friction,
+- uses of heat,
+- conduction, convection and radiation,
+- expansion and contraction,
+- heat safety.
+
+Implementation:
+
+- Added `P5_DIGESTIVE_SYSTEM_V4`.
+- Added `P5_SOIL_V4`.
+- Added `P5_HEAT_ENERGY_V4`.
+- Set `useOnlyV4Lessons: true` for these topics.
+
+Updated file:
+
+- `app/lib/p5-science-topics.ts`
+
+Build result:
+
+```txt
+cd app && npm run build
+✓ Compiled successfully
+✓ Generating static pages (356/356)
+```
+
+Current hand-deepened P5 Science topics:
+
+- Keeping Poultry and Bees: partial hand-built v4 model for Breeds of Poultry, with generated v4 support for the rest.
+- Digestive System
+- Soil
+- Heat Energy
+
+Remaining P5 Science manual deepening:
+
+- Measurement
+- Immunisation
+- Crop Growing
+- Bacteria and Fungi
+- Types of Changes
+- Finish full hand-deepening of Keeping Poultry and Bees beyond Breeds of Poultry if needed.
+
+---
+
+## Manual deepening update — P5 Science v4 complete
+
+The remaining P5 Science topics have now been hand-deepened in upper-primary v4.
+
+### Completed final P5 Science topics
+
+1. **Keeping Poultry and Bees**
+   - completed beyond the original Breeds of Poultry model,
+   - poultry management, feeding, housing and disease control,
+   - bee keeping, bee colony members, bee products and pollination.
+
+2. **Measurement**
+   - measurement definition,
+   - measuring length, mass, capacity and time,
+   - instruments and standard units,
+   - accurate scale reading,
+   - daily uses of measurement.
+
+3. **Immunisation**
+   - immunisation definition,
+   - vaccines,
+   - childhood immunisable diseases,
+   - health cards,
+   - immunisation schedules,
+   - safe decisions and health-worker guidance.
+
+4. **Crop Growing**
+   - crop growing definition,
+   - common crops and farm tools,
+   - land preparation,
+   - planting,
+   - crop care,
+   - harvesting and storage.
+
+5. **Bacteria and Fungi**
+   - bacteria definition,
+   - fungi definition,
+   - useful and harmful bacteria,
+   - useful and harmful fungi,
+   - hygiene and prevention.
+
+6. **Types of Changes**
+   - change definition,
+   - biological, physical and chemical changes,
+   - reversible and irreversible changes,
+   - examples in daily life.
+
+Implementation:
+
+- Added `P5_POULTRY_V4`.
+- Added `P5_MEASUREMENT_V4`.
+- Added `P5_IMMUNISATION_V4`.
+- Added `P5_CROP_GROWING_V4`.
+- Added `P5_BACTERIA_FUNGI_V4`.
+- Added `P5_TYPES_CHANGES_V4`.
+- Set `useOnlyV4Lessons: true` for final hand-built P5 Science topics.
+
+Updated file:
+
+- `app/lib/p5-science-topics.ts`
+
+Build result:
+
+```txt
+cd app && npm run build
+✓ Compiled successfully
+✓ Generating static pages (356/356)
+```
+
+P5 Science status:
+
+- 9/9 topics structurally migrated to v4.
+- 9/9 topics now hand-deepened in v4.
+- P5 Science is complete at AI-builder v4 level.
+
+Remaining review:
+
+- human/teacher science review,
+- official-copy check for P5 source map,
+- real-phone review of images and module stepper.
+
+Current Science v4 status:
+
+- P4 Integrated Science: complete at AI-builder v4 level.
+- P5 Integrated Science: complete at AI-builder v4 level.
+
+Recommended next migration:
+
+- P4/P5 Mathematics or P4/P5 English, depending on founder priority.

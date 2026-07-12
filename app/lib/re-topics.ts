@@ -1,4 +1,5 @@
 import type { Topic } from "@/lib/topics";
+import { addUpperPrimaryReV4 } from "@/lib/v4-re-helpers";
 
 
 function balanceTopicAnswers(topics: Topic[]): Topic[] {
@@ -25,6 +26,23 @@ function balanceTopicAnswers(topics: Topic[]): Topic[] {
   visit(topics);
   return topics;
 }
+
+const P7_RE_TERMS: Record<string, "Term I" | "Term II" | "Term III"> = {
+  "cre-theme-witnessing-gifts": "Term I",
+  "cre-ancestors-pioneers-faith": "Term I",
+  "cre-gods-freedom-law": "Term I",
+  "cre-person-ministry-jesus": "Term II",
+  "cre-passion-resurrection": "Term II",
+  "cre-spirit-church-sacraments": "Term III",
+  "cre-citizenship-service": "Term III",
+  "ire-tawhid-iman": "Term I",
+  "ire-pillars-ibadah": "Term I",
+  "ire-quran-hadith": "Term I",
+  "ire-akhlaq-morals": "Term II",
+  "ire-hadith-sunnah": "Term II",
+  "ire-history-seerah": "Term III",
+  "ire-adab-social-justice": "Term III"
+};
 
 const CRE_TOPICS_DATA: Topic[] = [
   {
@@ -869,7 +887,7 @@ const CRE_TOPICS_DATA: Topic[] = [
   }
 ];
 
-export const CRE_TOPICS: Topic[] = balanceTopicAnswers(CRE_TOPICS_DATA);
+export const CRE_TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimaryReV4(CRE_TOPICS_DATA, "P7", P7_RE_TERMS));
 
 const IRE_TOPICS_DATA: Topic[] = [
   {
@@ -1595,7 +1613,7 @@ const IRE_TOPICS_DATA: Topic[] = [
   }
 ];
 
-export const IRE_TOPICS: Topic[] = balanceTopicAnswers(IRE_TOPICS_DATA);
+export const IRE_TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimaryReV4(IRE_TOPICS_DATA, "P7", P7_RE_TERMS));
 
 export const RE_TOPICS: Topic[] = [...CRE_TOPICS, ...IRE_TOPICS];
 

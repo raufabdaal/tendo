@@ -1,11 +1,12 @@
 import type { Topic } from "@/lib/topics";
+import { addUpperPrimaryReV4 } from "@/lib/v4-re-helpers";
 
 // P4 Religious Education live beta content layer.
 // Source map: content/curriculum/p4-re.json
 // Rule: NCDC first, build second. This file follows the NCDC/MoES Primary 4 Abridged Curriculum RE topic structure.
 // Status: live beta only. Needs confirmation against the full standard P4 CRE/IRE syllabus before premium-final release.
 
-export const P4_RE_TOPICS: Topic[] = [
+const P4_RE_TOPIC_DATA: Topic[] = [
   {
     "id": "p4-cre-traditions",
     "themeId": "p4-cre",
@@ -5866,6 +5867,36 @@ export const P4_RE_TOPICS: Topic[] = [
     ]
   }
 ];
+
+const P4_RE_TERMS = {
+  "p4-cre-traditions": "Term I" as const,
+  "p4-cre-messengers-of-god": "Term I" as const,
+  "p4-cre-gods-continuing-love": "Term I" as const,
+  "p4-cre-gods-people-law": "Term I" as const,
+  "p4-cre-following-jesus-leader": "Term II" as const,
+  "p4-cre-jesus-christ-our-saviour": "Term II" as const,
+  "p4-cre-worshipping-community": "Term II" as const,
+  "p4-cre-christian-community": "Term II" as const,
+  "p4-cre-jesus-example-service": "Term III" as const,
+  "p4-cre-decisions-as-christians": "Term III" as const,
+  "p4-cre-peace": "Term III" as const,
+  "p4-ire-surat-al-asr": "Term I" as const,
+  "p4-ire-prophet-messenger": "Term I" as const,
+  "p4-ire-dress-for-prayer": "Term I" as const,
+  "p4-ire-impurities": "Term I" as const,
+  "p4-ire-early-converts-islam": "Term I" as const,
+  "p4-ire-surat-al-humaza": "Term I" as const,
+  "p4-ire-twenty-five-prophets": "Term I" as const,
+  "p4-ire-imaan-forgiveness": "Term I" as const,
+  "p4-ire-congregational-prayer": "Term I" as const,
+  "p4-ire-night-journey-israi-miraj": "Term I" as const,
+  "p4-ire-surat-al-falaq": "Term I" as const,
+  "p4-ire-unique-nature-muhammad-messengership": "Term I" as const,
+  "p4-ire-conduct-after-swalat": "Term I" as const,
+  "p4-ire-dress-cleanliness": "Term I" as const
+};
+
+export const P4_RE_TOPICS: Topic[] = addUpperPrimaryReV4(P4_RE_TOPIC_DATA, "P4", P4_RE_TERMS);
 
 export function getP4ReTopic(id: string): Topic | undefined {
   return P4_RE_TOPICS.find((topic) => topic.id === id);

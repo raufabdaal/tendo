@@ -219,12 +219,15 @@ function LowerPrimaryBlockView({ block, index }: { block: LowerPrimaryContentBlo
 }
 
 function UpperPrimaryBlockView({ block, index }: { block: UpperPrimaryContentBlock; index: number }) {
+  if (block.kind === "vocabulary") return <VocabularyView block={block} index={index} />;
+  if (block.kind === "story") return <StoryView block={block} index={index} />;
   if (block.kind === "definition") return <DefinitionView block={block} index={index} />;
   if (block.kind === "categories") return <CategoryView block={block} index={index} />;
   if (block.kind === "examples") return <ExamplesView block={block} index={index} />;
   if (block.kind === "characteristics") return <PointListView title={block.title} points={block.points} index={index} />;
   if (block.kind === "uses") return <PointListView title={block.title} points={block.points} index={index} />;
   if (block.kind === "diagram") return <DiagramView block={block} index={index} />;
+  if (block.kind === "activity") return <ActivityView block={block} index={index} />;
   if (block.kind === "worked-example") return <WorkedExampleView block={block} index={index} />;
   return <ExerciseView block={block} index={index} />;
 }

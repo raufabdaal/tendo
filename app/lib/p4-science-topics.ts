@@ -796,6 +796,226 @@ const P4_SANITATION_V4: UpperPrimaryLesson[] = [
   },
 ];
 
+const P4_INTESTINAL_DISEASES_WORMS_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-communicable-intestinal-diseases",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Communicable Intestinal Diseases and Worm Infestation",
+    subTopicTitle: "Communicable and Intestinal Diseases",
+    lessonTitle: "Communicable and Intestinal Diseases",
+    blocks: [
+      { kind: "definition", term: "communicable disease", definition: "is a disease that can spread from one person to another.", simpleCheck: "Some diseases spread through dirty hands, unsafe water, contaminated food or close contact." },
+      { kind: "definition", term: "intestinal disease", definition: "is a disease that affects the intestines or digestive system.", simpleCheck: "Diarrhoea, dysentery and typhoid affect the digestive system." },
+      { kind: "categories", title: "Common intestinal diseases", categories: [
+        { name: "Diarrhoea", definition: "passing watery stool many times", examples: ["caused by dirty food", "caused by unsafe water", "caused by germs"] },
+        { name: "Dysentery", definition: "diarrhoea with blood or mucus", examples: ["needs quick adult/health-worker help"] },
+        { name: "Typhoid", definition: "a disease often spread through unsafe food or water", examples: ["dirty water", "unwashed food", "poor sanitation"] },
+        { name: "Cholera", definition: "a dangerous disease that can spread through unsafe water and poor sanitation", examples: ["serious diarrhoea", "needs urgent health-worker help"] },
+      ] },
+      { kind: "characteristics", title: "How these diseases spread", points: ["Eating food with germs.", "Drinking unsafe water.", "Not washing hands after using the latrine.", "Leaving food uncovered where flies can land on it.", "Poor sanitation around homes, schools and water sources."] },
+      { kind: "diagram", title: "Disease prevention card", imageUrl: "/images/science/p4-worms-disease-prevention.svg", caption: "Prevention of intestinal diseases and worm infestation through hygiene and sanitation.", labels: ["wash hands", "safe water", "latrine", "covered food", "shoes"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is a communicable disease?", answer: "A disease that can spread from one person to another." },
+        { type: "short-answer", prompt: "Name two intestinal diseases.", answer: "Diarrhoea, dysentery, cholera or typhoid." },
+        { type: "short-answer", prompt: "Give two ways intestinal diseases spread.", answer: "Unsafe water, dirty food, dirty hands, flies or poor sanitation." },
+        { type: "multiple-choice", prompt: "Which habit helps prevent diarrhoea?", choices: ["washing hands", "drinking dirty water", "leaving food uncovered", "using dirty plates"], answer: "washing hands" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-worm-infestation",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Communicable Intestinal Diseases and Worm Infestation",
+    subTopicTitle: "Worm Infestation",
+    lessonTitle: "Worm Infestation",
+    blocks: [
+      { kind: "definition", term: "worm infestation", definition: "is a condition where worms live inside a person's body, especially in the intestines.", simpleCheck: "Worms can enter the body through contaminated food, dirty hands, unsafe water or bare feet in contaminated soil." },
+      { kind: "categories", title: "Common worms", categories: [
+        { name: "Roundworms", definition: "worms that can live in the intestines", examples: ["spread through eggs in dirty food, soil or hands"] },
+        { name: "Hookworms", definition: "worms that can enter through bare feet in contaminated soil", examples: ["walking barefoot near dirty latrines"] },
+        { name: "Tapeworms", definition: "flat worms that can come from eating poorly cooked infected meat", examples: ["unsafe pork or beef"] },
+      ] },
+      { kind: "characteristics", title: "Signs and prevention", points: ["Stomach pain, weakness, poor growth or loss of appetite may happen with worms.", "Wear shoes or sandals, especially near latrines and dirty soil.", "Wash hands with soap after using the latrine and before eating.", "Wash fruits and vegetables before eating.", "Eat properly cooked food.", "Take deworming medicine only with adult/health-worker guidance." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is worm infestation?", answer: "Worms living inside a person's body." },
+        { type: "short-answer", prompt: "Name two types of worms.", answer: "Roundworms, hookworms or tapeworms." },
+        { type: "short-answer", prompt: "Give three ways to prevent worm infestation.", answer: "Wear shoes, wash hands, wash food, cook food well and use latrines properly." },
+        { type: "multiple-choice", prompt: "Which worm can enter through bare feet?", choices: ["hookworm", "housefly", "mosquito", "bee"], answer: "hookworm" },
+      ] },
+    ],
+  },
+];
+
+const P4_VECTORS_DISEASES_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-common-vectors",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Vectors and Diseases",
+    subTopicTitle: "Common Vectors",
+    lessonTitle: "Common Vectors",
+    blocks: [
+      { kind: "definition", term: "vector", definition: "is a living thing that carries germs from one person, animal or place to another.", simpleCheck: "A mosquito is a vector because it can spread malaria." },
+      { kind: "categories", title: "Common vectors and diseases", categories: [
+        { name: "Mosquito", definition: "a flying insect that can spread malaria and other diseases", examples: ["malaria", "yellow fever"] },
+        { name: "Housefly", definition: "a fly that carries germs from dirty places to food", examples: ["diarrhoea", "cholera", "typhoid"] },
+        { name: "Tsetse fly", definition: "a fly that can spread sleeping sickness", examples: ["sleeping sickness"] },
+        { name: "Rat", definition: "an animal that can spoil food and spread diseases", examples: ["plague in some places", "food contamination"] },
+        { name: "Louse / flea / bed-bug", definition: "small pests that can bite people and cause discomfort or spread disease", examples: ["itching", "skin irritation", "some diseases"] },
+      ] },
+      { kind: "diagram", title: "Vectors and disease control", imageUrl: "/images/science/vectors-disease-control.svg", caption: "Common vectors and ways of controlling them around home and school.", labels: ["mosquito", "housefly", "rat", "tsetse fly", "control"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is a vector?", answer: "A living thing that carries germs from one place/person to another." },
+        { type: "short-answer", prompt: "Name four vectors.", answer: "Mosquito, housefly, tsetse fly, rat, louse, flea or bed-bug." },
+        { type: "multiple-choice", prompt: "Which vector spreads malaria?", choices: ["mosquito", "goat", "hen", "fish"], answer: "mosquito" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-vector-control",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Vectors and Diseases",
+    subTopicTitle: "Vector Control and Protection",
+    lessonTitle: "Vector Control and Protection",
+    blocks: [
+      { kind: "definition", term: "vector control", definition: "means reducing or removing vectors so they do not spread diseases.", simpleCheck: "Pouring away stagnant water can help control mosquitoes." },
+      { kind: "categories", title: "Ways to control vectors", categories: [
+        { name: "Mosquito control", definition: "removing mosquito breeding places and preventing bites", examples: ["sleep under nets", "remove stagnant water", "clear bushes near houses"] },
+        { name: "Fly control", definition: "stopping flies from reaching food and dirty places", examples: ["cover food", "use latrines properly", "dispose rubbish safely"] },
+        { name: "Rat control", definition: "removing food and shelter for rats", examples: ["cover food", "keep stores clean", "block holes", "use traps with adult help"] },
+        { name: "Personal protection", definition: "actions that protect a person from vectors", examples: ["wear clean clothes", "sleep under a net", "keep bedding clean"] },
+      ] },
+      { kind: "characteristics", title: "Community protection", points: ["Keep compounds clean.", "Drain stagnant water.", "Cover food and water containers.", "Use rubbish pits or bins properly.", "Report vector problems to adults or local leaders."] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Give three ways to control mosquitoes.", answer: "Sleep under nets, remove stagnant water, clear bushes or cover water containers." },
+        { type: "short-answer", prompt: "How can houseflies be controlled?", answer: "Cover food, dispose rubbish, use latrines properly and keep places clean." },
+        { type: "multiple-choice", prompt: "Which action controls rats?", choices: ["keeping stores clean", "leaving food open", "throwing rubbish anywhere", "sleeping in dirty bedding"], answer: "keeping stores clean" },
+      ] },
+    ],
+  },
+];
+
+const P4_ACCIDENTS_FIRST_AID_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-accidents-first-aid",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Accidents, Poisoning and First Aid",
+    subTopicTitle: "Common Accidents and First Aid",
+    lessonTitle: "Common Accidents and First Aid",
+    blocks: [
+      { kind: "definition", term: "accident", definition: "is an unexpected event that can cause injury or damage.", simpleCheck: "A fall, burn, cut or road crash can be an accident." },
+      { kind: "definition", term: "first aid", definition: "is the first help given to an injured or sick person before full treatment by a health worker.", simpleCheck: "Putting a clean cloth on a small bleeding cut while calling an adult is first aid." },
+      { kind: "categories", title: "Common accidents", categories: [
+        { name: "Cuts and wounds", definition: "injuries caused by sharp objects", examples: ["knife cut", "broken glass cut", "thorn prick"] },
+        { name: "Burns and scalds", definition: "injuries caused by fire, hot liquids or hot objects", examples: ["hot water", "fire", "hot charcoal stove"] },
+        { name: "Falls", definition: "injuries from dropping or slipping", examples: ["fall from tree", "fall on slippery floor"] },
+        { name: "Road accidents", definition: "accidents involving roads and vehicles", examples: ["bicycle crash", "car crash", "knocked by motorcycle"] },
+      ] },
+      { kind: "diagram", title: "First aid safety card", imageUrl: "/images/science/p4-first-aid-safety.svg", caption: "First aid basics and safety at home and school.", labels: ["cut", "burn", "fall", "poison", "call adult"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is an accident?", answer: "An unexpected event that can cause injury or damage." },
+        { type: "short-answer", prompt: "What is first aid?", answer: "First help given before full treatment." },
+        { type: "short-answer", prompt: "Name three common accidents.", answer: "Cuts, burns, falls, poisoning or road accidents." },
+        { type: "multiple-choice", prompt: "Who should a child call during a serious accident?", choices: ["adult", "toy", "stone", "chair"], answer: "adult" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-poisoning-safety",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Accidents, Poisoning and First Aid",
+    subTopicTitle: "Poisoning and Safety",
+    lessonTitle: "Poisoning and Safety",
+    blocks: [
+      { kind: "definition", term: "poison", definition: "is a substance that can harm or kill a person or animal if swallowed, breathed in or put on the body wrongly.", simpleCheck: "Medicine, paraffin, pesticides and cleaning chemicals can be poisonous if misused." },
+      { kind: "categories", title: "Common poisons and prevention", categories: [
+        { name: "Medicines", definition: "help when used correctly but can poison when misused", examples: ["tablets", "syrups", "injections"] },
+        { name: "Household chemicals", definition: "chemicals used for cleaning or other work", examples: ["bleach", "detergents", "paraffin"] },
+        { name: "Farm chemicals", definition: "chemicals used for crops or animals", examples: ["pesticides", "herbicides"] },
+        { name: "Poison prevention", definition: "actions that stop poisoning", examples: ["keep chemicals away from children", "do not taste unknown substances", "read labels with adults"] },
+      ] },
+      { kind: "characteristics", title: "What to do in poisoning", points: ["Call an adult immediately.", "Do not hide poisoning.", "Do not drink more unknown liquids.", "Do not force vomiting unless a health worker says so.", "Take the container or label to the health worker if safe for an adult to do so." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is poison?", answer: "A substance that can harm or kill if misused." },
+        { type: "short-answer", prompt: "Name three things that may poison children if misused.", answer: "Medicines, paraffin, pesticides, bleach or detergents." },
+        { type: "multiple-choice", prompt: "What should a child do in suspected poisoning?", choices: ["call an adult immediately", "hide", "drink more chemical", "sleep quietly"], answer: "call an adult immediately" },
+      ] },
+    ],
+  },
+];
+
+const P4_OUR_FOOD_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-food-types-balanced-diet",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Our Food",
+    subTopicTitle: "Food Types and Balanced Diet",
+    lessonTitle: "Food Types and Balanced Diet",
+    blocks: [
+      { kind: "definition", term: "food", definition: "is what people and animals eat to live, grow, get energy and stay healthy.", simpleCheck: "Posho, beans, matooke, eggs, fish and fruits are foods." },
+      { kind: "definition", term: "balanced diet", definition: "is a meal that contains the right amounts of different food groups needed by the body.", simpleCheck: "A meal with posho, beans, greens and fruit can be more balanced than sweets alone." },
+      { kind: "categories", title: "Food groups", categories: [
+        { name: "Energy-giving foods", definition: "foods that give the body energy", examples: ["posho", "rice", "matooke", "cassava", "sweet potatoes"] },
+        { name: "Body-building foods", definition: "foods that help the body grow and repair itself", examples: ["beans", "eggs", "fish", "meat", "milk"] },
+        { name: "Protective foods", definition: "foods that help protect the body from diseases", examples: ["fruits", "vegetables", "greens"] },
+        { name: "Water", definition: "helps digestion, cooling and movement of substances in the body", examples: ["safe drinking water"] },
+      ] },
+      { kind: "diagram", title: "Balanced diet card", imageUrl: "/images/science/p4-balanced-diet.svg", caption: "A balanced meal contains energy-giving, body-building and protective foods.", labels: ["energy", "body-building", "protective", "water"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is food?", answer: "What people and animals eat to live and grow." },
+        { type: "short-answer", prompt: "What is a balanced diet?", answer: "A meal with the right amounts of different food groups." },
+        { type: "short-answer", prompt: "Name the three main food groups.", answer: "Energy-giving, body-building and protective foods." },
+        { type: "multiple-choice", prompt: "Which food helps build the body?", choices: ["beans", "soda", "sweets", "dust"], answer: "beans" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-food-hygiene-uses",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Our Food",
+    subTopicTitle: "Food Hygiene and Uses of Food",
+    lessonTitle: "Food Hygiene and Uses of Food",
+    blocks: [
+      { kind: "definition", term: "food hygiene", definition: "is keeping food clean and safe from germs before eating.", simpleCheck: "Washing fruits before eating is food hygiene." },
+      { kind: "uses", title: "Uses of food", points: ["Food gives energy for work and play.", "Food helps the body grow.", "Food repairs worn-out body parts.", "Food protects the body from diseases.", "Food helps the body stay warm and healthy." ] },
+      { kind: "categories", title: "Food hygiene practices", categories: [
+        { name: "Before cooking/eating", definition: "actions before food is prepared or eaten", examples: ["wash hands", "wash fruits", "use clean utensils"] },
+        { name: "During storage", definition: "actions that keep food safe", examples: ["cover food", "keep food in clean containers", "protect food from rats and flies"] },
+        { name: "During serving", definition: "actions that keep served food clean", examples: ["use clean plates", "avoid touching food with dirty hands"] },
+      ] },
+      { kind: "characteristics", title: "Dangers of poor food hygiene", points: ["Food can be contaminated by flies, dirty hands, dirty water and dirty utensils.", "Spoiled food can cause stomach pain, diarrhoea and vomiting.", "Uncovered food can attract flies and cockroaches.", "Food handlers should be clean." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is food hygiene?", answer: "Keeping food clean and safe from germs." },
+        { type: "short-answer", prompt: "Give four ways to keep food clean.", answer: "Wash hands, cover food, wash fruits, use clean utensils, store food well." },
+        { type: "multiple-choice", prompt: "Why should food be covered?", choices: ["to keep away flies", "to invite rats", "to make it dirty", "to spoil it"], answer: "to keep away flies" },
+      ] },
+    ],
+  },
+];
+
 const P4_SCIENCE_TOPIC_DATA: Topic[] = [
   {
     "id": "p4-plant-life",
@@ -2019,6 +2239,8 @@ const P4_SCIENCE_TOPIC_DATA: Topic[] = [
     "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_OUR_FOOD_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Science beta: built from the NCDC Primary Four Integrated Science Syllabus, April 2009; human science/health review still required before premium-final release. Our Food helps P4 learners observe, care for health and environment, and explain everyday science clearly.",
       "learningObjectives": [
@@ -2588,6 +2810,8 @@ const P4_SCIENCE_TOPIC_DATA: Topic[] = [
     "estMinutes": 34,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_INTESTINAL_DISEASES_WORMS_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Science beta: built from the NCDC Primary Four Integrated Science Syllabus, April 2009; human science/health review still required before premium-final release. Communicable Intestinal Diseases and Worm Infestation helps P4 learners observe, care for health and environment, and explain everyday science clearly.",
       "learningObjectives": [
@@ -2776,6 +3000,8 @@ const P4_SCIENCE_TOPIC_DATA: Topic[] = [
     "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_VECTORS_DISEASES_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Science beta: built from the NCDC Primary Four Integrated Science Syllabus, April 2009; human science/health review still required before premium-final release. Vectors and Diseases helps P4 learners observe, care for health and environment, and explain everyday science clearly.",
       "learningObjectives": [
@@ -2964,6 +3190,8 @@ const P4_SCIENCE_TOPIC_DATA: Topic[] = [
     "estMinutes": 34,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_ACCIDENTS_FIRST_AID_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Science beta: built from the NCDC Primary Four Integrated Science Syllabus, April 2009; human science/health review still required before premium-final release. Accidents, Poisoning and First Aid helps P4 learners observe, care for health and environment, and explain everyday science clearly.",
       "learningObjectives": [

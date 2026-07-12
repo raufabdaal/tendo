@@ -1,11 +1,195 @@
+import type { UpperPrimaryLesson } from "@/lib/content-blocks";
 import type { Topic } from "@/lib/topics";
+import { addUpperPrimarySocialV4 } from "@/lib/v4-social-helpers";
 
 // P5 Social Studies enriched beta content layer.
 // Source map: content/curriculum/p5-social-studies.json
 // Rule: NCDC first, build second. This file follows the researched NCDC P5 Social Studies topic structure.
 // Status: live beta until checked by human Social Studies/history/civic reviewers.
 
-export const P5_SOCIAL_TOPICS: Topic[] = [
+const P5_LOCATION_UGANDA_V4: UpperPrimaryLesson[] = [
+  { id: "p5-v4-location-uganda", classLevel: "P5", term: "Term I", curriculumMode: "subject", subject: "Social Studies", topicTitle: "Location of Uganda on the Map of East Africa", subTopicTitle: "Uganda in East Africa", lessonTitle: "Uganda in East Africa", blocks: [
+    { kind: "definition", term: "landlocked country", definition: "is a country that has no coastline on a sea or ocean.", simpleCheck: "Uganda is landlocked because it has no sea coast." },
+    { kind: "categories", title: "Uganda's location", categories: [{ name: "Region", definition: "Uganda is found in East Africa", examples: ["East Africa"] }, { name: "Neighbours", definition: "countries sharing borders with Uganda", examples: ["Kenya", "Tanzania", "Rwanda", "DRC", "South Sudan"] }, { name: "Compass directions", definition: "used to describe where neighbours are", examples: ["Kenya is east", "South Sudan is north", "DRC is west"] }, { name: "Map elements", definition: "parts that help us read maps", examples: ["title", "key", "scale", "compass"] }] },
+    { kind: "diagram", title: "Uganda in East Africa", imageUrl: "/images/social-studies/p5-uganda-east-africa-map.svg", caption: "Uganda's position and neighbours in East Africa.", labels: ["Uganda", "Kenya", "Tanzania", "Rwanda", "DRC", "South Sudan"] },
+    { kind: "worked-example", question: "Describe Uganda's location using neighbours.", steps: ["State the region: East Africa.", "Mention landlocked.", "Name at least two neighbours."], answer: "Uganda is a landlocked country in East Africa. It neighbours Kenya, Tanzania, Rwanda, DRC and South Sudan." },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "short-answer", prompt: "What does landlocked mean?", answer: "Having no coastline on a sea or ocean." }, { type: "short-answer", prompt: "Name Uganda's five neighbours.", answer: "Kenya, Tanzania, Rwanda, DRC and South Sudan." }, { type: "multiple-choice", prompt: "Kenya lies to the ___ of Uganda.", choices: ["east", "west", "north", "south-west"], answer: "east" }] }
+  ] }
+];
+
+const P5_PHYSICAL_FEATURES_V4: UpperPrimaryLesson[] = [
+  { id: "p5-v4-physical-features-uganda", classLevel: "P5", term: "Term I", curriculumMode: "subject", subject: "Social Studies", topicTitle: "Physical Features in Uganda", subTopicTitle: "Physical Features in Uganda", lessonTitle: "Physical Features in Uganda", blocks: [
+    { kind: "definition", term: "physical feature", definition: "is a natural feature on the earth's surface.", simpleCheck: "Lake Victoria and Mt. Rwenzori are physical features." },
+    { kind: "categories", title: "Types of physical features", categories: [{ name: "Mountains", definition: "high raised land", examples: ["Rwenzori", "Elgon", "Moroto"] }, { name: "Lakes and rivers", definition: "water bodies and flowing water", examples: ["Lake Victoria", "Lake Kyoga", "River Nile"] }, { name: "Rift valley", definition: "a long depression formed by earth movements", examples: ["Western Rift Valley"] }, { name: "Plains and plateaus", definition: "broad flat or raised land areas", examples: ["central plateau", "plains"] }] },
+    { kind: "diagram", title: "Uganda physical features", imageUrl: "/images/social-studies/p5-uganda-physical-features.svg", caption: "Major physical features in Uganda.", labels: ["mountains", "lakes", "rivers", "rift valley", "plateau"] },
+    { kind: "uses", title: "Importance and conservation", points: ["Lakes and rivers provide water, fish and transport.", "Rivers may provide hydro-electric power.", "Mountains and rift valley features attract tourists.", "Swamps provide papyrus and habitats.", "Features should be protected from pollution, erosion and misuse." ] },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "short-answer", prompt: "Name four physical features in Uganda.", answer: "Mountains, lakes, rivers, rift valley, plains, plateaus or swamps." }, { type: "short-answer", prompt: "Give two uses of rivers.", answer: "Water, fish, transport or hydro-electric power." }, { type: "multiple-choice", prompt: "Which is a lake in Uganda?", choices: ["Lake Victoria", "Mt. Elgon", "Kampala", "Kenya"], answer: "Lake Victoria" }] }
+  ] }
+];
+
+const P5_GOVERNMENT_V4: UpperPrimaryLesson[] = [
+  { id: "p5-v4-government-uganda", classLevel: "P5", term: "Term III", curriculumMode: "subject", subject: "Social Studies", topicTitle: "The Government of Uganda", subTopicTitle: "Government, Leaders, Rights and Responsibilities", lessonTitle: "Government, Leaders, Rights and Responsibilities", blocks: [
+    { kind: "definition", term: "government", definition: "is the group or system that leads and makes decisions for a country or area.", simpleCheck: "The Government of Uganda makes national laws and provides services." },
+    { kind: "categories", title: "Arms and roles of government", categories: [{ name: "Executive", definition: "implements laws and runs government work", examples: ["President", "ministers"] }, { name: "Legislature", definition: "makes laws", examples: ["Parliament", "Members of Parliament"] }, { name: "Judiciary", definition: "interprets laws and handles court cases", examples: ["courts", "judges"] }, { name: "Local government", definition: "leaders and offices that serve districts and local areas", examples: ["district leaders", "LC leaders"] }] },
+    { kind: "diagram", title: "Government of Uganda", imageUrl: "/images/social-studies/p5-government-uganda.svg", caption: "Arms of government, leaders and citizen responsibilities.", labels: ["executive", "legislature", "judiciary", "citizens"] },
+    { kind: "characteristics", title: "Rights and responsibilities", points: ["Citizens have rights such as education, health care and protection by law.", "Citizens have responsibilities such as obeying laws, paying taxes where required and caring for public property.", "Leaders should serve, guide and protect people.", "Good citizens participate peacefully in community development." ] },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "short-answer", prompt: "What is government?", answer: "The group or system that leads and makes decisions for a country or area." }, { type: "short-answer", prompt: "Name the three arms of government.", answer: "Executive, legislature and judiciary." }, { type: "multiple-choice", prompt: "Which arm makes laws?", choices: ["legislature", "executive", "judiciary", "market"], answer: "legislature" }] }
+  ] }
+];
+
+const P5_INDEPENDENCE_V4: UpperPrimaryLesson[] = [
+  { id: "p5-v4-independence-uganda", classLevel: "P5", term: "Term III", curriculumMode: "subject", subject: "Social Studies", topicTitle: "Uganda as an Independent Nation", subTopicTitle: "Independence, Symbols and Citizenship", lessonTitle: "Independence, Symbols and Citizenship", blocks: [
+    { kind: "definition", term: "independence", definition: "is the freedom of a country to govern itself.", simpleCheck: "Uganda became independent on 9 October 1962." },
+    { kind: "categories", title: "Independent Uganda", categories: [{ name: "National symbols", definition: "things that represent Uganda", examples: ["flag", "coat of arms", "national anthem", "crested crane"] }, { name: "Citizenship", definition: "belonging to a country with rights and responsibilities", examples: ["obeying laws", "respecting symbols", "serving the community"] }, { name: "Benefits of independence", definition: "good things from self-rule", examples: ["own government", "national identity", "making decisions"] }, { name: "Challenges", definition: "problems a country may face", examples: ["poverty", "conflict", "poor services", "corruption"] }] },
+    { kind: "diagram", title: "Road to independence", imageUrl: "/images/social-studies/p5-road-independence-timeline.svg", caption: "Uganda's road to independence and national symbols.", labels: ["independence", "1962", "flag", "anthem", "citizens"] },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "short-answer", prompt: "What is independence?", answer: "Freedom of a country to govern itself." }, { type: "short-answer", prompt: "When did Uganda become independent?", answer: "9 October 1962." }, { type: "multiple-choice", prompt: "Which is a national symbol?", choices: ["flag", "private shoe", "broken cup", "school desk only"], answer: "flag" }] }
+  ] }
+];
+
+const P5_POPULATION_V4: UpperPrimaryLesson[] = [
+  { id: "p5-v4-population-distribution", classLevel: "P5", term: "Term III", curriculumMode: "subject", subject: "Social Studies", topicTitle: "Population, Size and Distribution", subTopicTitle: "Population, Settlement and Problems", lessonTitle: "Population, Settlement and Problems", blocks: [
+    { kind: "definition", term: "population", definition: "is the number of people living in an area.", simpleCheck: "The population of a village is the number of people living there." },
+    { kind: "categories", title: "Population and settlement", categories: [{ name: "Population distribution", definition: "how people are spread in an area", examples: ["densely populated", "sparsely populated"] }, { name: "Factors influencing settlement", definition: "things that make people live in an area", examples: ["fertile soil", "water", "roads", "schools", "security"] }, { name: "Population problems", definition: "challenges caused by too many or too few people in an area", examples: ["land shortage", "unemployment", "poor housing", "pressure on services"] }, { name: "Solutions", definition: "ways to reduce population problems", examples: ["better planning", "more services", "job creation", "education"] }] },
+    { kind: "diagram", title: "Population distribution", imageUrl: "/images/social-studies/p5-population-distribution.svg", caption: "Population can be dense or sparse depending on services, land, climate and resources.", labels: ["population", "dense", "sparse", "settlement", "services"] },
+    { kind: "exercise", title: "Evaluation", questions: [{ type: "short-answer", prompt: "What is population?", answer: "The number of people living in an area." }, { type: "short-answer", prompt: "Name three factors influencing settlement.", answer: "Water, fertile soil, roads, schools, security, jobs or climate." }, { type: "multiple-choice", prompt: "A densely populated place has:", choices: ["many people", "no people", "only animals", "only forests"], answer: "many people" }] }
+  ] }
+];
+const P5_CLIMATE_UGANDA_V4: UpperPrimaryLesson[] = [
+  { id: "p5-v4-climate-uganda", classLevel: "P5", term: "Term I", curriculumMode: "subject", subject: "Social Studies", topicTitle: "Climate of Uganda", subTopicTitle: "Weather, Climate and Factors", lessonTitle: "Weather, Climate and Factors", blocks: [
+    { kind: "definition", term: "weather", definition: "is the condition of the atmosphere at a particular place and time.", simpleCheck: "Today may be sunny, rainy, cloudy or windy." },
+    { kind: "definition", term: "climate", definition: "is the average weather condition of a place over a long period of time.", simpleCheck: "Uganda's climate is generally warm and wet in many areas." },
+    { kind: "categories", title: "Elements and factors of climate", categories: [
+      { name: "Elements of weather and climate", definition: "things used to describe weather and climate", examples: ["rainfall", "temperature", "sunshine", "wind", "humidity"] },
+      { name: "Relief / altitude", definition: "height of land above sea level affects temperature and rainfall", examples: ["highlands are cooler", "mountain slopes may get more rain"] },
+      { name: "Distance from water bodies", definition: "places near lakes may get more rainfall and milder temperatures", examples: ["areas near Lake Victoria"] },
+      { name: "Vegetation", definition: "plant cover can affect rainfall and temperature", examples: ["forests encourage rainfall", "bare land becomes hotter"] }
+    ] },
+    { kind: "diagram", title: "Uganda climate and vegetation", imageUrl: "/images/social-studies/p5-uganda-climate-vegetation.svg", caption: "Climate and vegetation in Uganda are connected to rainfall, temperature and human activities.", labels: ["rainfall", "temperature", "sunshine", "wind", "humidity"] },
+    { kind: "uses", title: "Effects of climate on people", points: ["Rainfall supports crop growing and pasture.", "Drought can reduce crops and water supply.", "Heavy rainfall can cause flooding and soil erosion.", "Climate influences clothing, housing, crops and activities.", "Farmers use climate knowledge to plan planting and harvesting."] },
+    { kind: "exercise", title: "Evaluation", questions: [
+      { type: "short-answer", prompt: "What is climate?", answer: "The average weather condition of a place over a long period." },
+      { type: "short-answer", prompt: "Name four elements of weather and climate.", answer: "Rainfall, temperature, sunshine, wind or humidity." },
+      { type: "multiple-choice", prompt: "Which factor can make highland areas cooler?", choices: ["altitude", "market price", "school uniform", "football"], answer: "altitude" }
+    ] }
+  ] }
+];
+
+const P5_VEGETATION_UGANDA_V4: UpperPrimaryLesson[] = [
+  { id: "p5-v4-vegetation-uganda", classLevel: "P5", term: "Term II", curriculumMode: "subject", subject: "Social Studies", topicTitle: "Vegetation in Uganda", subTopicTitle: "Types, Uses and Conservation of Vegetation", lessonTitle: "Types, Uses and Conservation of Vegetation", blocks: [
+    { kind: "definition", term: "vegetation", definition: "is the plant cover that grows in an area.", simpleCheck: "Forests, grasslands, wetlands and crops are vegetation." },
+    { kind: "categories", title: "Types of vegetation in Uganda", categories: [
+      { name: "Forests", definition: "areas with many trees growing close together", examples: ["Budongo Forest", "Mabira Forest", "Kibale Forest"] },
+      { name: "Grasslands / savanna", definition: "areas with grasses and scattered trees", examples: ["pasture areas", "game park areas"] },
+      { name: "Wetland vegetation", definition: "plants that grow in wet areas", examples: ["papyrus", "reeds", "swamp grasses"] },
+      { name: "Planted vegetation", definition: "plants grown by people", examples: ["crop gardens", "tree plantations", "flowers"] }
+    ] },
+    { kind: "diagram", title: "Uganda climate and vegetation", imageUrl: "/images/social-studies/p5-uganda-climate-vegetation.svg", caption: "Vegetation types and conservation in Uganda.", labels: ["forest", "grassland", "wetland", "crops", "conservation"] },
+    { kind: "uses", title: "Uses of vegetation", points: ["Forests provide timber, fruits, medicine and habitats.", "Grasslands provide pasture for animals.", "Wetlands provide papyrus, water storage and habitats.", "Vegetation protects soil from erosion.", "Vegetation provides shade, oxygen and beauty." ] },
+    { kind: "characteristics", title: "Conserving vegetation", points: ["Plant trees and protect young plants.", "Avoid unnecessary bush burning.", "Protect wetlands and forests.", "Use firewood and timber carefully.", "Report illegal tree cutting to adults or leaders." ] },
+    { kind: "exercise", title: "Evaluation", questions: [
+      { type: "short-answer", prompt: "What is vegetation?", answer: "Plant cover that grows in an area." },
+      { type: "short-answer", prompt: "Name three types of vegetation in Uganda.", answer: "Forests, grasslands, wetlands and planted vegetation." },
+      { type: "multiple-choice", prompt: "Which action conserves vegetation?", choices: ["planting trees", "burning forests", "draining wetlands", "cutting all trees"], answer: "planting trees" }
+    ] }
+  ] }
+];
+
+const P5_NATURAL_RESOURCES_V4: UpperPrimaryLesson[] = [
+  { id: "p5-v4-natural-resources", classLevel: "P5", term: "Term II", curriculumMode: "subject", subject: "Social Studies", topicTitle: "Natural Resources in Uganda", subTopicTitle: "Meaning, Uses and Conservation of Natural Resources", lessonTitle: "Meaning, Uses and Conservation of Natural Resources", blocks: [
+    { kind: "definition", term: "natural resource", definition: "is something useful that is found in nature and used by people.", simpleCheck: "Land, water, forests, wildlife and minerals are natural resources." },
+    { kind: "categories", title: "Types of natural resources", categories: [
+      { name: "Land and soil", definition: "resources used for farming, settlement and building", examples: ["fertile soil", "land for homes", "clay"] },
+      { name: "Water resources", definition: "water bodies and sources used by people", examples: ["lakes", "rivers", "springs", "rain"] },
+      { name: "Vegetation and wildlife", definition: "plants and animals found in nature", examples: ["forests", "grasslands", "fish", "wild animals"] },
+      { name: "Minerals", definition: "useful materials found underground", examples: ["gold", "limestone", "copper", "salt"] }
+    ] },
+    { kind: "diagram", title: "Resources and value addition", imageUrl: "/images/social-studies/mining-and-agriculture-processing.png", caption: "Natural resources support farming, industry, tourism and income.", labels: ["land", "water", "forests", "minerals", "wildlife"] },
+    { kind: "uses", title: "Uses of natural resources", points: ["Land supports farming and settlement.", "Water supports domestic use, fishing, transport and hydro-electric power.", "Forests provide timber, medicine, shade and habitats.", "Wildlife supports tourism.", "Minerals support industries and income." ] },
+    { kind: "characteristics", title: "Conserving resources", points: ["Avoid polluting water sources.", "Plant trees and protect forests.", "Use land carefully to prevent erosion.", "Protect wildlife and habitats.", "Use resources wisely so future generations can benefit." ] },
+    { kind: "exercise", title: "Evaluation", questions: [
+      { type: "short-answer", prompt: "What is a natural resource?", answer: "Something useful found in nature and used by people." },
+      { type: "short-answer", prompt: "Name four natural resources in Uganda.", answer: "Land, water, forests, wildlife, minerals or soil." },
+      { type: "multiple-choice", prompt: "Which is a water resource?", choices: ["River Nile", "plastic chair", "school bell", "shoe"], answer: "River Nile" }
+    ] }
+  ] }
+];
+
+const P5_PRECOLONIAL_PEOPLE_V4: UpperPrimaryLesson[] = [
+  { id: "p5-v4-precolonial-people", classLevel: "P5", term: "Term II", curriculumMode: "subject", subject: "Social Studies", topicTitle: "The People of Pre-Colonial Uganda", subTopicTitle: "Ethnic Groups, Migration, Culture and Leadership", lessonTitle: "Ethnic Groups, Migration, Culture and Leadership", blocks: [
+    { kind: "definition", term: "pre-colonial Uganda", definition: "refers to the time before Uganda came under colonial rule.", simpleCheck: "Before colonial rule, different communities lived in kingdoms, chiefdoms and clans." },
+    { kind: "categories", title: "People and societies", categories: [
+      { name: "Ethnic groups", definition: "groups of people with shared origin, language or culture", examples: ["Bantu", "Nilotes", "Nilo-Hamites", "Sudanic groups"] },
+      { name: "Migration", definition: "movement of people from one place to another to live", examples: ["search for fertile land", "pasture", "security", "trade"] },
+      { name: "Pre-colonial societies", definition: "communities before colonial rule", examples: ["Buganda", "Bunyoro", "Ankole", "Acholi", "Busoga"] },
+      { name: "Leadership", definition: "ways communities were guided", examples: ["kings", "chiefs", "clan leaders", "elders"] }
+    ] },
+    { kind: "diagram", title: "Migration map", imageUrl: "/images/social-studies/bantu-nilote-migration-map.png", caption: "Migration and settlement of peoples in East Africa and Uganda.", labels: ["migration", "settlement", "Bantu", "Nilotes", "culture"] },
+    { kind: "characteristics", title: "Culture and respect", points: ["Communities had languages, customs, music, dances and beliefs.", "Leaders helped settle disputes and organise defence.", "People migrated for land, pasture, trade, security and family reasons.", "Learners should describe cultural groups respectfully." ] },
+    { kind: "exercise", title: "Evaluation", questions: [
+      { type: "short-answer", prompt: "What does pre-colonial Uganda mean?", answer: "Uganda before colonial rule." },
+      { type: "short-answer", prompt: "Name two reasons why people migrated.", answer: "Fertile land, pasture, trade, security, population pressure or family reasons." },
+      { type: "multiple-choice", prompt: "A clan leader is an example of:", choices: ["leadership", "weather", "soil type", "vehicle part"], answer: "leadership" }
+    ] }
+  ] }
+];
+
+const P5_FOREIGN_INFLUENCE_V4: UpperPrimaryLesson[] = [
+  { id: "p5-v4-foreign-influence", classLevel: "P5", term: "Term II", curriculumMode: "subject", subject: "Social Studies", topicTitle: "Foreign Influence in Uganda", subTopicTitle: "Foreigners, Reasons and Effects", lessonTitle: "Foreigners, Reasons and Effects", blocks: [
+    { kind: "definition", term: "foreign influence", definition: "is the effect that people from outside Uganda had on Uganda's people, culture, economy, religion or government.", simpleCheck: "Missionaries influenced education and religion in Uganda." },
+    { kind: "categories", title: "Groups of foreigners", categories: [
+      { name: "Traders", definition: "foreigners who came to exchange goods", examples: ["Arab traders", "Indian traders", "European traders"] },
+      { name: "Explorers", definition: "foreigners who came to find out about places and resources", examples: ["explorers searching for sources of rivers and routes"] },
+      { name: "Missionaries", definition: "foreigners who came to spread religion and education", examples: ["Christian missionaries", "mission schools"] },
+      { name: "Colonial administrators", definition: "foreign officials who helped establish colonial rule", examples: ["British officials"] }
+    ] },
+    { kind: "diagram", title: "Partition and foreign influence", imageUrl: "/images/social-studies/partition-of-africa-1884.png", caption: "Foreign influence and colonial expansion changed many parts of Africa.", labels: ["traders", "missionaries", "explorers", "colonial rule"] },
+    { kind: "characteristics", title: "Balanced effects", points: ["Missionaries introduced formal schools and health services in some areas.", "Foreign traders introduced new goods and trade links.", "Colonial rule reduced African self-rule and changed land, leadership and taxes.", "Some foreign influence brought new religions, crops, roads and buildings.", "History answers should mention both positive and negative effects with evidence." ] },
+    { kind: "exercise", title: "Evaluation", questions: [
+      { type: "short-answer", prompt: "Who were missionaries?", answer: "People who came to spread religion and education." },
+      { type: "short-answer", prompt: "Give two effects of foreign influence in Uganda.", answer: "Schools, religion, trade, colonial rule, roads, taxes, loss of self-rule or new crops." },
+      { type: "multiple-choice", prompt: "A balanced history answer should give:", choices: ["both positive and negative effects", "only insults", "only one word", "no evidence"], answer: "both positive and negative effects" }
+    ] }
+  ] }
+];
+
+const P5_UGANDA_NATION_V4: UpperPrimaryLesson[] = [
+  { id: "p5-v4-uganda-nation", classLevel: "P5", term: "Term III", curriculumMode: "subject", subject: "Social Studies", topicTitle: "How Uganda Became a Nation", subTopicTitle: "Protectorate, Administration and Nationhood", lessonTitle: "Protectorate, Administration and Nationhood", blocks: [
+    { kind: "definition", term: "nation", definition: "is a group of people living under one government with shared identity and territory.", simpleCheck: "Uganda is a nation with a government, people, land and national symbols." },
+    { kind: "categories", title: "Steps in Uganda becoming a nation", categories: [
+      { name: "Before one country", definition: "different communities, kingdoms and chiefdoms existed before modern Uganda", examples: ["Buganda", "Bunyoro", "Ankole", "Acholi"] },
+      { name: "Protectorate period", definition: "time when Britain controlled Uganda as a protectorate", examples: ["1894 protectorate period"] },
+      { name: "Administrative changes", definition: "changes in boundaries, leadership and government structures", examples: ["districts", "central administration"] },
+      { name: "Nationhood", definition: "growth of Uganda as one country with shared symbols and government", examples: ["flag", "anthem", "coat of arms"] }
+    ] },
+    { kind: "diagram", title: "Uganda nation timeline", imageUrl: "/images/social-studies/p5-road-independence-timeline.svg", caption: "Uganda moved from many communities through protectorate rule to one independent nation.", labels: ["communities", "protectorate", "administration", "nationhood"] },
+    { kind: "characteristics", title: "Unity and diversity", points: ["Uganda has many cultures and languages.", "A nation needs shared symbols, laws and government.", "Unity helps people work together despite differences.", "Citizens should respect national symbols and each other." ] },
+    { kind: "exercise", title: "Evaluation", questions: [
+      { type: "short-answer", prompt: "What is a nation?", answer: "People living under one government with shared identity and territory." },
+      { type: "short-answer", prompt: "Name two national symbols of Uganda.", answer: "Flag, coat of arms, national anthem or crested crane." },
+      { type: "multiple-choice", prompt: "Uganda became a British protectorate in:", choices: ["1894", "1962", "2000", "1800"], answer: "1894" }
+    ] }
+  ] }
+];
+
+const P5_ROAD_INDEPENDENCE_V4: UpperPrimaryLesson[] = [
+  { id: "p5-v4-road-independence", classLevel: "P5", term: "Term III", curriculumMode: "subject", subject: "Social Studies", topicTitle: "The Road to Independence", subTopicTitle: "Nationalism, Parties, Leaders and Independence", lessonTitle: "Nationalism, Parties, Leaders and Independence", blocks: [
+    { kind: "definition", term: "nationalism", definition: "is love for one's country and the desire for self-rule.", simpleCheck: "Ugandans who wanted self-rule showed nationalism." },
+    { kind: "categories", title: "Road to independence ideas", categories: [
+      { name: "Nationalism", definition: "love for country and desire for self-rule", examples: ["demanding independence", "forming associations"] },
+      { name: "Political parties", definition: "groups organised to seek political leadership and represent ideas", examples: ["parties before independence"] },
+      { name: "Leaders", definition: "people who guided the independence struggle", examples: ["political leaders", "community leaders"] },
+      { name: "Independence", definition: "freedom to govern oneself", examples: ["Uganda's independence on 9 October 1962"] }
+    ] },
+    { kind: "diagram", title: "Road to independence timeline", imageUrl: "/images/social-studies/p5-road-independence-timeline.svg", caption: "Nationalism, parties and leaders helped Uganda move toward independence.", labels: ["nationalism", "parties", "leaders", "1962"] },
+    { kind: "characteristics", title: "Why independence mattered", points: ["Ugandans wanted self-rule.", "Political parties helped organise people.", "Leaders negotiated and mobilised support.", "Uganda became independent on 9 October 1962.", "Citizens should use freedom responsibly." ] },
+    { kind: "exercise", title: "Evaluation", questions: [
+      { type: "short-answer", prompt: "What is nationalism?", answer: "Love for one's country and desire for self-rule." },
+      { type: "short-answer", prompt: "When did Uganda become independent?", answer: "9 October 1962." },
+      { type: "multiple-choice", prompt: "Independence means:", choices: ["self-rule", "foreign rule", "no government", "no citizens"], answer: "self-rule" }
+    ] }
+  ] }
+];
+const P5_SOCIAL_TOPIC_DATA: Topic[] = [
   {
     "id": "p5-location-uganda-map-east-africa",
     "themeId": "p5-sst-uganda",
@@ -14,6 +198,8 @@ export const P5_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 40,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_LOCATION_UGANDA_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Social Studies beta: built from researched NCDC Primary Five Social Studies Set One structure; human history/civic review still required before premium-final release. Location of Uganda on the Map of East Africa helps learners understand Uganda and explain Social Studies ideas with evidence.",
       "learningObjectives": [
@@ -243,6 +429,8 @@ export const P5_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 42,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_PHYSICAL_FEATURES_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Social Studies beta: built from researched NCDC Primary Five Social Studies Set One structure; human history/civic review still required before premium-final release. Physical Features in Uganda helps learners understand Uganda and explain Social Studies ideas with evidence.",
       "learningObjectives": [
@@ -471,6 +659,8 @@ export const P5_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 40,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_CLIMATE_UGANDA_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Social Studies beta: built from researched NCDC Primary Five Social Studies Set One structure; human history/civic review still required before premium-final release. Climate of Uganda helps learners understand Uganda and explain Social Studies ideas with evidence.",
       "learningObjectives": [
@@ -698,6 +888,8 @@ export const P5_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 38,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_VEGETATION_UGANDA_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Social Studies beta: built from researched NCDC Primary Five Social Studies Set One structure; human history/civic review still required before premium-final release. Vegetation in Uganda helps learners understand Uganda and explain Social Studies ideas with evidence.",
       "learningObjectives": [
@@ -926,6 +1118,8 @@ export const P5_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 38,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_NATURAL_RESOURCES_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Social Studies beta: built from researched NCDC Primary Five Social Studies Set One structure; human history/civic review still required before premium-final release. Natural Resources in Uganda helps learners understand Uganda and explain Social Studies ideas with evidence.",
       "learningObjectives": [
@@ -1154,6 +1348,8 @@ export const P5_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 40,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_PRECOLONIAL_PEOPLE_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Social Studies beta: built from researched NCDC Primary Five Social Studies Set One structure; human history/civic review still required before premium-final release. The People of Pre-Colonial Uganda helps learners understand Uganda and explain Social Studies ideas with evidence.",
       "learningObjectives": [
@@ -1380,6 +1576,8 @@ export const P5_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 40,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_FOREIGN_INFLUENCE_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Social Studies beta: built from researched NCDC Primary Five Social Studies Set One structure; human history/civic review still required before premium-final release. Foreign Influence in Uganda helps learners understand Uganda and explain Social Studies ideas with evidence.",
       "learningObjectives": [
@@ -1608,6 +1806,8 @@ export const P5_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 38,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_UGANDA_NATION_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Social Studies beta: built from researched NCDC Primary Five Social Studies Set One structure; human history/civic review still required before premium-final release. How Uganda Became a Nation helps learners understand Uganda and explain Social Studies ideas with evidence.",
       "learningObjectives": [
@@ -1836,6 +2036,8 @@ export const P5_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 38,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_ROAD_INDEPENDENCE_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Social Studies beta: built from researched NCDC Primary Five Social Studies Set One structure; human history/civic review still required before premium-final release. The Road to Independence helps learners understand Uganda and explain Social Studies ideas with evidence.",
       "learningObjectives": [
@@ -2062,6 +2264,8 @@ export const P5_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 38,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_INDEPENDENCE_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Social Studies beta: built from researched NCDC Primary Five Social Studies Set One structure; human history/civic review still required before premium-final release. Uganda as an Independent Nation helps learners understand Uganda and explain Social Studies ideas with evidence.",
       "learningObjectives": [
@@ -2289,6 +2493,8 @@ export const P5_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 40,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_GOVERNMENT_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Social Studies beta: built from researched NCDC Primary Five Social Studies Set One structure; human history/civic review still required before premium-final release. The Government of Uganda helps learners understand Uganda and explain Social Studies ideas with evidence.",
       "learningObjectives": [
@@ -2517,6 +2723,8 @@ export const P5_SOCIAL_TOPICS: Topic[] = [
     "estMinutes": 38,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P5_POPULATION_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P5 Social Studies beta: built from researched NCDC Primary Five Social Studies Set One structure; human history/civic review still required before premium-final release. Population, Size and Distribution helps learners understand Uganda and explain Social Studies ideas with evidence.",
       "learningObjectives": [
@@ -2738,6 +2946,23 @@ export const P5_SOCIAL_TOPICS: Topic[] = [
     ]
   }
 ];
+
+const P5_SOCIAL_TERMS = {
+  "p5-location-uganda-map-east-africa": "Term I" as const,
+  "p5-physical-features-uganda": "Term I" as const,
+  "p5-climate-uganda": "Term I" as const,
+  "p5-vegetation-uganda": "Term II" as const,
+  "p5-natural-resources-uganda": "Term II" as const,
+  "p5-people-precolonial-uganda": "Term II" as const,
+  "p5-foreign-influence-uganda": "Term II" as const,
+  "p5-how-uganda-became-nation": "Term III" as const,
+  "p5-road-to-independence": "Term III" as const,
+  "p5-independent-uganda": "Term III" as const,
+  "p5-government-uganda": "Term III" as const,
+  "p5-population-size-distribution": "Term III" as const
+};
+
+export const P5_SOCIAL_TOPICS: Topic[] = addUpperPrimarySocialV4(P5_SOCIAL_TOPIC_DATA, "P5", P5_SOCIAL_TERMS);
 
 export function getP5SocialTopic(id: string): Topic | undefined {
   return P5_SOCIAL_TOPICS.find((topic) => topic.id === id);

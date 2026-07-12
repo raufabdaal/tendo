@@ -1,4 +1,5 @@
 import type { Topic } from "@/lib/topics";
+import { addUpperPrimarySocialV4 } from "@/lib/v4-social-helpers";
 
 
 function balanceTopicAnswers(topics: Topic[]): Topic[] {
@@ -25,6 +26,19 @@ function balanceTopicAnswers(topics: Topic[]): Topic[] {
   visit(topics);
   return topics;
 }
+
+const P7_SOCIAL_TERMS: Record<string, "Term I" | "Term II" | "Term III"> = {
+  "location-of-africa": "Term I",
+  "physical-features-of-africa": "Term I",
+  "climate-of-africa": "Term I",
+  "vegetation-of-africa": "Term I",
+  "people-ethnic-groups-settlement": "Term II",
+  "foreign-influence-africa": "Term II",
+  "nationalism-road-independence": "Term II",
+  "post-independence-africa": "Term II",
+  "economic-developments-africa": "Term III",
+  "major-world-organisations": "Term III"
+};
 
 const SOCIAL_TOPICS_DATA: Topic[] = [
   {
@@ -3618,7 +3632,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
   },
 ];
 
-export const SOCIAL_TOPICS: Topic[] = balanceTopicAnswers(SOCIAL_TOPICS_DATA);
+export const SOCIAL_TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimarySocialV4(SOCIAL_TOPICS_DATA, "P7", P7_SOCIAL_TERMS));
 
 export function getSocialTopic(id: string): Topic | undefined {
   return SOCIAL_TOPICS.find((topic) => topic.id === id);

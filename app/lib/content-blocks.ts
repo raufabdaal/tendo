@@ -132,12 +132,15 @@ export type LowerPrimaryContentBlock =
   | DiagramBlock;
 
 export type UpperPrimaryContentBlock =
+  | VocabularyBlock
+  | StoryBlock
   | DefinitionBlock
   | CategoryBlock
   | ExamplesBlock
   | CharacteristicsBlock
   | UsesBlock
   | DiagramBlock
+  | ActivityBlock
   | WorkedExampleBlock
   | ExerciseBlock;
 

@@ -1,4 +1,5 @@
 import type { Topic } from "@/lib/topics";
+import { addUpperPrimaryReV4 } from "@/lib/v4-re-helpers";
 
 
 function balanceTopicAnswers(topics: Topic[]): Topic[] {
@@ -30,6 +31,15 @@ function balanceTopicAnswers(topics: Topic[]): Topic[] {
   visit(topics);
   return topics;
 }
+
+const P6_RE_TERMS: Record<string, "Term I" | "Term II" | "Term III"> = {
+  "p6-cre-gods-family": "Term I",
+  "p6-cre-ten-commandments": "Term II",
+  "p6-cre-jesus-miracles": "Term III",
+  "p6-ire-surahs": "Term I",
+  "p6-ire-pillars-fasting": "Term II",
+  "p6-ire-prophet-makkah": "Term III"
+};
 
 const P6_RE_TOPICS_DATA: Topic[] = [
   // ──────────────────────── PART I: CRE ────────────────────────
@@ -729,7 +739,7 @@ const P6_RE_TOPICS_DATA: Topic[] = [
   }
 ];
 
-export const P6_RE_TOPICS: Topic[] = balanceTopicAnswers(P6_RE_TOPICS_DATA);
+export const P6_RE_TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimaryReV4(P6_RE_TOPICS_DATA, "P6", P6_RE_TERMS));
 
 export function getP6ReTopic(id: string): Topic | undefined {
   return P6_RE_TOPICS.find((topic) => topic.id === id);

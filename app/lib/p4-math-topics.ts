@@ -1,11 +1,599 @@
+import type { UpperPrimaryLesson } from "@/lib/content-blocks";
 import type { Topic } from "@/lib/topics";
+import { addUpperPrimaryMathV4 } from "@/lib/v4-math-helpers";
 
 // P4 Mathematics live beta content layer.
 // Source map: content/curriculum/p4-math.json
 // Rule: NCDC first, build second. This file follows the verified NCDC Primary Four Mathematics Syllabus, 2010.
 // Status: live beta until checked by a human reviewer against classroom practice and NCDC source text.
 
-export const P4_MATH_TOPICS: Topic[] = [
+const P4_WHOLE_NUMBERS_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-whole-numbers-place-value",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Whole Numbers up to 100,000",
+    subTopicTitle: "Reading, Place Value and Value",
+    lessonTitle: "Reading, Place Value and Value",
+    blocks: [
+      { kind: "definition", term: "whole numbers", definition: "are counting numbers including zero, with no fractions or decimals. In P4, learners read and write whole numbers up to 99,999.", simpleCheck: "47,382 is a whole number." },
+      { kind: "categories", title: "Place-value columns", categories: [
+        { name: "Ones", definition: "the first place from the right", examples: ["7 in 47,382 is in the ones place? No, 2 is in ones."] },
+        { name: "Tens", definition: "the place for groups of ten", examples: ["8 in 47,382 is in the tens place"] },
+        { name: "Hundreds", definition: "the place for groups of one hundred", examples: ["3 in 47,382 is in the hundreds place"] },
+        { name: "Thousands", definition: "the place for groups of one thousand", examples: ["7 in 47,382 is in the thousands place"] },
+        { name: "Ten-thousands", definition: "the place for groups of ten thousand", examples: ["4 in 47,382 is in the ten-thousands place"] },
+      ] },
+      { kind: "diagram", title: "Place-value chart", imageUrl: "/images/math/p4-place-value-chart.svg", caption: "Use a place-value chart to read and write 5-digit numbers.", labels: ["ten-thousands", "thousands", "hundreds", "tens", "ones"] },
+      { kind: "worked-example", question: "Find the value of 7 in 47,382.", steps: ["Locate digit 7 in 47,382.", "It is in the thousands place.", "7 thousands = 7,000."], answer: "The value of 7 is 7,000." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is the place value of 6 in 56,214?", answer: "Thousands." },
+        { type: "short-answer", prompt: "What is the value of 3 in 73,405?", answer: "3,000." },
+        { type: "multiple-choice", prompt: "In 84,219, the digit 8 is in the:", choices: ["ten-thousands", "thousands", "hundreds", "tens"], answer: "ten-thousands" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-expanded-short-words",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Whole Numbers up to 100,000",
+    subTopicTitle: "Expanded Form, Short Form and Words",
+    lessonTitle: "Expanded Form, Short Form and Words",
+    blocks: [
+      { kind: "definition", term: "expanded form", definition: "is writing a number as the sum of the values of its digits.", simpleCheck: "34,205 = 30,000 + 4,000 + 200 + 5." },
+      { kind: "categories", title: "Ways of writing numbers", categories: [
+        { name: "Figures", definition: "writing a number using digits", examples: ["47,382", "9,506"] },
+        { name: "Words", definition: "writing a number using English words", examples: ["forty-seven thousand, three hundred eighty-two"] },
+        { name: "Expanded form", definition: "writing a number as values added together", examples: ["40,000 + 7,000 + 300 + 80 + 2"] },
+        { name: "Short form", definition: "writing expanded values as one number", examples: ["50,000 + 6,000 + 200 + 10 + 4 = 56,214"] },
+      ] },
+      { kind: "worked-example", question: "Write 68,409 in expanded form.", steps: ["6 is worth 60,000.", "8 is worth 8,000.", "4 is worth 400.", "9 is worth 9."], answer: "60,000 + 8,000 + 400 + 9." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Write 52,306 in expanded form.", answer: "50,000 + 2,000 + 300 + 6." },
+        { type: "short-answer", prompt: "Write 40,000 + 7,000 + 500 + 30 + 8 in short form.", answer: "47,538." },
+        { type: "multiple-choice", prompt: "Which is 23,405 in words?", choices: ["twenty-three thousand, four hundred five", "two thousand three", "twenty-three hundred", "two hundred thirty-four"], answer: "twenty-three thousand, four hundred five" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-rounding-roman",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Whole Numbers up to 100,000",
+    subTopicTitle: "Rounding and Roman Numerals",
+    lessonTitle: "Rounding and Roman Numerals",
+    blocks: [
+      { kind: "definition", term: "rounding off", definition: "is writing a number to the nearest chosen place, such as nearest 10, 100 or 1,000.", simpleCheck: "46 rounded to the nearest 10 is 50." },
+      { kind: "categories", title: "Rules to know", categories: [
+        { name: "Nearest 10", definition: "look at the ones digit", examples: ["46 → 50", "42 → 40"] },
+        { name: "Nearest 100", definition: "look at the tens digit", examples: ["365 → 400", "324 → 300"] },
+        { name: "Nearest 1,000", definition: "look at the hundreds digit", examples: ["4,600 → 5,000", "4,300 → 4,000"] },
+        { name: "Roman numerals up to XX", definition: "numbers written using I, V and X up to 20", examples: ["I=1", "V=5", "X=10", "XX=20"] },
+      ] },
+      { kind: "worked-example", question: "Round 47,382 to the nearest 1,000.", steps: ["Look at the hundreds digit: 3.", "3 is less than 5, so round down.", "Keep 47 thousand and change the rest to zeros."], answer: "47,000." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Round 658 to the nearest 100.", answer: "700." },
+        { type: "short-answer", prompt: "Write 19 in Roman numerals.", answer: "XIX." },
+        { type: "multiple-choice", prompt: "XX means:", choices: ["20", "10", "15", "5"], answer: "20" },
+      ] },
+    ],
+  },
+];
+
+const P4_OPERATIONS_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-addition-subtraction",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Operations on Whole Numbers",
+    subTopicTitle: "Addition and Subtraction",
+    lessonTitle: "Addition and Subtraction",
+    blocks: [
+      { kind: "definition", term: "addition", definition: "is combining two or more numbers to get a total or sum.", simpleCheck: "2,345 + 1,210 combines two quantities." },
+      { kind: "definition", term: "subtraction", definition: "is taking away or finding the difference between numbers.", simpleCheck: "5,000 - 2,345 finds what remains or the difference." },
+      { kind: "categories", title: "Methods", categories: [
+        { name: "Addition without regrouping", definition: "adding when no column reaches 10 or more", examples: ["23,124 + 12,315"] },
+        { name: "Addition with regrouping", definition: "adding when a column makes 10 or more and you carry", examples: ["28,765 + 14,289"] },
+        { name: "Subtraction without regrouping", definition: "subtracting when each top digit is enough", examples: ["54,321 - 12,110"] },
+        { name: "Subtraction with regrouping", definition: "subtracting by borrowing from the next place", examples: ["50,000 - 23,475"] },
+      ] },
+      { kind: "diagram", title: "Four operations card", imageUrl: "/images/math/p4-four-operations.svg", caption: "Addition, subtraction, multiplication and division reminder.", labels: ["add", "subtract", "multiply", "divide"] },
+      { kind: "worked-example", question: "Add 28,765 + 14,289.", steps: ["Write numbers in columns.", "Add ones: 5 + 9 = 14, write 4 carry 1.", "Continue column by column with carrying.", "The total is 43,054."], answer: "43,054." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Find 34,215 + 12,480.", answer: "46,695." },
+        { type: "short-answer", prompt: "Find 50,000 - 23,475.", answer: "26,525." },
+        { type: "multiple-choice", prompt: "The answer in addition is called the:", choices: ["sum", "difference", "product", "quotient"], answer: "sum" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-multiplication-division",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Operations on Whole Numbers",
+    subTopicTitle: "Multiplication and Division",
+    lessonTitle: "Multiplication and Division",
+    blocks: [
+      { kind: "definition", term: "multiplication", definition: "is repeated addition of equal groups.", simpleCheck: "6 × 4 means 6 groups of 4." },
+      { kind: "definition", term: "division", definition: "is sharing or grouping a number into equal parts.", simpleCheck: "24 ÷ 6 means sharing 24 into 6 equal groups." },
+      { kind: "categories", title: "Important cases", categories: [
+        { name: "Multiplying by 0", definition: "any number times 0 equals 0", examples: ["432 × 0 = 0"] },
+        { name: "Multiplying by 10", definition: "moves digits one place left and adds one zero for whole numbers", examples: ["34 × 10 = 340"] },
+        { name: "Multiplying by 100", definition: "moves digits two places left and adds two zeros for whole numbers", examples: ["48 × 100 = 4,800"] },
+        { name: "Dividing by 100", definition: "shares into 100 equal groups", examples: ["4,800 ÷ 100 = 48"] },
+      ] },
+      { kind: "worked-example", question: "A farmer packs 24 oranges in each bag. How many oranges are in 8 bags?", steps: ["Each bag has the same number of oranges.", "Use multiplication: 24 × 8.", "24 × 8 = 192."], answer: "192 oranges." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Find 342 × 7.", answer: "2,394." },
+        { type: "short-answer", prompt: "Find 4,800 ÷ 100.", answer: "48." },
+        { type: "multiple-choice", prompt: "Sharing equally uses:", choices: ["division", "addition only", "rounding", "Roman numerals"], answer: "division" },
+      ] },
+    ],
+  },
+];
+
+const P4_FRACTIONS_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-fraction-types",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Fractions",
+    subTopicTitle: "Fraction Types",
+    lessonTitle: "Fraction Types",
+    blocks: [
+      { kind: "definition", term: "fraction", definition: "is a number that shows part of a whole or part of a group.", simpleCheck: "1/2 means one out of two equal parts." },
+      { kind: "categories", title: "Types of fractions", categories: [
+        { name: "Proper fraction", definition: "a fraction whose numerator is smaller than its denominator", examples: ["1/2", "3/5", "7/10"] },
+        { name: "Improper fraction", definition: "a fraction whose numerator is equal to or greater than its denominator", examples: ["5/4", "7/3", "9/9"] },
+        { name: "Mixed number", definition: "a whole number and a fraction written together", examples: ["1 1/2", "2 3/4"] },
+        { name: "Equivalent fractions", definition: "fractions with the same value", examples: ["1/2 = 2/4", "2/3 = 4/6"] },
+      ] },
+      { kind: "diagram", title: "Fraction strips", imageUrl: "/images/math/fraction-strips.svg", caption: "Fraction strips help compare and identify equivalent fractions.", labels: ["1/2", "2/4", "3/6", "proper", "improper"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is a fraction?", answer: "A number showing part of a whole or group." },
+        { type: "short-answer", prompt: "Give two examples of proper fractions.", answer: "1/2, 2/3, 3/5 or any numerator less than denominator." },
+        { type: "multiple-choice", prompt: "Which is an improper fraction?", choices: ["5/3", "2/5", "1/4", "3/8"], answer: "5/3" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-fraction-operations",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Fractions",
+    subTopicTitle: "Comparing and Calculating Fractions",
+    lessonTitle: "Comparing and Calculating Fractions",
+    blocks: [
+      { kind: "definition", term: "same denominator", definition: "means fractions have the same bottom number.", simpleCheck: "3/8 and 5/8 have the same denominator." },
+      { kind: "categories", title: "Fraction skills", categories: [
+        { name: "Ordering fractions", definition: "arranging fractions from smallest to biggest or biggest to smallest", examples: ["1/5, 2/5, 3/5"] },
+        { name: "Finding a fraction of a group", definition: "dividing the group by the denominator and multiplying by the numerator", examples: ["1/4 of 20 = 5"] },
+        { name: "Adding same denominators", definition: "add numerators and keep denominator", examples: ["2/7 + 3/7 = 5/7"] },
+        { name: "Subtracting same denominators", definition: "subtract numerators and keep denominator", examples: ["5/9 - 2/9 = 3/9"] },
+      ] },
+      { kind: "worked-example", question: "Find 3/8 + 2/8.", steps: ["The denominators are the same: 8.", "Add numerators: 3 + 2 = 5.", "Keep the denominator 8."], answer: "5/8." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Find 4/9 - 1/9.", answer: "3/9 or 1/3." },
+        { type: "short-answer", prompt: "Find 1/5 of 25.", answer: "5." },
+        { type: "multiple-choice", prompt: "Which is equivalent to 1/2?", choices: ["2/4", "1/3", "3/5", "4/5"], answer: "2/4" },
+      ] },
+    ],
+  },
+];
+
+const P4_2D_GEOMETRY_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-2d-figures-angles",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "2-Dimensional Geometry",
+    subTopicTitle: "2-D Figures and Right Angles",
+    lessonTitle: "2-D Figures and Right Angles",
+    blocks: [
+      { kind: "definition", term: "2-dimensional figure", definition: "is a flat shape that has length and width but no thickness.", simpleCheck: "A rectangle drawn in a book is a 2-D figure." },
+      { kind: "categories", title: "Common 2-D figures", categories: [
+        { name: "Triangle", definition: "a closed figure with 3 straight sides", examples: ["equilateral triangle", "right-angled triangle"] },
+        { name: "Quadrilateral", definition: "a closed figure with 4 straight sides", examples: ["square", "rectangle"] },
+        { name: "Circle", definition: "a round 2-D figure with no corners", examples: ["coin face", "plate top"] },
+        { name: "Right angle", definition: "an angle of 90 degrees", examples: ["corner of a book", "corner of a classroom wall"] },
+      ] },
+      { kind: "diagram", title: "2-D geometry card", imageUrl: "/images/math/2d-geometry-perimeter-area.svg", caption: "2-D figures, perimeter and area reminders.", labels: ["triangle", "square", "rectangle", "right angle", "perimeter", "area"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is a 2-D figure?", answer: "A flat shape with length and width." },
+        { type: "short-answer", prompt: "Name three 2-D figures.", answer: "Triangle, square, rectangle or circle." },
+        { type: "multiple-choice", prompt: "A triangle has how many sides?", choices: ["3", "4", "5", "0"], answer: "3" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-perimeter-area-polygons",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "2-Dimensional Geometry",
+    subTopicTitle: "Polygons, Perimeter and Area",
+    lessonTitle: "Polygons, Perimeter and Area",
+    blocks: [
+      { kind: "definition", term: "polygon", definition: "is a closed 2-D figure made of straight sides.", simpleCheck: "A triangle and a rectangle are polygons." },
+      { kind: "definition", term: "perimeter", definition: "is the distance around a figure.", simpleCheck: "Perimeter of a square is found by adding all four sides." },
+      { kind: "definition", term: "area", definition: "is the amount of surface covered by a shape.", simpleCheck: "Area of a rectangle = length × width." },
+      { kind: "worked-example", question: "Find the perimeter and area of a rectangle 8 cm long and 5 cm wide.", steps: ["Perimeter = 8 + 5 + 8 + 5 = 26 cm.", "Area = length × width.", "8 × 5 = 40 cm²."], answer: "Perimeter = 26 cm; Area = 40 cm²." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is perimeter?", answer: "Distance around a figure." },
+        { type: "short-answer", prompt: "Find the area of a rectangle 6 cm by 4 cm.", answer: "24 cm²." },
+        { type: "multiple-choice", prompt: "Area is measured in:", choices: ["square units", "litres", "kilograms", "hours"], answer: "square units" },
+      ] },
+    ],
+  },
+];
+
+const P4_MONEY_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-uganda-currency-buying-selling",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Money",
+    subTopicTitle: "Uganda Currency, Buying and Selling",
+    lessonTitle: "Uganda Currency, Buying and Selling",
+    blocks: [
+      { kind: "definition", term: "money", definition: "is what people use to buy and sell goods and services.", simpleCheck: "In Uganda, we use Uganda shillings (UGX)." },
+      { kind: "categories", title: "Money ideas", categories: [
+        { name: "Coins and notes", definition: "forms of Uganda currency", examples: ["coins", "1,000 shilling note", "5,000 shilling note", "10,000 shilling note"] },
+        { name: "Buying", definition: "getting something by paying money", examples: ["buying a pencil", "buying food"] },
+        { name: "Selling", definition: "giving goods or services in exchange for money", examples: ["selling tomatoes", "selling books"] },
+        { name: "Change", definition: "money returned after paying more than the cost", examples: ["pay 1,000 for a 700 item, change is 300"] },
+      ] },
+      { kind: "diagram", title: "Money card", imageUrl: "/images/math/p4-money-profit-loss.svg", caption: "Buying, selling, change, profit and loss.", labels: ["cost", "price", "change", "profit", "loss"] },
+      { kind: "worked-example", question: "A pencil costs UGX 700. A learner pays UGX 1,000. Find the change.", steps: ["Change = money paid - cost.", "1,000 - 700 = 300."], answer: "UGX 300." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is money used for?", answer: "Buying and selling goods and services." },
+        { type: "short-answer", prompt: "Find the change from UGX 2,000 after buying a book at UGX 1,500.", answer: "UGX 500." },
+        { type: "multiple-choice", prompt: "Uganda currency is called:", choices: ["shillings", "metres", "litres", "kilograms"], answer: "shillings" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-profit-loss-money-conversion",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Money",
+    subTopicTitle: "Profit, Loss and Money Conversion",
+    lessonTitle: "Profit, Loss and Money Conversion",
+    blocks: [
+      { kind: "definition", term: "profit", definition: "is the gain made when selling price is greater than cost price.", simpleCheck: "Buy at 8,000 and sell at 10,000 gives profit." },
+      { kind: "definition", term: "loss", definition: "is the amount lost when selling price is less than cost price.", simpleCheck: "Buy at 8,000 and sell at 7,000 gives loss." },
+      { kind: "categories", title: "Money formulas", categories: [
+        { name: "Profit", definition: "selling price - cost price", examples: ["10,000 - 8,000 = 2,000"] },
+        { name: "Loss", definition: "cost price - selling price", examples: ["8,000 - 7,000 = 1,000"] },
+        { name: "Total cost", definition: "cost of one item multiplied by number of items", examples: ["5 books at 1,000 each cost 5,000"] },
+      ] },
+      { kind: "worked-example", question: "A trader buys a basket for UGX 8,000 and sells it for UGX 10,000. Find the profit.", steps: ["Profit = selling price - cost price.", "10,000 - 8,000 = 2,000."], answer: "UGX 2,000 profit." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is profit?", answer: "Gain made when selling price is greater than cost price." },
+        { type: "short-answer", prompt: "CP = UGX 6,000, SP = UGX 5,000. Find loss.", answer: "UGX 1,000 loss." },
+        { type: "multiple-choice", prompt: "If SP is greater than CP, there is:", choices: ["profit", "loss", "no sale", "a fraction"], answer: "profit" },
+      ] },
+    ],
+  },
+];
+
+const P4_TIME_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-calendar-clock-time",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Time",
+    subTopicTitle: "Calendar and Clock Time",
+    lessonTitle: "Calendar and Clock Time",
+    blocks: [
+      { kind: "definition", term: "time", definition: "is the measure of when events happen and how long they take.", simpleCheck: "A clock can show 8:30 in the morning." },
+      { kind: "categories", title: "Time units and tools", categories: [
+        { name: "Calendar", definition: "shows days, weeks and months", examples: ["Monday", "January", "school term dates"] },
+        { name: "Clock", definition: "shows hours and minutes", examples: ["8:00", "half past 9", "quarter past 2"] },
+        { name: "Units of time", definition: "measures used for time", examples: ["seconds", "minutes", "hours", "days", "weeks", "months"] },
+      ] },
+      { kind: "diagram", title: "Clock and duration", imageUrl: "/images/math/time-clock-duration.svg", caption: "Clock face and duration reminders.", labels: ["hours", "minutes", "days", "weeks", "months"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "How many minutes are in one hour?", answer: "60 minutes." },
+        { type: "short-answer", prompt: "Name seven days of the week.", answer: "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday." },
+        { type: "multiple-choice", prompt: "A calendar shows:", choices: ["days and months", "kilograms", "litres", "money only"], answer: "days and months" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-duration-time-conversion",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Time",
+    subTopicTitle: "Duration and Conversion of Time",
+    lessonTitle: "Duration and Conversion of Time",
+    blocks: [
+      { kind: "definition", term: "duration", definition: "is the amount of time between the start and end of an activity.", simpleCheck: "From 8:00 to 10:00 is a duration of 2 hours." },
+      { kind: "categories", title: "Conversion facts", categories: [
+        { name: "Hours and minutes", definition: "1 hour = 60 minutes", examples: ["2 hours = 120 minutes"] },
+        { name: "Days and weeks", definition: "1 week = 7 days", examples: ["3 weeks = 21 days"] },
+        { name: "Months and year", definition: "1 year = 12 months", examples: ["6 months is half a year"] },
+      ] },
+      { kind: "worked-example", question: "A lesson starts at 8:15 and ends at 9:00. How long is it?", steps: ["Count from 8:15 to 9:00.", "8:15 to 8:30 is 15 minutes.", "8:30 to 9:00 is 30 minutes."], answer: "45 minutes." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Convert 3 hours to minutes.", answer: "180 minutes." },
+        { type: "short-answer", prompt: "How many days are in 4 weeks?", answer: "28 days." },
+        { type: "multiple-choice", prompt: "Duration means:", choices: ["time taken", "money spent", "mass", "capacity"], answer: "time taken" },
+      ] },
+    ],
+  },
+];
+
+const P4_MEASUREMENT_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-length-mass-capacity-units",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Length, Mass and Capacity",
+    subTopicTitle: "Standard Instruments and Units",
+    lessonTitle: "Standard Instruments and Units",
+    blocks: [
+      { kind: "definition", term: "measurement", definition: "is finding the size, amount or quantity of something using an instrument and a unit.", simpleCheck: "Using a ruler to find length is measurement." },
+      { kind: "categories", title: "Quantities, instruments and units", categories: [
+        { name: "Length", definition: "distance from one point to another", examples: ["ruler", "tape measure", "metres", "centimetres"] },
+        { name: "Mass", definition: "how heavy something is", examples: ["weighing scale", "kilograms", "grams"] },
+        { name: "Capacity", definition: "how much a container can hold", examples: ["measuring cylinder", "litres", "millilitres"] },
+      ] },
+      { kind: "diagram", title: "Measurement units", imageUrl: "/images/math/measurement-units.svg", caption: "Length, mass and capacity instruments and units.", labels: ["metre", "centimetre", "kilogram", "gram", "litre", "millilitre"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Name an instrument for measuring length.", answer: "Ruler or tape measure." },
+        { type: "short-answer", prompt: "Name a unit for capacity.", answer: "Litre or millilitre." },
+        { type: "multiple-choice", prompt: "Mass is measured in:", choices: ["kilograms", "metres", "litres", "hours"], answer: "kilograms" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-perimeter-area-measurement",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Length, Mass and Capacity",
+    subTopicTitle: "Perimeter, Area and Simple Problems",
+    lessonTitle: "Perimeter, Area and Simple Problems",
+    blocks: [
+      { kind: "definition", term: "perimeter", definition: "is the distance around a shape.", simpleCheck: "Perimeter of a rectangle is found by adding all sides." },
+      { kind: "definition", term: "area", definition: "is the amount of surface covered by a shape.", simpleCheck: "Area of a rectangle = length × width." },
+      { kind: "categories", title: "Conversion facts", categories: [
+        { name: "Length", definition: "10 mm = 1 cm and 100 cm = 1 m", examples: ["3 m = 300 cm"] },
+        { name: "Mass", definition: "1000 g = 1 kg", examples: ["4 kg = 4000 g"] },
+        { name: "Capacity", definition: "1000 ml = 1 litre", examples: ["2 litres = 2000 ml"] },
+      ] },
+      { kind: "worked-example", question: "Find the area of a rectangle 8 cm long and 3 cm wide.", steps: ["Area = length × width.", "8 × 3 = 24."], answer: "24 cm²." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Find the perimeter of a square of side 9 cm.", answer: "36 cm." },
+        { type: "short-answer", prompt: "Convert 5 kg to grams.", answer: "5000 g." },
+        { type: "multiple-choice", prompt: "Area is measured in:", choices: ["square units", "litres", "kilograms", "hours"], answer: "square units" },
+      ] },
+    ],
+  },
+];
+
+const P4_SET_CONCEPTS_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-set-concepts-basics",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Set Concepts",
+    subTopicTitle: "Identifying, Naming and Forming Sets",
+    lessonTitle: "Identifying, Naming and Forming Sets",
+    blocks: [
+      { kind: "definition", term: "set", definition: "is a well-defined collection of objects, numbers or things.", simpleCheck: "A set of vowels is clear: {a, e, i, o, u}." },
+      { kind: "categories", title: "Set words", categories: [
+        { name: "Member", definition: "an object or number inside a set", examples: ["2 is a member of {2, 4, 6}"] },
+        { name: "Number of members", definition: "how many items are in a set", examples: ["n({cow, goat, sheep}) = 3"] },
+        { name: "Naming sets", definition: "using capital letters to name sets", examples: ["A = {1, 2, 3}"] },
+        { name: "Forming sets", definition: "making a set using a clear rule", examples: ["Set of even numbers less than 10 = {2, 4, 6, 8}"] },
+      ] },
+      { kind: "diagram", title: "Sets card", imageUrl: "/images/math/p4-sets-common-members.svg", caption: "Sets, members and common members.", labels: ["set", "member", "n(A)", "common"] },
+      { kind: "worked-example", question: "Let C = {cow, goat, sheep}. Find n(C).", steps: ["C has cow, goat and sheep.", "Count them: 1, 2, 3."], answer: "n(C) = 3." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is a set?", answer: "A well-defined collection." },
+        { type: "short-answer", prompt: "Find n({a, b, c, d}).", answer: "4." },
+        { type: "multiple-choice", prompt: "Which is a clear set?", choices: ["even numbers less than 10", "nice things", "good colours", "big things"], answer: "even numbers less than 10" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-set-comparison-common",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Set Concepts",
+    subTopicTitle: "Equal, Equivalent, Empty and Common Members",
+    lessonTitle: "Equal, Equivalent, Empty and Common Members",
+    blocks: [
+      { kind: "definition", term: "equal sets", definition: "are sets with exactly the same members.", simpleCheck: "{1, 2, 3} and {3, 2, 1} are equal." },
+      { kind: "definition", term: "equivalent sets", definition: "are sets with the same number of members, even if the members are different.", simpleCheck: "{1, 2, 3} and {a, b, c} are equivalent." },
+      { kind: "categories", title: "Set comparison", categories: [
+        { name: "Empty set", definition: "a set with no members", examples: ["months with 40 days = { } or ∅"] },
+        { name: "Common members", definition: "members found in more than one set", examples: ["Common members of {2,4,6} and {4,6,8} are {4,6}"] },
+        { name: "Equal vs equivalent", definition: "equal means same members; equivalent means same number", examples: ["{a,b} and {1,2} are equivalent, not equal"] },
+      ] },
+      { kind: "worked-example", question: "Are {1,2,3} and {a,b,c} equal or equivalent?", steps: ["Both sets have 3 members.", "The members are not the same."], answer: "They are equivalent, not equal." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is an empty set?", answer: "A set with no members." },
+        { type: "short-answer", prompt: "Find common members of {1,3,5} and {3,5,7}.", answer: "{3,5}." },
+        { type: "multiple-choice", prompt: "Equal sets have:", choices: ["same members", "same colour", "no members only", "different members"], answer: "same members" },
+      ] },
+    ],
+  },
+];
+
+const P4_PATTERNS_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-shapes-even-odd",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Patterns and Sequences",
+    subTopicTitle: "Shapes, Even and Odd Numbers",
+    lessonTitle: "Shapes, Even and Odd Numbers",
+    blocks: [
+      { kind: "definition", term: "pattern", definition: "is an arrangement that follows a rule.", simpleCheck: "2, 4, 6, 8 follows a rule: add 2." },
+      { kind: "categories", title: "Number and shape ideas", categories: [
+        { name: "Even numbers", definition: "numbers that can be divided by 2 without remainder", examples: ["2", "4", "6", "8", "10"] },
+        { name: "Odd numbers", definition: "numbers that cannot be divided by 2 without remainder", examples: ["1", "3", "5", "7", "9"] },
+        { name: "Shape patterns", definition: "patterns made with shapes", examples: ["circle, square, circle, square"] },
+      ] },
+      { kind: "diagram", title: "Patterns card", imageUrl: "/images/math/p4-patterns-sequences.svg", caption: "Shape and number patterns.", labels: ["even", "odd", "rule", "sequence"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Name five even numbers.", answer: "2, 4, 6, 8, 10." },
+        { type: "short-answer", prompt: "Name five odd numbers.", answer: "1, 3, 5, 7, 9." },
+        { type: "multiple-choice", prompt: "Which number is odd?", choices: ["7", "8", "10", "12"], answer: "7" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-sequences-rules",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Patterns and Sequences",
+    subTopicTitle: "Forming and Continuing Patterns",
+    lessonTitle: "Forming and Continuing Patterns",
+    blocks: [
+      { kind: "definition", term: "sequence", definition: "is a list of numbers or shapes arranged in order using a rule.", simpleCheck: "5, 10, 15, 20 is a sequence." },
+      { kind: "categories", title: "Common sequence rules", categories: [
+        { name: "Add rule", definition: "each term increases by adding the same number", examples: ["3, 6, 9, 12 adds 3"] },
+        { name: "Subtract rule", definition: "each term decreases by subtracting the same number", examples: ["20, 15, 10, 5 subtracts 5"] },
+        { name: "Multiply rule", definition: "each term is found by multiplying", examples: ["2, 4, 8, 16 multiplies by 2"] },
+      ] },
+      { kind: "worked-example", question: "Find the next number: 4, 8, 12, 16, ___.", steps: ["Find the rule: add 4 each time.", "16 + 4 = 20."], answer: "20." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Find the next number: 5, 10, 15, ___.", answer: "20." },
+        { type: "short-answer", prompt: "State the rule: 2, 4, 6, 8.", answer: "Add 2." },
+        { type: "multiple-choice", prompt: "What comes next: 3, 6, 9, 12, ___?", choices: ["15", "13", "14", "18"], answer: "15" },
+      ] },
+    ],
+  },
+];
+
+const P4_3D_GEOMETRY_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-3d-solids",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "3-Dimensional Geometry",
+    subTopicTitle: "Solids, Faces, Edges and Vertices",
+    lessonTitle: "Solids, Faces, Edges and Vertices",
+    blocks: [
+      { kind: "definition", term: "3-dimensional shape", definition: "is a solid shape with length, width and height or thickness.", simpleCheck: "A box is a 3-D shape." },
+      { kind: "categories", title: "Common solids", categories: [
+        { name: "Cube", definition: "a solid with 6 equal square faces", examples: ["dice", "cube block"] },
+        { name: "Cuboid", definition: "a box-like solid with rectangular faces", examples: ["brick", "book", "box"] },
+        { name: "Sphere", definition: "a ball-shaped solid with a curved surface", examples: ["ball", "orange"] },
+        { name: "Cylinder", definition: "a solid with two circular faces and a curved surface", examples: ["tin", "drum"] },
+        { name: "Pyramid and cone", definition: "solids with a point or apex", examples: ["pyramid model", "ice-cream cone"] },
+      ] },
+      { kind: "diagram", title: "3-D solids", imageUrl: "/images/math/3d-solids-faces-edges-vertices.svg", caption: "Common 3-D solids with faces, edges and vertices.", labels: ["cube", "cuboid", "sphere", "cylinder", "cone", "pyramid"] },
+      { kind: "characteristics", title: "Parts of solids", points: ["A face is a flat surface.", "An edge is where two faces meet.", "A vertex is a corner where edges meet.", "Some solids have curved surfaces.", "Models of solids can be made from paper, straws, sticks or boxes." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is a face of a solid?", answer: "A flat surface." },
+        { type: "short-answer", prompt: "Name four solids.", answer: "Cube, cuboid, sphere, cylinder, cone or pyramid." },
+        { type: "multiple-choice", prompt: "Which solid looks like a ball?", choices: ["sphere", "cube", "cuboid", "pyramid"], answer: "sphere" },
+      ] },
+    ],
+  },
+];
+
+const P4_DATA_HANDLING_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-data-graphs-tally",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Data Handling",
+    subTopicTitle: "Tally Marks, Pictographs, Bar Graphs and Line Graphs",
+    lessonTitle: "Tally Marks, Pictographs, Bar Graphs and Line Graphs",
+    blocks: [
+      { kind: "definition", term: "data", definition: "is information collected for study or decision making.", simpleCheck: "The number of pupils who like mangoes is data." },
+      { kind: "categories", title: "Ways of showing data", categories: [
+        { name: "Tally marks", definition: "simple marks used for counting quickly", examples: ["|||| = 4", "||||/ = 5"] },
+        { name: "Pictograph", definition: "a graph that uses pictures or symbols", examples: ["one mango picture represents 5 mangoes"] },
+        { name: "Bar graph", definition: "a graph that uses bars to compare quantities", examples: ["bars for fruits liked by learners"] },
+        { name: "Line graph", definition: "a graph that uses points joined by lines to show change", examples: ["temperature over days"] },
+      ] },
+      { kind: "worked-example", question: "In a pictograph, one book symbol represents 2 books. If there are 6 symbols, how many books are shown?", steps: ["Read the key: 1 symbol = 2 books.", "There are 6 symbols.", "6 × 2 = 12."], answer: "12 books." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is data?", answer: "Information collected for study or decision making." },
+        { type: "short-answer", prompt: "What is a pictograph?", answer: "A graph using pictures or symbols." },
+        { type: "multiple-choice", prompt: "Which graph uses bars?", choices: ["bar graph", "calendar", "clock", "ruler"], answer: "bar graph" },
+      ] },
+    ],
+  },
+];
+
+const P4_EQUATIONS_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-equations-without-letters",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Mathematics",
+    topicTitle: "Equations without Letters",
+    subTopicTitle: "Equations without Letters",
+    lessonTitle: "Equations without Letters",
+    blocks: [
+      { kind: "definition", term: "equation", definition: "is a number sentence showing that two sides are equal.", simpleCheck: "□ + 5 = 12 is an equation." },
+      { kind: "categories", title: "Relationships used in equations", categories: [
+        { name: "Addition and subtraction", definition: "subtraction undoes addition and addition undoes subtraction", examples: ["□ + 5 = 12 means 12 - 5"] },
+        { name: "Multiplication and division", definition: "division undoes multiplication and multiplication undoes division", examples: ["4 × □ = 32 means 32 ÷ 4"] },
+        { name: "Word problems", definition: "stories changed into number sentences", examples: ["A number plus 10 equals 25: □ + 10 = 25"] },
+      ] },
+      { kind: "diagram", title: "Equation boxes", imageUrl: "/images/math/p4-equations-boxes.svg", caption: "Use inverse operations to find the missing value.", labels: ["box", "equal", "inverse", "check"] },
+      { kind: "worked-example", question: "Solve □ + 10 = 25.", steps: ["Undo +10 by subtracting 10.", "25 - 10 = 15."], answer: "□ = 15." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Solve □ + 8 = 20.", answer: "12." },
+        { type: "short-answer", prompt: "Solve 4 × □ = 32.", answer: "8." },
+        { type: "multiple-choice", prompt: "An equation must:", choices: ["balance both sides", "always have words", "never use numbers", "always be long"], answer: "balance both sides" },
+      ] },
+    ],
+  },
+];
+
+const P4_MATH_TOPIC_DATA: Topic[] = [
   {
     "id": "p4-set-concepts",
     "themeId": "p4-theme-sets",
@@ -14,6 +602,8 @@ export const P4_MATH_TOPICS: Topic[] = [
     "estMinutes": 28,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_SET_CONCEPTS_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Mathematics beta: built from the verified NCDC Primary Four Mathematics Syllabus, 2010; human teacher review still required before premium-final release. Set Concepts gives P4 learners the foundation they need for confident upper-primary Mathematics.",
       "learningObjectives": [
@@ -200,6 +790,8 @@ export const P4_MATH_TOPICS: Topic[] = [
     "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_WHOLE_NUMBERS_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Mathematics beta: built from the verified NCDC Primary Four Mathematics Syllabus, 2010; human teacher review still required before premium-final release. Whole Numbers up to 100,000 gives P4 learners the foundation they need for confident upper-primary Mathematics.",
       "learningObjectives": [
@@ -389,6 +981,8 @@ export const P4_MATH_TOPICS: Topic[] = [
     "estMinutes": 34,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_OPERATIONS_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Mathematics beta: built from the verified NCDC Primary Four Mathematics Syllabus, 2010; human teacher review still required before premium-final release. Operations on Whole Numbers gives P4 learners the foundation they need for confident upper-primary Mathematics.",
       "learningObjectives": [
@@ -576,6 +1170,8 @@ export const P4_MATH_TOPICS: Topic[] = [
     "estMinutes": 26,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_PATTERNS_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Mathematics beta: built from the verified NCDC Primary Four Mathematics Syllabus, 2010; human teacher review still required before premium-final release. Patterns and Sequences gives P4 learners the foundation they need for confident upper-primary Mathematics.",
       "learningObjectives": [
@@ -763,6 +1359,8 @@ export const P4_MATH_TOPICS: Topic[] = [
     "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_FRACTIONS_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Mathematics beta: built from the verified NCDC Primary Four Mathematics Syllabus, 2010; human teacher review still required before premium-final release. Fractions gives P4 learners the foundation they need for confident upper-primary Mathematics.",
       "learningObjectives": [
@@ -951,6 +1549,8 @@ export const P4_MATH_TOPICS: Topic[] = [
     "estMinutes": 34,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_2D_GEOMETRY_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Mathematics beta: built from the verified NCDC Primary Four Mathematics Syllabus, 2010; human teacher review still required before premium-final release. 2-Dimensional Geometry gives P4 learners the foundation they need for confident upper-primary Mathematics.",
       "learningObjectives": [
@@ -1138,6 +1738,8 @@ export const P4_MATH_TOPICS: Topic[] = [
     "estMinutes": 24,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_3D_GEOMETRY_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Mathematics beta: built from the verified NCDC Primary Four Mathematics Syllabus, 2010; human teacher review still required before premium-final release. 3-Dimensional Geometry gives P4 learners the foundation they need for confident upper-primary Mathematics.",
       "learningObjectives": [
@@ -1326,6 +1928,8 @@ export const P4_MATH_TOPICS: Topic[] = [
     "estMinutes": 28,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_DATA_HANDLING_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Mathematics beta: built from the verified NCDC Primary Four Mathematics Syllabus, 2010; human teacher review still required before premium-final release. Data Handling gives P4 learners the foundation they need for confident upper-primary Mathematics.",
       "learningObjectives": [
@@ -1513,6 +2117,8 @@ export const P4_MATH_TOPICS: Topic[] = [
     "estMinutes": 30,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_MONEY_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Mathematics beta: built from the verified NCDC Primary Four Mathematics Syllabus, 2010; human teacher review still required before premium-final release. Money gives P4 learners the foundation they need for confident upper-primary Mathematics.",
       "learningObjectives": [
@@ -1700,6 +2306,8 @@ export const P4_MATH_TOPICS: Topic[] = [
     "estMinutes": 28,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_TIME_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Mathematics beta: built from the verified NCDC Primary Four Mathematics Syllabus, 2010; human teacher review still required before premium-final release. Time gives P4 learners the foundation they need for confident upper-primary Mathematics.",
       "learningObjectives": [
@@ -1888,6 +2496,8 @@ export const P4_MATH_TOPICS: Topic[] = [
     "estMinutes": 34,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_MEASUREMENT_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Mathematics beta: built from the verified NCDC Primary Four Mathematics Syllabus, 2010; human teacher review still required before premium-final release. Length, Mass and Capacity gives P4 learners the foundation they need for confident upper-primary Mathematics.",
       "learningObjectives": [
@@ -2076,6 +2686,8 @@ export const P4_MATH_TOPICS: Topic[] = [
     "estMinutes": 26,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_EQUATIONS_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Mathematics beta: built from the verified NCDC Primary Four Mathematics Syllabus, 2010; human teacher review still required before premium-final release. Equations without Letters gives P4 learners the foundation they need for confident upper-primary Mathematics.",
       "learningObjectives": [
@@ -2258,6 +2870,23 @@ export const P4_MATH_TOPICS: Topic[] = [
     ]
   }
 ];
+
+const P4_MATH_TERMS = {
+  "p4-set-concepts": "Term I" as const,
+  "p4-whole-numbers": "Term I" as const,
+  "p4-operations-whole-numbers": "Term I" as const,
+  "p4-patterns-sequences": "Term I" as const,
+  "p4-fractions": "Term II" as const,
+  "p4-two-dimensional-geometry": "Term II" as const,
+  "p4-three-dimensional-geometry": "Term II" as const,
+  "p4-data-handling": "Term II" as const,
+  "p4-money": "Term III" as const,
+  "p4-time": "Term III" as const,
+  "p4-length-mass-capacity": "Term III" as const,
+  "p4-equations-without-letters": "Term III" as const
+};
+
+export const P4_MATH_TOPICS: Topic[] = addUpperPrimaryMathV4(P4_MATH_TOPIC_DATA, "P4", P4_MATH_TERMS);
 
 export function getP4MathTopic(id: string): Topic | undefined {
   return P4_MATH_TOPICS.find((topic) => topic.id === id);

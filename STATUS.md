@@ -67,18 +67,24 @@ Students, currently spanning **P7**, **P6**, **P5**, **P4 live beta**, and **P3 
 - Teacher dashboard now auto-populates with presentation/sample data unless `NEXT_PUBLIC_TENDO_PRESENTATION_DATA=off`.
 
 ### Current active milestone
-**P3 thematic + RE beta — internally polished; teacher review next.**
+**NCDC-native v4 migration has reached P3–P7 structurally.**
+
+Latest major move:
+- P6 and P7 are now structurally migrated to upper-primary v4 across all 5 subjects.
+- 78 P6/P7 topics now render through the mobile-first lesson selector/module-stepper flow.
+- 278 P6/P7 v4 lessons are generated from the current app subtopic libraries.
+- Build passed after the migration: `cd app && npm run build` → `✓ Generating static pages (356/356)`.
 
 Immediate sequence:
-1. Human/teacher review the full P3 thematic beta: `/p3-home` and all 12 `/p3/theme/[theme]` pages.
-2. Human/teacher review P3 RE beta: `/p3/re` and all 18 `/p3/re/[topic]` pages, especially CRE/IRE terminology and source fidelity.
-3. Check P3 language level, local/familiar examples, health/gender/culture safety wording, image usefulness and quiz clarity.
-4. Do not build subject-style P3 routes such as `/math/p3` or `/re/p3` unless a documented bridge design is approved.
-5. Continue P4 RE source work: find the full standard P4 CRE/IRE syllabus to confirm the NCDC-abridged map.
-6. Human/teacher review remains open across P3–P7 before premium-final status.
+1. Real-phone smoke test selected P6/P7 v4 routes, especially lesson chips, Previous/Next buttons, diagrams and no horizontal overflow.
+2. Hand-deepen priority P6/P7 PLE-heavy topics in v4 after the structural pass.
+3. Keep P4/P5/P6/P7 RE as requiring qualified CRE/IRE teacher review before premium-final status.
+4. Human/teacher review remains open across P3–P7 before premium-final status.
+5. Do not build subject-style P3 routes such as `/math/p3` or `/re/p3` unless a documented bridge design is approved.
+6. Do not start P1/P2 yet.
 
 ### Content architecture correction — READ BEFORE MORE CONTENT BUILD
-Founder review identified a serious content-structure issue: adding more modules does not automatically make lessons full or child-friendly. P3/P4/P5 especially must stop showing curriculum meta-copy such as “expected outcome”, “theme guide”, “what you will learn” and “this part helps a learner...”. Learner-facing lessons need direct teaching blocks: definitions, types/classifications, examples, characteristics/uses and exercises. This is documented in `docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md` and logged as `DEV-033`. The first v4 pilot is implemented on `/p3/theme/p3-theme-6-plants` and `/science/p5/p5-keeping-poultry-bees`. The v4 presentation standard is now locked as mobile-first lesson selector + module stepper. All 12 P3 thematic routes now render through the lower-primary v4 lesson selector + mobile module stepper. All 12 P3 thematic themes are now manually deepened in lower-primary v4 with lesson selector + mobile module stepper. P3 Religious Education is also migrated to lower-primary v4 across 18 CRE/IRE topics. P3 is structurally complete in v4 at AI-builder level; real-phone review and teacher/CRE/IRE review remain before premium-final status. Full migration mode has now moved to P4/P5 Science: all P4 and P5 Integrated Science topics are structurally migrated to upper-primary v4 via `app/lib/v4-science-helpers.ts`. P4 Science now has 8 hand-deepened v4 topics: Plant Life, Growing Crops, Animal Life, Weather Changes, Personal Hygiene, Sanitation, Human Body Organs and Teeth. Remaining P4/P5 Science topics still need manual deepening topic-by-topic.
+Founder review identified a serious content-structure issue: adding more modules does not automatically make lessons full or child-friendly. P3/P4/P5 especially must stop showing curriculum meta-copy such as “expected outcome”, “theme guide”, “what you will learn” and “this part helps a learner...”. Learner-facing lessons need direct teaching blocks: definitions, types/classifications, examples, characteristics/uses and exercises. This is documented in `docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md` and logged as `DEV-033`. The first v4 pilot is implemented on `/p3/theme/p3-theme-6-plants` and `/science/p5/p5-keeping-poultry-bees`. The v4 presentation standard is now locked as mobile-first lesson selector + module stepper. All 12 P3 thematic routes now render through the lower-primary v4 lesson selector + mobile module stepper. All 12 P3 thematic themes are now manually deepened in lower-primary v4 with lesson selector + mobile module stepper. P3 Religious Education is also migrated to lower-primary v4 across 18 CRE/IRE topics. P3 is structurally complete in v4 at AI-builder level; real-phone review and teacher/CRE/IRE review remain before premium-final status. Full migration mode has now moved to P4/P5 Science: all P4 and P5 Integrated Science topics are structurally migrated to upper-primary v4 via `app/lib/v4-science-helpers.ts`. P4 Integrated Science is now complete at AI-builder v4 level: all 12 topics are structurally migrated and hand-deepened. P5 Integrated Science is now complete at AI-builder v4 level: all 9 topics are structurally migrated and hand-deepened. P4 and P5 Science are both complete at AI-builder v4 level, pending human/teacher and real-phone review. P4 and P5 Mathematics are now complete at AI-builder v4 level: all topics are structurally migrated and hand-deepened in the upper-primary v4 lesson-stepper format. P4 and P5 English are now complete at AI-builder v4 level: all topics are structurally migrated and hand-deepened in the upper-primary v4 lesson-stepper format. P4 and P5 Social Studies are now complete at AI-builder v4 level: all P4/P5 SST topics are structurally migrated and hand-deepened in the upper-primary v4 lesson-stepper format. P4 and P5 Religious Education are also structurally migrated to upper-primary v4 through `app/lib/v4-re-helpers.ts`, with CRE/IRE teacher review and P4 full standard syllabus confirmation still required. P6 and P7 are now structurally migrated to upper-primary v4 across all 5 subjects using the shared subject helpers; this creates 278 P6/P7 v4 lessons from the current app subtopic libraries and is documented in `docs/ops/v4-p6-p7-structural-migration-2026-07-12.md`. P6/P7 now need real-phone review and targeted hand-deepening of PLE-heavy topics before premium-final status.
 
 ### P1/P2 scope note
 Founder has decided **P1 and P2 will eventually be in the same app**, but they are deferred. Do **not** start P1/P2 now. First restructure P3–P7 student-facing content using the v4 architecture. P1/P2 will need their own later NCDC research and lower-primary phonics/audio/local-language implementation plan.
@@ -101,6 +107,7 @@ Founder has **not pushed** the current milestone bundle yet. Do not assume the r
 - `docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md` — required v4 content structure correction.
 - `docs/ops/v4-content-architecture-pilot-2026-07-12.md` — first v4 implementation pilot.
 - `docs/ops/v4-p4-p5-science-migration-2026-07-12.md` — P4/P5 Science structural v4 migration.
+- `docs/ops/v4-p6-p7-structural-migration-2026-07-12.md` — P6/P7 all-subject structural v4 migration.
 - `docs/ops/ncdc-p4-curriculum-research-2026-07-09.md` — P4 curriculum research, verified Mathematics correction, P4 RE abridged-map limitation, and full P4 live-beta rollout.
 - `docs/ops/p4-live-beta-completion-audit-2026-07-09.md` — P4 completion audit, file list, source limits and review checklist.
 - `docs/ops/p4-p7-live-beta-review-pass-2026-07-09.md` — P4–P7 AI-level review pass before starting the next class.

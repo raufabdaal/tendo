@@ -1,4 +1,5 @@
 import type { Topic } from "@/lib/topics";
+import { addUpperPrimaryScienceV4 } from "@/lib/v4-science-helpers";
 
 
 function balanceTopicAnswers(topics: Topic[]): Topic[] {
@@ -30,6 +31,14 @@ function balanceTopicAnswers(topics: Topic[]): Topic[] {
   visit(topics);
   return topics;
 }
+
+const P6_SCIENCE_TERMS: Record<string, "Term I" | "Term II" | "Term III"> = {
+  "p6-classification-living-things": "Term I",
+  "p6-sound-energy": "Term I",
+  "p6-circulatory-system": "Term II",
+  "p6-respiratory-system": "Term II",
+  "p6-livestock-keeping": "Term III"
+};
 
 const P6_SCIENCE_TOPICS_DATA: Topic[] = [
   {
@@ -679,7 +688,7 @@ const P6_SCIENCE_TOPICS_DATA: Topic[] = [
   }
 ];
 
-export const P6_SCIENCE_TOPICS: Topic[] = balanceTopicAnswers(P6_SCIENCE_TOPICS_DATA);
+export const P6_SCIENCE_TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimaryScienceV4(P6_SCIENCE_TOPICS_DATA, "P6", P6_SCIENCE_TERMS));
 
 export function getP6ScienceTopic(id: string): Topic | undefined {
   return P6_SCIENCE_TOPICS.find((topic) => topic.id === id);

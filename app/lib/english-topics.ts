@@ -1,4 +1,5 @@
 import type { Topic } from "@/lib/topics";
+import { addUpperPrimaryEnglishV4 } from "@/lib/v4-english-helpers";
 
 
 function balanceTopicAnswers(topics: Topic[]): Topic[] {
@@ -25,6 +26,16 @@ function balanceTopicAnswers(topics: Topic[]): Topic[] {
   visit(topics);
   return topics;
 }
+
+const P7_ENGLISH_TERMS: Record<string, "Term I" | "Term II" | "Term III"> = {
+  "school-holidays": "Term I",
+  "letter-writing": "Term I",
+  "examinations": "Term I",
+  "electronic-media": "Term II",
+  "rights-responsibilities-freedom": "Term II",
+  "environmental-protection": "Term III",
+  "ceremonies": "Term III"
+};
 
 const ENGLISH_TOPICS_DATA: Topic[] = [
   {
@@ -1263,7 +1274,7 @@ const ENGLISH_TOPICS_DATA: Topic[] = [
   }
 ];
 
-export const ENGLISH_TOPICS: Topic[] = balanceTopicAnswers(ENGLISH_TOPICS_DATA);
+export const ENGLISH_TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimaryEnglishV4(ENGLISH_TOPICS_DATA, "P7", P7_ENGLISH_TERMS));
 
 export function getEnglishTopic(id: string): Topic | undefined {
   return ENGLISH_TOPICS.find((topic) => topic.id === id);
