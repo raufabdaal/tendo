@@ -1,3 +1,4 @@
+import type { LowerPrimaryLesson } from "@/lib/content-blocks";
 import type { QuizQuestion, Subtopic, SubtopicModule, Topic } from "@/lib/topics";
 
 // P3 Religious Education beta content layer.
@@ -704,6 +705,183 @@ function makeTryThis(question: string, answer: string, explanation: string): Non
   return { question, choices: [answer, ...wrongChoices(answer)], correct: 0, explanation };
 }
 
+
+const RE_TERM_MEANINGS: Record<string, string> = {
+  "traditional customs and practices": "ways people in families and communities do important things",
+  "importance of traditional customs": "why good customs help people live with respect and unity",
+  "other people's customs": "customs followed by people from other families or communities",
+  "christian customs and practices": "ways Christians worship, pray, give thanks and serve others",
+  "different levels of leadership": "leaders found in families, schools, churches, villages and communities",
+  "family, village, clan, school and church leadership": "leaders who guide people in different places",
+  "good leaders from the old testament": "Bible leaders who guided people with courage and faith",
+  "jesus as a leader": "Jesus guiding, serving, teaching and caring for people",
+  "qualities of good leadership today": "good actions such as honesty, fairness, service and listening",
+  "different ways god speaks to people": "ways Christians believe God guides people, such as through His word and messengers",
+  "qualities of god's messengers": "truthfulness, courage, obedience and kindness",
+  "children as god's messengers": "children sharing good, truthful and helpful messages",
+  "john the baptist's message about jesus": "John told people to prepare for Jesus",
+  "angels as messengers of god": "angels are messengers sent by God in Bible stories",
+  "lent": "a Christian season of prayer and preparation before Easter",
+  "palm sunday": "the day Christians remember Jesus entering Jerusalem",
+  "the last supper": "the meal Jesus shared with his disciples before his death",
+  "good friday": "the day Christians remember the death of Jesus",
+  "easter joy": "the joy Christians have because they believe Jesus rose again",
+  "jesus' promise of the holy spirit": "Jesus promised the Holy Spirit to help his followers",
+  "events of pentecost": "the coming of the Holy Spirit to the disciples",
+  "work of the holy spirit": "helping Christians pray, learn and do good",
+  "gifts of the holy spirit": "special help Christians believe the Holy Spirit gives",
+  "guidance of the holy spirit": "help from the Holy Spirit to do good",
+  "sharing good news": "telling others helpful and truthful messages about God",
+  "praying together": "speaking to God with other people",
+  "reasons for worshipping god": "why people pray, praise, listen and give thanks to God",
+  "personal prayers": "prayers said by one person",
+  "thanksgiving prayers": "prayers that say thank you to God",
+  "confession prayers": "prayers that say sorry to God",
+  "petition prayers": "prayers asking God for help",
+  "values jesus taught: honesty, responsibility and service": "good behaviours Christians learn from Jesus",
+  "personal abilities from god": "things a person can do well and should use to help others",
+  "the lord's prayer": "a prayer Jesus taught his followers",
+  "arabic alphabet": "letters used for writing Arabic and reading the Qur'an",
+  "ayah": "a verse of the Qur'an",
+  "surah": "a chapter of the Qur'an",
+  "juzu": "one of thirty parts of the Qur'an",
+  "divine nature of the qur'an": "Muslims believe the Qur'an is from Allah",
+  "handling and keeping the qur'an respectfully": "treating the Qur'an with cleanliness and respect",
+  "nature of the four revealed books": "what Muslims learn about books revealed by Allah",
+  "zaburi": "the Zabur revealed to Prophet Dawud (AS)",
+  "tawrat/taurat": "the Tawrat revealed to Prophet Musa (AS)",
+  "injili": "the Injil revealed to Prophet Isa (AS)",
+  "qur'an": "the holy book of Islam revealed to Prophet Muhammad (PBUH)",
+  "nullifiers of salat": "actions that can spoil prayer",
+  "ways of avoiding nullifiers of prayer": "how to pray calmly and respectfully",
+  "islamic values: patience": "waiting calmly and doing the right thing",
+  "perseverance": "continuing to do good even when it is hard",
+  "reliance on allah": "trusting Allah while doing what is right",
+  "life of prophet muhammad (pbuh) before revelation": "the early life of Prophet Muhammad (PBUH)",
+  "visit to mount hira": "where Prophet Muhammad (PBUH) went before the first revelation",
+  "receiving the first revelation": "when the first Qur'anic verses were revealed",
+  "jibril's message": "the message brought by Angel Jibril (AS)",
+  "khadijah's reaction": "Khadijah (RA) comforted and supported Prophet Muhammad (PBUH)",
+  "arabic vowels": "marks that help readers pronounce Arabic letters",
+  "fatha": "a short 'a' sound in Arabic reading",
+  "kasra": "a short 'i' sound in Arabic reading",
+  "dhumma": "a short 'u' sound in Arabic reading",
+  "shadda": "a mark showing a doubled sound",
+  "madda": "a mark showing a lengthened sound",
+  "dua after adhan": "a supplication said after the call to prayer",
+  "meaning and importance of dua": "Dua is asking Allah for help and goodness",
+  "law": "a rule that guides people",
+  "types of laws": "different rules at home, school, community and country level",
+  "purpose of laws": "laws help people live safely and peacefully",
+  "respecting laws": "following good rules and laws",
+  "najasah": "impurity or dirtiness in Islamic cleanliness teaching",
+  "toilet manners": "clean and respectful behaviour when using the toilet",
+  "ablution": "washing before prayer as guided in Islam",
+  "conditions requiring ablution": "times when a Muslim needs to make wudu again",
+  "duas related to knowledge": "supplications asking Allah for useful knowledge",
+  "importance of seeking knowledge": "learning helps people know and do good",
+};
+
+function reMeaning(value: string): string {
+  const key = value.trim().toLowerCase();
+  if (RE_TERM_MEANINGS[key]) return RE_TERM_MEANINGS[key];
+  if (key.startsWith("meaning of ")) return `what ${value.replace(/^Meaning of\s+/i, "").toLowerCase()} means`;
+  if (key.startsWith("importance of ")) return `why ${value.replace(/^Importance of\s+/i, "").toLowerCase()} matters`;
+  return `an important part of this Religious Education lesson`;
+}
+
+function buildP3ReV4Lesson(topic: P3ReBlueprint, guide: P3ReGuide): LowerPrimaryLesson {
+  const imageUrl = `/images/p3/re/${topic.id}.svg`;
+  const first = topic.subTopics[0] ?? topic.title;
+  const importantTerms = topic.subTopics.slice(0, 6);
+  return {
+    id: `${topic.id}-v4`,
+    classLevel: "P3",
+    term: topic.term as "Term I" | "Term II" | "Term III",
+    curriculumMode: "thematic",
+    themeTitle: topic.reThemeName,
+    subThemeTitle: topic.title,
+    lessonTitle: topic.title,
+    learningArea: "Religious Education",
+    blocks: [
+      {
+        kind: "vocabulary",
+        title: "New words",
+        words: importantTerms.map((word) => ({ word, meaning: reMeaning(word) })),
+      },
+      {
+        kind: "story",
+        title: "Read and talk",
+        text: guide.group === "CRE"
+          ? `In Religious Education, pupils learn about ${topic.title}. Their teacher uses Bible stories, church and home examples to help them practise respect, prayer and good behaviour.`
+          : `In Religious Education, pupils learn about ${topic.title}. Their teacher guides them to use respectful Islamic words, listen carefully and practise good behaviour at home and school.`,
+        questions: [
+          `What is this RE lesson about?`,
+          `Name one important word in this lesson.`,
+          `How should learners speak about faith?`,
+        ],
+      },
+      {
+        kind: "definition",
+        term: topic.title,
+        definition: guide.meaning,
+        simpleCheck: guide.group === "CRE" ? "Use respectful Christian words and examples." : "Use respectful Islamic words and teacher-guided recitation.",
+      },
+      {
+        kind: "categories",
+        title: "Ideas to know",
+        categories: topic.subTopics.slice(0, 5).map((subTopic) => ({
+          name: subTopic,
+          definition: reMeaning(subTopic),
+          examples: topic.subTopics.filter((item) => item !== subTopic).slice(0, 3).length > 0 ? topic.subTopics.filter((item) => item !== subTopic).slice(0, 3) : [subTopic],
+        })),
+      },
+      {
+        kind: "diagram",
+        title: "Look at the picture",
+        imageUrl,
+        caption: `P3 ${guide.group}: ${topic.title}.`,
+        labels: topic.subTopics.slice(0, 6),
+      },
+      {
+        kind: "identification",
+        title: "Important source connection",
+        points: [
+          guide.sourcePoint,
+          guide.group === "CRE" ? "The teacher may use a short Bible story or prayer example." : "The teacher should guide Arabic, Qur'an words and Islamic terms carefully.",
+          "Learners should ask respectful questions when they do not understand.",
+        ],
+      },
+      {
+        kind: "examples",
+        title: "Good actions from this lesson",
+        examples: guide.values.map((value) => ({ name: value, explanation: "a good action to practise at home, school or in the community" })),
+      },
+      {
+        kind: "activity",
+        title: "Activity",
+        instructions: [
+          guide.practice,
+          guide.group === "CRE" ? "Say or draw one respectful Christian value from the lesson." : "Say or draw one respectful Islamic value from the lesson.",
+          "Share your answer politely with a classmate or teacher.",
+        ],
+        safetyNote: "Speak about all faiths and customs respectfully. Teacher review is still required for this RE content.",
+      },
+      {
+        kind: "exercise",
+        title: "Exercise",
+        questions: [
+          { type: "oral", prompt: `What is this lesson about?`, answer: topic.title },
+          { type: "written", prompt: `Name two things taught in this lesson.`, answer: sentenceList(topic.subTopics, 2) },
+          { type: "fill-blank", prompt: `${first} belongs to the lesson about _____.`, answer: topic.title },
+          { type: "multiple-choice", prompt: guide.quiz[0], choices: [guide.quiz[1], guide.quiz[2], "a football score", "a torn shoe lace"], answer: guide.quiz[1] },
+          { type: "written", prompt: "Write one good action from this lesson.", answer: guide.values[0] ?? "Use respectful words and good actions." },
+        ],
+      },
+    ],
+  };
+}
+
 function buildModules(topic: P3ReBlueprint, guide: P3ReGuide): SubtopicModule[] {
   const imageUrl = `/images/p3/re/${topic.id}.svg`;
   return [
@@ -809,6 +987,8 @@ function buildTopic(topic: P3ReBlueprint): Topic {
     estMinutes: 45,
     status: "published",
     reviewStatus: "beta",
+    contentFormat: "lower-primary-v4",
+    lowerPrimaryLessons: [buildP3ReV4Lesson(topic, guide)],
     note: {
       intro: `${BETA_NOTICE} ${topic.term}, ${topic.weeks}: ${topic.title}.`,
       learningObjectives: [

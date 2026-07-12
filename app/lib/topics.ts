@@ -105,6 +105,8 @@ export interface Topic {
   lowerPrimaryLessons?: LowerPrimaryLesson[];
   /** Upper-primary v4 child-facing lessons. */
   upperPrimaryLessons?: UpperPrimaryLesson[];
+  /** If true, v4 helper-generated lessons should not be appended after hand-built lessons. */
+  useOnlyV4Lessons?: boolean;
   /** Modular v3 content. If present, the Read tab renders subtopic directory + module viewer. */
   subtopics?: Subtopic[];
 }

@@ -4516,3 +4516,172 @@ input, select, textarea, button { max-width: 100%; }
     justify-content: center;
   }
 }
+
+/* V4 lesson selector + final mobile responsiveness overrides */
+.v4-lesson-chooser {
+  background: #ffffff;
+  border: 1px solid rgba(36, 52, 71, 0.1);
+  border-radius: 20px;
+  padding: 12px;
+  box-shadow: 0 12px 28px rgba(23, 33, 43, 0.06);
+}
+
+.v4-lesson-chooser-label {
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #805b25;
+  margin: 0 0 8px;
+}
+
+.v4-lesson-strip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+  padding-bottom: 4px;
+}
+
+.v4-lesson-strip button {
+  flex: 0 0 min(260px, 82vw);
+  scroll-snap-align: start;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #17212b;
+  border-radius: 16px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 10px;
+  align-items: center;
+  text-align: left;
+}
+
+.v4-lesson-strip button small {
+  grid-row: span 2;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #e2e8f0;
+  font-weight: 900;
+}
+
+.v4-lesson-strip button span {
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.v4-lesson-strip button em {
+  font-style: normal;
+  font-size: 0.82rem;
+  color: #64748b;
+  line-height: 1.25;
+}
+
+.v4-lesson-strip button.active {
+  background: #17212b;
+  color: #ffffff;
+  border-color: #17212b;
+}
+
+.v4-lesson-strip button.active small {
+  background: #f6ad55;
+  color: #17212b;
+}
+
+.v4-lesson-strip button.active em {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.v4-image-hint {
+  display: none;
+  margin: 8px 0 0;
+  color: #805b25;
+  font-weight: 800;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 560px) {
+  .v4-lesson-shell {
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .v4-lesson-card,
+  .v4-lesson-chooser {
+    border-radius: 16px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .v4-lesson-card > h2 {
+    font-size: 1.35rem;
+    line-height: 1.15;
+  }
+
+  .v4-subtitle {
+    font-size: 0.94rem;
+    line-height: 1.35;
+  }
+
+  .v4-block {
+    display: block;
+    min-height: unset;
+  }
+
+  .v4-block-number {
+    display: none;
+  }
+
+  .v4-block-body h3 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .v4-module-strip button {
+    flex: 0 0 auto;
+    width: 42px;
+    height: 42px;
+    min-height: 42px;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    border-radius: 999px;
+  }
+
+  .v4-module-strip button span {
+    display: none;
+  }
+
+  .v4-module-strip button small {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  }
+
+  .v4-module-strip button.active small {
+    background: transparent;
+    color: #fff;
+  }
+
+  .v4-image-card {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    text-align: left;
+  }
+
+  .v4-module-image {
+    width: 680px;
+    max-width: none;
+    min-height: unset;
+    margin: 0;
+  }
+
+  .v4-image-hint {
+    display: block;
+  }
+}

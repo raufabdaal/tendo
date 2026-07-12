@@ -34,6 +34,55 @@
 - [x] Convert v4 pilot renderer from long-scroll blocks to mobile-first module/stepper flow
 - [x] Add v4 mobile image and module navigation styling
 - [x] Build passed after v4 module stepper (`npm run build`, 356 static pages)
+- [x] Add v4 lesson selector for topics/themes with multiple v4 lessons
+- [x] Complete P3 Theme 6 Plants as first full v4 migration batch
+- [x] Add final mobile polish for compact module chips and readable/swipeable images
+- [x] Log `DEV-035` mobile-first v4 module/stepper decision
+- [x] Build passed after v4 mobile polish and P3 Plants migration (`npm run build`, 356 static pages)
+- [x] Migrate all 12 P3 thematic routes to lower-primary v4 renderer as structural first pass
+- [x] Keep P3 Theme 6 Plants as first hand-deepened v4 model
+- [x] Manually deepen all remaining P3 thematic v4 themes after structural migration
+- [x] Manually deepen P3 Theme 1: Our Sub-county/Division in v4
+- [x] Manually deepen P3 Theme 5: Animals in v4
+- [x] Manually deepen P3 Theme 10: Health in v4
+- [x] Build passed after P3 Themes 5 and 10 manual deepening (`npm run build`, 356 static pages)
+- [x] Manually deepen P3 Theme 2: Livelihood in v4
+- [x] Manually deepen P3 Theme 3: Environment in v4
+- [x] Manually deepen P3 Theme 4: Environment and Weather in v4
+- [x] Build passed after P3 Themes 2, 3 and 4 manual deepening (`npm run build`, 356 static pages)
+- [x] Manually deepen P3 Theme 7: Managing Resources in v4
+- [x] Manually deepen P3 Theme 8: Keeping Peace in v4
+- [x] Manually deepen P3 Theme 9: Culture and Gender in v4
+- [x] Manually deepen P3 Theme 11: Basic Technology in v4
+- [x] Manually deepen P3 Theme 12: Energy in v4
+- [x] Complete P3 thematic v4 manual deepening across all 12 themes
+- [x] Migrate P3 Religious Education CRE/IRE topics to lower-primary v4
+- [x] Add `Religious Education` lower-primary learning area support
+- [x] Build passed after P3 RE v4 migration (`npm run build`, 356 static pages)
+- [x] Add shared upper-primary Science v4 migrator (`app/lib/v4-science-helpers.ts`)
+- [x] Structurally migrate all P4 Integrated Science topics to upper-primary v4
+- [x] Structurally migrate all P5 Integrated Science topics to upper-primary v4
+- [x] Document P4/P5 Science v4 migration (`docs/ops/v4-p4-p5-science-migration-2026-07-12.md`)
+- [x] Build passed after P4/P5 Science v4 migration (`npm run build`, 356 static pages)
+- [x] Hand-deepen P4 Science Plant Life as the first upper-primary Science model topic
+- [x] Add `useOnlyV4Lessons` override support for hand-built v4 model topics
+- [x] Build passed after P4 Plant Life manual deepening (`npm run build`, 356 static pages)
+- [x] Hand-deepen P4 Science Growing Crops in v4
+- [x] Hand-deepen P4 Science Human Body Organs / Teeth in v4
+- [x] Build passed after P4 Growing Crops / Human Body Organs / Teeth deepening (`npm run build`, 356 static pages)
+- [x] Hand-deepen P4 Science Animal Life in v4
+- [x] Hand-deepen P4 Science Weather Changes in v4
+- [x] Hand-deepen P4 Science Personal Hygiene / Sanitation in v4
+- [x] Build passed after P4 Animal Life / Weather / Hygiene / Sanitation deepening (`npm run build`, 356 static pages)
+- [ ] Hand-deepen P4 Science Communicable Intestinal Diseases and Worm Infestation in v4
+- [ ] Hand-deepen P4 Science Vectors and Diseases in v4
+- [ ] Hand-deepen P4 Science Accidents, Poisoning and First Aid in v4
+- [ ] Hand-deepen P4 Science Our Food in v4
+- [ ] Hand-deepen P5 Science Digestive System in v4
+- [ ] Hand-deepen P5 Science Soil in v4
+- [ ] Continue P4/P5 Science manual deepening topic-by-topic
+- [x] Build passed after completing P3 thematic v4 migration (`npm run build`, 356 static pages)
+- [x] Build passed after full P3 thematic structural v4 migration (`npm run build`, 356 static pages)
 - [ ] Founder review v4 pilot before broad migration (`/p3/theme/p3-theme-6-plants`, `/science/p5/p5-keeping-poultry-bees`)
 - [ ] Migrate P3/P4/P5 away from meta-module learner UI after pilot approval
 

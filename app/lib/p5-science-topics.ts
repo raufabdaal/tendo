@@ -1,5 +1,6 @@
 import type { UpperPrimaryLesson } from "@/lib/content-blocks";
 import type { Topic } from "@/lib/topics";
+import { addUpperPrimaryScienceV4 } from "@/lib/v4-science-helpers";
 
 // P5 Integrated Science enriched beta content layer.
 // Source map: content/curriculum/p5-science.json
@@ -118,7 +119,7 @@ const P5_POULTRY_BREEDS_V4: UpperPrimaryLesson = {
   ],
 };
 
-export const P5_SCIENCE_TOPICS: Topic[] = [
+const P5_SCIENCE_TOPIC_DATA: Topic[] = [
   {
     "id": "p5-keeping-poultry-bees",
     "themeId": "p5-science-core",
@@ -2190,6 +2191,20 @@ export const P5_SCIENCE_TOPICS: Topic[] = [
     ]
   }
 ];
+
+const P5_SCIENCE_TERMS = {
+  "p5-keeping-poultry-bees": "Term I" as const,
+  "p5-crop-growing": "Term III" as const,
+  "p5-measurement-science": "Term I" as const,
+  "p5-heat-energy": "Term II" as const,
+  "p5-immunisation": "Term I" as const,
+  "p5-digestive-system": "Term II" as const,
+  "p5-components-environment-soil": "Term II" as const,
+  "p5-bacteria-fungi": "Term III" as const,
+  "p5-types-of-changes": "Term III" as const
+};
+
+export const P5_SCIENCE_TOPICS: Topic[] = addUpperPrimaryScienceV4(P5_SCIENCE_TOPIC_DATA, "P5", P5_SCIENCE_TERMS);
 
 export function getP5ScienceTopic(id: string): Topic | undefined {
   return P5_SCIENCE_TOPICS.find((topic) => topic.id === id);

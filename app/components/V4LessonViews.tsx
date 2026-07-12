@@ -21,38 +21,90 @@ import type {
 } from "@/lib/content-blocks";
 
 export function LowerPrimaryLessonView({ lessons }: { lessons: LowerPrimaryLesson[] }) {
+  const [activeLessonIndex, setActiveLessonIndex] = useState(0);
+  const activeLesson = lessons[Math.min(activeLessonIndex, lessons.length - 1)];
+
+  if (!activeLesson) return null;
+
   return (
     <section className="v4-lesson-shell v4-lower-shell" aria-label="Lower primary lesson">
-      {lessons.map((lesson) => (
-        <LessonStepper
-          key={lesson.id}
-          lessonId={lesson.id}
-          kicker={`${lesson.classLevel} · ${lesson.term} · ${lesson.learningArea}`}
-          title={lesson.lessonTitle}
-          subtitle={`${lesson.themeTitle} · ${lesson.subThemeTitle}`}
-          blocks={lesson.blocks}
-          renderBlock={(block, index) => <LowerPrimaryBlockView block={block} index={index} />}
+      {lessons.length > 1 && (
+        <LessonChooser
+          label="Choose a lesson"
+          lessons={lessons.map((lesson) => ({ title: lesson.lessonTitle, subtitle: lesson.subThemeTitle }))}
+          activeIndex={activeLessonIndex}
+          onSelect={setActiveLessonIndex}
         />
-      ))}
+      )}
+      <LessonStepper
+        lessonId={activeLesson.id}
+        kicker={`${activeLesson.classLevel} · ${activeLesson.term} · ${activeLesson.learningArea}`}
+        title={activeLesson.lessonTitle}
+        subtitle={`${activeLesson.themeTitle} · ${activeLesson.subThemeTitle}`}
+        blocks={activeLesson.blocks}
+        renderBlock={(block, index) => <LowerPrimaryBlockView block={block} index={index} />}
+      />
     </section>
   );
 }
 
 export function UpperPrimaryLessonView({ lessons }: { lessons: UpperPrimaryLesson[] }) {
+  const [activeLessonIndex, setActiveLessonIndex] = useState(0);
+  const activeLesson = lessons[Math.min(activeLessonIndex, lessons.length - 1)];
+
+  if (!activeLesson) return null;
+
   return (
     <section className="v4-lesson-shell v4-upper-shell" aria-label="Upper primary lesson">
-      {lessons.map((lesson) => (
-        <LessonStepper
-          key={lesson.id}
-          lessonId={lesson.id}
-          kicker={`${lesson.classLevel} · ${lesson.term} · ${lesson.subject}`}
-          title={lesson.subTopicTitle}
-          subtitle={lesson.topicTitle}
-          blocks={lesson.blocks}
-          renderBlock={(block, index) => <UpperPrimaryBlockView block={block} index={index} />}
+      {lessons.length > 1 && (
+        <LessonChooser
+          label="Choose a sub-topic"
+          lessons={lessons.map((lesson) => ({ title: lesson.subTopicTitle, subtitle: lesson.topicTitle }))}
+          activeIndex={activeLessonIndex}
+          onSelect={setActiveLessonIndex}
         />
-      ))}
+      )}
+      <LessonStepper
+        lessonId={activeLesson.id}
+        kicker={`${activeLesson.classLevel} · ${activeLesson.term} · ${activeLesson.subject}`}
+        title={activeLesson.subTopicTitle}
+        subtitle={activeLesson.topicTitle}
+        blocks={activeLesson.blocks}
+        renderBlock={(block, index) => <UpperPrimaryBlockView block={block} index={index} />}
+      />
     </section>
+  );
+}
+
+function LessonChooser({
+  label,
+  lessons,
+  activeIndex,
+  onSelect,
+}: {
+  label: string;
+  lessons: Array<{ title: string; subtitle: string }>;
+  activeIndex: number;
+  onSelect: (index: number) => void;
+}) {
+  return (
+    <div className="v4-lesson-chooser" aria-label={label}>
+      <div className="v4-lesson-chooser-label">{label}</div>
+      <div className="v4-lesson-strip">
+        {lessons.map((lesson, index) => (
+          <button
+            type="button"
+            key={`${lesson.title}-${index}`}
+            className={activeIndex === index ? "active" : undefined}
+            onClick={() => onSelect(index)}
+          >
+            <small>{index + 1}</small>
+            <span>{lesson.title}</span>
+            <em>{lesson.subtitle}</em>
+          </button>
+        ))}
+      </div>
+    </div>
   );
 }
 
@@ -97,6 +149,7 @@ function LessonStepper<TBlock extends LowerPrimaryContentBlock | UpperPrimaryCon
             type="button"
             className={index === activeIndex ? "active" : undefined}
             onClick={() => setActiveIndex(index)}
+            aria-label={`Open module ${index + 1}: ${getBlockLabel(block)}`}
           >
             <small>{index + 1}</small>
             <span>{getBlockLabel(block)}</span>
@@ -301,6 +354,7 @@ function DiagramView({ block, index }: { block: DiagramBlock; index: number }) {
       <div className="module-image-card v4-image-card">
         <img src={block.imageUrl} alt={block.caption} className="module-image v4-module-image" loading="lazy" />
         <p className="module-image-caption">{block.caption}</p>
+        <p className="v4-image-hint">Tip: swipe the picture sideways if the labels look small.</p>
       </div>
       {block.labels && <div className="v4-pill-row">{block.labels.map((label) => <span key={label}>{label}</span>)}</div>}
     </BlockFrame>

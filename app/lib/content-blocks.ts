@@ -149,7 +149,7 @@ export interface LowerPrimaryLesson {
   themeTitle: string;
   subThemeTitle: string;
   lessonTitle: string;
-  learningArea: "Literacy I" | "Literacy II / News" | "Mathematics / Numeracy" | "English" | "Creative Performing Arts" | "Life Skills and Values" | "Integrated Theme";
+  learningArea: "Literacy I" | "Literacy II / News" | "Mathematics / Numeracy" | "English" | "Creative Performing Arts" | "Life Skills and Values" | "Integrated Theme" | "Religious Education";
   blocks: LowerPrimaryContentBlock[];
 }
 

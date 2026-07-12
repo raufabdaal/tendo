@@ -4,6 +4,19 @@
 
 ---
 
+## DEV-035 · 2026-07-12 · V4 learner content must render as mobile-first modules/steps
+
+**Context:** Founder approved the v4 direct lesson-block structure but found the first implementation too long and mismatched on mobile. Most users will use Tendo on phones, so the lesson experience must avoid long overwhelming scrolls.
+
+**Decision:** V4 student-facing lessons must render as mobile-first modules/steps. Each lesson should show one content block/module at a time with a clear module number, progress meter, previous/next navigation and a finish action. If a topic has multiple v4 lessons/sub-topics, show a lesson selector first.
+
+**Image rule:** Text-heavy diagrams and study cards must be readable on mobile. V4 image cards should use larger image treatment and allow horizontal swiping when labels would be too small at phone width.
+
+**Implementation effect:** `V4LessonViews.tsx` is now the preferred renderer for the migration of P3–P7. Legacy v3 remains for unmigrated content only.
+
+**Tracked across:** `app/components/V4LessonViews.tsx`, `app/app/globals.css`, `docs/ops/v4-content-architecture-pilot-2026-07-12.md`.
+
+
 ## DEV-034 · 2026-07-12 · P1 and P2 remain in the same app, but are deferred until after P3–P7 restructure
 
 **Context:** After discussing whether to stop at P3 or split lower primary separately, the founder clarified that P1 and P2 should eventually be included in the same Tendo app, but not now.

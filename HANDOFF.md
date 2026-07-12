@@ -67,10 +67,10 @@ Current state of the milestone:
 1. Review the v4 pilot routes:
    - `/p3/theme/p3-theme-6-plants`
    - `/science/p5/p5-keeping-poultry-bees`
-2. Review the new v4 mobile module/stepper flow and decide whether it should become the migration standard.
+2. V4 mobile lesson selector + module stepper is now the migration standard unless founder requests more UI changes.
 3. If approved, add a lesson/sub-topic selector for topics with many v4 lessons.
-4. Migrate all P3 thematic sub-themes to v4 first.
-5. Then migrate P4/P5 Science, followed by remaining P4/P5 subjects.
+4. Continue manual deepening of P3 v4 content; all 12 P3 thematic routes are now manually deepened in v4 lower-primary lesson selector + mobile module stepper format.
+5. P3 thematic manual deepening and P3 RE v4 migration are complete. P4/P5 Science structural v4 migration is also complete via `app/lib/v4-science-helpers.ts`. Next work: continue P4/P5 Science manual deepening. P4 Science has 8 hand-deepened v4 topics. Remaining P4 Science topics are Communicable Intestinal Diseases/Worms, Vectors and Diseases, Accidents/Poisoning/First Aid, and Our Food. Then continue P5 Digestive System/Soil/Heat. After that, migrate P4/P5 Science, followed by remaining P4/P5 subjects.
 6. Then migrate P6/P7 high-value topics.
 7. Do not start P1/P2 yet; they will be same-app later, after P3–P7 structure is corrected.
 

@@ -1,11 +1,802 @@
+import type { UpperPrimaryLesson } from "@/lib/content-blocks";
 import type { Topic } from "@/lib/topics";
+import { addUpperPrimaryScienceV4 } from "@/lib/v4-science-helpers";
 
 // P4 Integrated Science live beta content layer.
 // Source map: content/curriculum/p4-science.json
 // Rule: NCDC first, build second. This file follows the NCDC Primary Four Integrated Science Syllabus, April 2009.
 // Status: live beta until checked by a human reviewer for science accuracy, health-sensitive wording and source fidelity.
 
-export const P4_SCIENCE_TOPICS: Topic[] = [
+
+const P4_PLANT_LIFE_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-what-are-plants",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Plant Life",
+    subTopicTitle: "What are plants?",
+    lessonTitle: "What are plants?",
+    blocks: [
+      {
+        kind: "definition",
+        term: "plants",
+        definition: "are living things that usually grow in soil or water. Most plants have roots, stems and leaves, and some plants produce flowers, fruits and seeds.",
+        simpleCheck: "A bean plant is a plant because it grows, feeds, breathes and can produce new plants.",
+      },
+      {
+        kind: "categories",
+        title: "Main groups of plants",
+        categories: [
+          { name: "Flowering plants", definition: "plants that produce flowers and can form fruits and seeds", examples: ["bean plant", "maize plant", "mango tree", "orange tree"], notes: ["Most garden crops and fruit trees are flowering plants."] },
+          { name: "Non-flowering plants", definition: "plants that do not produce flowers", examples: ["ferns", "mosses"], notes: ["Some non-flowering plants reproduce by spores instead of seeds."] },
+          { name: "Food plants", definition: "plants grown or used for food", examples: ["cassava", "beans", "maize", "cabbage", "mango"] },
+          { name: "Useful non-food plants", definition: "plants used for medicine, timber, shade, fibres or beauty", examples: ["eucalyptus", "sisal", "aloe vera", "flowers"] },
+        ],
+      },
+      {
+        kind: "examples",
+        title: "Examples of plants around us",
+        examples: [
+          { name: "maize", explanation: "a food crop grown for its grains", localContext: "common in Ugandan gardens" },
+          { name: "beans", explanation: "a food crop grown for seeds", localContext: "often grown with maize" },
+          { name: "mango tree", explanation: "a fruit tree that gives shade and fruits" },
+          { name: "sisal", explanation: "a fibre plant used to make ropes and mats" },
+          { name: "aloe vera", explanation: "a plant commonly used for medicine with adult guidance" },
+        ],
+      },
+      {
+        kind: "characteristics",
+        title: "Characteristics of plants",
+        points: [
+          "Plants are living things.",
+          "Most plants are green because they contain chlorophyll.",
+          "Most plants make their own food using sunlight, air and water.",
+          "Plants grow and respond to light, water and gravity.",
+          "Many plants reproduce using flowers, fruits and seeds.",
+        ],
+      },
+      {
+        kind: "diagram",
+        title: "Flowering plant diagram",
+        imageUrl: "/images/science/flowering-plant-parts.svg",
+        caption: "A flowering plant showing roots, stem, leaves, flower, fruit and seed.",
+        labels: ["roots", "stem", "leaves", "flower", "fruit", "seed"],
+      },
+      {
+        kind: "exercise",
+        title: "Evaluation",
+        questions: [
+          { type: "short-answer", prompt: "What are plants?", answer: "Plants are living things that usually grow in soil or water." },
+          { type: "short-answer", prompt: "Give four examples of plants.", answer: "Maize, beans, mango, cassava, sisal, cabbage or any correct plant." },
+          { type: "short-answer", prompt: "State two characteristics of plants.", answer: "They grow, make food, respond to light/water, reproduce or have parts such as roots/stems/leaves." },
+          { type: "multiple-choice", prompt: "Which one is a plant?", choices: ["bean", "stone", "chair", "shoe"], answer: "bean" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "p4-v4-parts-of-flowering-plant",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Plant Life",
+    subTopicTitle: "Parts of a Flowering Plant",
+    lessonTitle: "Parts of a Flowering Plant",
+    blocks: [
+      {
+        kind: "definition",
+        term: "flowering plant",
+        definition: "is a plant that produces flowers. In many flowering plants, flowers later form fruits and seeds.",
+        simpleCheck: "A bean plant, maize plant and mango tree are flowering plants.",
+      },
+      {
+        kind: "categories",
+        title: "Parts and functions of a flowering plant",
+        categories: [
+          { name: "Roots", definition: "hold the plant firmly in the soil and absorb water and mineral salts", examples: ["tap root", "fibrous roots"] },
+          { name: "Stem", definition: "supports the plant and carries water and food to other parts", examples: ["bean stem", "maize stem", "tree trunk"] },
+          { name: "Leaves", definition: "make food for the plant using sunlight, air and water", examples: ["bean leaves", "mango leaves", "banana leaves"] },
+          { name: "Flowers", definition: "help the plant reproduce by forming fruits and seeds after pollination and fertilisation", examples: ["bean flower", "mango flower", "orange flower"] },
+          { name: "Fruits", definition: "protect seeds and may help seeds to be dispersed", examples: ["mango", "orange", "tomato", "bean pod"] },
+          { name: "Seeds", definition: "can germinate and grow into new plants", examples: ["bean seed", "maize grain", "mango seed"] },
+        ],
+      },
+      {
+        kind: "diagram",
+        title: "Labelled flowering plant",
+        imageUrl: "/images/science/flowering-plant-parts.svg",
+        caption: "Label each part and say its function.",
+        labels: ["roots", "stem", "leaves", "flower", "fruit", "seed"],
+      },
+      {
+        kind: "characteristics",
+        title: "Functions to remember",
+        points: [
+          "Roots absorb water and mineral salts from soil.",
+          "The stem carries water from roots to leaves.",
+          "Leaves make food for the plant.",
+          "Flowers help in reproduction.",
+          "Fruits protect seeds.",
+          "Seeds grow into new plants during germination.",
+        ],
+      },
+      {
+        kind: "worked-example",
+        question: "A learner says roots only hold the plant. Is the learner fully correct?",
+        steps: [
+          "Roots hold the plant firmly in soil.",
+          "Roots also absorb water and mineral salts from soil.",
+          "So the answer should include both functions.",
+        ],
+        answer: "No. Roots hold the plant and absorb water and mineral salts.",
+      },
+      {
+        kind: "exercise",
+        title: "Evaluation",
+        questions: [
+          { type: "short-answer", prompt: "Name six parts of a flowering plant.", answer: "Roots, stem, leaves, flowers, fruits and seeds." },
+          { type: "short-answer", prompt: "What is the function of leaves?", answer: "Leaves make food for the plant." },
+          { type: "short-answer", prompt: "What is the function of fruits?", answer: "Fruits protect seeds." },
+          { type: "multiple-choice", prompt: "Which plant part absorbs water?", choices: ["roots", "flower", "fruit", "seed"], answer: "roots" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "p4-v4-flowers-fruits-seeds",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Plant Life",
+    subTopicTitle: "Flowers, Fruits and Seeds",
+    lessonTitle: "Flowers, Fruits and Seeds",
+    blocks: [
+      {
+        kind: "definition",
+        term: "reproduction in flowering plants",
+        definition: "is the process by which flowering plants produce new plants using flowers, fruits and seeds.",
+        simpleCheck: "A flower may develop into a fruit with seeds after pollination and fertilisation.",
+      },
+      {
+        kind: "categories",
+        title: "Flower to seed process",
+        categories: [
+          { name: "Flower", definition: "the reproductive part of many plants", examples: ["bean flower", "mango flower", "orange flower"] },
+          { name: "Pollination", definition: "the transfer of pollen to the stigma of a flower", examples: ["by insects", "by wind"] },
+          { name: "Fertilisation", definition: "joining of male and female cells in the flower", examples: ["happens after successful pollination"] },
+          { name: "Fruit", definition: "the part that develops from the flower and protects seeds", examples: ["mango", "tomato", "bean pod"] },
+          { name: "Seed", definition: "the part that can grow into a new plant", examples: ["bean seed", "maize grain", "orange seed"] },
+        ],
+      },
+      {
+        kind: "examples",
+        title: "Examples of fruits and seeds",
+        examples: [
+          { name: "mango", explanation: "fruit with a seed inside" },
+          { name: "bean pod", explanation: "fruit that contains bean seeds" },
+          { name: "maize cob", explanation: "has many grains that can be planted as seeds" },
+          { name: "tomato", explanation: "fruit with many small seeds" },
+        ],
+      },
+      {
+        kind: "diagram",
+        title: "Flowering plant parts",
+        imageUrl: "/images/science/flowering-plant-parts.svg",
+        caption: "Flowers can form fruits and seeds in many flowering plants.",
+        labels: ["flower", "fruit", "seed", "pollination", "fertilisation", "germination"],
+      },
+      {
+        kind: "exercise",
+        title: "Evaluation",
+        questions: [
+          { type: "short-answer", prompt: "What is pollination?", answer: "Transfer of pollen to the stigma of a flower." },
+          { type: "short-answer", prompt: "Why are seeds important?", answer: "They can grow into new plants." },
+          { type: "short-answer", prompt: "Give two examples of fruits with seeds.", answer: "Mango, tomato, orange, bean pod or any correct example." },
+          { type: "multiple-choice", prompt: "Which part can develop into a fruit?", choices: ["flower", "root", "leaf only", "stem only"], answer: "flower" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "p4-v4-germination-plant-needs",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Plant Life",
+    subTopicTitle: "Germination and Plant Needs",
+    lessonTitle: "Germination and Plant Needs",
+    blocks: [
+      {
+        kind: "definition",
+        term: "germination",
+        definition: "is the beginning of growth of a seed into a seedling.",
+        simpleCheck: "A bean seed that starts producing a root and shoot is germinating.",
+      },
+      {
+        kind: "categories",
+        title: "Conditions needed for germination and growth",
+        categories: [
+          { name: "Water", definition: "softens the seed coat and starts growth", examples: ["moist soil", "watered cotton wool"] },
+          { name: "Air", definition: "needed by the seed for respiration", examples: ["loose soil", "not waterlogged soil"] },
+          { name: "Warmth", definition: "helps seed activities happen fast enough for growth", examples: ["warm soil", "sun-warmed place"] },
+          { name: "Sunlight", definition: "needed by seedlings and grown plants for making food", examples: ["healthy green leaves", "plants near light"] },
+          { name: "Good soil", definition: "supports plants and provides mineral salts", examples: ["loam soil", "garden soil with manure"] },
+        ],
+      },
+      {
+        kind: "characteristics",
+        title: "Stages of germination",
+        points: [
+          "The seed absorbs water and swells.",
+          "The seed coat splits.",
+          "A young root grows downward.",
+          "A young shoot grows upward.",
+          "Leaves open and start making food when there is light.",
+        ],
+      },
+      {
+        kind: "worked-example",
+        question: "A seed in dry soil fails to germinate. What is missing?",
+        steps: ["Seeds need water to begin germination.", "Dry soil has too little water.", "Water the soil without flooding it."],
+        answer: "Water is missing.",
+      },
+      {
+        kind: "exercise",
+        title: "Evaluation",
+        questions: [
+          { type: "short-answer", prompt: "What is germination?", answer: "The beginning of growth of a seed into a seedling." },
+          { type: "short-answer", prompt: "Name three conditions needed for germination.", answer: "Water, air and warmth." },
+          { type: "short-answer", prompt: "Why do seedlings need sunlight?", answer: "For leaves to make food." },
+          { type: "multiple-choice", prompt: "Which condition is needed by a seed to germinate?", choices: ["water", "a bank account", "a mirror", "a pencil"], answer: "water" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "p4-v4-uses-care-of-plants",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Plant Life",
+    subTopicTitle: "Uses and Care of Plants",
+    lessonTitle: "Uses and Care of Plants",
+    blocks: [
+      {
+        kind: "definition",
+        term: "care for plants",
+        definition: "means doing activities that help plants grow well and remain healthy.",
+        simpleCheck: "Watering a young plant and removing weeds are ways of caring for plants.",
+      },
+      {
+        kind: "uses",
+        title: "Uses of plants",
+        points: [
+          "Plants provide food such as beans, maize, cassava, fruits and vegetables.",
+          "Plants provide shade and cool the environment.",
+          "Plants provide timber and poles for building.",
+          "Some plants provide medicine when used with adult/health-worker guidance.",
+          "Plants provide fibres such as sisal and cotton.",
+          "Plants help clean air and provide oxygen.",
+          "Plants protect soil from erosion.",
+        ],
+      },
+      {
+        kind: "characteristics",
+        title: "Ways of caring for plants",
+        points: [
+          "Water young plants when the soil is dry.",
+          "Weed gardens so crops do not compete with weeds.",
+          "Mulch soil to keep moisture and reduce erosion.",
+          "Protect plants from animals and pests.",
+          "Do not break branches or uproot young plants unnecessarily.",
+          "Plant trees to replace those cut down.",
+        ],
+      },
+      {
+        kind: "diagram",
+        title: "Plant care reminder",
+        imageUrl: "/images/science/p4-plant-care.svg",
+        caption: "Ways of caring for plants: watering, weeding, mulching and protecting plants.",
+        labels: ["water", "weed", "mulch", "protect", "plant trees"],
+      },
+      {
+        kind: "exercise",
+        title: "Evaluation",
+        questions: [
+          { type: "short-answer", prompt: "Give four uses of plants.", answer: "Food, shade, medicine, timber, fibre, oxygen or soil protection." },
+          { type: "short-answer", prompt: "Give three ways of caring for plants.", answer: "Watering, weeding, mulching, protecting from animals or planting trees." },
+          { type: "short-answer", prompt: "Why should we not uproot young plants carelessly?", answer: "It kills or damages plants and reduces plant growth." },
+          { type: "multiple-choice", prompt: "Which practice cares for plants?", choices: ["weeding", "breaking branches", "uprooting seedlings", "burning gardens"], answer: "weeding" },
+        ],
+      },
+    ],
+  },
+];
+
+const P4_GROWING_CROPS_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-what-is-crop-growing",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Growing Crops",
+    subTopicTitle: "What is crop growing?",
+    lessonTitle: "What is crop growing?",
+    blocks: [
+      { kind: "definition", term: "crop growing", definition: "is the practice of planting and caring for crops until they are ready for harvesting.", simpleCheck: "Growing beans, maize or cassava in a garden is crop growing." },
+      { kind: "categories", title: "Common crops", categories: [
+        { name: "Food crops", definition: "crops grown mainly for food", examples: ["maize", "beans", "cassava", "sweet potatoes", "rice"] },
+        { name: "Cash crops", definition: "crops grown mainly for sale and income", examples: ["coffee", "cotton", "tea", "sugarcane"] },
+        { name: "Vegetable crops", definition: "crops grown for leaves, fruits, stems or roots eaten as vegetables", examples: ["cabbage", "tomatoes", "onions", "eggplants"] },
+      ] },
+      { kind: "examples", title: "Examples in Uganda", examples: [
+        { name: "maize", explanation: "grown for food and sale" },
+        { name: "beans", explanation: "grown for protein food" },
+        { name: "cassava", explanation: "grown for edible roots" },
+        { name: "coffee", explanation: "grown as a cash crop" },
+      ] },
+      { kind: "diagram", title: "Crop-growing cycle", imageUrl: "/images/science/crop-growing-cycle.svg", caption: "The main steps in growing crops from land preparation to harvesting and storage.", labels: ["prepare land", "plant", "care", "harvest", "store"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is crop growing?", answer: "Planting and caring for crops until harvesting." },
+        { type: "short-answer", prompt: "Give three examples of food crops.", answer: "Maize, beans, cassava, rice or sweet potatoes." },
+        { type: "multiple-choice", prompt: "Which crop is commonly grown for sale as a cash crop?", choices: ["coffee", "stone", "chair", "shoe"], answer: "coffee" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-land-preparation-planting",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Growing Crops",
+    subTopicTitle: "Soil Preparation and Planting",
+    lessonTitle: "Soil Preparation and Planting",
+    blocks: [
+      { kind: "definition", term: "soil preparation", definition: "is making soil ready for planting crops.", simpleCheck: "Clearing, digging and making seedbeds are ways of preparing soil." },
+      { kind: "categories", title: "Steps before and during planting", categories: [
+        { name: "Clearing", definition: "removing weeds, rubbish and unwanted plants from the garden", examples: ["slashing grass", "removing old stems"] },
+        { name: "Digging / tilling", definition: "loosening soil so roots can grow easily", examples: ["using a hoe", "turning soil"] },
+        { name: "Making seedbeds", definition: "preparing raised or flat places where seeds are planted", examples: ["vegetable bed", "nursery bed"] },
+        { name: "Planting", definition: "putting seeds or seedlings into soil", examples: ["sowing maize", "transplanting cabbage seedlings"] },
+      ] },
+      { kind: "characteristics", title: "Good planting practices", points: ["Use good seeds or healthy seedlings.", "Plant at the right spacing.", "Plant at the right depth.", "Plant at the beginning of rains where possible.", "Water seedlings if the soil is dry."] },
+      { kind: "worked-example", question: "Why should soil be loosened before planting?", steps: ["Loose soil allows roots to enter easily.", "Loose soil lets air and water move better.", "This helps seedlings grow well."], answer: "Soil is loosened to help roots grow and to allow air and water into the soil." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Name three ways of preparing land for planting.", answer: "Clearing, digging, making seedbeds or applying manure." },
+        { type: "short-answer", prompt: "Why is spacing important when planting?", answer: "It gives crops enough space, light, water and nutrients." },
+        { type: "multiple-choice", prompt: "Putting seeds in soil is called:", choices: ["planting", "harvesting", "cooking", "washing"], answer: "planting" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-crop-care",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Growing Crops",
+    subTopicTitle: "Crop Care",
+    lessonTitle: "Crop Care",
+    blocks: [
+      { kind: "definition", term: "crop care", definition: "means doing activities that help crops grow well and remain healthy.", simpleCheck: "Watering, weeding and mulching are crop-care practices." },
+      { kind: "categories", title: "Crop-care practices", categories: [
+        { name: "Watering", definition: "giving crops water when the soil is dry", examples: ["watering vegetables", "watering seedlings"] },
+        { name: "Weeding", definition: "removing unwanted plants from the garden", examples: ["pulling weeds", "hoeing weeds"] },
+        { name: "Mulching", definition: "covering soil with dry grass or leaves", examples: ["banana mulching", "vegetable mulching"] },
+        { name: "Pest and disease control", definition: "protecting crops from pests and diseases", examples: ["hand-picking pests", "using safe teacher/adult-guided methods"] },
+      ] },
+      { kind: "characteristics", title: "Why crop care is important", points: ["Water helps crops make food and grow.", "Weeding reduces competition for water, nutrients and light.", "Mulching keeps soil moist and reduces erosion.", "Pest control protects leaves, stems, roots and fruits.", "Good crop care increases harvest." ] },
+      { kind: "diagram", title: "Crop care cycle", imageUrl: "/images/science/crop-growing-cycle.svg", caption: "Crop care includes watering, weeding, mulching and pest control before harvesting.", labels: ["water", "weed", "mulch", "control pests", "harvest"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is crop care?", answer: "Activities that help crops grow well and remain healthy." },
+        { type: "short-answer", prompt: "Give three crop-care practices.", answer: "Watering, weeding, mulching, thinning or pest control." },
+        { type: "multiple-choice", prompt: "Removing unwanted plants from a garden is called:", choices: ["weeding", "harvesting", "pollination", "digestion"], answer: "weeding" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-harvesting-storage",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Growing Crops",
+    subTopicTitle: "Harvesting and Storage",
+    lessonTitle: "Harvesting and Storage",
+    blocks: [
+      { kind: "definition", term: "harvesting", definition: "is collecting mature crops from the garden or field.", simpleCheck: "Picking ripe tomatoes or cutting mature maize is harvesting." },
+      { kind: "definition", term: "storage", definition: "is keeping harvested crops safely for future use or sale.", simpleCheck: "Keeping dry beans in a clean sack is storage." },
+      { kind: "categories", title: "Good harvesting and storage practices", categories: [
+        { name: "Harvesting mature crops", definition: "collecting crops when they are ready", examples: ["ripe tomatoes", "dry beans", "mature maize"] },
+        { name: "Drying crops", definition: "removing extra moisture before storage", examples: ["drying maize", "drying beans", "drying groundnuts"] },
+        { name: "Safe storage", definition: "keeping crops in clean, dry and protected places", examples: ["sacks", "granaries", "sealed containers"] },
+      ] },
+      { kind: "characteristics", title: "Why storage matters", points: ["Good storage prevents rotting.", "Good storage protects crops from rats, insects and mould.", "Dry crops store better than wet crops.", "Stored food helps families during dry seasons."] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is harvesting?", answer: "Collecting mature crops from the garden or field." },
+        { type: "short-answer", prompt: "Why should crops be dried before storage?", answer: "To prevent rotting and mould." },
+        { type: "multiple-choice", prompt: "Which place is good for storing crops?", choices: ["clean dry store", "wet floor", "open rubbish pit", "dirty water"], answer: "clean dry store" },
+      ] },
+    ],
+  },
+];
+
+const P4_HUMAN_BODY_ORGANS_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-organs-meaning",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Human Body Organs",
+    subTopicTitle: "Major Body Organs",
+    lessonTitle: "Major Body Organs",
+    blocks: [
+      { kind: "definition", term: "organ", definition: "is a body part that does special work for the body.", simpleCheck: "The heart is an organ because it pumps blood." },
+      { kind: "categories", title: "Major body organs and functions", categories: [
+        { name: "Brain", definition: "controls body activities and helps us think, learn and remember", examples: ["thinking", "moving", "remembering"] },
+        { name: "Heart", definition: "pumps blood around the body", examples: ["heartbeat", "blood circulation"] },
+        { name: "Lungs", definition: "help the body breathe in oxygen and breathe out carbon dioxide", examples: ["breathing in", "breathing out"] },
+        { name: "Stomach", definition: "helps digest food", examples: ["mixing food", "breaking food down"] },
+        { name: "Kidneys", definition: "help remove waste from blood and make urine", examples: ["urine formation", "waste removal"] },
+      ] },
+      { kind: "diagram", title: "Body organs diagram", imageUrl: "/images/science/p4-body-organs.svg", caption: "Major human body organs and their positions.", labels: ["brain", "heart", "lungs", "stomach", "kidneys"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is an organ?", answer: "A body part that does special work." },
+        { type: "short-answer", prompt: "Name four body organs.", answer: "Brain, heart, lungs, stomach, kidneys, liver or skin." },
+        { type: "multiple-choice", prompt: "Which organ pumps blood?", choices: ["heart", "tooth", "hair", "fingernail"], answer: "heart" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-care-body-organs",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Human Body Organs",
+    subTopicTitle: "Care for Body Organs",
+    lessonTitle: "Care for Body Organs",
+    blocks: [
+      { kind: "definition", term: "care for body organs", definition: "means doing healthy things that protect organs and help them work well.", simpleCheck: "Eating clean food helps protect the stomach and body." },
+      { kind: "categories", title: "Healthy habits for organs", categories: [
+        { name: "Brain care", definition: "protecting the brain and helping it work well", examples: ["sleeping enough", "wearing a helmet when needed", "avoiding head injuries"] },
+        { name: "Heart care", definition: "habits that keep the heart healthy", examples: ["exercising", "eating healthy food", "avoiding smoking areas"] },
+        { name: "Lung care", definition: "habits that protect breathing", examples: ["avoiding smoke", "keeping rooms ventilated", "covering mouth when coughing"] },
+        { name: "Stomach care", definition: "habits that help digestion", examples: ["eating clean food", "washing hands", "drinking safe water"] },
+      ] },
+      { kind: "characteristics", title: "Important safety habits", points: ["Avoid smoke, unknown medicines and poisonous substances.", "Wash hands before eating.", "Drink safe water.", "Exercise and rest enough.", "Tell an adult when you feel sick or injured." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Give three ways to care for body organs.", answer: "Eat clean food, drink safe water, exercise, rest, avoid smoke and avoid unknown medicines." },
+        { type: "short-answer", prompt: "Why should children avoid smoke?", answer: "Smoke can harm the lungs and breathing." },
+        { type: "multiple-choice", prompt: "Which habit helps the stomach?", choices: ["eating clean food", "drinking dirty water", "eating spoiled food", "not washing hands"], answer: "eating clean food" },
+      ] },
+    ],
+  },
+];
+
+const P4_TEETH_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-types-functions-teeth",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "The Teeth",
+    subTopicTitle: "Types and Functions of Teeth",
+    lessonTitle: "Types and Functions of Teeth",
+    blocks: [
+      { kind: "definition", term: "teeth", definition: "are hard white structures in the mouth used for biting, tearing, crushing and grinding food.", simpleCheck: "Teeth help break food into small pieces before swallowing." },
+      { kind: "categories", title: "Types of teeth", categories: [
+        { name: "Incisors", definition: "front teeth used for cutting food", examples: ["biting sugarcane", "cutting a piece of fruit"] },
+        { name: "Canines", definition: "pointed teeth used for tearing food", examples: ["tearing meat", "tearing tough food"] },
+        { name: "Premolars", definition: "teeth used for crushing and grinding food", examples: ["crushing groundnuts", "chewing cooked food"] },
+        { name: "Molars", definition: "back teeth used for grinding food", examples: ["grinding posho", "chewing beans"] },
+      ] },
+      { kind: "diagram", title: "Teeth types diagram", imageUrl: "/images/science/teeth-types-functions.svg", caption: "Types of teeth and their functions.", labels: ["incisors", "canines", "premolars", "molars"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Name the four types of teeth.", answer: "Incisors, canines, premolars and molars." },
+        { type: "short-answer", prompt: "What is the function of incisors?", answer: "Cutting food." },
+        { type: "multiple-choice", prompt: "Which teeth tear food?", choices: ["canines", "incisors", "molars", "premolars"], answer: "canines" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-tooth-care-decay",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "The Teeth",
+    subTopicTitle: "Tooth Care and Tooth Decay",
+    lessonTitle: "Tooth Care and Tooth Decay",
+    blocks: [
+      { kind: "definition", term: "tooth decay", definition: "is the damage of teeth caused by germs and acids, often after sugary food remains on teeth.", simpleCheck: "A toothache may be a sign of tooth decay and needs adult or dental help." },
+      { kind: "categories", title: "Causes and prevention of tooth decay", categories: [
+        { name: "Causes", definition: "things that make tooth decay more likely", examples: ["too many sugary foods", "not brushing teeth", "dirty mouth", "not visiting dental workers"] },
+        { name: "Prevention", definition: "ways to stop tooth decay", examples: ["brushing teeth", "rinsing mouth", "eating fewer sweets", "visiting dental workers"] },
+        { name: "Good tooth care", definition: "daily actions that keep teeth healthy", examples: ["brush morning and evening", "use clean toothbrush", "eat hard fruits safely", "drink clean water"] },
+      ] },
+      { kind: "characteristics", title: "How to care for teeth", points: ["Brush teeth at least twice a day.", "Use a clean toothbrush and safe toothpaste where available.", "Avoid too many sweets and sugary drinks.", "Rinse the mouth after eating.", "Report toothache to an adult." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is tooth decay?", answer: "Damage of teeth caused by germs and acids." },
+        { type: "short-answer", prompt: "Give three ways to care for teeth.", answer: "Brush teeth, reduce sugary foods, rinse mouth, use clean toothbrush or visit dental worker." },
+        { type: "multiple-choice", prompt: "Which habit prevents tooth decay?", choices: ["brushing teeth", "eating sweets all day", "not brushing", "sharing dirty toothbrushes"], answer: "brushing teeth" },
+      ] },
+    ],
+  },
+];
+
+const P4_ANIMAL_LIFE_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-common-animals",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Animal Life",
+    subTopicTitle: "Common Animals",
+    lessonTitle: "Common Animals",
+    blocks: [
+      { kind: "definition", term: "animal", definition: "is a living thing that feeds, breathes, grows, reproduces and usually moves from place to place.", simpleCheck: "A goat is an animal because it feeds, breathes, grows and moves." },
+      { kind: "categories", title: "Groups of common animals", categories: [
+        { name: "Domestic animals", definition: "animals kept by people at home or on farms", examples: ["cow", "goat", "sheep", "dog", "cat", "pig"] },
+        { name: "Wild animals", definition: "animals that live on their own in the environment", examples: ["lion", "elephant", "monkey", "antelope"] },
+        { name: "Poultry birds", definition: "domestic birds kept by people", examples: ["hen", "duck", "turkey", "goose"] },
+        { name: "Small animals", definition: "animals commonly seen around homes, gardens or compounds", examples: ["rabbit", "rat", "mouse"] },
+      ] },
+      { kind: "examples", title: "Examples around us", examples: [
+        { name: "cow", explanation: "kept for milk, meat, manure and income" },
+        { name: "goat", explanation: "kept for meat, milk and income" },
+        { name: "dog", explanation: "kept for security and companionship" },
+        { name: "hen", explanation: "kept for eggs and meat" },
+      ] },
+      { kind: "diagram", title: "Animal care card", imageUrl: "/images/science/p4-animal-care.svg", caption: "Common animals need food, water, shelter, health care and kindness.", labels: ["cow", "goat", "hen", "dog", "food", "shelter"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is an animal?", answer: "A living thing that feeds, breathes, grows, reproduces and usually moves." },
+        { type: "short-answer", prompt: "Name four domestic animals.", answer: "Cow, goat, sheep, dog, cat, pig, hen or duck." },
+        { type: "multiple-choice", prompt: "Which one is a domestic animal?", choices: ["goat", "stone", "chair", "shoe"], answer: "goat" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-animal-needs-care",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Animal Life",
+    subTopicTitle: "Animal Needs and Care",
+    lessonTitle: "Animal Needs and Care",
+    blocks: [
+      { kind: "definition", term: "animal care", definition: "means providing animals with what they need to live safely and remain healthy.", simpleCheck: "Giving clean water and shelter to goats is animal care." },
+      { kind: "categories", title: "Needs of animals", categories: [
+        { name: "Food", definition: "what animals eat to grow and get energy", examples: ["grass for goats", "feeds for hens", "milk for young animals"] },
+        { name: "Water", definition: "a basic need for animals to live", examples: ["clean drinking water", "watering trough"] },
+        { name: "Shelter", definition: "a safe place that protects animals from rain, sun, thieves and predators", examples: ["kraal", "kennel", "coop", "sty"] },
+        { name: "Health care", definition: "keeping animals clean and treating sickness", examples: ["vaccination", "calling a veterinary worker", "separating sick animals"] },
+      ] },
+      { kind: "characteristics", title: "Good animal care practices", points: ["Give enough clean food and water.", "Provide clean shelter.", "Keep animal houses dry and ventilated.", "Separate sick animals from healthy ones.", "Call a veterinary worker or trained adult when animals are sick.", "Treat animals kindly and avoid cruelty."] },
+      { kind: "worked-example", question: "A hen is weak and not eating. What should a farmer do?", steps: ["Separate the sick hen from healthy hens.", "Give clean water and keep it safe.", "Ask an adult or veterinary worker for advice."], answer: "Separate the sick hen and seek adult or veterinary help." },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Name four needs of animals.", answer: "Food, water, shelter, air and health care." },
+        { type: "short-answer", prompt: "Why should sick animals be separated?", answer: "To reduce the spread of disease." },
+        { type: "multiple-choice", prompt: "Which is good animal care?", choices: ["giving clean water", "beating animals", "keeping animals in dirty houses", "hiding sickness"], answer: "giving clean water" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-uses-animal-safety",
+    classLevel: "P4",
+    term: "Term III",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Animal Life",
+    subTopicTitle: "Uses of Animals and Safety",
+    lessonTitle: "Uses of Animals and Safety",
+    blocks: [
+      { kind: "definition", term: "uses of animals", definition: "are the ways animals help people and the community.", simpleCheck: "A cow is useful because it can provide milk, meat, manure and income." },
+      { kind: "uses", title: "Uses of animals", points: ["Animals provide food such as milk, meat and eggs.", "Animals provide manure for gardens.", "Some animals provide labour such as ox-ploughing.", "Dogs may provide security.", "Some animals provide transport in some communities.", "Animals can provide income when sold or when their products are sold."] },
+      { kind: "characteristics", title: "Animal safety rules", points: ["Do not disturb strange or wild animals.", "Do not touch animal waste with bare hands.", "Wash hands after handling animals.", "Report animal bites to an adult quickly.", "Keep away from angry or sick animals."] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Give four uses of animals.", answer: "Food, manure, labour, security, transport or income." },
+        { type: "short-answer", prompt: "Why should children wash hands after handling animals?", answer: "To remove dirt and germs." },
+        { type: "multiple-choice", prompt: "Which animal may provide security?", choices: ["dog", "mosquito", "housefly", "worm"], answer: "dog" },
+      ] },
+    ],
+  },
+];
+
+const P4_WEATHER_CHANGES_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-weather-elements",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Weather Changes Around Us",
+    subTopicTitle: "Weather Elements",
+    lessonTitle: "Weather Elements",
+    blocks: [
+      { kind: "definition", term: "weather", definition: "is the condition of the atmosphere at a particular place and time.", simpleCheck: "A day can be sunny, rainy, cloudy or windy." },
+      { kind: "categories", title: "Elements of weather", categories: [
+        { name: "Sunshine", definition: "light and heat from the sun", examples: ["sunny day", "drying clothes"] },
+        { name: "Rainfall", definition: "water falling from clouds", examples: ["rain on gardens", "rain in tanks"] },
+        { name: "Wind", definition: "moving air", examples: ["leaves moving", "clothes blown by wind"] },
+        { name: "Cloud cover", definition: "the amount of clouds in the sky", examples: ["cloudy day", "dark rain clouds"] },
+        { name: "Temperature", definition: "how hot or cold a place is", examples: ["hot afternoon", "cool morning"] },
+      ] },
+      { kind: "diagram", title: "Weather symbols", imageUrl: "/images/science/weather-symbols-chart.svg", caption: "Common weather symbols used in school weather charts.", labels: ["sunny", "rainy", "cloudy", "windy", "stormy"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is weather?", answer: "The condition of the atmosphere at a place and time." },
+        { type: "short-answer", prompt: "Name four weather elements.", answer: "Sunshine, rainfall, wind, clouds and temperature." },
+        { type: "multiple-choice", prompt: "Moving air is called:", choices: ["wind", "soil", "tooth", "food"], answer: "wind" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-weather-symbols-chart",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Weather Changes Around Us",
+    subTopicTitle: "Weather Symbols and Weather Charts",
+    lessonTitle: "Weather Symbols and Weather Charts",
+    blocks: [
+      { kind: "definition", term: "weather chart", definition: "is a table or chart used to record weather conditions for different days.", simpleCheck: "A weather chart can show sunny, rainy, cloudy and windy days." },
+      { kind: "categories", title: "Weather records", categories: [
+        { name: "Weather symbols", definition: "small pictures used to show weather", examples: ["sun symbol", "rain cloud", "wind arrow"] },
+        { name: "Daily record", definition: "weather written for each day", examples: ["Monday sunny", "Tuesday rainy"] },
+        { name: "Weekly chart", definition: "weather recorded for a whole week", examples: ["5-day chart", "7-day chart"] },
+      ] },
+      { kind: "characteristics", title: "How to use a weather chart", points: ["Observe the sky and wind carefully.", "Choose the correct symbol.", "Record the day and weather.", "Count how many days were sunny, rainy or cloudy.", "Use the chart to make simple decisions, such as carrying a raincoat."] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is a weather chart?", answer: "A chart used to record weather conditions." },
+        { type: "short-answer", prompt: "Why are weather symbols useful?", answer: "They help show weather quickly and clearly." },
+        { type: "multiple-choice", prompt: "A cloud with raindrops may mean:", choices: ["rainy", "sunny", "dry", "teeth"], answer: "rainy" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-effects-weather",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Weather Changes Around Us",
+    subTopicTitle: "Effects of Weather",
+    lessonTitle: "Effects of Weather",
+    blocks: [
+      { kind: "definition", term: "effect of weather", definition: "is a way weather changes or influences people, animals, plants and activities.", simpleCheck: "Rain can help crops grow, but too much rain can cause flooding." },
+      { kind: "categories", title: "Good and bad effects of weather", categories: [
+        { name: "Good effects", definition: "ways weather helps people and living things", examples: ["rain waters crops", "sun dries clothes", "wind dries grains"] },
+        { name: "Bad effects", definition: "ways weather can cause problems", examples: ["floods", "drought", "storms", "strong wind damage"] },
+        { name: "Weather decisions", definition: "choices people make because of weather", examples: ["carry umbrella", "dry crops in sun", "stay indoors during storm"] },
+      ] },
+      { kind: "characteristics", title: "Weather safety", points: ["Do not play in storms or floods.", "Seek shade in very hot sun.", "Keep warm in cold weather.", "Listen to adults during dangerous weather.", "Farmers use weather information to plan planting and harvesting."] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Give two good effects of rain.", answer: "Rain waters crops, fills water sources and cools the environment." },
+        { type: "short-answer", prompt: "Give two bad effects of weather.", answer: "Floods, drought, storms or strong wind damage." },
+        { type: "multiple-choice", prompt: "What should a learner do during a storm?", choices: ["stay safely indoors", "play under trees", "run in flood water", "touch live wires"], answer: "stay safely indoors" },
+      ] },
+    ],
+  },
+];
+
+const P4_PERSONAL_HYGIENE_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-body-cleanliness",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Personal Hygiene",
+    subTopicTitle: "Body and Clothes Cleanliness",
+    lessonTitle: "Body and Clothes Cleanliness",
+    blocks: [
+      { kind: "definition", term: "personal hygiene", definition: "is the practice of keeping the body, clothes and personal items clean to prevent diseases.", simpleCheck: "Bathing and wearing clean clothes are personal hygiene practices." },
+      { kind: "categories", title: "Personal hygiene practices", categories: [
+        { name: "Body cleanliness", definition: "keeping the body clean", examples: ["bathing", "washing hands", "cutting nails", "combing hair"] },
+        { name: "Clothes cleanliness", definition: "keeping clothes clean and dry", examples: ["washing clothes", "drying clothes in sunshine", "changing dirty clothes"] },
+        { name: "Personal item cleanliness", definition: "keeping personal things clean", examples: ["clean towel", "clean toothbrush", "clean comb"] },
+      ] },
+      { kind: "diagram", title: "Handwashing and hygiene", imageUrl: "/images/science/personal-hygiene-handwashing.svg", caption: "Good hygiene habits include bathing, washing hands, keeping nails short and wearing clean clothes.", labels: ["wash hands", "bath", "clean nails", "clean clothes"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is personal hygiene?", answer: "Keeping the body, clothes and personal items clean." },
+        { type: "short-answer", prompt: "Name four personal hygiene practices.", answer: "Bathing, handwashing, cutting nails, washing clothes, brushing teeth or combing hair." },
+        { type: "multiple-choice", prompt: "Which habit prevents germs from spreading?", choices: ["washing hands", "dirty nails", "sharing dirty towels", "wearing dirty clothes"], answer: "washing hands" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-good-hygiene-disease-prevention",
+    classLevel: "P4",
+    term: "Term I",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Personal Hygiene",
+    subTopicTitle: "Good Hygiene Habits and Disease Prevention",
+    lessonTitle: "Good Hygiene Habits and Disease Prevention",
+    blocks: [
+      { kind: "definition", term: "disease prevention", definition: "means doing things that stop diseases from spreading or making people sick.", simpleCheck: "Washing hands with soap after using a latrine helps prevent disease." },
+      { kind: "categories", title: "When to wash hands", categories: [
+        { name: "After using the latrine", definition: "wash hands to remove germs", examples: ["after toilet", "after cleaning a child"] },
+        { name: "Before eating or cooking", definition: "wash hands before touching food", examples: ["before lunch", "before preparing food"] },
+        { name: "After dirty work", definition: "wash hands after touching dirt or animals", examples: ["after sweeping", "after gardening", "after handling animals"] },
+      ] },
+      { kind: "characteristics", title: "How hygiene prevents disease", points: ["Soap and clean water remove many germs from hands.", "Short nails collect less dirt.", "Clean clothes reduce bad smell and skin problems.", "Clean hair and skin reduce lice and skin infections.", "Good hygiene protects the learner and other people." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "When should you wash hands?", answer: "After using the latrine, before eating, before cooking and after dirty work." },
+        { type: "short-answer", prompt: "Why should nails be kept short?", answer: "Dirt and germs can hide under long nails." },
+        { type: "multiple-choice", prompt: "Which item helps handwashing?", choices: ["soap", "dust", "dirty water", "stone"], answer: "soap" },
+      ] },
+    ],
+  },
+];
+
+const P4_SANITATION_V4: UpperPrimaryLesson[] = [
+  {
+    id: "p4-v4-clean-environment",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Sanitation",
+    subTopicTitle: "Clean Home and School Environment",
+    lessonTitle: "Clean Home and School Environment",
+    blocks: [
+      { kind: "definition", term: "sanitation", definition: "is keeping the home, school and community clean to prevent diseases.", simpleCheck: "Sweeping a compound and using a latrine properly are sanitation practices." },
+      { kind: "categories", title: "Sanitation practices", categories: [
+        { name: "Clean compound", definition: "keeping the home or school surroundings clean", examples: ["sweeping", "slashing grass", "draining stagnant water"] },
+        { name: "Safe waste disposal", definition: "putting waste in the right place", examples: ["rubbish pit", "dustbin", "compost pit"] },
+        { name: "Clean water", definition: "protecting water from dirt and germs", examples: ["covered containers", "protected wells", "boiled water"] },
+        { name: "Latrine use", definition: "using toilets or latrines properly", examples: ["closing latrine door", "washing hands after latrine use"] },
+      ] },
+      { kind: "diagram", title: "Clean environment", imageUrl: "/images/science/p4-sanitation-clean-environment.svg", caption: "A clean home and school environment reduces germs, flies and diseases.", labels: ["latrine", "rubbish pit", "clean water", "sweeping", "handwashing"] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "What is sanitation?", answer: "Keeping home, school and community clean to prevent diseases." },
+        { type: "short-answer", prompt: "Name four sanitation practices.", answer: "Sweeping, safe waste disposal, latrine use, handwashing, clean water or draining stagnant water." },
+        { type: "multiple-choice", prompt: "Where should rubbish be put?", choices: ["dustbin or rubbish pit", "classroom floor", "water source", "roadside"], answer: "dustbin or rubbish pit" },
+      ] },
+    ],
+  },
+  {
+    id: "p4-v4-waste-latrine-clean-water",
+    classLevel: "P4",
+    term: "Term II",
+    curriculumMode: "subject",
+    subject: "Integrated Science",
+    topicTitle: "Sanitation",
+    subTopicTitle: "Waste, Latrine Use and Clean Water",
+    lessonTitle: "Waste, Latrine Use and Clean Water",
+    blocks: [
+      { kind: "definition", term: "safe disposal of waste", definition: "means putting rubbish, faeces and dirty water in the right place so they do not spread diseases.", simpleCheck: "Putting rubbish in a dustbin is safe waste disposal." },
+      { kind: "categories", title: "Sanitation problem solving", categories: [
+        { name: "Solid waste", definition: "rubbish such as papers, peels, tins and plastics", examples: ["dustbin", "rubbish pit", "recycling safe items"] },
+        { name: "Human waste", definition: "faeces and urine that must be put in a latrine or toilet", examples: ["latrine", "toilet"] },
+        { name: "Waste water", definition: "used water from washing or cooking", examples: ["soak pit", "drainage channel", "away from water sources"] },
+        { name: "Safe water", definition: "water protected from dirt and germs", examples: ["boiled water", "covered water container", "protected spring"] },
+      ] },
+      { kind: "characteristics", title: "Why sanitation matters", points: ["Poor sanitation attracts flies, rats and cockroaches.", "Poor sanitation can spread diarrhoea, cholera, typhoid and worms.", "Clean latrines reduce bad smell and flies.", "Covered water containers keep water cleaner.", "Children should report broken latrines, dirty water points and overflowing rubbish pits to adults." ] },
+      { kind: "exercise", title: "Evaluation", questions: [
+        { type: "short-answer", prompt: "Why should water containers be covered?", answer: "To keep out dirt and germs." },
+        { type: "short-answer", prompt: "Name two diseases linked to poor sanitation.", answer: "Diarrhoea, cholera, typhoid or worms." },
+        { type: "multiple-choice", prompt: "Which action improves sanitation?", choices: ["using a latrine properly", "defecating near water", "throwing rubbish anywhere", "leaving food uncovered"], answer: "using a latrine properly" },
+      ] },
+    ],
+  },
+];
+
+const P4_SCIENCE_TOPIC_DATA: Topic[] = [
   {
     "id": "p4-plant-life",
     "themeId": "p4-science-living-things",
@@ -14,6 +805,8 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "estMinutes": 40,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_PLANT_LIFE_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Science beta: built from the NCDC Primary Four Integrated Science Syllabus, April 2009; human science/health review still required before premium-final release. Plant Life helps P4 learners observe, care for health and environment, and explain everyday science clearly.",
       "learningObjectives": [
@@ -275,6 +1068,8 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_GROWING_CROPS_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Science beta: built from the NCDC Primary Four Integrated Science Syllabus, April 2009; human science/health review still required before premium-final release. Growing Crops helps P4 learners observe, care for health and environment, and explain everyday science clearly.",
       "learningObjectives": [
@@ -463,6 +1258,8 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_ANIMAL_LIFE_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Science beta: built from the NCDC Primary Four Integrated Science Syllabus, April 2009; human science/health review still required before premium-final release. Animal Life helps P4 learners observe, care for health and environment, and explain everyday science clearly.",
       "learningObjectives": [
@@ -652,6 +1449,8 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_WEATHER_CHANGES_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Science beta: built from the NCDC Primary Four Integrated Science Syllabus, April 2009; human science/health review still required before premium-final release. Weather Changes Around Us helps P4 learners observe, care for health and environment, and explain everyday science clearly.",
       "learningObjectives": [
@@ -840,6 +1639,8 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_PERSONAL_HYGIENE_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Science beta: built from the NCDC Primary Four Integrated Science Syllabus, April 2009; human science/health review still required before premium-final release. Personal Hygiene helps P4 learners observe, care for health and environment, and explain everyday science clearly.",
       "learningObjectives": [
@@ -1028,6 +1829,8 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_SANITATION_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Science beta: built from the NCDC Primary Four Integrated Science Syllabus, April 2009; human science/health review still required before premium-final release. Sanitation helps P4 learners observe, care for health and environment, and explain everyday science clearly.",
       "learningObjectives": [
@@ -1405,6 +2208,8 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_HUMAN_BODY_ORGANS_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Science beta: built from the NCDC Primary Four Integrated Science Syllabus, April 2009; human science/health review still required before premium-final release. Human Body Organs helps P4 learners observe, care for health and environment, and explain everyday science clearly.",
       "learningObjectives": [
@@ -1593,6 +2398,8 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     "estMinutes": 32,
     "status": "published",
     "reviewStatus": "beta",
+    "upperPrimaryLessons": P4_TEETH_V4,
+    "useOnlyV4Lessons": true,
     "note": {
       "intro": "P4 Science beta: built from the NCDC Primary Four Integrated Science Syllabus, April 2009; human science/health review still required before premium-final release. The Teeth helps P4 learners observe, care for health and environment, and explain everyday science clearly.",
       "learningObjectives": [
@@ -2340,6 +3147,23 @@ export const P4_SCIENCE_TOPICS: Topic[] = [
     ]
   }
 ];
+
+const P4_SCIENCE_TERMS = {
+  "p4-plant-life": "Term I" as const,
+  "p4-growing-crops": "Term I" as const,
+  "p4-animal-life": "Term III" as const,
+  "p4-weather-changes": "Term I" as const,
+  "p4-personal-hygiene": "Term I" as const,
+  "p4-sanitation": "Term II" as const,
+  "p4-communicable-intestinal-diseases-worms": "Term III" as const,
+  "p4-vectors-diseases": "Term III" as const,
+  "p4-accidents-poisoning-first-aid": "Term III" as const,
+  "p4-our-food": "Term II" as const,
+  "p4-human-body-organs": "Term II" as const,
+  "p4-teeth": "Term II" as const
+};
+
+export const P4_SCIENCE_TOPICS: Topic[] = addUpperPrimaryScienceV4(P4_SCIENCE_TOPIC_DATA, "P4", P4_SCIENCE_TERMS);
 
 export function getP4ScienceTopic(id: string): Topic | undefined {
   return P4_SCIENCE_TOPICS.find((topic) => topic.id === id);

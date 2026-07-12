@@ -1,5 +1,209 @@
 # CHANGELOG — Tendo
 
+## v1.8.54 — 2026-07-12 — P4 Science Animal Life, Weather, Hygiene and Sanitation hand-deepened in v4
+
+**Session theme:** Continue P4 Science v4 manual deepening.
+
+**Changed:**
+- Added hand-built v4 lessons for P4 Animal Life.
+- Added hand-built v4 lessons for P4 Weather Changes Around Us.
+- Added hand-built v4 lessons for P4 Personal Hygiene.
+- Added hand-built v4 lessons for P4 Sanitation.
+- Set `useOnlyV4Lessons: true` for all four topics.
+- Updated P4/P5 Science migration docs, checklist, status and handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.53 — 2026-07-12 — P4 Science Growing Crops, Human Body Organs and Teeth hand-deepened in v4
+
+**Session theme:** Continue P4 Science upper-primary v4 manual deepening.
+
+**Changed:**
+- Added hand-built v4 lessons for P4 Growing Crops.
+- Added hand-built v4 lessons for P4 Human Body Organs.
+- Added hand-built v4 lessons for P4 Teeth.
+- Set `useOnlyV4Lessons: true` for all three topics.
+- Updated P4/P5 Science migration docs, checklist, status and handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.52 — 2026-07-12 — P4 Science Plant Life hand-deepened in v4
+
+**Session theme:** Create the first upper-primary Science v4 model topic.
+
+**Changed:**
+- Added hand-built `P4_PLANT_LIFE_V4` lessons in `app/lib/p4-science-topics.ts`.
+- Added `useOnlyV4Lessons` support to `Topic` and `app/lib/v4-science-helpers.ts` so hand-built v4 topics can override generated structural lessons.
+- P4 Plant Life now has five v4 lessons: What are plants, Parts of a Flowering Plant, Flowers/Fruits/Seeds, Germination/Plant Needs, Uses and Care of Plants.
+- Updated P4/P5 Science migration doc, checklist, status and handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.51 — 2026-07-12 — P4/P5 Science structurally migrated to v4
+
+**Session theme:** Enter full migration mode beyond P3.
+
+**Changed:**
+- Added shared upper-primary Science v4 migrator: `app/lib/v4-science-helpers.ts`.
+- Updated `app/lib/p4-science-topics.ts` so all 12 P4 Integrated Science topics render through upper-primary v4.
+- Updated `app/lib/p5-science-topics.ts` so all 9 P5 Integrated Science topics render through upper-primary v4.
+- Preserved the hand-built P5 Poultry Breeds v4 lesson and combined it with generated v4 lessons from existing P5 Poultry subtopics.
+- Added migration note: `docs/ops/v4-p4-p5-science-migration-2026-07-12.md`.
+- Updated checklist, status and handoff.
+
+**Important:**
+- This is a subject-wide structural v4 migration, not final manual deepening of every P4/P5 Science topic.
+- Next manual deepening target should be P4 Science Plant Life.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.50 — 2026-07-12 — P3 Religious Education migrated to v4
+
+**Session theme:** Finish P3 v4 migration before moving to other classes.
+
+**Changed:**
+- Migrated P3 Religious Education CRE/IRE topics to lower-primary v4.
+- `app/lib/p3-re-topics.ts` now sets `contentFormat: "lower-primary-v4"` and creates v4 lessons for all 18 RE topics.
+- `app/lib/content-blocks.ts` now supports `Religious Education` as a lower-primary learning area.
+- P3 RE now uses the mobile-first v4 lesson/module stepper instead of old RE modules.
+- Updated v4 ops note, P3 RE source note, checklist, status and handoff.
+
+**Coverage:**
+- 8 CRE topics migrated to v4.
+- 10 IRE topics migrated to v4.
+- 18 total P3 RE topics migrated to v4.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.49 — 2026-07-12 — P3 thematic v4 manual deepening complete
+
+**Session theme:** Finish the real P3 thematic migration work.
+
+**Changed:**
+- Hand-deepened P3 Theme 7: Managing Resources.
+- Hand-deepened P3 Theme 8: Keeping Peace.
+- Hand-deepened P3 Theme 9: Culture and Gender.
+- Hand-deepened P3 Theme 11: Basic Technology.
+- Hand-deepened P3 Theme 12: Energy.
+- All 12 P3 thematic themes now use lower-primary v4 lesson selector + mobile module stepper.
+- All 36 official P3 thematic sub-themes are represented as child-facing v4 lessons.
+- Updated v4 ops note, checklist, status and handoff.
+
+**Important:**
+- P3 thematic migration to v4 is complete at AI-builder level.
+- P3 RE remains separate and still requires teacher review / possible v4 restructure later.
+- Real-phone review remains needed before premium-final status.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.48 — 2026-07-12 — P3 Themes 2, 3 and 4 hand-deepened in v4
+
+**Session theme:** Continue swift P3 v4 manual deepening.
+
+**Changed:**
+- Added hand-built v4 lessons for Theme 2: Livelihood.
+- Added hand-built v4 lessons for Theme 3: Our Environment.
+- Added hand-built v4 lessons for Theme 4: Environment and Weather.
+- Deepened occupations, social services, service challenges, soil, natural environmental changes, human environmental activities, air, sun, water cycle and water management.
+- Updated v4 ops note, checklist, status and handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.47 — 2026-07-12 — P3 Themes 5 and 10 hand-deepened in v4
+
+**Session theme:** Move swiftly through high-impact P3 manual deepening.
+
+**Changed:**
+- Added hand-built v4 lessons for P3 Theme 5: Living Things — Animals.
+- Deepened living things, animal/bird/insect/fish classification, birds vs insects, domestic/wild birds, useful/harmful insects and animal care.
+- Added hand-built v4 lessons for P3 Theme 10: Health.
+- Deepened disease vectors, diseases spread by vectors, prevention actions and HIV/AIDS kindness/safety wording.
+- Preserved age-appropriate health language and adult/health-worker guidance.
+- Updated v4 ops note, checklist, status and handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.46 — 2026-07-12 — P3 Theme 1 hand-deepened in v4
+
+**Session theme:** Continue real P3 v4 migration and deepen the entry theme.
+
+**Changed:**
+- Added hand-built v4 lessons for P3 Theme 1: Our Sub-county/Division.
+- Deepened Name and Location with sub-county/division definition, map vs picture, map key, compass directions and map drawing activity.
+- Deepened Physical Features with definitions, types, examples, uses and care for natural features.
+- Deepened People with family/clan/tribe/community vocabulary, leader types, leader roles and peaceful leadership role-play.
+- Updated v4 ops note, checklist, status and handoff.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.45 — 2026-07-12 — Full P3 thematic structural v4 migration pass
+
+**Session theme:** Continue the real P3 migration work after locking the mobile-first v4 structure.
+
+**Changed:**
+- Updated `app/lib/p3-thematic-topics.ts` so all 12 P3 thematic routes now use `contentFormat: "lower-primary-v4"`.
+- All P3 thematic pages now render through the v4 lower-primary lesson selector + mobile module stepper.
+- Kept P3 Theme 6 Plants as the hand-deepened model with three complete lessons.
+- Added a generic v4 structural builder for the other 11 themes using the official NCDC map, `SUBTHEME_POLISH`, and each sub-theme visual.
+- Updated v4 ops doc, checklist, status and handoff.
+
+**Important:**
+- This is a structural migration pass across P3, not final manual deepening for every theme.
+- Student-facing format is now correct across P3 thematic pages.
+- Manual deepening and teacher review still remain before premium-final status.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.44 — 2026-07-12 — V4 mobile polish and full P3 Plants migration
+
+**Session theme:** Lock the v4 mobile-first presentation and begin real migration.
+
+**Changed:**
+- Added v4 lesson selector for themes/topics with multiple v4 lessons.
+- Completed full P3 Theme 6 Plants migration to v4:
+  - Plants and Their Habitats
+  - Parts of a Flowering Plant
+  - Crop-growing Practices
+- Tightened mobile UI: compact numbered module chips, no duplicate module numbers inside mobile cards, cleaner lesson selector, and full-width mobile navigation buttons.
+- Improved mobile image handling: v4 image cards allow horizontal swiping and show a hint when labels may be small.
+- Logged `DEV-035`: v4 learner content must render as mobile-first modules/steps.
+- Updated v4 pilot docs and checklist.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
 ## v1.8.43 — 2026-07-12 — V4 mobile module stepper added
 
 **Session theme:** Make the v4 content structure mobile-first and less overwhelming.

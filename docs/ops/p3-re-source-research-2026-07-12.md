@@ -192,3 +192,24 @@ Result:
 ```
 
 Route count moved from 337 pages after full P3 thematic beta to 356 pages after adding `/p3/re` and 18 P3 RE topic pages.
+
+
+---
+
+## V4 migration update — 2026-07-12
+
+P3 Religious Education beta is now rendered using the lower-primary v4 lesson selector + mobile module stepper.
+
+Implementation:
+
+- `app/lib/p3-re-topics.ts` now sets `contentFormat: "lower-primary-v4"`.
+- Each CRE/IRE topic now includes `lowerPrimaryLessons` with direct child-facing blocks.
+- `app/lib/content-blocks.ts` now allows `learningArea: "Religious Education"` for lower-primary lessons.
+
+Build verification:
+
+```txt
+cd app && npm run build
+✓ Compiled successfully
+✓ Generating static pages (356/356)
+```
