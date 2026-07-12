@@ -77,8 +77,11 @@ Immediate sequence:
 5. Continue P4 RE source work: find the full standard P4 CRE/IRE syllabus to confirm the NCDC-abridged map.
 6. Human/teacher review remains open across P3–P7 before premium-final status.
 
-### Post-P3 scope note
-Founder is considering closing the current Tendo primary expansion at **P3–P7** for this product cycle. Do **not** start P2/P1 in this same app flow unless the founder explicitly confirms a new lower-primary plan. If P1/P2 are built later, treat them as a separate lower-primary track/product decision with fresh NCDC research and structure docs.
+### Content architecture correction — READ BEFORE MORE CONTENT BUILD
+Founder review identified a serious content-structure issue: adding more modules does not automatically make lessons full or child-friendly. P3/P4/P5 especially must stop showing curriculum meta-copy such as “expected outcome”, “theme guide”, “what you will learn” and “this part helps a learner...”. Learner-facing lessons need direct teaching blocks: definitions, types/classifications, examples, characteristics/uses and exercises. This is documented in `docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md` and logged as `DEV-033`. The first v4 pilot is now implemented on `/p3/theme/p3-theme-6-plants` and `/science/p5/p5-keeping-poultry-bees`.
+
+### P1/P2 scope note
+Founder has decided **P1 and P2 will eventually be in the same app**, but they are deferred. Do **not** start P1/P2 now. First restructure P3–P7 student-facing content using the v4 architecture. P1/P2 will need their own later NCDC research and lower-primary phonics/audio/local-language implementation plan.
 
 ### Push status
 Founder has **not pushed** the current milestone bundle yet. Do not assume the remote repo has these latest changes. When founder is ready, provide a clear overwrite/add file list for the whole milestone.
@@ -95,6 +98,8 @@ Founder has **not pushed** the current milestone bundle yet. Do not assume the r
 - `docs/ops/p3-thematic-beta-completion-2026-07-12.md` — P3 full thematic beta completion note.
 - `docs/ops/p3-review-polish-pass-2026-07-12.md` — P3 thematic polish + RE beta review pass.
 - `docs/ops/p3-re-source-research-2026-07-12.md` — P3 RE trusted source register and beta build note.
+- `docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md` — required v4 content structure correction.
+- `docs/ops/v4-content-architecture-pilot-2026-07-12.md` — first v4 implementation pilot.
 - `docs/ops/ncdc-p4-curriculum-research-2026-07-09.md` — P4 curriculum research, verified Mathematics correction, P4 RE abridged-map limitation, and full P4 live-beta rollout.
 - `docs/ops/p4-live-beta-completion-audit-2026-07-09.md` — P4 completion audit, file list, source limits and review checklist.
 - `docs/ops/p4-p7-live-beta-review-pass-2026-07-09.md` — P4–P7 AI-level review pass before starting the next class.

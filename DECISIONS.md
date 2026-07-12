@@ -4,6 +4,34 @@
 
 ---
 
+## DEV-034 · 2026-07-12 · P1 and P2 remain in the same app, but are deferred until after P3–P7 restructure
+
+**Context:** After discussing whether to stop at P3 or split lower primary separately, the founder clarified that P1 and P2 should eventually be included in the same Tendo app, but not now.
+
+**Decision:** Keep P1/P2 as future same-app classes, but defer them until P3–P7 student-facing content is restructured using the NCDC-native v4 content architecture.
+
+**Reasoning:** P1/P2 need even more specialised lower-primary treatment: phonics, audio, local/familiar language, early literacy and very simple child-facing flows. Starting them before fixing P3–P7 would multiply the current structure problem.
+
+**Implementation effect:** Do not start P1/P2 research or routes yet. Current active work is v4 restructuring for P3, P4, P5, P6 and P7.
+
+**Tracked across:** `STATUS.md`, `HANDOFF.md`, `CHECKLIST.md`, `docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md`.
+
+
+## DEV-033 · 2026-07-12 · NCDC-native content architecture v4: fullness means direct lesson blocks, not meta modules
+
+**Context:** Founder review found that the attempt to make content “full” by adding more modules and learning-objective wrappers is not working well, especially for P3, P4 and P5. The content often reads like a teacher curriculum guide rather than direct pupil teaching.
+
+**Decision:** Move to an NCDC-native v4 content architecture. For learner-facing screens, content must be structured as direct lesson blocks: definitions, types/classifications, examples, characteristics/properties/uses, diagrams and exercises. Curriculum metadata such as expected outcomes, theme guides and “what you will learn” should remain internal/reviewer context, not the main child-facing lesson.
+
+**Lower primary rule:** P1–P3 remain thematic, but the child-facing flow should be vocabulary/story/definition/types/examples/phonics/numeracy/activity/exercise, not meta curriculum explanations.
+
+**Upper primary rule:** P4–P7 remain subject-based, with each sub-topic rendered in chalkboard-note style: definition → types/classifications → examples/illustrations → characteristics/properties/uses → evaluation.
+
+**Implementation effect:** Stop expanding lower/middle-primary content using the current meta-module pattern. Next work should pilot the v4 block renderer on one P3 sub-theme and one P5 Science sub-topic before broad migration.
+
+**Tracked across:** `docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md`, `STATUS.md`, `HANDOFF.md`, `CHECKLIST.md`, `CHANGELOG.md`.
+
+
 ## DEV-032 · 2026-07-12 · P3 RE beta may use trusted faith sources under NCDC map control
 
 **Context:** P3 Religious Education is outside the thematic matrix, but the official NCDC P3 PDF includes CRE and IRE topic maps. The extracted map needed review, but the founder clarified that valid CRE/IRE information already exists in trusted sources and should be gathered to build the best internal beta before teacher verification.

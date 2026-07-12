@@ -18,6 +18,24 @@
 
 
 
+## Phase 32 — NCDC-native Content Architecture v4 Correction
+- [x] Founder review identified that “more modules” is not enough and often makes content less child-friendly
+- [x] Document v4 architecture (`docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md`)
+- [x] Log `DEV-033` decision in `DECISIONS.md`
+- [x] Add typed v4 content block model (`app/lib/content-blocks.ts`)
+- [x] Add lower-primary thematic lesson renderer (`LowerPrimaryLessonView`)
+- [x] Add upper-primary subject lesson renderer (`UpperPrimaryLessonView`)
+- [x] Convert P3 pilot: Living Things: Plants → Parts of a Flowering Plant and their Uses
+- [x] Convert P5 Science pilot: Keeping Poultry and Bees → Breeds of Poultry
+- [x] Wire `TopicTabs` to render v4 lessons before legacy v3 modules when `contentFormat` is set
+- [x] Hide old P3 expected-outcome/theme-guide meta panel on v4 lower-primary pilot route
+- [x] Document pilot (`docs/ops/v4-content-architecture-pilot-2026-07-12.md`)
+- [x] Build passed after v4 pilot (`npm install && npm run build`, 356 static pages)
+- [ ] Founder review v4 pilot before broad migration (`/p3/theme/p3-theme-6-plants`, `/science/p5/p5-keeping-poultry-bees`)
+- [ ] Migrate P3/P4/P5 away from meta-module learner UI after pilot approval
+
+---
+
 ## Phase 31 — P3 NCDC Research and Mapping
 - [x] Research official NCDC P3 Thematic Curriculum source
 - [x] Confirm P3 is thematic/lower-primary, not subject-based like P4–P7

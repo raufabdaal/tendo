@@ -1,3 +1,4 @@
+import type { LowerPrimaryLesson } from "@/lib/content-blocks";
 import type { QuizQuestion, Subtopic, SubtopicModule, Topic } from "@/lib/topics";
 
 // P3 Thematic live beta content layer.
@@ -1678,9 +1679,135 @@ function buildQuiz(theme: P3ThemeBlueprint): QuizQuestion[] {
   ];
 }
 
+
+function buildLowerPrimaryV4Pilot(theme: P3ThemeBlueprint): LowerPrimaryLesson[] | undefined {
+  if (theme.id !== "p3-theme-6-plants") return undefined;
+  return [
+    {
+      id: "p3-v4-parts-flowering-plant-uses",
+      classLevel: "P3",
+      term: "Term II",
+      curriculumMode: "thematic",
+      themeTitle: "Living Things: Plants in Our Sub-county/Division",
+      subThemeTitle: "Parts of a Flowering Plant and their Uses",
+      lessonTitle: "Parts of a Flowering Plant",
+      learningArea: "Integrated Theme",
+      blocks: [
+        {
+          kind: "vocabulary",
+          title: "New words",
+          words: [
+            { word: "plant", meaning: "a living thing that grows in soil or water" },
+            { word: "root", meaning: "the part of a plant that holds it in the soil and takes in water" },
+            { word: "stem", meaning: "the part that holds the plant upright and carries water" },
+            { word: "leaf", meaning: "the part that helps the plant make food" },
+            { word: "flower", meaning: "the part that can form fruits and seeds" },
+            { word: "seed", meaning: "the part that can grow into a new plant" },
+          ],
+        },
+        {
+          kind: "story",
+          title: "Read and talk",
+          text: "Musa and Amina planted beans near their home. After some days, small plants came out of the soil. The plants had roots, stems and leaves. Later, some plants made flowers, fruits and seeds.",
+          questions: [
+            "What did Musa and Amina plant?",
+            "Name two parts of the plant in the story.",
+            "What can a seed do?",
+          ],
+        },
+        {
+          kind: "definition",
+          term: "plant",
+          definition: "is a living thing that usually grows in soil or water. Most plants have roots, stems and leaves. Some plants have flowers, fruits and seeds.",
+          simpleCheck: "Is a bean plant a plant? Yes, because it grows and has plant parts.",
+        },
+        {
+          kind: "identification",
+          title: "Main parts of a flowering plant",
+          points: [
+            "Roots hold the plant in the soil and take in water.",
+            "The stem holds the plant upright and carries water to other parts.",
+            "Leaves help the plant make food.",
+            "Flowers help the plant form fruits and seeds.",
+            "Fruits protect seeds.",
+            "Seeds can grow into new plants.",
+          ],
+        },
+        {
+          kind: "diagram",
+          title: "Look at the plant",
+          imageUrl: "/images/p3/p3-6-2-parts-flowering-plant-uses.svg",
+          caption: "A P3 study card for roots, stem, leaves, flowers, fruits and seeds.",
+          labels: ["roots", "stem", "leaves", "flowers", "fruits", "seeds"],
+        },
+        {
+          kind: "categories",
+          title: "Useful plant parts",
+          categories: [
+            { name: "Food parts", definition: "plant parts people can eat", examples: ["cassava roots", "cabbage leaves", "mango fruits", "bean seeds"] },
+            { name: "Medicine parts", definition: "plant parts people may use as medicine with adult guidance", examples: ["aloe vera leaves", "neem leaves"] },
+            { name: "Fuel parts", definition: "plant parts people may use for cooking fuel", examples: ["dry wood", "charcoal from trees"], notes: ["Trees should be replaced by planting more trees."] },
+          ],
+        },
+        {
+          kind: "examples",
+          title: "Plants around us",
+          examples: [
+            { name: "beans", explanation: "seeds are eaten", localContext: "common in many homes and gardens" },
+            { name: "maize", explanation: "seeds are eaten", localContext: "grown in many parts of Uganda" },
+            { name: "cassava", explanation: "roots are eaten", localContext: "a common food crop" },
+            { name: "mango", explanation: "fruits are eaten", localContext: "often found in compounds and gardens" },
+          ],
+        },
+        {
+          kind: "phonics",
+          sound: "/pl/",
+          words: ["plant", "play", "plate"],
+        },
+        {
+          kind: "numeracy",
+          skill: "counting and grouping plant parts",
+          examples: [
+            "Count 6 leaves on a plant drawing.",
+            "Put 12 bean seeds into 3 equal groups.",
+            "Compare two plants: which one has more leaves?",
+          ],
+          exercise: [
+            "Draw 8 seeds and circle them in groups of 2.",
+            "If one plant has 5 leaves and another has 3 leaves, how many leaves are there altogether?",
+          ],
+        },
+        {
+          kind: "activity",
+          title: "Activity: draw and label",
+          instructions: [
+            "Look at a safe plant with your teacher or parent.",
+            "Draw the plant in your book.",
+            "Label roots, stem, leaves and flower if they are visible.",
+            "Write one sentence: A plant is a living thing.",
+          ],
+          safetyNote: "Do not uproot plants without permission. Wash hands after touching soil.",
+        },
+        {
+          kind: "exercise",
+          title: "Exercise",
+          questions: [
+            { type: "oral", prompt: "What is a plant?", answer: "A plant is a living thing that grows in soil or water." },
+            { type: "written", prompt: "Name three parts of a flowering plant.", answer: "Roots, stem, leaves, flowers, fruits or seeds." },
+            { type: "matching", prompt: "Match: roots, leaves, seeds — make food, hold plant, grow into new plants." },
+            { type: "fill-blank", prompt: "A seed can grow into a new _____.", answer: "plant" },
+            { type: "multiple-choice", prompt: "Which plant part helps a plant make food?", choices: ["leaf", "stone", "shoe", "chair"], answer: "leaf" },
+          ],
+        },
+      ],
+    },
+  ];
+}
+
 function buildTopic(theme: P3ThemeBlueprint): Topic {
   const subtopicTitles = theme.subthemes.map((subtheme) => subtheme.title);
   const value = THEME_VALUES[theme.id] ?? "use respectful words and safe actions";
+  const lowerPrimaryLessons = buildLowerPrimaryV4Pilot(theme);
 
   return {
     id: theme.id,
@@ -1690,6 +1817,7 @@ function buildTopic(theme: P3ThemeBlueprint): Topic {
     estMinutes: theme.minutes,
     status: "published",
     reviewStatus: "beta",
+    ...(lowerPrimaryLessons ? { contentFormat: "lower-primary-v4" as const, lowerPrimaryLessons: [...lowerPrimaryLessons] } : {}),
     note: {
       intro: `${BETA_NOTICE} ${theme.title} is a ${theme.term} theme. Expected learning outcome: ${theme.outcome}`,
       learningObjectives: [

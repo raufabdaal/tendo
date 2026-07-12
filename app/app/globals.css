@@ -4178,3 +4178,170 @@ input, select, textarea, button { max-width: 100%; }
     font-size: 24px;
   }
 }
+
+/* NCDC-native content architecture v4 pilot */
+.v4-lesson-shell {
+  display: grid;
+  gap: 18px;
+  margin: 18px 0 28px;
+}
+
+.v4-lesson-card {
+  background: #fffdf8;
+  border: 1px solid rgba(124, 92, 45, 0.18);
+  border-radius: 24px;
+  padding: clamp(18px, 4vw, 30px);
+  box-shadow: 0 18px 50px rgba(44, 31, 15, 0.08);
+}
+
+.v4-kicker {
+  color: #805b25;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.v4-subtitle {
+  color: #6a5b4a;
+  margin-top: -6px;
+  margin-bottom: 20px;
+}
+
+.v4-block-list {
+  display: grid;
+  gap: 14px;
+}
+
+.v4-block {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: start;
+  background: #ffffff;
+  border: 1px solid rgba(36, 52, 71, 0.08);
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.v4-block-number {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: #17212b;
+  color: #fff;
+  font-weight: 900;
+  font-size: 0.92rem;
+}
+
+.v4-block-body h3 {
+  margin: 0 0 10px;
+  color: #17212b;
+  font-size: clamp(1.05rem, 3vw, 1.28rem);
+}
+
+.v4-definition,
+.v4-story-text,
+.v4-check,
+.v4-answer,
+.v4-safety {
+  margin: 0 0 10px;
+  line-height: 1.65;
+  color: #253443;
+}
+
+.v4-check {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 14px;
+  padding: 10px 12px;
+}
+
+.v4-safety {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 14px;
+  padding: 10px 12px;
+  font-weight: 700;
+}
+
+.v4-vocab-grid,
+.v4-category-grid,
+.v4-example-list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.v4-vocab-card,
+.v4-category-card,
+.v4-example-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 12px;
+  display: grid;
+  gap: 5px;
+}
+
+.v4-vocab-card strong,
+.v4-example-card strong,
+.v4-category-card h4 {
+  color: #17212b;
+  margin: 0;
+}
+
+.v4-vocab-card span,
+.v4-example-card span,
+.v4-category-card p,
+.v4-category-card li,
+.v4-simple-list li,
+.v4-exercise-list li {
+  color: #334155;
+  line-height: 1.55;
+}
+
+.v4-vocab-card em,
+.v4-example-card em,
+.v4-vocab-card small,
+.v4-exercise-list small {
+  color: #64748b;
+  font-style: normal;
+}
+
+.v4-simple-list,
+.v4-exercise-list,
+.v4-category-card ul,
+.v4-note-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.v4-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.v4-pill-row span {
+  background: #eef2ff;
+  color: #3730a3;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+@media (max-width: 560px) {
+  .v4-block {
+    grid-template-columns: 1fr;
+  }
+  .v4-block-number {
+    width: 30px;
+    height: 30px;
+  }
+}

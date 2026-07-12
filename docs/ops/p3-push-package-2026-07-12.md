@@ -293,3 +293,31 @@ Still required:
 Founder is considering closing the current product-cycle primary expansion at **P3–P7** and **not** continuing downward into P2/P1 inside the same app flow.
 
 Do not start P2/P1 unless there is a fresh documented decision. If P1/P2 are built later, treat them as a separate lower-primary track/product decision with its own NCDC research and architecture.
+
+---
+
+## Superseded push guidance — v4 architecture correction
+
+After this push package was prepared, founder review identified a deeper content-structure issue: the P3/P4/P5 content should not be pushed as if the current meta-module structure is final.
+
+New source of truth:
+
+- `docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md`
+- `docs/ops/v4-content-architecture-pilot-2026-07-12.md`
+
+Current recommendation:
+
+- Do not push with the message “P3 complete” as a final content milestone.
+- If pushing now, push as an architecture/pilot milestone, not premium-final content.
+- Suggested current commit message:
+
+```txt
+Content: add NCDC-native v4 lesson pilot
+```
+
+Current build after v4 pilot:
+
+```txt
+✓ Compiled successfully
+✓ Generating static pages (356/356)
+```

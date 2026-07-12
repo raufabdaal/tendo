@@ -18,24 +18,30 @@ export default async function P3ThemePage({ params }: { params: Promise<{ theme:
       <Link href="/p3-home" className="back">← P3 Home</Link>
       <div className="eyebrow">P3 · Thematic beta · NCDC lower primary</div>
       <h1>{topic.title}</h1>
-      <p className="lead">This theme combines numeracy, literacy, English, environment/social content, creative activity, life skills and values.</p>
+      <p className="lead">
+        {topic.contentFormat === "lower-primary-v4"
+          ? "Open the lesson below and learn step by step with words, examples, pictures and exercises."
+          : "This theme combines numeracy, literacy, English, environment/social content, creative activity, life skills and values."}
+      </p>
 
-      <section className="study-card p3-theme-overview" aria-label="P3 theme overview">
-        <div className="eyebrow">Expected outcome and theme guide</div>
-        <p>{topic.note.intro}</p>
-        {topic.note.learningObjectives && (
-          <>
-            <h2>What you will learn</h2>
-            <ul>
-              {topic.note.learningObjectives.map((objective) => <li key={objective}>{objective}</li>)}
-            </ul>
-          </>
-        )}
-        <h2>Theme reminders</h2>
-        <ul>
-          {topic.note.whatYouNeedToKnow.slice(3).map((point) => <li key={point}>{point}</li>)}
-        </ul>
-      </section>
+      {topic.contentFormat !== "lower-primary-v4" && (
+        <section className="study-card p3-theme-overview" aria-label="P3 theme overview">
+          <div className="eyebrow">Expected outcome and theme guide</div>
+          <p>{topic.note.intro}</p>
+          {topic.note.learningObjectives && (
+            <>
+              <h2>What you will learn</h2>
+              <ul>
+                {topic.note.learningObjectives.map((objective) => <li key={objective}>{objective}</li>)}
+              </ul>
+            </>
+          )}
+          <h2>Theme reminders</h2>
+          <ul>
+            {topic.note.whatYouNeedToKnow.slice(3).map((point) => <li key={point}>{point}</li>)}
+          </ul>
+        </section>
+      )}
 
       <TopicTabs topic={topic} />
 

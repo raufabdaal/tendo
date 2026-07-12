@@ -53,13 +53,15 @@ Reviewers are a second safety layer, not a replacement for our own quality work.
 13. **`docs/ops/p3-thematic-beta-completion-2026-07-12.md`** — P3 all-themes beta completion note.
 14. **`docs/ops/p3-review-polish-pass-2026-07-12.md`** — P3 internal review/polish and RE beta summary.
 15. **`docs/ops/p3-re-source-research-2026-07-12.md`** — trusted CRE/IRE source register.
+16. **`docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md`** — new required student-facing content structure.
+17. **`docs/ops/v4-content-architecture-pilot-2026-07-12.md`** — first v4 pilot implementation.
 
 ## You have 60 seconds. What's this project now?
 
 - **Primary user:** students.
 - **Paying customer:** premium parents/guardians who want academic ROI.
 - **Target commercial assumption:** families who can afford around **UGX 50,000/month** for a serious study product.
-- **Current priority:** teacher review of P3 thematic + RE beta. `/p3-home`, all 12 `/p3/theme/[theme]` pages, `/p3/re`, and 18 `/p3/re/[topic]` pages are live in beta. P3 is thematic lower-primary curriculum; do not build subject-style P3 routes.
+- **Current priority:** restructure P3–P7 student-facing content using NCDC-native v4 blocks. First pilot routes are `/p3/theme/p3-theme-6-plants` and `/science/p5/p5-keeping-poultry-bees`. P1/P2 will be in the same app later, but not until P3–P7 structure is fixed.
 - **Teacher dashboard:** useful but no longer central.
 - **Parent dashboard:** strategically important because the parent pays and needs visibility.
 - **Trainup status:** archived historical context. Do not treat Trainup as the active product path.

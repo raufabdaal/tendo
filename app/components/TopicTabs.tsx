@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { Topic, TopicVisual } from "@/lib/topics";
 import TopicDiagram from "@/components/TopicDiagram";
 import ReportContentIssue from "@/components/ReportContentIssue";
+import { LowerPrimaryLessonView, UpperPrimaryLessonView } from "@/components/V4LessonViews";
 
 type Tab = "watch" | "read";
 
@@ -208,7 +209,11 @@ export default function TopicTabs({ topic }: { topic: Topic }) {
             </div>
           )}
 
-          {topic.subtopics ? (
+          {topic.contentFormat === "lower-primary-v4" && topic.lowerPrimaryLessons ? (
+            <LowerPrimaryLessonView lessons={topic.lowerPrimaryLessons} />
+          ) : topic.contentFormat === "upper-primary-v4" && topic.upperPrimaryLessons ? (
+            <UpperPrimaryLessonView lessons={topic.upperPrimaryLessons} />
+          ) : topic.subtopics ? (
             <ModularTopicView
               topic={topic}
               selectedSubtopicId={selectedSubtopicId}
@@ -624,6 +629,42 @@ function VisualPreview({ kind }: { kind: NonNullable<NonNullable<Topic["note"]["
 function buildScript(topic: Topic): string {
   const parts: string[] = [];
   parts.push(topic.title + ".");
+  if (topic.contentFormat === "lower-primary-v4" && topic.lowerPrimaryLessons) {
+    for (const lesson of topic.lowerPrimaryLessons) {
+      parts.push(lesson.lessonTitle + ".");
+      parts.push(`${lesson.themeTitle}. ${lesson.subThemeTitle}.`);
+      for (const block of lesson.blocks) {
+        parts.push(block.kind + ".");
+        if (block.kind === "vocabulary") parts.push(block.words.map((word) => `${word.word}: ${word.meaning}`).join(" "));
+        if (block.kind === "story") parts.push(block.text);
+        if (block.kind === "definition") parts.push(`${block.term}. ${block.definition}`);
+        if (block.kind === "identification") parts.push(block.points.join(" "));
+        if (block.kind === "categories") parts.push(block.categories.map((category) => `${category.name}. ${category.definition}. Examples: ${category.examples.join(", ")}.`).join(" "));
+        if (block.kind === "examples") parts.push(block.examples.map((example) => `${example.name}. ${example.explanation ?? ""}`).join(" "));
+        if (block.kind === "phonics") parts.push(`${block.sound}. ${block.words.join(", ")}`);
+        if (block.kind === "numeracy") parts.push(`${block.skill}. ${block.examples.join(" ")} ${block.exercise.join(" ")}`);
+        if (block.kind === "activity") parts.push(`${block.title}. ${block.instructions.join(" ")}`);
+        if (block.kind === "exercise") parts.push(block.questions.map((question) => question.prompt).join(" "));
+      }
+    }
+    return parts.join(" ");
+  }
+  if (topic.contentFormat === "upper-primary-v4" && topic.upperPrimaryLessons) {
+    for (const lesson of topic.upperPrimaryLessons) {
+      parts.push(lesson.lessonTitle + ".");
+      parts.push(`${lesson.topicTitle}. ${lesson.subTopicTitle}.`);
+      for (const block of lesson.blocks) {
+        parts.push(block.kind + ".");
+        if (block.kind === "definition") parts.push(`${block.term}. ${block.definition}`);
+        if (block.kind === "categories") parts.push(block.categories.map((category) => `${category.name}. ${category.definition}. Examples: ${category.examples.join(", ")}.`).join(" "));
+        if (block.kind === "examples") parts.push(block.examples.map((example) => `${example.name}. ${example.explanation ?? ""}`).join(" "));
+        if (block.kind === "characteristics" || block.kind === "uses") parts.push(block.points.join(" "));
+        if (block.kind === "worked-example") parts.push(`${block.question}. ${block.steps.join(" ")} ${block.answer}`);
+        if (block.kind === "exercise") parts.push(block.questions.map((question) => question.prompt).join(" "));
+      }
+    }
+    return parts.join(" ");
+  }
   parts.push(topic.note.intro);
   if (topic.subtopics) {
     parts.push("This topic is studied in parts.");

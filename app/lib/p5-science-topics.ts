@@ -1,9 +1,122 @@
+import type { UpperPrimaryLesson } from "@/lib/content-blocks";
 import type { Topic } from "@/lib/topics";
 
 // P5 Integrated Science enriched beta content layer.
 // Source map: content/curriculum/p5-science.json
 // Rule: NCDC first, build second. This file follows the researched NCDC P5 Integrated Science topic structure.
 // Status: live beta until checked by human science/health reviewers.
+
+
+const P5_POULTRY_BREEDS_V4: UpperPrimaryLesson = {
+  id: "p5-v4-breeds-of-poultry",
+  classLevel: "P5",
+  term: "Term I",
+  curriculumMode: "subject",
+  subject: "Integrated Science",
+  topicTitle: "Keeping Poultry and Bees",
+  subTopicTitle: "Breeds of Poultry",
+  lessonTitle: "Breeds of Poultry",
+  blocks: [
+    {
+      kind: "definition",
+      term: "poultry",
+      definition: "are domestic birds kept by people for eggs, meat, feathers, manure or income.",
+      simpleCheck: "Chickens, ducks, turkeys and geese are poultry birds.",
+    },
+    {
+      kind: "categories",
+      title: "Types of poultry breeds",
+      categories: [
+        {
+          name: "Local / indigenous breeds",
+          definition: "These are poultry birds commonly kept in local communities and adapted to local conditions.",
+          examples: ["local chickens", "local ducks", "local turkeys"],
+          notes: ["They are usually hardy and can survive local conditions better than many exotic birds.", "They often lay fewer eggs than improved exotic layers."],
+        },
+        {
+          name: "Exotic / improved breeds",
+          definition: "These are breeds introduced or improved for higher production of eggs or meat.",
+          examples: ["White Leghorn", "Light Sussex", "Rhode Island Red", "Plymouth Rock"],
+          notes: ["They usually need better feeding, housing and disease control.", "Examples must be verified with Ugandan textbooks/teacher review before premium-final status."],
+        },
+      ],
+    },
+    {
+      kind: "categories",
+      title: "Breeds grouped by purpose",
+      categories: [
+        {
+          name: "Layers",
+          definition: "Layers are poultry birds kept mainly for laying eggs.",
+          examples: ["White Leghorn", "Light Sussex"],
+          notes: ["Layers usually have smaller bodies than meat birds.", "They need good feeds rich in nutrients for egg production."],
+        },
+        {
+          name: "Broilers",
+          definition: "Broilers are poultry birds kept mainly for meat production.",
+          examples: ["commercial broiler chickens"],
+          notes: ["They grow fast when well fed and well housed.", "Specific breed names should be checked with a P5 Science teacher/textbook."],
+        },
+        {
+          name: "Dual-purpose breeds",
+          definition: "Dual-purpose birds are kept for both eggs and meat.",
+          examples: ["Rhode Island Red", "Plymouth Rock"],
+          notes: ["They are useful where farmers want both eggs and meat."],
+        },
+      ],
+    },
+    {
+      kind: "examples",
+      title: "Examples of poultry birds",
+      examples: [
+        { name: "chicken", explanation: "kept for eggs and meat", localContext: "common in many Ugandan homes" },
+        { name: "duck", explanation: "kept for eggs and meat", localContext: "often kept near wet places" },
+        { name: "turkey", explanation: "kept for meat", localContext: "kept by some farmers" },
+        { name: "goose", explanation: "kept for meat, eggs or guarding compounds", localContext: "less common than chickens" },
+      ],
+    },
+    {
+      kind: "characteristics",
+      title: "Characteristics of exotic poultry breeds",
+      points: [
+        "They usually produce more eggs or meat than local birds when well managed.",
+        "They need good housing, balanced feeds and clean water.",
+        "They may be more affected by diseases if not well cared for.",
+        "Some layers do not sit well on eggs, so farmers may use incubators or other hens for hatching.",
+      ],
+    },
+    {
+      kind: "uses",
+      title: "Uses / importance of poultry",
+      points: [
+        "Poultry provide eggs for food and sale.",
+        "Poultry provide meat.",
+        "Poultry droppings can be used as manure.",
+        "Poultry keeping provides income to farmers.",
+        "Feathers may be used for some household or craft purposes.",
+      ],
+    },
+    {
+      kind: "diagram",
+      title: "Poultry summary card",
+      imageUrl: "/images/science/p5-poultry-bees.svg",
+      caption: "A P5 Science study card showing poultry and bee keeping reminders.",
+      labels: ["local breeds", "exotic breeds", "layers", "broilers", "dual-purpose"],
+    },
+    {
+      kind: "exercise",
+      title: "Evaluation",
+      questions: [
+        { type: "short-answer", prompt: "What is poultry?", answer: "Domestic birds kept for eggs, meat, feathers, manure or income." },
+        { type: "short-answer", prompt: "Give two examples of poultry birds.", answer: "Chicken, duck, turkey or goose." },
+        { type: "short-answer", prompt: "What is a layer?", answer: "A bird kept mainly for laying eggs." },
+        { type: "short-answer", prompt: "What is a broiler?", answer: "A bird kept mainly for meat production." },
+        { type: "short-answer", prompt: "State one difference between local and exotic poultry breeds.", answer: "Exotic breeds often produce more but need better feeding and housing." },
+        { type: "multiple-choice", prompt: "Which breed group is kept mainly for eggs?", choices: ["layers", "broilers", "goats", "fish"], answer: "layers" },
+      ],
+    },
+  ],
+};
 
 export const P5_SCIENCE_TOPICS: Topic[] = [
   {
@@ -14,6 +127,8 @@ export const P5_SCIENCE_TOPICS: Topic[] = [
     "estMinutes": 42,
     "status": "published",
     "reviewStatus": "beta",
+    "contentFormat": "upper-primary-v4",
+    "upperPrimaryLessons": [P5_POULTRY_BREEDS_V4],
     "note": {
       "intro": "P5 Science beta: built from researched NCDC Primary Five Integrated Science Set One structure; human science/health review still required before premium-final release. Keeping Poultry and Bees connects science ideas to health, farming, environment and daily life.",
       "learningObjectives": [

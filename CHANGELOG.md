@@ -1,5 +1,43 @@
 # CHANGELOG — Tendo
 
+## v1.8.42 — 2026-07-12 — V4 lesson block pilot implemented
+
+**Session theme:** Move from documentation to implementation of the NCDC-native v4 content structure.
+
+**Changed:**
+- Added typed v4 content block model: `app/lib/content-blocks.ts`.
+- Extended `Topic` to support `contentFormat`, `lowerPrimaryLessons` and `upperPrimaryLessons`.
+- Added v4 renderers in `app/components/V4LessonViews.tsx`.
+- Updated `TopicTabs.tsx` to render v4 lessons before legacy v3 modular content.
+- Added v4 styles to `app/app/globals.css`.
+- Converted P3 pilot route: `/p3/theme/p3-theme-6-plants` → Parts of a Flowering Plant and their Uses.
+- Converted P5 Science pilot route: `/science/p5/p5-keeping-poultry-bees` → Breeds of Poultry.
+- Hid old P3 expected-outcome/theme-guide meta panel on the v4 lower-primary pilot.
+- Added pilot note: `docs/ops/v4-content-architecture-pilot-2026-07-12.md`.
+- Logged `DEV-034`: P1/P2 will eventually be in the same app, but are deferred until P3–P7 restructure is fixed.
+
+**Verified:**
+- `cd app && npm install && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.41 — 2026-07-12 — NCDC-native content architecture v4 correction documented
+
+**Session theme:** Founder review identified a major structure problem: fullness cannot mean more meta modules. Lessons must teach children directly.
+
+**Changed:**
+- Added `docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md`.
+- Logged `DEV-033`: learner-facing content must use direct lesson blocks, not curriculum meta wrappers.
+- Updated `STATUS.md`, `HANDOFF.md` and `CHECKLIST.md` to make the v4 correction the next active work before premium-final push.
+
+**Important:**
+- Do not keep expanding P3/P4/P5 with the current meta-module pattern.
+- Pilot v4 on one P3 sub-theme and one P5 Science sub-topic before broad migration.
+- P3 remains thematic because NCDC lower primary is thematic, but the learner UI should be direct: vocabulary, story, definitions, types, examples, phonics/numeracy, activity and exercise.
+- P4–P7 should use chalkboard-note structure: definition, classifications, examples, characteristics/uses, diagrams and evaluation.
+
+---
+
 ## v1.8.40 — 2026-07-12 — P3 push package prepared
 
 **Session theme:** Clear the P3 milestone for manual overwrite and push.

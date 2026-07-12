@@ -8,6 +8,8 @@
 //   "draft"     → internal only, not ready for beta
 // In Phase 3 we display a small "Reviewed: pending" pill on draft topics.
 
+import type { ContentFormat, LowerPrimaryLesson, UpperPrimaryLesson } from "@/lib/content-blocks";
+
 export type Choice = string;
 
 export interface QuizQuestion {
@@ -97,6 +99,12 @@ export interface Topic {
   reviewStatus: "verified" | "beta" | "draft";
   /** YouTube / direct video URL to embed in the Watch tab. Undefined = placeholder. */
   videoUrl?: string;
+  /** v4 content format pilot/migration marker. */
+  contentFormat?: ContentFormat;
+  /** Lower-primary v4 child-facing lessons. */
+  lowerPrimaryLessons?: LowerPrimaryLesson[];
+  /** Upper-primary v4 child-facing lessons. */
+  upperPrimaryLessons?: UpperPrimaryLesson[];
   /** Modular v3 content. If present, the Read tab renders subtopic directory + module viewer. */
   subtopics?: Subtopic[];
 }

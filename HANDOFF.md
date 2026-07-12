@@ -41,7 +41,9 @@ Reviewers are a second safety layer, not a replacement for our own quality work.
 Build Tendo as a **premium parent-funded, student-first app**. Content quality is now the product. Parent ROI matters more than teacher-dashboard expansion. Trainup/school-first work is archived.
 
 ### Active milestone
-**P3 thematic + RE beta — internally polished; teacher review next**.
+**Content architecture correction before premium-final push.**
+
+Founder review found that the current “more modules” approach is structurally wrong for child-facing content, especially P3/P4/P5. Do not keep expanding content in the same meta-module style. Read `docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md` and implement v4 block structure before premium-final messaging.
 
 Current state of the milestone:
 - P7 content exists in all subjects.
@@ -62,13 +64,15 @@ Current state of the milestone:
 - P3 NCDC research/mapping, full thematic beta build, internal thematic polish, first P3 RE beta build and follow-up QA tightening are complete at AI-builder level. Next work is human/teacher review and corrections.
 
 ### Immediate next tasks
-1. Human/teacher review the full P3 thematic beta: `/p3-home` plus all 12 `/p3/theme/[theme]` pages.
-2. Human/teacher review P3 RE beta: `/p3/re` plus all 18 `/p3/re/[topic]` pages, especially CRE/IRE terminology, Arabic transliteration, denominational sensitivity and source fidelity.
-3. Apply review corrections before treating P3 as premium-final.
-4. Continue P4 RE research by finding the full standard P4 CRE/IRE syllabus; current `p4-re.json` is from the NCDC/MoES abridged curriculum and P4 RE must stay beta until confirmed.
-5. Keep documentation updated after each subject/research/review pass.
-6. Do not expand teacher dashboard unless it directly supports parent ROI or learner progress.
-7. Do not add subject-style P3 routes (`/math/p3`, `/english/p3`, `/science/p3`, `/social-studies/p3`, `/re/p3`) unless a bridge design is documented and approved.
+1. Review the v4 pilot routes:
+   - `/p3/theme/p3-theme-6-plants`
+   - `/science/p5/p5-keeping-poultry-bees`
+2. Decide whether this v4 block order and UI should become the migration standard.
+3. If approved, add a lesson/sub-topic selector for topics with many v4 lessons.
+4. Migrate all P3 thematic sub-themes to v4 first.
+5. Then migrate P4/P5 Science, followed by remaining P4/P5 subjects.
+6. Then migrate P6/P7 high-value topics.
+7. Do not start P1/P2 yet; they will be same-app later, after P3–P7 structure is corrected.
 
 ### Push status
 Current local workspace includes a large unpushed milestone bundle. Founder has not pushed yet. When founder says “ready to push”, provide:
@@ -81,7 +85,7 @@ Current local workspace includes a large unpushed milestone bundle. Founder has 
 ### Do not forget
 - Do not re-open Trainup as active strategy.
 - Do not make schools the gatekeeper again.
-- Do not start P2/P1 yet. Founder is considering closing the current product cycle at P3–P7 and treating any P1/P2/lower-primary work as a separate future track after a documented decision.
+- Do not start P1/P2 yet. Founder has decided P1/P2 will eventually live in the same app, but later. Current focus is restructuring P3–P7 first using v4.
 - Do not create lots of new docs unless necessary; update the core docs first.
 
 ---
