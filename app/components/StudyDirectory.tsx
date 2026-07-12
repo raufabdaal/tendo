@@ -21,6 +21,23 @@ const p6Subjects = [
 ] as const;
 
 
+
+const p3Subjects = [
+  ["/p3/theme/p3-theme-1-subcounty-division", "🧭", "accent-sst", "Theme 1: Our Sub-county/Division", "Maps, physical features, people and leaders", "3 sub-themes"],
+  ["/p3/theme/p3-theme-2-livelihood", "🧺", "accent-sst", "Theme 2: Livelihood", "Occupations, social services and service challenges", "3 sub-themes"],
+  ["/p3/theme/p3-theme-3-environment", "🌱", "accent-science", "Theme 3: Our Environment", "Soil and environmental changes", "3 sub-themes"],
+  ["/p3/theme/p3-theme-4-environment-weather", "💧", "accent-science", "Theme 4: Environment and Weather", "Air, sun, water and water management", "3 sub-themes"],
+  ["/p3/theme/p3-theme-5-animals", "🐝", "accent-science", "Theme 5: Animals", "Living things, birds, insects and care", "3 sub-themes"],
+  ["/p3/theme/p3-theme-6-plants", "🌿", "accent-science", "Theme 6: Plants", "Habitats, flowering plants and crop growing", "3 sub-themes"],
+  ["/p3/theme/p3-theme-7-managing-resources", "💰", "accent-math", "Theme 7: Managing Resources", "Saving, spending and projects", "3 sub-themes"],
+  ["/p3/theme/p3-theme-8-keeping-peace", "🤝", "accent-re", "Theme 8: Keeping Peace", "Peace, child rights and responsibilities", "3 sub-themes"],
+  ["/p3/theme/p3-theme-9-culture-gender", "🎭", "accent-english", "Theme 9: Culture and Gender", "Customs, fairness and preserving culture", "3 sub-themes"],
+  ["/p3/theme/p3-theme-10-health", "🧼", "accent-science", "Theme 10: Health", "Vectors, vector diseases and HIV/AIDS", "3 sub-themes"],
+  ["/p3/theme/p3-theme-11-basic-technology", "🧵", "accent-math", "Theme 11: Basic Technology", "Natural/artificial materials and making things", "3 sub-themes"],
+  ["/p3/theme/p3-theme-12-energy", "⚡", "accent-science", "Theme 12: Energy", "Sources, saving energy and danger avoidance", "3 sub-themes"],
+  ["/p3/re", "🕊️", "accent-re", "Religious Education", "CRE and IRE from the official P3 RE map", "18 topics"],
+] as const;
+
 const p4Subjects = [
   ["/math/p4", "➗", "accent-math", "Mathematics", "Sets, numbers, fractions, geometry and measurement", "12 topics"],
   ["/english/p4", "📖", "accent-english", "English", "Descriptions, directions, feelings and writing", "8 topics"],
@@ -37,9 +54,10 @@ const p5Subjects = [
   ["/re/p5", "🕊️", "accent-re", "Religious Education", "CRE and IRE faith foundations", "20 topics"],
 ] as const;
 
-type SubjectTuple = typeof p7Subjects[number] | typeof p6Subjects[number] | typeof p5Subjects[number] | typeof p4Subjects[number];
+type SubjectTuple = typeof p7Subjects[number] | typeof p6Subjects[number] | typeof p5Subjects[number] | typeof p4Subjects[number] | typeof p3Subjects[number];
 
 function subjectsForGrade(grade: TendoGrade): readonly SubjectTuple[] {
+  if (grade === "P3") return p3Subjects;
   if (grade === "P4") return p4Subjects;
   if (grade === "P5") return p5Subjects;
   if (grade === "P6") return p6Subjects;
@@ -82,13 +100,18 @@ export default function StudyDirectory() {
   const studentSubjects = subjectsForGrade(studentGrade);
 
   if (!isTeacher) {
+    const p3Mode = studentGrade === "P3";
     return (
       <div className="study-page focused-study-page">
         <section className="compact-page-intro subject-intro-card">
           <div>
             <div className="eyebrow">Study · {studentGrade}</div>
-            <h1>Your subjects</h1>
-            <p className="lead">Only your class is shown here. Pick one subject and continue.</p>
+            <h1>{p3Mode ? "Your themes" : "Your subjects"}</h1>
+            <p className="lead">
+              {p3Mode
+                ? "P3 is organised by themes, with Religious Education kept as a separate NCDC section."
+                : "Only your class is shown here. Pick one subject and continue."}
+            </p>
           </div>
           <span aria-hidden="true">📚</span>
         </section>
@@ -128,6 +151,17 @@ export default function StudyDirectory() {
         <SubjectGrid subjects={p6Subjects} />
       </section>
 
+
+
+      <section className="teacher-library-section">
+        <div className="section-heading compact-heading">
+          <div>
+            <div className="eyebrow">Primary Three</div>
+            <h2>P3 thematic beta</h2>
+          </div>
+        </div>
+        <SubjectGrid subjects={p3Subjects} />
+      </section>
 
       <section className="teacher-library-section">
         <div className="section-heading compact-heading">

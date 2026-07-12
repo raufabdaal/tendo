@@ -5,10 +5,28 @@
 ---
 
 
-## MT-013 · Human review P4–P7 live beta before starting P3
+## MT-014 · Human review full P3 thematic + RE beta
+**Status:** Open · **Blocks:** Premium-final P3 confidence · **Estimated time:** 1–2 review sessions · **Cost:** Free if internal reviewers
+
+**Why:** P3 is now live as a thematic-first beta across all 12 official NCDC themes and a separate CRE/IRE Religious Education beta. It is built from researched NCDC maps and trusted source cross-checks, but lower-primary content needs careful human review for age level, local fit, language, visuals and sensitive topics.
+
+**Review order:**
+1. `/p3-home` — confirm all 12 themes appear and the page clearly says P3 is thematic, not subject-based.
+2. Theme 1–4 — location, livelihood, environment and weather.
+3. Theme 5–6 — animals and plants.
+4. Theme 7–9 — resources, peace, culture and gender.
+5. Theme 10–12 — health, technology and energy, with special attention to health/HIV/AIDS and safety wording.
+6. `/p3/re` — review CRE and IRE directory grouping.
+7. All 18 `/p3/re/[topic]` pages — review CRE/IRE terminology, Arabic transliteration, denominational sensitivity, source fidelity and quiz clarity.
+
+**Do not approve as premium-final yet:** P3 RE beta must be reviewed by a CRE/IRE teacher. The build is intentionally our best internal beta, not a replacement for qualified faith review.
+
+---
+
+## MT-013 · Human review P4–P7 live beta and P4 RE source limits
 **Status:** Open · **Blocks:** Premium-final confidence and next-class expansion · **Estimated time:** Ongoing · **Cost:** Free if internal reviewers
 
-**Why:** P4 is now live beta across all five app subjects, and P5/P6/P7 are also live. Before starting P3, do a review pass so the product improves instead of only expanding downward.
+**Why:** P4 is now live beta across all five app subjects, and P5/P6/P7 are also live. This review remains necessary before premium-final confidence, even though P3 thematic beta has now been built.
 
 **Review order:**
 1. P4 — review Maths, English, Science, Social Studies and RE first because it was just completed.

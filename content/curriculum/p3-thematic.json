@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Three (P.3)",
+    "curriculumType": "Thematic Curriculum",
+    "subjectModel": "P1-P3 thematic, not P4-P7 subject-based",
+    "source": "NCDC Primary School Curriculum P.3, May 2008, ISBN 978-9970-117-05-5",
+    "verificationStatus": "researched-from-official-ncdc-pdf",
+    "lastReviewed": "2026-07-09",
+    "sourceUrl": "https://ncdc.go.ug/wp-content/uploads/2024/02/P3_Thematic_Curr_21_November_2007_-_Edited.pdf"
+  },
+  "organisation": {
+    "cycle": "Cycle 1 (P1-P3): Basic skills",
+    "mediumOfInstruction": "First/familiar language as language of instruction, with English taught as a non-medium language unless no predominant local language exists",
+    "priorityAreas": ["Literacy", "Mathematics concepts", "Life skills and values"],
+    "weeklyAllocation": [
+      { "strand": "Oral Literature", "periods": 4 },
+      { "strand": "Mathematics", "periods": 9 },
+      { "strand": "Literacy I", "periods": 6 },
+      { "strand": "Literacy II", "periods": 6 },
+      { "strand": "English", "periods": 10 },
+      { "strand": "Creative Performing Arts (Music, Art and Crafts)", "periods": 5 },
+      { "strand": "Physical Education", "periods": 5 },
+      { "strand": "Religious Education", "periods": 3 },
+      { "strand": "Library", "periods": 2 }
+    ],
+    "learningAreasInThematicMatrix": ["Mathematics", "Literacy", "English (non-medium)", "Creative Performing Arts", "Life skills and values"],
+    "outsideThematicMatrix": ["Religious Education", "Physical Education"]
+  },
+  "themes": [
+    {
+      "id": "p3-theme-1-subcounty-division",
+      "title": "Our Sub-county/Division",
+      "term": "Term I",
+      "expectedLearningOutcome": "The child understands different ways of locating places and appreciates the various social groups in the Sub-county/Division.",
+      "subThemes": [
+        {
+          "id": "p3-1-1-name-location-subcounty-division",
+          "title": "Name and Location of our Sub-county/Division",
+          "keyContent": ["Name of our sub-county/division", "Difference between map and picture", "Compass direction cardinal points (East, North, West, South)", "Location of sub-county/division in relation to neighbouring parishes"],
+          "mathematicsFocus": ["Counting 0-999", "Forming, naming, drawing and recording sets", "Identifying empty set symbols", "Constructing and using a compass", "Estimating distance"],
+          "literacyFocus": ["Talking about sub-county background", "Distinguishing maps and pictures", "Locating neighbouring parishes on maps", "Reading names and maps", "Writing and labelling maps/pictures"],
+          "englishFocus": ["Direction and location vocabulary", "Prepositions", "Giving and obeying commands", "Reading and writing sentences about location"]
+        },
+        {
+          "id": "p3-1-2-physical-features-subcounty-division",
+          "title": "Physical Features of our Sub-county/Division",
+          "keyContent": ["Hills", "Valleys", "Lakes", "Rivers", "Swamps", "Ponds", "Mountains", "Position and importance of physical features"],
+          "mathematicsFocus": ["Comparing sets", "Counting in 10s, 2s and 5s", "Identifying place value of tens and hundreds", "Drawing compass points"],
+          "literacyFocus": ["Naming and describing physical features", "Explaining why a compass is used", "Reading names and short texts", "Writing descriptions of physical features"],
+          "englishFocus": ["Vocabulary for physical features", "Where is...? structures", "Reading puzzles and stories", "Writing sentences about features"]
+        },
+        {
+          "id": "p3-1-3-people-subcounty-division",
+          "title": "People in our Sub-county/Division",
+          "keyContent": ["Tribes and clans", "Administrative set-up", "Political and cultural leaders", "Roles of leaders", "Settling disputes", "Guidance and counselling", "Planning for development"],
+          "mathematicsFocus": ["Reading and writing number symbols 0-999", "Drawing a simple school playground map", "Using direction and non-standard distance measures"],
+          "literacyFocus": ["Naming tribes and clans", "Retelling stories about clan origins", "Describing administrative set-up", "Reading roles of leaders", "Writing names and stories"],
+          "englishFocus": ["Vocabulary for leaders and community roles", "What does a...? do? structures", "Reading stories about people and activities", "Writing descriptive sentences"]
+        }
+      ]
+    },
+    {
+      "id": "p3-theme-2-livelihood",
+      "title": "Livelihood in Our Sub-county/Division",
+      "term": "Term I",
+      "expectedLearningOutcome": "The child applies acquired skills and appreciates the benefits of participating in different activities.",
+      "subThemes": [
+        {
+          "id": "p3-2-1-occupations-importance",
+          "title": "Occupations of People in our Sub-county/Division and their Importance",
+          "keyContent": ["Money-generating and subsistence activities", "Casual labouring", "Trading", "Farming/animal rearing", "Tailoring", "Entertainment", "Pottery/brick making", "Carpentry", "Weaving/knitting", "Practical cookery"],
+          "mathematicsFocus": ["Grouping in 10s", "Counting in 10s and 100s from 1000 to 2000", "Place value for tens, hundreds and thousands", "Horizontal addition", "Non-standard measures in cookery"],
+          "literacyFocus": ["Identifying occupations", "Describing activities", "Discussing importance of work", "Role-playing occupations", "Predicting future work"],
+          "englishFocus": ["Occupation vocabulary", "Can/cannot structures", "Who makes/sells...? structures", "Reading and reorganising jumbled sentences", "Writing descriptive sentences"]
+        },
+        {
+          "id": "p3-2-2-social-services-importance",
+          "title": "Social Services and their Importance",
+          "keyContent": ["Education", "Health", "Communication", "Transport", "Water supply", "Security", "Importance of services"],
+          "mathematicsFocus": ["Reading and writing numbers in 10s and 100s from 1000 to 2000", "Adding two 3-digit numbers vertically without carrying", "Classifying communication objects"],
+          "literacyFocus": ["Describing social services", "Discussing importance", "Role-playing service jobs", "Writing about services"],
+          "englishFocus": ["Transport, health and communication vocabulary", "Relative clauses with who", "Because structures", "Writing educative messages and guided compositions"]
+        },
+        {
+          "id": "p3-2-3-challenges-social-services-solutions",
+          "title": "Challenges in Social Services and Possible Solutions",
+          "keyContent": ["Education challenges", "Health centre and medicine challenges", "Road/transport challenges", "Communication cost/availability", "Water quality/availability", "Security effectiveness", "Possible solutions"],
+          "mathematicsFocus": ["Adding two 2-digit numbers with carrying", "Addition word problems", "Drawing a journey map showing direction and distance in non-standard units"],
+          "literacyFocus": ["Identifying challenges", "Discussing causes and solutions", "Reading texts on problems/solutions", "Writing short texts and letters"],
+          "englishFocus": ["Past tense and because structures", "Vocabulary for challenges", "Situational games", "Writing about solutions"]
+        }
+      ]
+    },
+    {
+      "id": "p3-theme-3-environment",
+      "title": "Our Environment in Our Sub-county/Division",
+      "term": "Term I",
+      "expectedLearningOutcome": "The child appreciates environmental changes and applies knowledge and skills to manage the environment.",
+      "subThemes": [
+        { "id": "p3-3-1-soil", "title": "Soil", "keyContent": ["Composition of soil", "Water, air, dead plants, animals and rock particles", "Types of soil and texture", "Sand, clay and loam"], "mathematicsFocus": ["Environmental measurements and number work from the theme"], "literacyFocus": ["Observing, describing and reading about soil"], "englishFocus": ["Soil vocabulary and descriptive sentences"] },
+        { "id": "p3-3-2-natural-causes-environmental-change", "title": "Natural Causes of Changes in the Environment", "keyContent": ["Floods", "Drought", "Weather chart making and recording"], "mathematicsFocus": ["Weather chart recording", "Number work linked to environmental observation"], "literacyFocus": ["Discussing natural changes", "Reading and writing about environmental changes"], "englishFocus": ["Weather/environment vocabulary and past-tense descriptions"] },
+        { "id": "p3-3-3-human-activities-environmental-change", "title": "Changes in the Environment through Human Activities", "keyContent": ["Human activities causing environmental change", "Effects of human activities", "Ways to manage changes"], "mathematicsFocus": ["Adding two 4-digit numbers vertically without carrying"], "literacyFocus": ["Discussing and writing about human activities in the environment"], "englishFocus": ["Vocabulary and sentences about human activities and environmental care"] }
+      ]
+    },
+    {
+      "id": "p3-theme-4-environment-weather",
+      "title": "Environment and Weather in our Sub-county/Division",
+      "term": "Term II",
+      "expectedLearningOutcome": "The child appreciates and conserves the environment.",
+      "subThemes": [
+        { "id": "p3-4-1-air-sun", "title": "Air and the Sun", "keyContent": ["Concept and properties of air", "Air has weight", "Air moves things", "Air occupies space", "Air can be felt", "The sun as a weather/energy factor"], "mathematicsFocus": ["Theme-linked measurement and number competences"], "literacyFocus": ["Observing and explaining air and sun"], "englishFocus": ["Vocabulary and structures about air, sun and weather"] },
+        { "id": "p3-4-2-water", "title": "Water", "keyContent": ["How rain is formed", "Water cycle", "Formation of rain drops", "Evaporation and condensation", "Types of clouds", "How clouds affect weather"], "mathematicsFocus": ["Theme-linked subtraction and measurement competences"], "literacyFocus": ["Reading and writing about water and rain"], "englishFocus": ["Water-cycle vocabulary and weather sentences"] },
+        { "id": "p3-4-3-managing-water", "title": "Managing Water", "keyContent": ["Importance of water", "Sources of water", "Water harvesting", "Maintenance of water sources"], "mathematicsFocus": ["Subtracting vertically two 3-digit numbers", "Measurement linked to water use"], "literacyFocus": ["Discussing water sources and care", "Writing about water management"], "englishFocus": ["Water source and conservation vocabulary"] }
+      ]
+    },
+    {
+      "id": "p3-theme-5-animals",
+      "title": "Living Things: Animals in Our Sub-county/Division",
+      "term": "Term II",
+      "expectedLearningOutcome": "The child acquires, appreciates and applies basic scientific knowledge about living things in day-to-day life.",
+      "subThemes": [
+        { "id": "p3-5-1-living-things", "title": "Living Things", "keyContent": ["Types of living things", "Insects", "Animals", "Birds", "Fish", "Classes of animals by habitat"], "mathematicsFocus": ["Multiplication and classification linked to living things"], "literacyFocus": ["Naming, classifying and describing living things"], "englishFocus": ["Vocabulary for animals, insects, birds and fish"] },
+        { "id": "p3-5-2-birds-insects", "title": "Birds and Insects", "keyContent": ["Domestic birds", "Wild birds", "Crested crane as national symbol", "Common insects", "Characteristics and uses/dangers"], "mathematicsFocus": ["Theme-linked multiplication/division competences"], "literacyFocus": ["Observing, reading and writing about birds/insects"], "englishFocus": ["Bird and insect vocabulary and descriptive sentences"] },
+        { "id": "p3-5-3-care-insects-birds-animals", "title": "Care for Insects, Birds and Animals", "keyContent": ["Caring for bees", "Providing a hive", "Care for birds and animals", "Safe/healthy practices"], "mathematicsFocus": ["Word problems in multiplication by 2, 3 and 10"], "literacyFocus": ["Discussing care for animals and insects"], "englishFocus": ["Animal care vocabulary and action sentences"] }
+      ]
+    },
+    {
+      "id": "p3-theme-6-plants",
+      "title": "Living Things: Plants in Our Sub-county/Division",
+      "term": "Term II",
+      "expectedLearningOutcome": "The child appreciates the uses of different plants and participates in crop production for self-reliance.",
+      "subThemes": [
+        { "id": "p3-6-1-plants-habitat", "title": "Plants and their Habitat", "keyContent": ["Examples of plants", "Maize", "Yams", "Sisal", "Cactus", "Characteristics of plants", "Plant habitats"], "mathematicsFocus": ["Theme-linked division/counting competences"], "literacyFocus": ["Naming and describing plants and habitats"], "englishFocus": ["Plant vocabulary and descriptive structures"] },
+        { "id": "p3-6-2-parts-flowering-plant-uses", "title": "Parts of a Flowering Plant and their Uses", "keyContent": ["Roots", "Stem", "Leaves", "Flowers", "Seeds", "Uses of plant parts", "Food", "Medicine", "Fuel"], "mathematicsFocus": ["Theme-linked number/measurement competences"], "literacyFocus": ["Identifying and explaining plant parts"], "englishFocus": ["Vocabulary for plant parts and uses"] },
+        { "id": "p3-6-3-crop-growing-practices", "title": "Crop-growing Practices", "keyContent": ["Garden", "Hoe", "Tool", "Panga", "Slasher", "Planting", "Care for crops"], "mathematicsFocus": ["Dividing up to 300 by 2, 3, 4 and 5 without remainder"], "literacyFocus": ["Discussing and demonstrating crop-growing practices"], "englishFocus": ["Crop-growing vocabulary and action sentences"] }
+      ]
+    },
+    {
+      "id": "p3-theme-7-managing-resources",
+      "title": "Managing Resources in Our Sub-county/Division",
+      "term": "Term III",
+      "expectedLearningOutcome": "The child understands and demonstrates proper management of resources.",
+      "subThemes": [
+        { "id": "p3-7-1-saving-resources", "title": "Saving Resources", "keyContent": ["Concept of resources", "Water", "Time", "Money", "Food", "Fuel", "Firewood", "Charcoal", "Meaning of saving"], "mathematicsFocus": ["Theme-linked money/time/measurement competences"], "literacyFocus": ["Discussing saving resources"], "englishFocus": ["Saving and resources vocabulary"] },
+        { "id": "p3-7-2-spending-resources", "title": "Spending Resources", "keyContent": ["Meaning of spending", "Things we use and spend on", "Budgeting", "Negotiating", "Prioritising", "Comparing quality", "Comparing prices"], "mathematicsFocus": ["Money and budgeting competences"], "literacyFocus": ["Discussing wise spending"], "englishFocus": ["Spending, price and budgeting vocabulary"] },
+        { "id": "p3-7-3-projects", "title": "Projects", "keyContent": ["Projects as activities for knowledge, skills or money", "Bee keeping", "Other community projects"], "mathematicsFocus": ["Project-linked number/money competences"], "literacyFocus": ["Describing project activities"], "englishFocus": ["Project and activity vocabulary"] }
+      ]
+    },
+    {
+      "id": "p3-theme-8-keeping-peace",
+      "title": "Keeping Peace in Our Sub-county/Division",
+      "term": "Term III",
+      "expectedLearningOutcome": "The child understands and participates in different ways of living harmoniously with others.",
+      "subThemes": [
+        { "id": "p3-8-1-living-peace", "title": "Living in Peace with Others", "keyContent": ["Concept of living in peace", "Observing rules and regulations", "Respecting each other", "Peaceful living"], "mathematicsFocus": ["Theme-linked number/word-problem competences"], "literacyFocus": ["Discussing peace and rules"], "englishFocus": ["Peace vocabulary and advice structures"] },
+        { "id": "p3-8-2-child-rights-needs", "title": "Child Rights, Needs and their Importance", "keyContent": ["Concept of child rights", "Education", "Identity", "Food", "Freedom of speech", "Health services", "Shelter", "Play", "Clothing", "Language"], "mathematicsFocus": ["Theme-linked practical competences"], "literacyFocus": ["Talking about rights and needs"], "englishFocus": ["Rights and needs vocabulary"] },
+        { "id": "p3-8-3-child-responsibility", "title": "Child Responsibility", "keyContent": ["Respect parents, teachers, elders and other children", "Keep law and order", "Promote good behaviour", "Promote interests of country"], "mathematicsFocus": ["Theme-linked practical competences"], "literacyFocus": ["Discussing responsibilities"], "englishFocus": ["Responsibility and good behaviour vocabulary"] }
+      ]
+    },
+    {
+      "id": "p3-theme-9-culture-gender",
+      "title": "Culture and Gender in Our Sub-county/Division",
+      "term": "Term III",
+      "expectedLearningOutcome": "The child understands and appreciates different cultures and demonstrates awareness of gender issues that promote harmonious living.",
+      "subThemes": [
+        { "id": "p3-9-1-customs", "title": "Customs in our Sub-county/Division", "keyContent": ["Marriage", "Naming", "Greeting", "Dressing", "Language", "Music", "Burial", "Taboos", "Child-rearing practices"], "mathematicsFocus": ["Theme-linked competences"], "literacyFocus": ["Discussing customs respectfully"], "englishFocus": ["Customs and culture vocabulary"] },
+        { "id": "p3-9-2-gender", "title": "Gender", "keyContent": ["Concept of gender", "What makes me a boy/girl", "Activities boys and girls do", "Equity", "Fair distribution of work", "Basic needs", "Fairness"], "mathematicsFocus": ["Theme-linked competences"], "literacyFocus": ["Talking about gender and equity"], "englishFocus": ["Gender/equity vocabulary and sentences"] },
+        { "id": "p3-9-3-promoting-preserving-culture", "title": "Ways of Promoting and Preserving Culture", "keyContent": ["Music, dance and drama", "Sharing roles and responsibilities", "Documenting", "Planting trees", "Preserving culture"], "mathematicsFocus": ["Theme-linked competences"], "literacyFocus": ["Discussing cultural preservation"], "englishFocus": ["Culture preservation vocabulary"] }
+      ]
+    },
+    {
+      "id": "p3-theme-10-health",
+      "title": "Health in Our Sub-county/Division",
+      "term": "Term III",
+      "expectedLearningOutcome": "The child demonstrates knowledge and skills of preventing and controlling common diseases for a healthy life.",
+      "subThemes": [
+        { "id": "p3-10-1-disease-vectors", "title": "Disease Vectors", "keyContent": ["Mosquito", "Rat", "Louse", "Cockroach", "Housefly", "Tsetse fly", "Flea", "Bed-bug", "Characteristics of vectors"], "mathematicsFocus": ["Theme-linked competences"], "literacyFocus": ["Identifying and describing vectors"], "englishFocus": ["Vector vocabulary and prevention sentences"] },
+        { "id": "p3-10-2-diseases-spread-vectors", "title": "Diseases Spread by Vectors", "keyContent": ["Malaria", "Cholera", "Typhoid", "Yellow fever", "Plague", "Diarrhoea", "Dysentery", "Trachoma", "Sleeping sickness", "Ways vectors spread disease"], "mathematicsFocus": ["Theme-linked competences"], "literacyFocus": ["Discussing disease prevention"], "englishFocus": ["Disease and prevention vocabulary"] },
+        { "id": "p3-10-3-hiv-aids", "title": "HIV/AIDS", "keyContent": ["Concept of HIV/AIDS", "Causes and spread", "Effects", "Ways of caring for HIV/AIDS patients", "Not sharing sharp objects"], "mathematicsFocus": ["Theme-linked competences"], "literacyFocus": ["Discussing HIV/AIDS carefully and respectfully"], "englishFocus": ["Health and care vocabulary"] }
+      ]
+    },
+    {
+      "id": "p3-theme-11-basic-technology",
+      "title": "Basic Technology in Our Sub-county/Division",
+      "term": "Term III",
+      "expectedLearningOutcome": "The child applies basic scientific knowledge and skills in processing and making materials for self-reliance.",
+      "subThemes": [
+        { "id": "p3-11-1-concept-technology", "title": "Concept of Technology", "keyContent": ["Natural and artificial materials", "Banana fibres", "Palm leaves", "Wire", "Plastic", "Straws"], "mathematicsFocus": ["Theme-linked measurement/making competences"], "literacyFocus": ["Talking about materials and uses"], "englishFocus": ["Technology and material vocabulary"] },
+        { "id": "p3-11-2-processing-natural-materials", "title": "Processing and Making Things from Natural Materials", "keyContent": ["Food", "Fibre", "Leaves", "Sources such as swamp, plantation and bush", "Products such as mats, ropes, juice and salads", "Purpose such as selling"], "mathematicsFocus": ["Theme-linked project/measurement competences"], "literacyFocus": ["Describing processing and products"], "englishFocus": ["Natural materials and product vocabulary"] },
+        { "id": "p3-11-3-making-artificial-materials", "title": "Making Things from Artificial Materials", "keyContent": ["Recycling", "Toy cars", "Toy bicycles", "Flowers", "Candles", "Bags", "Uses for play, selling, decoration and wearing"], "mathematicsFocus": ["Theme-linked project competences"], "literacyFocus": ["Discussing making and recycling"], "englishFocus": ["Artificial materials and making vocabulary"] }
+      ]
+    },
+    {
+      "id": "p3-theme-12-energy",
+      "title": "Energy in Our Sub-county/Division",
+      "term": "Term III",
+      "expectedLearningOutcome": "The child appreciates the existence of energy and demonstrates knowledge and skills of using and preserving it.",
+      "subThemes": [
+        { "id": "p3-12-1-sources-energy", "title": "Sources of Energy", "keyContent": ["Natural energy sources", "Wind", "Water", "Artificial sources", "Fuel", "Diesel", "Petrol", "Wood", "Charcoal", "Paraffin", "Electricity", "Uses of energy"], "mathematicsFocus": ["Adding and subtracting 4-digit numbers with/without carrying/borrowing as revision"], "literacyFocus": ["Explaining energy and sources", "Reading and writing about energy"], "englishFocus": ["Energy vocabulary", "Present, past and future tense revision", "Requests and refusals"] },
+        { "id": "p3-12-2-saving-energy", "title": "Ways of Saving Energy", "keyContent": ["Energy-saving stoves", "Energy-saving bulbs", "Switching off appliances", "Putting out fires after use", "Planting trees", "Following proper-use instructions", "Importance of saving energy"], "mathematicsFocus": ["Multiplication/division revision", "Measuring length and distance for tree planting"], "literacyFocus": ["Reading and writing messages on saving energy", "Tree planting project"], "englishFocus": ["Switch on/off vocabulary", "Opposites", "Past simple tense"] },
+        { "id": "p3-12-3-dangers-energy", "title": "Dangers of Energy and Ways of Avoiding Them", "keyContent": ["Live wires", "Fire", "Strong wind", "Storm", "Drought", "Accidents", "Wind-breakers", "Avoiding playing with fire", "Not pushing nails into sockets", "Using fire extinguisher", "Making posters"], "mathematicsFocus": ["Measuring length, capacity, weight, time and money as revision"], "literacyFocus": ["Identifying dangers", "What to do during fire outbreak", "Writing stories/messages/posters"], "englishFocus": ["Danger vocabulary", "Future tenses", "Comparisons"] }
+      ]
+    }
+  ]
+}

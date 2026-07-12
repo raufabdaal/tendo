@@ -6,6 +6,7 @@ import { getLearnerProfile, saveLearnerProfile, type LearnerProfile } from "@/li
 import type { TendoGrade } from "@/lib/auth-session";
 
 function gradeHome(grade: TendoGrade) {
+  if (grade === "P3") return "/p3-home";
   if (grade === "P4") return "/p4-home";
   if (grade === "P5") return "/p5-home";
   if (grade === "P6") return "/p6-home";
@@ -13,6 +14,7 @@ function gradeHome(grade: TendoGrade) {
 }
 
 function gradeLabel(grade?: TendoGrade) {
+  if (grade === "P3") return "Primary Three (P.3)";
   if (grade === "P4") return "Primary Four (P.4)";
   if (grade === "P5") return "Primary Five (P.5)";
   if (grade === "P6") return "Primary Six (P.6)";
@@ -97,7 +99,7 @@ export default function ClassSelector({ activeLevel }: { activeLevel: TendoGrade
             Select Your Primary Class:
           </label>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
-            {(["P4", "P5", "P6", "P7"] as TendoGrade[]).map((gradeOption) => (
+            {(["P3", "P4", "P5", "P6", "P7"] as TendoGrade[]).map((gradeOption) => (
               <button
                 key={gradeOption}
                 type="button"

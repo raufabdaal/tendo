@@ -1,0 +1,282 @@
+{
+  "meta": {
+    "country": "Uganda",
+    "level": "Primary Three (P.3)",
+    "subject": "Religious Education (CRE and IRE)",
+    "curriculumType": "Lower Primary Religious Education outside thematic matrix",
+    "source": "NCDC Primary School Curriculum P.3, May 2008, Religious Education section",
+    "verificationStatus": "official-ncdc-map-cross-checked-with-trusted-cre-ire-sources-beta-needs-teacher-review",
+    "lastReviewed": "2026-07-12",
+    "sourceUrl": "https://ncdc.go.ug/wp-content/uploads/2024/02/P3_Thematic_Curr_21_November_2007_-_Edited.pdf",
+    "sourceNotes": "RE is outside the P3 thematic matrix but corresponds with the 12-theme timetable. The map was extracted from the official P3 NCDC PDF and learner-facing beta content is now cross-checked with trusted Bible, Qur'an, Hadith and Arabic-reading sources. Qualified CRE/IRE teacher review is still required before premium-final status.",
+    "supportingSourceCategories": [
+      "BibleHub Bible passage pages for CRE source cross-checks",
+      "Quran.com Qur'an passage pages for IRE source cross-checks",
+      "Sunnah.com Sahih al-Bukhari 614 for Dua after Adhan",
+      "Arabic vowel/harakat educational reference for Fatha, Kasra, Dhumma/Damma, Shadda and Madda"
+    ]
+  },
+  "themes": [
+    {
+      "id": "p3-cre",
+      "name": "Christian Religious Education",
+      "topics": [
+        {
+          "id": "p3-cre-traditions",
+          "term": "Term I",
+          "weeks": "Weeks 1-3",
+          "title": "Traditions",
+          "subTopics": [
+            "Traditional customs and practices",
+            "Importance of traditional customs",
+            "Other people's customs",
+            "Christian customs and practices"
+          ]
+        },
+        {
+          "id": "p3-cre-leadership",
+          "term": "Term I",
+          "weeks": "Weeks 4-6",
+          "title": "Leadership",
+          "subTopics": [
+            "Different levels of leadership",
+            "Family, village, clan, school and church leadership",
+            "Good leaders from the Old Testament",
+            "Jesus as a leader",
+            "Qualities of good leadership today"
+          ]
+        },
+        {
+          "id": "p3-cre-messengers-of-god",
+          "term": "Term I",
+          "weeks": "Weeks 7-9",
+          "title": "Messengers of God",
+          "subTopics": [
+            "Different ways God speaks to people",
+            "Qualities of God's messengers",
+            "Children as God's messengers",
+            "John the Baptist's message about Jesus",
+            "Angels as messengers of God"
+          ]
+        },
+        {
+          "id": "p3-cre-sorrow-joy-life",
+          "term": "Term I",
+          "weeks": "Weeks 10-12",
+          "title": "Sorrow and Joy in Life",
+          "subTopics": [
+            "Lent",
+            "Jesus during Holy Week",
+            "Palm Sunday",
+            "The Last Supper",
+            "Good Friday",
+            "Death and resurrection of Jesus",
+            "Easter joy"
+          ]
+        },
+        {
+          "id": "p3-cre-holy-spirit",
+          "term": "Term II",
+          "weeks": "Weeks 1-3",
+          "title": "The Holy Spirit",
+          "subTopics": [
+            "Jesus' promise of the Holy Spirit",
+            "Events of Pentecost",
+            "Work of the Holy Spirit",
+            "Gifts of the Holy Spirit"
+          ]
+        },
+        {
+          "id": "p3-cre-worshipping-god",
+          "term": "Term II",
+          "weeks": "Weeks 4-6",
+          "title": "Worshipping God",
+          "subTopics": [
+            "Guidance of the Holy Spirit",
+            "Sharing good news",
+            "Sharing positions and meals",
+            "Praying together",
+            "Reasons for worshipping God",
+            "Biblical aspects of worship: offering, listening and praising"
+          ]
+        },
+        {
+          "id": "p3-cre-christian-joint-activities-prayers",
+          "term": "Term II",
+          "weeks": "Weeks 7-9",
+          "title": "Christian Joint Activities and Prayers",
+          "subTopics": [
+            "Christian joint activities and experiences",
+            "Worshipping God in church and at home",
+            "Personal prayers",
+            "Thanksgiving prayers",
+            "Confession prayers",
+            "Petition prayers"
+          ]
+        },
+        {
+          "id": "p3-cre-values-abilities-prayer",
+          "term": "Term II",
+          "weeks": "Weeks 10-12",
+          "title": "Values, Abilities and Prayer",
+          "subTopics": [
+            "Values Jesus taught: honesty, responsibility and service",
+            "Personal abilities from God",
+            "Characteristics of God in families",
+            "Jesus' example of prayer",
+            "When, where and how to pray",
+            "The Lord's Prayer",
+            "Praying for others"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p3-ire",
+      "name": "Islamic Religious Education",
+      "topics": [
+        {
+          "id": "p3-ire-nature-quran",
+          "term": "Term I",
+          "weeks": "Weeks 1-3",
+          "title": "Reading from the Qur'an: Nature of the Qur'an",
+          "subTopics": [
+            "Arabic alphabet",
+            "Ayah",
+            "Surah",
+            "Juzu",
+            "Divine nature of the Qur'an",
+            "Handling and keeping the Qur'an respectfully"
+          ]
+        },
+        {
+          "id": "p3-ire-divine-books",
+          "term": "Term I",
+          "weeks": "Weeks 4-6",
+          "title": "Tawhiid (Faith): Divine Books",
+          "subTopics": [
+            "Nature of the four revealed books",
+            "Zaburi",
+            "Tawrat/Taurat",
+            "Injili",
+            "Qur'an",
+            "Prophets to whom the books were revealed",
+            "Holiness of the Qur'an"
+          ]
+        },
+        {
+          "id": "p3-ire-nullifiers-salat-values",
+          "term": "Term I",
+          "weeks": "Weeks 7-9",
+          "title": "Fiqh and Islamic Values",
+          "subTopics": [
+            "Nullifiers of Salat",
+            "Ways of avoiding nullifiers of prayer",
+            "Islamic values: patience",
+            "Perseverance",
+            "Reliance on Allah"
+          ]
+        },
+        {
+          "id": "p3-ire-first-revelation",
+          "term": "Term I",
+          "weeks": "Weeks 10-12",
+          "title": "History of Islam: The First Revelation",
+          "subTopics": [
+            "Life of Prophet Muhammad (PBUH) before revelation",
+            "Visit to Mount Hira",
+            "Receiving the first revelation",
+            "Jibril's message",
+            "Khadijah's reaction",
+            "The content of the first revelation"
+          ]
+        },
+        {
+          "id": "p3-ire-arabic-vowels",
+          "term": "Term II",
+          "weeks": "Weeks 1-3",
+          "title": "Reading of the Qur'an: Vowels in Arabic",
+          "subTopics": [
+            "Arabic alphabet",
+            "Arabic vowels",
+            "Fatha",
+            "Kasra",
+            "Dhumma",
+            "Shadda",
+            "Madda",
+            "Reading and writing vowels"
+          ]
+        },
+        {
+          "id": "p3-ire-content-divine-books",
+          "term": "Term II",
+          "weeks": "Weeks 4-6",
+          "title": "Tawhiid: Importance and Content of Divine Books",
+          "subTopics": [
+            "Content of divine books",
+            "Zaburi",
+            "Tawrat",
+            "Injil",
+            "Qur'an",
+            "Good things learnt from divine books",
+            "Usefulness of their messages"
+          ]
+        },
+        {
+          "id": "p3-ire-dua-after-adhan-laws",
+          "term": "Term II",
+          "weeks": "Weeks 7-12",
+          "title": "Dua after Adhan and Laws",
+          "subTopics": [
+            "Dua after Adhan",
+            "Meaning and importance of Dua",
+            "Law",
+            "Types of laws",
+            "Purpose of laws",
+            "Respecting laws"
+          ]
+        },
+        {
+          "id": "p3-ire-khadijah-revelation-quran-rites",
+          "term": "Term III",
+          "weeks": "Weeks 1-3",
+          "title": "Khadijah and the Revelation / Rites of the Qur'an",
+          "subTopics": [
+            "Events after the first revelation",
+            "Khadijah's reaction",
+            "Role of Naufal",
+            "Rites before reciting the Qur'an",
+            "Arabic alphabet and vowels in words"
+          ]
+        },
+        {
+          "id": "p3-ire-uniqueness-quran-impurities",
+          "term": "Term III",
+          "weeks": "Weeks 4-6",
+          "title": "Uniqueness of the Qur'an and Impurities",
+          "subTopics": [
+            "Uniqueness of the Qur'an",
+            "Meaning of Najasah",
+            "Examples of impurities",
+            "Toilet manners",
+            "Ablution",
+            "Conditions requiring ablution"
+          ]
+        },
+        {
+          "id": "p3-ire-dua-seeking-knowledge",
+          "term": "Term III",
+          "weeks": "Weeks 7-9",
+          "title": "Moral and Spiritual Teachings: Dua and Seeking Knowledge",
+          "subTopics": [
+            "Dua",
+            "Duas related to knowledge",
+            "Importance of seeking knowledge",
+            "Reciting Duas",
+            "Role-playing Dua practices"
+          ]
+        }
+      ]
+    }
+  ]
+}

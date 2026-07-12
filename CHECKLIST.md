@@ -1,6 +1,6 @@
 # CHECKLIST — Tendo execution tracker
 
-*Updated: 2026-07-09*
+*Updated: 2026-07-12*
 
 
 
@@ -16,6 +16,45 @@
 
 
 
+
+
+## Phase 31 — P3 NCDC Research and Mapping
+- [x] Research official NCDC P3 Thematic Curriculum source
+- [x] Confirm P3 is thematic/lower-primary, not subject-based like P4–P7
+- [x] Add P3 thematic curriculum map (`content/curriculum/p3-thematic.json`)
+- [x] Add P3 Religious Education map (`content/curriculum/p3-re.json`)
+- [x] Document P3 research (`docs/ops/ncdc-p3-curriculum-research-2026-07-09.md`)
+- [ ] Review P3 maps for extraction/source-cleanup issues
+- [x] Decide P3 learner-facing app structure: thematic-first (`/p3-home`, `/p3/theme/[theme]`)
+- [x] Build first P3 beta slice: `/p3-home` and Theme 1 only
+- [x] Add P3 thematic content library (`app/lib/p3-thematic-topics.ts`)
+- [x] Add `/p3-home` route
+- [x] Add `/p3/theme/[theme]` route and static generation for P3 themes
+- [x] Extend local sign-in/session/navigation/study/practice support to P3
+- [x] Build passed after P3 Theme 1 beta (`npm run build`, 326 static pages)
+- [x] Review P3 Theme 1 beta pattern at AI-builder level before extending the model
+- [x] Build remaining P3 themes from `content/curriculum/p3-thematic.json`
+- [x] Add 36 P3 sub-theme SVG visuals under `app/public/images/p3/`
+- [x] Update `/p3-home`, Study Directory and Practice suggestions for all 12 P3 themes
+- [x] Build passed after full P3 thematic beta (`npm run build`, 337 static pages)
+- [x] Run internal review/polish pass across P3 thematic beta
+- [x] Add tailored `SUBTHEME_POLISH` layer for all 36 P3 thematic sub-themes
+- [x] Research trusted CRE/IRE supporting sources for P3 RE
+- [x] Log `DEV-032` decision for P3 RE beta from official map plus trusted source cross-checks
+- [x] Build P3 Religious Education beta (`/p3/re`, `/p3/re/[topic]`)
+- [x] Add P3 RE content library (`app/lib/p3-re-topics.ts`)
+- [x] Add 18 P3 RE SVG visuals under `app/public/images/p3/re/`
+- [x] Update P3 home/study/practice/navigation guard for P3 RE
+- [x] Build passed after P3 review/polish and RE beta (`npm run build`, 356 static pages)
+- [x] Tighten P3 thematic and RE quiz distractors after internal QA
+- [x] Fix P3 Study Directory student copy from subject-first wording to theme-first wording
+- [x] Build passed after P3 QA tightening (`npm run build`, 356 static pages)
+- [x] Prepare P3 milestone push package (`docs/ops/p3-push-package-2026-07-12.md`)
+- [x] Add post-P3 scope note: do not start P2/P1 without separate lower-primary decision
+- [ ] Human/founder/teacher review all 12 P3 thematic beta themes
+- [ ] Qualified CRE/IRE teacher review P3 RE beta before premium-final status
+
+---
 
 ## Phase 30 — P4/P5 Visuals and Depth Pass Before P3
 - [x] Create local SVG visual assets for P4/P5 Math, Science and Social Studies
@@ -47,7 +86,7 @@
 - [x] Build passed after English/RE depth upgrade (`npm run build`, 324 static pages)
 - [x] Run final P4/P5 module/image audit and close visuals/depth pass if clean
 - [x] Close Step 1 and Step 2 at AI-builder level
-- [ ] Start P3 NCDC research and curriculum mapping
+- [x] Start P3 NCDC research and curriculum mapping
 - [x] Visuals/depth pass intentionally closed before P3 research
 
 ---

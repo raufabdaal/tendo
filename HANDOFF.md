@@ -1,6 +1,6 @@
 # HANDOFF — for the next session
 
-*Written: 2026-07-09*
+*Written: 2026-07-12*
 
 
 
@@ -35,13 +35,13 @@ Reviewers are a second safety layer, not a replacement for our own quality work.
 
 ---
 
-## CURRENT COMMAND CENTER — 2026-07-09
+## CURRENT COMMAND CENTER — 2026-07-12
 
 ### Active direction
 Build Tendo as a **premium parent-funded, student-first app**. Content quality is now the product. Parent ROI matters more than teacher-dashboard expansion. Trainup/school-first work is archived.
 
 ### Active milestone
-**P3 NCDC research and curriculum mapping**.
+**P3 thematic + RE beta — internally polished; teacher review next**.
 
 Current state of the milestone:
 - P7 content exists in all subjects.
@@ -56,18 +56,19 @@ Current state of the milestone:
 - P5 curriculum research has been corrected against NCDC P5 Set One structure.
 - The premature P5 Mathematics/English draft app routes were removed.
 - P5 Mathematics, English, Science, Social Studies and Religious Education are now live beta: P5 sign-in, `/p5-home`, and all P5 subject routes are active. They are marked beta, not draft.
+- P3 is confirmed as thematic lower-primary curriculum; maps exist. P3 thematic beta is built and internally polished across all 12 official themes: `/p3-home` plus 12 `/p3/theme/[theme]` pages, 36 sub-themes, 108 thematic modules and 36 sub-theme visuals. P3 RE beta is also built separately at `/p3/re` and `/p3/re/[topic]` with 18 CRE/IRE topics, 54 RE modules and trusted-source cross-checks; qualified CRE/IRE teacher review remains required.
 - P4 curriculum research has started: English, Science, SST and RE maps exist; P4 Mathematics has been verified and corrected against the official NCDC P4 Mathematics PDF; P4 RE is mapped from the NCDC/MoES Primary 4 Abridged Curriculum but still needs a full standard P4 RE syllabus check. P4 is now live beta across all 5 app subjects: Mathematics, English, Integrated Science, Social Studies and Religious Education. P4 RE is from the NCDC/MoES abridged source and remains beta until full standard P4 CRE/IRE syllabus confirmation.
 - Curriculum alignment audit now shows zero missing top-level topics across P5, P6 and P7.
-- Next content work should begin P3 NCDC research and curriculum mapping. Do not build P3 routes before official/reliable curriculum maps exist.
+- P3 NCDC research/mapping, full thematic beta build, internal thematic polish, first P3 RE beta build and follow-up QA tightening are complete at AI-builder level. Next work is human/teacher review and corrections.
 
 ### Immediate next tasks
-1. Continue Step 1: complete P4/P5 visuals/diagram attachments for Math, Science and SST.
-2. Continue Step 2: P5 Math, Science, Social Studies and Religious Education are deepened; run final P4/P5 module/image audit and close the pass if clean.
-3. Only after Step 2 is intentionally closed, start Step 3: P3 NCDC research and curriculum mapping.
+1. Human/teacher review the full P3 thematic beta: `/p3-home` plus all 12 `/p3/theme/[theme]` pages.
+2. Human/teacher review P3 RE beta: `/p3/re` plus all 18 `/p3/re/[topic]` pages, especially CRE/IRE terminology, Arabic transliteration, denominational sensitivity and source fidelity.
+3. Apply review corrections before treating P3 as premium-final.
 4. Continue P4 RE research by finding the full standard P4 CRE/IRE syllabus; current `p4-re.json` is from the NCDC/MoES abridged curriculum and P4 RE must stay beta until confirmed.
-5. Keep documentation updated after each subject/research pass.
+5. Keep documentation updated after each subject/research/review pass.
 6. Do not expand teacher dashboard unless it directly supports parent ROI or learner progress.
-7. Do not build P3 routes before P3 maps exist.
+7. Do not add subject-style P3 routes (`/math/p3`, `/english/p3`, `/science/p3`, `/social-studies/p3`, `/re/p3`) unless a bridge design is documented and approved.
 
 ### Push status
 Current local workspace includes a large unpushed milestone bundle. Founder has not pushed yet. When founder says “ready to push”, provide:
@@ -80,6 +81,7 @@ Current local workspace includes a large unpushed milestone bundle. Founder has 
 ### Do not forget
 - Do not re-open Trainup as active strategy.
 - Do not make schools the gatekeeper again.
+- Do not start P2/P1 yet. Founder is considering closing the current product cycle at P3–P7 and treating any P1/P2/lower-primary work as a separate future track after a documented decision.
 - Do not create lots of new docs unless necessary; update the core docs first.
 
 ---
@@ -115,6 +117,12 @@ Read:
 - `docs/ops/premium-parent-student-first-strategy-2026-07-09.md`
 - `docs/ops/primary-content-completion-roadmap-2026-07-09.md`
 - `docs/ops/ncdc-p5-curriculum-research-2026-07-09.md`
+- `docs/ops/ncdc-p3-curriculum-research-2026-07-09.md`
+- `docs/ops/p3-thematic-app-structure-2026-07-09.md`
+- `docs/ops/p3-thematic-beta-completion-2026-07-12.md`
+- `docs/ops/p3-review-polish-pass-2026-07-12.md`
+- `docs/ops/p3-re-source-research-2026-07-12.md`
+- `docs/ops/p3-thematic-beta-completion-2026-07-12.md`
 - `docs/ops/ncdc-p4-curriculum-research-2026-07-09.md`
 - `docs/ops/curriculum-alignment-audit-p5-p7-2026-07-09.md`
 - `docs/ops/p7-math-premium-audit-2026-07-09.md`

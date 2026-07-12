@@ -4,7 +4,39 @@
 
 ---
 
+## DEV-032 · 2026-07-12 · P3 RE beta may use trusted faith sources under NCDC map control
 
+**Context:** P3 Religious Education is outside the thematic matrix, but the official NCDC P3 PDF includes CRE and IRE topic maps. The extracted map needed review, but the founder clarified that valid CRE/IRE information already exists in trusted sources and should be gathered to build the best internal beta before teacher verification.
+
+**Decision:** Build P3 RE beta from `content/curriculum/p3-re.json`, while cross-checking learner-facing faith facts against trusted sources: Bible passage sources for CRE, Quran.com for Qur'an references, Sunnah.com for hadith references, and reputable Arabic-reading references for basic vowels/harakat. Teachers remain the final review layer before premium-final status.
+
+**Route model:**
+- `/p3/re`
+- `/p3/re/[topic]`
+
+**Guardrail:** This does not permit forbidden subject-style P3 routes such as `/re/p3`, `/math/p3`, `/english/p3`, `/science/p3`, or `/social-studies/p3`. P3 remains thematic-first, and RE remains a clearly separate lower-primary RE section because NCDC places RE outside the thematic matrix.
+
+**Tracked across:** `content/curriculum/p3-re.json`, `app/lib/p3-re-topics.ts`, `app/app/p3/re/page.tsx`, `app/app/p3/re/[topic]/page.tsx`, `docs/ops/p3-re-source-research-2026-07-12.md`.
+
+---
+
+## DEV-031 · 2026-07-09 · P3 must be thematic-first, not subject-route-first
+
+**Context:** Official NCDC P3 curriculum is part of the P1–P3 Thematic Curriculum cycle. It is organised around 12 themes and 36 sub-themes, with Mathematics, Literacy, English, Creative Performing Arts, Life Skills and Values woven through the thematic matrix. Religious Education and Physical Education sit outside the matrix but align to the 12-theme timetable.
+
+**Decision:** P3 learner-facing architecture must be **thematic-first**. Do not copy the P4–P7 subject-route model (`/math/p3`, `/science/p3`, etc.) as the primary structure unless a documented bridge design is approved.
+
+**Recommended route model:**
+- `/p3-home`
+- `/p3/theme/[theme]`
+
+**Reasoning:** A subject-first P3 app would misrepresent the NCDC lower-primary curriculum. The app should present the curriculum in a better form, not invent a fake P3 subject syllabus.
+
+**Implementation effect:** P3 maps have been added, but no P3 routes/content should be built until the thematic app structure is implemented from those maps.
+
+**Tracked across:** `content/curriculum/p3-thematic.json`, `content/curriculum/p3-re.json`, `docs/ops/ncdc-p3-curriculum-research-2026-07-09.md`, `docs/ops/p3-thematic-app-structure-2026-07-09.md`.
+
+---
 
 
 

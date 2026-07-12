@@ -360,4 +360,4 @@ Remaining human-review work stays open, but it no longer blocks starting P3 NCDC
 
 Begin **Step 3: P3 NCDC research and curriculum mapping**.
 
-No P3 app routes/content should be built until official/reliable P3 curriculum structure is researched and documented.
+P3 app structure was later documented as thematic-first, and the first P3 beta slice was built from the official P3 maps. Remaining P3 themes should continue from the P3 thematic map; subject-style P3 routes should still not be built without a documented bridge design.

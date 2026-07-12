@@ -1,6 +1,6 @@
 # START HERE — Tendo
 
-**Tendo** is a premium student-first study platform for Ugandan primary learners. We start with **P7** and **P6**, then move class by class until the full primary app is complete.
+**Tendo** is a premium student-first study platform for Ugandan primary learners. P7, P6, P5 and P4 are live across app subjects, and P3 is now live as a thematic-first beta across all 12 official NCDC themes plus a separate CRE/IRE Religious Education beta.
 
 > *Tendo* (Luganda): "praise / commendation" — what parents say when results come back.
 
@@ -47,19 +47,25 @@ Reviewers are a second safety layer, not a replacement for our own quality work.
 7. **`docs/ops/content-corrections-workflow-2026-07-09.md`** — how to fix/restructure content safely.
 8. **`docs/ops/parent-dashboard-roi-roadmap-2026-07-09.md`** — parent dashboard direction.
 9. **`docs/ops/p4-p7-live-beta-review-pass-2026-07-09.md`** — review gate before the next class.
-10. **`docs/ops/p4-p5-visuals-depth-pass-2026-07-09.md`** — current visuals/depth pass before P3.
+10. **`docs/ops/p4-p5-visuals-depth-pass-2026-07-09.md`** — visuals/depth pass before P3.
+11. **`docs/ops/ncdc-p3-curriculum-research-2026-07-09.md`** — current P3 thematic research/mapping.
+12. **`docs/ops/p3-thematic-app-structure-2026-07-09.md`** — P3 thematic-first app structure.
+13. **`docs/ops/p3-thematic-beta-completion-2026-07-12.md`** — P3 all-themes beta completion note.
+14. **`docs/ops/p3-review-polish-pass-2026-07-12.md`** — P3 internal review/polish and RE beta summary.
+15. **`docs/ops/p3-re-source-research-2026-07-12.md`** — trusted CRE/IRE source register.
 
 ## You have 60 seconds. What's this project now?
 
 - **Primary user:** students.
 - **Paying customer:** premium parents/guardians who want academic ROI.
 - **Target commercial assumption:** families who can afford around **UGX 50,000/month** for a serious study product.
-- **Current priority:** start P3 NCDC research and curriculum mapping. P4/P5 visuals and depth pass is closed at AI-builder level. P4 RE remains beta from NCDC/MoES abridged curriculum until full standard-syllabus confirmation.
+- **Current priority:** teacher review of P3 thematic + RE beta. `/p3-home`, all 12 `/p3/theme/[theme]` pages, `/p3/re`, and 18 `/p3/re/[topic]` pages are live in beta. P3 is thematic lower-primary curriculum; do not build subject-style P3 routes.
 - **Teacher dashboard:** useful but no longer central.
 - **Parent dashboard:** strategically important because the parent pays and needs visibility.
 - **Trainup status:** archived historical context. Do not treat Trainup as the active product path.
 - **Auth status:** local/device sign-in scaffolding only. Real backend authentication is a future task.
 - **P4 status:** live beta across English/Math/Science/SST/RE. Math, English, Science and SST are from NCDC subject syllabi/maps; RE is from the NCDC/MoES abridged curriculum and still needs full standard-syllabus confirmation.
+- **P3 status:** live thematic beta across 12 NCDC themes, 36 sub-themes and 108 thematic modules; P3 RE beta is live separately across 18 CRE/IRE topics and 54 RE modules pending teacher review.
 
 ## Folder map
 
@@ -109,4 +115,4 @@ Every meaningful product/code session should update:
 
 ---
 
-*Tendo · premium parent-funded student-first snapshot · 2026-07-09*
+*Tendo · premium parent-funded student-first snapshot · 2026-07-12*

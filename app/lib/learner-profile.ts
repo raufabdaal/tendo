@@ -3,7 +3,7 @@
 
 export interface LearnerProfile {
   name?: string;
-  grade: "P4" | "P5" | "P6" | "P7";
+  grade: "P3" | "P4" | "P5" | "P6" | "P7";
   onboardedAt: string;
 }
 

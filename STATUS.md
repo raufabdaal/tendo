@@ -1,8 +1,8 @@
 # STATUS — Tendo
 
-*Updated: 2026-07-09 · Current working state locked*
+*Updated: 2026-07-12 · Current working state locked*
 
-> **Current state:** Tendo is a child-friendly study platform (not just for revision) for Ugandan upper-primary learners. Both Primary Seven (P7 PLE) and Primary Six (P6) are live across all 5 official NCDC subjects (Mathematics, English Language, Integrated Science, Social Studies, and Religious Education—both CRE and IRE) on the proven Lesson Structure v3 modular architecture.
+> **Current state:** Tendo is a premium, child-friendly study platform for Ugandan primary learners. P7, P6, P5 and P4 are live across all 5 app subjects as beta/live content, and P3 is now live as a thematic-first beta across all 12 official NCDC P3 themes.
 
 
 
@@ -46,7 +46,7 @@ Tendo is now a **premium parent-funded, student-first study product**. We are no
 Premium parents/guardians who already spend heavily on education and can justify around **UGX 50,000/month** if Tendo shows clear academic ROI.
 
 ### Primary user
-Students, starting with **P7**, **P6**, **P5**, and **P4 live beta**. Teachers/tutors remain supporting users. Parent visibility is strategically more important than expanding the teacher dashboard right now.
+Students, currently spanning **P7**, **P6**, **P5**, **P4 live beta**, and **P3 live beta**. Teachers/tutors remain supporting users. Parent visibility is strategically more important than expanding the teacher dashboard right now.
 
 ### Current product status
 - P7 content exists across all 5 subjects.
@@ -55,6 +55,7 @@ Students, starting with **P7**, **P6**, **P5**, and **P4 live beta**. Teachers/t
 - P5 curriculum maps have been corrected against researched NCDC P5 Set One structure for all 5 subjects.
 - The earlier P5 Mathematics/English draft routes were removed because P5 must not be exposed prematurely.
 - P5 Mathematics, English, Science, Social Studies and Religious Education are now live as beta: sign-in supports P5, `/p5-home` exists, all P5 subject routes are live, and content is marked beta for tester review.
+- P3 is confirmed as NCDC Thematic Curriculum, not P4–P7 subject-based. Added `content/curriculum/p3-thematic.json` and `content/curriculum/p3-re.json`. P3 thematic beta is now built and internally polished across all 12 official themes: `/p3-home` plus `/p3/theme/[theme]` for 12 themes, 36 sub-themes, 108 thematic modules and 36 sub-theme visuals. P3 Religious Education beta is now also built separately at `/p3/re` and `/p3/re/[topic]` with 18 CRE/IRE topics, 54 RE modules and trusted-source cross-checks; qualified CRE/IRE teacher review is still required before premium-final status.
 - P4 curriculum research has started. English, Integrated Science, Social Studies and Religious Education maps exist; P4 Mathematics has been verified and corrected against the official NCDC P4 Mathematics PDF. P4 Religious Education is mapped from the NCDC/MoES Primary 4 Abridged Curriculum and still needs a full standard P4 RE syllabus check before premium-final status. P4 is now live beta across all 5 app subjects: Mathematics, English, Integrated Science, Social Studies and Religious Education. P4 RE is built from the NCDC/MoES Primary 4 Abridged Curriculum and remains beta until full standard P4 CRE/IRE syllabus confirmation.
 - P7 Mathematics has started its premium-strengthening pass; the thinnest five topics were upgraded.
 - P7 English premium strengthening has started; all 7 topics gained premium exam-practice subtopics for comprehension/writing/grammar quality.
@@ -66,14 +67,18 @@ Students, starting with **P7**, **P6**, **P5**, and **P4 live beta**. Teachers/t
 - Teacher dashboard now auto-populates with presentation/sample data unless `NEXT_PUBLIC_TENDO_PRESENTATION_DATA=off`.
 
 ### Current active milestone
-**P3 NCDC research and curriculum mapping.**
+**P3 thematic + RE beta — internally polished; teacher review next.**
 
 Immediate sequence:
-1. Step 1 and Step 2 are closed at AI-builder level: P4/P5 visuals and depth pass passed final module/image audit.
-2. Start P3 NCDC research and curriculum mapping.
-3. Do not build P3 app routes/content until official/reliable P3 curriculum structure is researched and documented.
-4. Continue P4 RE source work: find the full standard P4 CRE/IRE syllabus to confirm the NCDC-abridged map.
-5. Human/teacher review remains open across P4–P7 before premium-final status.
+1. Human/teacher review the full P3 thematic beta: `/p3-home` and all 12 `/p3/theme/[theme]` pages.
+2. Human/teacher review P3 RE beta: `/p3/re` and all 18 `/p3/re/[topic]` pages, especially CRE/IRE terminology and source fidelity.
+3. Check P3 language level, local/familiar examples, health/gender/culture safety wording, image usefulness and quiz clarity.
+4. Do not build subject-style P3 routes such as `/math/p3` or `/re/p3` unless a documented bridge design is approved.
+5. Continue P4 RE source work: find the full standard P4 CRE/IRE syllabus to confirm the NCDC-abridged map.
+6. Human/teacher review remains open across P3–P7 before premium-final status.
+
+### Post-P3 scope note
+Founder is considering closing the current Tendo primary expansion at **P3–P7** for this product cycle. Do **not** start P2/P1 in this same app flow unless the founder explicitly confirms a new lower-primary plan. If P1/P2 are built later, treat them as a separate lower-primary track/product decision with fresh NCDC research and structure docs.
 
 ### Push status
 Founder has **not pushed** the current milestone bundle yet. Do not assume the remote repo has these latest changes. When founder is ready, provide a clear overwrite/add file list for the whole milestone.
@@ -85,10 +90,15 @@ Founder has **not pushed** the current milestone bundle yet. Do not assume the r
 - `docs/ops/primary-content-completion-roadmap-2026-07-09.md` — content rollout plan.
 - `docs/ops/content-corrections-workflow-2026-07-09.md` — how to fix/restructure content safely.
 - `docs/ops/ncdc-p5-curriculum-research-2026-07-09.md` — researched P5 curriculum structure and correction note.
+- `docs/ops/ncdc-p3-curriculum-research-2026-07-09.md` — P3 official NCDC thematic curriculum research and mapping.
+- `docs/ops/p3-thematic-app-structure-2026-07-09.md` — P3 thematic-first app structure decision.
+- `docs/ops/p3-thematic-beta-completion-2026-07-12.md` — P3 full thematic beta completion note.
+- `docs/ops/p3-review-polish-pass-2026-07-12.md` — P3 thematic polish + RE beta review pass.
+- `docs/ops/p3-re-source-research-2026-07-12.md` — P3 RE trusted source register and beta build note.
 - `docs/ops/ncdc-p4-curriculum-research-2026-07-09.md` — P4 curriculum research, verified Mathematics correction, P4 RE abridged-map limitation, and full P4 live-beta rollout.
 - `docs/ops/p4-live-beta-completion-audit-2026-07-09.md` — P4 completion audit, file list, source limits and review checklist.
 - `docs/ops/p4-p7-live-beta-review-pass-2026-07-09.md` — P4–P7 AI-level review pass before starting the next class.
-- `docs/ops/p4-p5-visuals-depth-pass-2026-07-09.md` — current visuals/depth pass before P3.
+- `docs/ops/p4-p5-visuals-depth-pass-2026-07-09.md` — closed P4/P5 visuals/depth pass before P3.
 - `docs/ops/curriculum-alignment-audit-p5-p7-2026-07-09.md` — current P5/P6/P7 topic alignment audit.
 
 ---

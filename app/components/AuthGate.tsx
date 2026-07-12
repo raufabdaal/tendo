@@ -7,6 +7,7 @@ import { clearLearnerProfile, saveLearnerProfile } from "@/lib/learner-profile";
 import { clearSession, getSession, saveSession, type TendoGrade, type TendoRole, type TendoSession } from "@/lib/auth-session";
 
 function homeForGrade(grade?: TendoGrade) {
+  if (grade === "P3") return "/p3-home";
   if (grade === "P4") return "/p4-home";
   if (grade === "P5") return "/p5-home";
   if (grade === "P6") return "/p6-home";
@@ -14,6 +15,7 @@ function homeForGrade(grade?: TendoGrade) {
 }
 
 function pathGrade(pathname: string): TendoGrade | null {
+  if (pathname === "/p3-home" || pathname.startsWith("/p3/theme") || pathname.startsWith("/p3/re")) return "P3";
   if (pathname === "/p4-home" || /\/(math|english|science|social-studies|re)\/p4/.test(pathname)) return "P4";
   if (pathname === "/p5-home" || /\/(math|english|science|social-studies|re)\/p5/.test(pathname)) return "P5";
   if (pathname === "/p6-home" || /\/(math|english|science|social-studies|re)\/p6/.test(pathname)) return "P6";
@@ -43,7 +45,7 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (!hydrated || !session) return;
 
-    if (session.role === "teacher" && (pathname === "/" || pathname === "/p4-home" || pathname === "/p5-home" || pathname === "/p6-home" || pathname.startsWith("/practice"))) {
+    if (session.role === "teacher" && (pathname === "/" || pathname === "/p3-home" || pathname === "/p4-home" || pathname === "/p5-home" || pathname === "/p6-home" || pathname.startsWith("/practice"))) {
       router.replace("/teacher");
       return;
     }
@@ -168,6 +170,7 @@ function SignInScreen({ onSignedIn }: { onSignedIn: (session: TendoSession) => v
           <div className="auth-field">
             <span>Class</span>
             <div className="auth-grade-grid three-grade-grid">
+              <button type="button" className={grade === "P3" ? "on" : ""} onClick={() => setGrade("P3")}>P3</button>
               <button type="button" className={grade === "P4" ? "on" : ""} onClick={() => setGrade("P4")}>P4</button>
               <button type="button" className={grade === "P5" ? "on" : ""} onClick={() => setGrade("P5")}>P5</button>
               <button type="button" className={grade === "P6" ? "on" : ""} onClick={() => setGrade("P6")}>P6</button>

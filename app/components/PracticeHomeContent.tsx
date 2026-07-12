@@ -46,6 +46,17 @@ const p7Sets: PracticeSet[] = [
 
 
 
+
+const p3Sets: PracticeSet[] = [
+  { href: "/p3/theme/p3-theme-1-subcounty-division", icon: "🧭", title: "P3 Theme 1 practice", sub: "Maps, physical features, people and leaders", tone: "accent-sst" },
+  { href: "/p3/theme/p3-theme-2-livelihood", icon: "🧺", title: "Livelihood practice", sub: "Occupations and social services", tone: "accent-sst" },
+  { href: "/p3/theme/p3-theme-6-plants", icon: "🌿", title: "Plants practice", sub: "Plant habitats, parts and crop care", tone: "accent-science" },
+  { href: "/p3/theme/p3-theme-8-keeping-peace", icon: "🤝", title: "Peace practice", sub: "Rights, needs and responsibilities", tone: "accent-re" },
+  { href: "/p3/theme/p3-theme-10-health", icon: "🧼", title: "Health practice", sub: "Vectors, disease prevention and care", tone: "accent-science" },
+  { href: "/p3/theme/p3-theme-12-energy", icon: "⚡", title: "Energy practice", sub: "Saving energy and avoiding danger", tone: "accent-science" },
+  { href: "/p3/re", icon: "🕊️", title: "P3 RE practice", sub: "CRE and IRE beta topics", tone: "accent-re" },
+];
+
 const p4Sets: PracticeSet[] = [
   {
     href: "/math/p4/p4-set-concepts",
@@ -220,7 +231,7 @@ export default function PracticeHomeContent() {
   if (!ready) return <div className="auth-loading">Loading practice…</div>;
 
   const grade = session?.grade ?? "P7";
-  const sets = grade === "P4" ? p4Sets : grade === "P5" ? p5Sets : grade === "P6" ? p6Sets : p7Sets;
+  const sets = grade === "P3" ? p3Sets : grade === "P4" ? p4Sets : grade === "P5" ? p5Sets : grade === "P6" ? p6Sets : p7Sets;
   const finalSets = teacherQuestionCount > 0
     ? [{ href: "/practice/teacher-questions", icon: "📝", title: "Teacher questions", sub: `${teacherQuestionCount} question${teacherQuestionCount === 1 ? "" : "s"} to answer`, tone: "accent-english" }, ...sets]
     : sets;

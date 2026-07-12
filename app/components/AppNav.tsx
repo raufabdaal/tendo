@@ -7,6 +7,7 @@ import type { TendoGrade, TendoSession } from "@/lib/auth-session";
 
 function gradeFromPath(pathname: string, session: TendoSession): TendoGrade {
   if (session.role === "student" && session.grade) return session.grade;
+  if (pathname === "/p3-home" || pathname.startsWith("/p3/theme") || pathname.startsWith("/p3/re")) return "P3";
   if (pathname === "/p4-home" || pathname.includes("/p4")) return "P4";
   if (pathname === "/p5-home" || pathname.includes("/p5")) return "P5";
   if (pathname === "/p6-home" || pathname.includes("/p6")) return "P6";
@@ -14,6 +15,7 @@ function gradeFromPath(pathname: string, session: TendoSession): TendoGrade {
 }
 
 function homeForGrade(grade: TendoGrade) {
+  if (grade === "P3") return "/p3-home";
   if (grade === "P4") return "/p4-home";
   if (grade === "P5") return "/p5-home";
   if (grade === "P6") return "/p6-home";
@@ -33,6 +35,8 @@ function activeSection(pathname: string, role: TendoSession["role"]): "home" | "
     pathname.startsWith("/science") ||
     pathname.startsWith("/social-studies") ||
     pathname.startsWith("/re") ||
+    pathname.startsWith("/p3/theme") ||
+    pathname.startsWith("/p3/re") ||
     pathname.startsWith("/study")
   ) return "study";
   return "home";

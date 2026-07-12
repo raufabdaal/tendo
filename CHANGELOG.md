@@ -1,5 +1,154 @@
 # CHANGELOG — Tendo
 
+## v1.8.40 — 2026-07-12 — P3 push package prepared
+
+**Session theme:** Clear the P3 milestone for manual overwrite and push.
+
+**Changed:**
+- Added `docs/ops/p3-push-package-2026-07-12.md` with overwrite/add/delete lists, build status, commit message and post-deploy smoke-test checklist.
+- Added a post-P3 scope note to `STATUS.md` and `HANDOFF.md`: do not start P2/P1 unless a separate lower-primary track is explicitly decided and documented.
+
+**Verified:**
+- Latest app build remains green from the P3 QA pass: `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.39 — 2026-07-12 — P3 QA tightening after RE beta
+
+**Session theme:** Continue internal quality review before teacher verification.
+
+**Changed:**
+- Tightened P3 thematic quiz distractors so wrong choices are neutral and do not accidentally overlap with Health, Water, Resources or Energy content.
+- Tightened P3 RE quiz distractors so wrong choices do not overlap with cleanliness or faith-learning content.
+- Updated P3 student Study Directory wording from “Your subjects” to “Your themes”.
+- Updated P3 Study Directory guidance to explain that P3 is organised by themes with Religious Education as a separate NCDC section.
+- Appended the QA note to `docs/ops/p3-review-polish-pass-2026-07-12.md`.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.38 — 2026-07-12 — P3 review/polish pass and P3 RE beta added
+
+**Session theme:** Work for both completion and quality: polish P3 thematic content and build P3 CRE/IRE beta from official NCDC map plus trusted source cross-checks.
+
+**Changed:**
+- Internally reviewed and polished the full P3 thematic beta.
+- Added a tailored `SUBTHEME_POLISH` layer in `app/lib/p3-thematic-topics.ts` for all 36 P3 thematic sub-themes.
+- Improved P3 thematic modules with specific explanations, local tasks, values/actions, numeracy practice, English sentence frames and creative activities.
+- Researched trusted CRE/IRE support sources and documented the source register in `docs/ops/p3-re-source-research-2026-07-12.md`.
+- Logged `DEV-032`: P3 RE beta may use trusted faith sources under NCDC map control, with teacher review required.
+- Updated `content/curriculum/p3-re.json` verification metadata.
+- Added P3 RE beta content library: `app/lib/p3-re-topics.ts`.
+- Added P3 RE routes: `/p3/re` and `/p3/re/[topic]`.
+- Added 18 P3 RE SVG visuals under `app/public/images/p3/re/`.
+- Updated `/p3-home`, Study Directory, Practice suggestions, AppNav and AuthGate for P3 RE.
+- Added P3 review/polish pass doc: `docs/ops/p3-review-polish-pass-2026-07-12.md`.
+- Updated status/checklist/handoff/start/manual task docs.
+
+**Coverage added:**
+- P3 RE: 8 CRE topics + 10 IRE topics = 18 topics.
+- 54 P3 RE modules.
+- 144 P3 RE quiz questions.
+- 18 P3 RE visuals.
+
+**Important:**
+- P3 remains thematic-first.
+- P3 RE is separate because NCDC places RE outside the thematic matrix.
+- No `/re/p3`, `/math/p3`, `/english/p3`, `/science/p3`, or `/social-studies/p3` routes were added.
+- P3 thematic and RE content remain beta until human/teacher review.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.37 — 2026-07-12 — P3 thematic beta completed across all 12 themes
+
+**Session theme:** Continue P3 the NCDC way by extending the approved thematic-first pattern from Theme 1 to all official P3 themes.
+
+**Changed:**
+- Rebuilt `app/lib/p3-thematic-topics.ts` as the full P3 thematic beta content layer.
+- Added all 12 official P3 thematic themes from `content/curriculum/p3-thematic.json`.
+- Built all 36 official P3 sub-themes with 3 modules each: Understand, Daily-life/values, and Theme skills.
+- Added 108 learner-facing P3 thematic modules and 96 theme quiz questions.
+- Added 36 new P3 sub-theme SVG visuals under `app/public/images/p3/`.
+- Updated `/p3-home` to show all 12 themes and 36 sub-themes.
+- Updated `/p3/theme/[theme]` with a visible expected-outcome/theme-guide overview before the module directory.
+- Updated Study and Practice P3 cards to expose the broader thematic beta.
+- Added completion note: `docs/ops/p3-thematic-beta-completion-2026-07-12.md`.
+- Updated the P3 structure doc with the implementation status.
+
+**Important:**
+- P3 remains thematic-first.
+- No subject-style P3 routes were added.
+- P3 RE is still not built; `content/curriculum/p3-re.json` needs CRE/IRE review before learner-facing build.
+- P3 thematic content is beta at AI-builder level and still needs human/founder/teacher review before premium-final status.
+
+**Verified:**
+- `cd app && npm run build` passed with 337 static pages.
+
+---
+
+## v1.8.36 — 2026-07-09 — First P3 thematic beta slice added
+
+**Session theme:** Build P3 the NCDC way: thematic-first, first theme only.
+
+**Changed:**
+- Added P3 local visuals for Theme 1 under `app/public/images/p3/`.
+- Added `app/lib/p3-thematic-topics.ts` for Theme 1, “Our Sub-county/Division”.
+- Added `/p3-home`.
+- Added `/p3/theme/[theme]` with static params for Theme 1 only.
+- Extended local sign-in/session/navigation/study/practice support to P3.
+- Extended teacher-set question grade typing/options to P3.
+- Updated status/checklist/handoff/start docs.
+
+**Important:**
+- Only P3 Theme 1 is live beta.
+- Remaining P3 themes are not built yet.
+- No subject-style P3 routes were added.
+
+**Verified:**
+- `cd app && npm run build` passed with 326 static pages.
+
+---
+
+## v1.8.35 — 2026-07-09 — P3 thematic-first app structure locked
+
+**Session theme:** Decide P3 learner-facing architecture before building routes.
+
+**Changed:**
+- Logged DEV-031: P3 must be thematic-first, not subject-route-first.
+- Added `docs/ops/p3-thematic-app-structure-2026-07-09.md`.
+- Updated status/checklist/handoff/start docs.
+
+**Decision:**
+- Recommended routes: `/p3-home` and `/p3/theme/[theme]`.
+- Do not build `/math/p3`, `/science/p3`, etc. unless a bridge design is documented.
+
+**Next:**
+- Build first P3 beta slice only: Theme 1, “Our Sub-county/Division”.
+
+---
+
+## v1.8.34 — 2026-07-09 — P3 NCDC thematic research and maps added
+
+**Session theme:** Start P3 correctly with NCDC research and curriculum maps, no routes/content.
+
+**Changed:**
+- Confirmed P3 is lower-primary thematic curriculum, not P4–P7 subject-based curriculum.
+- Added `content/curriculum/p3-thematic.json` with 12 themes and 36 sub-themes.
+- Added `content/curriculum/p3-re.json` with CRE/IRE map from the official P3 RE section.
+- Added `docs/ops/ncdc-p3-curriculum-research-2026-07-09.md`.
+- Updated status/checklist/handoff/start docs.
+
+**Important:**
+- No P3 learner-facing routes or content were added.
+- P3 app structure must be decided before build; thematic-first is recommended.
+
+---
+
 ## v1.8.33 — 2026-07-09 — P4/P5 visuals-depth pass closed
 
 **Session theme:** Close the P4/P5 fullness pass before starting P3 research.

@@ -16,7 +16,7 @@ const SUBJECTS = ["Mathematics", "English", "Integrated Science", "Social Studie
 export default function TeacherQuestionManager() {
   const [questions, setQuestions] = useState<TeacherQuestion[]>([]);
   const [submissions, setSubmissions] = useState<TeacherQuestionSubmission[]>([]);
-  const [grade, setGrade] = useState<"P4" | "P5" | "P6" | "P7">("P7");
+  const [grade, setGrade] = useState<"P3" | "P4" | "P5" | "P6" | "P7">("P7");
   const [subject, setSubject] = useState("Mathematics");
   const [title, setTitle] = useState("");
   const [prompt, setPrompt] = useState("");
@@ -106,11 +106,12 @@ export default function TeacherQuestionManager() {
         <div className="generator-controls compact-controls">
           <label className="ctl">
             <span>Class</span>
-            <select value={grade} onChange={(e) => setGrade(e.target.value as "P4" | "P5" | "P6" | "P7")} className="num-input">
+            <select value={grade} onChange={(e) => setGrade(e.target.value as "P3" | "P4" | "P5" | "P6" | "P7")} className="num-input">
               <option value="P7">P7</option>
               <option value="P6">P6</option>
               <option value="P5">P5</option>
               <option value="P4">P4</option>
+              <option value="P3">P3</option>
             </select>
           </label>
           <label className="ctl">

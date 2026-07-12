@@ -6,16 +6,17 @@ Tendo is a **premium student-first study platform** for Ugandan primary learners
 
 ## Who it's for
 
-- **Primary user:** students, starting with P7 and P6.
+- **Primary user:** students across supported primary classes, currently P3–P7.
 - **Paying customer:** premium parents/guardians who want visible academic ROI.
 - **Supporting users:** teachers/tutors who set work, mark answers, create worksheets, and support learners.
 
 ## Current product shape
 
 - Role-based local/device sign-in: Student or Teacher.
-- Students see only their signed-in class (`P6` or `P7`).
-- Teachers use a separate workspace and can browse both P6 and P7 content.
-- P6 and P7 content currently exists across Mathematics, English Language, Integrated Science, Social Studies, and Religious Education.
+- Students see only their signed-in class (`P3`, `P4`, `P5`, `P6` or `P7`).
+- Teachers use a separate workspace and can browse the supported class content.
+- P7, P6, P5 and P4 content exists across Mathematics, English Language, Integrated Science, Social Studies, and Religious Education.
+- P3 is live as a thematic-first beta across all 12 official NCDC themes, plus a separate P3 Religious Education beta across 18 CRE/IRE topics pending teacher review.
 - Teacher-set questions and manual marking are scaffolded locally.
 - Progress/session data is currently local-device only; real backend authentication is a future task.
 

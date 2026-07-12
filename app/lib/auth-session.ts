@@ -1,5 +1,5 @@
 export type TendoRole = "student" | "teacher";
-export type TendoGrade = "P4" | "P5" | "P6" | "P7";
+export type TendoGrade = "P3" | "P4" | "P5" | "P6" | "P7";
 
 export interface TendoSession {
   role: TendoRole;
