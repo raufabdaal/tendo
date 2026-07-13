@@ -60,8 +60,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
       ],
       whatYouNeedToKnow: [
         "Africa is the second largest continent after Asia. It lies mostly between the Tropic of Cancer and the Tropic of Capricorn, and it is crossed by the Equator, the Prime Meridian and the Tropic of Cancer and Capricorn.",
-        "**Definition:** Lines of latitude are imaginary lines running east to west around the Earth, used to locate places north or south of the Equator (0°).
-**Definition:** Lines of longitude (meridians) are imaginary lines running north to south from pole to pole, used to locate places east or west of the Prime Meridian (0°).",
+        "**Definition:** Lines of latitude are imaginary lines running east to west around the Earth, used to locate places north or south of the Equator (0°).\n**Definition:** Lines of longitude (meridians) are imaginary lines running north to south from pole to pole, used to locate places east or west of the Prime Meridian (0°).",
         "Africa is surrounded by the Mediterranean Sea to the north, the Red Sea and Indian Ocean to the east, the Atlantic Ocean to the west, and the Southern Ocean area towards the south.",
         "Africa is commonly grouped into North Africa, West Africa, East Africa, Central Africa and Southern Africa. Uganda is in East Africa.",
         "Knowing countries and capitals helps learners read maps, follow news and understand cooperation among African states.",
@@ -497,9 +496,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
         "Relate physical features to settlement and economic activities.",
       ],
       whatYouNeedToKnow: [
-        "**Definition:** Physical features are natural landforms and water bodies found on the surface of the earth, not made by people.
-**Types of physical features in Africa:** Mountains and highlands, rivers, lakes, plateaus, rift valleys, deserts, and coastal plains.
-**Key UNEB examples:** Mount Kilimanjaro (highest), River Nile (longest), Lake Victoria (largest by area), Great Rift Valley (faulting formation).",
+        "**Definition:** Physical features are natural landforms and water bodies found on the surface of the earth, not made by people.\n**Types of physical features in Africa:** Mountains and highlands, rivers, lakes, plateaus, rift valleys, deserts, and coastal plains.\n**Key UNEB examples:** Mount Kilimanjaro (highest), River Nile (longest), Lake Victoria (largest by area), Great Rift Valley (faulting formation).",
         "Important mountains include Kilimanjaro, Kenya, Rwenzori and Atlas. Important rivers include the Nile, Congo, Niger and Zambezi. Important lakes include Victoria, Tanganyika, Malawi and Chad.",
         "The Great Rift Valley is a long depression formed by earth movements. Rift valley lakes are often long and deep, such as Lake Tanganyika.",
         "Physical features are important for fishing, farming, transport, hydro-electric power, tourism, mining and settlement. They can also create challenges such as barriers to transport or flooding.",
@@ -863,10 +860,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
         "Show how climate affects human activities and how people affect climate.",
       ],
       whatYouNeedToKnow: [
-        "**Definition:** Climate is the average weather condition of a place recorded over a long period of time (usually 30+ years).
-**Definition:** Weather is the day-to-day condition of the atmosphere at a specific place and time.
-**Elements:** Rainfall, temperature, wind, humidity, sunshine, air pressure, and cloud cover.
-**UNEB distinction:** Climate is what you EXPECT (long-term average); weather is what you GET (daily changes).",
+        "**Definition:** Climate is the average weather condition of a place recorded over a long period of time (usually 30+ years).\n**Definition:** Weather is the day-to-day condition of the atmosphere at a specific place and time.\n**Elements:** Rainfall, temperature, wind, humidity, sunshine, air pressure, and cloud cover.\n**UNEB distinction:** Climate is what you EXPECT (long-term average); weather is what you GET (daily changes).",
         "Africa has climatic regions such as equatorial, tropical, desert, Mediterranean, semi-arid and mountain climate. Equatorial areas are generally hot and wet throughout the year, while desert areas are hot and dry with very little rainfall. Mediterranean areas have hot dry summers and cool wet winters.",
         "Factors that influence climate include latitude, altitude, distance from the sea, ocean currents, winds and relief. High places are cooler than low places, and places near the Equator are generally hotter. Windward slopes receive more rainfall than leeward slopes, which may be drier because of rain shadow.",
         "Climate influences farming, clothing, housing, settlement, transport and tourism. For example, wet areas support crop farming and forests, while dry areas may support pastoralism, irrigation farming or sparse settlement.",
@@ -1281,9 +1275,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
         "Relate vegetation to animals and population distribution.",
       ],
       whatYouNeedToKnow: [
-        "**Definition:** Vegetation is the natural plant cover of an area, including trees, shrubs, grasses, and other plants.
-**Types of vegetation in Africa:** Equatorial rainforest, Savanna grassland, Desert vegetation, Mediterranean scrub, Mountain vegetation, Swamp vegetation, Mangrove/coastal vegetation.
-**Key factor:** Rainfall is the main factor determining vegetation type — more rain supports thicker vegetation.",
+        "**Definition:** Vegetation is the natural plant cover of an area, including trees, shrubs, grasses, and other plants.\n**Types of vegetation in Africa:** Equatorial rainforest, Savanna grassland, Desert vegetation, Mediterranean scrub, Mountain vegetation, Swamp vegetation, Mangrove/coastal vegetation.\n**Key factor:** Rainfall is the main factor determining vegetation type — more rain supports thicker vegetation.",
         "Vegetation distribution is influenced by rainfall, temperature, altitude, soil, drainage, relief and human activities. Areas with heavy rainfall usually support thick forests, while dry areas have sparse vegetation. Mountain vegetation changes with height because temperature and rainfall change with altitude.",
         "Equatorial forests are dense and evergreen, savanna has grass with scattered trees, deserts have drought-resistant plants, Mediterranean vegetation has shrubs and trees adapted to dry summers, and mangroves grow in salty coastal/swampy areas.",
         "Vegetation is important because it provides food, timber, medicine, rainfall support, soil protection, animal habitats, grazing land, fuel, building materials and tourist attractions.",
@@ -1601,12 +1593,8 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
         "Explain problems and effects of ethnic migrations.",
       ],
       whatYouNeedToKnow: [
-        "**Definition:** An ethnic group is a large group of people who share a common culture, language, origin, and history.
-**Major ethnic groups of Africa:** Bantu (largest — Central, East, Southern Africa), Nilotes (Nile Valley — Acholi, Luo, Maasai, Karimojong), Cushites (Horn — Somali, Oromo), Semites and Berbers (North Africa — Arabs), Khoisan (Southern Africa — San and Khoikhoi).
-**Uganda examples:** Bantu groups include Baganda, Banyankole, Bakiga; Nilotic groups include Acholi, Lango, Iteso, Karamojong.",
-        "**Definition:** Migration is the movement of people from one place to another, often across large distances, to settle in a new area.
-**Push factors (force people to leave):** Population increase, shortage of land/water, wars and conflicts, harsh climate, famine, disease.
-**Pull factors (attract people to a place):** Fertile land, reliable water, security, trade opportunities, better climate.",
+        "**Definition:** An ethnic group is a large group of people who share a common culture, language, origin, and history.\n**Major ethnic groups of Africa:** Bantu (largest — Central, East, Southern Africa), Nilotes (Nile Valley — Acholi, Luo, Maasai, Karimojong), Cushites (Horn — Somali, Oromo), Semites and Berbers (North Africa — Arabs), Khoisan (Southern Africa — San and Khoikhoi).\n**Uganda examples:** Bantu groups include Baganda, Banyankole, Bakiga; Nilotic groups include Acholi, Lango, Iteso, Karamojong.",
+        "**Definition:** Migration is the movement of people from one place to another, often across large distances, to settle in a new area.\n**Push factors (force people to leave):** Population increase, shortage of land/water, wars and conflicts, harsh climate, famine, disease.\n**Pull factors (attract people to a place):** Fertile land, reliable water, security, trade opportunities, better climate.",
         "During migration, people faced problems such as resistance from indigenous people, wild animals, diseases, difficult terrain, food shortage, water shortage and harsh climate.",
         "Migrations changed population distribution, spread cultures and languages, caused intermarriages, led to conflicts in some areas and helped form new settlements.",
         "Settlement patterns are influenced by relief, climate, water, vegetation, security, fertile soils and economic activities.",
@@ -2262,10 +2250,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
         "Compare single-party and multiparty systems.",
       ],
       whatYouNeedToKnow: [
-        "**Definition:** Nationalism is love for and loyalty to one's nation, often shown through the desire for self-rule and independence.
-**Definition:** A nationalist is a person who works for the interests or independence of their nation.
-**Definition:** Patriotism is love for one's country and willingness to serve it responsibly.
-**Definition:** Pan-Africanism is the idea that African people should unite, support one another, and work together for freedom and development across the whole continent.",
+        "**Definition:** Nationalism is love for and loyalty to one's nation, often shown through the desire for self-rule and independence.\n**Definition:** A nationalist is a person who works for the interests or independence of their nation.\n**Definition:** Patriotism is love for one's country and willingness to serve it responsibly.\n**Definition:** Pan-Africanism is the idea that African people should unite, support one another, and work together for freedom and development across the whole continent.",
         "Pan-Africanism is the idea that African people should unite, support one another and work for freedom and development. Pan-Africanists encouraged African pride, unity and resistance to colonial domination.",
         "Pan-Africanists and nationalists used political parties, newspapers, petitions, strikes, boycotts, demonstrations, negotiations, armed struggle in some places and international pressure to demand independence.",
         "Leading African nationalists and Pan-Africanists included people such as Kwame Nkrumah, Jomo Kenyatta, Julius Nyerere, Patrice Lumumba, Nelson Mandela and others. Learners should connect leaders with the wider struggle for self-rule, not memorise names only.",
@@ -3151,9 +3136,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           {
             moduleId: "major-economic-development-africa",
             title: "Major economic development in Africa",
-            bigIdea: "**Definition:** Economic development is the process of improving people's standard of living by using resources well — including better income, health, education, housing, and services.
-**Definition:** Value addition is processing raw materials into finished or semi-finished goods to increase their market value (e.g., roasting coffee beans instead of selling raw beans).
-**Key economic activities in Africa:** Agriculture, mining, tourism, trade, fishing, manufacturing, and transport.",
+            bigIdea: "**Definition:** Economic development is the process of improving people's standard of living by using resources well — including better income, health, education, housing, and services.\n**Definition:** Value addition is processing raw materials into finished or semi-finished goods to increase their market value (e.g., roasting coffee beans instead of selling raw beans).\n**Key economic activities in Africa:** Agriculture, mining, tourism, trade, fishing, manufacturing, and transport.",
             learnIt: [
               "Economic development means improving people's standards of living – better income, health, education, housing and services.",
               "Agriculture: provides food, jobs and exports such as coffee, cotton, tea, cocoa, maize and horticulture. Many Africans depend on farming.",
@@ -3412,9 +3395,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
         "Explain membership, functions and challenges of the Commonwealth of Nations.",
       ],
       whatYouNeedToKnow: [
-        "**Definition:** The United Nations (UN) is a world organisation formed in 1945 after World War II to promote international peace, security, cooperation, human rights, and development.
-**Headquarters:** New York, USA.
-**Key UNEB fact:** The UN replaced the League of Nations, which had failed to prevent World War II. Uganda is a member.",
+        "**Definition:** The United Nations (UN) is a world organisation formed in 1945 after World War II to promote international peace, security, cooperation, human rights, and development.\n**Headquarters:** New York, USA.\n**Key UNEB fact:** The UN replaced the League of Nations, which had failed to prevent World War II. Uganda is a member.",
         "Important organs of the UN include the General Assembly, Security Council, International Court of Justice, Secretariat and Economic and Social Council. The General Assembly gives all member states a voice, while the Security Council has special responsibility for peace and security.",
         "UN agencies include UNICEF for children, WHO for health, FAO for food and agriculture, UNESCO for education, science and culture, UNHCR for refugees and WFP for food assistance. Learners should match each agency to its work, not memorise abbreviations only.",
         "Human rights are basic freedoms and protections every person should enjoy, such as the right to life, education, health, fair treatment, worship, expression and freedom from discrimination. Rights go together with responsibilities.",
