@@ -1839,7 +1839,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       }],
- },
+  },
   {
     id: "vegetation-of-africa",
     themeId: "sst-living-together-africa",
