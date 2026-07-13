@@ -1057,9 +1057,8 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             bigIdea: "Meteorological instruments measure specific weather elements accurately at weather stations.",
             learnIt: [
               "Rain Gauge: Measures the amount of rainfall in millimetres (mm). It is a metal cylinder with a funnel and measuring jar placed in an open area away from trees and buildings.\nThermometer (Six's Thermometer): Measures maximum and minimum daily temperatures in degrees Celsius. Contains mercury and alcohol in a U-shaped tube with metal indices.\nBarometer: Measures atmospheric air pressure in millibars (mb). High pressure = dry weather; low pressure = wet/stormy weather.\nAnemometer: Measures WIND SPEED in kilometres per hour. Has three or four hemispherical cups that rotate faster in stronger wind.\nWind Vane: Shows WIND DIRECTION (where the wind is coming from). A free-swinging arrow points into the wind. UNEB trap: Anemometer = speed; Wind Vane = direction.\nWindsock: Shows both wind DIRECTION and wind STRENGTH. A fabric cone on a pole — commonly seen at airports.\nHygrometer: Measures relative humidity (%) — the amount of water vapour in the air.\nSunshine Recorder (Campbell-Stokes): Measures the duration of bright sunshine in hours per day using a glass sphere that focuses sunlight to burn a trace on a card.\nCeilometer: Measures cloud ceiling height and cloud thickness at weather stations and airports.\nStevenson Screen: A WHITE wooden box with louvered (slatted) sides mounted 1.2 metres above ground on metal legs. Shelters thermometers and hygrometers from direct sunlight, rain, and wind while allowing free air circulation. It is painted WHITE to reflect heat.",
-              ,
-              ,
             ],
+
             visual: {
               kind: "cards",
               title: "Weather instruments",
