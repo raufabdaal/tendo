@@ -1838,7 +1838,8 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             tryThis: { question: "Sparse settlement is most likely in:", choices: ["deserts", "fertile plains", "trading centres", "well-watered areas"], correct: 0, explanation: "Deserts have little water and harsh conditions, so fewer people settle there." }
           }
         ]
-      }],
+      }
+    ],
   },
   {
     id: "vegetation-of-africa",
