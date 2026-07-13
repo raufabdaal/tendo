@@ -1850,6 +1850,394 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
     ],
   },
   {
+    id: "vegetation-of-africa",
+    themeId: "sst-living-together-africa",
+    themeName: "Living Together in Africa",
+    title: "Vegetation of Africa",
+    estMinutes: 18,
+    status: "published",
+    reviewStatus: "verified",
+    note: {
+      intro: "Vegetation affects animals, population distribution, farming, tourism and environmental protection across Africa.",
+      learningObjectives: ["Name and locate major vegetation types of Africa.", "Explain factors that influence vegetation distribution.", "Describe the importance of vegetation and game parks."],
+      whatYouNeedToKnow: [
+        "Vegetation is the natural plant cover of an area. Types in Africa: equatorial rainforest, savanna grassland, desert vegetation, Mediterranean vegetation, mountain vegetation, mangrove vegetation.",
+        "Vegetation distribution depends mainly on rainfall. Temperature, altitude, soil, and human activities also influence it.",
+        "Vegetation is important for food, timber, medicine, rainfall, soil protection, animal habitats, and tourism. Game parks protect wildlife and vegetation.",
+      ],
+      worked: { problem: "Why are savanna grasslands important to tourism in Africa?", steps: ["Savanna has grass and scattered trees.", "Many wild animals like lions and elephants live there.", "Tourists visit game parks to see them."], answer: "Savanna grasslands support wildlife, which attracts tourists." },
+      recap: ["Vegetation depends mainly on rainfall.", "Africa has forests, savanna, desert, Mediterranean, and mountain vegetation.", "Vegetation supports animals, people, tourism, and the environment."],
+    },
+    subtopics: [
+      {
+        subtopicId: "vegetation-types",
+        title: "Types of vegetation in Africa",
+        modules: [
+          {
+            moduleId: "forest-vegetation",
+            imageUrl: "/images/social-studies/africa-vegetation-belts.png",
+            imageCaption: "Comparison of dense tropical rainforest vs open savanna woodland.",
+            title: "Forest vegetation of Africa",
+            bigIdea: "Forest vegetation includes equatorial rainforests, mangrove forests, and montane forests.",
+            learnIt: [
+              "Equatorial forests: Thick, evergreen forests in hot, wet areas near the Equator. DRC, Gabon, Congo Basin. Tall trees with dense canopies. Hardwoods: mahogany, ebony, rosewood.",
+              "Mangrove forests: Grow in salty coastal swamps where fresh and salt water mix. Found along West and East African coasts.",
+              "Montane forests: Found on high mountains where climate is cooler and wetter. Slopes of Kilimanjaro, Rwenzori, Ethiopian Highlands.",
+            ],
+            tryThis: { question: "Which forest type grows in hot, wet areas near the Equator?", choices: ["Equatorial forest", "Mangrove forest", "Montane forest", "Desert scrub"], correct: 0, explanation: "Equatorial forests grow in hot, wet areas near the Equator." }
+          },
+          {
+            moduleId: "grassland-savanna",
+            title: "Savanna and grassland vegetation",
+            bigIdea: "Savanna is Africa's largest vegetation zone with grass and scattered trees adapted to wet and dry seasons.",
+            learnIt: [
+              "Savanna vegetation: Grassland with scattered trees (acacia, baobab). Covers large parts of East, Central and West Africa. Wet and dry seasons.",
+              "Temperate grasslands (velds): South Africa. Short grasses, few trees, cooler winters.",
+              "Mediterranean vegetation: Shrubs and small trees adapted to hot dry summers and cool wet winters. North Africa coast and South Africa's Cape.",
+              "Desert vegetation: Sparse, drought-resistant plants. Thorny bushes, cacti. Sahara, Namib, Kalahari.",
+            ],
+            tryThis: { question: "Which is the largest vegetation zone in Africa?", choices: ["Savanna grassland", "Equatorial rainforest", "Desert vegetation", "Mediterranean scrub"], correct: 0, explanation: "Savanna grasslands cover the largest area of Africa." }
+          },
+          {
+            moduleId: "vegetation-exam-summary",
+            title: "Exam Summary: 10 UNEB Facts about Vegetation",
+            bigIdea: "Master these high-frequency vegetation facts for PLE.",
+            learnIt: [
+              "1. Vegetation = natural plant cover. Rainfall is the main determining factor.",
+              "2. Equatorial rainforests: DRC, Gabon, Congo Basin. Hot, wet all year. Hardwoods: mahogany, ebony.",
+              "3. Savanna: Africa's largest zone. Grass + scattered trees. Wet and dry seasons.",
+              "4. Desert vegetation: Sahara, Namib, Kalahari. Sparse, thorny, drought-resistant.",
+              "5. Mediterranean: North Africa coast and Cape. Shrubs. Hot dry summers, wet winters.",
+              "6. Mangrove forests: Salty coastal swamps along West and East African coasts.",
+              "7. Mountain vegetation changes with altitude: forest → bamboo → grassland.",
+              "8. Deforestation = cutting trees without replanting. Afforestation = planting new trees.",
+              "9. Game parks protect wildlife: Murchison Falls (Uganda), Serengeti (Tanzania).",
+              "10. Desertification: fertile land → desert. Caused by overgrazing, deforestation, drought.",
+            ]
+          }
+        ]
+      }
+    ],
+    quiz: [
+      { q: "Vegetation means:", choices: ["Plant cover of an area", "Capital city", "All rivers", "Only wild animals"], correct: 0, why: "Vegetation is the natural plant cover of an area." },
+      { q: "Which vegetation type is common near the Equator?", choices: ["Equatorial rainforest", "Desert vegetation", "Mediterranean scrub", "Tundra"], correct: 0, why: "Heavy rainfall near the Equator supports equatorial rainforest." },
+      { q: "Which factor strongly influences vegetation?", choices: ["Rainfall", "Flag colour", "Capital name", "Number plate"], correct: 0, why: "Rainfall affects the type and amount of vegetation." },
+      { q: "Game parks are important because they:", choices: ["Protect wildlife", "Destroy all forests", "Stop tourism", "Remove all animals"], correct: 0, why: "Game parks protect animals and their habitats." },
+      { q: "Which animal is commonly associated with savanna?", choices: ["Lion", "Polar bear", "Penguin", "Whale only"], correct: 0, why: "Lions live in savanna ecosystems." },
+    ],
+  },
+  {
+    id: "people-ethnic-groups-settlement",
+    themeId: "sst-living-together-africa",
+    themeName: "Living Together in Africa",
+    title: "People of Africa, ethnic groups and settlement",
+    estMinutes: 17,
+    status: "published",
+    reviewStatus: "verified",
+    note: {
+      intro: "African societies have different origins, migrations, languages and settlement patterns. Understanding diversity promotes unity.",
+      learningObjectives: ["Describe origins and movements of ethnic groups.", "Identify settlement patterns.", "Explain reasons for migration."],
+      whatYouNeedToKnow: [
+        "An ethnic group shares common culture, language, origin, and history. Major groups: Bantu (largest), Nilotes, Cushites, Khoisan.",
+        "Migration = movement of people. Push factors: population increase, land shortage, wars. Pull factors: fertile land, water, security, trade.",
+        "Settlement patterns: dispersed (farming), nucleated (markets/water), linear (roads/rivers). Influenced by relief, climate, water, security, soils.",
+      ],
+      worked: { problem: "Give reasons why ethnic groups migrated.", steps: ["People needed land and water.", "Wars forced movement.", "Harsh climate pushed people away."], answer: "Population increase, land shortage, wars, harsh climate, and expansionism." },
+      recap: ["Africa has many ethnic groups.", "Migration has push and pull reasons.", "Settlement patterns vary with environment."],
+    },
+    subtopics: [
+      {
+        subtopicId: "origin-ethnic-groups",
+        title: "Origin and types of ethnic groups",
+        modules: [
+          {
+            moduleId: "major-ethnic-groups",
+            imageUrl: "/images/social-studies/bantu-nilote-migration-map.png",
+            imageCaption: "Migration routes of Bantu and Nilotic speakers into East Africa.",
+            title: "Major ethnic groups of Africa",
+            bigIdea: "Africa has distinct ethnic groups: Bantu, Nilotes, Cushites, Semites, Berbers, and Khoisan.",
+            learnIt: [
+              "Bantu: Largest group. Originated from Cameroon/Congo. Migrated across Central, East, Southern Africa. Uganda examples: Baganda, Banyankole, Bakiga.",
+              "Nilotes: From Bahr-el-Ghazal, South Sudan. River-Lake Nilotes (Acholi, Alur, Luo); Plain Nilotes (Maasai, Karimojong); Highland Nilotes (Kalenjin).",
+              "Cushites: Horn of Africa (Somali, Oromo). Semites/Berbers: North Africa (Arabs). Khoisan: Southern Africa (San hunters, Khoikhoi pastoralists).",
+            ],
+            tryThis: { question: "An ethnic group commonly shares:", choices: ["Culture, language and origin", "Only shoe size", "Only rainfall", "Only road signs"], correct: 0, explanation: "Ethnic groups share culture, language, origin or history." }
+          },
+          {
+            moduleId: "reasons-migration",
+            title: "Reasons for migration and settlement",
+            bigIdea: "Push factors force people out; pull factors attract them to new areas.",
+            learnIt: [
+              "Push factors: Population increase, land/water shortage, wars and conflicts, harsh climate, famine.",
+              "Pull factors: Fertile land, reliable water, security, trade opportunities.",
+              "Effects: Population growth in settled areas, cultural exchange, intermarriage, conflicts, new settlements.",
+            ],
+            tryThis: { question: "Which is a pull factor?", choices: ["Fertile land", "Famine", "War", "Disease outbreak"], correct: 0, explanation: "Fertile land attracts settlement." }
+          }
+        ]
+      }
+    ],
+    quiz: [
+      { q: "An ethnic group commonly shares:", choices: ["Culture and origin", "Only shoe size", "Only rainfall", "Only road signs"], correct: 0, why: "Ethnic groups share culture, language, origin or history." },
+      { q: "Migration means:", choices: ["Movement of people from one place to another", "Growth of grass", "Building a dam", "Drawing a map only"], correct: 0, why: "Migration is movement of people." },
+      { q: "Which is a reason for migration?", choices: ["Search for land", "Too many latitudes", "A mirror image", "Short circuit"], correct: 0, why: "People migrate to find land." },
+      { q: "Which factor affects settlement patterns?", choices: ["Water supply", "Book colour", "Answer letter", "Bell sound only"], correct: 0, why: "People settle near reliable water." },
+    ],
+  },
+  {
+    id: "nationalism-road-independence",
+    themeId: "sst-living-together-africa",
+    themeName: "Living Together in Africa",
+    title: "Nationalism and the road to independence",
+    estMinutes: 20,
+    status: "published",
+    reviewStatus: "verified",
+    note: {
+      intro: "Nationalism helped Africans organise to regain independence. Pan-Africanism drove continental unity.",
+      learningObjectives: ["Explain nationalism, patriotism and Pan-Africanism.", "Identify key nationalists.", "Describe methods used for independence."],
+      whatYouNeedToKnow: [
+        "Nationalism = love and loyalty to one's nation, desire for self-rule. Pan-Africanism = unity of African people continent-wide.",
+        "Key nationalists: Kwame Nkrumah (Ghana, 1957), Jomo Kenyatta (Kenya, 1963), Julius Nyerere (Tanzania, 1961), Milton Obote (Uganda, 1962), Nelson Mandela (South Africa).",
+        "Methods: Political parties, newspapers, strikes, boycotts, demonstrations, negotiations, armed struggle where peaceful methods failed.",
+      ],
+      worked: { problem: "Differentiate nationalism and Pan-Africanism.", steps: ["Nationalism = love for one's nation and self-rule.", "Pan-Africanism = unity of African people continent-wide.", "Both helped independence."], answer: "Nationalism is loyalty to one's nation; Pan-Africanism is unity of African people." },
+      recap: ["Nationalism drove self-rule.", "Pan-Africanism promoted unity.", "Methods included parties, strikes, and negotiations."],
+    },
+    subtopics: [
+      {
+        subtopicId: "meaning-nationalism-panafricanism",
+        title: "Nationalism, Pan-Africanism and key leaders",
+        modules: [
+          {
+            moduleId: "nationalism-patriotism",
+            title: "Nationalism and patriotism",
+            bigIdea: "Nationalism drives self-rule; patriotism is love and service to one's country.",
+            learnIt: [
+              "Nationalism: Love for one's nation, desire for independence and self-rule.",
+              "Patriotism: Love for one's country — paying taxes, obeying laws, promoting peace.",
+              "Key dates: Ghana (6 March 1957 — first), Uganda (9 October 1962), Kenya (12 Dec 1963), Tanzania (9 Dec 1961).",
+            ],
+            tryThis: { question: "Nationalism means:", choices: ["Love for and loyalty to one's nation", "A type of lake", "A climate zone", "A vegetation belt"], correct: 0, explanation: "Nationalism is love for one's nation." }
+          },
+          {
+            moduleId: "key-nationalists",
+            title: "Key African nationalists",
+            bigIdea: "Nkrumah, Kenyatta, Nyerere, Obote, and Mandela led their countries to freedom.",
+            learnIt: [
+              "Kwame Nkrumah (Ghana): First sub-Saharan independence, 1957. Pan-Africanist.",
+              "Jomo Kenyatta (Kenya): First president, 1963. Mau Mau rebellion led by Dedan Kimathi.",
+              "Julius Nyerere (Tanzania): First president, 1961. Ujamaa socialism, African unity.",
+              "Milton Obote (Uganda): First PM, 1962. UNC party founded by Ignatius Musaazi, 1952.",
+              "Nelson Mandela (South Africa): Anti-apartheid. 27 years imprisoned. President, 1994.",
+            ],
+            tryThis: { question: "Which country did Kwame Nkrumah lead?", choices: ["Ghana", "Kenya", "South Africa", "Congo"], correct: 0, explanation: "Nkrumah led Ghana to independence in 1957." }
+          }
+        ]
+      }
+    ],
+    quiz: [
+      { q: "Nationalism means:", choices: ["Love for and loyalty to one's nation", "A type of lake", "A climate zone", "A vegetation belt"], correct: 0, why: "Nationalism is love for one's nation." },
+      { q: "Pan-Africanism promotes:", choices: ["African unity", "Colonial rule", "Desert expansion", "River flooding only"], correct: 0, why: "Pan-Africanism promotes African unity." },
+      { q: "Which was the first sub-Saharan country to gain independence?", choices: ["Ghana (1957)", "Uganda (1962)", "Kenya (1963)", "Tanzania (1961)"], correct: 0, why: "Ghana, 6 March 1957." },
+      { q: "Ethiopia resisted Italian colonisation at:", choices: ["Battle of Adwa (1896)", "Berlin Conference", "World War I", "Scramble"], correct: 0, why: "Ethiopia defeated Italy at Adwa in 1896." },
+    ],
+  },
+  {
+    id: "post-independence-africa",
+    themeId: "sst-living-together-africa",
+    themeName: "Living Together in Africa",
+    title: "Post-independence Africa",
+    estMinutes: 18,
+    status: "published",
+    reviewStatus: "verified",
+    note: {
+      intro: "After independence, African countries formed OAU, AU and regional groupings for unity, peace, and development.",
+      learningObjectives: ["Explain OAU and AU.", "Name regional groupings.", "Identify post-independence challenges."],
+      whatYouNeedToKnow: [
+        "OAU: Formed 1963, Addis Ababa. Promoted unity, supported liberation, defended sovereignty.",
+        "AU: Replaced OAU in 2002. Peace, democracy, human rights, development. HQ: Addis Ababa.",
+        "Regional groupings: COMESA, ECOWAS, SADC, IGAD. Promote trade, transport, peace, cooperation.",
+      ],
+      worked: { problem: "Give advantages of regional cooperation.", steps: ["Larger markets for goods.", "Shared infrastructure reduces costs."], answer: "Creates larger markets and encourages shared infrastructure." },
+      recap: ["OAU promoted unity.", "AU continues with wider aims.", "COMESA, ECOWAS, SADC, IGAD are key groupings."],
+    },
+    subtopics: [
+      {
+        subtopicId: "oau-formation-aims",
+        title: "OAU and AU",
+        modules: [
+          {
+            moduleId: "oau-au",
+            title: "From OAU to AU",
+            bigIdea: "OAU (1963) promoted unity; AU (2002) added peace, democracy, and development.",
+            learnIt: [
+              "OAU: 25 May 1963, Addis Ababa. 32 founders. Objectives: unity, sovereignty, eradicate colonialism.",
+              "AU: 2002, Durban. Objectives: peace, security, democracy, human rights, development.",
+              "AU organs: Assembly, Commission, Pan-African Parliament, Peace and Security Council.",
+            ],
+            tryThis: { question: "The OAU was formed in:", choices: ["1963", "2002", "1884", "1945"], correct: 0, explanation: "OAU formed 1963 in Addis Ababa." }
+          },
+          {
+            moduleId: "regional-groupings",
+            title: "Regional economic groupings",
+            bigIdea: "COMESA, ECOWAS, SADC, IGAD promote trade and cooperation.",
+            learnIt: [
+              "COMESA: Eastern and Southern Africa. Uganda is a member.",
+              "ECOWAS: West Africa. SADC: Southern Africa. IGAD: Horn/Eastern Africa.",
+              "Benefits: larger markets, shared infrastructure, peace-building, stronger bargaining power.",
+            ],
+            tryThis: { question: "COMESA is:", choices: ["Regional economic grouping", "Mountain range", "Desert", "Lake"], correct: 0, explanation: "COMESA is a regional economic grouping." }
+          }
+        ]
+      }
+    ],
+    quiz: [
+      { q: "The OAU was formed in:", choices: ["1963", "2002", "1884", "1995"], correct: 0, why: "OAU formed in 1963." },
+      { q: "Which organisation replaced the OAU?", choices: ["AU", "UNICEF", "WHO", "NATO"], correct: 0, why: "African Union replaced OAU." },
+      { q: "COMESA is:", choices: ["Regional economic grouping", "Mountain range", "Desert", "Lake"], correct: 0, why: "COMESA is a regional grouping." },
+      { q: "Advantage of economic cooperation:", choices: ["Larger markets", "More isolation", "Stopping trade", "Removing roads"], correct: 0, why: "Larger markets benefit members." },
+    ],
+  },
+  {
+    id: "economic-developments-africa",
+    themeId: "sst-living-together-africa",
+    themeName: "Living Together in Africa",
+    title: "Economic developments in Africa",
+    estMinutes: 22,
+    status: "published",
+    reviewStatus: "verified",
+    note: {
+      intro: "Africa's resources shape development. Case studies: Nigeria, South Africa, DRC, Sudan, Libya, and Uganda.",
+      learningObjectives: ["Name major economic resources.", "Explain problems in using resources.", "Compare country case studies."],
+      whatYouNeedToKnow: [
+        "Resources: minerals (gold, copper, cobalt, diamonds, petroleum), fertile soils, water, forests, wildlife, sunshine.",
+        "Economic activities: agriculture, mining, tourism, trade, fishing, manufacturing, transport.",
+        "Nigeria (oil), South Africa (minerals/industry), DRC (minerals/forests), Uganda (farming/tourism).",
+      ],
+      worked: { problem: "Why is value addition important?", steps: ["Raw materials sold cheaply.", "Processing increases value.", "Creates jobs and income."], answer: "Value addition increases income and creates jobs." },
+      recap: ["Africa has many resources.", "Development depends on wise use.", "Peace, skills, infrastructure support development."],
+    },
+    subtopics: [
+      {
+        subtopicId: "resources-africa",
+        title: "Economic resources and case studies",
+        modules: [
+          {
+            moduleId: "major-resources",
+            imageUrl: "/images/social-studies/mining-and-agriculture-processing.png",
+            imageCaption: "Value addition transforms raw crops and ores into products.",
+            title: "Major economic resources of Africa",
+            bigIdea: "Africa is rich in natural and human resources. Wise use drives development.",
+            learnIt: [
+              "Minerals: Gold, copper, cobalt, diamonds, petroleum, iron ore, coltan.",
+              "Agriculture: Coffee, tea, cotton, cocoa, maize, bananas. Fertile soils, favourable climate.",
+              "Forest/water: Timber, medicine, fishing, irrigation, hydroelectric power.",
+              "Tourism: Wildlife, national parks, gorillas, scenery. Foreign exchange earner.",
+            ],
+            tryThis: { question: "Major resource in Nigeria:", choices: ["Oil", "Snowfields", "Polar bears", "Volcanoes"], correct: 0, explanation: "Nigeria is known for oil." }
+          },
+          {
+            moduleId: "country-case-studies",
+            title: "Country case studies",
+            bigIdea: "Each country has different resources and challenges.",
+            learnIt: [
+              "Nigeria: Oil, cocoa, palm oil. Africa's largest population. Challenges: pollution, corruption.",
+              "South Africa: Gold, diamonds, platinum. Most industrialised. Farming: maize, fruits, wine.",
+              "DRC: Copper, cobalt, coltan, Congo rainforest. Challenges: poor transport, conflict.",
+              "Uganda: Coffee, tea, tourism (gorillas), fishing (Lake Victoria), growing oil.",
+            ],
+            tryThis: { question: "Most industrialised African economy:", choices: ["South Africa", "Chad", "Somalia", "Rwanda"], correct: 0, explanation: "South Africa is most industrialised." }
+          },
+          {
+            moduleId: "problems-solutions",
+            title: "Problems and solutions",
+            bigIdea: "Poor transport, limited capital, and corruption slow development.",
+            learnIt: [
+              "Problems: Poor roads/railways, limited investment, low technology, instability, corruption, raw material export dependence.",
+              "Solutions: Value addition, regional trade (AfCFTA, EAC), infrastructure, technical education, good governance.",
+            ],
+            tryThis: { question: "Processing raw coffee before export is:", choices: ["Value addition", "Devaluation", "Deficit", "Disinvestment"], correct: 0, explanation: "Value addition increases worth." }
+          }
+        ]
+      }
+    ],
+    quiz: [
+      { q: "Major resource in Nigeria:", choices: ["Oil", "Snowfields", "Polar bears", "Volcanoes"], correct: 0, why: "Nigeria is known for oil." },
+      { q: "Most industrialised in Southern Africa:", choices: ["South Africa", "Chad", "Somalia", "Rwanda"], correct: 0, why: "South Africa is most industrialised." },
+      { q: "Value addition means:", choices: ["Processing raw materials to increase value", "Wasting resources", "Stopping trade", "Cutting forests"], correct: 0, why: "Increases worth by processing." },
+      { q: "Solution for development:", choices: ["Good governance", "Corruption", "Civil war", "Destroying roads"], correct: 0, why: "Good governance supports development." },
+    ],
+  },
+  {
+    id: "major-world-organisations",
+    themeId: "sst-living-together-africa",
+    themeName: "Living Together in Africa",
+    title: "Major world organisations",
+    estMinutes: 18,
+    status: "published",
+    reviewStatus: "verified",
+    note: {
+      intro: "African countries relate with global organisations like the UN and Commonwealth.",
+      learningObjectives: ["Explain UN origin and organs.", "Name UN agencies.", "Describe the Commonwealth."],
+      whatYouNeedToKnow: [
+        "UN: Formed 1945 after WWII. HQ: New York. Replaced League of Nations.",
+        "UN organs: General Assembly, Security Council (5 permanent veto), ICJ, Secretariat.",
+        "UN agencies: UNICEF (children), WHO (health), FAO (food), UNESCO (education), UNHCR (refugees).",
+        "Commonwealth: Voluntary association of mostly former British colonies. Democracy, trade, scholarships, Games.",
+      ],
+      worked: { problem: "Match UNICEF and WHO to their work.", steps: ["UNICEF = children's welfare.", "WHO = health worldwide."], answer: "UNICEF supports children; WHO promotes health." },
+      recap: ["UN formed 1945 for peace.", "Agencies handle children, health, food, education.", "Commonwealth links member countries."],
+    },
+    subtopics: [
+      {
+        subtopicId: "un-formation-organs",
+        title: "United Nations and agencies",
+        modules: [
+          {
+            moduleId: "un-basics",
+            title: "Formation and organs of the UN",
+            bigIdea: "UN formed 1945 to promote peace, security, cooperation, and human rights.",
+            learnIt: [
+              "UN: 1945, HQ New York. Uganda is a member. Replaced League of Nations.",
+              "Organs: General Assembly (all members), Security Council (15, 5 permanent veto), ICJ, Secretariat.",
+            ],
+            tryThis: { question: "UN formed in:", choices: ["1945", "1963", "2002", "1884"], correct: 0, explanation: "UN formed 1945 after WWII." }
+          },
+          {
+            moduleId: "un-agencies",
+            title: "UN agencies and functions",
+            bigIdea: "UNICEF, WHO, FAO, UNESCO, UNHCR serve specific needs.",
+            learnIt: [
+              "UNICEF: Children's welfare — health, education, immunisation.",
+              "WHO: Global health, disease control, vaccination.",
+              "FAO: Food and agriculture, fighting hunger.",
+              "UNESCO: Education, science, culture, World Heritage Sites.",
+              "UNHCR: Refugees — protection, shelter. WFP: Food assistance.",
+            ],
+            tryThis: { question: "Which UN agency focuses on children?", choices: ["UNICEF", "WHO", "FAO", "UNHCR"], correct: 0, explanation: "UNICEF supports children's welfare." }
+          },
+          {
+            moduleId: "commonwealth",
+            title: "The Commonwealth of Nations",
+            bigIdea: "Voluntary association of former British colonies promoting democracy and cooperation.",
+            learnIt: [
+              "Membership: Voluntary, shared values — democracy, human rights, rule of law.",
+              "Functions: Promotes democracy, trade, scholarships, Commonwealth Games (every 4 years).",
+              "CHOGM: Leaders meet every 2 years. Uganda hosted in 2007.",
+            ],
+            tryThis: { question: "The Commonwealth is:", choices: ["Member countries cooperating", "Only rivers", "Only deserts", "Only mountains"], correct: 0, explanation: "Commonwealth is an association of countries." }
+          }
+        ]
+      }
+    ],
+    quiz: [
+      { q: "The UN was formed in:", choices: ["1945", "1963", "2002", "1884"], correct: 0, why: "UN formed 1945 after WWII." },
+      { q: "UN agency for children:", choices: ["UNICEF", "WHO", "FAO", "UNHCR"], correct: 0, why: "UNICEF supports children." },
+      { q: "UN agency for health:", choices: ["WHO", "UNESCO", "UNHCR", "FAO"], correct: 0, why: "WHO is World Health Organization." },
+      { q: "The Commonwealth is:", choices: ["Member countries cooperating", "Only rivers", "Only deserts", "Only mountains"], correct: 0, why: "Commonwealth is association of countries." },
+    ],
+  },
+  {
     id: "foreign-influence-africa",
     themeId: "sst-living-together-africa",
     themeName: "Living Together in Africa",
