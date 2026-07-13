@@ -1,28 +1,9 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import Quiz from "@/components/Quiz";
-import TopicTabs from "@/components/TopicTabs";
 import { SCIENCE_TOPICS, getScienceTopic } from "@/lib/science-topics";
-import { getBank } from "@/lib/question-bank";
-
-function PracticeCTA({ topicId }: { topicId: string }) {
-  const bank = getBank(topicId);
-  if (!bank) return null;
-  return (
-    <div className="practice-cta">
-      <div className="practice-cta-text">
-        <div className="practice-cta-title">More practice</div>
-        <div className="practice-cta-sub">Extra questions for this topic.</div>
-      </div>
-      <Link href={`/science/p7/${topicId}/practice`} className="btn btn-primary">
-        Start practice
-      </Link>
-    </div>
-  );
-}
+import SharedTopicPage from "@/components/SharedTopicPage";
 
 export function generateStaticParams() {
-  return SCIENCE_TOPICS.map((topic) => ({ topic: topic.id }));
+  return SCIENCE_TOPICS.map((t) => ({ topic: t.id }));
 }
 
 export default async function ScienceTopicPage({
@@ -34,25 +15,5 @@ export default async function ScienceTopicPage({
   const topic = getScienceTopic(topicId);
   if (!topic) notFound();
 
-  return (
-    <>
-      <Link href="/science/p7" className="back">← All science topics</Link>
-      <div className="eyebrow">P7 Integrated Science · {topic.themeName}</div>
-      <h1>{topic.title}</h1>
-      <TopicTabs topic={topic} />
-
-      <section id="quick-quiz" className="quiz-panel">
-        <div className="quiz-panel-heading">
-          <span className="quiz-panel-emoji" aria-hidden="true">✏️</span>
-          <div>
-            <div className="eyebrow">Step 3 · Try</div>
-            <h2>Check what you understood</h2>
-          </div>
-        </div>
-        <Quiz questions={topic.quiz} topicId={`science-${topic.id}`} topicTitle={topic.title} backHref="/science/p7" />
-      </section>
-
-      <PracticeCTA topicId={topic.id} />
-    </>
-  );
+  return <SharedTopicPage topic={topic} backHref="/science/p7" />;
 }

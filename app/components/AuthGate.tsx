@@ -6,12 +6,8 @@ import AppNav from "@/components/AppNav";
 import { clearLearnerProfile, saveLearnerProfile } from "@/lib/learner-profile";
 import { clearSession, getSession, saveSession, type TendoGrade, type TendoRole, type TendoSession } from "@/lib/auth-session";
 
-function homeForGrade(grade?: TendoGrade) {
-  if (grade === "P3") return "/p3-home";
-  if (grade === "P4") return "/p4-home";
-  if (grade === "P5") return "/p5-home";
-  if (grade === "P6") return "/p6-home";
-  return "/";
+function homeForGrade(_grade?: TendoGrade) {
+  return "/study";
 }
 
 function pathGrade(pathname: string): TendoGrade | null {
@@ -45,20 +41,26 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (!hydrated || !session) return;
 
-    if (session.role === "teacher" && (pathname === "/" || pathname === "/p3-home" || pathname === "/p4-home" || pathname === "/p5-home" || pathname === "/p6-home" || pathname.startsWith("/practice"))) {
+    if (session.role === "teacher" && (pathname === "/" || pathname === "/p3-home" || pathname === "/p4-home" || pathname === "/p5-home" || pathname === "/p6-home" || pathname.startsWith("/practice") || pathname === "/study")) {
       router.replace("/teacher");
       return;
     }
 
     if (session.role === "student" && pathname.startsWith("/teacher")) {
-      router.replace(homeForGrade(session.grade));
+      router.replace("/study");
+      return;
+    }
+
+    // Redirect root and old home pages to /study
+    if (session.role === "student" && (pathname === "/" || pathname === "/p3-home" || pathname === "/p4-home" || pathname === "/p5-home" || pathname === "/p6-home")) {
+      router.replace("/study");
       return;
     }
 
     if (session.role === "student") {
       const routeGrade = pathGrade(pathname);
       if (routeGrade && session.grade && routeGrade !== session.grade) {
-        router.replace(homeForGrade(session.grade));
+        router.replace("/study");
       }
     }
   }, [hydrated, pathname, router, session]);
@@ -122,7 +124,7 @@ function SignInScreen({ onSignedIn }: { onSignedIn: (session: TendoSession) => v
         grade,
         onboardedAt: nextSession.signedInAt,
       });
-      router.replace(homeForGrade(grade));
+      router.replace("/study");
     } else {
       clearLearnerProfile();
       router.replace("/teacher");
@@ -133,30 +135,19 @@ function SignInScreen({ onSignedIn }: { onSignedIn: (session: TendoSession) => v
 
   return (
     <section className="auth-card" aria-label="Sign in to Tendo">
-      <div className="auth-blob blob-one" aria-hidden="true" />
-      <div className="auth-blob blob-two" aria-hidden="true" />
-
       <div className="auth-brand-lockup">
         <span className="app-brand-mark">T</span>
-        <div>
-          <div className="auth-kicker">Welcome to Tendo</div>
-          <h1>Sign in for your own experience.</h1>
-        </div>
+        <h1>Tendo</h1>
       </div>
-      <p className="lead">
-        Students get a simple study path. Teachers get worksheets, class progress and the same content library for lesson inspiration.
-      </p>
 
       <div className="role-choice-grid" role="group" aria-label="Choose account type">
         <button type="button" className={`role-choice ${role === "student" ? "on" : ""}`} onClick={() => setRole("student")}>
           <span>🎓</span>
           <strong>Student</strong>
-          <small>Study, practise and attempt papers.</small>
         </button>
         <button type="button" className={`role-choice teacher ${role === "teacher" ? "on" : ""}`} onClick={() => setRole("teacher")}>
           <span>👩🏾‍🏫</span>
           <strong>Teacher</strong>
-          <small>Dashboard, worksheets and content library.</small>
         </button>
       </div>
 
@@ -188,10 +179,6 @@ function SignInScreen({ onSignedIn }: { onSignedIn: (session: TendoSession) => v
       <button type="button" className={`btn btn-primary auth-submit ${role === "teacher" ? "teacher-submit" : ""}`} onClick={signIn}>
         {role === "student" ? "Start studying →" : "Open teacher workspace →"}
       </button>
-
-      <div className="auth-note">
-        v0 uses device sign-in only. Real student and teacher accounts can be connected later without changing the experience.
-      </div>
     </section>
   );
 }
