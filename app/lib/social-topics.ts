@@ -1839,16 +1839,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       }],
-    quiz: [
-      { q: "An ethnic group commonly shares:", choices: ["Culture and origin", "Only shoe size", "Only rainfall", "Only road signs"], correct: 0, why: "Ethnic groups often share culture, language, origin or history." },
-      { q: "Migration means:", choices: ["Movement of people from one place to another", "Growth of grass", "Building a dam", "Drawing a map only"], correct: 0, why: "Migration is the movement of people from one place to another." },
-      { q: "Which is a reason for migration?", choices: ["Search for land", "Too many latitudes", "A mirror image", "Short circuit"], correct: 0, why: "People may migrate to find land for settlement and farming." },
-      { q: "Which problem could migrants meet?", choices: ["Food and water shortage", "Too much homework only", "Plane mirror", "A fuse"], correct: 0, why: "Migrants could face shortages of food and water during movement." },
-      { q: "Which is an effect of migration?", choices: ["Spread of cultures", "Stopping all languages", "Removing all rivers", "Ending all settlement"], correct: 0, why: "Migration can spread cultures, languages and practices." },
-      { q: "Which factor affects settlement patterns?", choices: ["Water supply", "Book colour", "Answer letter", "Bell sound only"], correct: 0, why: "People often settle near reliable water sources." },
-      { q: "Why should learners study ethnic groups respectfully?", choices: ["To appreciate unity in diversity", "To insult other cultures", "To create conflict", "To hide history"], correct: 0, why: "Social Studies encourages respect for different cultures and unity in diversity." },
-    ],
-  },
+ },
   {
     id: "vegetation-of-africa",
     themeId: "sst-living-together-africa",
