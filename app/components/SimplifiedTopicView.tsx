@@ -35,6 +35,13 @@ function ModularView({ topic, backHref }: { topic: Topic; backHref: string }) {
   const allModules = flattenModules(topic);
   const [moduleIndex, setModuleIndex] = useState(0);
   const [phase, setPhase] = useState<Phase>("content");
+  // Gating: track whether the current module's quiz has been answered
+  const [quizAnswered, setQuizAnswered] = useState(false);
+
+  // Reset quiz gate when module changes
+  useEffect(() => {
+    setQuizAnswered(false);
+  }, [moduleIndex]);
 
   useEffect(() => {
     try {
@@ -61,6 +68,22 @@ function ModularView({ topic, backHref }: { topic: Topic; backHref: string }) {
   const mod = allModules[moduleIndex];
   const isLast = moduleIndex === allModules.length - 1;
   const pct = Math.round(((moduleIndex) / allModules.length) * 100);
+  const hasQuiz = !!mod.tryThis;
+  // Show next/finish only when quiz is answered OR there's no quiz to take
+  const canAdvance = !hasQuiz || quizAnswered;
+
+  function goForward() {
+    if (!canAdvance) return;
+    if (isLast) {
+      setPhase("done");
+    } else {
+      setModuleIndex((i) => i + 1);
+    }
+  }
+
+  function goBack() {
+    setModuleIndex((i) => i - 1);
+  }
 
   return (
     <div className="module-view">
@@ -99,25 +122,24 @@ function ModularView({ topic, backHref }: { topic: Topic; backHref: string }) {
             choices={mod.tryThis.choices}
             correct={mod.tryThis.correct}
             explanation={mod.tryThis.explanation}
+            onAnswered={() => setQuizAnswered(true)}
           />
         )}
       </div>
 
       <div className="module-nav">
         {moduleIndex > 0 && (
-          <button className="btn btn-secondary" onClick={() => setModuleIndex((i) => i - 1)}>
+          <button className="btn btn-secondary" onClick={goBack}>
             ← Back
           </button>
         )}
         <span className="module-nav-pos">{moduleIndex + 1} / {allModules.length}</span>
-        {!isLast ? (
-          <button className="btn btn-primary" onClick={() => setModuleIndex((i) => i + 1)}>
-            Next →
+        {canAdvance ? (
+          <button className="btn btn-primary" onClick={goForward}>
+            {isLast ? "Finish" : "Next →"}
           </button>
         ) : (
-          <button className="btn btn-primary" onClick={() => setPhase("done")}>
-            Finish
-          </button>
+          <span className="module-nav-hint">Answer the question to continue</span>
         )}
       </div>
     </div>

@@ -86,8 +86,11 @@ const ENGLISH_TOPICS_DATA: Topic[] = [
             "bigIdea": "Holiday plans describe intended future activities using the Future Simple tense and intention expressions.",
             "learnIt": [
               "Essential holiday vocabulary: travel (journey to distant places), package (wrapped parcel or bundled tour), visit (go to see relatives), camp (stay in tents), duration (length of time), chores (daily home tasks), tuition (holiday study revision), break (school vacation).",
-              "Future Simple Tense: formed using will / shall + infinitive verb. Rule: use 'shall' with pronouns I and We (e.g., We shall travel to Jinja tomorrow); use 'will' with You, He, She, It, They.",
-              "Intention structure 'going to': shows a decision made before speaking (e.g., My parents are going to pay my tuition next week)."
+              "**Grammar Rule:** Future Simple expresses actions that will happen later. Use 'shall' with I/We; use 'will' with all other subjects.",
+              "**Structure Formula:** Subject + shall/will + base verb (no -s, -ed, -ing).",
+              "**Correct:** We shall travel to Jinja tomorrow. / She will visit her grandmother.",
+              "**Incorrect:** We will shall travel. / She wills visit her grandmother.",
+              "**Intention structure 'going to':** Subject + am/is/are + going to + base verb. Shows a decision already made (e.g., My parents are going to pay my tuition)."
             ],
             "tryThis": {
               "question": "Complete the sentence: We ___ visit our uncle in Mbarara next school vacation.",
@@ -102,8 +105,10 @@ const ENGLISH_TOPICS_DATA: Topic[] = [
             "bigIdea": "Sequential conjunctions link two actions where the second happens immediately after the first finishes.",
             "learnIt": [
               "Using 'as soon as' and 'immediately': join two simple past tense actions directly (e.g., As soon as term ended, we packed our suitcases. Immediately the bus arrived, we boarded).",
-              "Structure of 'No sooner...': When starting a sentence with 'No sooner', the auxiliary verb 'had' MUST come before the subject, followed by the past participle verb, and the two clauses MUST be joined by 'than' (never 'when' or 'then').",
-              "Example transformation: 'As soon as Akello finished her chores, she went to play.' -> 'No sooner had Akello finished her chores than she went to play.'"
+              "**Structure Formula — No sooner:** No sooner + had + subject + past participle + than + subject + simple past.",
+              "**Correct:** No sooner had Akello finished her chores than she went to play.",
+              "**Incorrect:** No sooner had Akello finished her chores when she went to play. (UNEB trap: never use 'when', 'then', or 'and' after 'No sooner...')",
+              "**Structure Formula — As soon as:** As soon as + subject + simple past, subject + simple past."
             ],
             "tryThis": {
               "question": "Choose the correct transformation: As soon as the teacher entered the classroom, the learners stood up.",
@@ -472,9 +477,15 @@ const ENGLISH_TOPICS_DATA: Topic[] = [
             "title": "Mastering Conditionals 1, 2, and 3 (If-Clauses)",
             "bigIdea": "Conditional clauses link a condition to a result across three exact grammatical tenses.",
             "learnIt": [
-              "Conditional 1 (Likely / Probable Future): If + Present Simple -> Future Simple (will/shall + verb). Example: If Opio registers early, he will sit the exam.",
-              "Conditional 2 (Unlikely / Unreal Present): If + Simple Past -> would + base verb. Used for advice or imaginary situations. Example: If Opio registered early, he would sit the exam. (If I were you, I would revise daily).",
-              "Conditional 3 (Impossible Past Regret): If + Past Perfect (had + past participle) -> would have + past participle. Shows regret about something that cannot be changed. Example: If Opio had registered early, he would have sat the exam."
+              "**Structure Formula — Conditional 1 (Likely Future):** If + Present Simple, will/shall + base verb.",
+              "**Correct:** If Opio registers early, he will sit the exam.",
+              "**Incorrect:** If Opio will register early, he sits the exam. (UNEB trap: never use 'will' in the if-clause of Conditional 1.)",
+              "**Structure Formula — Conditional 2 (Unreal Present):** If + Simple Past, would + base verb.",
+              "**Correct:** If Opio registered early, he would sit the exam. (Also: If I were you, I would revise daily.)",
+              "**Incorrect:** If Opio would register early, he would sat the exam.",
+              "**Structure Formula — Conditional 3 (Past Regret):** If + had + past participle, would have + past participle.",
+              "**Correct:** If Opio had registered early, he would have sat the exam.",
+              "**Incorrect:** If Opio had registered early, he would sat the exam."
             ],
             "tryThis": {
               "question": "Complete using Conditional 3: If the candidates had read the instructions carefully, they ___ all the questions correctly.",
@@ -658,10 +669,12 @@ const ENGLISH_TOPICS_DATA: Topic[] = [
             "title": "Converting Active and Passive Voice",
             "bigIdea": "Voice shows whether the subject performs the action (active) or receives the action (passive).",
             "learnIt": [
-              "Simple Present transformation: Active -> 'The presenter reads announcements.' Passive -> 'Announcements ARE READ by the presenter.'",
-              "Simple Past transformation: Active -> 'He sent an email yesterday.' Passive -> 'An email WAS SENT by him yesterday.'",
-              "Present Continuous transformation: Active -> 'She is downloading a file.' Passive -> 'A file IS BEING DOWNLOADED by her.'",
-              "Future Simple transformation: Active -> 'They will broadcast the match.' Passive -> 'The match WILL BE BROADCAST by them.'"
+              "**Structure Formula — Passive Voice:** Object + be (is/are/was/were/being/been) + past participle + by + subject.",
+              "**Present Simple:** Active: The presenter reads announcements. → Passive: Announcements ARE READ by the presenter.",
+              "**Past Simple:** Active: He sent an email. → Passive: An email WAS SENT by him.",
+              "**Present Continuous:** Active: She is downloading a file. → Passive: A file IS BEING DOWNLOADED by her.",
+              "**Future Simple:** Active: They will broadcast the match. → Passive: The match WILL BE BROADCAST by them.",
+              "**UNEB trap:** Only transitive verbs (verbs with objects) can be passive. Intransitive verbs like 'sleep', 'arrive', 'go' have NO passive form."
             ],
             "tryThis": {
               "question": "Choose the correct passive form: The teacher operates the computer.",
@@ -828,9 +841,11 @@ const ENGLISH_TOPICS_DATA: Topic[] = [
             "title": "Direct and Indirect (Reported) Speech",
             "bigIdea": "Reporting someone's words requires shifting tenses, pronouns, and time expressions accurately.",
             "learnIt": [
-              "Tense backshifting rules: Simple Present -> Simple Past ('I know my rights,' she said -> She said that she knew her rights); Present Continuous -> Past Continuous ('I am reading,' -> She said she was reading); Future Simple ('will') -> Conditional ('would').",
-              "Time and place changes: now -> then; today -> that day; tomorrow -> the next/following day; yesterday -> the previous day; here -> there; this -> that.",
-              "Reporting commands: use 'told' or 'ordered' + infinitive (e.g., The teacher said, 'Stand up!' -> The teacher ordered the pupils to stand up)."
+              "**Structure Formula — Reported Speech:** Reporting verb + that + subject + backshifted tense + changed time/place words.",
+              "**Tense backshift table:** Simple Present → Simple Past (know → knew); Present Continuous → Past Continuous (is reading → was reading); Present Perfect → Past Perfect (has eaten → had eaten); will → would; can → could.",
+              "**Time/place changes:** now → then; today → that day; tomorrow → the next day; yesterday → the previous day; here → there; this → that.",
+              "**Commands:** told/ordered + object + to + infinitive (e.g., The teacher ordered the pupils to stand up).",
+              "**Correct:** She said that she knew her rights. **Incorrect:** She said that she knows her rights. (UNEB trap: forgetting to backshift tense loses marks.)"
             ],
             "tryThis": {
               "question": "Change to Reported Speech: 'We are studying our civic duties today,' the learners said.",
@@ -855,9 +870,11 @@ const ENGLISH_TOPICS_DATA: Topic[] = [
             "title": "Using Although, Even if, In spite of, and Despite",
             "bigIdea": "Contrast conjunctions join opposing ideas, following strict prepositional rules.",
             "learnIt": [
-              "Rule for 'although' / 'even though': joins two clauses directly (e.g., Although the boy was poor, he attended school regularly).",
-              "Rule for 'in spite of': MUST be followed by the preposition 'of' + noun/gerund (e.g., In spite of poverty, he attended school).",
-              "Rule for 'despite': MUST NEVER take the preposition 'of' (e.g., Despite poverty, he attended school). Never write 'despite of'."
+              "**Structure Formula — Although/Even though:** Although + clause, main clause. (Although he was poor, he attended school.)",
+              "**Structure Formula — In spite of:** In spite of + noun/gerund, main clause. (In spite of poverty, he attended school.)",
+              "**Structure Formula — Despite:** Despite + noun/gerund, main clause. (Despite poverty, he attended school.)",
+              "**Correct:** Despite the rain, we walked. / In spite of the rain, we walked.",
+              "**Incorrect:** Despite of the rain, we walked. / In spite the rain, we walked. (UNEB trap: despite NEVER takes 'of'; in spite ALWAYS takes 'of'.)"
             ],
             "tryThis": {
               "question": "Choose the correct sentence:",
@@ -1000,10 +1017,12 @@ const ENGLISH_TOPICS_DATA: Topic[] = [
             "title": "Joining Sentences with Relative Pronouns",
             "bigIdea": "Relative pronouns link descriptive clauses to antecedent nouns or pronouns seamlessly.",
             "learnIt": [
-              "Using 'who': refers to people as subjects (e.g., The environmentalist WHO planted trees was rewarded).",
-              "Using 'which': refers to animals or inanimate objects (e.g., The wetland WHICH was drained has dried up).",
-              "Using 'whose': indicates possession for people or animals (e.g., The farmer WHOSE crops failed practiced monoculture).",
-              "Using 'whom': refers to people as objects of verbs or prepositions (e.g., The officer TO WHOM we reported poaching arrested the hunters)."
+              "**Structure Formula:** [Main clause] + relative pronoun + [descriptive clause]. The relative pronoun replaces the repeated noun or pronoun.",
+              "**Who** (people, subject): The environmentalist WHO planted trees was rewarded.",
+              "**Which** (animals/things): The wetland WHICH was drained has dried up.",
+              "**Whose** (possession): The farmer WHOSE crops failed practiced monoculture.",
+              "**Whom** (people, object): The officer TO WHOM we reported poaching arrested the hunters.",
+              "**UNEB trap:** 'Who' is for people; 'Which' is for things. Never write: 'The boy which came.'"
             ],
             "tryThis": {
               "question": "Join correctly: That is the game ranger. The poachers shot his dog.",

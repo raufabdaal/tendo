@@ -58,10 +58,10 @@ const SCIENCE_TOPICS_DATA: Topic[] = [
         "Recognise common disorders of bones, muscles and joints and how some can be prevented."
       ],
       "whatYouNeedToKnow": [
-        "The skeleton is the framework of bones in the body. It gives the body shape, supports soft parts, protects delicate organs, and works with muscles to make movement possible.",
+        "**Definition:** A skeleton is the rigid framework of bones that gives the body shape, supports soft internal organs, protects delicate parts, and works with attached muscles to produce movement.",
         "Important bones include the skull, backbone, ribs, humerus, radius, ulna, pelvis, femur, tibia and fibula. The skull protects the brain, the ribs protect the heart and lungs, and the backbone supports the body and protects the spinal cord.",
-        "Muscles are body tissues that contract and relax to cause movement. Voluntary muscles are controlled by our will, such as muscles used for walking or writing. Involuntary muscles work without our direct control, such as muscles in the intestines and blood vessels.",
-        "A joint is a place where two or more bones meet. Examples include hinge joints at the elbow and knee, ball-and-socket joints at the shoulder and hip, pivot joints in the neck, and gliding joints in the wrist and ankle.",
+        "**Definition:** Muscles are body tissues made of specialized cells that contract (shorten) and relax (lengthen) to produce movement.\n**Types of muscles:** Voluntary/Skeletal muscles (attached to bones, under conscious control — e.g. biceps, leg muscles); Involuntary/Smooth muscles (work automatically — e.g. intestinal walls, blood vessel walls); Cardiac muscle (found ONLY in the heart, contracts rhythmically without tiring).",
+        "**Definition:** A joint is the meeting point where two or more bones come together, held in place by ligaments and lubricated by synovial fluid.\n**Types of movable joints:** Hinge joint (elbow, knee — back-and-forth movement), Ball-and-socket joint (shoulder, hip — rotation in all directions), Pivot joint (neck vertebrae — head rotation), Gliding joint (wrist, ankle bones — sliding movement).",
         "Bones and muscles can be affected by diseases and disorders such as rickets, fractures, sprains, dislocations, arthritis and poor posture. Some are caused by accidents, poor feeding, infection, or careless body use.",
         "Good health habits include eating foods rich in calcium and proteins, exercising, sitting and standing correctly, avoiding dangerous play, and seeking medical help after serious injury."
       ],
@@ -253,8 +253,8 @@ const SCIENCE_TOPICS_DATA: Topic[] = [
         "Describe home electrical safety precautions and first aid."
       ],
       "whatYouNeedToKnow": [
-        "Electricity is a form of energy. Current electricity flows through closed circuits, while static electricity builds up on insulated surfaces due to friction.",
-        "Sources of electricity include dry cells, accumulators, generators, dynamos, solar cells, and hydroelectric dams.",
+        "**Definition:** Electricity is a form of energy produced by the movement of electric charges (electrons).\n**Types of electricity:** Current electricity (continuous flow of electrons through a closed conducting circuit), Static electricity (stationary electric charge built up on the surface of insulated objects by friction/rubbing).",
+        "**Sources of electricity in Uganda:** Dry cells (Leclanché cells — torches, radios), Car batteries (lead-acid accumulators), Hydroelectric dams (Owen Falls Dam/Nalubaale, Bujagali — falling water spins turbine generators), Solar panels (photovoltaic cells — common in rural homes and schools), Bicycle dynamos (mechanical energy → electricity).",
         "Magnets attract iron, steel, cobalt, and nickel. First Law of Magnetism: Like poles repel, unlike poles attract.",
         "Electromagnets are temporary magnets made by passing electric current through a coil wound around a soft iron core."
       ],
@@ -483,7 +483,7 @@ const SCIENCE_TOPICS_DATA: Topic[] = [
         "Identify kidney, skin, lung, and liver diseases and their prevention."
       ],
       "whatYouNeedToKnow": [
-        "Excretion is the removal of cellular metabolic wastes, whereas egestion is the removal of undigested dietary faeces.",
+        "**Definition:** Excretion is the removal of harmful metabolic waste products produced by chemical processes inside living body cells.\n**Definition:** Egestion is the removal of undigested food materials (faeces) through the anus — these materials have never entered body cells.\n**Key UNEB distinction:** Excreted wastes come from INSIDE cells (urea, CO₂, sweat); egested wastes NEVER entered cells (dietary fibre/faeces).",
         "The kidneys filter blood to excrete urine (urea, excess water, salts). The skin excretes sweat. The lungs excrete carbon dioxide and water vapour. The liver deaminates excess amino acids into urea and excretes bile pigments.",
         "The kidney has an outer cortex, inner medulla, and central pelvis collecting funnel."
       ],
@@ -713,7 +713,7 @@ const SCIENCE_TOPICS_DATA: Topic[] = [
         "Explain refraction, dispersion (ROYGBIV rainbows), lenses, eye anatomy, and myopia/hypermetropia corrections."
       ],
       "whatYouNeedToKnow": [
-        "Light travels at 300,000 km/s in straight lines (rectilinear propagation).",
+        "**Definition:** Light is a form of energy that enables vision. Light travels at approximately 300,000 kilometres per second through air and vacuum.\n**Key property:** Light travels in straight lines — this is called rectilinear propagation. You see lightning before you hear thunder because light travels much faster than sound.",
         "Opaque objects block light casting umbra/penumbra shadows; solar eclipses happen when the Moon is between Sun and Earth.",
         "Laws of reflection: angle of incidence equals angle of reflection (i = r). Refraction bends light across media.",
         "Myopia is corrected by concave lenses; hypermetropia is corrected by convex lenses."
@@ -976,9 +976,9 @@ const SCIENCE_TOPICS_DATA: Topic[] = [
         "Describe agroforestry, nitrogen-fixing trees, coppicing/pollarding, and woodlot fire lines."
       ],
       "whatYouNeedToKnow": [
-        "An ecosystem has biotic (living) components like plants/animals and abiotic (non-living) components like sunlight/water/soil.",
-        "Food chains show trophic energy flow from producers to consumers and decomposers.",
-        "Agroforestry combines crops, trees, and animals; leguminous trees fix atmospheric nitrogen."
+        "**Definition:** An ecosystem is a natural unit consisting of all living organisms (biotic) interacting with non-living physical factors (abiotic) in a specific area.\n**Biotic components:** Green plants (producers), animals (consumers), bacteria and fungi (decomposers).\n**Abiotic components:** Sunlight, water, air (oxygen and carbon dioxide), mineral soil, rocks, temperature.",
+        "**Definition:** A food chain is a linear feeding relationship showing how nutritional energy transfers from one organism to another in an ecosystem.\n**Trophic order:** Producer (green plant) → Primary consumer (herbivore) → Secondary consumer (carnivore) → Tertiary consumer (top predator).\n**Rule:** Arrows ALWAYS point in the direction of energy flow — from the organism being eaten TOWARD the eater.",
+        "**Definition:** Agroforestry is the practice of growing trees and shrubs together with crops and/or livestock on the same piece of land.\n**Uganda examples:** Calliandra trees along terrace banks in Kabale; fruit trees (mangoes, jackfruit) among banana plantations in central Uganda.\n**Nitrogen-fixing trees:** Leguminous species (Calliandra, Leucaena, Sesbania) have root nodules containing Rhizobium bacteria that convert atmospheric nitrogen into soil nitrates naturally."
       ],
       "worked": {
         "problem": "Construct a four-stage food chain using grasshopper, grass, frog and snake.",
@@ -1160,7 +1160,7 @@ const SCIENCE_TOPICS_DATA: Topic[] = [
         "Conduct tally-chart health surveys and construct school tippy-taps."
       ],
       "whatYouNeedToKnow": [
-        "Female Anopheles mosquitoes transmit malaria; their 4-stage aquatic life cycle is controlled by ITNs, draining water, and pouring oil.",
+        "**Definition:** A vector is an organism (usually an insect) that carries and transmits disease-causing germs (pathogens) from an infected person to a healthy person without suffering from the disease itself.\n**Key P7 vectors:** Female Anopheles mosquito (transmits malaria — Plasmodium parasite); Housefly (transmits cholera, typhoid, trachoma — germs on hairy legs and vomit).\n**Vector control methods:** Sleep under Insecticide-Treated Nets (ITNs), drain stagnant water pools, slash bushes around homes, cover food, use proper latrines.",
         "Cholera and diarrhoea spread via 4 Fs (Faeces, Flies, Fingers, Food); ORS formula = 1 litre boiled water + 8 tsp sugar + 1 tsp salt.",
         "Hookworm larvae penetrate bare feet; tapeworms spread in undercooked beef/pork; excessive alcohol causes liver cirrhosis."
       ],
@@ -1501,9 +1501,9 @@ const SCIENCE_TOPICS_DATA: Topic[] = [
         "Distinguish useful vs nuisance friction and explain methods of increasing or reducing friction."
       ],
       "whatYouNeedToKnow": [
-        "Mechanical Advantage = Load / Effort.",
+        "**Definition:** Mechanical Advantage (MA) is the ratio of the load (weight lifted) to the effort (force applied). MA tells us how many times a machine multiplies our effort.\n**Formula:** MA = Load ÷ Effort. If MA > 1, the machine makes work easier.\n**Principle of Moments:** For a lever to balance, Clockwise Moment = Anticlockwise Moment, i.e. Load × Load Distance = Effort × Effort Distance.",
         "Principle of moments: clockwise turning moment equals anticlockwise moment (Load x Load Distance = Effort x Effort Distance).",
-        "Friction is reduced by lubricating with grease/oil, using ball bearings, and streamlining."
+        "**Definition:** Friction is the force that opposes (resists) motion between two surfaces in contact.\n**Useful friction:** Enables walking without slipping, vehicle brakes stopping wheels, lighting matchsticks, writing with pens.\n**Nuisance friction:** Causes wear and tear on machine parts, wastes energy as unwanted heat.\n**Reducing friction:** Apply grease/lubricating oil, use ball bearings, streamline vehicle shapes.\n**Increasing friction:** Add tyre treads, put studs on football boots, roughen slippery surfaces."
       ],
       "worked": {
         "problem": "A load of 120 N is lifted using an effort of 40 N on a lever. Find the Mechanical Advantage.",

@@ -1,6 +1,6 @@
 # STATUS — Tendo
-
-*Updated: 2026-07-12 · Current working state locked*
+> **Current state:** Tendo is a premium, child-friendly study platform for Ugandan primary learners. P7, P6, P5, P4 and P3 are live as beta across all subjects. **The v5 FCC-mobile UX overhaul** has simplified the entire student experience: no bottom nav, hamburger menu, clean drill-down from subjects → topics → modules → inline quiz. Content restructuring to strict NCDC alignment is the next critical milestone.
+*Updated: 2026-07-13 · v5 FCC-mobile UX overhaul applied**
 
 > **Current state:** Tendo is a premium, child-friendly study platform for Ugandan primary learners. P7, P6, P5 and P4 are live across all 5 app subjects as beta/live content, and P3 is now live as a thematic-first beta across all 12 official NCDC P3 themes.
 

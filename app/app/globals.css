@@ -5587,6 +5587,12 @@ main.app-main {
   font-weight: 600;
   color: var(--muted);
 }
+.module-nav-hint {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  font-style: italic;
+}
 
 /* --- Inline quiz --- */
 .inline-quiz {

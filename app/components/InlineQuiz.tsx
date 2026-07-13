@@ -9,7 +9,7 @@ interface InlineQuizProps {
   choices: string[];
   correct: number;
   explanation: string;
-  onComplete?: () => void;
+  onAnswered?: (wasCorrect: boolean) => void;
 }
 
 export default function InlineQuiz({
@@ -17,7 +17,7 @@ export default function InlineQuiz({
   choices,
   correct,
   explanation,
-  onComplete,
+  onAnswered,
 }: InlineQuizProps) {
   const [picked, setPicked] = useState<number | null>(null);
   const isCorrect = picked === correct;
@@ -25,7 +25,7 @@ export default function InlineQuiz({
   function pick(i: number) {
     if (picked !== null) return;
     setPicked(i);
-    if (i === correct && onComplete) onComplete();
+    if (onAnswered) onAnswered(i === correct);
   }
 
   return (

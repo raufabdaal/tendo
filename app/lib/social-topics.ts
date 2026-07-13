@@ -60,7 +60,8 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
       ],
       whatYouNeedToKnow: [
         "Africa is the second largest continent after Asia. It lies mostly between the Tropic of Cancer and the Tropic of Capricorn, and it is crossed by the Equator, the Prime Meridian and the Tropic of Cancer and Capricorn.",
-        "Lines of latitude run from east to west and help locate places north or south of the Equator. Lines of longitude run from north to south and help locate places east or west of the Prime Meridian.",
+        "**Definition:** Lines of latitude are imaginary lines running east to west around the Earth, used to locate places north or south of the Equator (0°).
+**Definition:** Lines of longitude (meridians) are imaginary lines running north to south from pole to pole, used to locate places east or west of the Prime Meridian (0°).",
         "Africa is surrounded by the Mediterranean Sea to the north, the Red Sea and Indian Ocean to the east, the Atlantic Ocean to the west, and the Southern Ocean area towards the south.",
         "Africa is commonly grouped into North Africa, West Africa, East Africa, Central Africa and Southern Africa. Uganda is in East Africa.",
         "Knowing countries and capitals helps learners read maps, follow news and understand cooperation among African states.",
@@ -496,7 +497,9 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
         "Relate physical features to settlement and economic activities.",
       ],
       whatYouNeedToKnow: [
-        "Physical features are natural features found on the earth's surface. Examples in Africa include mountains, highlands, rivers, lakes, plateaus, rift valleys, deserts and coastal plains.",
+        "**Definition:** Physical features are natural landforms and water bodies found on the surface of the earth, not made by people.
+**Types of physical features in Africa:** Mountains and highlands, rivers, lakes, plateaus, rift valleys, deserts, and coastal plains.
+**Key UNEB examples:** Mount Kilimanjaro (highest), River Nile (longest), Lake Victoria (largest by area), Great Rift Valley (faulting formation).",
         "Important mountains include Kilimanjaro, Kenya, Rwenzori and Atlas. Important rivers include the Nile, Congo, Niger and Zambezi. Important lakes include Victoria, Tanganyika, Malawi and Chad.",
         "The Great Rift Valley is a long depression formed by earth movements. Rift valley lakes are often long and deep, such as Lake Tanganyika.",
         "Physical features are important for fishing, farming, transport, hydro-electric power, tourism, mining and settlement. They can also create challenges such as barriers to transport or flooding.",
@@ -657,25 +660,66 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           {
             moduleId: "lakes-of-africa",
             title: "Lakes of Africa",
-            bigIdea: "Africa has both large freshwater lakes and smaller lakes, including lakes found in the Rift Valley. You should be able to name and locate the major lakes.",
+            bigIdea: "Africa's lakes form in three ways: basin lakes from downwarping, rift valley lakes from faulting, and crater lakes from volcanic activity.",
             learnIt: [
-              "Lake Victoria is the largest lake in Africa. It is shared by Uganda, Kenya and Tanzania.",
-              "Lake Tanganyika and Lake Malawi are long, deep lakes found in the Great Rift Valley.",
-              "Lake Chad is found in Central Africa, near the border of Chad, Nigeria, Niger and Cameroon. It has been shrinking.",
-              "Lake Ngami is found in Botswana, in Southern Africa.",
-              "Lakes provide fish, water for irrigation and transport, and they can attract tourists.",
-              "Rift valley lakes are usually long and deep because they lie between steep sides."
+              "**Classification: Types of Lakes in Africa**",
+              "**Rift Valley Lakes:** Formed when a block of land sinks between parallel faults, creating a long, narrow, deep depression. They are elongated and steep-sided. Examples: Lake Tanganyika (deepest in Africa), Lake Malawi, Lake Albert, Lake Edward, Lake Turkana.",
+              "**Basin Lakes / Downwarped Lakes:** Formed when a large area of land sags or warps downward slowly over time. They are wide and fairly shallow compared to rift lakes. Examples: Lake Victoria (Africa's largest lake by surface area, shared by Uganda, Kenya and Tanzania), Lake Kyoga (Uganda), Lake Chad (Central Africa).",
+              "**Volcanic Crater Lakes:** Formed when water fills the crater of an extinct or dormant volcano. They are usually small, deep and circular. Examples: Lake Katwe (Uganda), Lake Bunyonyi (Uganda), Lake Nyos (Cameroon).",
+              "**Importance of Lakes in Africa:**",
+              "1. Fishing — Lakes provide fish for food and trade (e.g., Nile Perch from Lake Victoria).",
+              "2. Transport — Large lakes connect communities and countries by boat.",
+              "3. Water supply — Lakes provide water for irrigation and domestic use.",
+              "4. Tourism — Lakes attract tourists and generate foreign exchange.",
+              "5. Hydro-electric power — Outflowing rivers from lakes can generate HEP (e.g., Owen Falls Dam on the River Nile at Lake Victoria's outlet).",
             ],
             visual: {
-              kind: "map",
-              title: "Major lakes of Africa",
-              description: "Show a simple map of Africa with Lake Victoria, Lake Tanganyika, Lake Malawi, Lake Chad and Lake Ngami labelled in their correct positions."
+              kind: "diagram",
+              title: "Types of African lakes",
+              description: "Show three simple cross-section diagrams: Rift valley lake (narrow, deep, between faults), Basin/downwarped lake (wide, shallow saucer shape), and Volcanic crater lake (small round lake in volcano top)."
+            },
+            workedExample: {
+              question: "Name Lake Victoria and classify it by its method of formation.",
+              steps: [
+                "Step 1: Identify Lake Victoria as Africa's largest lake by surface area.",
+                "Step 2: Explain that it formed by downwarping — the land sagged downwards over time.",
+                "Step 3: Classify Lake Victoria as a basin lake / downwarped lake.",
+                "Step 4: Note it is shared by Uganda, Kenya and Tanzania."
+              ],
+              answer: "Lake Victoria is a basin lake formed by downwarping of the earth's crust. It is shared by Uganda, Kenya and Tanzania."
             },
             tryThis: {
-              question: "Which lake is shared by Uganda, Kenya and Tanzania?",
-              choices: ["Lake Malawi", "Lake Chad", "Lake Victoria", "Lake Tanganyika"],
-              correct: 2,
-              explanation: "Lake Victoria is shared by Uganda, Kenya and Tanzania."
+              question: "Which lake was formed by volcanic activity filling a crater with water?",
+              choices: ["Lake Tanganyika", "Lake Katwe", "Lake Victoria", "Lake Chad"],
+              correct: 1,
+              explanation: "Lake Katwe is a volcanic crater lake in Uganda. It formed when water filled an extinct volcano crater."
+            }
+          },
+          {
+            moduleId: "lakes-comparison-importance",
+            title: "Comparing lakes and their economic importance",
+            bigIdea: "Different types of lakes serve different economic and social purposes.",
+            learnIt: [
+              "**Basin lakes** like Lake Victoria and Lake Kyoga are important for large-scale fishing and water transport because of their wide surface area.",
+              "**Rift valley lakes** like Lake Tanganyika and Lake Malawi are important for unique fish species and biodiversity.",
+              "**Volcanic crater lakes** like Lake Katwe are important for salt mining (Lake Katwe) and tourism (Lake Bunyonyi).",
+              "Lake Chad has been shrinking due to climate change and overuse of water — this is a key UNEB exam point about environmental change.",
+              "Lakes face problems: water pollution, overfishing, water weeds (e.g., water hyacinth on Lake Victoria), and shrinking due to climate change."
+            ],
+            workedExample: {
+              question: "Give two reasons why Lake Victoria is described as a basin lake.",
+              steps: [
+                "Step 1: Basin lakes form when the earth's crust sags or warps downward without sharp fault lines.",
+                "Step 2: Lake Victoria's wide, saucer-like shape is characteristic of downwarping formation.",
+                "Step 3: Unlike Lake Tanganyika, Lake Victoria is relatively shallow for its size."
+              ],
+              answer: "Lake Victoria is a basin lake because it formed by downwarping (crustal sagging), and its wide, shallow saucer shape is typical of basin lake formation."
+            },
+            tryThis: {
+              question: "Which of these is a rift valley lake?",
+              choices: ["Lake Victoria", "Lake Tanganyika", "Lake Kyoga", "Lake Chad"],
+              correct: 1,
+              explanation: "Lake Tanganyika is a deep, narrow lake formed in the Great Rift Valley by faulting."
             }
           }
         ]
@@ -819,7 +863,10 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
         "Show how climate affects human activities and how people affect climate.",
       ],
       whatYouNeedToKnow: [
-        "Climate is the average weather condition of a place over a long period. Weather changes daily, but climate describes a longer pattern. Elements of weather and climate include rainfall, temperature, wind, humidity, sunshine, air pressure and cloud cover.",
+        "**Definition:** Climate is the average weather condition of a place recorded over a long period of time (usually 30+ years).
+**Definition:** Weather is the day-to-day condition of the atmosphere at a specific place and time.
+**Elements:** Rainfall, temperature, wind, humidity, sunshine, air pressure, and cloud cover.
+**UNEB distinction:** Climate is what you EXPECT (long-term average); weather is what you GET (daily changes).",
         "Africa has climatic regions such as equatorial, tropical, desert, Mediterranean, semi-arid and mountain climate. Equatorial areas are generally hot and wet throughout the year, while desert areas are hot and dry with very little rainfall. Mediterranean areas have hot dry summers and cool wet winters.",
         "Factors that influence climate include latitude, altitude, distance from the sea, ocean currents, winds and relief. High places are cooler than low places, and places near the Equator are generally hotter. Windward slopes receive more rainfall than leeward slopes, which may be drier because of rain shadow.",
         "Climate influences farming, clothing, housing, settlement, transport and tourism. For example, wet areas support crop farming and forests, while dry areas may support pastoralism, irrigation farming or sparse settlement.",
@@ -1234,7 +1281,9 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
         "Relate vegetation to animals and population distribution.",
       ],
       whatYouNeedToKnow: [
-        "Vegetation means the plant cover of an area. Africa's vegetation types include equatorial rainforest, savanna grassland, desert vegetation, Mediterranean vegetation, mountain vegetation, swamp vegetation and mangrove/coastal vegetation.",
+        "**Definition:** Vegetation is the natural plant cover of an area, including trees, shrubs, grasses, and other plants.
+**Types of vegetation in Africa:** Equatorial rainforest, Savanna grassland, Desert vegetation, Mediterranean scrub, Mountain vegetation, Swamp vegetation, Mangrove/coastal vegetation.
+**Key factor:** Rainfall is the main factor determining vegetation type — more rain supports thicker vegetation.",
         "Vegetation distribution is influenced by rainfall, temperature, altitude, soil, drainage, relief and human activities. Areas with heavy rainfall usually support thick forests, while dry areas have sparse vegetation. Mountain vegetation changes with height because temperature and rainfall change with altitude.",
         "Equatorial forests are dense and evergreen, savanna has grass with scattered trees, deserts have drought-resistant plants, Mediterranean vegetation has shrubs and trees adapted to dry summers, and mangroves grow in salty coastal/swampy areas.",
         "Vegetation is important because it provides food, timber, medicine, rainfall support, soil protection, animal habitats, grazing land, fuel, building materials and tourist attractions.",
@@ -1552,8 +1601,12 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
         "Explain problems and effects of ethnic migrations.",
       ],
       whatYouNeedToKnow: [
-        "An ethnic group is a group of people who share common culture, language, origin or history. Africa has many ethnic groups, including Bantu, Nilotes, Cushites, Semites, Berbers and others.",
-        "Migration is the movement of people from one place to another. People migrated because of population increase, search for land and water, wars, internal conflicts, trade, harsh climate, diseases and expansion of kingdoms.",
+        "**Definition:** An ethnic group is a large group of people who share a common culture, language, origin, and history.
+**Major ethnic groups of Africa:** Bantu (largest — Central, East, Southern Africa), Nilotes (Nile Valley — Acholi, Luo, Maasai, Karimojong), Cushites (Horn — Somali, Oromo), Semites and Berbers (North Africa — Arabs), Khoisan (Southern Africa — San and Khoikhoi).
+**Uganda examples:** Bantu groups include Baganda, Banyankole, Bakiga; Nilotic groups include Acholi, Lango, Iteso, Karamojong.",
+        "**Definition:** Migration is the movement of people from one place to another, often across large distances, to settle in a new area.
+**Push factors (force people to leave):** Population increase, shortage of land/water, wars and conflicts, harsh climate, famine, disease.
+**Pull factors (attract people to a place):** Fertile land, reliable water, security, trade opportunities, better climate.",
         "During migration, people faced problems such as resistance from indigenous people, wild animals, diseases, difficult terrain, food shortage, water shortage and harsh climate.",
         "Migrations changed population distribution, spread cultures and languages, caused intermarriages, led to conflicts in some areas and helped form new settlements.",
         "Settlement patterns are influenced by relief, climate, water, vegetation, security, fertile soils and economic activities.",
@@ -2209,7 +2262,10 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
         "Compare single-party and multiparty systems.",
       ],
       whatYouNeedToKnow: [
-        "Nationalism is love for and loyalty to one's nation, often shown through the desire for self-rule. A nationalist is a person who works for the interests or independence of a nation. Patriotism is love for one's country and willingness to serve it responsibly.",
+        "**Definition:** Nationalism is love for and loyalty to one's nation, often shown through the desire for self-rule and independence.
+**Definition:** A nationalist is a person who works for the interests or independence of their nation.
+**Definition:** Patriotism is love for one's country and willingness to serve it responsibly.
+**Definition:** Pan-Africanism is the idea that African people should unite, support one another, and work together for freedom and development across the whole continent.",
         "Pan-Africanism is the idea that African people should unite, support one another and work for freedom and development. Pan-Africanists encouraged African pride, unity and resistance to colonial domination.",
         "Pan-Africanists and nationalists used political parties, newspapers, petitions, strikes, boycotts, demonstrations, negotiations, armed struggle in some places and international pressure to demand independence.",
         "Leading African nationalists and Pan-Africanists included people such as Kwame Nkrumah, Jomo Kenyatta, Julius Nyerere, Patrice Lumumba, Nelson Mandela and others. Learners should connect leaders with the wider struggle for self-rule, not memorise names only.",
@@ -3095,7 +3151,9 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           {
             moduleId: "major-economic-development-africa",
             title: "Major economic development in Africa",
-            bigIdea: "Economic development means improving people's standard of living by using resources well through farming, mining, industries, trade, tourism, transport and energy.",
+            bigIdea: "**Definition:** Economic development is the process of improving people's standard of living by using resources well — including better income, health, education, housing, and services.
+**Definition:** Value addition is processing raw materials into finished or semi-finished goods to increase their market value (e.g., roasting coffee beans instead of selling raw beans).
+**Key economic activities in Africa:** Agriculture, mining, tourism, trade, fishing, manufacturing, and transport.",
             learnIt: [
               "Economic development means improving people's standards of living – better income, health, education, housing and services.",
               "Agriculture: provides food, jobs and exports such as coffee, cotton, tea, cocoa, maize and horticulture. Many Africans depend on farming.",
@@ -3354,7 +3412,9 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
         "Explain membership, functions and challenges of the Commonwealth of Nations.",
       ],
       whatYouNeedToKnow: [
-        "The United Nations (UN) was formed in 1945 after the Second World War to promote peace, security, cooperation, human rights and development among nations. Its headquarters are in New York, USA.",
+        "**Definition:** The United Nations (UN) is a world organisation formed in 1945 after World War II to promote international peace, security, cooperation, human rights, and development.
+**Headquarters:** New York, USA.
+**Key UNEB fact:** The UN replaced the League of Nations, which had failed to prevent World War II. Uganda is a member.",
         "Important organs of the UN include the General Assembly, Security Council, International Court of Justice, Secretariat and Economic and Social Council. The General Assembly gives all member states a voice, while the Security Council has special responsibility for peace and security.",
         "UN agencies include UNICEF for children, WHO for health, FAO for food and agriculture, UNESCO for education, science and culture, UNHCR for refugees and WFP for food assistance. Learners should match each agency to its work, not memorise abbreviations only.",
         "Human rights are basic freedoms and protections every person should enjoy, such as the right to life, education, health, fair treatment, worship, expression and freedom from discrimination. Rights go together with responsibilities.",

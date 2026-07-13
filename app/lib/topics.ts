@@ -770,7 +770,7 @@ const TOPICS_DATA: Topic[] = [
     ],quiz: [
       { q: "Work out: 48 + 36 \u00f7 6", choices: ["54", "14", "42", "60"], correct: 0, "why": "Using BODMAS, divide first: 36 \u00f7 6 = 6. Then add: 48 + 6 = 54." },
       { q: "Find the product of 125 and 14.", choices: ["1,750", "1,650", "1,850", "1,500"], correct: 0, "why": "125 \u00d7 14 = 125 \u00d7 (10 + 4) = 1250 + 500 = 1,750." },
-      { q: "Find the Greatest Common Factor (GCF) of 24 and 36.", choices: ["12", "6", "72", "4"], correct: 0, "why": "Finding GCF and LCM: GCF (Greatest Common Factor) is the largest factor shared by two numbers. LCM (Lowest Common Multiple) is the smallest common multiple. Product Method on a Venn Diagram: represent prime factors of two numbers inside overlapping circles. The product of numbers inside the intersection (overlap) equals the GCF. The product of ALL numbers across both circles inside the union equals the LCM." },
+      { q: "Find the Greatest Common Factor (GCF) of 24 and 36.", choices: ["12", "6", "72", "4"], correct: 0, "why": "Prime factors of 24 = 2³ × 3. Prime factors of 36 = 2² × 3². Common factors: 2² × 3 = 4 × 3 = 12." },
       { q: "Find the Lowest Common Multiple (LCM) of 8 and 12.", choices: ["24", "48", "96", "16"], correct: 0, "why": "Multiples of 8: 8, 16, 24, 32... Multiples of 12: 12, 24, 36... Lowest common multiple is 24." },
       { q: "Write 60 as a product of its prime factors.", choices: ["2\u00b2 \u00d7 3 \u00d7 5", "2 \u00d7 30", "4 \u00d7 15", "2 \u00d7 3\u00b2 \u00d7 5"], correct: 0, "why": "60 \u00f7 2 = 30; 30 \u00f7 2 = 15; 15 \u00f7 3 = 5. So 60 = 2 \u00d7 2 \u00d7 3 \u00d7 5 = 2\u00b2 \u00d7 3 \u00d7 5." },
       { q: "Express 450,000 in standard scientific notation.", choices: ["4.5 \u00d7 10\u2075", "45 \u00d7 10\u2074", "0.45 \u00d7 10\u2076", "4.5 \u00d7 10\u2074"], correct: 0, "why": "Move the decimal point 5 places to the left: 4.5 \u00d7 10\u2075." },
@@ -1048,7 +1048,7 @@ const TOPICS_DATA: Topic[] = [
       { q: "Work out: 3/4 + 1/6", choices: ["11/12", "4/10", "2/3", "5/12"], correct: 0, "why": "LCM of 4 and 6 is 12. 9/12 + 2/12 = 11/12." },
       { q: "Multiply: 2/5 \u00d7 15/16", choices: ["3/8", "6/16", "1/4", "5/8"], correct: 0, "why": "Simplify cross factors: 15\u00f75=3, 2 and 16 simplify to 1 and 8. So 3/8." },
       { q: "Divide: 5/6 \u00f7 2/3", choices: ["1 1/4", "5/9", "4/5", "1 1/3"], correct: 0, "why": "5/6 \u00d7 3/2 = 15/12 = 5/4 = 1 1/4." },
-      { q: "Convert 0.375 to a common fraction in its lowest terms.", choices: ["3/8", "3/5", "5/8", "37/100"], correct: 0, "why": "Decimals and conversions: Terminating decimals stop after a finite number of places (e.g., 0.375 = 3/8). Recurring / repeating decimals continue infinitely with a repeating digit pattern (e.g., 0.333... = 1/3 and 0.666... = 2/3). Always align decimal points vertically when adding or subtracting decimal numbers." },
+      { q: "Convert 0.375 to a common fraction in its lowest terms.", choices: ["3/8", "3/5", "5/8", "37/100"], correct: 0, "why": "0.375 = 375/1000. Divide numerator and denominator by 125: 375÷125 / 1000÷125 = 3/8." },
       { q: "What is 40% of UGX 150,000?", choices: ["UGX 60,000", "UGX 40,000", "UGX 6,000", "UGX 75,000"], correct: 0, "why": "(40 / 100) \u00d7 150,000 = 40 \u00d7 1,500 = UGX 60,000." },
       { q: "If 3 men can dig a trench in 8 days, how long will 4 men take at the same rate?", choices: ["6 days", "10 days", "4 days", "12 days"], correct: 0, "why": "Indirect proportion: total man-days = 3 \u00d7 8 = 24. For 4 men: 24 \u00f7 4 = 6 days." },
       { q: "Express 18 minutes as a percentage of 1 hour.", choices: ["30%", "18%", "25%", "20%"], correct: 0, "why": "1 hour = 60 minutes. Fraction = 18/60 = 3/10. Percentage = (3/10) \u00d7 100 = 30." },
@@ -1406,26 +1406,30 @@ const TOPICS_DATA: Topic[] = [
             moduleId: "polygons-bearings",
             imageUrl: "/images/math/compass-bearings-diagram.png",
             imageCaption: "360-degree compass rose illustrating 3-figure clockwise bearings measured from North (000°).",
-            title: "Polygons and Three-Figure Bearings",
-            bigIdea: "Polygon interior angles scale by formula (n-2)×180°, while bearings measure clockwise from True North.",
+            title: "Polygons, Quadrilaterals, and Three-Figure Bearings",
+            bigIdea: "Quadrilaterals have 4 sides with specific properties; polygons scale by formula (n-2)×180°; bearings measure clockwise from True North.",
             learnIt: [
-              "Polygon angle sum formula: Interior angle sum = (n - 2) × 180°, where n is the number of sides.",
-              "Three-figure bearings: measured clockwise from True North 000° up to 360°. East = 090°, South = 180°, West = 270°.",
-              "Back bearing calculation: If forward bearing < 180°, add 180°. If forward bearing > 180°, subtract 180°."
+              "**Quadrilaterals:** A quadrilateral is a closed figure with 4 straight sides. Sum of interior angles = 360° (always).",
+              "**Types of quadrilaterals:** Square (4 equal sides + 4 right angles), Rectangle (opposite sides equal + 4 right angles), Parallelogram (opposite sides equal and parallel, opposite angles equal), Rhombus (4 equal sides, opposite angles equal, diagonals bisect at 90°), Trapezium (one pair of parallel sides).",
+              "**UNEB trap:** A square IS a rhombus (4 equal sides), but a rhombus is NOT necessarily a square (angles may not be 90°).",
+              "Polygon angle sum: (n-2) × 180°, where n = number of sides.",
+              "Three-figure bearings: measured clockwise from North 000° to 360°. East=090°, South=180°, West=270°.",
+              "Back bearing: if forward < 180°, add 180°; if forward > 180°, subtract 180°."
             ],
             workedExample: {
-              question: "If the forward bearing of town B from town A is 065°, calculate the back bearing of town A from town B.",
+              question: "A quadrilateral has angles 85°, 95°, and 110°. Find the fourth angle.",
               steps: [
-                "Step 1: Check if forward bearing is less than 180°: 065° < 180°.",
-                "Step 2: Add 180°: 065° + 180° = 245°."
+                "Step 1: Sum of angles in any quadrilateral = 360°.",
+                "Step 2: Add known angles: 85° + 95° + 110° = 290°.",
+                "Step 3: Fourth angle = 360° - 290° = 70°."
               ],
-              answer: "The back bearing is 245°."
+              answer: "70°"
             },
             tryThis: {
-              question: "Calculate the sum of interior angles of a regular hexagon (6 sides).",
-              choices: ["720°", "540°", "360°", "900°"],
-              correct: 0,
-              explanation: "(6 - 2) × 180° = 4 × 180° = 720°."
+              question: "Which statement about a square and a rhombus is TRUE?",
+              choices: ["All rhombuses are squares", "A square is a rhombus with 90° angles", "A rhombus has 4 right angles", "A square has no parallel sides"],
+              correct: 1,
+              explanation: "A square has all 4 sides equal (like a rhombus) PLUS all angles are 90°. A rhombus doesn't need 90° angles."
             }
           }
         ]
