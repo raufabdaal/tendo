@@ -11,18 +11,13 @@ interface SubjectTopicListProps {
 export default function SubjectTopicList({
   topics,
   subjectName,
-  backHref = "/study",
   getTopicHref,
 }: SubjectTopicListProps) {
   const published = topics.filter((t) => t.status === "published");
 
   return (
     <div className="subject-page">
-      <div className="subject-header">
-        <Link href={backHref} className="back-link">←</Link>
-        <h1>{subjectName}</h1>
-      </div>
-
+      <h1 className="subject-page-title">{subjectName}</h1>
       <div className="topic-list">
         {published.map((topic) => (
           <Link
