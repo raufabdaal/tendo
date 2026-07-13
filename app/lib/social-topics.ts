@@ -1387,7 +1387,36 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             }
           }
         ]
-      },
+      }
+    ],
+    quiz: [
+      { q: "Which instrument measures wind speed?", choices: ["Anemometer", "Wind vane", "Barometer", "Thermometer"], correct: 0, why: "An anemometer measures wind speed." },
+      { q: "Climate is best described as:", choices: ["Average weather over many years", "Today's rainfall", "Wind direction", "A type of vegetation"], correct: 0, why: "Climate is the average weather conditions over a long period (30+ years)." },
+      { q: "Which factor most strongly influences climate in Africa?", choices: ["Distance from the Equator", "Country name", "Flag colour", "Road signs"], correct: 0, why: "Distance from the Equator affects temperature and rainfall patterns." },
+      { q: "The Sahara Desert is found in:", choices: ["North Africa", "Southern Africa", "Central Africa", "East Africa only"], correct: 0, why: "The Sahara Desert is in North Africa." },
+      { q: "Which ocean current makes the Namib coast very dry?", choices: ["Benguela Current", "Agulhas Current", "Mozambique Current", "Canary Current"], correct: 0, why: "The cold Benguela Current cools air along Namibia's coast, reducing rainfall." },
+    ],
+  },
+  {
+    id: "vegetation-of-africa",
+    themeId: "sst-living-together-africa",
+    themeName: "Living Together in Africa",
+    title: "Vegetation of Africa",
+    estMinutes: 18,
+    status: "published",
+    reviewStatus: "verified",
+    note: {
+      intro: "Vegetation affects animals, population distribution, farming, tourism and environmental protection across Africa.",
+      learningObjectives: ["Name and locate major vegetation types of Africa.", "Explain factors that influence vegetation distribution.", "Describe the importance of vegetation and game parks."],
+      whatYouNeedToKnow: [
+        "Vegetation is the natural plant cover of an area. Types in Africa: equatorial rainforest, savanna grassland, desert vegetation, Mediterranean vegetation, mountain vegetation, mangrove vegetation.",
+        "Vegetation distribution depends mainly on rainfall. Temperature, altitude, soil, and human activities also influence it.",
+        "Vegetation is important for food, timber, medicine, rainfall, soil protection, animal habitats, and tourism. Game parks protect wildlife and vegetation.",
+      ],
+      worked: { problem: "Why are savanna grasslands important to tourism in Africa?", steps: ["Savanna has grass and scattered trees.", "Many wild animals like lions and elephants live there.", "Tourists visit game parks to see them."], answer: "Savanna grasslands support wildlife, which attracts tourists." },
+      recap: ["Vegetation depends mainly on rainfall.", "Africa has forests, savanna, desert, Mediterranean, and mountain vegetation.", "Vegetation supports animals, people, tourism, and the environment."],
+    },
+    subtopics: [
       {
         subtopicId: "vegetation-types",
         title: "Vegetation types of Africa",
@@ -1835,76 +1864,6 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             ],
             workedExample: { question: "Why do many people settle near lakes and rivers?", steps: ["Step 1: Lakes and rivers provide water.", "Step 2: They may support fishing, farming and transport.", "Step 3: These activities support settlement."], answer: "People settle near lakes and rivers because they provide water and support activities such as fishing and farming." },
             tryThis: { question: "Sparse settlement is most likely in:", choices: ["deserts", "fertile plains", "trading centres", "well-watered areas"], correct: 0, explanation: "Deserts have little water and harsh conditions, so fewer people settle there." }
-          }
-        ]
-      }
-    ],
-  },
-  {
-    id: "vegetation-of-africa",
-    themeId: "sst-living-together-africa",
-    themeName: "Living Together in Africa",
-    title: "Vegetation of Africa",
-    estMinutes: 18,
-    status: "published",
-    reviewStatus: "verified",
-    note: {
-      intro: "Vegetation affects animals, population distribution, farming, tourism and environmental protection across Africa.",
-      learningObjectives: ["Name and locate major vegetation types of Africa.", "Explain factors that influence vegetation distribution.", "Describe the importance of vegetation and game parks."],
-      whatYouNeedToKnow: [
-        "Vegetation is the natural plant cover of an area. Types in Africa: equatorial rainforest, savanna grassland, desert vegetation, Mediterranean vegetation, mountain vegetation, mangrove vegetation.",
-        "Vegetation distribution depends mainly on rainfall. Temperature, altitude, soil, and human activities also influence it.",
-        "Vegetation is important for food, timber, medicine, rainfall, soil protection, animal habitats, and tourism. Game parks protect wildlife and vegetation.",
-      ],
-      worked: { problem: "Why are savanna grasslands important to tourism in Africa?", steps: ["Savanna has grass and scattered trees.", "Many wild animals like lions and elephants live there.", "Tourists visit game parks to see them."], answer: "Savanna grasslands support wildlife, which attracts tourists." },
-      recap: ["Vegetation depends mainly on rainfall.", "Africa has forests, savanna, desert, Mediterranean, and mountain vegetation.", "Vegetation supports animals, people, tourism, and the environment."],
-    },
-    subtopics: [
-      {
-        subtopicId: "vegetation-types",
-        title: "Types of vegetation in Africa",
-        modules: [
-          {
-            moduleId: "forest-vegetation",
-            imageUrl: "/images/social-studies/africa-vegetation-belts.png",
-            imageCaption: "Comparison of dense tropical rainforest vs open savanna woodland.",
-            title: "Forest vegetation of Africa",
-            bigIdea: "Forest vegetation includes equatorial rainforests, mangrove forests, and montane forests.",
-            learnIt: [
-              "Equatorial forests: Thick, evergreen forests in hot, wet areas near the Equator. DRC, Gabon, Congo Basin. Tall trees with dense canopies. Hardwoods: mahogany, ebony, rosewood.",
-              "Mangrove forests: Grow in salty coastal swamps where fresh and salt water mix. Found along West and East African coasts.",
-              "Montane forests: Found on high mountains where climate is cooler and wetter. Slopes of Kilimanjaro, Rwenzori, Ethiopian Highlands.",
-            ],
-            tryThis: { question: "Which forest type grows in hot, wet areas near the Equator?", choices: ["Equatorial forest", "Mangrove forest", "Montane forest", "Desert scrub"], correct: 0, explanation: "Equatorial forests grow in hot, wet areas near the Equator." }
-          },
-          {
-            moduleId: "grassland-savanna",
-            title: "Savanna and grassland vegetation",
-            bigIdea: "Savanna is Africa's largest vegetation zone with grass and scattered trees adapted to wet and dry seasons.",
-            learnIt: [
-              "Savanna vegetation: Grassland with scattered trees (acacia, baobab). Covers large parts of East, Central and West Africa. Wet and dry seasons.",
-              "Temperate grasslands (velds): South Africa. Short grasses, few trees, cooler winters.",
-              "Mediterranean vegetation: Shrubs and small trees adapted to hot dry summers and cool wet winters. North Africa coast and South Africa's Cape.",
-              "Desert vegetation: Sparse, drought-resistant plants. Thorny bushes, cacti. Sahara, Namib, Kalahari.",
-            ],
-            tryThis: { question: "Which is the largest vegetation zone in Africa?", choices: ["Savanna grassland", "Equatorial rainforest", "Desert vegetation", "Mediterranean scrub"], correct: 0, explanation: "Savanna grasslands cover the largest area of Africa." }
-          },
-          {
-            moduleId: "vegetation-exam-summary",
-            title: "Exam Summary: 10 UNEB Facts about Vegetation",
-            bigIdea: "Master these high-frequency vegetation facts for PLE.",
-            learnIt: [
-              "1. Vegetation = natural plant cover. Rainfall is the main determining factor.",
-              "2. Equatorial rainforests: DRC, Gabon, Congo Basin. Hot, wet all year. Hardwoods: mahogany, ebony.",
-              "3. Savanna: Africa's largest zone. Grass + scattered trees. Wet and dry seasons.",
-              "4. Desert vegetation: Sahara, Namib, Kalahari. Sparse, thorny, drought-resistant.",
-              "5. Mediterranean: North Africa coast and Cape. Shrubs. Hot dry summers, wet winters.",
-              "6. Mangrove forests: Salty coastal swamps along West and East African coasts.",
-              "7. Mountain vegetation changes with altitude: forest → bamboo → grassland.",
-              "8. Deforestation = cutting trees without replanting. Afforestation = planting new trees.",
-              "9. Game parks protect wildlife: Murchison Falls (Uganda), Serengeti (Tanzania).",
-              "10. Desertification: fertile land → desert. Caused by overgrazing, deforestation, drought.",
-            ]
           }
         ]
       }
@@ -3642,6 +3601,13 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       }
+    ],
+    quiz: [
+      { q: "Which group of foreigners came to Africa mainly to spread Christianity?", choices: ["Missionaries", "Traders", "Explorers", "Colonialists"], correct: 0, why: "Missionaries came to spread Christianity and built schools/hospitals." },
+      { q: "The partition of Africa was formalized during which conference?", choices: ["Berlin Conference", "Addis Ababa Conference", "Durban Conference", "London Conference"], correct: 0, why: "The Berlin Conference of 1884–1885 formalized the division of Africa." },
+      { q: "Which system of colonial rule was used by the British in Buganda?", choices: ["Indirect rule", "Direct rule", "Assimilation", "Paternalism"], correct: 0, why: "Britain used indirect rule, governing through existing local chiefs and kings." },
+      { q: "Which of the following was a negative effect of the Triangular Trade?", choices: ["Depopulation and suffering in Africa", "Creation of new railways", "Spread of modern medicine", "Growth of democratic institutions"], correct: 0, why: "The slave trade caused severe depopulation and suffering in Africa." },
+      { q: "Which African country successfully resisted Italian colonisation in 1896?", choices: ["Ethiopia", "Liberia", "Kenya", "Ghana"], correct: 0, why: "Ethiopia defeated the Italians at the Battle of Adwa in 1896." },
     ],
   },
 ];
