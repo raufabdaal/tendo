@@ -948,7 +948,8 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             tryThis: { question: "Which process forms a rift valley?", choices: ["Faulting", "Condensation", "Evaporation", "Pollination"], correct: 0, explanation: "Rift valleys form when land sinks between faults." }
           }
         ]
-      }],
+      }
+    ],
     quiz: [
       { q: "Which is the highest mountain in Africa?", choices: ["Kilimanjaro", "Rwenzori", "Atlas", "Elgon"], correct: 0, why: "Mount Kilimanjaro in Tanzania is the highest mountain in Africa." },
       { q: "Which river is commonly known as the longest river in Africa?", choices: ["Nile", "Congo", "Niger", "Zambezi"], correct: 0, why: "The Nile is commonly taught as Africa's longest river." },
@@ -959,6 +960,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
       { q: "Which physical feature is a raised flat area?", choices: ["Plateau", "Valley only", "Ocean", "Capital city"], correct: 0, why: "A plateau is a raised area of land that is fairly flat on top." },
     ],
   },
+
   {
     id: "climate-of-africa",
     themeId: "sst-living-together-africa",
