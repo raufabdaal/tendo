@@ -118,6 +118,7 @@ function ModularView({ topic, backHref }: { topic: Topic; backHref: string }) {
 
         {mod.tryThis && (
           <InlineQuiz
+            key={moduleIndex}
             question={mod.tryThis.question}
             choices={mod.tryThis.choices}
             correct={mod.tryThis.correct}
