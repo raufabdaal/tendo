@@ -87,23 +87,26 @@ function LessonChooser({
   activeIndex: number;
   onSelect: (index: number) => void;
 }) {
+  const activeLesson = lessons[Math.min(activeIndex, lessons.length - 1)];
+
   return (
-    <div className="v4-lesson-chooser" aria-label={label}>
-      <div className="v4-lesson-chooser-label">{label}</div>
-      <div className="v4-lesson-strip">
+    <div className="v4-lesson-chooser v4-lesson-chooser-clean" aria-label={label}>
+      <label className="v4-lesson-chooser-label" htmlFor={`${label.replace(/\s+/g, "-").toLowerCase()}-select`}>
+        {label}
+      </label>
+      <select
+        id={`${label.replace(/\s+/g, "-").toLowerCase()}-select`}
+        className="v4-lesson-select"
+        value={activeIndex}
+        onChange={(event) => onSelect(Number(event.target.value))}
+      >
         {lessons.map((lesson, index) => (
-          <button
-            type="button"
-            key={`${lesson.title}-${index}`}
-            className={activeIndex === index ? "active" : undefined}
-            onClick={() => onSelect(index)}
-          >
-            <small>{index + 1}</small>
-            <span>{lesson.title}</span>
-            <em>{lesson.subtitle}</em>
-          </button>
+          <option value={index} key={`${lesson.title}-${index}`}>
+            {index + 1}. {lesson.title}
+          </option>
         ))}
-      </div>
+      </select>
+      {activeLesson?.subtitle && <div className="v4-lesson-current-subtitle">{activeLesson.subtitle}</div>}
     </div>
   );
 }
@@ -134,25 +137,24 @@ function LessonStepper<TBlock extends LowerPrimaryContentBlock | UpperPrimaryCon
       <h2>{title}</h2>
       <p className="v4-subtitle">{subtitle}</p>
 
-      <div className="v4-stepper-head" aria-label="Lesson progress">
-        <div>
-          <strong>Module {activeIndex + 1} of {total}</strong>
+      <div className="v4-stepper-head v4-stepper-head-clean" aria-label="Lesson progress">
+        <div className="v4-progress-row">
+          <strong>{activeIndex + 1}/{total}</strong>
           <span>{getBlockLabel(activeBlock)}</span>
         </div>
         <div className="v4-step-meter" aria-hidden="true"><span style={{ width: percent }} /></div>
       </div>
 
-      <div className="v4-module-strip" aria-label="Lesson modules">
+      <div className="v4-module-dots" aria-label="Lesson parts">
         {blocks.map((block, index) => (
           <button
             key={`${getBlockLabel(block)}-${index}`}
             type="button"
-            className={index === activeIndex ? "active" : undefined}
+            className={index === activeIndex ? "v4-module-dot active" : "v4-module-dot"}
             onClick={() => setActiveIndex(index)}
-            aria-label={`Open module ${index + 1}: ${getBlockLabel(block)}`}
+            aria-label={`Open part ${index + 1}: ${getBlockLabel(block)}`}
           >
-            <small>{index + 1}</small>
-            <span>{getBlockLabel(block)}</span>
+            <span className="sr-only">{index + 1}</span>
           </button>
         ))}
       </div>
@@ -161,26 +163,26 @@ function LessonStepper<TBlock extends LowerPrimaryContentBlock | UpperPrimaryCon
         {renderBlock(activeBlock, activeIndex)}
       </div>
 
-      <div className="v4-stepper-actions">
-        <button
-          type="button"
-          className="btn btn-secondary"
-          disabled={activeIndex === 0}
-          onClick={() => setActiveIndex((index) => Math.max(0, index - 1))}
-        >
-          ← Previous
-        </button>
-        <div className="v4-completion-note">{percent} done</div>
+      <div className="v4-stepper-actions v4-stepper-actions-clean">
+        {activeIndex > 0 ? (
+          <button
+            type="button"
+            className="v4-text-nav"
+            onClick={() => setActiveIndex((index) => Math.max(0, index - 1))}
+          >
+            ← Back
+          </button>
+        ) : <span aria-hidden="true" />}
         {activeIndex < total - 1 ? (
           <button
             type="button"
-            className="btn btn-primary"
+            className="v4-next-nav"
             onClick={() => setActiveIndex((index) => Math.min(total - 1, index + 1))}
           >
-            Next module →
+            Next →
           </button>
         ) : (
-          <a className="btn btn-primary" href="#quick-quiz">Finish lesson →</a>
+          <a className="v4-text-nav v4-finish-link" href="#quick-quiz">Quiz below ↓</a>
         )}
       </div>
     </article>
@@ -232,10 +234,9 @@ function UpperPrimaryBlockView({ block, index }: { block: UpperPrimaryContentBlo
   return <ExerciseView block={block} index={index} />;
 }
 
-function BlockFrame({ index, label, children }: { index: number; label: string; children: React.ReactNode }) {
+function BlockFrame({ label, children }: { index: number; label: string; children: React.ReactNode }) {
   return (
-    <section className="v4-block">
-      <div className="v4-block-number">{index + 1}</div>
+    <section className="v4-block" aria-label={label}>
       <div className="v4-block-body">
         <h3>{label}</h3>
         {children}

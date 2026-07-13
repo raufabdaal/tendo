@@ -53,30 +53,32 @@ Current state of the milestone:
 - P6 and P7 have now been structurally migrated to upper-primary v4 across all 5 subjects.
 - P6/P7 structural batch coverage: 78 topics and 278 generated v4 lessons from current app subtopic libraries.
 - Social Studies v4 helper now uses the right context by class: district (P4), Uganda (P5), East Africa (P6), Africa/world (P7).
+- P7 heavy manual deepening Wave 1, Wave 2 and Wave 3 are complete through `app/lib/p7-v4-heavy-lessons.ts`, `app/lib/p7-v4-heavy-lessons-wave2.ts` and `app/lib/p7-v4-heavy-lessons-wave3.ts`: all 36 P7 non-RE topics now use 60 hand-built v4 lessons across Mathematics, Integrated Science, English and Social Studies.
+- P7 Mathematics, Integrated Science, English and Social Studies are fully hand-deepened in heavy v4 at AI-builder level.
+- P6 Mathematics, Integrated Science, English and Social Studies are also hand-deepened in heavy v4 across all 22 non-RE topics through `app/lib/p6-v4-heavy-lessons.ts`.
+- P6/P7 Religious Education remains structurally migrated to v4, but must stay pending qualified CRE/IRE teacher review before premium-final status.
+- V4 Read UI has been simplified after founder feedback: no top quiz tab, no duplicate Read quiz CTA, compact lesson dropdown, compact progress dots, no visible content-block number badge and smaller Back/Next controls.
+- Exact push-package file lists are now a documented requirement for future agents (`DEV-036`, `docs/ops/update-handoff-protocol.md`).
 - Latest build passed: `cd app && npm run build` → `✓ Generating static pages (356/356)`.
 
 ### Immediate next tasks
-1. Real-phone smoke test representative v4 pages:
-   - `/math/p6/p6-sets`
-   - `/science/p6/p6-classification-living-things`
+1. Real-phone smoke test the simplified v4 Read UI on representative routes:
+   - `/math/p7/whole-numbers`
+   - `/math/p6/p6-whole-numbers`
+   - `/science/p6/p6-circulatory-system`
+   - `/english/p6/p6-debating`
    - `/social-studies/p6/p6-location-east-africa`
-   - `/math/p7/set-concepts`
-   - `/science/p7/muscular-skeletal-system`
-   - `/social-studies/p7/location-of-africa`
-   - `/re/p7/cre-ancestors-pioneers-faith`
-2. Start targeted hand-deepening of P6/P7 PLE-heavy topics in v4. Recommended first set:
-   - P7 Mathematics: Set Concepts, Fractions, Data Handling, Construction, Algebra
-   - P7 Science: Muscular-Skeletal System, Electricity and Magnetism, Light Energy, Population and Health
-   - P7 Social Studies: Location/Physical Features of Africa, Foreign Influence, Nationalism, Major World Organisations
-   - P6 bridge topics that prepare P7/PLE work in Maths, Science and SST
-3. Keep all RE migration notes visible: P3/P4/P5/P6/P7 CRE/IRE content must be reviewed by qualified teachers before premium-final status.
-4. Do not start P1/P2 yet; they will be in the same app later, after P3–P7 v4 restructure and review.
+2. Human/teacher review P6/P7 heavy-v4 non-RE content before premium-final exposure.
+3. Qualified CRE/IRE teacher review P6/P7 Religious Education before premium-final status.
+4. If founder says ready to push, provide the exact overwrite/add/delete file list, build status and suggested commit message. This is mandatory under `DEV-036`.
+5. Do not start P1/P2 yet; they will be in the same app later, after P3–P7 v4 restructure and review.
 
 ### Push status
-Current local workspace includes a large unpushed milestone bundle. Founder has not pushed yet. When founder says “ready to push”, provide:
+Current local workspace includes a large unpushed milestone bundle. Founder has not pushed yet. Under `DEV-036`, every push/milestone handoff must provide an exact action list:
 - files to overwrite
 - files to add
-- files to delete
+- files to delete, or `None`
+- files/folders not to copy (`app/.next/`, `app/node_modules/`, caches, secrets)
 - build status
 - suggested commit message
 

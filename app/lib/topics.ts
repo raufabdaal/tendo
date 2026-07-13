@@ -1,4 +1,5 @@
 import { addUpperPrimaryMathV4 } from "@/lib/v4-math-helpers";
+import { applyP7MathHeavyV4 } from "@/lib/p7-v4-heavy-lessons";
 // Phase 1 + 3 content layer.
 // Topics structured as typed data (DEV-006). MDX migration deferred until topic count justifies it.
 // Voice and structure per docs/spec/content-guidelines.md.
@@ -1946,7 +1947,7 @@ const TOPICS_DATA: Topic[] = [
 
 export const COMING_SOON: Array<{ id?: string; themeName: string; title: string; whyLater: string }> = [];
 
-export const TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimaryMathV4(TOPICS_DATA, "P7", P7_MATH_TERMS));
+export const TOPICS: Topic[] = balanceTopicAnswers(applyP7MathHeavyV4(addUpperPrimaryMathV4(TOPICS_DATA, "P7", P7_MATH_TERMS)));
 
 export function getTopic(id: string): Topic | undefined {
   const direct = TOPICS.find((t) => t.id === id);

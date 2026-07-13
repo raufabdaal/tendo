@@ -1,5 +1,6 @@
 import type { Topic } from "@/lib/topics";
 import { addUpperPrimarySocialV4 } from "@/lib/v4-social-helpers";
+import { applyP7SocialHeavyV4 } from "@/lib/p7-v4-heavy-lessons";
 
 
 function balanceTopicAnswers(topics: Topic[]): Topic[] {
@@ -3632,7 +3633,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
   },
 ];
 
-export const SOCIAL_TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimarySocialV4(SOCIAL_TOPICS_DATA, "P7", P7_SOCIAL_TERMS));
+export const SOCIAL_TOPICS: Topic[] = balanceTopicAnswers(applyP7SocialHeavyV4(addUpperPrimarySocialV4(SOCIAL_TOPICS_DATA, "P7", P7_SOCIAL_TERMS)));
 
 export function getSocialTopic(id: string): Topic | undefined {
   return SOCIAL_TOPICS.find((topic) => topic.id === id);

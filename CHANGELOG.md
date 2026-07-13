@@ -1,5 +1,100 @@
 # CHANGELOG — Tendo
 
+## v1.8.73 — 2026-07-13 — P7 heavy completion, P6 core heavy deepening and push-list protocol
+
+**Session theme:** Finish P7 non-RE heavy v4 and move P6 non-RE core subjects into heavy v4 before pushing.
+
+**Changed — P7:**
+- Added `app/lib/p7-v4-heavy-lessons-wave3.ts`.
+- Merged Wave 3 into `app/lib/p7-v4-heavy-lessons.ts`.
+- Hand-deepened the final 3 P7 Mathematics topics: Whole Numbers, Patterns and Sequences, Integers.
+- P7 Mathematics is now complete in heavy v4 across all 11 topics.
+- P7 non-RE subjects are now complete in heavy v4: Mathematics, Integrated Science, English and Social Studies.
+
+**Changed — P6:**
+- Added `app/lib/p6-v4-heavy-lessons.ts`.
+- Wired P6 Mathematics, Integrated Science, English and Social Studies topic libraries to apply heavy-v4 overrides after structural v4 migration.
+- Hand-deepened all 22 P6 non-RE topics across Mathematics, Integrated Science, English and Social Studies.
+
+**Changed — workflow documentation:**
+- Added `DEV-036` to `DECISIONS.md`.
+- Strengthened `docs/ops/update-handoff-protocol.md` so future agents must provide exact files to overwrite/add/delete on every push/milestone handoff.
+- Added `docs/ops/v4-p6-p7-heavy-completion-2026-07-13.md`.
+- Updated checklist, status and handoff.
+
+**Current P6/P7 status:**
+- P7 non-RE: 36 topics / 60 hand-built v4 lessons complete.
+- P6 non-RE: 22 topics / 22 hand-built v4 lessons complete.
+- P6/P7 RE remains structurally v4 and pending qualified CRE/IRE review.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.72 — 2026-07-13 — P7 heavy manual v4 deepening wave 2 and Read UI simplification
+
+**Session theme:** Continue heavy P7 deepening while reducing visual overload in the Read experience.
+
+**Changed — UI:**
+- Simplified topic tabs from numbered `Watch / Read / Try quiz` to clean `Watch / Read` only.
+- Removed the extra Read-panel quiz CTA so the page no longer shows repeated large “Take the quiz” actions.
+- Replaced large v4 lesson chooser cards with a compact dropdown.
+- Replaced large module selector cards with small progress dots.
+- Replaced “Module X of Y” + percent-heavy progress treatment with a compact `X/Y` progress row.
+- Removed visible content-block number badges.
+- Replaced large Previous/Next module buttons with smaller Back/Next controls.
+- Added final CSS clarity pass in `app/app/globals.css`.
+
+**Changed — content:**
+- Added `app/lib/p7-v4-heavy-lessons-wave2.ts`.
+- Merged Wave 2 overrides into `app/lib/p7-v4-heavy-lessons.ts`.
+- Hand-deepened 19 more P7 topics with 26 hand-built v4 lessons.
+- Documented the wave in `docs/ops/v4-p7-heavy-deepening-wave2-ui-simplification-2026-07-13.md`.
+- Updated checklist, status and handoff.
+
+**Wave 2 coverage:**
+- Mathematics: Operations; Construction; Length/Mass/Capacity/Money; Time.
+- Integrated Science: Excretory System; Simple Machines/Friction; Energy Resources; Interdependence.
+- English: School Holidays; Electronic Media; Rights/Responsibilities/Freedom; Environmental Protection; Ceremonies.
+- Social Studies: Climate; Vegetation; People/Settlement; Post-Independence Africa; Economic Developments; Major World Organisations.
+
+**Combined P7 heavy coverage after Wave 2:**
+- 33 P7 topics hand-deepened.
+- 54 hand-built v4 lessons added.
+- P7 Science, English and Social Studies are fully hand-deepened in heavy v4 at AI-builder level.
+- P7 Mathematics has 3 heavy topics remaining: Whole Numbers, Patterns and Sequences, Integers.
+
+**Verified:**
+- `cd app && npm run build` passed with 356 static pages.
+
+---
+
+## v1.8.71 — 2026-07-12 — P7 heavy manual v4 deepening wave 1
+
+**Session theme:** Begin manual heavy deepening after the P6/P7 structural v4 migration.
+
+**Changed:**
+- Added `app/lib/p7-v4-heavy-lessons.ts` as the P7 hand-built v4 override layer.
+- Wired P7 Mathematics, Integrated Science, English and Social Studies libraries to apply heavy-v4 overrides after structural migration.
+- Hand-deepened 14 high-priority P7 topics with 28 richer learner-facing v4 lessons.
+- Reused existing diagrams/images in mobile-friendly v4 diagram blocks where useful.
+- Documented the wave in `docs/ops/v4-p7-heavy-deepening-wave1-2026-07-12.md`.
+- Updated checklist, status and handoff.
+
+**Wave 1 topics:**
+- Mathematics: Set Concepts; Fractions, Decimals and Percentages; Data Handling and Graphs; Algebra.
+- Integrated Science: Muscular-Skeletal System; Electricity and Magnetism; Light Energy; Population and Health.
+- English: Letter Writing; Examinations.
+- Social Studies: Location of Africa; Physical Features of Africa; Foreign Influence in Africa; Nationalism and the Road to Independence.
+
+**Verified:**
+- Initial `npm run build` failed because `next` was missing from the sandbox snapshot.
+- `cd app && npm install && npm run build` passed with 356 static pages.
+- `npm audit fix --force` was not run.
+
+---
+
 ## v1.8.70 — 2026-07-12 — P6/P7 structurally migrated to v4 across all subjects
 
 **Session theme:** Major upward v4 migration after completing P4/P5 priority structure.

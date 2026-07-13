@@ -1,5 +1,6 @@
 import type { Topic } from "@/lib/topics";
 import { addUpperPrimarySocialV4 } from "@/lib/v4-social-helpers";
+import { applyP6SocialHeavyV4 } from "@/lib/p6-v4-heavy-lessons";
 
 
 function balanceTopicAnswers(topics: Topic[]): Topic[] {
@@ -855,7 +856,7 @@ const P6_SOCIAL_TOPICS_DATA: Topic[] = [
   }
 ];
 
-export const P6_SOCIAL_TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimarySocialV4(P6_SOCIAL_TOPICS_DATA, "P6", P6_SOCIAL_TERMS));
+export const P6_SOCIAL_TOPICS: Topic[] = balanceTopicAnswers(applyP6SocialHeavyV4(addUpperPrimarySocialV4(P6_SOCIAL_TOPICS_DATA, "P6", P6_SOCIAL_TERMS)));
 
 export function getP6SocialTopic(id: string): Topic | undefined {
   return P6_SOCIAL_TOPICS.find((topic) => topic.id === id);

@@ -1,5 +1,6 @@
 import type { Topic } from "@/lib/topics";
 import { addUpperPrimaryEnglishV4 } from "@/lib/v4-english-helpers";
+import { applyP6EnglishHeavyV4 } from "@/lib/p6-v4-heavy-lessons";
 
 
 function balanceTopicAnswers(topics: Topic[]): Topic[] {
@@ -631,7 +632,7 @@ const P6_ENGLISH_TOPICS_DATA: Topic[] = [
   }
 ];
 
-export const P6_ENGLISH_TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimaryEnglishV4(P6_ENGLISH_TOPICS_DATA, "P6", P6_ENGLISH_TERMS));
+export const P6_ENGLISH_TOPICS: Topic[] = balanceTopicAnswers(applyP6EnglishHeavyV4(addUpperPrimaryEnglishV4(P6_ENGLISH_TOPICS_DATA, "P6", P6_ENGLISH_TERMS)));
 
 export function getP6EnglishTopic(id: string): Topic | undefined {
   return P6_ENGLISH_TOPICS.find((topic) => topic.id === id);

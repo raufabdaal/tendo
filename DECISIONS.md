@@ -4,6 +4,23 @@
 
 ---
 
+## DEV-036 · 2026-07-13 · Every push/milestone handoff must include exact file overwrite/add/delete lists
+
+**Context:** The founder uses a manual overwrite workflow to move workspace changes into the GitHub-connected local repository and may lose agent context between sessions. The founder explicitly requested that exact files-to-overwrite guidance be documented as a necessity for future agents.
+
+**Decision:** Every meaningful milestone handoff and every “ready to push” response must include an exact file action list grouped as:
+
+1. Files to overwrite.
+2. Files to add.
+3. Files to delete.
+4. Files/folders not to copy.
+5. Build status.
+6. Suggested commit message.
+
+**Implementation effect:** Future agents must not say “copy changed files” vaguely. They must name paths and actions clearly so the founder can apply the update safely.
+
+**Tracked across:** `docs/ops/update-handoff-protocol.md`, `HANDOFF.md`, `STATUS.md`.
+
 ## DEV-035 · 2026-07-12 · V4 learner content must render as mobile-first modules/steps
 
 **Context:** Founder approved the v4 direct lesson-block structure but found the first implementation too long and mismatched on mobile. Most users will use Tendo on phones, so the lesson experience must avoid long overwhelming scrolls.

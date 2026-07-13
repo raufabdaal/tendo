@@ -4855,3 +4855,263 @@ iframe {
     flex-basis: min(235px, 78vw);
   }
 }
+
+/* V4 clarity pass — reduce visual noise in read lessons (2026-07-13) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.clean-topic-tabs {
+  display: inline-flex;
+  width: auto;
+  max-width: 100%;
+  gap: 4px;
+  padding: 4px;
+  background: #f1f5f9;
+  border: 0;
+  border-radius: 999px;
+  box-shadow: none;
+  margin-bottom: 12px;
+}
+
+.clean-topic-tabs .lesson-step {
+  min-height: 0;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  box-shadow: none;
+  font-weight: 850;
+}
+
+.clean-topic-tabs .lesson-step.active {
+  background: #17212b;
+  color: #fff;
+}
+
+.clean-topic-tabs .tab-pill {
+  margin-left: 6px;
+  padding: 2px 6px;
+  font-size: 0.7rem;
+}
+
+.note-v4-readable {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.note-v4-readable .read-listen-bar {
+  margin-bottom: 10px;
+}
+
+.v4-lesson-card {
+  border: 0 !important;
+  box-shadow: none !important;
+  background: #fff;
+}
+
+.note-v4-readable .v4-lesson-card {
+  padding: 16px;
+}
+
+.v4-lesson-chooser-clean {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.v4-lesson-chooser-clean .v4-lesson-chooser-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #64748b;
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+}
+
+.v4-lesson-select {
+  width: 100%;
+  border: 1px solid #dbe5ef;
+  background: #fff;
+  color: #17212b;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.v4-lesson-current-subtitle {
+  margin-top: 5px;
+  color: #64748b;
+  font-size: 0.84rem;
+}
+
+.v4-stepper-head-clean {
+  background: transparent;
+  color: #334155;
+  border-radius: 0;
+  padding: 0;
+  margin: 12px 0 8px;
+}
+
+.v4-progress-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.v4-progress-row strong {
+  color: #17212b;
+  font-size: 0.86rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.v4-progress-row span {
+  color: #64748b;
+  font-size: 0.86rem;
+  font-weight: 750;
+  text-align: right;
+}
+
+.v4-stepper-head-clean .v4-step-meter {
+  height: 4px;
+  background: #e2e8f0;
+}
+
+.v4-stepper-head-clean .v4-step-meter span {
+  background: #17212b;
+}
+
+.v4-module-dots {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 4px 0 12px;
+  max-width: 100%;
+}
+
+.v4-module-dot {
+  flex: 0 0 auto;
+  width: 9px;
+  height: 9px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0;
+  background: #cbd5e1;
+  cursor: pointer;
+}
+
+.v4-module-dot.active {
+  width: 26px;
+  background: #17212b;
+}
+
+.v4-block {
+  display: block;
+  border: 0 !important;
+  box-shadow: none !important;
+  background: transparent;
+  padding: 4px 0 0;
+  min-height: 0;
+}
+
+.v4-block-number {
+  display: none !important;
+}
+
+.v4-block-body h3 {
+  margin-bottom: 12px;
+}
+
+.v4-vocab-card,
+.v4-category-card,
+.v4-example-card {
+  border: 0;
+  background: #f8fafc;
+  box-shadow: none;
+}
+
+.v4-check,
+.v4-safety {
+  border: 0;
+}
+
+.v4-stepper-actions-clean {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid #edf2f7;
+}
+
+.v4-text-nav,
+.v4-next-nav {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.v4-text-nav {
+  background: transparent;
+  color: #64748b;
+  padding: 8px 0;
+}
+
+.v4-finish-link {
+  color: #17212b;
+}
+
+.v4-next-nav {
+  background: #17212b;
+  color: #fff;
+  border-radius: 999px;
+  padding: 8px 16px;
+  box-shadow: none;
+}
+
+@media (max-width: 720px) {
+  .clean-topic-tabs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .clean-topic-tabs .lesson-step {
+    justify-content: center;
+  }
+
+  .note-v4-readable .v4-lesson-card {
+    padding: 14px;
+  }
+
+  .v4-progress-row span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .v4-stepper-actions-clean {
+    width: 100%;
+  }
+}

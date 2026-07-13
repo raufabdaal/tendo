@@ -1,5 +1,6 @@
 import type { Topic } from "@/lib/topics";
 import { addUpperPrimaryMathV4 } from "@/lib/v4-math-helpers";
+import { applyP6MathHeavyV4 } from "@/lib/p6-v4-heavy-lessons";
 
 
 function balanceTopicAnswers(topics: Topic[]): Topic[] {
@@ -950,7 +951,7 @@ const P6_MATH_TOPICS_DATA: Topic[] = [
   }
 ];
 
-export const P6_MATH_TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimaryMathV4(P6_MATH_TOPICS_DATA, "P6", P6_MATH_TERMS));
+export const P6_MATH_TOPICS: Topic[] = balanceTopicAnswers(applyP6MathHeavyV4(addUpperPrimaryMathV4(P6_MATH_TOPICS_DATA, "P6", P6_MATH_TERMS)));
 
 export function getP6MathTopic(id: string): Topic | undefined {
   return P6_MATH_TOPICS.find((topic) => topic.id === id);

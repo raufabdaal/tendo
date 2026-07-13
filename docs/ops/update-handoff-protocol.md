@@ -14,7 +14,23 @@ At the end of each meaningful change, the agent must always report four things c
 4. **What the founder should do with each file**
    - **Overwrite existing file**
    - **Add new file**
+   - **Delete file**
    - **No action needed**
+
+## Non-negotiable push-package rule
+
+Whenever the founder is close to pushing, says “ready to push”, asks for a milestone handoff, or when a session produces files that may be copied into the GitHub-connected local repo, the agent must provide an **exact file action list**.
+
+The list must be grouped exactly as:
+
+1. **Files to overwrite** — existing files the founder should replace.
+2. **Files to add** — new files/folders the founder should copy into the repo.
+3. **Files to delete** — files that should be removed, or `None` if no deletion is needed.
+4. **Do not copy** — generated or unsafe folders such as `app/.next/`, `app/node_modules/`, caches, env secrets.
+5. **Build status** — command run and result.
+6. **Suggested commit message**.
+
+This is required because the founder often uses a manual overwrite workflow and may lose agent context. Future agents must not answer vaguely with “copy the changed files”; they must name the exact paths.
 
 ---
 

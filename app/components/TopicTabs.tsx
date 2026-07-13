@@ -27,6 +27,7 @@ function buildHash(subtopicId: string | null, moduleIndex: number): string {
 
 export default function TopicTabs({ topic }: { topic: Topic }) {
   const [tab, setTab] = useState<Tab>("read");
+  const isV4Content = topic.contentFormat === "lower-primary-v4" || topic.contentFormat === "upper-primary-v4";
   const [speechSupported, setSpeechSupported] = useState(false);
   const [speaking, setSpeaking] = useState(false);
   const [paused, setPaused] = useState(false);
@@ -109,14 +110,13 @@ export default function TopicTabs({ topic }: { topic: Topic }) {
 
   return (
     <>
-      <div className="tabs lesson-stepper" role="tablist" aria-label="Lesson steps">
+      <div className="tabs lesson-stepper clean-topic-tabs" role="tablist" aria-label="Study mode">
         <button
           role="tab"
           aria-selected={tab === "watch"}
           className={"tab lesson-step" + (tab === "watch" ? " active" : "")}
           onClick={() => { setTab("watch"); stopSpeech(); }}
         >
-          <span className="step-num">1</span>
           <span>Watch</span>
           {currentWatchUrl ? null : <span className="tab-pill">soon</span>}
         </button>
@@ -126,13 +126,8 @@ export default function TopicTabs({ topic }: { topic: Topic }) {
           className={"tab lesson-step" + (tab === "read" ? " active" : "")}
           onClick={() => setTab("read")}
         >
-          <span className="step-num">2</span>
           <span>Read</span>
         </button>
-        <a className="tab lesson-step lesson-step-link" href="#quick-quiz" onClick={stopSpeech}>
-          <span className="step-num">3</span>
-          <span>Try quiz</span>
-        </a>
       </div>
 
       {tab === "watch" && (
@@ -182,7 +177,7 @@ export default function TopicTabs({ topic }: { topic: Topic }) {
       )}
 
       {tab === "read" && (
-        <div className="note">
+        <div className={"note" + (isV4Content ? " note-v4-readable" : "")}>
           {speechSupported && (
             <div className="read-listen-bar">
               <button
@@ -374,15 +369,6 @@ export default function TopicTabs({ topic }: { topic: Topic }) {
             </>
           )}
 
-          <div className="read-next-card">
-            <div>
-              <strong>Ready to check yourself?</strong>
-              <span>Try a short quiz and get instant feedback.</span>
-            </div>
-            <a href="#quick-quiz" className="btn btn-primary" onClick={stopSpeech}>
-              ✏️ Take the quiz
-            </a>
-          </div>
         </div>
       )}
     </>

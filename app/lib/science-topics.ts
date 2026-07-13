@@ -1,5 +1,6 @@
 import type { Topic } from "@/lib/topics";
 import { addUpperPrimaryScienceV4 } from "@/lib/v4-science-helpers";
+import { applyP7ScienceHeavyV4 } from "@/lib/p7-v4-heavy-lessons";
 
 
 function balanceTopicAnswers(topics: Topic[]): Topic[] {
@@ -1636,7 +1637,7 @@ const SCIENCE_TOPICS_DATA: Topic[] = [
   }
 ];
 
-export const SCIENCE_TOPICS: Topic[] = balanceTopicAnswers(addUpperPrimaryScienceV4(SCIENCE_TOPICS_DATA, "P7", P7_SCIENCE_TERMS));
+export const SCIENCE_TOPICS: Topic[] = balanceTopicAnswers(applyP7ScienceHeavyV4(addUpperPrimaryScienceV4(SCIENCE_TOPICS_DATA, "P7", P7_SCIENCE_TERMS)));
 
 export function getScienceTopic(id: string): Topic | undefined {
   return SCIENCE_TOPICS.find((topic) => topic.id === id);

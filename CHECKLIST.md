@@ -155,7 +155,34 @@
 - [x] Document P6/P7 structural v4 migration (`docs/ops/v4-p6-p7-structural-migration-2026-07-12.md`)
 - [x] Build passed after P6/P7 structural v4 migration (`npm run build`, 356 static pages)
 - [ ] Real-phone smoke test selected P6/P7 v4 topic pages
-- [ ] Hand-deepen priority P6/P7 PLE-heavy topics in v4 after structural migration
+- [x] Start manual heavy deepening after P6/P7 structural migration
+- [x] Add P7 heavy-v4 override layer (`app/lib/p7-v4-heavy-lessons.ts`)
+- [x] Hand-deepen P7 Mathematics Wave 1: Set Concepts, Fractions, Data Handling, Algebra
+- [x] Hand-deepen P7 Integrated Science Wave 1: Muscular-Skeletal System, Electricity and Magnetism, Light Energy, Population and Health
+- [x] Hand-deepen P7 English Wave 1: Letter Writing, Examinations
+- [x] Hand-deepen P7 Social Studies Wave 1: Location of Africa, Physical Features, Foreign Influence, Nationalism/Road to Independence
+- [x] Document P7 heavy manual deepening Wave 1 (`docs/ops/v4-p7-heavy-deepening-wave1-2026-07-12.md`)
+- [x] Build passed after P7 heavy manual deepening Wave 1 (`npm install && npm run build`, 356 static pages)
+- [x] Simplify v4 Read UI after founder feedback: remove top quiz tab, remove duplicate Read quiz CTA, compact lesson selector, compact progress dots, smaller Back/Next controls
+- [x] Add P7 heavy-v4 Wave 2 override layer (`app/lib/p7-v4-heavy-lessons-wave2.ts`)
+- [x] Hand-deepen P7 Mathematics Wave 2: Operations, Construction, Measurement/Money, Time
+- [x] Hand-deepen P7 Integrated Science Wave 2: Excretory System, Simple Machines/Friction, Energy Resources, Interdependence
+- [x] Hand-deepen P7 English Wave 2: School Holidays, Electronic Media, Rights/Freedom, Environmental Protection, Ceremonies
+- [x] Hand-deepen P7 Social Studies Wave 2: Climate, Vegetation, People/Settlement, Post-Independence Africa, Economic Developments, Major World Organisations
+- [x] Document P7 heavy manual deepening Wave 2 + UI simplification (`docs/ops/v4-p7-heavy-deepening-wave2-ui-simplification-2026-07-13.md`)
+- [x] Build passed after P7 heavy manual deepening Wave 2 and UI simplification (`npm run build`, 356 static pages)
+- [x] Finish remaining P7 Mathematics heavy topics: Whole Numbers, Patterns and Sequences, Integers
+- [x] Add P7 heavy-v4 Wave 3 override layer (`app/lib/p7-v4-heavy-lessons-wave3.ts`)
+- [x] Complete P7 Mathematics heavy-v4 coverage across all 11 topics
+- [x] Add P6 heavy-v4 override layer for non-RE core subjects (`app/lib/p6-v4-heavy-lessons.ts`)
+- [x] Hand-deepen P6 Mathematics heavy-v4 across all 6 topics
+- [x] Hand-deepen P6 Integrated Science heavy-v4 across all 5 topics
+- [x] Hand-deepen P6 English heavy-v4 across all 5 topics
+- [x] Hand-deepen P6 Social Studies heavy-v4 across all 6 topics
+- [x] Document exact push file-list requirement for future agents (`docs/ops/update-handoff-protocol.md`, `DECISIONS.md` DEV-036)
+- [x] Document P6/P7 heavy completion (`docs/ops/v4-p6-p7-heavy-completion-2026-07-13.md`)
+- [x] Build passed after P6/P7 heavy completion (`npm run build`, 356 static pages)
+- [ ] Real-phone review simplified v4 Read UI and selected P6/P7 heavy topics
 - [ ] Qualified CRE/IRE teacher review P6/P7 Religious Education before premium-final status
 
 ---
