@@ -1142,8 +1142,6 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
               explanation: "The cold Benguela Current cools the coastal air, preventing rainfall and creating the Namib Desert."
             }
           }
-            ]
-          }
         ]
       },
       {
@@ -3643,7 +3641,10 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       }
-    ];
+    ],
+  },
+];
+
 
 export const SOCIAL_TOPICS: Topic[] = balanceTopicAnswers(applyP7SocialHeavyV4(addUpperPrimarySocialV4(SOCIAL_TOPICS_DATA, "P7", P7_SOCIAL_TERMS)));
 
