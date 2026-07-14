@@ -10,7 +10,7 @@
 
 **Decision:** P7 Social Studies strict-content modules should follow the founder's formatting standard: direct heading, definition beginning with `Is...` or `Are...`, short bullet fragments for types/examples/uses/importances/advantages/disadvantages, and bold high-utility UNEB keywords in the learner view.
 
-**Implementation effect:** The first P7 SST subtopic, `location-position-africa`, has been rewritten in `app/lib/social-topics.ts` using this strict format. `SubtopicViewer.tsx` now renders `###` strict headings and `*` strict bullets cleanly, with supporting styles in `globals.css`.
+**Implementation effect:** All five official P7 SST Topic 1 subtopics have been rewritten in `app/lib/social-topics.ts` using this strict format: `location-position-africa`, `world-continents-sizes`, `water-bodies-africa`, `regions-africa` and `countries-capitals-africa`. `SubtopicViewer.tsx` now renders `###` strict headings and `*` strict bullets cleanly, with supporting styles in `globals.css`.
 
 **Guardrail:** Do not add conversational filler, curriculum meta-copy or unsourced facts. Future subtopics should use the founder-provided exact content and reformat it into app-ready modules and checks.
 

@@ -18,6 +18,14 @@ Founder workflow now locked:
 Completed in the latest pass:
 
 - Rewrote first subtopic `location-position-africa` in `app/lib/social-topics.ts`.
+- Rewrote second subtopic `world-continents-sizes` in `app/lib/social-topics.ts` into 4 strict modules with inline checks.
+- Rewrote remaining official Topic 1 subtopics: `water-bodies-africa`, `regions-africa` and `countries-capitals-africa`.
+- All five official NCDC subtopics in Topic 1 are now strict-formatted.
+- Topic 2 `Physical Features of Africa` official subtopics are also strict-formatted: mountains/highlands, rivers, lakes, plateau/rift/coastal plains and formation processes.
+- The missed application subtopics are now strict-formatted too: `premium-map-answering` and `premium-physical-features-application`.
+- Topic 3 `Climate of Africa` is now strict-formatted across official subtopics and `premium-climate-interpretation`.
+- Topic 4 `Vegetation of Africa` is now strict-formatted across official subtopics and `premium-vegetation-application`.
+- Structural fix completed: People subtopics were removed from Vegetation and restored under `people-ethnic-groups-settlement`.
 - Added strict rendering support in `app/components/SubtopicViewer.tsx`.
 - Added strict-content CSS in `app/app/globals.css`.
 - Added ops note: `docs/ops/p7-sst-strict-formatting-pass-2026-07-14.md`.
@@ -25,8 +33,8 @@ Completed in the latest pass:
 
 Next step:
 
-- Founder reviews `/social-studies/p7/location-of-africa/location-position-africa`.
-- If the style is approved, continue to Topic 1 / Subtopic 2: `world-continents-sizes`, using founder-provided exact content.
+- Review Topic 4 `Vegetation of Africa` and the corrected People topic structure if needed.
+- Continue to Topic 5: `people-ethnic-groups-settlement`, using founder-provided exact content.
 
 ---
 

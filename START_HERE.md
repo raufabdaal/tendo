@@ -62,7 +62,7 @@ Reviewers are a second safety layer, not a replacement for our own quality work.
 - **Primary user:** students.
 - **Paying customer:** premium parents/guardians who want academic ROI.
 - **Target commercial assumption:** families who can afford around **UGX 50,000/month** for a serious study product.
-- **Current priority:** continue the P7 Social Studies strict content-formatting pass. The active subtopic is Topic 1 → `location-position-africa`; founder provides exact content, and the agent restructures it into digestible modules with inline checks. P1/P2 remain deferred.
+- **Current priority:** continue the P7 Social Studies strict content-formatting pass. Topics 1–4 are now strict-formatted, including application subtopics; the Vegetation/People subtopic placement error has been fixed. Next active work is Topic 5 `people-ethnic-groups-settlement`. Founder provides exact content, and the agent restructures it into digestible modules with inline checks. P1/P2 remain deferred.
 - **Teacher dashboard:** useful but no longer central.
 - **Parent dashboard:** strategically important because the parent pays and needs visibility.
 - **Trainup status:** archived historical context. Do not treat Trainup as the active product path.

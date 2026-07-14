@@ -1,5 +1,166 @@
 # CHANGELOG — Tendo
 
+## v1.8.80 — 2026-07-14 — P7 SST strict formatting: Vegetation of Africa and people-subtopic correction
+
+**Session theme:** Strict-format founder-provided exact content for Topic 4, Vegetation of Africa, and fix a discovered subtopic placement error.
+
+**Changed — content:**
+- Rewrote Topic 4 / Subtopic 1, `vegetation-types`, in `app/lib/social-topics.ts`.
+- Rewrote Topic 4 / Subtopic 2, `factors-vegetation`, in `app/lib/social-topics.ts`.
+- Rewrote Topic 4 / Subtopic 3, `importance-vegetation`, in `app/lib/social-topics.ts`.
+- Rewrote Topic 4 / Subtopic 4, `game-parks-animals`, in `app/lib/social-topics.ts`.
+- Rewrote Topic 4 / Subtopic 5, `population-vegetation`, in `app/lib/social-topics.ts`.
+- Strict-formatted `premium-vegetation-application` as vegetation application practice.
+
+**Fixed — structure:**
+- Removed People of Africa subtopics that had been incorrectly sitting under `vegetation-of-africa`.
+- Restored those subtopics under `people-ethnic-groups-settlement`:
+  - `origin-ethnic-groups`
+  - `movements-ethnic-groups`
+  - `settlement-tribes`
+  - `problems-effects-migration`
+  - `premium-people-settlement-reasoning`
+- Removed unrelated copied subtopics from the People topic structure.
+
+**Verified:**
+- `cd app && npm run build` passed with 417 static pages.
+
+**Next:**
+- Continue with Topic 5: `people-ethnic-groups-settlement`, using founder-provided exact content if deeper strict formatting is needed.
+
+---
+## v1.8.79 — 2026-07-14 — P7 SST strict formatting: Climate of Africa
+
+**Session theme:** Strict-format founder-provided exact content for Topic 3, Climate of Africa.
+
+**Changed — content:**
+- Rewrote Topic 3 / Subtopic 1, `climatic-regions`, in `app/lib/social-topics.ts`.
+- Rewrote Topic 3 / Subtopic 2, `characteristics-climate`, in `app/lib/social-topics.ts`.
+- Rewrote Topic 3 / Subtopic 3, `factors-climate`, in `app/lib/social-topics.ts`.
+- Rewrote Topic 3 / Subtopic 4, `climate-human-activities`, in `app/lib/social-topics.ts`.
+- Rewrote Topic 3 / Subtopic 5, `human-activities-climate`, in `app/lib/social-topics.ts`.
+- Strict-formatted the application subtopic `premium-climate-interpretation`.
+- Restructured raw content into digestible modules with inline checks and worked examples where useful.
+
+**Coverage after this pass:**
+- Topic 3 `Climate of Africa` is strict-formatted across official subtopics and application practice.
+
+**Documentation:**
+- Updated `STATUS.md`, `HANDOFF.md`, `CHECKLIST.md`, `START_HERE.md` and `docs/ops/p7-sst-strict-formatting-pass-2026-07-14.md`.
+
+**Verified:**
+- `cd app && npm run build` passed with 418 static pages.
+
+**Next:**
+- Move to Topic 4: `vegetation-of-africa`, using founder-provided exact content.
+
+---
+## v1.8.78 — 2026-07-14 — P7 SST strict formatting: application subtopics for Topics 1 and 2
+
+**Session theme:** Strict-format the extra application/practice subtopics that had been missed after formatting the official Topic 1 and Topic 2 subtopics.
+
+**Changed — content:**
+- Rewrote `premium-map-answering` in `app/lib/social-topics.ts` using the strict learner-facing format.
+- Rewrote `premium-physical-features-application` in `app/lib/social-topics.ts` using the strict learner-facing format.
+- Each application subtopic now has digestible modules, inline checks and worked examples where useful.
+
+**Coverage after this pass:**
+- Topic 1 `Location of Africa on the map of the world` now has all official subtopics plus the application subtopic strict-formatted.
+- Topic 2 `Physical Features of Africa` now has all official subtopics plus the application subtopic strict-formatted.
+
+**Documentation:**
+- Updated `STATUS.md`, `HANDOFF.md`, `CHECKLIST.md`, `START_HERE.md` and `docs/ops/p7-sst-strict-formatting-pass-2026-07-14.md`.
+
+**Verified:**
+- `cd app && npm run build` passed with 418 static pages.
+
+**Next:**
+- Move to Topic 3: `climate-of-africa`, using founder-provided exact content.
+
+---
+## v1.8.77 — 2026-07-14 — P7 SST strict formatting: Physical Features of Africa official subtopics
+
+**Session theme:** Move from Topic 1 to Topic 2 in P7 Social Studies and strict-format founder-provided content for Physical Features of Africa.
+
+**Changed — content:**
+- Rewrote Topic 2 / Subtopic 1, `mountains-highlands`, in `app/lib/social-topics.ts`.
+- Rewrote Topic 2 / Subtopic 2, `rivers-africa`, in `app/lib/social-topics.ts`.
+- Rewrote Topic 2 / Subtopic 3, `lakes-africa`, in `app/lib/social-topics.ts`.
+- Rewrote Topic 2 / Subtopic 4, `plateau-rift-coastal`, in `app/lib/social-topics.ts`.
+- Rewrote Topic 2 / Subtopic 5, `formation-physical-features`, in `app/lib/social-topics.ts`.
+- Restructured founder-provided raw content into digestible strict modules with inline checks.
+
+**Coverage after this pass:**
+- Physical Features of Africa now has its official content areas strict-formatted for mountains/highlands, rivers, lakes, plateau/rift/coastal plains and formation processes.
+- `premium-physical-features-application` remains as an extra application/practice subtopic and still needs a later decision.
+
+**Documentation:**
+- Updated `STATUS.md`, `HANDOFF.md`, `CHECKLIST.md`, `START_HERE.md` and `docs/ops/p7-sst-strict-formatting-pass-2026-07-14.md`.
+
+**Verified:**
+- `cd app && npm run build` passed with 418 static pages.
+
+**Next:**
+- Founder reviews Topic 2 formatting.
+- Decide whether to strict-format `premium-physical-features-application` or move to Topic 3, `climate-of-africa`.
+
+---
+## v1.8.76 — 2026-07-14 — P7 SST strict formatting: remaining official Topic 1 subtopics
+
+**Session theme:** Continue the P7 Social Studies strict content-formatting pass using founder-provided exact content for the remaining official subtopics in Topic 1.
+
+**Changed — content:**
+- Rewrote Topic 1 / Subtopic 3, `water-bodies-africa`, in `app/lib/social-topics.ts`.
+- Rewrote Topic 1 / Subtopic 4, `regions-africa`, in `app/lib/social-topics.ts`.
+- Rewrote Topic 1 / Subtopic 5, `countries-capitals-africa`, in `app/lib/social-topics.ts`.
+- Restructured founder-provided raw content into digestible strict modules with inline checks.
+- Cleaned compressed raw text and accidental link artifacts while preserving the founder-provided content direction.
+
+**Coverage after this pass:**
+- All 5 official NCDC subtopics under P7 SST Topic 1 are now strict-formatted:
+  1. `location-position-africa`
+  2. `world-continents-sizes`
+  3. `water-bodies-africa`
+  4. `regions-africa`
+  5. `countries-capitals-africa`
+- `premium-map-answering` remains as an extra application/practice subtopic and still needs review or strict-format conversion.
+
+**Documentation:**
+- Updated `STATUS.md`, `HANDOFF.md`, `CHECKLIST.md`, `START_HERE.md`, `DECISIONS.md` and `docs/ops/p7-sst-strict-formatting-pass-2026-07-14.md`.
+
+**Verified:**
+- `cd app && npm run build` passed with 418 static pages.
+
+**Next:**
+- Founder reviews Topic 1 formatting across all official subtopics.
+- Decide whether to strict-format `premium-map-answering` as application practice or move to Topic 2, `physical-features-of-africa`.
+
+---
+## v1.8.75 — 2026-07-14 — P7 SST strict formatting: World Continents and Their Sizes
+
+**Session theme:** Continue the P7 Social Studies strict content-formatting pass using founder-provided exact content.
+
+**Changed — content:**
+- Rewrote Topic 1 / Subtopic 2, `world-continents-sizes`, in `app/lib/social-topics.ts`.
+- Restructured the founder-provided raw content into 4 digestible modules:
+  1. World Continents and Their Types
+  2. Uses, Importances, Advantages and Disadvantages of Continents
+  3. Continental Size Ranking
+  4. General Exam Summary Points
+- Added an inline `tryThis` check for each module.
+- Added a worked example for arranging continents by size.
+- Cleaned raw formatting artifacts such as compressed words and accidental link fragments while preserving the founder-provided content direction.
+
+**Documentation:**
+- Updated `STATUS.md`, `HANDOFF.md`, `CHECKLIST.md`, `START_HERE.md`, `DECISIONS.md` and `docs/ops/p7-sst-strict-formatting-pass-2026-07-14.md` to record that the first two Topic 1 subtopics have now been strict-formatted.
+
+**Verified:**
+- `cd app && npm run build` passed with 418 static pages.
+
+**Next:**
+- Continue Topic 1 / Subtopic 3: `water-bodies-africa`, using founder-provided exact content.
+
+---
 ## v1.8.74 — 2026-07-14 — P7 SST strict formatting standard and first subtopic restructure
 
 **Session theme:** Lock the founder's strict content-formatting direction and apply it to the first P7 Social Studies subtopic.

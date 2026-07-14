@@ -68,7 +68,7 @@ Students, currently spanning **P7**, **P6**, **P5**, **P4 live beta**, and **P3 
 
 
 ### Latest active work — P7 Social Studies strict content formatting (2026-07-14)
-Founder has locked a stricter content-formatting workflow for the current P7 Social Studies pass. The founder provides exact educational content; the agent restructures it into digestible modules with an inline check for each module. The first active subtopic is `location-position-africa` under Topic 1, `Location of Africa on the map of the world`. It has now been rewritten into 9 strict learner-facing modules and `SubtopicViewer.tsx` has been updated to render strict headings and bullet rows cleanly. Build passed with 418 static pages. Next step is founder review of this formatting style before continuing to the remaining Topic 1 subtopics.
+Founder has locked a stricter content-formatting workflow for the current P7 Social Studies pass. The founder provides exact educational content; the agent restructures it into digestible modules with an inline check for each module. Topics 1–4 of P7 Social Studies are now strict-formatted across official subtopics and application/practice subtopics. Topic 4 `Vegetation of Africa` now covers `vegetation-types`, `factors-vegetation`, `importance-vegetation`, `game-parks-animals`, `population-vegetation` and `premium-vegetation-application`. A structural error was also fixed: People of Africa subtopics were removed from Vegetation and restored under `people-ethnic-groups-settlement`. Build passed with 417 static pages. Next active work is Topic 5: `people-ethnic-groups-settlement`, pending founder-provided exact content for deeper strict formatting.
 
 ### Current active milestone
 **NCDC-native v4 migration has reached P3–P7 structurally.**
@@ -86,8 +86,8 @@ Latest major move:
 - Build passed after the latest P6/P7 heavy completion pass: `cd app && npm run build` → `✓ Generating static pages (356/356)`.
 
 Immediate sequence:
-1. Founder reviews P7 SST Topic 1 / Subtopic 1 strict formatting style (`location-position-africa`).
-2. If approved, continue strict formatting with founder-provided exact content for `world-continents-sizes`, then the remaining Topic 1 subtopics.
+1. Founder reviews Topic 4 `Vegetation of Africa` and the corrected People topic structure if needed.
+2. Continue to Topic 5: `people-ethnic-groups-settlement`, using founder-provided exact content.
 3. Real-phone smoke test the simplified v4 Read UI, especially the compact lesson dropdown, progress dots, smaller Back/Next controls and image scaling.
 4. Human/teacher review P6/P7 heavy-v4 non-RE topics before premium-final exposure.
 5. Qualified CRE/IRE teacher review P6/P7 Religious Education before premium-final status.

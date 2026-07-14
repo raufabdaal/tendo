@@ -26,12 +26,41 @@
 - [x] Add strict-content CSS support in `app/app/globals.css`
 - [x] Document strict formatting pass (`docs/ops/p7-sst-strict-formatting-pass-2026-07-14.md`)
 - [x] Build passed after strict formatting pass (`npm run build`, 418 static pages)
+- [x] Build passed after `world-continents-sizes` strict formatting (`npm run build`, 418 static pages)
+- [x] Build passed after remaining official Topic 1 strict formatting (`npm run build`, 418 static pages)
 - [ ] Founder review of first subtopic formatting style
-- [ ] Continue Topic 1 / Subtopic 2: `world-continents-sizes` after founder approval/content
-- [ ] Continue Topic 1 / Subtopic 3: `water-bodies-africa`
-- [ ] Continue Topic 1 / Subtopic 4: `regions-africa`
-- [ ] Continue Topic 1 / Subtopic 5: `countries-capitals-africa`
-- [ ] Review whether `premium-map-answering` remains as a separate strict subtopic or becomes practice/application after official subtopics
+- [x] Continue Topic 1 / Subtopic 2: `world-continents-sizes` after founder approval/content
+- [x] Continue Topic 1 / Subtopic 3: `water-bodies-africa`
+- [x] Continue Topic 1 / Subtopic 4: `regions-africa`
+- [x] Continue Topic 1 / Subtopic 5: `countries-capitals-africa`
+- [x] Strict-format Topic 1 application subtopic: `premium-map-answering`
+- [x] Start Topic 2 strict formatting: `physical-features-of-africa`
+- [x] Strict-format Topic 2 / Subtopic 1: `mountains-highlands`
+- [x] Strict-format Topic 2 / Subtopic 2: `rivers-africa`
+- [x] Strict-format Topic 2 / Subtopic 3: `lakes-africa`
+- [x] Strict-format Topic 2 / Subtopic 4: `plateau-rift-coastal`
+- [x] Strict-format Topic 2 / Subtopic 5: `formation-physical-features`
+- [x] Build passed after Topic 2 official subtopics strict formatting (`npm run build`, 418 static pages)
+- [x] Build passed after application subtopics strict formatting (`npm run build`, 418 static pages)
+- [x] Start Topic 3 strict formatting: `climate-of-africa`
+- [x] Strict-format Topic 3 / Subtopic 1: `climatic-regions`
+- [x] Strict-format Topic 3 / Subtopic 2: `characteristics-climate`
+- [x] Strict-format Topic 3 / Subtopic 3: `factors-climate`
+- [x] Strict-format Topic 3 / Subtopic 4: `climate-human-activities`
+- [x] Strict-format Topic 3 / Subtopic 5: `human-activities-climate`
+- [x] Strict-format Topic 3 application subtopic: `premium-climate-interpretation`
+- [x] Build passed after Topic 3 strict formatting (`npm run build`, 418 static pages)
+- [x] Start Topic 4 strict formatting: `vegetation-of-africa`
+- [x] Strict-format Topic 4 / Subtopic 1: `vegetation-types`
+- [x] Strict-format Topic 4 / Subtopic 2: `factors-vegetation`
+- [x] Strict-format Topic 4 / Subtopic 3: `importance-vegetation`
+- [x] Strict-format Topic 4 / Subtopic 4: `game-parks-animals`
+- [x] Strict-format Topic 4 / Subtopic 5: `population-vegetation`
+- [x] Strict-format Topic 4 application subtopic: `premium-vegetation-application`
+- [x] Fix misplaced People of Africa subtopics: move them out of Vegetation and restore them under `people-ethnic-groups-settlement`
+- [x] Build passed after Topic 4 strict formatting and People structure fix (`npm run build`, 417 static pages)
+- [ ] Start Topic 5 strict formatting: `people-ethnic-groups-settlement`
+- [x] Strict-format Topic 2 application subtopic: `premium-physical-features-application`
 
 ---
 
