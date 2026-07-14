@@ -1,6 +1,6 @@
 # STATUS — Tendo
 > **Current state:** Tendo is a premium, child-friendly study platform for Ugandan primary learners. P7, P6, P5, P4 and P3 are live as beta across all subjects. **The v5 FCC-mobile UX overhaul** has simplified the entire student experience: no bottom nav, hamburger menu, clean drill-down from subjects → topics → modules → inline quiz. Content restructuring to strict NCDC alignment is the next critical milestone.
-*Updated: 2026-07-13 · v5 FCC-mobile UX overhaul applied**
+*Updated: 2026-07-14 · P7 SST strict formatting pass started**
 
 > **Current state:** Tendo is a premium, child-friendly study platform for Ugandan primary learners. P7, P6, P5 and P4 are live across all 5 app subjects as beta/live content, and P3 is now live as a thematic-first beta across all 12 official NCDC P3 themes.
 
@@ -66,6 +66,10 @@ Students, currently spanning **P7**, **P6**, **P5**, **P4 live beta**, and **P3 
 - Auth is still local/device-only. Backend auth is documented but not started.
 - Teacher dashboard now auto-populates with presentation/sample data unless `NEXT_PUBLIC_TENDO_PRESENTATION_DATA=off`.
 
+
+### Latest active work — P7 Social Studies strict content formatting (2026-07-14)
+Founder has locked a stricter content-formatting workflow for the current P7 Social Studies pass. The founder provides exact educational content; the agent restructures it into digestible modules with an inline check for each module. The first active subtopic is `location-position-africa` under Topic 1, `Location of Africa on the map of the world`. It has now been rewritten into 9 strict learner-facing modules and `SubtopicViewer.tsx` has been updated to render strict headings and bullet rows cleanly. Build passed with 418 static pages. Next step is founder review of this formatting style before continuing to the remaining Topic 1 subtopics.
+
 ### Current active milestone
 **NCDC-native v4 migration has reached P3–P7 structurally.**
 
@@ -82,13 +86,15 @@ Latest major move:
 - Build passed after the latest P6/P7 heavy completion pass: `cd app && npm run build` → `✓ Generating static pages (356/356)`.
 
 Immediate sequence:
-1. Real-phone smoke test the simplified v4 Read UI, especially the compact lesson dropdown, progress dots, smaller Back/Next controls and image scaling.
-2. Human/teacher review P6/P7 heavy-v4 non-RE topics before premium-final exposure.
-3. Qualified CRE/IRE teacher review P6/P7 Religious Education before premium-final status.
-4. Optional next product-quality pass: add extra diagrams for weaker P6 Science/SST visual areas and review mobile readability.
-5. Prepare the full push package only when founder says ready.
-6. Do not build subject-style P3 routes such as `/math/p3` or `/re/p3` unless a documented bridge design is approved.
-7. Do not start P1/P2 yet.
+1. Founder reviews P7 SST Topic 1 / Subtopic 1 strict formatting style (`location-position-africa`).
+2. If approved, continue strict formatting with founder-provided exact content for `world-continents-sizes`, then the remaining Topic 1 subtopics.
+3. Real-phone smoke test the simplified v4 Read UI, especially the compact lesson dropdown, progress dots, smaller Back/Next controls and image scaling.
+4. Human/teacher review P6/P7 heavy-v4 non-RE topics before premium-final exposure.
+5. Qualified CRE/IRE teacher review P6/P7 Religious Education before premium-final status.
+6. Optional next product-quality pass: add extra diagrams for weaker P6 Science/SST visual areas and review mobile readability.
+7. Prepare the full push package only when founder says ready.
+8. Do not build subject-style P3 routes such as `/math/p3` or `/re/p3` unless a documented bridge design is approved.
+9. Do not start P1/P2 yet.
 
 ### Content architecture correction — READ BEFORE MORE CONTENT BUILD
 Founder review identified a serious content-structure issue: adding more modules does not automatically make lessons full or child-friendly. P3/P4/P5 especially must stop showing curriculum meta-copy such as “expected outcome”, “theme guide”, “what you will learn” and “this part helps a learner...”. Learner-facing lessons need direct teaching blocks: definitions, types/classifications, examples, characteristics/uses and exercises. This is documented in `docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md` and logged as `DEV-033`. The first v4 pilot is implemented on `/p3/theme/p3-theme-6-plants` and `/science/p5/p5-keeping-poultry-bees`. The v4 presentation standard is now locked as mobile-first lesson selector + module stepper. All 12 P3 thematic routes now render through the lower-primary v4 lesson selector + mobile module stepper. All 12 P3 thematic themes are now manually deepened in lower-primary v4 with lesson selector + mobile module stepper. P3 Religious Education is also migrated to lower-primary v4 across 18 CRE/IRE topics. P3 is structurally complete in v4 at AI-builder level; real-phone review and teacher/CRE/IRE review remain before premium-final status. Full migration mode has now moved to P4/P5 Science: all P4 and P5 Integrated Science topics are structurally migrated to upper-primary v4 via `app/lib/v4-science-helpers.ts`. P4 Integrated Science is now complete at AI-builder v4 level: all 12 topics are structurally migrated and hand-deepened. P5 Integrated Science is now complete at AI-builder v4 level: all 9 topics are structurally migrated and hand-deepened. P4 and P5 Science are both complete at AI-builder v4 level, pending human/teacher and real-phone review. P4 and P5 Mathematics are now complete at AI-builder v4 level: all topics are structurally migrated and hand-deepened in the upper-primary v4 lesson-stepper format. P4 and P5 English are now complete at AI-builder v4 level: all topics are structurally migrated and hand-deepened in the upper-primary v4 lesson-stepper format. P4 and P5 Social Studies are now complete at AI-builder v4 level: all P4/P5 SST topics are structurally migrated and hand-deepened in the upper-primary v4 lesson-stepper format. P4 and P5 Religious Education are also structurally migrated to upper-primary v4 through `app/lib/v4-re-helpers.ts`, with CRE/IRE teacher review and P4 full standard syllabus confirmation still required. P6 and P7 are now structurally migrated to upper-primary v4 across all 5 subjects using the shared subject helpers; this creates 278 P6/P7 v4 lessons from the current app subtopic libraries and is documented in `docs/ops/v4-p6-p7-structural-migration-2026-07-12.md`. P7 heavy manual deepening Wave 1, Wave 2 and Wave 3 are complete through `app/lib/p7-v4-heavy-lessons.ts`, `app/lib/p7-v4-heavy-lessons-wave2.ts` and `app/lib/p7-v4-heavy-lessons-wave3.ts`: all 36 P7 non-RE topics now use 60 hand-built v4 lessons in Mathematics, Integrated Science, English and Social Studies. P6 heavy deepening is also complete for all 22 non-RE topics through `app/lib/p6-v4-heavy-lessons.ts`. The v4 Read UI has also been simplified to reduce visual overload. P6/P7 RE remains structurally v4 and pending qualified CRE/IRE teacher review. P6/P7 still need real-phone review and human/teacher review before premium-final status.

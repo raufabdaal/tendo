@@ -4,6 +4,20 @@
 
 ---
 
+## DEV-037 · 2026-07-14 · Strict P7 SST formatting: founder content in, agent structure out
+
+**Context:** The founder clarified the active P7 Social Studies workflow. The founder provides the exact educational content. The agent's role is to dissect that content into digestible learner modules with a quiz/check for each module, not to invent additional syllabus facts.
+
+**Decision:** P7 Social Studies strict-content modules should follow the founder's formatting standard: direct heading, definition beginning with `Is...` or `Are...`, short bullet fragments for types/examples/uses/importances/advantages/disadvantages, and bold high-utility UNEB keywords in the learner view.
+
+**Implementation effect:** The first P7 SST subtopic, `location-position-africa`, has been rewritten in `app/lib/social-topics.ts` using this strict format. `SubtopicViewer.tsx` now renders `###` strict headings and `*` strict bullets cleanly, with supporting styles in `globals.css`.
+
+**Guardrail:** Do not add conversational filler, curriculum meta-copy or unsourced facts. Future subtopics should use the founder-provided exact content and reformat it into app-ready modules and checks.
+
+**Tracked across:** `app/lib/social-topics.ts`, `app/components/SubtopicViewer.tsx`, `app/app/globals.css`, `docs/ops/p7-sst-strict-formatting-pass-2026-07-14.md`.
+
+---
+
 ## DEV-036 · 2026-07-13 · Every push/milestone handoff must include exact file overwrite/add/delete lists
 
 **Context:** The founder uses a manual overwrite workflow to move workspace changes into the GitHub-connected local repository and may lose agent context between sessions. The founder explicitly requested that exact files-to-overwrite guidance be documented as a necessity for future agents.

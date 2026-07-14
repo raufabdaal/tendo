@@ -18,6 +18,23 @@
 
 
 
+## Phase 33 — P7 Social Studies Strict Content Formatting Pass
+- [x] Founder strict formatting prompt received and accepted as the standard for P7 SST subtopic restructuring
+- [x] Lock workflow: founder supplies exact content; agent dissects/reformats into digestible modules with checks
+- [x] Rewrite Topic 1 / Subtopic 1: `location-position-africa` using strict layout
+- [x] Add strict heading and bullet rendering support in `SubtopicViewer.tsx`
+- [x] Add strict-content CSS support in `app/app/globals.css`
+- [x] Document strict formatting pass (`docs/ops/p7-sst-strict-formatting-pass-2026-07-14.md`)
+- [x] Build passed after strict formatting pass (`npm run build`, 418 static pages)
+- [ ] Founder review of first subtopic formatting style
+- [ ] Continue Topic 1 / Subtopic 2: `world-continents-sizes` after founder approval/content
+- [ ] Continue Topic 1 / Subtopic 3: `water-bodies-africa`
+- [ ] Continue Topic 1 / Subtopic 4: `regions-africa`
+- [ ] Continue Topic 1 / Subtopic 5: `countries-capitals-africa`
+- [ ] Review whether `premium-map-answering` remains as a separate strict subtopic or becomes practice/application after official subtopics
+
+---
+
 ## Phase 32 — NCDC-native Content Architecture v4 Correction
 - [x] Founder review identified that “more modules” is not enough and often makes content less child-friendly
 - [x] Document v4 architecture (`docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md`)

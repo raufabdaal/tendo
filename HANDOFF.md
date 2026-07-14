@@ -1,6 +1,34 @@
 # HANDOFF — for the next session
 
-*Written: 2026-07-12 · Updated: 2026-07-13 (v5 FCC-mobile UX + full P7 NCDC content alignment)*
+*Written: 2026-07-12 · Updated: 2026-07-14 (P7 SST strict formatting pass started)*
+
+
+## CURRENT HANDOFF — 2026-07-14 — P7 SST STRICT FORMATTING PASS
+
+We are currently working inside **Primary 7 Social Studies**, Topic 1: `Location of Africa on the map of the world`.
+
+Founder workflow now locked:
+
+1. Founder provides exact content for a subtopic.
+2. Agent restructures that content into digestible modules.
+3. Each module gets an inline quiz/check.
+4. Agent must not add conversational filler, curriculum meta-copy or unsourced syllabus facts.
+5. Every meaningful change must update docs and provide exact overwrite/add/delete lists.
+
+Completed in the latest pass:
+
+- Rewrote first subtopic `location-position-africa` in `app/lib/social-topics.ts`.
+- Added strict rendering support in `app/components/SubtopicViewer.tsx`.
+- Added strict-content CSS in `app/app/globals.css`.
+- Added ops note: `docs/ops/p7-sst-strict-formatting-pass-2026-07-14.md`.
+- Build passed: `npm run build` → `✓ Generating static pages (418/418)`.
+
+Next step:
+
+- Founder reviews `/social-studies/p7/location-of-africa/location-position-africa`.
+- If the style is approved, continue to Topic 1 / Subtopic 2: `world-continents-sizes`, using founder-provided exact content.
+
+---
 
 ## 🚀 PUSH STATUS — READY
 

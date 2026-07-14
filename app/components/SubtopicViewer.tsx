@@ -79,10 +79,8 @@ export default function SubtopicViewer({ topic, subtopicId, topicHref, subjectHr
       <div className="module-step">
         <h3 className="module-title">{mod.title}</h3>
 
-        <div className="module-content">
-          {mod.learnIt.map((point, i) => (
-            <p key={i} className="module-point" dangerouslySetInnerHTML={{ __html: boldKeyTerms(point) }} />
-          ))}
+        <div className="module-content strict-content">
+          {mod.learnIt.map((point, i) => renderStrictContentLine(point, i))}
         </div>
 
         {mod.workedExample && (
@@ -125,6 +123,23 @@ export default function SubtopicViewer({ topic, subtopicId, topicHref, subjectHr
       </div>
     </div>
   );
+}
+
+function renderStrictContentLine(point: string, key: number) {
+  if (point.startsWith("### ")) {
+    return <h4 key={key} className="strict-module-heading">{point.replace(/^###\s*/, "")}</h4>;
+  }
+
+  if (point.startsWith("* ")) {
+    return (
+      <p key={key} className="module-point strict-bullet">
+        <span className="strict-bullet-mark">*</span>
+        <span dangerouslySetInnerHTML={{ __html: boldKeyTerms(point.replace(/^\*\s*/, "")) }} />
+      </p>
+    );
+  }
+
+  return <p key={key} className="module-point" dangerouslySetInnerHTML={{ __html: boldKeyTerms(point) }} />;
 }
 
 function boldKeyTerms(text: string): string {

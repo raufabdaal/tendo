@@ -1,5 +1,32 @@
 # CHANGELOG — Tendo
 
+## v1.8.74 — 2026-07-14 — P7 SST strict formatting standard and first subtopic restructure
+
+**Session theme:** Lock the founder's strict content-formatting direction and apply it to the first P7 Social Studies subtopic.
+
+**Changed — content:**
+- Rewrote `location-position-africa` inside `app/lib/social-topics.ts` using the strict layout: topic header, definition, types, examples, uses, importances, advantages and disadvantages where relevant.
+- Split the first subtopic into 9 digestible modules with one inline check per module.
+- Cleaned the previous rough formatting issues such as compressed definitions, missing spacing and raw note-style lines.
+- Preserved the current P7 SST subtopic method: `Topic → Subtopic → Modules → Inline quiz`.
+
+**Changed — renderer/style:**
+- Updated `app/components/SubtopicViewer.tsx` so strict lines render cleanly: `###` lines become compact headings and `*` lines become strict bullet rows.
+- Added a small strict-content CSS block to `app/app/globals.css` for spacing and mobile-readable bullets.
+
+**Changed — documentation:**
+- Added `docs/ops/p7-sst-strict-formatting-pass-2026-07-14.md`.
+- Logged `DEV-037` in `DECISIONS.md`.
+- Updated `STATUS.md`, `HANDOFF.md`, `CHECKLIST.md`, `START_HERE.md` and this changelog.
+
+**Verified:**
+- `cd app && npm run build` passed with 418 static pages.
+
+**Next:**
+- Founder reviews the first subtopic formatting.
+- If approved, continue the same strict formatting process on the remaining Topic 1 subtopics, using founder-provided exact content.
+
+---
 ## v1.8.73 — 2026-07-13 — P7 heavy completion, P6 core heavy deepening and push-list protocol
 
 **Session theme:** Finish P7 non-RE heavy v4 and move P6 non-RE core subjects into heavy v4 before pushing.

@@ -55,13 +55,14 @@ Reviewers are a second safety layer, not a replacement for our own quality work.
 15. **`docs/ops/p3-re-source-research-2026-07-12.md`** — trusted CRE/IRE source register.
 16. **`docs/spec/ncdc-native-content-architecture-v4-2026-07-12.md`** — new required student-facing content structure.
 17. **`docs/ops/v4-content-architecture-pilot-2026-07-12.md`** — first v4 pilot implementation.
+18. **`docs/ops/p7-sst-strict-formatting-pass-2026-07-14.md`** — current P7 SST strict formatting standard.
 
 ## You have 60 seconds. What's this project now?
 
 - **Primary user:** students.
 - **Paying customer:** premium parents/guardians who want academic ROI.
 - **Target commercial assumption:** families who can afford around **UGX 50,000/month** for a serious study product.
-- **Current priority:** restructure P3–P7 student-facing content using NCDC-native v4 blocks. First pilot routes are `/p3/theme/p3-theme-6-plants` and `/science/p5/p5-keeping-poultry-bees`. P1/P2 will be in the same app later, but not until P3–P7 structure is fixed.
+- **Current priority:** continue the P7 Social Studies strict content-formatting pass. The active subtopic is Topic 1 → `location-position-africa`; founder provides exact content, and the agent restructures it into digestible modules with inline checks. P1/P2 remain deferred.
 - **Teacher dashboard:** useful but no longer central.
 - **Parent dashboard:** strategically important because the parent pays and needs visibility.
 - **Trainup status:** archived historical context. Do not treat Trainup as the active product path.
