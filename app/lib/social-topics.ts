@@ -118,79 +118,200 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
         title: "1. Location and position of Africa using lines of latitudes and longitudes",
         modules: [
           {
-            moduleId: "what-is-latitude",
-            title: "What is latitude?",
-            bigIdea: "Latitude is an imaginary line that runs from east to west around the earth. It helps us say how far a place is north or south of the Equator.",
+            moduleId: "understanding-location",
+            title: "Understanding Location",
+            bigIdea: "Location is the exact place or area where a geographical feature or continent is found on the earth's surface. It can be absolute or relative.",
             learnIt: [
-              "Latitude lines are drawn from east to west on a map or globe.",
-              "They are also called parallels because they run parallel to the Equator.",
-              "The Equator is the most important line of latitude. It is marked 0°.",
-              "Places north of the Equator are in the northern hemisphere. Places south of the Equator are in the southern hemisphere.",
-              "The latitude of a place is written as a number of degrees north or south, for example 0°20'N."
+              "Location:Is the exact place or area where a geographical feature or continent is found on the earth's surface.",
+              "Types:Absolute locationRelative location",
+              "Absolute location:Is the position of a place determined strictly by using lines of latitude and longitude.",
+              "Relative location:Is the position of a place described in relation to neighbouring water bodies or landmasses."
             ],
-            visual: {
-              kind: "diagram",
-              title: "Lines of latitude",
-              description: "Show the earth as a circle with horizontal lines running east to west. Label the Equator as 0° and show lines above marked north and lines below marked south."
-            },
             tryThis: {
-              question: "Lines of latitude run from east to west and help us locate places:",
-              choices: ["North or south of the Equator", "East or west of the Prime Meridian", "Only in Africa", "Only near the poles"],
+              question: "What is the difference between absolute and relative location?",
+              choices: ["Absolute uses latitude/longitude; relative uses neighboring features", "Absolute is approximate; relative is exact", "Absolute is used for cities; relative is used for continents", "There is no difference"],
               correct: 0,
-              explanation: "Latitude helps us locate places north or south of the Equator."
+              explanation: "Absolute location is determined by latitude and longitude, while relative location describes a place in relation to neighbouring water bodies or landmasses."
             }
           },
           {
-            moduleId: "what-is-longitude",
-            title: "What is Longitude and Time Calculation",
-            bigIdea: "Longitudes run from North to South and help calculate time differences around the Earth.",
+            moduleId: "location-in-practice",
+            title: "Location in Practice",
+            bigIdea: "Knowing the location of places helps in mapping, calculating time, and navigation.",
             learnIt: [
-              "Lines of longitude (meridians) run vertically from North Pole to South Pole. The Prime Meridian (Greenwich Meridian) is 0°.",
-              "Calculation of time using longitudes: Earth rotates 360° in 24 hours, which equals 15° per hour or exactly 4 minutes per degree of longitude (1° = 4 minutes).",
-              "Places East of Greenwich are ahead in time (+4 minutes per degree East), while places West are behind in time (-4 minutes per degree West)."
+              "Examples:Latitude 37° NorthLatitude 35° SouthLongitude 17° WestLongitude 51° East",
+              "Uses:Determining the exact position of places on maps.Calculating local time differences between different countries.Identifying different climatic zones across the African continent.Assisting pilots and sea captains in safe navigation.",
+              "Importances:It helps map makers to draw accurate continental [boundaries.It](http://boundaries.It) explains the temperature variations across different [regions.It](http://regions.It) enables regional international trade due to known distances.",
+              "Advantages:Provides a highly accurate method for global positioning systems.Allows standardization of world time zones using the Greenwich Meridian.Simplifies cross-border aviation control across African airspace.",
+              "Disadvantages:Requires specialized mathematical skills to calculate coordinates.Can be confusing to local learners due to abstract grid lines.Minor degree errors cause massive navigation tracking mistakes."
             ],
-            visual: {
-              kind: "diagram",
-              title: "Lines of longitude",
-              description: "Show the earth as a circle with vertical lines running from North Pole to South Pole. Label the Prime Meridian as 0° and show lines to the right marked east and to the left marked west."
+            tryThis: {
+              question: "Mention one use of knowing the absolute location of a place.",
+              choices: ["Calculating local time differences between countries", "Finding a local shop", "Telling the time of day", "Measuring wind speed"],
+              correct: 0,
+              explanation: "One use of absolute location is calculating local time differences between different countries."
             }
           },
           {
-            moduleId: "major-lines-cross-africa",
-            imageUrl: "/images/social-studies/africa-latitudes-longitudes.png",
-            imageCaption: "Map of Africa showing Equator 0°, Prime Meridian 0°, and the Tropics of Cancer and Capricorn.",
-            title: "Major lines that cross Africa",
-            bigIdea: "Africa is crossed by the Equator and the Prime Meridian. It also lies mostly between the Tropic of Cancer and the Tropic of Capricorn, so most of Africa is in the tropics.",
+            moduleId: "lines-of-latitude",
+            title: "Lines of Latitude",
+            bigIdea: "Lines of latitude are imaginary lines running east to west, used to measure distances north or south of the Equator.",
             learnIt: [
-              "The Equator crosses Africa near the middle. It passes through countries such as Uganda, Kenya, Democratic Republic of Congo and Gabon.",
-              "The Prime Meridian crosses Africa near the western coast. It passes through countries such as Ghana, Mali and Algeria.",
-              "The Tropic of Cancer is found north of the Equator at about 23½°N. It passes through the northern part of Africa.",
-              "The Tropic of Capricorn is found south of the Equator at about 23½°S. It passes through the southern part of Africa.",
-              "Because most of Africa lies between the two Tropics, it is often called a tropical continent."
+              "Lines of Latitude:Are imaginary lines drawn on a map running from East to West used to measure distances North or South of the Equator.",
+              "Types:The EquatorTropic of CancerTropic of Capricorn",
+              "The Equator:Is the main line of latitude marked 0° that divides the African continent and the world into the Northern and Southern hemispheres.",
+              "Tropic of Cancer:Is the major line of latitude marked 23½° North of the Equator that passes through northern African countries.",
+              "Tropic of Capricorn:Is the major line of latitude marked 23½° South of the Equator that passes through southern African countries."
             ],
-            visual: {
-              kind: "map",
-              title: "Major lines across Africa",
-              description: "Show the outline of Africa with the Equator across the middle, the Prime Meridian through the west, the Tropic of Cancer in the north and the Tropic of Capricorn in the south."
-            },
-            examTip: "When asked to locate Africa, mention at least two of these: the Equator, the Prime Meridian, the Tropics, nearby oceans or neighbouring continents."
+            tryThis: {
+              question: "Which line of latitude divides the world into the Northern and Southern hemispheres?",
+              choices: ["The Equator", "Tropic of Cancer", "Tropic of Capricorn", "Prime Meridian"],
+              correct: 0,
+              explanation: "The Equator is the main line of latitude marked 0° that divides the world into Northern and Southern hemispheres."
+            }
           },
           {
-            moduleId: "how-to-locate-a-place",
-            title: "Locating Places on a Map",
-            bigIdea: "Grid references, coordinates, and compass points help locate exact positions.",
+            moduleId: "latitude-in-practice",
+            title: "Latitude in Practice",
+            bigIdea: "Latitude helps in determining distance from the Equator and demarcation of climatic zones.",
             learnIt: [
-              "We locate places accurately on maps using grid references and lines of latitude and longitude (geographic coordinates).",
-              "Direction is determined using the 16 points of a compass: 4 Cardinal points (N, E, S, W); 4 Secondary points (NE, SE, SW, NW); and 8 Tertiary points (NNE, ENE, ESE, SSE, SSW, WSW, WNW, NNW)."
+              "Examples:UgandaKenyaDemocratic Republic of CongoSomaliaGabonRepublic of Congo",
+              "Uses:Determining the distance of a place from the Equator.Demarcating the boundaries of climatic zones like the tropics.Helping in weather and climate forecasting for agriculture.",
+              "Importances:They affect the distribution of vegetation across Africa.They determine the type of crops grown in different regions.They guide the settlement patterns of local communities.",
+              "Advantages:They provide a universal standard for measuring temperature drops.They help in calculating distance since 1° equals 111 kilometres.",
+              "Disadvantages:They do not show time variations across the continent.They are completely invisible on the actual physical ground."
             ],
-            workedExample: {
-              question: "Describe the location of Uganda using the Equator and compass directions.",
-              steps: [
-                "Uganda lies almost on the Equator, so it is in the northern hemisphere and also close to the southern hemisphere.",
-                "Uganda is found in the eastern part of the African continent.",
-                "It belongs to the East African region, which lies to the west of the Indian Ocean."
-              ],
-              answer: "Uganda is an East African country located near the Equator, in the eastern part of Africa."
+            tryThis: {
+              question: "According to the notes, 1° of latitude equals how many kilometres?",
+              choices: ["111 kilometres", "100 kilometres", "150 kilometres", "50 kilometres"],
+              correct: 0,
+              explanation: "One degree (1°) of latitude equals 111 kilometres."
+            }
+          },
+          {
+            moduleId: "lines-of-longitude",
+            title: "Lines of Longitude",
+            bigIdea: "Lines of longitude run from north to south and are used for calculating world time and east-west positioning.",
+            learnIt: [
+              "Lines of Longitude:Are imaginary lines drawn on a map running from North to South from the North Pole to the South Pole.",
+              "Types:Greenwich MeridianInternational Date Line",
+              "Greenwich Meridian:Is the Prime Meridian marked 0° used as the starting point for measuring longitudes East or West and for calculating world [time.International](http://time.International) Date Line:Is the imaginary line marked 180° East or West where the calendar date changes by one day when crossed."
+            ],
+            tryThis: {
+              question: "What is the Prime Meridian marked 0° also known as?",
+              choices: ["Greenwich Meridian", "International Date Line", "Equator", "Tropic of Cancer"],
+              correct: 0,
+              explanation: "The Prime Meridian marked 0° is known as the Greenwich Meridian."
+            }
+          },
+          {
+            moduleId: "longitude-in-practice",
+            title: "Longitude in Practice",
+            bigIdea: "Longitude is used to calculate local time and determine east-west position relative to the Prime Meridian.",
+            learnIt: [
+              "Examples:GhanaAlgeriaMaliBurkina FasoTogo",
+              "Uses:Calculating the local time of different places globally.Determining how far East or West a country is from the Prime Meridian.Synchronizing international flight arrival schedules in Africa.",
+              "Importances:They establish the standard time zones across the African continent.They prevent confusion in international business transactions.",
+              "Advantages:They enable precise time calculation based on the earth's rotation speed of 15° per hour.They intersect with latitudes to form an absolute grid system.",
+              "Disadvantages:They cannot be used to determine climate or temperature changes.They cause time differences that confuse cross-border traders."
+            ],
+            tryThis: {
+              question: "Which of the following is a disadvantage of lines of longitude?",
+              choices: ["They cannot determine climate or temperature changes", "They are too accurate", "They are parallel lines", "They show time variations"],
+              correct: 0,
+              explanation: "Longitudes cannot be used to determine climate or temperature changes."
+            }
+          },
+          {
+            moduleId: "longitude-time-calculations",
+            title: "Longitude Time Calculations",
+            bigIdea: "Time is calculated by adding time when moving east and subtracting when moving west.",
+            learnIt: [
+              "Mathematical Steps for Longitude Time Calculations",
+              "Time Calculation:Are mathematical steps used to find the unknown local time of a place using its longitudinal position and a known time.",
+              "Types:Eastward time additionWestward time subtraction",
+              "Eastward time addition:Is the calculation rule where you add time (+) when moving towards the East because eastern places see the sun first.",
+              "Westward time subtraction:Is the calculation rule where you subtract time (-) when moving towards the West because western places see the sun later."
+            ],
+            tryThis: {
+              question: "When moving towards the East, what is the rule for time calculation?",
+              choices: ["Add time (+)", "Subtract time (-)", "No change in time", "Multiply time"],
+              correct: 0,
+              explanation: "You add time (+) when moving towards the East because eastern places see the sun first."
+            }
+          },
+          {
+            moduleId: "time-calculation-practice",
+            title: "Time Calculation in Practice",
+            bigIdea: "Calculating time involves finding the longitude difference, converting degrees to hours, and applying the time rule.",
+            learnIt: [
+              "Examples:Find the longitude differenceConvert degrees to hoursApply the time rule",
+              "Uses:Setting clocks to the correct local time when travelling across Africa.Coordinating live broadcasting schedules between different African nations.",
+              "Importances:It prevents errors in international scheduling for business.",
+              "Advantages:Uses a predictable formula where 15° always equals 1 hour.Uses a precise small unit formula where 1° always equals 4 minutes.",
+              "Disadvantages:Fails if the learner mixes up addition and subtraction rules.Fails if the learner wrongly subtracts longitudes in different hemispheres."
+            ],
+            tryThis: {
+              question: "In longitude time calculations, 15° of longitude equals how many hours?",
+              choices: ["1 hour", "4 minutes", "15 minutes", "24 hours"],
+              correct: 0,
+              explanation: "In longitude time calculations, 15° always equals 1 hour."
+            }
+          },
+          {
+            moduleId: "africas-global-position",
+            title: "Africa's Global Position",
+            bigIdea: "Africa's unique position across the Equator and Prime Meridian influences its climate, time, and geography.",
+            learnIt: [
+              "Africa is the only continent that is crossed by all three major lines of latitude: the Equator, Tropic of Cancer, and Tropic of Capricorn.",
+              "The Equator (0°) divides Africa into two equal halves, which explains why a large part of Africa lies within the tropical region.",
+              "Greenwich Meridian (0°) passes through Accra, the capital city of Ghana, which is a frequent UNEB examination center point.",
+              "The earth rotates through 1° every 4 minutes, and through 15° every 1 hour, which forms the basis for all P.7 time calculations.",
+              "Places located to the East of the Prime Meridian always gain time (+) because they see the sun first due to the earth's west-to-east rotation.",
+              "Places located to the West of the Prime Meridian always lose time (-) and are behind in hours compared to eastern locations.",
+              "Uganda is crossed directly by the Equator, and its major equator landmark is located in Kayabwe in the Masaka/Mpigi region.",
+              "Lake Victoria is the major inland fresh-water body in East Africa that is crossed directly by the Equator."
+            ],
+            tryThis: {
+              question: "Which major inland fresh-water body in East Africa is crossed directly by the Equator?",
+              choices: ["Lake Victoria", "Lake Tanganyika", "Lake Malawi", "Lake Chad"],
+              correct: 0,
+              explanation: "Lake Victoria is the major inland fresh-water body in East Africa that is crossed directly by the Equator."
+            }
+          },
+          {
+            moduleId: "continental-boundaries-landmarks",
+            title: "Continental Boundaries & Landmarks",
+            bigIdea: "Africa's extreme boundaries and key landmarks are defined by absolute location and specific geographic features.",
+            learnIt: [
+              "The absolute location of Africa as a whole continent stretches from 37° North to 35° South and from 17° West to 51° East.",
+              "Madagascar is the largest island country in Africa and is located to the South-East of the mainland in the Indian Ocean.",
+              "The Strait of Gibraltar is the narrow water passage that separates the continent of Africa from Europe in the north-west.",
+              "The Suez Canal is the artificial waterway that separates Africa from Asia and connects the Mediterranean Sea to the Red Sea.",
+              "Cape Verde is the westernmost island nation of Africa, located near the 17° West longitudinal boundary line.",
+              "The Cape of Good Hope is the famous historical landmark found at the southern tip of the African continent in South Africa."
+            ],
+            tryThis: {
+              question: "What is the narrow water passage that separates Africa from Europe in the north-west?",
+              choices: ["Suez Canal", "Strait of Gibraltar", "Bering Strait", "Cape of Good Hope"],
+              correct: 1,
+              explanation: "The Strait of Gibraltar separates Africa from Europe in the north-west."
+            }
+          },
+          {
+            moduleId: "technical-exam-points",
+            title: "Technical Exam Points",
+            bigIdea: "Understanding the difference between parallel and non-parallel lines and knowing specific tropic countries is key for exams.",
+            learnIt: [
+              "UNEB Exam Trap: Longitudes are not parallel lines because they meet at the poles, whereas latitudes are parallel and never meet.",
+              "Tropic of Cancer passes through Western Sahara, Mauritania, Mali, Algeria, Niger, Libya, and Egypt.",
+              "Tropic of Capricorn passes through Namibia, Botswana, South Africa, Mozambique, and Madagascar."
+            ],
+            tryThis: {
+              question: "Why are longitudes NOT considered parallel lines?",
+              choices: ["Because they meet at the poles", "Because they never meet", "Because they run east to west", "Because they are invisible"],
+              correct: 0,
+              explanation: "Longitudes are not parallel because they meet at the poles, unlike latitudes which never meet."
             }
           }
         ]
