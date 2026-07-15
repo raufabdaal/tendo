@@ -1,5 +1,108 @@
 # CHANGELOG — Tendo
 
+## v1.8.84 — 2026-07-15 — Topic 1 Subtopic 1 rewritten from source-backed blueprint
+
+**Session theme:** Start rewriting P7 SST Topic 1 the right way, one subtopic at a time, using curriculum-intelligence evidence instead of ad hoc polishing.
+
+### Changed
+- Rewrote `location-position-africa` inside `app/lib/social-topics.ts`.
+- Reduced the subtopic from 9 modules to 5 source-backed modules:
+  1. `africa-on-world-map`
+  2. `latitude-longitude-position-keywords`
+  3. `equator-tropics-prime-meridian-africa`
+  4. `locating-africa-compass-directions`
+  5. `map-drawing-activity-africa-lines`
+- Removed/quarantined unsupported longitude/local-time calculation from this subtopic because it is not in the extracted NCDC Topic 1 pages.
+- Replaced over-spaced one-line strict fragments with fuller short learner-facing explanations.
+- Kept one inline check per module.
+
+### Source basis
+- NCDC P7 Set One Topic 1 pages 315–317 / printed pages 294–296.
+- Britannica Africa reference for Equator, Tropics and Prime Meridian support.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 28 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Next
+- Rewrite `world-continents-sizes` from the source-backed blueprint, keeping only continent names and size order unless extra content is source-justified.
+
+---
+## v1.8.83 — 2026-07-15 — Topic 1 curriculum intelligence audit started
+
+**Session theme:** Restart P7 SST Topic 1 from source evidence because the current strict-formatted content still contains spacing/readability issues and weakly supported filler.
+
+### Added
+- `content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/evidence-notes.json` — extracted NCDC Topic 1 evidence from official PDF pages 315–317 / printed pages 294–296.
+- `content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/module-blueprint.json` — source-backed rewrite blueprint for Topic 1.
+- `content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/qa-checklist.json` — Topic 1 gate status and rewrite blockers.
+- `docs/ops/p7-sst-topic-01-curriculum-intelligence-audit-2026-07-15.md` — audit note explaining what is source-backed, what is missing, and which current app modules need review/removal.
+
+### Updated
+- `content/curriculum-intelligence/p7-sst/source-registry.json` now records the Topic 1 extract and source verification state.
+- `content/curriculum-intelligence/p7-sst/manifest.json` now gives Topic 1 an explicit evidence/blueprint/QA mapping.
+- `scripts/audit-curriculum-intelligence.js` now warns for any manifest subtopic whose evidence status is not fully verified.
+
+### Current finding
+- Topic 1 has the right broad structure, but several current modules need source justification or removal/quarantine: longitude time calculation, marine gateways/channels, uses/advantages/disadvantages filler for continents/regions/capitals, and other extension-style material.
+- The official NCDC pages require country/capital lists and African islands, but do not provide the full lists; an additional verified source is needed before the final Topic 1 rewrite.
+
+### Added source pack
+- `content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/reference-countries-capitals-islands.json` — candidate countries/capitals/islands reference pack for Topic 1.
+- Updated `source-registry.json` with UNSD M49, Britannica Horn of Africa and candidate capital/island cross-check source entries.
+
+### Important
+- The reference pack is **not yet learner-approved**. It exists to prevent guessing and to make review issues explicit: Equatorial Guinea capital convention, South Africa capital convention, exact East Africa grouping, and island-country scope.
+
+### Verified
+- Ran `node scripts/audit-curriculum-intelligence.js`; result is 0 failures and 29 warnings.
+
+---
+## v1.8.82 — 2026-07-15 — Curriculum Intelligence System v1 started for P7 SST
+
+**Session theme:** Break the cycle of unfinished/unsourced content by creating a formal source-traceable curriculum intelligence system before rewriting more learner content.
+
+### Added
+- `docs/spec/curriculum-intelligence-system-v1.md` — master source hierarchy, agent roles, quality gates, fullness standard and publishing rules.
+- `docs/ops/p7-sst-curriculum-intelligence-pilot-2026-07-15.md` — P7 Social Studies pilot operating note.
+- `content/curriculum-intelligence/p7-sst/source-registry.json` — source registry for official/candidate P7 SST sources.
+- `content/curriculum-intelligence/p7-sst/manifest.json` — P7 SST manifest mapping official topic order and Topic 5 official subtopics to app IDs.
+- `content/curriculum-intelligence/p7-sst/topic-05-people-ethnic-groups-settlement/evidence-notes.json` — empty evidence-note scaffold for Topic 5.
+- `content/curriculum-intelligence/p7-sst/topic-05-people-ethnic-groups-settlement/qa-checklist.json` — hard-gate QA checklist for Topic 5.
+- `scripts/audit-curriculum-intelligence.js` — structure audit for P7 SST topic order, duplicate subtopic IDs, manifest coverage and inline-check gaps.
+
+### Verified
+- Ran `node scripts/audit-curriculum-intelligence.js`.
+- Result: 0 failures, 26 warnings.
+- Warnings are expected at this stage: Topic 5 evidence is not yet verified, and later P7 SST topics still have module/check gaps from earlier content.
+- Ran `cd app && npm run build`; build passed with `✓ Generating static pages (413/413)`.
+
+### Rule locked
+- No new Topic 5 learner-facing rewrite should be published until evidence notes exist and the QA gates are passed.
+
+---
+## v1.8.81 — 2026-07-15 — P7 SST Topic 6–10 structure split fix
+
+**Session theme:** Correct the P7 Social Studies structure bug where later official topics were nested under `foreign-influence-africa`.
+
+### Fixed
+- Reworked `app/lib/social-topics.ts` so `foreign-influence-africa` now contains only Foreign Influence subtopics.
+- Restored the richer misplaced subtopics to their official topic objects:
+  - `nationalism-road-independence`
+  - `post-independence-africa`
+  - `economic-developments-africa`
+  - `major-world-organisations`
+- Reordered P7 SST topic data to follow the official curriculum sequence.
+- Removed duplicate/misplaced subtopic routing created by the previous structure error.
+
+### Verified
+- Ran `cd app && npm run build` successfully.
+- Build result: `✓ Generating static pages (413/413)`.
+
+### Next
+- Continue Topic 5 `people-ethnic-groups-settlement` as the SST pilot, but use the new curriculum-intelligence/source-traceability workflow before creating or restructuring more content.
+
+---
 ## v1.8.80 — 2026-07-14 — P7 SST strict formatting: Vegetation of Africa and people-subtopic correction
 
 **Session theme:** Strict-format founder-provided exact content for Topic 4, Vegetation of Africa, and fix a discovered subtopic placement error.

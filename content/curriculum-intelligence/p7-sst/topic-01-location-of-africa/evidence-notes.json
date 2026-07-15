@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "location-of-africa",
+    "topicTitle": "Location of Africa on the Map of the World",
+    "created": "2026-07-15",
+    "status": "source-extracted-needs-module-rewrite",
+    "primarySourceId": "NCDC-P7-SET-ONE-2024-PDF",
+    "sourcePages": "PDF pages 315-317 / printed pages 294-296",
+    "rule": "Only evidence captured here or later verified sources may be used for the Topic 1 rewrite."
+  },
+  "evidenceNotes": [
+    {
+      "id": "t1-e001-background-scope",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 315 / printed page 294, Background",
+      "quoteOrSummary": "In P6, the learner studied the location of East Africa. In P7, the learner covers the location of Africa on the map of the world and is expected to know the continent, countries, location and size of Africa, and Africa in relationship to the entire world.",
+      "usedFor": "curriculum-map",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t1-e002-location-tools",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 315 / printed page 294, Background",
+      "quoteOrSummary": "The learner will use the compass direction/rose, major lines of latitudes and longitudes to locate Africa. The learner will also locate the positions of other continents and oceans on the map of the world and their relationship to Africa.",
+      "usedFor": "definition",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t1-e003-continents-list",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 315 / printed page 294, Background; PDF page 316 / printed page 295, Content",
+      "quoteOrSummary": "The continents are Asia, Africa, North America, South America, Antarctica/Antarctic, Europe and Australia. In the content list, the order by size is Asia, Africa, North America, South America, Antarctic, Europe, Australia.",
+      "usedFor": "definition",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t1-e004-oceans-seas-list",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 315 / printed page 294, Background; PDF page 316 / printed page 295, Content",
+      "quoteOrSummary": "The oceans are Pacific, Atlantic, Indian and Arctic. The seas are the Mediterranean and Red Sea.",
+      "usedFor": "definition",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t1-e005-learning-outcomes",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 315 / printed page 294, Learning Outcomes",
+      "quoteOrSummary": "The learner appreciates Africa as a continent and its position on the world map, and demonstrates the usage of lines of latitudes and longitudes to locate Africa and its member countries.",
+      "usedFor": "curriculum-map",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t1-e006-skills-values",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 315 / printed page 294, Life Skills / SST Skills / Values",
+      "quoteOrSummary": "Life skills: creative thinking and effective communication. SST skills: recording and observation. Values: cooperation, appreciation, love and sharing.",
+      "usedFor": "activity",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t1-e007-subject-competences",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 316 / printed page 295, Subject Competences",
+      "quoteOrSummary": "The learner locates the position of Africa on the world map using lines of latitudes and longitudes; identifies continents and their sizes; names water bodies that surround Africa; identifies regions; lists countries in each region; lists capital cities of respective countries; lists islands which are part of Africa.",
+      "usedFor": "curriculum-map",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t1-e008-language-competences",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 316 / printed page 295, Language Competences",
+      "quoteOrSummary": "The learner correctly uses the words latitude, longitude and position, and correctly reads, spells and writes words and sentences related to African regions, countries in each region and their capital cities.",
+      "usedFor": "definition",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t1-e009-official-content-list",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 316 / printed page 295, Content",
+      "quoteOrSummary": "Official content: location and position of Africa using major lines of latitudes and longitudes; world continents in order of sizes; oceans Atlantic, Pacific, Arctic and Indian; seas Mediterranean and Red Sea; regions West Africa, East Africa, Northern Africa, Central Africa, Southern Africa and Horn of Africa; countries in each region; capital cities of different countries in Africa; islands which are part of Africa.",
+      "usedFor": "curriculum-map",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t1-e010-suggested-activities-part-1",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 316 / printed page 295, Suggested Activities",
+      "quoteOrSummary": "Suggested activities include locating Africa on the world map, drawing the map of the world, identifying major lines of latitudes and longitudes that pass through Africa, naming continents of the world, naming oceans and seas that surround Africa, and stating directions of other continents, oceans and seas from Africa.",
+      "usedFor": "activity",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t1-e011-suggested-activities-part-2",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 316-317 / printed pages 295-296, Suggested Activities",
+      "quoteOrSummary": "Suggested activities include locating countries of Africa using latitudes and longitudes region by region, listing countries in each region of Africa and their capital cities, and listing islands which are part of Africa.",
+      "usedFor": "activity",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t1-e012-teacher-guidance",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 317 / printed page 296, Guidance to the Teacher",
+      "quoteOrSummary": "Teacher guidance: use the globe to guide learners to find continents; let learners locate Africa and their own country; guide learners to draw the difference between latitude and longitude; organise group comparison of lines of latitude and longitude; let learners draw a diagram showing latitude and longitude; guide learners to identify the equator and prime meridian; explain how latitude and longitude are used to identify locations on maps.",
+      "usedFor": "activity",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t1-e013-assessment-competences",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 317 / printed page 296, Suggested Competences for Assessment",
+      "quoteOrSummary": "Assessment competences: draws the map of Africa showing regions, lines of latitudes and longitudes; names countries and their capital cities; names islands which are part of Africa; identifies compass directions of different oceans, seas and other continents from Africa.",
+      "usedFor": "assessment",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t1-e014-major-lines-britannica",
+      "sourceId": "BRITANNICA-AFRICA-MAJOR-LINES",
+      "pageOrSection": "Africa article, land/position description",
+      "quoteOrSummary": "Britannica states that Africa is cut almost equally in two by the Equator, most of Africa lies within the tropical region bounded by the Tropic of Cancer and Tropic of Capricorn, and Africa is crossed from north to south by the Prime Meridian (0\u00b0 longitude).",
+      "usedFor": "definition",
+      "reliabilityTier": 5
+    }
+  ],
+  "sourceGaps": [
+    {
+      "gapId": "t1-gap-001-countries-capitals-full-list",
+      "description": "The official curriculum requires countries in each region and capital cities, but the extracted pages do not provide a complete country/capital table. A verified atlas, approved learner book, teacher guide, or trusted official reference is needed before publishing a full list."
+    },
+    {
+      "gapId": "t1-gap-002-island-names",
+      "description": "The official curriculum requires islands which are part of Africa, but the extracted pages do not list the island names. Names such as Madagascar, Mauritius or Seychelles need a verified supporting source before final learner content."
+    },
+    {
+      "gapId": "t1-gap-003-major-lines-names",
+      "description": "Resolved for rewrite planning by candidate trusted reference BRITANNICA-AFRICA-MAJOR-LINES. NCDC explicitly names Equator and Prime Meridian in teacher guidance; Britannica supports Tropic of Cancer and Tropic of Capricorn as major latitude lines relevant to Africa.",
+      "status": "candidate-resolved-needs-final-review"
+    },
+    {
+      "gapId": "t1-gap-004-longitude-time",
+      "description": "Current app content includes longitude and local time calculation. This is not present in the extracted official Topic 1 pages. Keep only if another approved source confirms it belongs at this level/topic; otherwise move/remove as extension."
+    }
+  ]
+}

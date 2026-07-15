@@ -1,0 +1,313 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "country": "Uganda",
+    "curriculumTheme": "Living Together in Africa",
+    "created": "2026-07-15",
+    "version": "0.1.0",
+    "status": "pilot-manifest",
+    "sourceRegistry": "content/curriculum-intelligence/p7-sst/source-registry.json",
+    "appContentFile": "app/lib/social-topics.ts",
+    "curriculumMapFile": "content/curriculum/p7-social-studies.json"
+  },
+  "qualityGates": [
+    "source-gate",
+    "relevance-gate",
+    "depth-gate",
+    "language-gate",
+    "context-gate",
+    "assessment-gate",
+    "sne-accessibility-gate",
+    "traceability-gate"
+  ],
+  "topicOrder": [
+    "location-of-africa",
+    "physical-features-of-africa",
+    "climate-of-africa",
+    "vegetation-of-africa",
+    "people-ethnic-groups-settlement",
+    "foreign-influence-africa",
+    "nationalism-road-independence",
+    "post-independence-africa",
+    "economic-developments-africa",
+    "major-world-organisations"
+  ],
+  "topics": [
+    {
+      "topicId": "location-of-africa",
+      "status": "topic-intelligence-audit-started-needs-rewrite",
+      "sourceRefs": [
+        "NCDC-P7-SET-ONE-2024-PDF",
+        "TENDO-P7-SST-TOPIC-01-EXTRACT",
+        "TENDO-P7-SST-CURRICULUM-JSON"
+      ],
+      "officialTitle": "Location of Africa on the Map of the World",
+      "appTitle": "Location of Africa on the map of the world",
+      "evidenceFile": "content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/evidence-notes.json",
+      "blueprintFile": "content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/module-blueprint.json",
+      "qaFile": "content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/qa-checklist.json",
+      "requiredAppSubtopicIds": [
+        "location-position-africa",
+        "world-continents-sizes",
+        "water-bodies-africa",
+        "regions-africa",
+        "countries-capitals-africa",
+        "premium-map-answering"
+      ],
+      "officialSubtopicMappings": [
+        {
+          "officialSubtopic": "Location and position of Africa using major lines of latitudes and longitudes",
+          "appSubtopicIds": [
+            "location-position-africa"
+          ],
+          "evidenceStatus": "verified-from-ncdc-and-britannica-for-subtopic-1-rewrite",
+          "notes": "Subtopic 1 rewritten using NCDC Topic 1 evidence plus Britannica support for Equator, Tropics and Prime Meridian map-line facts. Longitude time calculation removed from this subtopic pending source/extension decision."
+        },
+        {
+          "officialSubtopic": "World continents and their sizes",
+          "appSubtopicIds": [
+            "world-continents-sizes"
+          ],
+          "evidenceStatus": "verified-from-ncdc-pages"
+        },
+        {
+          "officialSubtopic": "Water bodies that surround Africa",
+          "appSubtopicIds": [
+            "water-bodies-africa"
+          ],
+          "evidenceStatus": "verified-from-ncdc-pages"
+        },
+        {
+          "officialSubtopic": "Regions that make up Africa",
+          "appSubtopicIds": [
+            "regions-africa"
+          ],
+          "evidenceStatus": "verified-from-ncdc-pages"
+        },
+        {
+          "officialSubtopic": "Countries in each region and their capital cities",
+          "appSubtopicIds": [
+            "countries-capitals-africa"
+          ],
+          "evidenceStatus": "candidate-reference-pack-created-needs-teacher-review",
+          "notes": "Candidate country/capital pack exists, using NCDC region names, UN M49 baseline and current capital cross-checks. Not learner-approved until review issues are settled."
+        },
+        {
+          "officialSubtopic": "Islands which are part of Africa",
+          "appSubtopicIds": [
+            "countries-capitals-africa"
+          ],
+          "evidenceStatus": "candidate-reference-pack-created-needs-teacher-review",
+          "notes": "Candidate independent African island country list exists. Needs teacher/founder approval before publishing."
+        }
+      ],
+      "qaStatus": "audit-started-not-approved-for-final",
+      "referencePackFile": "content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/reference-countries-capitals-islands.json"
+    },
+    {
+      "topicId": "physical-features-of-africa",
+      "status": "existing-strict-format-needs-traceability-backfill",
+      "sourceRefs": [
+        "TENDO-P7-SST-CURRICULUM-JSON",
+        "NCDC-P7-SET-ONE-2024-PDF"
+      ],
+      "notes": "Already strict-formatted in app. Needs evidence-note backfill under curriculum intelligence system."
+    },
+    {
+      "topicId": "climate-of-africa",
+      "status": "existing-strict-format-needs-traceability-backfill",
+      "sourceRefs": [
+        "TENDO-P7-SST-CURRICULUM-JSON",
+        "NCDC-P7-SET-ONE-2024-PDF"
+      ],
+      "notes": "Already strict-formatted in app. Needs evidence-note backfill under curriculum intelligence system."
+    },
+    {
+      "topicId": "vegetation-of-africa",
+      "status": "existing-strict-format-needs-traceability-backfill",
+      "sourceRefs": [
+        "TENDO-P7-SST-CURRICULUM-JSON",
+        "NCDC-P7-SET-ONE-2024-PDF"
+      ],
+      "notes": "Already strict-formatted in app. Needs evidence-note backfill under curriculum intelligence system."
+    },
+    {
+      "topicId": "people-ethnic-groups-settlement",
+      "status": "pilot-topic-source-mapping-started",
+      "sourceRefs": [
+        "TENDO-P7-SST-CURRICULUM-JSON",
+        "NCDC-P7-SET-ONE-2024-PDF"
+      ],
+      "officialTitle": "The People of Africa, the Ethnic Groups and Settlement Patterns",
+      "appTitle": "People of Africa, ethnic groups and settlement",
+      "requiredAppSubtopicIds": [
+        "origin-ethnic-groups",
+        "movements-ethnic-groups",
+        "settlement-tribes",
+        "problems-effects-migration",
+        "premium-people-settlement-reasoning"
+      ],
+      "officialSubtopicMappings": [
+        {
+          "officialSubtopic": "Origin of different ethnic groups",
+          "appSubtopicIds": [
+            "origin-ethnic-groups"
+          ],
+          "evidenceStatus": "source-needed",
+          "requiredKnowledgeBlocks": [
+            "definition",
+            "major ethnic groups",
+            "origin notes",
+            "examples",
+            "respectful cultural framing"
+          ]
+        },
+        {
+          "officialSubtopic": "Movements of different ethnic groups into Africa",
+          "appSubtopicIds": [
+            "movements-ethnic-groups"
+          ],
+          "evidenceStatus": "source-needed",
+          "requiredKnowledgeBlocks": [
+            "meaning of migration",
+            "movement routes or direction where sourced",
+            "reasons for movement",
+            "examples"
+          ]
+        },
+        {
+          "officialSubtopic": "Settlement patterns of different ethnic groups",
+          "appSubtopicIds": [
+            "settlement-tribes"
+          ],
+          "evidenceStatus": "source-needed",
+          "requiredKnowledgeBlocks": [
+            "meaning of settlement pattern",
+            "types of settlement patterns",
+            "factors influencing settlement",
+            "examples"
+          ]
+        },
+        {
+          "officialSubtopic": "Tribes belonging to different ethnic groups",
+          "appSubtopicIds": [
+            "settlement-tribes"
+          ],
+          "evidenceStatus": "source-needed",
+          "requiredKnowledgeBlocks": [
+            "ethnic group to tribe examples",
+            "safe wording",
+            "avoid stereotyping"
+          ]
+        },
+        {
+          "officialSubtopic": "Reasons for migration and settlement of ethnic groups in Africa",
+          "appSubtopicIds": [
+            "movements-ethnic-groups",
+            "premium-people-settlement-reasoning"
+          ],
+          "evidenceStatus": "source-needed",
+          "requiredKnowledgeBlocks": [
+            "push factors",
+            "pull factors",
+            "environmental factors",
+            "security factors",
+            "economic factors"
+          ]
+        },
+        {
+          "officialSubtopic": "Problems met by ethnic groups during movement and settlement in Africa",
+          "appSubtopicIds": [
+            "problems-effects-migration"
+          ],
+          "evidenceStatus": "source-needed",
+          "requiredKnowledgeBlocks": [
+            "problems during movement",
+            "problems during settlement",
+            "examples",
+            "safe wording"
+          ]
+        },
+        {
+          "officialSubtopic": "Effects of ethnic migrations",
+          "appSubtopicIds": [
+            "problems-effects-migration",
+            "premium-people-settlement-reasoning"
+          ],
+          "evidenceStatus": "source-needed",
+          "requiredKnowledgeBlocks": [
+            "positive effects",
+            "negative effects",
+            "population effects",
+            "cultural exchange",
+            "conflict/resource effects"
+          ]
+        }
+      ],
+      "moduleFullnessPolicy": {
+        "minimumModulesBeforePilotPublish": 7,
+        "minimumInlineChecks": 7,
+        "requiredPerModule": [
+          "sourceRefs",
+          "bigIdea",
+          "teachingPoints",
+          "inlineCheck",
+          "answerExplanation",
+          "qaStatus"
+        ]
+      },
+      "qaStatus": "not-started"
+    },
+    {
+      "topicId": "foreign-influence-africa",
+      "status": "structure-fixed-needs-traceability-backfill",
+      "sourceRefs": [
+        "TENDO-P7-SST-CURRICULUM-JSON",
+        "NCDC-P7-SET-ONE-2024-PDF"
+      ],
+      "requiredAppSubtopicIds": [
+        "foreign-groups-africa",
+        "european-explorers",
+        "traders-triangular-trade",
+        "colonialists-scramble",
+        "settlers-administration",
+        "effects-foreign-influence",
+        "premium-foreign-influence-analysis"
+      ]
+    },
+    {
+      "topicId": "nationalism-road-independence",
+      "status": "structure-restored-needs-traceability-backfill",
+      "sourceRefs": [
+        "TENDO-P7-SST-CURRICULUM-JSON",
+        "NCDC-P7-SET-ONE-2024-PDF"
+      ]
+    },
+    {
+      "topicId": "post-independence-africa",
+      "status": "structure-restored-needs-traceability-backfill",
+      "sourceRefs": [
+        "TENDO-P7-SST-CURRICULUM-JSON",
+        "NCDC-P7-SET-ONE-2024-PDF"
+      ]
+    },
+    {
+      "topicId": "economic-developments-africa",
+      "status": "structure-restored-needs-traceability-backfill",
+      "sourceRefs": [
+        "TENDO-P7-SST-CURRICULUM-JSON",
+        "NCDC-P7-SET-ONE-2024-PDF"
+      ]
+    },
+    {
+      "topicId": "major-world-organisations",
+      "status": "structure-restored-needs-traceability-backfill",
+      "sourceRefs": [
+        "TENDO-P7-SST-CURRICULUM-JSON",
+        "NCDC-P7-SET-ONE-2024-PDF"
+      ]
+    }
+  ]
+}

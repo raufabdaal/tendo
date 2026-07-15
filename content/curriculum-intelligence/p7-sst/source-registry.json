@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "country": "Uganda",
+    "created": "2026-07-15",
+    "status": "pilot-registry",
+    "rule": "No learner-facing content is approved unless it is traceable to an approved source."
+  },
+  "sourceTiers": {
+    "1": "Official NCDC syllabus/curriculum",
+    "2": "Official NCDC teacher guide/resource/specification",
+    "3": "Approved learner book or teacher guide",
+    "4": "UNEB or official assessment-aligned source",
+    "5": "General reference/background source only"
+  },
+  "sources": [
+    {
+      "id": "NCDC-P7-SET-ONE-2024-PDF",
+      "tier": 1,
+      "title": "Primary Seven Set One Curriculum PDF",
+      "issuer": "National Curriculum Development Centre (NCDC), Uganda",
+      "url": "https://ncdc.go.ug/wp-content/uploads/2024/07/PRIMARY-SEVEN-SET-ONE.pdf",
+      "localPath": null,
+      "classLevel": "P7",
+      "subjectsCovered": [
+        "Mathematics",
+        "English Language",
+        "Integrated Science",
+        "Social Studies",
+        "Religious Education"
+      ],
+      "verificationStatus": "official-url-downloaded-and-topic-01-pages-extracted",
+      "verificationNotes": "Official NCDC URL was downloaded in workspace for extraction during 2026-07-15 session. Topic 1 pages 315-317 / printed pages 294-296 were extracted and used for evidence notes. Do not rely on unreferenced facts beyond extracted pages.",
+      "allowedUses": [
+        "curriculum-map",
+        "official-topic-subtopic-wording",
+        "time-allocation",
+        "scope-control"
+      ]
+    },
+    {
+      "id": "TENDO-P7-SST-CURRICULUM-JSON",
+      "tier": 1,
+      "title": "In-repo P7 Social Studies curriculum map",
+      "issuer": "Tendo internal map derived from NCDC P7 Set One",
+      "url": null,
+      "localPath": "content/curriculum/p7-social-studies.json",
+      "classLevel": "P7",
+      "subjectsCovered": [
+        "Social Studies"
+      ],
+      "verificationStatus": "internal-derived-map-needs-source-page-lock",
+      "verificationNotes": "Used for current app structure. Must be cross-checked against the NCDC PDF page references before premium-final status.",
+      "allowedUses": [
+        "topic-id-mapping",
+        "subtopic-coverage-audit",
+        "app-structure-audit"
+      ]
+    },
+    {
+      "id": "TENDO-P7-SST-TOPIC-05-EXTRACT",
+      "tier": 1,
+      "title": "P7 SST Topic 05 in-repo NCDC extract: People of Africa, Ethnic Groups and Settlement Patterns",
+      "issuer": "Tendo internal extract from NCDC source",
+      "url": null,
+      "localPath": "docs/ncdc-extracts/p7-sst-topic-05-people-of-africa.md",
+      "classLevel": "P7",
+      "subjectsCovered": [
+        "Social Studies"
+      ],
+      "verificationStatus": "missing-file-or-not-yet-created",
+      "verificationNotes": "Expected extract file is not present in current repo. Create/verify before rewriting Topic 5 under the new system.",
+      "allowedUses": [
+        "evidence-notes-after-verification"
+      ]
+    },
+    {
+      "id": "UNEB-ASSESSMENT-GENERAL",
+      "tier": 4,
+      "title": "UNEB assessment-aligned references",
+      "issuer": "Uganda National Examinations Board (UNEB)",
+      "url": "https://uneb.ac.ug/",
+      "localPath": null,
+      "classLevel": "P7",
+      "subjectsCovered": [
+        "Social Studies"
+      ],
+      "verificationStatus": "candidate-general",
+      "verificationNotes": "Useful for assessment style only. Do not use as the sole source for syllabus content.",
+      "allowedUses": [
+        "assessment-style",
+        "question-difficulty-calibration"
+      ]
+    },
+    {
+      "id": "TENDO-P7-SST-TOPIC-01-EXTRACT",
+      "tier": 1,
+      "title": "P7 SST Topic 01 in-repo NCDC extract: Location of Africa on the Map of the World",
+      "issuer": "Tendo internal extract from NCDC P7 Set One PDF",
+      "url": null,
+      "localPath": "docs/ncdc-extracts/p7-sst-topic-01-location-of-africa.md",
+      "classLevel": "P7",
+      "subjectsCovered": [
+        "Social Studies"
+      ],
+      "verificationStatus": "cross-checked-against-official-pdf-pages-315-317",
+      "verificationNotes": "Cross-checked on 2026-07-15 against NCDC PDF pages 315-317 / printed pages 294-296. Useful for Topic 1 evidence, but country/capital and island full lists still need additional verified source.",
+      "allowedUses": [
+        "topic-01-evidence-notes",
+        "curriculum-map",
+        "module-blueprint",
+        "assessment-alignment"
+      ]
+    },
+    {
+      "id": "UNSD-M49-AFRICA",
+      "tier": 5,
+      "title": "UNSD Standard Country or Area Codes for Statistical Use (M49) \u2014 Africa regions",
+      "issuer": "United Nations Statistics Division",
+      "url": "https://unstats.un.org/unsd/methodology/m49/",
+      "localPath": null,
+      "classLevel": "reference",
+      "subjectsCovered": [
+        "Social Studies",
+        "Geography"
+      ],
+      "verificationStatus": "official-reference-source-candidate",
+      "verificationNotes": "Official UN statistical region source. NCDC uses similar but not identical region language and separately lists Horn of Africa, so this must be adapted for P7, not copied blindly.",
+      "allowedUses": [
+        "country-region-cross-check",
+        "territory-policy",
+        "source-gap-support"
+      ]
+    },
+    {
+      "id": "BRITANNICA-HORN-AFRICA",
+      "tier": 5,
+      "title": "Horn of Africa reference",
+      "issuer": "Encyclopaedia Britannica",
+      "url": "https://www.britannica.com/place/Horn-of-Africa",
+      "localPath": null,
+      "classLevel": "reference",
+      "subjectsCovered": [
+        "Social Studies",
+        "Geography"
+      ],
+      "verificationStatus": "trusted-reference-candidate",
+      "verificationNotes": "Used only to support the common Horn of Africa grouping of Djibouti, Eritrea, Ethiopia and Somalia. NCDC names Horn of Africa but does not list its countries on the extracted Topic 1 pages.",
+      "allowedUses": [
+        "horn-of-africa-country-grouping-cross-check"
+      ]
+    },
+    {
+      "id": "CAPITALS-CURRENT-CROSSCHECK",
+      "tier": 5,
+      "title": "Current African capital city cross-check pack",
+      "issuer": "Multiple current reference sources including CIA World Factbook/Britannica/general country-capital references",
+      "url": null,
+      "localPath": "content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/reference-countries-capitals-islands.json",
+      "classLevel": "P7 reference support",
+      "subjectsCovered": [
+        "Social Studies"
+      ],
+      "verificationStatus": "candidate-pack-needs-teacher-review",
+      "verificationNotes": "Candidate countries/capitals/islands pack created for Topic 1. It is not yet approved for learner-facing publishing because capital changes and school-answer conventions need review.",
+      "allowedUses": [
+        "draft-blueprint-support-only",
+        "not-final-learner-content"
+      ]
+    },
+    {
+      "id": "AFRICAN-ISLAND-COUNTRIES-CROSSCHECK",
+      "tier": 5,
+      "title": "African island countries cross-check",
+      "issuer": "General geography references cross-checked with UN small island/developing state indicators where applicable",
+      "url": null,
+      "localPath": "content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/reference-countries-capitals-islands.json",
+      "classLevel": "P7 reference support",
+      "subjectsCovered": [
+        "Social Studies"
+      ],
+      "verificationStatus": "candidate-pack-needs-teacher-review",
+      "verificationNotes": "Candidate list of six independent African island countries: Cabo Verde, Comoros, Madagascar, Mauritius, S\u00e3o Tom\u00e9 and Pr\u00edncipe, Seychelles. Needs teacher/founder approval before publishing.",
+      "allowedUses": [
+        "draft-blueprint-support-only",
+        "not-final-learner-content"
+      ]
+    },
+    {
+      "id": "BRITANNICA-AFRICA-MAJOR-LINES",
+      "tier": 5,
+      "title": "Africa reference: Equator, Tropics and Prime Meridian",
+      "issuer": "Encyclopaedia Britannica",
+      "url": "https://www.britannica.com/place/Africa",
+      "localPath": null,
+      "classLevel": "reference",
+      "subjectsCovered": [
+        "Social Studies",
+        "Geography"
+      ],
+      "verificationStatus": "trusted-reference-candidate",
+      "verificationNotes": "Supports map facts that Africa is cut by the Equator, lies largely in the tropical region between the Tropics of Cancer and Capricorn, and is crossed by the Prime Meridian. Used only to support NCDC Topic 1 major-line details.",
+      "allowedUses": [
+        "topic-01-major-lines-support",
+        "map-position-cross-check"
+      ]
+    }
+  ]
+}

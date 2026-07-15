@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "people-ethnic-groups-settlement",
+    "topicTitle": "The People of Africa, the Ethnic Groups and Settlement Patterns",
+    "created": "2026-07-15",
+    "status": "source-needed",
+    "rule": "Do not publish rewritten learner content until evidence notes are verified."
+  },
+  "officialSubtopics": [
+    {
+      "id": "origin-ethnic-groups",
+      "officialSubtopic": "Origin of different ethnic groups",
+      "evidenceStatus": "source-needed",
+      "evidenceNotes": [],
+      "draftPermission": "blocked-until-evidence-exists"
+    },
+    {
+      "id": "movements-ethnic-groups",
+      "officialSubtopic": "Movements of different ethnic groups into Africa",
+      "evidenceStatus": "source-needed",
+      "evidenceNotes": [],
+      "draftPermission": "blocked-until-evidence-exists"
+    },
+    {
+      "id": "settlement-patterns",
+      "officialSubtopic": "Settlement patterns of different ethnic groups",
+      "evidenceStatus": "source-needed",
+      "evidenceNotes": [],
+      "draftPermission": "blocked-until-evidence-exists"
+    },
+    {
+      "id": "tribes-ethnic-groups",
+      "officialSubtopic": "Tribes belonging to different ethnic groups",
+      "evidenceStatus": "source-needed",
+      "evidenceNotes": [],
+      "draftPermission": "blocked-until-evidence-exists"
+    },
+    {
+      "id": "reasons-migration-settlement",
+      "officialSubtopic": "Reasons for migration and settlement of ethnic groups in Africa",
+      "evidenceStatus": "source-needed",
+      "evidenceNotes": [],
+      "draftPermission": "blocked-until-evidence-exists"
+    },
+    {
+      "id": "problems-movement-settlement",
+      "officialSubtopic": "Problems met by ethnic groups during movement and settlement in Africa",
+      "evidenceStatus": "source-needed",
+      "evidenceNotes": [],
+      "draftPermission": "blocked-until-evidence-exists"
+    },
+    {
+      "id": "effects-ethnic-migrations",
+      "officialSubtopic": "Effects of ethnic migrations",
+      "evidenceStatus": "source-needed",
+      "evidenceNotes": [],
+      "draftPermission": "blocked-until-evidence-exists"
+    }
+  ]
+}

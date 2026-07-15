@@ -392,3 +392,50 @@ Result:
 ✓ Compiled successfully
 ✓ Generating static pages (417/417)
 ```
+
+---
+
+## Update — P7 SST Topic 6–10 Structural Split Fixed
+
+A second structure bug was found and corrected in `app/lib/social-topics.ts`.
+
+Problem:
+
+- `foreign-influence-africa` had accidentally accumulated subtopics that belong to later official P7 SST topics.
+- The separate Topic 7–10 topic objects still existed, but their richer subtopics were duplicated/misplaced under Topic 6.
+
+Correction:
+
+- Kept only Foreign Influence subtopics under `foreign-influence-africa`.
+- Restored Nationalism/Road to Independence subtopics under `nationalism-road-independence`.
+- Restored Post-Independence Africa subtopics under `post-independence-africa`.
+- Restored Economic Developments in Africa subtopics under `economic-developments-africa`.
+- Restored Major World Organisations subtopics under `major-world-organisations`.
+- Reordered the P7 SST topic data to match the official curriculum sequence: Topics 1–5, then Foreign Influence, Nationalism, Post-Independence Africa, Economic Developments, and Major World Organisations.
+
+Current structure after the fix:
+
+| Topic | Subtopics | Modules |
+|---|---:|---:|
+| `foreign-influence-africa` | 7 | 12 |
+| `nationalism-road-independence` | 7 | 14 |
+| `post-independence-africa` | 5 | 10 |
+| `economic-developments-africa` | 5 | 13 |
+| `major-world-organisations` | 4 | 9 |
+
+Build verification:
+
+```bash
+cd app && npm run build
+```
+
+Result:
+
+```txt
+✓ Compiled successfully
+✓ Generating static pages (413/413)
+```
+
+Note: the static page count reduced because duplicate/misplaced P7 SST subtopic routes were removed from Topic 6 rather than being published in the wrong place.
+
+Next active work remains Topic 5 strict formatting: `people-ethnic-groups-settlement`, using source-traceable content.

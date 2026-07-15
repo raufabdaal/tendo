@@ -59,7 +59,30 @@
 - [x] Strict-format Topic 4 application subtopic: `premium-vegetation-application`
 - [x] Fix misplaced People of Africa subtopics: move them out of Vegetation and restore them under `people-ethnic-groups-settlement`
 - [x] Build passed after Topic 4 strict formatting and People structure fix (`npm run build`, 417 static pages)
-- [ ] Start Topic 5 strict formatting: `people-ethnic-groups-settlement`
+- [x] Fix P7 SST Topic 6–10 structure bug: remove Nationalism/Post-Independence/Economic/World Organisations subtopics from `foreign-influence-africa` and restore them under their official topic objects
+- [x] Reorder P7 SST topic data to match official curriculum sequence
+- [x] Build passed after Topic 6–10 structure split (`npm run build`, 413 static pages)
+- [x] Create Curriculum Intelligence System v1 master spec
+- [x] Create P7 SST curriculum-intelligence pilot note
+- [x] Create P7 SST source registry
+- [x] Create P7 SST curriculum-intelligence manifest
+- [x] Create Topic 5 evidence-note scaffold and QA checklist
+- [x] Create and run P7 SST curriculum-intelligence audit script (`node scripts/audit-curriculum-intelligence.js`, first run 0 failures / 26 warnings)
+- [x] Restart Topic 1 under curriculum-intelligence workflow after founder flagged missing/fullness/readability concerns
+- [x] Extract Topic 1 NCDC evidence into `content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/evidence-notes.json`
+- [x] Create Topic 1 source-backed rewrite blueprint and QA checklist
+- [x] Add Topic 1 curriculum intelligence audit note
+- [x] Update audit script to warn on any not-fully-verified manifest evidence status (`node scripts/audit-curriculum-intelligence.js`, latest 0 failures / 29 warnings)
+- [x] Create candidate Topic 1 countries/capitals/islands reference pack for review
+- [x] Register UNSD M49, Britannica Horn of Africa and current capital/island cross-check source entries
+- [ ] Review/approve Topic 1 reference-pack policy: all 54 countries vs shorter school list, East Africa grouping, South Africa capital convention, Equatorial Guinea capital convention, island scope
+- [ ] Find/confirm final approved source for Topic 1 countries/capitals by African region and islands which are part of Africa
+- [x] Rewrite Topic 1 Subtopic 1 `location-position-africa` from source-backed blueprint
+- [x] Remove unsupported longitude/local-time calculation from Topic 1 Subtopic 1 pending source/extension decision
+- [x] Build passed after Topic 1 Subtopic 1 rewrite (`npm run build`, 413 static pages)
+- [ ] Rewrite Topic 1 Subtopic 2 `world-continents-sizes` from source-backed blueprint
+- [ ] Fill verified evidence notes for Topic 5: `people-ethnic-groups-settlement`
+- [ ] Start Topic 5 strict formatting: `people-ethnic-groups-settlement` only after evidence notes are ready
 - [x] Strict-format Topic 2 application subtopic: `premium-physical-features-application`
 
 ---

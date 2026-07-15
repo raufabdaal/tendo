@@ -1,0 +1,279 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "location-of-africa",
+    "topicTitle": "Location of Africa on the Map of the World",
+    "created": "2026-07-15",
+    "status": "blueprint-before-rewrite",
+    "evidenceFile": "content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/evidence-notes.json"
+  },
+  "rewritePrinciple": "Rewrite Topic 1 from evidence notes. Remove or quarantine unsupported filler. Keep learner modules full, direct and traceable.",
+  "officialSubtopicBlueprint": [
+    {
+      "officialSubtopic": "Location and position of Africa using major lines of latitudes and longitudes",
+      "currentAppSubtopicId": "location-position-africa",
+      "status": "needs-source-aligned-rewrite",
+      "recommendedModules": [
+        {
+          "moduleId": "africa-on-world-map",
+          "title": "Africa on the World Map",
+          "evidenceRefs": [
+            "t1-e001-background-scope",
+            "t1-e002-location-tools",
+            "t1-e005-learning-outcomes"
+          ],
+          "requiredTeachingPoints": [
+            "Africa is a continent on the world map.",
+            "P7 learners study Africa in relation to the whole world.",
+            "Africa is located using compass directions, latitude and longitude."
+          ],
+          "needsExtraSource": false
+        },
+        {
+          "moduleId": "latitude-longitude-position-keywords",
+          "title": "Latitude, Longitude and Position",
+          "evidenceRefs": [
+            "t1-e008-language-competences",
+            "t1-e012-teacher-guidance"
+          ],
+          "requiredTeachingPoints": [
+            "Meaning and use of latitude.",
+            "Meaning and use of longitude.",
+            "Meaning of position in map work.",
+            "Difference between latitude and longitude."
+          ],
+          "needsExtraSource": true,
+          "extraSourceReason": "Official pages require the words and teacher guidance, but do not give full definitions. Use an approved geography/map source or teacher guide for final definitions."
+        },
+        {
+          "moduleId": "equator-prime-meridian-africa",
+          "title": "Equator, Tropics and Prime Meridian",
+          "evidenceRefs": [
+            "t1-e012-teacher-guidance",
+            "t1-e013-assessment-competences",
+            "t1-e014-major-lines-britannica"
+          ],
+          "requiredTeachingPoints": [
+            "Identify the Equator on a world map.",
+            "Identify the Prime Meridian on a world map.",
+            "Identify the Tropic of Cancer and Tropic of Capricorn as major latitude lines crossing Africa.",
+            "Show lines of latitude and longitude on a map of Africa."
+          ],
+          "needsExtraSource": false
+        },
+        {
+          "moduleId": "locating-africa-with-compass-and-lines",
+          "title": "Locating Africa Using Compass Directions and Lines",
+          "evidenceRefs": [
+            "t1-e002-location-tools",
+            "t1-e010-suggested-activities-part-1",
+            "t1-e013-assessment-competences"
+          ],
+          "requiredTeachingPoints": [
+            "Use compass directions to state where oceans, seas and continents are from Africa.",
+            "Use latitude and longitude to locate Africa and countries on maps.",
+            "Answer map-location questions in complete statements."
+          ],
+          "needsExtraSource": false
+        },
+        {
+          "moduleId": "map-drawing-activity-africa",
+          "title": "Map Drawing Activity: Africa, Regions and Lines",
+          "evidenceRefs": [
+            "t1-e010-suggested-activities-part-1",
+            "t1-e012-teacher-guidance",
+            "t1-e013-assessment-competences"
+          ],
+          "requiredTeachingPoints": [
+            "Draw a simple map of Africa.",
+            "Show regions on the map.",
+            "Show lines of latitude and longitude."
+          ],
+          "needsExtraSource": false
+        }
+      ]
+    },
+    {
+      "officialSubtopic": "World continents and their sizes",
+      "currentAppSubtopicId": "world-continents-sizes",
+      "status": "needs-source-aligned-rewrite",
+      "recommendedModules": [
+        {
+          "moduleId": "continents-of-the-world",
+          "title": "Continents of the World",
+          "evidenceRefs": [
+            "t1-e003-continents-list",
+            "t1-e010-suggested-activities-part-1"
+          ],
+          "requiredTeachingPoints": [
+            "Name the seven continents.",
+            "Recognise Africa as one of the continents.",
+            "Read and spell continent names correctly."
+          ],
+          "needsExtraSource": false
+        },
+        {
+          "moduleId": "continents-size-order",
+          "title": "Continents in Order of Size",
+          "evidenceRefs": [
+            "t1-e003-continents-list",
+            "t1-e007-subject-competences"
+          ],
+          "requiredTeachingPoints": [
+            "Order: Asia, Africa, North America, South America, Antarctica/Antarctic, Europe, Australia.",
+            "Africa is the second largest continent."
+          ],
+          "needsExtraSource": false
+        }
+      ]
+    },
+    {
+      "officialSubtopic": "Water bodies that surround Africa",
+      "currentAppSubtopicId": "water-bodies-africa",
+      "status": "needs-source-aligned-rewrite",
+      "recommendedModules": [
+        {
+          "moduleId": "oceans-and-seas-around-africa",
+          "title": "Oceans and Seas Around Africa",
+          "evidenceRefs": [
+            "t1-e004-oceans-seas-list",
+            "t1-e007-subject-competences",
+            "t1-e010-suggested-activities-part-1"
+          ],
+          "requiredTeachingPoints": [
+            "Name the oceans in the syllabus list.",
+            "Name the Mediterranean Sea and Red Sea.",
+            "Identify water bodies that surround Africa."
+          ],
+          "needsExtraSource": false
+        },
+        {
+          "moduleId": "directions-of-water-bodies-and-continents",
+          "title": "Compass Directions from Africa",
+          "evidenceRefs": [
+            "t1-e002-location-tools",
+            "t1-e010-suggested-activities-part-1",
+            "t1-e013-assessment-competences"
+          ],
+          "requiredTeachingPoints": [
+            "State directions of oceans from Africa.",
+            "State directions of seas from Africa.",
+            "State directions of other continents from Africa."
+          ],
+          "needsExtraSource": true,
+          "extraSourceReason": "Directions need a verified map/globe source before exact direction statements are final."
+        }
+      ]
+    },
+    {
+      "officialSubtopic": "Regions that make up Africa",
+      "currentAppSubtopicId": "regions-africa",
+      "status": "needs-source-aligned-rewrite",
+      "recommendedModules": [
+        {
+          "moduleId": "six-regions-of-africa",
+          "title": "Regions of Africa",
+          "evidenceRefs": [
+            "t1-e009-official-content-list",
+            "t1-e007-subject-competences"
+          ],
+          "requiredTeachingPoints": [
+            "West Africa, East Africa, Northern Africa, Central Africa, Southern Africa and Horn of Africa.",
+            "Identify the regions that make up Africa."
+          ],
+          "needsExtraSource": false
+        },
+        {
+          "moduleId": "locating-regions-on-map",
+          "title": "Locating African Regions on a Map",
+          "evidenceRefs": [
+            "t1-e011-suggested-activities-part-2",
+            "t1-e013-assessment-competences"
+          ],
+          "requiredTeachingPoints": [
+            "Show regions on a map of Africa.",
+            "Use region names in written answers."
+          ],
+          "needsExtraSource": true,
+          "extraSourceReason": "Exact regional boundaries/countries need a verified map or approved learner source."
+        }
+      ]
+    },
+    {
+      "officialSubtopic": "Countries in each region and their capital cities",
+      "currentAppSubtopicId": "countries-capitals-africa",
+      "status": "needs-extra-source-before-full-rewrite",
+      "recommendedModules": [
+        {
+          "moduleId": "countries-and-capitals-by-region",
+          "title": "Countries and Capital Cities by Region",
+          "evidenceRefs": [
+            "t1-e007-subject-competences",
+            "t1-e009-official-content-list",
+            "t1-e011-suggested-activities-part-2",
+            "t1-e013-assessment-competences"
+          ],
+          "requiredTeachingPoints": [
+            "List countries in each African region.",
+            "List capital cities of respective countries.",
+            "Read, spell and write region/country/capital names."
+          ],
+          "needsExtraSource": true,
+          "extraSourceReason": "Official pages require countries and capitals but do not provide a complete table. A verified atlas/approved book/source is required."
+        },
+        {
+          "moduleId": "islands-that-are-part-of-africa",
+          "title": "Islands Which Are Part of Africa",
+          "evidenceRefs": [
+            "t1-e007-subject-competences",
+            "t1-e009-official-content-list",
+            "t1-e011-suggested-activities-part-2",
+            "t1-e013-assessment-competences"
+          ],
+          "requiredTeachingPoints": [
+            "Name islands which are part of Africa.",
+            "Locate islands in relation to Africa where possible."
+          ],
+          "needsExtraSource": true,
+          "extraSourceReason": "Official pages require islands but do not list island names."
+        }
+      ]
+    }
+  ],
+  "currentAppModulesToReviewOrRemove": [
+    {
+      "moduleId": "longitude-time-calculation-rules",
+      "reason": "Longitude time calculation is not supported by current Topic 1 evidence notes. Needs approved source or removal/quarantine as extension."
+    },
+    {
+      "moduleId": "continents-uses-importance",
+      "reason": "Uses/importances/advantages/disadvantages of continents are not required by the extracted NCDC Topic 1 content. Replace with source-backed continent identification/size practice unless another source justifies it."
+    },
+    {
+      "moduleId": "water-bodies-uses-importance",
+      "reason": "The official Topic 1 requirement is naming surrounding water bodies and directions. Uses/importance may be useful but need source justification and should not crowd out required map skills."
+    },
+    {
+      "moduleId": "marine-gateways-channels",
+      "reason": "Marine gateways/channels are not in the extracted Topic 1 content. Needs source justification or removal."
+    },
+    {
+      "moduleId": "marine-gateways-uses-importance",
+      "reason": "Not in extracted Topic 1 content. Needs source justification or removal."
+    },
+    {
+      "moduleId": "regions-uses-importance",
+      "reason": "Regions are required for identification/map work; uses/importance framing is unsupported by current evidence."
+    },
+    {
+      "moduleId": "capital-cities-uses-importance",
+      "reason": "Capital cities are required for naming/listing; uses/importances need source support and may be unnecessary filler."
+    },
+    {
+      "moduleId": "landlocked-coastal-countries",
+      "reason": "May be useful but not explicitly required in extracted Topic 1 evidence. Needs source support or later extension status."
+    }
+  ]
+}

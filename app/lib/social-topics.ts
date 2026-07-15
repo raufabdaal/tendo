@@ -113,383 +113,93 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
       ],
     },
     subtopics: [
-      {
+            {
         subtopicId: "location-position-africa",
-        title: "1. Location and position of Africa using lines of latitudes and longitudes",
+        title: "1. Location and position of Africa using major lines of latitudes and longitudes",
         modules: [
           {
-            moduleId: "location-meaning-types",
-            title: "Meaning and Types of Location",
-            bigIdea: "Location tells the position of a place on the earth's surface. In P7 Social Studies, location is studied as absolute location and relative location.",
+            moduleId: "africa-on-world-map",
+            title: "Africa on the World Map",
+            bigIdea: "Africa is studied in P7 as a continent on the world map and in relation to other continents, oceans and seas.",
             learnIt: [
-              "### Location",
-              "<strong class=\"kw\">Location</strong>:",
-              "Is the exact place or area where a geographical feature, country or continent is found on the earth's surface.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Absolute location</strong> uses lines of latitude and longitude.",
-              "* <strong class=\"kw\">Relative location</strong> uses nearby places, land masses and water bodies.",
-              "<strong class=\"kw\">Absolute location</strong>:",
-              "Is the position of a place shown by using lines of latitude and longitude.",
-              "<strong class=\"kw\">Relative location</strong>:",
-              "Is the position of a place described by comparing it with neighbouring places or features.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Africa</strong> lies between about 37°N and 35°S.",
-              "* <strong class=\"kw\">Uganda</strong> is found in East Africa.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Map reading</strong> becomes more accurate.",
-              "* <strong class=\"kw\">Navigation</strong> becomes easier for pilots and sailors.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Location</strong> helps learners find places on maps.",
-              "* <strong class=\"kw\">Location</strong> helps countries plan transport, trade and communication.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Absolute location</strong> gives a more exact position.",
-              "* <strong class=\"kw\">Relative location</strong> is easy to explain using nearby features.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Absolute location</strong> can confuse learners who do not understand degrees.",
-              "* <strong class=\"kw\">Relative location</strong> may be less exact than coordinates."
+              "Africa is one of the continents of the world. In P7 Social Studies, learners study Africa's position on the world map, its countries, its regions and its relationship with the rest of the world.",
+              "To locate Africa properly, use three map tools together: a world map or globe, compass directions, and major lines of latitude and longitude.",
+              "A good location answer should not only say 'Africa is on the world map'. It should explain Africa's position using nearby continents, oceans, seas and major map lines.",
+              "Examples: Europe is north of Africa. The Atlantic Ocean is west of Africa. The Indian Ocean is east of Africa. The Mediterranean Sea is north of Africa."
             ],
             tryThis: {
-              question: "Which type of location uses lines of latitude and longitude?",
-              choices: ["Absolute location", "Relative location", "Political location", "Vegetation location"],
+              question: "Which tools help a learner locate Africa on a world map?",
+              choices: ["A globe, compass directions, latitudes and longitudes", "Only a ruler", "Only country flags", "Only rainfall figures"],
               correct: 0,
-              explanation: "Absolute location uses latitude and longitude to show the exact position of a place."
+              explanation: "NCDC expects learners to use a globe/world map, compass directions, latitudes and longitudes to locate Africa."
             }
           },
           {
-            moduleId: "lines-of-latitude-definition",
-            title: "Lines of Latitude",
-            bigIdea: "Lines of latitude help us measure how far north or south a place is from the Equator.",
+            moduleId: "latitude-longitude-position-keywords",
+            title: "Latitude, Longitude and Position",
+            bigIdea: "Latitude and longitude are map lines used to describe the position of places.",
             learnIt: [
-              "### Lines of Latitude",
-              "<strong class=\"kw\">Lines of latitude</strong>:",
-              "Are imaginary lines drawn on a map from east to west and used to measure distance north or south of the Equator.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Equator</strong> is the main line of latitude marked 0°.",
-              "* <strong class=\"kw\">Tropic of Cancer</strong> is found north of the Equator.",
-              "* <strong class=\"kw\">Tropic of Capricorn</strong> is found south of the Equator.",
-              "<strong class=\"kw\">Equator</strong>:",
-              "Is the main line of latitude marked 0° that divides the world into the Northern and Southern Hemispheres.",
-              "<strong class=\"kw\">Tropic of Cancer</strong>:",
-              "Is the line of latitude marked 23½°N in the Northern Hemisphere.",
-              "<strong class=\"kw\">Tropic of Capricorn</strong>:",
-              "Is the line of latitude marked 23½°S in the Southern Hemisphere.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Equator</strong> crosses Uganda and Kenya.",
-              "* <strong class=\"kw\">Tropic of Cancer</strong> crosses North Africa.",
-              "* <strong class=\"kw\">Tropic of Capricorn</strong> crosses Southern Africa.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Latitudes</strong> help locate places north or south of the Equator.",
-              "* <strong class=\"kw\">Latitudes</strong> help show temperature and climate zones.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Latitudes</strong> explain why equatorial areas are generally hot and wet.",
-              "* <strong class=\"kw\">Latitudes</strong> help learners describe Africa's position on the world map.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Latitudes</strong> are parallel and easy to compare.",
-              "* <strong class=\"kw\">Latitudes</strong> clearly show north-south position.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Latitudes</strong> do not show east-west position.",
-              "* <strong class=\"kw\">Latitudes</strong> cannot give a full location without longitudes."
+              "Position means where a place is found. In map work, position can be described using direction words, nearby features, latitude and longitude.",
+              "Lines of latitude run from west to east across a map. They help show how far north or south a place is from the Equator.",
+              "Lines of longitude run from north to south on a map. They help show how far east or west a place is from the Prime Meridian.",
+              "The Equator is the main line of latitude. The Prime Meridian is the main line of longitude. A learner should be able to tell the difference between these two types of lines."
             ],
             tryThis: {
-              question: "What is the main line of latitude marked 0° called?",
-              choices: ["Equator", "Prime Meridian", "Tropic of Cancer", "Greenwich Meridian"],
+              question: "Which statement correctly describes lines of latitude?",
+              choices: ["They help show how far north or south a place is", "They are capital cities", "They are oceans around Africa", "They are types of vegetation"],
               correct: 0,
-              explanation: "The Equator is the main line of latitude marked 0°."
+              explanation: "Latitude lines help show position north or south of the Equator."
             }
           },
           {
-            moduleId: "major-latitudes-through-africa",
-            title: "Major Lines of Latitude through Africa",
-            bigIdea: "Africa is crossed by the Equator, the Tropic of Cancer and the Tropic of Capricorn.",
+            moduleId: "equator-tropics-prime-meridian-africa",
+            title: "Equator, Tropics and Prime Meridian",
+            bigIdea: "Africa is crossed by important map lines that help learners describe its position accurately.",
             learnIt: [
-              "### Major Lines of Latitude through Africa",
-              "<strong class=\"kw\">Major lines of latitude</strong>:",
-              "Are important imaginary east-west lines used to divide the earth into climatic and positional zones.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Equator</strong> crosses the middle part of Africa.",
-              "* <strong class=\"kw\">Tropic of Cancer</strong> crosses the northern part of Africa.",
-              "* <strong class=\"kw\">Tropic of Capricorn</strong> crosses the southern part of Africa.",
-              "<strong class=\"kw\">Equator in Africa</strong>:",
-              "Is the 0° latitude line that crosses countries such as Uganda, Kenya, Somalia, Gabon, Congo and DRC.",
-              "<strong class=\"kw\">Tropic of Cancer in Africa</strong>:",
-              "Is the 23½°N latitude line that crosses countries such as Egypt, Libya, Algeria, Mali, Mauritania and Western Sahara.",
-              "<strong class=\"kw\">Tropic of Capricorn in Africa</strong>:",
-              "Is the 23½°S latitude line that crosses countries such as Namibia, Botswana, South Africa, Mozambique and Madagascar.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Uganda</strong> is crossed by the Equator near Kayabwe.",
-              "* <strong class=\"kw\">Egypt</strong> is crossed by the Tropic of Cancer.",
-              "* <strong class=\"kw\">South Africa</strong> is crossed by the Tropic of Capricorn.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Major latitudes</strong> help locate countries on the African map.",
-              "* <strong class=\"kw\">Major latitudes</strong> help explain climatic differences in Africa.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Equator</strong> helps explain hot and wet conditions in some African areas.",
-              "* <strong class=\"kw\">Tropics</strong> help mark the tropical belt of Africa.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Major latitudes</strong> make map questions easier to answer.",
-              "* <strong class=\"kw\">Major latitudes</strong> help compare northern, central and southern Africa.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Major latitudes</strong> do not show exact country boundaries.",
-              "* <strong class=\"kw\">Major latitudes</strong> must be used with other map details."
+              "The Equator is 0° latitude. It divides the earth into the Northern Hemisphere and Southern Hemisphere, and it crosses Africa.",
+              "The Prime Meridian is 0° longitude. It divides the earth into the Eastern Hemisphere and Western Hemisphere, and it crosses western Africa.",
+              "The Tropic of Cancer is an important latitude north of the Equator. The Tropic of Capricorn is an important latitude south of the Equator. Africa lies largely within the tropical region between these two tropics.",
+              "When drawing a map for this topic, show Africa, the Equator, the Prime Meridian and, where required by the teacher, the two tropics. Label each line clearly."
             ],
             tryThis: {
-              question: "Which major line of latitude crosses Uganda?",
-              choices: ["Equator", "Tropic of Cancer", "Tropic of Capricorn", "International Date Line"],
-              correct: 0,
-              explanation: "The Equator crosses Uganda near Kayabwe."
-            }
-          },
-          {
-            moduleId: "lines-of-longitude-definition",
-            title: "Lines of Longitude",
-            bigIdea: "Lines of longitude help us measure how far east or west a place is from the Prime Meridian.",
-            learnIt: [
-              "### Lines of Longitude",
-              "<strong class=\"kw\">Lines of longitude</strong>:",
-              "Are imaginary lines drawn from the North Pole to the South Pole and used to measure distance east or west of the Prime Meridian.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Prime Meridian</strong> is the main line of longitude marked 0°.",
-              "* <strong class=\"kw\">Eastern longitudes</strong> are found east of the Prime Meridian.",
-              "* <strong class=\"kw\">Western longitudes</strong> are found west of the Prime Meridian.",
-              "<strong class=\"kw\">Prime Meridian</strong>:",
-              "Is the main line of longitude marked 0° that passes through Greenwich and parts of West Africa.",
-              "<strong class=\"kw\">Eastern longitudes</strong>:",
-              "Are lines of longitude found to the east of the Prime Meridian.",
-              "<strong class=\"kw\">Western longitudes</strong>:",
-              "Are lines of longitude found to the west of the Prime Meridian.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">0° longitude</strong> is the Prime Meridian.",
-              "* <strong class=\"kw\">30°E</strong> is an eastern longitude.",
-              "* <strong class=\"kw\">10°W</strong> is a western longitude.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Longitudes</strong> help locate places east or west of Greenwich.",
-              "* <strong class=\"kw\">Longitudes</strong> help calculate local time.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Longitudes</strong> help travellers and pilots navigate accurately.",
-              "* <strong class=\"kw\">Longitudes</strong> help countries coordinate time and communication.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Longitudes</strong> make east-west position clear.",
-              "* <strong class=\"kw\">Longitudes</strong> support accurate time calculation.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Longitudes</strong> are not parallel because they meet at the poles.",
-              "* <strong class=\"kw\">Longitudes</strong> do not show climate zones as clearly as latitudes."
-            ],
-            tryThis: {
-              question: "What is the main line of longitude marked 0° called?",
+              question: "Which line is 0° longitude?",
               choices: ["Prime Meridian", "Equator", "Tropic of Cancer", "Tropic of Capricorn"],
               correct: 0,
-              explanation: "The Prime Meridian is the main line of longitude marked 0°."
+              explanation: "The Prime Meridian is 0° longitude. The Equator is 0° latitude."
             }
           },
           {
-            moduleId: "longitude-time-calculation-rules",
-            title: "Longitude and Local Time",
-            bigIdea: "Longitude is used to calculate local time because the earth rotates from west to east.",
+            moduleId: "locating-africa-compass-directions",
+            title: "Locating Africa Using Compass Directions",
+            bigIdea: "Compass directions help learners state where other continents, oceans and seas are from Africa.",
             learnIt: [
-              "### Longitude and Local Time",
-              "<strong class=\"kw\">Local time</strong>:",
-              "Is the time of a place calculated according to its position east or west of the Prime Meridian.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Eastward time</strong> is found by adding time.",
-              "* <strong class=\"kw\">Westward time</strong> is found by subtracting time.",
-              "<strong class=\"kw\">Eastward time</strong>:",
-              "Is time calculated by adding hours or minutes when moving east because eastern places see the sun earlier.",
-              "<strong class=\"kw\">Westward time</strong>:",
-              "Is time calculated by subtracting hours or minutes when moving west because western places see the sun later.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">1°</strong> of longitude equals 4 minutes.",
-              "* <strong class=\"kw\">15°</strong> of longitude equals 1 hour.",
-              "* <strong class=\"kw\">East</strong> means add time.",
-              "* <strong class=\"kw\">West</strong> means subtract time.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Longitude</strong> helps calculate time differences between countries.",
-              "* <strong class=\"kw\">Longitude</strong> helps plan journeys, broadcasts and meetings.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Time calculation</strong> prevents confusion in international travel.",
-              "* <strong class=\"kw\">Time calculation</strong> helps learners answer UNEB map questions.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Longitude time</strong> follows a clear formula.",
-              "* <strong class=\"kw\">Longitude time</strong> gives predictable time differences.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Longitude time</strong> becomes wrong if east and west are confused.",
-              "* <strong class=\"kw\">Longitude time</strong> becomes wrong if degree differences are miscalculated."
-            ],
-            workedExample: {
-              question: "If town A is 15° east of town B and the time at town B is 10:00 a.m., what is the time at town A?",
-              steps: [
-                "15° of longitude equals 1 hour.",
-                "Town A is east of town B, so add 1 hour.",
-                "10:00 a.m. plus 1 hour equals 11:00 a.m."
-              ],
-              answer: "The time at town A is 11:00 a.m."
-            },
-            tryThis: {
-              question: "When moving east in longitude time calculations, what should you do?",
-              choices: ["Add time", "Subtract time", "Ignore time", "Divide by 24"],
-              correct: 0,
-              explanation: "Eastern places see the sun earlier, so time is added when moving east."
-            }
-          },
-          {
-            moduleId: "absolute-position-of-africa",
-            title: "Absolute Position of Africa",
-            bigIdea: "Africa's absolute position can be described using its latitude and longitude limits.",
-            learnIt: [
-              "### Absolute Position of Africa",
-              "<strong class=\"kw\">Absolute position of Africa</strong>:",
-              "Is the exact position of Africa shown by its latitude and longitude limits on the world map.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Latitude position</strong> shows north-south extent.",
-              "* <strong class=\"kw\">Longitude position</strong> shows east-west extent.",
-              "<strong class=\"kw\">Latitude position</strong>:",
-              "Is Africa's position between about 37°N and 35°S.",
-              "<strong class=\"kw\">Longitude position</strong>:",
-              "Is Africa's position between about 17°W and 51°E.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">37°N</strong> shows Africa's northern latitude limit.",
-              "* <strong class=\"kw\">35°S</strong> shows Africa's southern latitude limit.",
-              "* <strong class=\"kw\">17°W</strong> shows Africa's western longitude limit.",
-              "* <strong class=\"kw\">51°E</strong> shows Africa's eastern longitude limit.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Absolute position</strong> helps describe Africa accurately on a world map.",
-              "* <strong class=\"kw\">Absolute position</strong> helps compare Africa with other continents.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Africa's position</strong> explains why the continent lies mainly in the tropics.",
-              "* <strong class=\"kw\">Africa's position</strong> helps explain its wide range of climates.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Coordinates</strong> give exact map information.",
-              "* <strong class=\"kw\">Coordinates</strong> help learners avoid vague descriptions.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Coordinates</strong> are harder to remember than simple descriptions.",
-              "* <strong class=\"kw\">Coordinates</strong> need correct use of N, S, E and W."
+              "A compass direction tells where one place is from another. The four main compass directions are north, south, east and west.",
+              "From Africa, Europe is to the north, Asia is to the north-east/east, the Atlantic Ocean is to the west, and the Indian Ocean is to the east/south-east. The Mediterranean Sea is north of Africa and the Red Sea is north-east of Africa.",
+              "In P7, avoid one-word answers when explaining location. A strong answer names the place and gives its direction from Africa.",
+              "Example: The Atlantic Ocean lies to the west of Africa. The Mediterranean Sea lies to the north of Africa."
             ],
             tryThis: {
-              question: "Africa lies between about 17°W and 51°E. What does this describe?",
-              choices: ["Longitude position", "Latitude position", "Population size", "Vegetation type"],
-              correct: 0,
-              explanation: "17°W to 51°E describes Africa's east-west longitude position."
-            }
-          },
-          {
-            moduleId: "relative-position-of-africa",
-            title: "Relative Position of Africa",
-            bigIdea: "Africa's relative position is described using neighbouring continents, seas and oceans.",
-            learnIt: [
-              "### Relative Position of Africa",
-              "<strong class=\"kw\">Relative position of Africa</strong>:",
-              "Is the position of Africa described using nearby continents, oceans, seas and other features.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Continental neighbours</strong> describe Africa using nearby continents.",
-              "* <strong class=\"kw\">Water-body neighbours</strong> describe Africa using nearby oceans and seas.",
-              "<strong class=\"kw\">Continental neighbours</strong>:",
-              "Are nearby land masses such as Europe to the north and Asia to the north-east.",
-              "<strong class=\"kw\">Water-body neighbours</strong>:",
-              "Are nearby water bodies such as the Atlantic Ocean, Indian Ocean, Mediterranean Sea and Red Sea.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Europe</strong> lies north of Africa across the Mediterranean Sea.",
-              "* <strong class=\"kw\">Asia</strong> lies north-east of Africa near the Suez Canal and Red Sea.",
-              "* <strong class=\"kw\">Atlantic Ocean</strong> lies west of Africa.",
-              "* <strong class=\"kw\">Indian Ocean</strong> lies east of Africa.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Relative position</strong> helps learners describe Africa without using coordinates.",
-              "* <strong class=\"kw\">Relative position</strong> helps learners understand trade and travel routes.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Relative position</strong> explains Africa's contact with Europe and Asia.",
-              "* <strong class=\"kw\">Relative position</strong> explains why seas and oceans support transport around Africa.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Relative position</strong> is simple to explain in words.",
-              "* <strong class=\"kw\">Relative position</strong> is useful when reading sketch maps.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Relative position</strong> is less exact than coordinates.",
-              "* <strong class=\"kw\">Relative position</strong> may confuse learners if directions are wrong."
-            ],
-            tryThis: {
-              question: "Which ocean lies to the west of Africa?",
-              choices: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+              question: "Which water body lies west of Africa?",
+              choices: ["Atlantic Ocean", "Indian Ocean", "Red Sea", "Arctic Ocean"],
               correct: 0,
               explanation: "The Atlantic Ocean lies to the west of Africa."
             }
           },
           {
-            moduleId: "africa-special-map-position",
-            title: "Africa's Special Map Position",
-            bigIdea: "Africa has a special world-map position because it is crossed by important imaginary lines.",
+            moduleId: "map-drawing-activity-africa-lines",
+            title: "Map Drawing Activity: Africa, Regions and Lines",
+            bigIdea: "NCDC expects learners to practise drawing maps and showing regions, latitudes and longitudes.",
             learnIt: [
-              "### Africa's Special Map Position",
-              "<strong class=\"kw\">Africa's special map position</strong>:",
-              "Is Africa's unique position as a continent crossed by the Equator, the Tropic of Cancer, the Tropic of Capricorn and the Prime Meridian.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Latitude crossing</strong> involves the Equator and the two Tropics.",
-              "* <strong class=\"kw\">Longitude crossing</strong> involves the Prime Meridian.",
-              "<strong class=\"kw\">Latitude crossing</strong>:",
-              "Is the crossing of Africa by the Equator, Tropic of Cancer and Tropic of Capricorn.",
-              "<strong class=\"kw\">Longitude crossing</strong>:",
-              "Is the crossing of Africa by the Prime Meridian through West Africa.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Equator</strong> divides Africa into northern and southern parts.",
-              "* <strong class=\"kw\">Prime Meridian</strong> passes through Ghana in West Africa.",
-              "* <strong class=\"kw\">Tropics</strong> pass through northern and southern Africa.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Special position</strong> helps explain Africa's climate zones.",
-              "* <strong class=\"kw\">Special position</strong> helps answer map-location questions.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Equator</strong> explains why central Africa has hot conditions.",
-              "* <strong class=\"kw\">Prime Meridian</strong> supports time and longitude studies.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Special position</strong> makes Africa easy to identify on a world map.",
-              "* <strong class=\"kw\">Special position</strong> links location to climate and time.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Special position</strong> requires learners to remember several imaginary lines.",
-              "* <strong class=\"kw\">Special position</strong> may be confused with political boundaries."
+              "Activity 1: Draw a simple outline map of Africa. Do not worry about making it perfect; focus on correct labels and position.",
+              "Activity 2: Draw and label the Equator and Prime Meridian. If your teacher asks for them, also show the Tropic of Cancer and Tropic of Capricorn.",
+              "Activity 3: Mark the main regions of Africa: West Africa, East Africa, Northern Africa, Central Africa, Southern Africa and the Horn of Africa.",
+              "Activity 4: Use arrows to show directions of nearby water bodies and continents from Africa. For example, draw an arrow west to the Atlantic Ocean and north to Europe."
             ],
             tryThis: {
-              question: "Which line of longitude passes through West Africa?",
-              choices: ["Prime Meridian", "Equator", "Tropic of Cancer", "Tropic of Capricorn"],
+              question: "Which item should appear on a good P7 map of Africa for this topic?",
+              choices: ["Regions, latitude lines and longitude lines", "Only football teams", "Only rainfall bars", "Only animal drawings"],
               correct: 0,
-              explanation: "The Prime Meridian is a line of longitude and passes through West Africa."
-            }
-          },
-          {
-            moduleId: "uneb-location-exam-traps",
-            title: "UNEB Exam Traps on Location",
-            bigIdea: "Many learners lose marks by confusing latitude with longitude, east with west, or absolute location with relative location.",
-            learnIt: [
-              "### UNEB Exam Traps on Location",
-              "<strong class=\"kw\">UNEB exam trap</strong>:",
-              "Is a common mistake that causes learners to lose marks even when they know part of the topic.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Latitude trap</strong> confuses north-south position with east-west position.",
-              "* <strong class=\"kw\">Longitude trap</strong> confuses east-west position with north-south position.",
-              "* <strong class=\"kw\">Time trap</strong> confuses adding east with subtracting west.",
-              "<strong class=\"kw\">Latitude trap</strong>:",
-              "Is the mistake of saying latitude measures east or west instead of north or south.",
-              "<strong class=\"kw\">Longitude trap</strong>:",
-              "Is the mistake of saying longitude measures north or south instead of east or west.",
-              "<strong class=\"kw\">Time trap</strong>:",
-              "Is the mistake of subtracting time when moving east or adding time when moving west.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Latitudes</strong> run east-west but measure north-south distance.",
-              "* <strong class=\"kw\">Longitudes</strong> run north-south but measure east-west distance.",
-              "* <strong class=\"kw\">East</strong> means add time in longitude calculations.",
-              "* <strong class=\"kw\">West</strong> means subtract time in longitude calculations.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Exam traps</strong> help learners revise carefully.",
-              "* <strong class=\"kw\">Exam traps</strong> help learners check map answers before writing final responses.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Careful checking</strong> improves accuracy in PLE Social Studies.",
-              "* <strong class=\"kw\">Careful checking</strong> prevents avoidable loss of marks.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Trap awareness</strong> makes learners more confident in map work.",
-              "* <strong class=\"kw\">Trap awareness</strong> improves time-calculation answers.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Trap memorisation</strong> is not enough without map practice.",
-              "* <strong class=\"kw\">Trap memorisation</strong> can fail if learners do not read questions carefully."
-            ],
-            tryThis: {
-              question: "Which statement is correct?",
-              choices: ["Latitudes measure north or south of the Equator", "Latitudes measure east or west of Greenwich", "Longitudes are parallel lines", "West means add time"],
-              correct: 0,
-              explanation: "Latitudes measure distance north or south of the Equator."
+              explanation: "The assessment competence includes drawing Africa showing regions, lines of latitude and lines of longitude."
             }
           }
         ]
@@ -1814,7 +1524,6 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
       { q: "Which physical feature is a raised flat area?", choices: ["Plateau", "Valley only", "Ocean", "Capital city"], correct: 0, why: "A plateau is a raised area of land that is fairly flat on top." },
     ],
   },
-
   {
     id: "climate-of-africa",
     themeId: "sst-living-together-africa",
@@ -3093,259 +2802,6 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
     ],
   },
   {
-    id: "nationalism-road-independence",
-    themeId: "sst-living-together-africa",
-    themeName: "Living Together in Africa",
-    title: "Nationalism and the road to independence",
-    estMinutes: 20,
-    status: "published",
-    reviewStatus: "verified",
-    note: {
-      intro: "Nationalism helped Africans organise to regain independence. Pan-Africanism drove continental unity.",
-      learningObjectives: ["Explain nationalism, patriotism and Pan-Africanism.", "Identify key nationalists.", "Describe methods used for independence."],
-      whatYouNeedToKnow: [
-        "Nationalism = love and loyalty to one's nation, desire for self-rule. Pan-Africanism = unity of African people continent-wide.",
-        "Key nationalists: Kwame Nkrumah (Ghana, 1957), Jomo Kenyatta (Kenya, 1963), Julius Nyerere (Tanzania, 1961), Milton Obote (Uganda, 1962), Nelson Mandela (South Africa).",
-        "Methods: Political parties, newspapers, strikes, boycotts, demonstrations, negotiations, armed struggle where peaceful methods failed.",
-      ],
-      worked: { problem: "Differentiate nationalism and Pan-Africanism.", steps: ["Nationalism = love for one's nation and self-rule.", "Pan-Africanism = unity of African people continent-wide.", "Both helped independence."], answer: "Nationalism is loyalty to one's nation; Pan-Africanism is unity of African people." },
-      recap: ["Nationalism drove self-rule.", "Pan-Africanism promoted unity.", "Methods included parties, strikes, and negotiations."],
-    },
-    subtopics: [
-      {
-        subtopicId: "meaning-nationalism-panafricanism",
-        title: "Nationalism, Pan-Africanism and key leaders",
-        modules: [
-          {
-            moduleId: "nationalism-patriotism",
-            title: "Nationalism and patriotism",
-            bigIdea: "Nationalism drives self-rule; patriotism is love and service to one's country.",
-            learnIt: [
-              "Nationalism: Love for one's nation, desire for independence and self-rule.",
-              "Patriotism: Love for one's country — paying taxes, obeying laws, promoting peace.",
-              "Key dates: Ghana (6 March 1957 — first), Uganda (9 October 1962), Kenya (12 Dec 1963), Tanzania (9 Dec 1961).",
-            ],
-            tryThis: { question: "Nationalism means:", choices: ["Love for and loyalty to one's nation", "A type of lake", "A climate zone", "A vegetation belt"], correct: 0, explanation: "Nationalism is love for one's nation." }
-          },
-          {
-            moduleId: "key-nationalists",
-            title: "Key African nationalists",
-            bigIdea: "Nkrumah, Kenyatta, Nyerere, Obote, and Mandela led their countries to freedom.",
-            learnIt: [
-              "Kwame Nkrumah (Ghana): First sub-Saharan independence, 1957. Pan-Africanist.",
-              "Jomo Kenyatta (Kenya): First president, 1963. Mau Mau rebellion led by Dedan Kimathi.",
-              "Julius Nyerere (Tanzania): First president, 1961. Ujamaa socialism, African unity.",
-              "Milton Obote (Uganda): First PM, 1962. UNC party founded by Ignatius Musaazi, 1952.",
-              "Nelson Mandela (South Africa): Anti-apartheid. 27 years imprisoned. President, 1994.",
-            ],
-            tryThis: { question: "Which country did Kwame Nkrumah lead?", choices: ["Ghana", "Kenya", "South Africa", "Congo"], correct: 0, explanation: "Nkrumah led Ghana to independence in 1957." }
-          }
-        ]
-      }
-    ],
-    quiz: [
-      { q: "Nationalism means:", choices: ["Love for and loyalty to one's nation", "A type of lake", "A climate zone", "A vegetation belt"], correct: 0, why: "Nationalism is love for one's nation." },
-      { q: "Pan-Africanism promotes:", choices: ["African unity", "Colonial rule", "Desert expansion", "River flooding only"], correct: 0, why: "Pan-Africanism promotes African unity." },
-      { q: "Which was the first sub-Saharan country to gain independence?", choices: ["Ghana (1957)", "Uganda (1962)", "Kenya (1963)", "Tanzania (1961)"], correct: 0, why: "Ghana, 6 March 1957." },
-      { q: "Ethiopia resisted Italian colonisation at:", choices: ["Battle of Adwa (1896)", "Berlin Conference", "World War I", "Scramble"], correct: 0, why: "Ethiopia defeated Italy at Adwa in 1896." },
-    ],
-  },
-  {
-    id: "post-independence-africa",
-    themeId: "sst-living-together-africa",
-    themeName: "Living Together in Africa",
-    title: "Post-independence Africa",
-    estMinutes: 18,
-    status: "published",
-    reviewStatus: "verified",
-    note: {
-      intro: "After independence, African countries formed OAU, AU and regional groupings for unity, peace, and development.",
-      learningObjectives: ["Explain OAU and AU.", "Name regional groupings.", "Identify post-independence challenges."],
-      whatYouNeedToKnow: [
-        "OAU: Formed 1963, Addis Ababa. Promoted unity, supported liberation, defended sovereignty.",
-        "AU: Replaced OAU in 2002. Peace, democracy, human rights, development. HQ: Addis Ababa.",
-        "Regional groupings: COMESA, ECOWAS, SADC, IGAD. Promote trade, transport, peace, cooperation.",
-      ],
-      worked: { problem: "Give advantages of regional cooperation.", steps: ["Larger markets for goods.", "Shared infrastructure reduces costs."], answer: "Creates larger markets and encourages shared infrastructure." },
-      recap: ["OAU promoted unity.", "AU continues with wider aims.", "COMESA, ECOWAS, SADC, IGAD are key groupings."],
-    },
-    subtopics: [
-      {
-        subtopicId: "oau-formation-aims",
-        title: "OAU and AU",
-        modules: [
-          {
-            moduleId: "oau-au",
-            title: "From OAU to AU",
-            bigIdea: "OAU (1963) promoted unity; AU (2002) added peace, democracy, and development.",
-            learnIt: [
-              "OAU: 25 May 1963, Addis Ababa. 32 founders. Objectives: unity, sovereignty, eradicate colonialism.",
-              "AU: 2002, Durban. Objectives: peace, security, democracy, human rights, development.",
-              "AU organs: Assembly, Commission, Pan-African Parliament, Peace and Security Council.",
-            ],
-            tryThis: { question: "The OAU was formed in:", choices: ["1963", "2002", "1884", "1945"], correct: 0, explanation: "OAU formed 1963 in Addis Ababa." }
-          },
-          {
-            moduleId: "regional-groupings",
-            title: "Regional economic groupings",
-            bigIdea: "COMESA, ECOWAS, SADC, IGAD promote trade and cooperation.",
-            learnIt: [
-              "COMESA: Eastern and Southern Africa. Uganda is a member.",
-              "ECOWAS: West Africa. SADC: Southern Africa. IGAD: Horn/Eastern Africa.",
-              "Benefits: larger markets, shared infrastructure, peace-building, stronger bargaining power.",
-            ],
-            tryThis: { question: "COMESA is:", choices: ["Regional economic grouping", "Mountain range", "Desert", "Lake"], correct: 0, explanation: "COMESA is a regional economic grouping." }
-          }
-        ]
-      }
-    ],
-    quiz: [
-      { q: "The OAU was formed in:", choices: ["1963", "2002", "1884", "1995"], correct: 0, why: "OAU formed in 1963." },
-      { q: "Which organisation replaced the OAU?", choices: ["AU", "UNICEF", "WHO", "NATO"], correct: 0, why: "African Union replaced OAU." },
-      { q: "COMESA is:", choices: ["Regional economic grouping", "Mountain range", "Desert", "Lake"], correct: 0, why: "COMESA is a regional grouping." },
-      { q: "Advantage of economic cooperation:", choices: ["Larger markets", "More isolation", "Stopping trade", "Removing roads"], correct: 0, why: "Larger markets benefit members." },
-    ],
-  },
-  {
-    id: "economic-developments-africa",
-    themeId: "sst-living-together-africa",
-    themeName: "Living Together in Africa",
-    title: "Economic developments in Africa",
-    estMinutes: 22,
-    status: "published",
-    reviewStatus: "verified",
-    note: {
-      intro: "Africa's resources shape development. Case studies: Nigeria, South Africa, DRC, Sudan, Libya, and Uganda.",
-      learningObjectives: ["Name major economic resources.", "Explain problems in using resources.", "Compare country case studies."],
-      whatYouNeedToKnow: [
-        "Resources: minerals (gold, copper, cobalt, diamonds, petroleum), fertile soils, water, forests, wildlife, sunshine.",
-        "Economic activities: agriculture, mining, tourism, trade, fishing, manufacturing, transport.",
-        "Nigeria (oil), South Africa (minerals/industry), DRC (minerals/forests), Uganda (farming/tourism).",
-      ],
-      worked: { problem: "Why is value addition important?", steps: ["Raw materials sold cheaply.", "Processing increases value.", "Creates jobs and income."], answer: "Value addition increases income and creates jobs." },
-      recap: ["Africa has many resources.", "Development depends on wise use.", "Peace, skills, infrastructure support development."],
-    },
-    subtopics: [
-      {
-        subtopicId: "resources-africa",
-        title: "Economic resources and case studies",
-        modules: [
-          {
-            moduleId: "major-resources",
-            imageUrl: "/images/social-studies/mining-and-agriculture-processing.png",
-            imageCaption: "Value addition transforms raw crops and ores into products.",
-            title: "Major economic resources of Africa",
-            bigIdea: "Africa is rich in natural and human resources. Wise use drives development.",
-            learnIt: [
-              "Minerals: Gold, copper, cobalt, diamonds, petroleum, iron ore, coltan.",
-              "Agriculture: Coffee, tea, cotton, cocoa, maize, bananas. Fertile soils, favourable climate.",
-              "Forest/water: Timber, medicine, fishing, irrigation, hydroelectric power.",
-              "Tourism: Wildlife, national parks, gorillas, scenery. Foreign exchange earner.",
-            ],
-            tryThis: { question: "Major resource in Nigeria:", choices: ["Oil", "Snowfields", "Polar bears", "Volcanoes"], correct: 0, explanation: "Nigeria is known for oil." }
-          },
-          {
-            moduleId: "country-case-studies",
-            title: "Country case studies",
-            bigIdea: "Each country has different resources and challenges.",
-            learnIt: [
-              "Nigeria: Oil, cocoa, palm oil. Africa's largest population. Challenges: pollution, corruption.",
-              "South Africa: Gold, diamonds, platinum. Most industrialised. Farming: maize, fruits, wine.",
-              "DRC: Copper, cobalt, coltan, Congo rainforest. Challenges: poor transport, conflict.",
-              "Uganda: Coffee, tea, tourism (gorillas), fishing (Lake Victoria), growing oil.",
-            ],
-            tryThis: { question: "Most industrialised African economy:", choices: ["South Africa", "Chad", "Somalia", "Rwanda"], correct: 0, explanation: "South Africa is most industrialised." }
-          },
-          {
-            moduleId: "problems-solutions",
-            title: "Problems and solutions",
-            bigIdea: "Poor transport, limited capital, and corruption slow development.",
-            learnIt: [
-              "Problems: Poor roads/railways, limited investment, low technology, instability, corruption, raw material export dependence.",
-              "Solutions: Value addition, regional trade (AfCFTA, EAC), infrastructure, technical education, good governance.",
-            ],
-            tryThis: { question: "Processing raw coffee before export is:", choices: ["Value addition", "Devaluation", "Deficit", "Disinvestment"], correct: 0, explanation: "Value addition increases worth." }
-          }
-        ]
-      }
-    ],
-    quiz: [
-      { q: "Major resource in Nigeria:", choices: ["Oil", "Snowfields", "Polar bears", "Volcanoes"], correct: 0, why: "Nigeria is known for oil." },
-      { q: "Most industrialised in Southern Africa:", choices: ["South Africa", "Chad", "Somalia", "Rwanda"], correct: 0, why: "South Africa is most industrialised." },
-      { q: "Value addition means:", choices: ["Processing raw materials to increase value", "Wasting resources", "Stopping trade", "Cutting forests"], correct: 0, why: "Increases worth by processing." },
-      { q: "Solution for development:", choices: ["Good governance", "Corruption", "Civil war", "Destroying roads"], correct: 0, why: "Good governance supports development." },
-    ],
-  },
-  {
-    id: "major-world-organisations",
-    themeId: "sst-living-together-africa",
-    themeName: "Living Together in Africa",
-    title: "Major world organisations",
-    estMinutes: 18,
-    status: "published",
-    reviewStatus: "verified",
-    note: {
-      intro: "African countries relate with global organisations like the UN and Commonwealth.",
-      learningObjectives: ["Explain UN origin and organs.", "Name UN agencies.", "Describe the Commonwealth."],
-      whatYouNeedToKnow: [
-        "UN: Formed 1945 after WWII. HQ: New York. Replaced League of Nations.",
-        "UN organs: General Assembly, Security Council (5 permanent veto), ICJ, Secretariat.",
-        "UN agencies: UNICEF (children), WHO (health), FAO (food), UNESCO (education), UNHCR (refugees).",
-        "Commonwealth: Voluntary association of mostly former British colonies. Democracy, trade, scholarships, Games.",
-      ],
-      worked: { problem: "Match UNICEF and WHO to their work.", steps: ["UNICEF = children's welfare.", "WHO = health worldwide."], answer: "UNICEF supports children; WHO promotes health." },
-      recap: ["UN formed 1945 for peace.", "Agencies handle children, health, food, education.", "Commonwealth links member countries."],
-    },
-    subtopics: [
-      {
-        subtopicId: "un-formation-organs",
-        title: "United Nations and agencies",
-        modules: [
-          {
-            moduleId: "un-basics",
-            title: "Formation and organs of the UN",
-            bigIdea: "UN formed 1945 to promote peace, security, cooperation, and human rights.",
-            learnIt: [
-              "UN: 1945, HQ New York. Uganda is a member. Replaced League of Nations.",
-              "Organs: General Assembly (all members), Security Council (15, 5 permanent veto), ICJ, Secretariat.",
-            ],
-            tryThis: { question: "UN formed in:", choices: ["1945", "1963", "2002", "1884"], correct: 0, explanation: "UN formed 1945 after WWII." }
-          },
-          {
-            moduleId: "un-agencies",
-            title: "UN agencies and functions",
-            bigIdea: "UNICEF, WHO, FAO, UNESCO, UNHCR serve specific needs.",
-            learnIt: [
-              "UNICEF: Children's welfare — health, education, immunisation.",
-              "WHO: Global health, disease control, vaccination.",
-              "FAO: Food and agriculture, fighting hunger.",
-              "UNESCO: Education, science, culture, World Heritage Sites.",
-              "UNHCR: Refugees — protection, shelter. WFP: Food assistance.",
-            ],
-            tryThis: { question: "Which UN agency focuses on children?", choices: ["UNICEF", "WHO", "FAO", "UNHCR"], correct: 0, explanation: "UNICEF supports children's welfare." }
-          },
-          {
-            moduleId: "commonwealth",
-            title: "The Commonwealth of Nations",
-            bigIdea: "Voluntary association of former British colonies promoting democracy and cooperation.",
-            learnIt: [
-              "Membership: Voluntary, shared values — democracy, human rights, rule of law.",
-              "Functions: Promotes democracy, trade, scholarships, Commonwealth Games (every 4 years).",
-              "CHOGM: Leaders meet every 2 years. Uganda hosted in 2007.",
-            ],
-            tryThis: { question: "The Commonwealth is:", choices: ["Member countries cooperating", "Only rivers", "Only deserts", "Only mountains"], correct: 0, explanation: "Commonwealth is an association of countries." }
-          }
-        ]
-      }
-    ],
-    quiz: [
-      { q: "The UN was formed in:", choices: ["1945", "1963", "2002", "1884"], correct: 0, why: "UN formed 1945 after WWII." },
-      { q: "UN agency for children:", choices: ["UNICEF", "WHO", "FAO", "UNHCR"], correct: 0, why: "UNICEF supports children." },
-      { q: "UN agency for health:", choices: ["WHO", "UNESCO", "UNHCR", "FAO"], correct: 0, why: "WHO is World Health Organization." },
-      { q: "The Commonwealth is:", choices: ["Member countries cooperating", "Only rivers", "Only deserts", "Only mountains"], correct: 0, why: "Commonwealth is association of countries." },
-    ],
-  },
-  {
     id: "foreign-influence-africa",
     themeId: "sst-living-together-africa",
     themeName: "Living Together in Africa",
@@ -3418,7 +2874,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
       ],
     },
     subtopics: [
-      {
+{
         subtopicId: "foreign-groups-africa",
         title: "1. Foreign groups in Africa",
         modules: [
@@ -3448,7 +2904,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "european-explorers",
         title: "2. European explorers in Africa",
         modules: [
@@ -3491,7 +2947,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "traders-triangular-trade",
         title: "3. European traders and the Triangular trade",
         modules: [
@@ -3531,7 +2987,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "colonialists-scramble",
         title: "4. Colonialists and the scramble for Africa",
         modules: [
@@ -3586,7 +3042,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "settlers-administration",
         title: "5. Settlers, colonial administration and African reactions",
         modules: [
@@ -3627,7 +3083,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "effects-foreign-influence",
         title: "6. Effects of foreign influence",
         modules: [
@@ -3650,9 +3106,8 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             examTip: "For effects questions, always give a balanced answer with both positive and negative effects where possible."
           }
         ]
-      }
-    
-      ,{
+      },
+{
         subtopicId: "premium-foreign-influence-analysis",
         title: "Exam Summary: Foreign Influence — High-Yield UNEB Points",
         modules: [
@@ -3685,8 +3140,37 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             }
           }
         ]
-      },
-      {
+      }
+    ],
+    quiz: [
+      { q: "Which group of foreigners came to Africa mainly to spread Christianity?", choices: ["Missionaries", "Traders", "Explorers", "Colonialists"], correct: 0, why: "Missionaries came to spread Christianity and built schools/hospitals." },
+      { q: "The partition of Africa was formalized during which conference?", choices: ["Berlin Conference", "Addis Ababa Conference", "Durban Conference", "London Conference"], correct: 0, why: "The Berlin Conference of 1884–1885 formalized the division of Africa." },
+      { q: "Which system of colonial rule was used by the British in Buganda?", choices: ["Indirect rule", "Direct rule", "Assimilation", "Paternalism"], correct: 0, why: "Britain used indirect rule, governing through existing local chiefs and kings." },
+      { q: "Which of the following was a negative effect of the Triangular Trade?", choices: ["Depopulation and suffering in Africa", "Creation of new railways", "Spread of modern medicine", "Growth of democratic institutions"], correct: 0, why: "The slave trade caused severe depopulation and suffering in Africa." },
+      { q: "Which African country successfully resisted Italian colonisation in 1896?", choices: ["Ethiopia", "Liberia", "Kenya", "Ghana"], correct: 0, why: "Ethiopia defeated the Italians at the Battle of Adwa in 1896." },
+    ],
+  },
+  {
+    id: "nationalism-road-independence",
+    themeId: "sst-living-together-africa",
+    themeName: "Living Together in Africa",
+    title: "Nationalism and the road to independence",
+    estMinutes: 20,
+    status: "published",
+    reviewStatus: "verified",
+    note: {
+      intro: "Nationalism helped Africans organise to regain independence. Pan-Africanism drove continental unity.",
+      learningObjectives: ["Explain nationalism, patriotism and Pan-Africanism.", "Identify key nationalists.", "Describe methods used for independence."],
+      whatYouNeedToKnow: [
+        "Nationalism = love and loyalty to one's nation, desire for self-rule. Pan-Africanism = unity of African people continent-wide.",
+        "Key nationalists: Kwame Nkrumah (Ghana, 1957), Jomo Kenyatta (Kenya, 1963), Julius Nyerere (Tanzania, 1961), Milton Obote (Uganda, 1962), Nelson Mandela (South Africa).",
+        "Methods: Political parties, newspapers, strikes, boycotts, demonstrations, negotiations, armed struggle where peaceful methods failed.",
+      ],
+      worked: { problem: "Differentiate nationalism and Pan-Africanism.", steps: ["Nationalism = love for one's nation and self-rule.", "Pan-Africanism = unity of African people continent-wide.", "Both helped independence."], answer: "Nationalism is loyalty to one's nation; Pan-Africanism is unity of African people." },
+      recap: ["Nationalism drove self-rule.", "Pan-Africanism promoted unity.", "Methods included parties, strikes, and negotiations."],
+    },
+    subtopics: [
+{
         subtopicId: "meaning-nationalism-panafricanism",
         title: "1. Meaning of nationalism, Pan-Africanism and patriotism",
         modules: [
@@ -3737,7 +3221,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "panafricanists-nationalists-work",
         title: "2. Work of Pan-Africanists and nationalists",
         modules: [
@@ -3778,7 +3262,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "countries-not-colonised",
         title: "3. Countries that were not colonised and reasons for maintaining independence",
         modules: [
@@ -3820,7 +3304,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "methods-problems-independence",
         title: "4. Methods and problems of Pan-Africanists and nationalists",
         modules: [
@@ -3872,7 +3356,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "political-systems",
         title: "5. Political systems: multiparty and single party",
         modules: [
@@ -3926,7 +3410,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "forms-of-government",
         title: "6. Forms of government and governance in Africa",
         modules: [
@@ -3965,9 +3449,8 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             }
           }
         ]
-      }
-    
-      ,{
+      },
+{
         subtopicId: "premium-nationalism-reasoning",
         title: "Exam Summary: Nationalism & Independence — High-Yield UNEB Points",
         modules: [
@@ -4000,8 +3483,36 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             }
           }
         ]
-      },
-      {
+      }
+    ],
+    quiz: [
+      { q: "Nationalism means:", choices: ["Love for and loyalty to one's nation", "A type of lake", "A climate zone", "A vegetation belt"], correct: 0, why: "Nationalism is love for one's nation." },
+      { q: "Pan-Africanism promotes:", choices: ["African unity", "Colonial rule", "Desert expansion", "River flooding only"], correct: 0, why: "Pan-Africanism promotes African unity." },
+      { q: "Which was the first sub-Saharan country to gain independence?", choices: ["Ghana (1957)", "Uganda (1962)", "Kenya (1963)", "Tanzania (1961)"], correct: 0, why: "Ghana, 6 March 1957." },
+      { q: "Ethiopia resisted Italian colonisation at:", choices: ["Battle of Adwa (1896)", "Berlin Conference", "World War I", "Scramble"], correct: 0, why: "Ethiopia defeated Italy at Adwa in 1896." },
+    ],
+  },
+  {
+    id: "post-independence-africa",
+    themeId: "sst-living-together-africa",
+    themeName: "Living Together in Africa",
+    title: "Post-independence Africa",
+    estMinutes: 18,
+    status: "published",
+    reviewStatus: "verified",
+    note: {
+      intro: "After independence, African countries formed OAU, AU and regional groupings for unity, peace, and development.",
+      learningObjectives: ["Explain OAU and AU.", "Name regional groupings.", "Identify post-independence challenges."],
+      whatYouNeedToKnow: [
+        "OAU: Formed 1963, Addis Ababa. Promoted unity, supported liberation, defended sovereignty.",
+        "AU: Replaced OAU in 2002. Peace, democracy, human rights, development. HQ: Addis Ababa.",
+        "Regional groupings: COMESA, ECOWAS, SADC, IGAD. Promote trade, transport, peace, cooperation.",
+      ],
+      worked: { problem: "Give advantages of regional cooperation.", steps: ["Larger markets for goods.", "Shared infrastructure reduces costs."], answer: "Creates larger markets and encourages shared infrastructure." },
+      recap: ["OAU promoted unity.", "AU continues with wider aims.", "COMESA, ECOWAS, SADC, IGAD are key groupings."],
+    },
+    subtopics: [
+{
         subtopicId: "oau-formation-aims",
         title: "1. Formation of OAU, objectives and functions",
         modules: [
@@ -4052,7 +3563,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "au-formation-organs",
         title: "2. Formation and objectives of AU, challenges and organs",
         modules: [
@@ -4094,7 +3605,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "regional-economic-groupings",
         title: "3. Regional economic groupings, cooperation, and solutions",
         modules: [
@@ -4158,7 +3669,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "political-instabilities-conflicts",
         title: "4. Political Instabilities and Conflicts in Post-Independence Africa",
         modules: [
@@ -4199,9 +3710,8 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             }
           }
         ]
-      }
-    
-      ,{
+      },
+{
         subtopicId: "premium-post-independence-solutions",
         title: "Exam Summary: Post-Independence Africa — High-Yield UNEB Points",
         modules: [
@@ -4233,8 +3743,36 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             }
           }
         ]
-      },
-      {
+      }
+    ],
+    quiz: [
+      { q: "The OAU was formed in:", choices: ["1963", "2002", "1884", "1995"], correct: 0, why: "OAU formed in 1963." },
+      { q: "Which organisation replaced the OAU?", choices: ["AU", "UNICEF", "WHO", "NATO"], correct: 0, why: "African Union replaced OAU." },
+      { q: "COMESA is:", choices: ["Regional economic grouping", "Mountain range", "Desert", "Lake"], correct: 0, why: "COMESA is a regional grouping." },
+      { q: "Advantage of economic cooperation:", choices: ["Larger markets", "More isolation", "Stopping trade", "Removing roads"], correct: 0, why: "Larger markets benefit members." },
+    ],
+  },
+  {
+    id: "economic-developments-africa",
+    themeId: "sst-living-together-africa",
+    themeName: "Living Together in Africa",
+    title: "Economic developments in Africa",
+    estMinutes: 22,
+    status: "published",
+    reviewStatus: "verified",
+    note: {
+      intro: "Africa's resources shape development. Case studies: Nigeria, South Africa, DRC, Sudan, Libya, and Uganda.",
+      learningObjectives: ["Name major economic resources.", "Explain problems in using resources.", "Compare country case studies."],
+      whatYouNeedToKnow: [
+        "Resources: minerals (gold, copper, cobalt, diamonds, petroleum), fertile soils, water, forests, wildlife, sunshine.",
+        "Economic activities: agriculture, mining, tourism, trade, fishing, manufacturing, transport.",
+        "Nigeria (oil), South Africa (minerals/industry), DRC (minerals/forests), Uganda (farming/tourism).",
+      ],
+      worked: { problem: "Why is value addition important?", steps: ["Raw materials sold cheaply.", "Processing increases value.", "Creates jobs and income."], answer: "Value addition increases income and creates jobs." },
+      recap: ["Africa has many resources.", "Development depends on wise use.", "Peace, skills, infrastructure support development."],
+    },
+    subtopics: [
+{
         subtopicId: "resources-africa",
         title: "1. Economic resources of Africa and their care",
         modules: [
@@ -4318,7 +3856,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "economic-activities-development",
         title: "2. Major economic development in Africa",
         modules: [
@@ -4351,7 +3889,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "country-case-studies",
         title: "3. Case studies: Nigeria, Sudan, Libya, South Africa, DRC, Uganda",
         modules: [
@@ -4415,7 +3953,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "challenges-solutions",
         title: "4. Challenges affecting economic development and possible solutions",
         modules: [
@@ -4507,9 +4045,8 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             examTip: "For economic solutions questions, match each solution directly to the challenge: if the problem is low export prices, the solution is value addition; if the problem is poor transport, the solution is building roads and railways."
           }
         ]
-      }
-    
-      ,{
+      },
+{
         subtopicId: "premium-economic-reasoning",
         title: "Exam Summary: Economy of Africa — High-Yield UNEB Points",
         modules: [
@@ -4542,8 +4079,37 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             }
           }
         ]
-      },
-      {
+      }
+    ],
+    quiz: [
+      { q: "Major resource in Nigeria:", choices: ["Oil", "Snowfields", "Polar bears", "Volcanoes"], correct: 0, why: "Nigeria is known for oil." },
+      { q: "Most industrialised in Southern Africa:", choices: ["South Africa", "Chad", "Somalia", "Rwanda"], correct: 0, why: "South Africa is most industrialised." },
+      { q: "Value addition means:", choices: ["Processing raw materials to increase value", "Wasting resources", "Stopping trade", "Cutting forests"], correct: 0, why: "Increases worth by processing." },
+      { q: "Solution for development:", choices: ["Good governance", "Corruption", "Civil war", "Destroying roads"], correct: 0, why: "Good governance supports development." },
+    ],
+  },
+  {
+    id: "major-world-organisations",
+    themeId: "sst-living-together-africa",
+    themeName: "Living Together in Africa",
+    title: "Major world organisations",
+    estMinutes: 18,
+    status: "published",
+    reviewStatus: "verified",
+    note: {
+      intro: "African countries relate with global organisations like the UN and Commonwealth.",
+      learningObjectives: ["Explain UN origin and organs.", "Name UN agencies.", "Describe the Commonwealth."],
+      whatYouNeedToKnow: [
+        "UN: Formed 1945 after WWII. HQ: New York. Replaced League of Nations.",
+        "UN organs: General Assembly, Security Council (5 permanent veto), ICJ, Secretariat.",
+        "UN agencies: UNICEF (children), WHO (health), FAO (food), UNESCO (education), UNHCR (refugees).",
+        "Commonwealth: Voluntary association of mostly former British colonies. Democracy, trade, scholarships, Games.",
+      ],
+      worked: { problem: "Match UNICEF and WHO to their work.", steps: ["UNICEF = children's welfare.", "WHO = health worldwide."], answer: "UNICEF supports children; WHO promotes health." },
+      recap: ["UN formed 1945 for peace.", "Agencies handle children, health, food, education.", "Commonwealth links member countries."],
+    },
+    subtopics: [
+{
         subtopicId: "un-formation-organs",
         title: "1. Formation of the United Nations, organs and functions",
         modules: [
@@ -4599,7 +4165,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "un-agencies-rights",
         title: "2. UN agencies, Human Rights Charter, and importance of the UN",
         modules: [
@@ -4674,7 +4240,7 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+{
         subtopicId: "commonwealth-challenges",
         title: "3. The Commonwealth of Nations and challenges of world organisations",
         modules: [
@@ -4723,9 +4289,8 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             examTip: "For organisation questions, match the organisation to its function. Write the full name at least once – do not only write the abbreviation. For challenges, give a specific example such as 'limited funds' or 'conflicts between member states'."
           }
         ]
-      }
-    
-      ,{
+      },
+{
         subtopicId: "premium-organisation-casework",
         title: "Exam Summary: Africa and the World — High-Yield UNEB Points",
         modules: [
@@ -4761,13 +4326,12 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
       }
     ],
     quiz: [
-      { q: "Which group of foreigners came to Africa mainly to spread Christianity?", choices: ["Missionaries", "Traders", "Explorers", "Colonialists"], correct: 0, why: "Missionaries came to spread Christianity and built schools/hospitals." },
-      { q: "The partition of Africa was formalized during which conference?", choices: ["Berlin Conference", "Addis Ababa Conference", "Durban Conference", "London Conference"], correct: 0, why: "The Berlin Conference of 1884–1885 formalized the division of Africa." },
-      { q: "Which system of colonial rule was used by the British in Buganda?", choices: ["Indirect rule", "Direct rule", "Assimilation", "Paternalism"], correct: 0, why: "Britain used indirect rule, governing through existing local chiefs and kings." },
-      { q: "Which of the following was a negative effect of the Triangular Trade?", choices: ["Depopulation and suffering in Africa", "Creation of new railways", "Spread of modern medicine", "Growth of democratic institutions"], correct: 0, why: "The slave trade caused severe depopulation and suffering in Africa." },
-      { q: "Which African country successfully resisted Italian colonisation in 1896?", choices: ["Ethiopia", "Liberia", "Kenya", "Ghana"], correct: 0, why: "Ethiopia defeated the Italians at the Battle of Adwa in 1896." },
+      { q: "The UN was formed in:", choices: ["1945", "1963", "2002", "1884"], correct: 0, why: "UN formed 1945 after WWII." },
+      { q: "UN agency for children:", choices: ["UNICEF", "WHO", "FAO", "UNHCR"], correct: 0, why: "UNICEF supports children." },
+      { q: "UN agency for health:", choices: ["WHO", "UNESCO", "UNHCR", "FAO"], correct: 0, why: "WHO is World Health Organization." },
+      { q: "The Commonwealth is:", choices: ["Member countries cooperating", "Only rivers", "Only deserts", "Only mountains"], correct: 0, why: "Commonwealth is association of countries." },
     ],
-  },
+  }
 ];
 
 

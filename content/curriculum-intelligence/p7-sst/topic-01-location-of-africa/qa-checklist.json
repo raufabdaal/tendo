@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "location-of-africa",
+    "created": "2026-07-15",
+    "status": "audit-started"
+  },
+  "gates": [
+    {
+      "id": "source-gate",
+      "status": "partial-pass",
+      "checks": [
+        {
+          "item": "NCDC Topic 1 pages extracted",
+          "status": "passed"
+        },
+        {
+          "item": "Complete country/capital list source verified",
+          "status": "blocked"
+        },
+        {
+          "item": "African island names source verified",
+          "status": "blocked"
+        },
+        {
+          "item": "Extra concepts such as longitude-time calculation verified",
+          "status": "blocked"
+        }
+      ]
+    },
+    {
+      "id": "relevance-gate",
+      "status": "needs-review",
+      "checks": [
+        {
+          "item": "Every current app module maps to NCDC Topic 1 evidence or approved extension",
+          "status": "failed-current-app-has-unsupported-extensions"
+        }
+      ]
+    },
+    {
+      "id": "depth-gate",
+      "status": "needs-rewrite",
+      "checks": [
+        {
+          "item": "All official subtopics represented",
+          "status": "passed-structurally"
+        },
+        {
+          "item": "Country/capital and island content full enough",
+          "status": "blocked-needs-extra-source"
+        },
+        {
+          "item": "Map drawing and globe/diagram activity present",
+          "status": "needs-rewrite-more-explicit"
+        }
+      ]
+    },
+    {
+      "id": "language-gate",
+      "status": "needs-rewrite",
+      "checks": [
+        {
+          "item": "Remove one-line/over-spaced strict fragments where they hurt reading",
+          "status": "needs-fix"
+        },
+        {
+          "item": "Replace unsupported uses/importance sections with source-backed teaching",
+          "status": "needs-fix"
+        }
+      ]
+    },
+    {
+      "id": "context-gate",
+      "status": "needs-review",
+      "checks": [
+        {
+          "item": "Country/capital and island examples accurate and current",
+          "status": "blocked-needs-source"
+        }
+      ]
+    },
+    {
+      "id": "assessment-gate",
+      "status": "partial-pass",
+      "checks": [
+        {
+          "item": "Inline checks exist for current modules",
+          "status": "passed"
+        },
+        {
+          "item": "Checks align to official assessment competences",
+          "status": "needs-review"
+        }
+      ]
+    },
+    {
+      "id": "traceability-gate",
+      "status": "needs-rewrite",
+      "checks": [
+        {
+          "item": "Current app modules carry no sourceRefs",
+          "status": "failed-current-model"
+        },
+        {
+          "item": "Evidence notes now exist for rewrite",
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # HANDOFF — for the next session
 
-*Written: 2026-07-12 · Updated: 2026-07-14 (P7 SST strict formatting pass started)*
+*Written: 2026-07-12 · Updated: 2026-07-15 (P7 SST structure split fixed)*
 
 
 ## CURRENT HANDOFF — 2026-07-14 — P7 SST STRICT FORMATTING PASS
@@ -26,17 +26,79 @@ Completed in the latest pass:
 - Topic 3 `Climate of Africa` is now strict-formatted across official subtopics and `premium-climate-interpretation`.
 - Topic 4 `Vegetation of Africa` is now strict-formatted across official subtopics and `premium-vegetation-application`.
 - Structural fix completed: People subtopics were removed from Vegetation and restored under `people-ethnic-groups-settlement`.
+- Structural fix completed: Topic 7–10 subtopics were removed from `foreign-influence-africa` and restored under their official topic objects: `nationalism-road-independence`, `post-independence-africa`, `economic-developments-africa` and `major-world-organisations`. P7 SST topic order now follows the official curriculum sequence.
 - Added strict rendering support in `app/components/SubtopicViewer.tsx`.
 - Added strict-content CSS in `app/app/globals.css`.
 - Added ops note: `docs/ops/p7-sst-strict-formatting-pass-2026-07-14.md`.
-- Build passed: `npm run build` → `✓ Generating static pages (418/418)`.
+- Build passed after strict rendering/content changes: `npm run build` → `✓ Generating static pages (418/418)`.
+- Build passed after Topic 6–10 structure split: `npm run build` → `✓ Generating static pages (413/413)`.
 
 Next step:
 
 - Review Topic 4 `Vegetation of Africa` and the corrected People topic structure if needed.
-- Continue to Topic 5: `people-ethnic-groups-settlement`, using founder-provided exact content.
+- Continue to Topic 5: `people-ethnic-groups-settlement`, using source-traceable content from the new curriculum-intelligence workflow.
 
 ---
+
+## CURRICULUM INTELLIGENCE SYSTEM — STARTED 2026-07-15
+
+Founder direction: content is the core function of the app. The project must stop writing content ad hoc and move to a source-traceable curriculum intelligence pipeline.
+
+Created this session:
+
+- `docs/spec/curriculum-intelligence-system-v1.md`
+- `docs/ops/p7-sst-curriculum-intelligence-pilot-2026-07-15.md`
+- `content/curriculum-intelligence/p7-sst/source-registry.json`
+- `content/curriculum-intelligence/p7-sst/manifest.json`
+- `content/curriculum-intelligence/p7-sst/topic-05-people-ethnic-groups-settlement/evidence-notes.json`
+- `content/curriculum-intelligence/p7-sst/topic-05-people-ethnic-groups-settlement/qa-checklist.json`
+- `scripts/audit-curriculum-intelligence.js`
+
+Audit command:
+
+```bash
+node scripts/audit-curriculum-intelligence.js
+```
+
+Latest result: 0 failures, 26 warnings. Warnings are expected and now define the content QA backlog.
+
+Hard rule: do not publish new Topic 5 learner-facing content until verified evidence notes exist and QA gates pass.
+
+
+### Topic 1 is now the active restart point
+
+Founder wants to start from Topic 1 again because `location-of-africa` still feels incomplete/misaligned and has awkward spacing/one-line fragments. Do not blindly polish the current app content. Use the Topic 1 intelligence files first:
+
+- `content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/evidence-notes.json`
+- `content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/module-blueprint.json`
+- `content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/qa-checklist.json`
+- `docs/ops/p7-sst-topic-01-curriculum-intelligence-audit-2026-07-15.md`
+
+Current Topic 1 blockers before final rewrite:
+
+1. Candidate countries/capitals/islands reference pack now exists at `content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/reference-countries-capitals-islands.json`, but it is not learner-approved yet.
+2. Review/approve source policy: all 54 countries vs shorter school list, East Africa grouping, South Africa capital convention, Equatorial Guinea capital convention, and island scope.
+3. Need decision/source for whether longitude-time calculation belongs in Topic 1.
+4. Need remove/quarantine unsupported filler modules such as marine gateways/channels and broad uses/advantages/disadvantages sections if no source is found.
+
+Latest audit command:
+
+```bash
+node scripts/audit-curriculum-intelligence.js
+```
+
+Latest result: 0 failures / 28 warnings.
+
+Topic 1 Subtopic 1 rewrite completed:
+
+- Updated `app/lib/social-topics.ts` → `location-of-africa` / `location-position-africa`.
+- Replaced 9 over-spaced modules with 5 source-backed modules.
+- Removed longitude/local-time calculation from this subtopic pending source/extension decision.
+- Audit now: 0 failures / 28 warnings.
+- Build passed: 413 static pages.
+
+Next Topic 1 target: `world-continents-sizes`. Keep it source-backed: continent names and size order first; no uses/advantages/disadvantages filler unless source-justified.
+
 
 ## 🚀 PUSH STATUS — READY
 

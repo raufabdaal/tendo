@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "people-ethnic-groups-settlement",
+    "created": "2026-07-15",
+    "status": "not-started"
+  },
+  "gates": [
+    {
+      "id": "source-gate",
+      "status": "blocked",
+      "checks": [
+        "NCDC official topic/subtopic source is verified",
+        "Evidence notes exist for each official subtopic",
+        "Each module has sourceRefs"
+      ]
+    },
+    {
+      "id": "relevance-gate",
+      "status": "blocked",
+      "checks": [
+        "All content is P7 Social Studies",
+        "No content from P6/P5 or secondary school is imported",
+        "No unsourced advanced anthropology/history detail is added"
+      ]
+    },
+    {
+      "id": "depth-gate",
+      "status": "blocked",
+      "checks": [
+        "Every official subtopic has at least one teaching module or a documented combined-module reason",
+        "Definitions, examples, reasons, problems and effects are covered where required",
+        "At least one check exists for every learner module"
+      ]
+    },
+    {
+      "id": "language-gate",
+      "status": "blocked",
+      "checks": [
+        "British English",
+        "Simple P7 learner wording",
+        "No curriculum meta-copy",
+        "No filler"
+      ]
+    },
+    {
+      "id": "context-gate",
+      "status": "blocked",
+      "checks": [
+        "Respectful wording about ethnic groups",
+        "No tribal stereotyping",
+        "Ugandan/African examples where useful",
+        "Sensitive conflict/migration content handled safely"
+      ]
+    },
+    {
+      "id": "assessment-gate",
+      "status": "blocked",
+      "checks": [
+        "Each inline check tests the stated subtopic skill",
+        "Correct answer index is verified",
+        "Explanation is correct and source-consistent"
+      ]
+    },
+    {
+      "id": "sne-accessibility-gate",
+      "status": "blocked",
+      "checks": [
+        "Short chunks",
+        "Clear headings",
+        "Map/visual dependency explained in text",
+        "No colour-only meaning"
+      ]
+    },
+    {
+      "id": "traceability-gate",
+      "status": "blocked",
+      "checks": [
+        "Version recorded",
+        "SourceRefs recorded",
+        "QA status recorded",
+        "Build and audit run after publish"
+      ]
+    }
+  ]
+}

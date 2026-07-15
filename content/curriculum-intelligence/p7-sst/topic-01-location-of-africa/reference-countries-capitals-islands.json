@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "location-of-africa",
+    "created": "2026-07-15",
+    "status": "candidate-reference-pack-not-yet-learner-approved",
+    "purpose": "Provide a candidate source-backed countries/capitals/islands reference for Topic 1 rewrite. This file is evidence scaffolding, not final learner content.",
+    "importantCaution": "NCDC Topic 1 requires countries by African region, capital cities and islands, but the official Topic 1 pages do not provide full lists. This pack combines NCDC region names with UN M49 subregions and current capital references. Because NCDC also lists Horn of Africa separately from East Africa, the grouping below adapts UN Eastern Africa by separating Djibouti, Eritrea, Ethiopia and Somalia into Horn of Africa. A teacher/founder review is still required before publishing."
+  },
+  "sourceRefs": [
+    "NCDC-P7-SET-ONE-2024-PDF",
+    "UNSD-M49-AFRICA",
+    "BRITANNICA-HORN-AFRICA",
+    "CAPITALS-CURRENT-CROSSCHECK"
+  ],
+  "regionPolicy": {
+    "ncdcRegions": [
+      "West Africa",
+      "East Africa",
+      "Northern Africa",
+      "Central Africa",
+      "Southern Africa",
+      "Horn of Africa"
+    ],
+    "adaptation": "UN M49 has Northern, Western, Middle/Central, Eastern and Southern Africa. NCDC separately names Horn of Africa, so this pack separates Djibouti, Eritrea, Ethiopia and Somalia from UN Eastern Africa into Horn of Africa for P7 teaching alignment.",
+    "territoryPolicy": "Learner-facing country tables should focus on sovereign African countries. Territories/disputed areas from UN M49, such as Western Sahara, Mayotte, Réunion, Saint Helena and British Indian Ocean Territory, should be mentioned only if the lesson explicitly discusses territories, not in the main P7 country/capital memorisation table."
+  },
+  "regions": [
+    {
+      "region": "Northern Africa",
+      "sourceBasis": "NCDC region name + UN M49 Northern Africa, sovereign-country focus",
+      "countries": [
+        { "country": "Algeria", "capital": "Algiers", "status": "candidate-current" },
+        { "country": "Egypt", "capital": "Cairo", "status": "candidate-current" },
+        { "country": "Libya", "capital": "Tripoli", "status": "candidate-current" },
+        { "country": "Morocco", "capital": "Rabat", "status": "candidate-current" },
+        { "country": "Sudan", "capital": "Khartoum", "status": "candidate-current" },
+        { "country": "Tunisia", "capital": "Tunis", "status": "candidate-current" }
+      ]
+    },
+    {
+      "region": "West Africa",
+      "sourceBasis": "NCDC region name + UN M49 Western Africa, sovereign-country focus",
+      "countries": [
+        { "country": "Benin", "capital": "Porto-Novo", "note": "Cotonou is the seat of government/economic centre in many references.", "status": "candidate-current-needs-teacher-note" },
+        { "country": "Burkina Faso", "capital": "Ouagadougou", "status": "candidate-current" },
+        { "country": "Cabo Verde (Cape Verde)", "capital": "Praia", "status": "candidate-current" },
+        { "country": "Côte d'Ivoire", "capital": "Yamoussoukro", "note": "Abidjan is the major economic/administrative centre in many references.", "status": "candidate-current-needs-teacher-note" },
+        { "country": "The Gambia", "capital": "Banjul", "status": "candidate-current" },
+        { "country": "Ghana", "capital": "Accra", "status": "candidate-current" },
+        { "country": "Guinea", "capital": "Conakry", "status": "candidate-current" },
+        { "country": "Guinea-Bissau", "capital": "Bissau", "status": "candidate-current" },
+        { "country": "Liberia", "capital": "Monrovia", "status": "candidate-current" },
+        { "country": "Mali", "capital": "Bamako", "status": "candidate-current" },
+        { "country": "Mauritania", "capital": "Nouakchott", "status": "candidate-current" },
+        { "country": "Niger", "capital": "Niamey", "status": "candidate-current" },
+        { "country": "Nigeria", "capital": "Abuja", "status": "candidate-current" },
+        { "country": "Senegal", "capital": "Dakar", "status": "candidate-current" },
+        { "country": "Sierra Leone", "capital": "Freetown", "status": "candidate-current" },
+        { "country": "Togo", "capital": "Lomé", "status": "candidate-current" }
+      ]
+    },
+    {
+      "region": "Central Africa",
+      "sourceBasis": "NCDC region name + UN M49 Middle Africa as Central Africa, sovereign-country focus",
+      "countries": [
+        { "country": "Angola", "capital": "Luanda", "status": "candidate-current" },
+        { "country": "Cameroon", "capital": "Yaoundé", "status": "candidate-current" },
+        { "country": "Central African Republic", "capital": "Bangui", "status": "candidate-current" },
+        { "country": "Chad", "capital": "N'Djamena", "status": "candidate-current" },
+        { "country": "Republic of the Congo", "capital": "Brazzaville", "status": "candidate-current" },
+        { "country": "Democratic Republic of the Congo", "capital": "Kinshasa", "status": "candidate-current" },
+        { "country": "Equatorial Guinea", "capital": "Ciudad de la Paz", "note": "Capital changed from Malabo in 2026 according to current references. Older Ugandan materials may still say Malabo; must be reviewed before learner publishing.", "status": "candidate-current-high-risk-change" },
+        { "country": "Gabon", "capital": "Libreville", "status": "candidate-current" },
+        { "country": "São Tomé and Príncipe", "capital": "São Tomé", "status": "candidate-current" }
+      ]
+    },
+    {
+      "region": "Southern Africa",
+      "sourceBasis": "NCDC region name + UN M49 Southern Africa, sovereign-country focus",
+      "countries": [
+        { "country": "Botswana", "capital": "Gaborone", "status": "candidate-current" },
+        { "country": "Eswatini", "capital": "Mbabane", "note": "Lobamba is the royal/legislative capital in many references.", "status": "candidate-current-needs-teacher-note" },
+        { "country": "Lesotho", "capital": "Maseru", "status": "candidate-current" },
+        { "country": "Namibia", "capital": "Windhoek", "status": "candidate-current" },
+        { "country": "South Africa", "capital": "Pretoria", "note": "South Africa has three capitals: Pretoria administrative, Cape Town legislative, Bloemfontein judicial. P7 answer convention must be decided.", "status": "candidate-current-needs-teacher-note" }
+      ]
+    },
+    {
+      "region": "Horn of Africa",
+      "sourceBasis": "NCDC region name + Britannica/common definition",
+      "countries": [
+        { "country": "Djibouti", "capital": "Djibouti", "status": "candidate-current" },
+        { "country": "Eritrea", "capital": "Asmara", "status": "candidate-current" },
+        { "country": "Ethiopia", "capital": "Addis Ababa", "status": "candidate-current" },
+        { "country": "Somalia", "capital": "Mogadishu", "status": "candidate-current" }
+      ]
+    },
+    {
+      "region": "East Africa",
+      "sourceBasis": "NCDC region name + UN M49 Eastern Africa after separating Horn of Africa for NCDC alignment, sovereign-country focus",
+      "countries": [
+        { "country": "Burundi", "capital": "Gitega", "note": "Older references may say Bujumbura; current capital is Gitega.", "status": "candidate-current-needs-teacher-note" },
+        { "country": "Comoros", "capital": "Moroni", "status": "candidate-current" },
+        { "country": "Kenya", "capital": "Nairobi", "status": "candidate-current" },
+        { "country": "Madagascar", "capital": "Antananarivo", "status": "candidate-current" },
+        { "country": "Malawi", "capital": "Lilongwe", "status": "candidate-current" },
+        { "country": "Mauritius", "capital": "Port Louis", "status": "candidate-current" },
+        { "country": "Mozambique", "capital": "Maputo", "status": "candidate-current" },
+        { "country": "Rwanda", "capital": "Kigali", "status": "candidate-current" },
+        { "country": "Seychelles", "capital": "Victoria", "status": "candidate-current" },
+        { "country": "South Sudan", "capital": "Juba", "status": "candidate-current" },
+        { "country": "Tanzania", "capital": "Dodoma", "status": "candidate-current" },
+        { "country": "Uganda", "capital": "Kampala", "status": "candidate-current" },
+        { "country": "Zambia", "capital": "Lusaka", "status": "candidate-current" },
+        { "country": "Zimbabwe", "capital": "Harare", "status": "candidate-current" }
+      ]
+    }
+  ],
+  "africanIslandCountriesForP7": {
+    "status": "candidate-list-needs-teacher-review",
+    "sourceBasis": "Common recognised independent African island countries; cross-check with UN SIDS/island-country references and current capital sources.",
+    "items": [
+      { "country": "Cabo Verde (Cape Verde)", "capital": "Praia", "ocean": "Atlantic Ocean" },
+      { "country": "Comoros", "capital": "Moroni", "ocean": "Indian Ocean" },
+      { "country": "Madagascar", "capital": "Antananarivo", "ocean": "Indian Ocean" },
+      { "country": "Mauritius", "capital": "Port Louis", "ocean": "Indian Ocean" },
+      { "country": "São Tomé and Príncipe", "capital": "São Tomé", "ocean": "Atlantic Ocean" },
+      { "country": "Seychelles", "capital": "Victoria", "ocean": "Indian Ocean" }
+    ],
+    "teachingNote": "Teach these as common independent African island countries. Do not mix them with non-sovereign territories unless the lesson explicitly explains territories."
+  },
+  "reviewIssuesBeforePublishing": [
+    "Confirm whether P7 learners should memorise all 54 sovereign countries or a shorter representative list per region.",
+    "Confirm whether NCDC/UNEB expects Equatorial Guinea as Malabo in school materials or current Ciudad de la Paz after 2026 change.",
+    "Confirm answer convention for South Africa's capital: Pretoria only or all three capitals.",
+    "Confirm whether East Africa in P7 should be UN Eastern Africa minus Horn, or narrower EAC/East Africa from P6 plus island states elsewhere.",
+    "Confirm whether island countries should be taught as the six independent African island countries only."
+  ]
+}
