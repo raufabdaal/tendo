@@ -145,6 +145,33 @@ Topic 1 application practice rewrite completed:
 Topic 1 learner-flow rewrite is now complete under the curriculum-intelligence direction. Topic 2 has now started.
 
 
+
+## SCREENED RICH SOURCE CONTENT METHOD
+
+Founder/partner review found the vertical chain pilot can still feel too dry/shallow. New method:
+
+```txt
+Use rich school-style content → screen every point → keep/rewrite/source-check/move/remove → child-friendly module
+```
+
+Created:
+
+- `docs/spec/screened-source-content-method-2026-07-15.md`
+
+Updated with founder permission:
+
+- `docs/spec/content-mindset-lock-2026-07-15.md`
+- `docs/spec/learner-content-three-layer-standard-2026-07-15.md`
+- `docs/spec/vertical-structural-chain-content-pilot-2026-07-15.md`
+
+New learner module target:
+
+```txt
+Friendly explanation + structured answer chain + exam booster + practice
+```
+
+Next recommended action: rework Topic 1 pilot again using this screened rich source method, starting from the partner content Rauf provided.
+
 ## VERTICAL STRUCTURAL CHAIN LEARNER-LAYOUT PILOT
 
 Founder identified that even corrected content may still be too paragraph-heavy for children. New learner-facing layout rule:

@@ -98,6 +98,10 @@ P7 SST Topic 5 `people-ethnic-groups-settlement` has started under the curriculu
 ### Vertical structural chain learner-layout pilot — 2026-07-15
 Founder noticed that source-aligned content can still be too paragraph-heavy for P7 learners. A new learner-facing presentation pilot has been created: `docs/spec/vertical-structural-chain-content-pilot-2026-07-15.md`. Topic 1 `location-of-africa` has been converted across all subtopics to vertical structural chain style: short labelled answer points such as Meaning, Map tools, Example, Exam point and Step. The curriculum-intelligence evidence layer remains full; the learner screen is now shorter, scannable and exam-usable. Build passed with 413 static pages.
 
+
+### Screened rich source content method — 2026-07-15
+Founder review found that the vertical chain pilot is clearer but can still feel too dry/shallow for children if used alone. New method documented in `docs/spec/screened-source-content-method-2026-07-15.md`: use rich school-style content from partner/founder/textbooks, screen every point, then publish only what is NCDC-aligned, age-appropriate and useful. The learner module target is now friendly explanation + structured answer chain + exam booster + practice. The special mindset lock was explicitly updated with this rule.
+
 ### Current active milestone
 **NCDC-native v4 migration has reached P3–P7 structurally.**
 

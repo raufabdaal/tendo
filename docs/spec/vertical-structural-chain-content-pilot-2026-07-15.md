@@ -193,3 +193,35 @@ The correct target is both:
 ```txt
 NCDC-aligned + child-readable + exam-usable
 ```
+
+---
+
+## Update — vertical chains must not become dry labels only
+
+The vertical chain format is useful, but it must not become too mechanical.
+
+Avoid modules that only feel like:
+
+```txt
+Meaning:
+P7 focus:
+Map tools:
+Exam point:
+```
+
+Better:
+
+```txt
+Short teacher explanation:
+A map is a drawing of a place as seen from above.
+
+Then vertical chain:
+- shows location
+- shows direction
+- shows distance
+- shows features
+```
+
+The chain should support understanding, not replace teaching.
+
+Use rich source content, screen it, then convert it into child-friendly structured modules.

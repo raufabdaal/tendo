@@ -1,5 +1,24 @@
 # CHANGELOG — Tendo
 
+## v1.8.103 — 2026-07-15 — Screened rich source content method documented
+
+**Session theme:** Founder review found the vertical chain pilot is clearer but can still feel too dry/shallow for children. The content process now accepts rich school-style source content, but screens it before publishing.
+
+### Added
+- `docs/spec/screened-source-content-method-2026-07-15.md`
+
+### Updated
+- `docs/spec/content-mindset-lock-2026-07-15.md`
+- `docs/spec/learner-content-three-layer-standard-2026-07-15.md`
+- `docs/spec/vertical-structural-chain-content-pilot-2026-07-15.md`
+
+### New rule
+- Do not blindly paste partner/textbook/founder content.
+- Do not over-compress learner content into dry labels.
+- Screen rich source content using labels: `KEEP_CORE`, `KEEP_EXAM_BOOSTER`, `KEEP_PRACTICE`, `REWRITE_SIMPLER`, `SOURCE_CHECK`, `MOVE_EXTENSION`, `REMOVE`.
+- Build learner modules with friendly explanation + structured answer chain + exam booster + practice.
+
+---
 ## v1.8.102 — 2026-07-15 — Topic 1 vertical structural chain learner-layout pilot
 
 **Session theme:** Improve learner-facing readability after founder noticed paragraph-style content may still be too hard for primary learners.

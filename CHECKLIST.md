@@ -98,6 +98,9 @@
 - [x] Create vertical structural chain learner-layout pilot spec
 - [x] Convert Topic 1 `location-of-africa` to vertical structural chain layout across all subtopics
 - [x] Build passed after Topic 1 vertical chain pilot (`npm install && npm run build`, 413 static pages)
+- [x] Document screened rich source content method after founder/partner content-depth review
+- [x] Update content mindset lock with screened source method
+- [ ] Rework Topic 1 pilot again using screened rich source method: friendly explanation + answer chain + exam booster + practice
 - [ ] Review Topic 1 on-device/phone for readability and spacing
 - [x] Start Topic 2 source-intelligence audit: `physical-features-of-africa`
 - [x] Create Topic 2 evidence notes, blueprint, QA checklist and audit note

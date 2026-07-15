@@ -237,3 +237,70 @@ Do not rewrite the same topic repeatedly without first fixing the evidence/sourc
 The goal is not more content.
 
 The goal is trustworthy, complete, NCDC-aligned learning content.
+
+---
+
+## 2026-07-15 update — screened rich content method
+
+Rauf explicitly approved editing this document to capture the next content correction.
+
+The vertical structural chain layout helped readability, but by itself it can become too dry and too compressed for children. Labels such as “Meaning”, “P7 focus”, “Map tools” and “Exam point” are clear, but they can feel mechanical if there is no friendly teacher explanation.
+
+The new rule is:
+
+> Use rich school-style content, but screen it before publishing.
+
+We should not blindly paste partner/textbook/founder content. But we also should not write shallow checklist content from scratch when richer school-style material exists.
+
+Correct process:
+
+```txt
+NCDC source
+→ rich school-style source notes
+→ screen every point
+→ keep / rewrite / source-check / move extension / remove
+→ child-friendly module
+→ exam booster
+→ practice questions
+```
+
+Screening labels:
+
+- `KEEP_CORE` — directly required by NCDC.
+- `KEEP_EXAM_BOOSTER` — useful for school exams and source-supported.
+- `KEEP_PRACTICE` — good question/answer practice.
+- `REWRITE_SIMPLER` — good idea, wording too advanced.
+- `SOURCE_CHECK` — useful but needs verification.
+- `MOVE_EXTENSION` — true/useful but not core.
+- `REMOVE` — unsupported, misleading, too advanced, or not needed.
+
+The learner module should now combine:
+
+```txt
+Friendly explanation
+Structured answer chain
+Examples
+Exam booster
+Practice / marking-guide style answer
+```
+
+This is the new balance:
+
+```txt
+Not shallow.
+Not overloaded.
+Not blindly pasted.
+Not dry checklist labels only.
+```
+
+The goal remains:
+
+```txt
+NCDC-aligned + child-friendly + exam-useful
+```
+
+Reference spec:
+
+```txt
+docs/spec/screened-source-content-method-2026-07-15.md
+```

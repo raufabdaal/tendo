@@ -145,3 +145,37 @@ Core → Booster → Practice
 ```
 
 That is how Tendo will be both child-friendly and exam-useful.
+
+---
+
+## Update — three layers need friendly explanation too
+
+The three-layer model should not make the learner screen dry.
+
+Each module should start with a short friendly explanation before the answer chain where needed.
+
+Improved shape:
+
+```txt
+Friendly explanation:
+A map is a drawing of a place as seen from above. It helps us know where places are found.
+
+Key answer points:
+- shows location
+- shows direction
+- shows distance
+- shows features
+
+Exam booster:
+The Equator crosses Africa.
+
+Practice:
+Q: What is a map?
+A: A drawing of a place as seen from above.
+```
+
+So the final model is:
+
+```txt
+Friendly explanation + answer chain + exam booster + practice
+```

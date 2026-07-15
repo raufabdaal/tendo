@@ -112,429 +112,270 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
         "Uganda is in East Africa.",
       ],
     },
-        subtopics: [
+            subtopics: [
       {
         subtopicId: "location-position-africa",
-        title: "1. Location and position of Africa using major lines of latitudes and longitudes",
+        title: "1. Location and position of Africa using lines of latitudes and longitudes",
         modules: [
           {
-            moduleId: "africa-on-world-map",
-            title: "Africa on the World Map",
-            bigIdea: "Africa is studied in P7 as a continent on the world map and in relation to other continents, oceans and seas.",
+            moduleId: "location-meaning-types",
+            title: "Location and Types of Location",
+            bigIdea: "Location tells us where a place is found. In map work, P7 learners use both absolute and relative location.",
             learnIt: [
-              "<strong class=\"kw\">Meaning:</strong> Africa is one of the seven continents of the world.",
-              "<strong class=\"kw\">P7 focus:</strong> location, countries, regions, map lines, oceans and nearby continents.",
-              "<strong class=\"kw\">Map tools:</strong> world map/globe, compass directions, latitudes and longitudes.",
-              "<strong class=\"kw\">Example:</strong> Europe is north of Africa; the Atlantic Ocean is west of Africa.",
-              "<strong class=\"kw\">Exam point:</strong> Do not just say Africa is on the map. Use directions and nearby features."
+              "A map helps us find where places are. When we study Africa, we need to explain where the continent is found on the world map.",
+              "Meaning: Location is the place where a country, continent or feature is found.",
+              "Type 1: Absolute location means finding a place using lines of latitude and longitude.",
+              "Type 2: Relative location means finding a place using nearby countries, continents, oceans, seas or other features.",
+              "Example of relative location: Africa is south of Europe, west of the Indian Ocean and east of the Atlantic Ocean.",
+              "Exam booster: Africa stretches across both sides of the Equator and both sides of the Prime Meridian. This helps explain its special map position.",
+              "Practice Q: What is absolute location? Marking-style answer: finding the position of a place using lines of latitude and longitude."
             ],
-            tryThis: { question: "Which tools help a learner locate Africa on a world map?", choices: ["A globe, compass directions, latitudes and longitudes", "Only a ruler", "Only country flags", "Only rainfall figures"], correct: 0, explanation: "NCDC expects learners to use a globe/world map, compass directions, latitudes and longitudes to locate Africa." }
+            tryThis: { question: "What is relative location?", choices: ["Finding a place using nearby places or water bodies", "Finding a place using only rainfall", "Finding a place using only a clock", "Naming continents by size"], correct: 0, explanation: "Relative location uses neighbours, water bodies or nearby features to describe where a place is found." }
           },
           {
-            moduleId: "latitude-longitude-position-keywords",
-            title: "Latitude, Longitude and Position",
-            bigIdea: "Latitude and longitude are map lines used to describe the position of places.",
+            moduleId: "lines-of-latitude-friendly",
+            title: "Lines of Latitude",
+            bigIdea: "Lines of latitude help us know whether a place is north or south of the Equator.",
             learnIt: [
-              "<strong class=\"kw\">Position:</strong> where a place is found on a map or globe.",
-              "<strong class=\"kw\">Latitude:</strong> imaginary lines running west to east; they show north or south of the Equator.",
-              "<strong class=\"kw\">Longitude:</strong> imaginary lines running north to south; they show east or west of the Prime Meridian.",
-              "<strong class=\"kw\">Main latitude:</strong> Equator, marked 0° latitude.",
-              "<strong class=\"kw\">Main longitude:</strong> Prime Meridian, marked 0° longitude."
+              "Imagine a world map with lines drawn across it from west to east. These are lines of latitude.",
+              "Meaning: Lines of latitude are imaginary lines drawn from west to east on a map. They help measure distance north or south of the Equator.",
+              "Main line: The Equator is marked 0°. It divides the world into the Northern Hemisphere and Southern Hemisphere.",
+              "Other important lines: Tropic of Cancer is 23½° North; Tropic of Capricorn is 23½° South.",
+              "Africa is crossed by the Equator, Tropic of Cancer and Tropic of Capricorn. This is a high-yield map fact.",
+              "Use: Latitude helps locate places and helps explain climate zones such as the tropics.",
+              "Exam trap: Latitudes are parallel lines. They do not meet at the poles."
             ],
-            tryThis: { question: "Which statement correctly describes lines of latitude?", choices: ["They help show how far north or south a place is", "They are capital cities", "They are oceans around Africa", "They are types of vegetation"], correct: 0, explanation: "Latitude lines help show position north or south of the Equator." }
+            tryThis: { question: "Which line of latitude is marked 0°?", choices: ["Equator", "Prime Meridian", "Red Sea", "Atlantic Ocean"], correct: 0, explanation: "The Equator is the main line of latitude and is marked 0°." }
           },
           {
-            moduleId: "equator-tropics-prime-meridian-africa",
-            title: "Equator, Tropics and Prime Meridian",
-            bigIdea: "Africa is crossed by important map lines that help learners describe its position accurately.",
+            moduleId: "lines-of-longitude-friendly",
+            title: "Lines of Longitude",
+            bigIdea: "Lines of longitude help us know whether a place is east or west of the Prime Meridian.",
             learnIt: [
-              "<strong class=\"kw\">Equator:</strong> 0° latitude; divides the earth into Northern and Southern Hemispheres.",
-              "<strong class=\"kw\">Prime Meridian:</strong> 0° longitude; divides the earth into Eastern and Western Hemispheres.",
-              "<strong class=\"kw\">Tropic of Cancer:</strong> important latitude north of the Equator; crosses North Africa.",
-              "<strong class=\"kw\">Tropic of Capricorn:</strong> important latitude south of the Equator; crosses Southern Africa.",
-              "<strong class=\"kw\">Map task:</strong> draw Africa and label the Equator and Prime Meridian clearly."
+              "Now imagine lines drawn from the North Pole to the South Pole. These are lines of longitude.",
+              "Meaning: Lines of longitude are imaginary lines drawn from north to south on a map. They help measure distance east or west of the Prime Meridian.",
+              "Main line: The Prime Meridian is marked 0° longitude. It is also called the Greenwich Meridian.",
+              "Africa is crossed by the Prime Meridian. It passes through West Africa near Ghana.",
+              "Use: Longitude helps locate places east or west of the Prime Meridian. In higher map work it can also help with time differences, but Topic 1 should first focus on location.",
+              "Exam trap: Longitudes are not parallel. They meet at the North Pole and South Pole.",
+              "Practice Q: Which line is 0° longitude? Marking-style answer: Prime Meridian."
             ],
-            tryThis: { question: "Which line is 0° longitude?", choices: ["Prime Meridian", "Equator", "Tropic of Cancer", "Tropic of Capricorn"], correct: 0, explanation: "The Prime Meridian is 0° longitude. The Equator is 0° latitude." }
+            tryThis: { question: "What does longitude help us find?", choices: ["How far east or west a place is", "How much rainfall falls", "The name of a capital city", "The size of a continent only"], correct: 0, explanation: "Longitude helps show whether a place is east or west of the Prime Meridian." }
           },
           {
-            moduleId: "locating-africa-compass-directions",
-            title: "Locating Africa Using Compass Directions",
-            bigIdea: "Compass directions help learners state where other continents, oceans and seas are from Africa.",
+            moduleId: "africa-map-position-exam-booster",
+            title: "Exam Booster: Africa's Special Map Position",
+            bigIdea: "Some map facts about Africa are common in school exams and help learners answer quickly.",
             learnIt: [
-              "<strong class=\"kw\">Compass directions:</strong> north, south, east, west, north-east, south-east, south-west and north-west.",
-              "<strong class=\"kw\">Europe:</strong> north of Africa.",
-              "<strong class=\"kw\">Asia:</strong> north-east/east of Africa.",
-              "<strong class=\"kw\">Atlantic Ocean:</strong> west of Africa.",
-              "<strong class=\"kw\">Indian Ocean:</strong> east/south-east of Africa.",
-              "<strong class=\"kw\">Exam sentence:</strong> The Atlantic Ocean lies to the west of Africa."
+              "Africa is the only continent crossed by the Equator, Tropic of Cancer and Tropic of Capricorn.",
+              "The Equator crosses countries such as Uganda, Kenya, Somalia, Gabon, Republic of Congo and Democratic Republic of Congo.",
+              "Uganda is crossed by the Equator. A well-known Equator landmark is at Kayabwe in Mpigi District.",
+              "The Tropic of Cancer crosses northern African countries such as Western Sahara, Mauritania, Mali, Algeria, Niger, Libya and Egypt.",
+              "The Tropic of Capricorn crosses southern African countries such as Namibia, Botswana, South Africa, Mozambique and Madagascar.",
+              "Source-check note: exact coordinate limits of Africa and longitude-time calculations should stay as extension/source-check content unless required by the teacher."
             ],
-            tryThis: { question: "Which water body lies west of Africa?", choices: ["Atlantic Ocean", "Indian Ocean", "Red Sea", "Arctic Ocean"], correct: 0, explanation: "The Atlantic Ocean lies to the west of Africa." }
-          },
-          {
-            moduleId: "map-drawing-activity-africa-lines",
-            title: "Map Drawing Activity: Africa, Regions and Lines",
-            bigIdea: "NCDC expects learners to practise drawing maps and showing regions, latitudes and longitudes.",
-            learnIt: [
-              "<strong class=\"kw\">Step 1:</strong> draw a simple outline map of Africa.",
-              "<strong class=\"kw\">Step 2:</strong> label the Equator and Prime Meridian.",
-              "<strong class=\"kw\">Step 3:</strong> show the regions of Africa: West, East, Northern, Central, Southern and Horn of Africa.",
-              "<strong class=\"kw\">Step 4:</strong> add a north arrow or compass direction mark.",
-              "<strong class=\"kw\">Marking guide:</strong> clear labels are more important than decoration."
-            ],
-            tryThis: { question: "Which item should appear on a good P7 map of Africa for this topic?", choices: ["Regions, latitude lines and longitude lines", "Only football teams", "Only rainfall bars", "Only animal drawings"], correct: 0, explanation: "The assessment competence includes drawing Africa showing regions, lines of latitude and lines of longitude." }
+            tryThis: { question: "Which three major latitude lines cross Africa?", choices: ["Equator, Tropic of Cancer, Tropic of Capricorn", "Prime Meridian, Suez Canal, Red Sea", "Atlantic, Indian, Arctic", "Europe, Asia, Australia"], correct: 0, explanation: "Africa is crossed by the Equator, Tropic of Cancer and Tropic of Capricorn." }
           }
-          ,
-          {
-            moduleId: "exam-booster-location-lines",
-            title: "Exam Booster: Location, Latitude and Longitude",
-            bigIdea: "Exam booster points turn the core lesson into short answers a P7 learner can revise and use.",
-            learnIt: [
-              "<strong class=\"kw\">Absolute location:</strong> finding a place using lines of latitude and longitude.",
-              "<strong class=\"kw\">Relative location:</strong> finding a place using neighbours, oceans, seas or nearby features.",
-              "<strong class=\"kw\">Africa's map position:</strong> crossed by the Equator, Tropic of Cancer, Tropic of Capricorn and Prime Meridian.",
-              "<strong class=\"kw\">Latitude use:</strong> shows north or south of the Equator and helps explain climate zones.",
-              "<strong class=\"kw\">Longitude use:</strong> shows east or west of the Prime Meridian.",
-              "<strong class=\"kw\">Practice Q:</strong> What is absolute location?",
-              "<strong class=\"kw\">Marking answer:</strong> finding the position of a place using latitude and longitude."
-            ],
-            tryThis: { question: "Which answer best defines relative location?", choices: ["Finding a place using nearby places or water bodies", "Finding a place using only rainfall", "Finding time using a clock", "Naming a continent by size"], correct: 0, explanation: "Relative location describes where a place is by using nearby places, neighbours or water bodies." }
-          }]
+        ]
       },
       {
         subtopicId: "world-continents-sizes",
         title: "2. World continents and their sizes",
         modules: [
           {
-            moduleId: "continents-of-the-world",
-            title: "Continents of the World",
-            bigIdea: "A continent is one of the largest land masses of the world, and Africa is one of the seven continents.",
+            moduleId: "continent-meaning-list-friendly",
+            title: "World Continents",
+            bigIdea: "A continent is a very large land mass. Africa is one of the seven continents.",
             learnIt: [
-              "<strong class=\"kw\">Continent:</strong> a very large land mass on the earth.",
-              "<strong class=\"kw\">Seven continents:</strong> Asia, Africa, North America, South America, Antarctica, Europe and Australia.",
-              "<strong class=\"kw\">Africa:</strong> the continent where Uganda is found.",
-              "<strong class=\"kw\">Spelling trap:</strong> Australia is a continent; Austria is a country in Europe.",
-              "<strong class=\"kw\">Map task:</strong> point to Africa, Europe, Asia, Australia and the Americas on a world map."
+              "When you look at a globe, you see large masses of land separated by oceans and seas. These large land masses are called continents.",
+              "Meaning: A continent is a very large mass of land on the earth's surface.",
+              "The seven continents are Asia, Africa, North America, South America, Antarctica, Europe and Australia.",
+              "Africa is the continent where Uganda is found.",
+              "Spelling trap: Australia is a continent. Austria is a country in Europe.",
+              "Practice Q: Name any three continents. Marking-style answer: Asia, Africa and Europe."
             ],
-            tryThis: { question: "Which list contains only continents?", choices: ["Asia, Africa, Europe", "Uganda, Kenya, Tanzania", "Nile, Congo, Niger", "Atlantic, Indian, Arctic"], correct: 0, explanation: "Asia, Africa and Europe are continents. Uganda, Kenya and Tanzania are countries; Nile, Congo and Niger are rivers; Atlantic, Indian and Arctic are oceans." }
+            tryThis: { question: "Which list contains only continents?", choices: ["Asia, Africa, Europe", "Uganda, Kenya, Tanzania", "Nile, Congo, Niger", "Atlantic, Indian, Arctic"], correct: 0, explanation: "Asia, Africa and Europe are continents." }
           },
           {
-            moduleId: "continents-size-order",
+            moduleId: "continent-size-order-friendly",
             title: "Continents in Order of Size",
-            bigIdea: "NCDC expects P7 learners to identify the continents of the world and arrange them in order of size.",
+            bigIdea: "P7 learners should know the continents and arrange them from largest to smallest.",
             learnIt: [
-              "<strong class=\"kw\">Largest to smallest:</strong> Asia, Africa, North America, South America, Antarctica, Europe, Australia.",
-              "<strong class=\"kw\">Largest:</strong> Asia.",
-              "<strong class=\"kw\">Second largest:</strong> Africa.",
-              "<strong class=\"kw\">Smallest:</strong> Australia.",
-              "<strong class=\"kw\">Memory chain:</strong> Asia → Africa → North America → South America → Antarctica → Europe → Australia."
+              "The continents in order of size from largest to smallest are: Asia, Africa, North America, South America, Antarctica, Europe and Australia.",
+              "Asia is the largest continent in the world.",
+              "Africa is the second largest continent in the world.",
+              "Australia is the smallest continent.",
+              "Antarctica is the coldest continent and is covered by ice.",
+              "Exam trap: learners often confuse Europe and Asia because they are physically connected as Eurasia, but they are studied as separate continents.",
+              "Practice Q: Which continent is second largest? Marking-style answer: Africa."
             ],
-            tryThis: { question: "Which continent is second largest in the world?", choices: ["Africa", "Asia", "Europe", "Australia"], correct: 0, explanation: "The NCDC size order places Asia first and Africa second." },
-            workedExample: { question: "Arrange these continents from largest to smallest: Africa, Asia, Europe, North America.", steps: ["Asia is largest.", "Africa is second largest.", "North America is larger than Europe.", "Final order: Asia, Africa, North America, Europe."], answer: "Asia, Africa, North America, Europe." }
-          },
-          {
-            moduleId: "continent-map-practice",
-            title: "Map Practice: Finding Continents",
-            bigIdea: "Learners understand Africa better when they locate it among other continents on a world map or globe.",
-            learnIt: [
-              "<strong class=\"kw\">Find Africa:</strong> point to Africa on a world map or globe.",
-              "<strong class=\"kw\">North of Africa:</strong> Europe.",
-              "<strong class=\"kw\">North-east/east of Africa:</strong> Asia.",
-              "<strong class=\"kw\">Across the Atlantic:</strong> South America is to the west/south-west side of Africa.",
-              "<strong class=\"kw\">Exam sentence:</strong> Africa is south of Europe and west of the Indian Ocean."
-            ],
-            tryThis: { question: "Which continent is north of Africa across the Mediterranean Sea?", choices: ["Europe", "Australia", "Antarctica", "South America"], correct: 0, explanation: "Europe lies north of Africa across the Mediterranean Sea." }
+            tryThis: { question: "Which continent is the second largest?", choices: ["Africa", "Asia", "Europe", "Australia"], correct: 0, explanation: "Africa is the second largest continent after Asia." }
           }
-          ,
-          {
-            moduleId: "exam-booster-continents-size",
-            title: "Exam Booster: Continents and Size Order",
-            bigIdea: "Learners should know both the continent names and the order by size.",
-            learnIt: [
-              "<strong class=\"kw\">Largest continent:</strong> Asia.",
-              "<strong class=\"kw\">Second largest:</strong> Africa.",
-              "<strong class=\"kw\">Smallest continent:</strong> Australia.",
-              "<strong class=\"kw\">Coldest continent:</strong> Antarctica.",
-              "<strong class=\"kw\">Size order:</strong> Asia → Africa → North America → South America → Antarctica → Europe → Australia.",
-              "<strong class=\"kw\">Practice Q:</strong> Arrange Africa, Europe, Asia and North America from largest to smallest.",
-              "<strong class=\"kw\">Marking answer:</strong> Asia, Africa, North America, Europe."
-            ],
-            tryThis: { question: "Which continent is the smallest?", choices: ["Australia", "Africa", "Asia", "Europe"], correct: 0, explanation: "In the NCDC size order, Australia is the smallest continent." }
-          }]
+        ]
       },
       {
         subtopicId: "water-bodies-africa",
         title: "3. Water bodies that surround Africa",
         modules: [
           {
-            moduleId: "oceans-around-africa",
-            title: "Oceans Around Africa",
-            bigIdea: "NCDC expects P7 learners to name the water bodies that surround Africa.",
+            moduleId: "oceans-seas-around-africa-friendly",
+            title: "Oceans and Seas Around Africa",
+            bigIdea: "Africa is surrounded by important oceans and seas that learners must locate on a map.",
             learnIt: [
-              "<strong class=\"kw\">Ocean:</strong> a very large body of salty water.",
-              "<strong class=\"kw\">World ocean list:</strong> Atlantic, Pacific, Arctic and Indian oceans.",
-              "<strong class=\"kw\">West of Africa:</strong> Atlantic Ocean.",
-              "<strong class=\"kw\">East/south-east of Africa:</strong> Indian Ocean.",
-              "<strong class=\"kw\">Exam point:</strong> Pacific and Arctic are world oceans, but they do not directly border mainland Africa like the Atlantic and Indian oceans."
+              "Water bodies are important in locating Africa because they form natural boundaries and separate Africa from other continents.",
+              "Ocean: a very large body of salty water. The Atlantic Ocean is west of Africa. The Indian Ocean is east and south-east of Africa.",
+              "Sea: a large body of salty water, usually smaller than an ocean. The Mediterranean Sea is north of Africa. The Red Sea is north-east of Africa.",
+              "The Mediterranean Sea separates North Africa from Europe.",
+              "The Red Sea separates north-eastern Africa from the Arabian Peninsula side of Asia.",
+              "Exam trap: Atlantic = west; Indian = east/south-east. Do not interchange them."
             ],
-            tryThis: { question: "Which two oceans directly border Africa?", choices: ["Atlantic and Indian", "Pacific and Arctic", "Arctic and Southern", "Pacific and Mediterranean"], correct: 0, explanation: "Africa is bordered mainly by the Atlantic Ocean to the west and the Indian Ocean to the east." }
+            tryThis: { question: "Which ocean lies west of Africa?", choices: ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"], correct: 0, explanation: "The Atlantic Ocean lies west of Africa." }
           },
           {
-            moduleId: "seas-around-africa",
-            title: "Seas Around Africa",
-            bigIdea: "The Mediterranean Sea and Red Sea are the two seas named in the official P7 Topic 1 content.",
+            moduleId: "water-bodies-exam-booster-friendly",
+            title: "Exam Booster: Channels, Canals and Gulfs",
+            bigIdea: "School map questions often include nearby channels, canals and gulfs around Africa.",
             learnIt: [
-              "<strong class=\"kw\">Sea:</strong> a large body of salty water, usually smaller than an ocean and partly enclosed by land.",
-              "<strong class=\"kw\">North of Africa:</strong> Mediterranean Sea.",
-              "<strong class=\"kw\">North-east of Africa:</strong> Red Sea.",
-              "<strong class=\"kw\">Mediterranean Sea:</strong> separates North Africa from Europe.",
-              "<strong class=\"kw\">Writing tip:</strong> write full names: Mediterranean Sea and Red Sea."
+              "Mozambique Channel: separates Madagascar from mainland Africa.",
+              "Suez Canal: a man-made waterway connecting the Mediterranean Sea to the Red Sea. It shortens the sea route between Europe and Asia.",
+              "Strait of Gibraltar: connects the Atlantic Ocean to the Mediterranean Sea and separates Africa from Europe at the north-western side.",
+              "Gulf of Guinea: a large gulf or bend on the western coast of Africa.",
+              "These are exam booster/map facts. Learn them after the main oceans and seas.",
+              "Practice Q: What separates Madagascar from mainland Africa? Marking-style answer: Mozambique Channel."
             ],
-            tryThis: { question: "Which sea lies north of Africa and separates Africa from Europe?", choices: ["Mediterranean Sea", "Red Sea", "Indian Ocean", "Pacific Ocean"], correct: 0, explanation: "The Mediterranean Sea lies north of Africa, between North Africa and Europe." }
+            tryThis: { question: "Which water body separates Madagascar from mainland Africa?", choices: ["Mozambique Channel", "Red Sea", "Suez Canal", "Gulf of Guinea"], correct: 0, explanation: "The Mozambique Channel separates Madagascar from mainland Africa." }
           },
           {
-            moduleId: "directions-of-water-bodies-from-africa",
-            title: "Compass Directions of Water Bodies from Africa",
-            bigIdea: "Learners should name water bodies and state their compass directions from Africa.",
+            moduleId: "water-bodies-practice-friendly",
+            title: "Practice: Water Bodies Around Africa",
+            bigIdea: "Short-answer practice helps learners remember map facts quickly.",
             learnIt: [
-              "<strong class=\"kw\">Atlantic Ocean:</strong> west of Africa.",
-              "<strong class=\"kw\">Indian Ocean:</strong> east and south-east of Africa.",
-              "<strong class=\"kw\">Mediterranean Sea:</strong> north of Africa.",
-              "<strong class=\"kw\">Red Sea:</strong> north-east of Africa.",
-              "<strong class=\"kw\">Exam sentence:</strong> The Red Sea lies to the north-east of Africa."
+              "Q: Name the ocean west of Africa. A: Atlantic Ocean.",
+              "Q: Name the ocean east of Africa. A: Indian Ocean.",
+              "Q: Which sea is north of Africa? A: Mediterranean Sea.",
+              "Q: Which sea is north-east of Africa? A: Red Sea.",
+              "Q: What connects the Mediterranean Sea to the Red Sea? A: Suez Canal.",
+              "Q: What connects the Atlantic Ocean to the Mediterranean Sea? A: Strait of Gibraltar."
             ],
-            tryThis: { question: "Which water body lies north-east of Africa?", choices: ["Red Sea", "Atlantic Ocean", "Pacific Ocean", "Arctic Ocean"], correct: 0, explanation: "The Red Sea lies to the north-east of Africa." }
+            tryThis: { question: "Which waterway connects the Mediterranean Sea to the Red Sea?", choices: ["Suez Canal", "Mozambique Channel", "Gulf of Guinea", "Lake Chad"], correct: 0, explanation: "The Suez Canal connects the Mediterranean Sea to the Red Sea." }
           }
-          ,
-          {
-            moduleId: "exam-booster-water-bodies",
-            title: "Exam Booster: Water Bodies Around Africa",
-            bigIdea: "School exams often test oceans, seas and key channels around Africa on maps.",
-            learnIt: [
-              "<strong class=\"kw\">Atlantic Ocean:</strong> west of Africa.",
-              "<strong class=\"kw\">Indian Ocean:</strong> east and south-east of Africa.",
-              "<strong class=\"kw\">Mediterranean Sea:</strong> north of Africa; separates Africa from Europe.",
-              "<strong class=\"kw\">Red Sea:</strong> north-east of Africa.",
-              "<strong class=\"kw\">Mozambique Channel:</strong> separates Madagascar from mainland Africa. Mark as exam booster/support fact.",
-              "<strong class=\"kw\">Suez Canal:</strong> connects the Mediterranean Sea to the Red Sea. Mark as exam booster/support fact.",
-              "<strong class=\"kw\">Strait of Gibraltar:</strong> connects the Atlantic Ocean to the Mediterranean Sea. Mark as exam booster/support fact.",
-              "<strong class=\"kw\">Practice Q:</strong> Name the sea north of Africa.",
-              "<strong class=\"kw\">Marking answer:</strong> Mediterranean Sea."
-            ],
-            tryThis: { question: "Which water body separates Madagascar from mainland Africa?", choices: ["Mozambique Channel", "Red Sea", "Arctic Ocean", "Lake Ngami"], correct: 0, explanation: "The Mozambique Channel separates Madagascar from mainland Africa. This is an exam booster/map fact." }
-          }]
+        ]
       },
       {
         subtopicId: "regions-africa",
         title: "4. Regions that make up Africa",
         modules: [
           {
-            moduleId: "six-regions-of-africa",
-            title: "The Six Regions of Africa",
-            bigIdea: "NCDC names six regions that make up Africa for this P7 topic.",
+            moduleId: "regions-africa-friendly",
+            title: "Regions of Africa",
+            bigIdea: "Regions help learners group African countries and locate places more easily.",
             learnIt: [
-              "<strong class=\"kw\">Region:</strong> a part or area of a larger place.",
-              "<strong class=\"kw\">Six regions:</strong> West Africa, East Africa, Northern Africa, Central Africa, Southern Africa and Horn of Africa.",
-              "<strong class=\"kw\">Uganda:</strong> studied under East Africa.",
-              "<strong class=\"kw\">Horn of Africa:</strong> horn-shaped area on the eastern side of Africa.",
-              "<strong class=\"kw\">Writing tip:</strong> use capital letters for region names."
+              "A region is a part of a larger place. Africa is divided into regions so that countries can be studied more easily.",
+              "The six NCDC regions are West Africa, East Africa, Northern Africa, Central Africa, Southern Africa and Horn of Africa.",
+              "Uganda is studied under East Africa.",
+              "Horn of Africa is the horn-shaped part on the eastern side of Africa.",
+              "Map task: draw Africa and label the six regions using simple positions: north, south, west, east, centre and horn."
             ],
-            tryThis: { question: "Which list contains only regions named in the P7 Topic 1 content?", choices: ["West Africa, East Africa, Northern Africa", "Pacific, Atlantic, Indian", "Asia, Europe, Australia", "Nile, Congo, Zambezi"], correct: 0, explanation: "West Africa, East Africa and Northern Africa are regions of Africa. The other options list oceans, continents or rivers." }
+            tryThis: { question: "Which region is Uganda commonly studied under?", choices: ["East Africa", "Northern Africa", "West Africa", "Southern Africa"], correct: 0, explanation: "Uganda is commonly studied under East Africa." }
           },
           {
-            moduleId: "locating-african-regions-on-map",
-            title: "Locating African Regions on a Map",
-            bigIdea: "Learners should not only name regions; they should also know where the regions are found on a map of Africa.",
+            moduleId: "regions-exam-booster-friendly",
+            title: "Exam Booster: Countries and Regions",
+            bigIdea: "Region questions often ask learners to match countries to regions.",
             learnIt: [
-              "<strong class=\"kw\">Northern Africa:</strong> north of Africa.",
-              "<strong class=\"kw\">Southern Africa:</strong> south of Africa.",
-              "<strong class=\"kw\">West Africa:</strong> west of Africa.",
-              "<strong class=\"kw\">East Africa:</strong> east of Africa.",
-              "<strong class=\"kw\">Central Africa:</strong> middle part of Africa.",
-              "<strong class=\"kw\">Horn of Africa:</strong> eastern projection towards the Red Sea, Gulf of Aden and Indian Ocean side."
+              "East Africa: Uganda, Kenya, Tanzania, Rwanda and South Sudan are common school-first examples.",
+              "West Africa: Nigeria, Ghana, Senegal, Mali and Liberia are common examples.",
+              "Northern Africa: Egypt, Sudan, Morocco, Libya and Tunisia are common examples.",
+              "Central Africa: D.R. Congo, Cameroon, Angola, Chad and Gabon are common examples.",
+              "Southern Africa: South Africa, Botswana, Namibia, Zambia and Zimbabwe are common examples.",
+              "Horn of Africa: Ethiopia, Somalia, Eritrea and Djibouti are common examples."
             ],
-            tryThis: { question: "Which region is found near the middle of Africa?", choices: ["Central Africa", "Northern Africa", "Southern Africa", "West Africa"], correct: 0, explanation: "Central Africa is found near the middle of the African continent." }
-          },
-          {
-            moduleId: "regions-countries-link",
-            title: "Regions Help Us Group Countries",
-            bigIdea: "Regions prepare learners to list countries and capital cities in the next subtopic.",
-            learnIt: [
-              "<strong class=\"kw\">Continent:</strong> Africa.",
-              "<strong class=\"kw\">Region:</strong> East Africa, West Africa, Northern Africa and others.",
-              "<strong class=\"kw\">Country:</strong> Uganda, Kenya, Nigeria, Egypt and others.",
-              "<strong class=\"kw\">Capital city:</strong> Kampala, Nairobi, Abuja, Cairo and others.",
-              "<strong class=\"kw\">Exam chain:</strong> Africa → East Africa → Uganda → Kampala."
-            ],
-            tryThis: { question: "What is the relationship between Africa, East Africa, Uganda and Kampala?", choices: ["Continent, region, country, capital city", "Country, capital, ocean, river", "Region, continent, sea, country", "Capital, country, continent, ocean"], correct: 0, explanation: "Africa is a continent, East Africa is a region, Uganda is a country and Kampala is a capital city." }
+            tryThis: { question: "In which region is Nigeria commonly studied?", choices: ["West Africa", "East Africa", "Southern Africa", "Horn of Africa"], correct: 0, explanation: "Nigeria is commonly studied under West Africa." }
           }
-          ,
-          {
-            moduleId: "exam-booster-regions-africa",
-            title: "Exam Booster: Regions of Africa",
-            bigIdea: "Region questions usually test naming, locating and matching countries to regions.",
-            learnIt: [
-              "<strong class=\"kw\">Six regions:</strong> West, East, Northern, Central, Southern and Horn of Africa.",
-              "<strong class=\"kw\">Uganda:</strong> East Africa.",
-              "<strong class=\"kw\">Nigeria:</strong> West Africa.",
-              "<strong class=\"kw\">Egypt:</strong> Northern Africa.",
-              "<strong class=\"kw\">D.R. Congo:</strong> Central Africa.",
-              "<strong class=\"kw\">South Africa:</strong> Southern Africa.",
-              "<strong class=\"kw\">Somalia/Ethiopia/Eritrea/Djibouti:</strong> Horn of Africa.",
-              "<strong class=\"kw\">Practice Q:</strong> In which region is Egypt found?",
-              "<strong class=\"kw\">Marking answer:</strong> Northern Africa."
-            ],
-            tryThis: { question: "Which country is in West Africa?", choices: ["Nigeria", "Uganda", "Egypt", "Botswana"], correct: 0, explanation: "Nigeria is commonly studied under West Africa." }
-          }]
+        ]
       },
       {
         subtopicId: "countries-capitals-africa",
         title: "5. Countries in each region and their capital cities",
         modules: [
           {
-            moduleId: "country-capital-region-meaning",
-            title: "Countries, Regions and Capital Cities",
-            bigIdea: "NCDC expects P7 learners to list countries in African regions and name their capital cities.",
+            moduleId: "countries-capitals-friendly",
+            title: "Countries and Capital Cities",
+            bigIdea: "A country-capital pair must be written clearly and correctly.",
             learnIt: [
-              "<strong class=\"kw\">Country:</strong> an independent state with its own government, people and borders.",
-              "<strong class=\"kw\">Capital city:</strong> the main administrative city of a country.",
-              "<strong class=\"kw\">Region:</strong> a part of Africa used to group countries for study.",
-              "<strong class=\"kw\">Answer order:</strong> region → country → capital city.",
-              "<strong class=\"kw\">Example:</strong> East Africa → Uganda → Kampala."
+              "Country: an independent state with its own government, people and borders.",
+              "Capital city: the main administrative city of a country.",
+              "Answer pattern: Country — Capital city.",
+              "Example: Uganda — Kampala. Kenya — Nairobi. Tanzania — Dodoma.",
+              "When a question asks for countries in a region, do not mix regions. Keep East African countries together, West African countries together, and so on."
             ],
-            tryThis: { question: "Which pair correctly shows a country and its capital city?", choices: ["Uganda — Kampala", "Africa — Kampala", "Nile — Cairo", "Indian Ocean — Nairobi"], correct: 0, explanation: "Uganda is a country and Kampala is its capital city. Africa is a continent, the Nile is a river and the Indian Ocean is an ocean." }
+            tryThis: { question: "Which pair is correct?", choices: ["Uganda — Kampala", "Uganda — Nairobi", "Kenya — Dodoma", "Ghana — Juba"], correct: 0, explanation: "Uganda's capital city is Kampala." }
           },
           {
-            moduleId: "school-first-countries-capitals-by-region",
-            title: "School-First Countries and Capitals by Region",
-            bigIdea: "Learners should first master a smaller P7 school list before using a full reference table.",
+            moduleId: "school-first-capitals-friendly",
+            title: "School-First Country and Capital Examples",
+            bigIdea: "Learners first master a manageable school list before using a full reference table.",
             learnIt: [
-              "<strong class=\"kw\">East Africa:</strong> Uganda—Kampala; Kenya—Nairobi; Tanzania—Dodoma; Rwanda—Kigali; South Sudan—Juba.",
-              "<strong class=\"kw\">Horn of Africa:</strong> Ethiopia—Addis Ababa; Somalia—Mogadishu; Eritrea—Asmara; Djibouti—Djibouti.",
-              "<strong class=\"kw\">West Africa:</strong> Nigeria—Abuja; Ghana—Accra; Senegal—Dakar; Mali—Bamako; Liberia—Monrovia.",
-              "<strong class=\"kw\">Northern Africa:</strong> Egypt—Cairo; Sudan—Khartoum; Morocco—Rabat; Libya—Tripoli; Tunisia—Tunis.",
-              "<strong class=\"kw\">Central Africa:</strong> D.R. Congo—Kinshasa; Cameroon—Yaoundé; Angola—Luanda; Chad—N'Djamena; Gabon—Libreville.",
-              "<strong class=\"kw\">Southern Africa:</strong> South Africa—Pretoria; Botswana—Gaborone; Namibia—Windhoek; Zambia—Lusaka; Zimbabwe—Harare."
+              "East Africa: Uganda—Kampala; Kenya—Nairobi; Tanzania—Dodoma; Rwanda—Kigali; South Sudan—Juba.",
+              "West Africa: Nigeria—Abuja; Ghana—Accra; Senegal—Dakar; Mali—Bamako; Liberia—Monrovia.",
+              "Northern Africa: Egypt—Cairo; Sudan—Khartoum; Morocco—Rabat; Libya—Tripoli; Tunisia—Tunis.",
+              "Central Africa: D.R. Congo—Kinshasa; Cameroon—Yaoundé; Angola—Luanda; Chad—N'Djamena; Gabon—Libreville.",
+              "Southern Africa: South Africa—Pretoria; Botswana—Gaborone; Namibia—Windhoek; Zambia—Lusaka; Zimbabwe—Harare.",
+              "Horn of Africa: Ethiopia—Addis Ababa; Somalia—Mogadishu; Eritrea—Asmara; Djibouti—Djibouti."
             ],
-            tryThis: { question: "What is the capital city of Kenya?", choices: ["Nairobi", "Kampala", "Dodoma", "Kigali"], correct: 0, explanation: "Kenya is an East African country and its capital city is Nairobi." }
+            tryThis: { question: "What is the capital city of Ghana?", choices: ["Accra", "Abuja", "Nairobi", "Cairo"], correct: 0, explanation: "Ghana's capital city is Accra." }
           },
           {
-            moduleId: "islands-part-of-africa-school-first",
+            moduleId: "african-islands-friendly",
             title: "Islands Which Are Part of Africa",
-            bigIdea: "NCDC expects learners to name islands which are part of Africa, so learners should know common African island countries.",
+            bigIdea: "NCDC expects learners to name islands which are part of Africa.",
             learnIt: [
-              "<strong class=\"kw\">Island:</strong> land surrounded by water.",
-              "<strong class=\"kw\">Common African island countries:</strong> Madagascar, Mauritius, Seychelles, Comoros, Cabo Verde, São Tomé and Príncipe.",
-              "<strong class=\"kw\">Indian Ocean side:</strong> Madagascar, Mauritius, Seychelles, Comoros.",
-              "<strong class=\"kw\">Atlantic Ocean side:</strong> Cabo Verde, São Tomé and Príncipe.",
-              "<strong class=\"kw\">Capital examples:</strong> Madagascar—Antananarivo; Mauritius—Port Louis; Seychelles—Victoria."
+              "Island: land surrounded by water.",
+              "Common African island countries: Madagascar, Mauritius, Seychelles, Comoros, Cabo Verde and São Tomé and Príncipe.",
+              "Madagascar is separated from mainland Africa by the Mozambique Channel.",
+              "Indian Ocean side examples: Madagascar, Mauritius, Seychelles and Comoros.",
+              "Atlantic Ocean side examples: Cabo Verde and São Tomé and Príncipe.",
+              "Practice Q: Name one African island country. A: Madagascar / Mauritius / Seychelles / Comoros / Cabo Verde / São Tomé and Príncipe."
             ],
-            tryThis: { question: "Which of these is an African island country?", choices: ["Madagascar", "Uganda", "Mali", "Chad"], correct: 0, explanation: "Madagascar is an island country in the Indian Ocean side of Africa." }
-          },
-          {
-            moduleId: "capital-city-answer-practice",
-            title: "Answering Country and Capital City Questions",
-            bigIdea: "Good P7 answers are clear, correctly paired and grouped by region where needed.",
-            learnIt: [
-              "<strong class=\"kw\">Pair format:</strong> country — capital city.",
-              "<strong class=\"kw\">Correct:</strong> Ghana — Accra.",
-              "<strong class=\"kw\">Wrong:</strong> Ghana — Nairobi.",
-              "<strong class=\"kw\">Region check:</strong> do not mix countries from different regions when the question asks for one region.",
-              "<strong class=\"kw\">Spelling tip:</strong> practise difficult names slowly: Antananarivo, Ouagadougou, N'Djamena."
-            ],
-            tryThis: { question: "Which answer is correctly grouped under West Africa?", choices: ["Nigeria — Abuja", "Kenya — Nairobi", "Egypt — Cairo", "Botswana — Gaborone"], correct: 0, explanation: "Nigeria is in West Africa and Abuja is its capital city." }
+            tryThis: { question: "Which of these is an African island country?", choices: ["Seychelles", "Uganda", "Mali", "Chad"], correct: 0, explanation: "Seychelles is an African island country." }
           }
-          ,
-          {
-            moduleId: "exam-booster-countries-capitals-islands",
-            title: "Exam Booster: Countries, Capitals and Islands",
-            bigIdea: "Country-capital questions need fast recall and correct pairing.",
-            learnIt: [
-              "<strong class=\"kw\">Uganda:</strong> Kampala.",
-              "<strong class=\"kw\">Kenya:</strong> Nairobi.",
-              "<strong class=\"kw\">Tanzania:</strong> Dodoma.",
-              "<strong class=\"kw\">Nigeria:</strong> Abuja.",
-              "<strong class=\"kw\">Ghana:</strong> Accra.",
-              "<strong class=\"kw\">Egypt:</strong> Cairo.",
-              "<strong class=\"kw\">Madagascar:</strong> Antananarivo; island country.",
-              "<strong class=\"kw\">Seychelles:</strong> Victoria; island country.",
-              "<strong class=\"kw\">Practice Q:</strong> What is the capital city of Ghana?",
-              "<strong class=\"kw\">Marking answer:</strong> Accra."
-            ],
-            tryThis: { question: "Which country-capital pair is correct?", choices: ["Egypt — Cairo", "Kenya — Accra", "Ghana — Juba", "Uganda — Dodoma"], correct: 0, explanation: "Egypt's capital city is Cairo." }
-          }]
+        ]
       },
       {
         subtopicId: "premium-map-answering",
         title: "Practice: Answering Topic 1 Map Questions",
         modules: [
           {
-            moduleId: "map-answering-read-the-task",
-            title: "Step 1: Read the Map Question Carefully",
-            bigIdea: "A good map answer starts by identifying exactly what the question is asking for.",
+            moduleId: "topic1-practice-short-answers",
+            title: "Short-Answer Practice: Topic 1",
+            bigIdea: "Short-answer practice helps learners turn content into exam-ready answers.",
             learnIt: [
-              "<strong class=\"kw\">Name:</strong> give the correct place or feature.",
-              "<strong class=\"kw\">Locate:</strong> say or show where it is found.",
-              "<strong class=\"kw\">Draw:</strong> make a simple labelled map or diagram.",
-              "<strong class=\"kw\">Identify direction:</strong> use north, south, east, west or another compass direction.",
-              "<strong class=\"kw\">Pair:</strong> country first, capital city second. Example: Uganda — Kampala."
+              "Q: What is location? A: The place where something is found.",
+              "Q: What is absolute location? A: Finding a place using latitude and longitude.",
+              "Q: What is relative location? A: Finding a place using nearby places or water bodies.",
+              "Q: Name the ocean west of Africa. A: Atlantic Ocean.",
+              "Q: Name the sea north of Africa. A: Mediterranean Sea.",
+              "Q: Name the second largest continent. A: Africa.",
+              "Q: Name one African island country. A: Madagascar / Mauritius / Seychelles / Comoros / Cabo Verde / São Tomé and Príncipe."
             ],
-            tryThis: { question: "A question says: 'Identify the ocean west of Africa.' What must your answer include?", choices: ["The name of the ocean and its direction", "Only a capital city", "Only a continent size", "Only a vegetation type"], correct: 0, explanation: "The question asks for an ocean and gives a direction clue, so the answer should name the Atlantic Ocean and connect it to west of Africa." }
+            tryThis: { question: "Which answer is correct?", choices: ["Africa is the second largest continent", "Africa is the smallest continent", "Australia is the largest continent", "Europe is south of Africa"], correct: 0, explanation: "Africa is the second largest continent after Asia." }
           },
           {
-            moduleId: "drawing-africa-regions-lines",
-            title: "Step 2: Draw Africa with Regions and Lines",
-            bigIdea: "NCDC assessment expects learners to draw Africa showing regions and major latitude/longitude lines.",
+            moduleId: "topic1-structured-map-practice",
+            title: "Structured Map Practice: Topic 1",
+            bigIdea: "Structured practice prepares learners for map questions with several parts.",
             learnIt: [
-              "<strong class=\"kw\">Map outline:</strong> draw a simple recognisable shape of Africa.",
-              "<strong class=\"kw\">Regions:</strong> label West, East, Northern, Central, Southern and Horn of Africa.",
-              "<strong class=\"kw\">Lines:</strong> show the Equator and Prime Meridian.",
-              "<strong class=\"kw\">Direction:</strong> add a north arrow or compass mark.",
-              "<strong class=\"kw\">Marking tip:</strong> neat labels score better than decoration."
+              "Study a sketch map of Africa and answer:",
+              "1. Name the ocean marked west of Africa. Answer: Atlantic Ocean.",
+              "2. Name the sea marked north of Africa. Answer: Mediterranean Sea.",
+              "3. Name the channel between Madagascar and mainland Africa. Answer: Mozambique Channel.",
+              "4. Name one line of latitude crossing Africa. Answer: Equator / Tropic of Cancer / Tropic of Capricorn.",
+              "5. Name one region of Africa. Answer: East Africa / West Africa / Northern Africa / Central Africa / Southern Africa / Horn of Africa.",
+              "Exam trap: read the direction carefully before naming the water body. West means Atlantic, not Indian."
             ],
-            tryThis: { question: "Which item should be included when drawing Africa for this Topic 1 assessment?", choices: ["Regions and latitude/longitude lines", "Only animals", "Only rivers from Topic 2", "Only climate regions from Topic 3"], correct: 0, explanation: "NCDC assessment mentions drawing Africa showing regions, lines of latitude and lines of longitude." }
-          },
-          {
-            moduleId: "answering-direction-questions",
-            title: "Step 3: Answer Direction Questions",
-            bigIdea: "Direction answers should name the place or water body and state where it is from Africa.",
-            learnIt: [
-              "<strong class=\"kw\">Atlantic Ocean:</strong> west of Africa.",
-              "<strong class=\"kw\">Indian Ocean:</strong> east/south-east of Africa.",
-              "<strong class=\"kw\">Mediterranean Sea:</strong> north of Africa.",
-              "<strong class=\"kw\">Red Sea:</strong> north-east of Africa.",
-              "<strong class=\"kw\">Europe:</strong> north of Africa."
-            ],
-            tryThis: { question: "Which is the best answer to: 'Where is Europe from Africa?'", choices: ["Europe is north of Africa", "Europe is inside Africa", "Europe is a sea", "Europe is the capital of Africa"], correct: 0, explanation: "Europe lies to the north of Africa across the Mediterranean Sea." }
-          },
-          {
-            moduleId: "countries-capitals-islands-practice",
-            title: "Step 4: Practise Countries, Capitals and Islands",
-            bigIdea: "Topic 1 practice should help learners pair countries with capitals and identify African island countries.",
-            learnIt: [
-              "<strong class=\"kw\">Country-capital pair:</strong> Ghana — Accra.",
-              "<strong class=\"kw\">East Africa pair:</strong> Kenya — Nairobi.",
-              "<strong class=\"kw\">Island example:</strong> Madagascar.",
-              "<strong class=\"kw\">Region check:</strong> Nigeria belongs to West Africa, not East Africa.",
-              "<strong class=\"kw\">Practice task:</strong> write three East African countries and three West African countries with capitals."
-            ],
-            tryThis: { question: "Which pair is correct?", choices: ["Ghana — Accra", "Egypt — Nairobi", "Uganda — Dakar", "Madagascar — Kampala"], correct: 0, explanation: "Ghana is a West African country and Accra is its capital city." }
+            tryThis: { question: "On a map, which ocean should be labelled west of Africa?", choices: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"], correct: 0, explanation: "The Atlantic Ocean is west of Africa." }
           }
-          ,
-          {
-            moduleId: "marking-guide-style-topic1-practice",
-            title: "Marking-Guide Style Practice: Topic 1",
-            bigIdea: "Short-answer practice helps learners turn knowledge into exam-ready answers.",
-            learnIt: [
-              "<strong class=\"kw\">Q1:</strong> Name the ocean west of Africa. <strong class=\"kw\">A:</strong> Atlantic Ocean.",
-              "<strong class=\"kw\">Q2:</strong> Which sea separates Africa from Europe? <strong class=\"kw\">A:</strong> Mediterranean Sea.",
-              "<strong class=\"kw\">Q3:</strong> Name the second largest continent. <strong class=\"kw\">A:</strong> Africa.",
-              "<strong class=\"kw\">Q4:</strong> Name the smallest continent. <strong class=\"kw\">A:</strong> Australia.",
-              "<strong class=\"kw\">Q5:</strong> What is absolute location? <strong class=\"kw\">A:</strong> finding a place using latitude and longitude.",
-              "<strong class=\"kw\">Q6:</strong> Name one African island country. <strong class=\"kw\">A:</strong> Madagascar / Mauritius / Seychelles / Comoros / Cabo Verde / São Tomé and Príncipe.",
-              "<strong class=\"kw\">Exam trap:</strong> Atlantic is west; Indian is east. Do not interchange them."
-            ],
-            tryThis: { question: "Which short answer is correct?", choices: ["Atlantic Ocean is west of Africa", "Indian Ocean is west of Africa", "Europe is south of Africa", "Australia is the largest continent"], correct: 0, explanation: "The Atlantic Ocean lies west of Africa." }
-          }]
+        ]
       }
     ],
     quiz: [
