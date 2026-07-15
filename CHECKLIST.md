@@ -80,7 +80,23 @@
 - [x] Rewrite Topic 1 Subtopic 1 `location-position-africa` from source-backed blueprint
 - [x] Remove unsupported longitude/local-time calculation from Topic 1 Subtopic 1 pending source/extension decision
 - [x] Build passed after Topic 1 Subtopic 1 rewrite (`npm run build`, 413 static pages)
-- [ ] Rewrite Topic 1 Subtopic 2 `world-continents-sizes` from source-backed blueprint
+- [x] Rewrite Topic 1 Subtopic 2 `world-continents-sizes` from source-backed blueprint
+- [x] Remove unsupported `continents-uses-importance` filler module
+- [x] Build passed after Topic 1 Subtopic 2 rewrite (`npm run build`, 413 static pages)
+- [x] Rewrite Topic 1 Subtopic 3 `water-bodies-africa` from source-backed blueprint
+- [x] Remove marine gateways/channels from Topic 1 core water-bodies subtopic pending source/extension decision
+- [x] Build passed after Topic 1 Subtopic 3 rewrite (`npm run build`, 413 static pages)
+- [x] Rewrite Topic 1 Subtopic 4 `regions-africa` from source-backed blueprint
+- [x] Remove broad region uses/importance filler from Topic 1 core regions subtopic
+- [x] Build passed after Topic 1 Subtopic 4 rewrite (`npm run build`, 413 static pages)
+- [x] Rewrite Topic 1 Subtopic 5 `countries-capitals-africa` using shorter P7 school-first approach
+- [x] Remove broad country/capital uses/importance and landlocked/coastal filler from Topic 1 core subtopic
+- [x] Build passed after Topic 1 Subtopic 5 rewrite (`npm run build`, 413 static pages)
+- [x] Rewrite Topic 1 application subtopic `premium-map-answering` around NCDC assessment competences
+- [x] Build passed after Topic 1 application subtopic rewrite (`npm run build`, 413 static pages)
+- [x] Topic 1 learner-flow rewrite complete across official subtopics and application practice under curriculum-intelligence direction
+- [ ] Review Topic 1 on-device/phone for readability and spacing
+- [ ] Decide next target: Topic 2 source-intelligence audit or Topic 1 final polish after review
 - [ ] Fill verified evidence notes for Topic 5: `people-ethnic-groups-settlement`
 - [ ] Start Topic 5 strict formatting: `people-ethnic-groups-settlement` only after evidence notes are ready
 - [x] Strict-format Topic 2 application subtopic: `premium-physical-features-application`

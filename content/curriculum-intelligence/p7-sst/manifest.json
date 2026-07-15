@@ -77,34 +77,37 @@
           "appSubtopicIds": [
             "water-bodies-africa"
           ],
-          "evidenceStatus": "verified-from-ncdc-pages"
+          "evidenceStatus": "verified-from-ncdc-pages-and-rewritten",
+          "notes": "Subtopic rewritten to focus on NCDC-required oceans, seas and compass directions. Marine gateways/channels removed pending source/extension decision."
         },
         {
           "officialSubtopic": "Regions that make up Africa",
           "appSubtopicIds": [
             "regions-africa"
           ],
-          "evidenceStatus": "verified-from-ncdc-pages"
+          "evidenceStatus": "verified-from-ncdc-pages-and-rewritten",
+          "notes": "Subtopic rewritten to focus on the six NCDC-named regions and map-location practice. Broad uses/importance filler removed."
         },
         {
           "officialSubtopic": "Countries in each region and their capital cities",
           "appSubtopicIds": [
             "countries-capitals-africa"
           ],
-          "evidenceStatus": "candidate-reference-pack-created-needs-teacher-review",
-          "notes": "Candidate country/capital pack exists, using NCDC region names, UN M49 baseline and current capital cross-checks. Not learner-approved until review issues are settled."
+          "evidenceStatus": "school-first-draft-published-needs-teacher-review",
+          "notes": "Learner flow now uses a shorter P7 school-first list by region. Full reference pack remains support material and still needs teacher/founder review for special capital cases."
         },
         {
           "officialSubtopic": "Islands which are part of Africa",
           "appSubtopicIds": [
             "countries-capitals-africa"
           ],
-          "evidenceStatus": "candidate-reference-pack-created-needs-teacher-review",
-          "notes": "Candidate independent African island country list exists. Needs teacher/founder approval before publishing."
+          "evidenceStatus": "school-first-draft-published-needs-teacher-review",
+          "notes": "Learner flow now teaches common African island countries and capitals. Full reference pack remains support material and still needs teacher/founder review."
         }
       ],
       "qaStatus": "audit-started-not-approved-for-final",
-      "referencePackFile": "content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/reference-countries-capitals-islands.json"
+      "referencePackFile": "content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/reference-countries-capitals-islands.json",
+      "topic1Policy": "shorter-p7-school-first-main-flow-with-full-reference-pack-as-support"
     },
     {
       "topicId": "physical-features-of-africa",

@@ -204,673 +204,338 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
           }
         ]
       },
-      {
+            {
         subtopicId: "world-continents-sizes",
         title: "2. World continents and their sizes",
         modules: [
           {
-            moduleId: "world-continents-meaning-types",
-            title: "World Continents and Their Types",
-            bigIdea: "A continent is a very large landmass on the earth's surface, and continents may be inhabited or uninhabited.",
+            moduleId: "continents-of-the-world",
+            title: "Continents of the World",
+            bigIdea: "A continent is one of the largest land masses of the world, and Africa is one of the seven continents.",
             learnIt: [
-              "### World Continents and Their Sizes",
-              "<strong class=\"kw\">Continent</strong>:",
-              "Is a massive, continuous landmass on the earth's surface separated from others by vast oceans.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Inhabited continents</strong> permanently support human settlement and population.",
-              "* <strong class=\"kw\">Uninhabited continents</strong> do not permanently support human life.",
-              "<strong class=\"kw\">Inhabited continents</strong>:",
-              "Are continents that permanently support human settlement and population due to favorable climate and resources.",
-              "<strong class=\"kw\">Uninhabited continents</strong>:",
-              "Are continents that do not support permanent human life due to extreme weather conditions like freezing cold.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Asia</strong> is the largest continent.",
-              "* <strong class=\"kw\">Africa</strong> is the second-largest continent.",
-              "* <strong class=\"kw\">North America</strong> is the third-largest continent.",
-              "* <strong class=\"kw\">South America</strong> is the fourth-largest continent.",
-              "* <strong class=\"kw\">Antarctica</strong> is the fifth-largest continent and is uninhabited.",
-              "* <strong class=\"kw\">Europe</strong> is the sixth-largest continent.",
-              "* <strong class=\"kw\">Australia</strong> is the smallest continent."
+              "A continent is a very large land mass on the earth. The world is commonly taught as having seven continents.",
+              "The seven continents are Asia, Africa, North America, South America, Antarctica, Europe and Australia.",
+              "Africa is the continent where Uganda is found. In this topic, learners compare Africa with the other continents on the world map.",
+              "When naming continents in P7, spell the names carefully. Do not confuse Australia the continent with Austria the country in Europe."
             ],
             tryThis: {
-              question: "What is a continent?",
-              choices: ["A massive continuous landmass separated from others by vast oceans", "A small lake surrounded by land", "A type of weather condition", "A group of villages in one district"],
+              question: "Which list contains only continents?",
+              choices: ["Asia, Africa, Europe", "Uganda, Kenya, Tanzania", "Nile, Congo, Niger", "Atlantic, Indian, Arctic"],
               correct: 0,
-              explanation: "A continent is a massive, continuous landmass on the earth's surface separated from others by vast oceans."
+              explanation: "Asia, Africa and Europe are continents. Uganda, Kenya and Tanzania are countries; Nile, Congo and Niger are rivers; Atlantic, Indian and Arctic are oceans."
             }
           },
           {
-            moduleId: "continents-uses-importance",
-            title: "Uses, Importances, Advantages and Disadvantages of Continents",
-            bigIdea: "Continents provide land, resources and habitats, but they also experience challenges such as natural disasters and unequal resource distribution.",
+            moduleId: "continents-size-order",
+            title: "Continents in Order of Size",
+            bigIdea: "NCDC expects P7 learners to identify the continents of the world and arrange them in order of size.",
             learnIt: [
-              "### Uses, Importances, Advantages and Disadvantages",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Settlement</strong> provides land for human settlement and urbanization.",
-              "* <strong class=\"kw\">Agriculture</strong> offers fertile grounds for growing food crops.",
-              "* <strong class=\"kw\">Mining</strong> supplies mineral resources for economic growth.",
-              "* <strong class=\"kw\">Habitats</strong> host diverse wildlife and vegetation.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Political boundaries</strong> define different sovereign nations.",
-              "* <strong class=\"kw\">Climate patterns</strong> are influenced by geographic positioning.",
-              "* <strong class=\"kw\">Trade unions</strong> are fostered among neighboring countries.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Terrestrial ecosystems</strong> get a stable foundation to thrive.",
-              "* <strong class=\"kw\">Raw materials</strong> power manufacturing industries.",
-              "* <strong class=\"kw\">Geographical mapping</strong> and population tracking become simpler.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Tectonic movements</strong> cause destructive natural disasters like earthquakes.",
-              "* <strong class=\"kw\">Unequal resource distribution</strong> leads to regional geopolitical conflicts.",
-              "* <strong class=\"kw\">Mountainous terrains</strong> hinder smooth overland transportation networks."
+              "The continents in order of size from largest to smallest are: Asia, Africa, North America, South America, Antarctica, Europe and Australia.",
+              "Africa is the second largest continent in the world after Asia. This is an important P7 fact because the topic is about Africa's position on the world map.",
+              "A simple memory line is: Asia first, Africa second, then the two Americas, Antarctica, Europe and Australia.",
+              "In an exam, if you are asked for the largest continent, answer Asia. If you are asked for the second largest continent, answer Africa."
             ],
             tryThis: {
-              question: "Which use of continents is connected to growing food crops?",
-              choices: ["Agriculture", "Tectonic movement", "Geopolitical conflict", "Mountainous terrain"],
-              correct: 0,
-              explanation: "Agriculture uses fertile land on continents to grow food crops."
-            }
-          },
-          {
-            moduleId: "continental-size-ranking",
-            title: "Continental Size Ranking",
-            bigIdea: "Continental size ranking arranges continents from the largest landmass to the smallest landmass.",
-            learnIt: [
-              "### Continental Size Ranking",
-              "<strong class=\"kw\">Continental size ranking</strong>:",
-              "Is the sequential arrangement of landmasses from the largest total surface area to the smallest.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Largest continent</strong> is Asia.",
-              "* <strong class=\"kw\">Smallest continent</strong> is Australia.",
-              "<strong class=\"kw\">Largest continent</strong>:",
-              "Is Asia, covering about 30% of the total land area of the earth.",
-              "<strong class=\"kw\">Smallest continent</strong>:",
-              "Is Australia, also called Oceania, which is the smallest individual continental mainland.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Asia</strong> is the 1st largest continent.",
-              "* <strong class=\"kw\">Africa</strong> is the 2nd largest continent.",
-              "* <strong class=\"kw\">North America</strong> is the 3rd largest continent.",
-              "* <strong class=\"kw\">South America</strong> is the 4th largest continent.",
-              "* <strong class=\"kw\">Antarctica</strong> is the 5th largest continent.",
-              "* <strong class=\"kw\">Europe</strong> is the 6th largest continent.",
-              "* <strong class=\"kw\">Australia</strong> is the 7th largest continent.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Land area data</strong> is allocated using continent size.",
-              "* <strong class=\"kw\">Population expansion</strong> is studied using continental land space.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Biodiversity</strong> is often greater in larger continents.",
-              "* <strong class=\"kw\">Resource potential</strong> is linked to continental land area.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Large continents</strong> provide extensive agricultural spaces.",
-              "* <strong class=\"kw\">Small continents</strong> make administrative governance easier across regions.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Massive continents</strong> experience extreme climatic isolation in interior regions.",
-              "* <strong class=\"kw\">Smaller continents</strong> suffer rapid resource depletion due to high density."
-            ],
-            workedExample: {
-              question: "Arrange Africa, Asia, Europe and Australia from largest to smallest.",
-              steps: [
-                "Asia is the largest continent.",
-                "Africa is the second-largest continent.",
-                "Europe is the sixth-largest continent.",
-                "Australia is the smallest continent."
-              ],
-              answer: "Asia, Africa, Europe, Australia."
-            },
-            tryThis: {
-              question: "Which continent is the second-largest in the world?",
+              question: "Which continent is second largest in the world?",
               choices: ["Africa", "Asia", "Europe", "Australia"],
               correct: 0,
-              explanation: "Africa is the second-largest continent in the world after Asia."
+              explanation: "The NCDC size order places Asia first and Africa second."
+            },
+            workedExample: {
+              question: "Arrange these continents from largest to smallest: Africa, Asia, Europe, North America.",
+              steps: [
+                "Start with the largest continent: Asia.",
+                "Africa comes second in the world size order.",
+                "North America is larger than Europe.",
+                "Write the final order clearly."
+              ],
+              answer: "Asia, Africa, North America, Europe."
             }
           },
           {
-            moduleId: "world-continents-exam-summary",
-            title: "General Exam Summary Points",
-            bigIdea: "UNEB questions often test the order of continents, special continent facts, and common traps such as Greenland and Australia.",
+            moduleId: "continent-map-practice",
+            title: "Map Practice: Finding Continents",
+            bigIdea: "Learners understand Africa better when they locate it among other continents on a world map or globe.",
             learnIt: [
-              "### General Exam Summary Points",
-              "<strong class=\"kw\">General exam summary points</strong>:",
-              "Are key facts about world continents and their sizes that learners should remember for UNEB Social Studies questions.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Africa</strong> is the second-largest continent in the world after Asia.",
-              "* <strong class=\"kw\">Asia</strong> is the largest continent by total surface area and human population.",
-              "* <strong class=\"kw\">Australia</strong> is completely surrounded by water and is called an island continent.",
-              "* <strong class=\"kw\">Antarctica</strong> is the coldest, windiest and driest continent.",
-              "* <strong class=\"kw\">Antarctica</strong> is the only completely uninhabited continent.",
-              "* <strong class=\"kw\">Ice sheets</strong> cover over 98% of Antarctica.",
-              "* <strong class=\"kw\">Antarctica</strong> holds about 70% of the world's fresh water supply.",
-              "* <strong class=\"kw\">Eurasia</strong> is the combined continuous landmass of Europe and Asia.",
-              "* <strong class=\"kw\">Ural Mountains</strong> separate Europe from Asia.",
-              "* <strong class=\"kw\">Africa</strong> has the highest number of independent countries, with 54 nations.",
-              "* <strong class=\"kw\">Algeria</strong> is the largest country in Africa by total land area.",
-              "* <strong class=\"kw\">Seychelles</strong> is the smallest country in Africa.",
-              "* <strong class=\"kw\">Greenland</strong> is the largest island in the world but is not a continent.",
-              "* <strong class=\"kw\">Equator</strong> passes through South America, Africa and Asia.",
-              "* <strong class=\"kw\">Continental drift</strong> slowly moves continents over millions of years.",
-              "* <strong class=\"kw\">Pangaea</strong> was the ancient single supercontinent.",
-              "* <strong class=\"kw\">Southern Ocean</strong> entirely surrounds Antarctica at the South Pole.",
-              "<strong class=\"kw\">UNEB Exam Trap:</strong>",
-              "* <strong class=\"kw\">Greenland</strong> is an island, not a continent.",
-              "* <strong class=\"kw\">Australia</strong> is a continent even though it is surrounded by water.",
-              "* <strong class=\"kw\">Antarctica</strong> is uninhabited because of extreme cold."
+              "Use a globe or world map to point to Africa. Then point to Europe, Asia, North America, South America, Antarctica and Australia.",
+              "Compare Africa with nearby continents. Europe is north of Africa. Asia is to the north-east/east of Africa. South America is across the Atlantic Ocean to the west/south-west of Africa.",
+              "Practise saying full map sentences: Africa is south of Europe. Africa is west of the Indian Ocean. Africa is east of the Atlantic Ocean.",
+              "This practice prepares learners for NCDC activities on locating Africa, naming continents and stating compass directions from Africa."
             ],
             tryThis: {
-              question: "Which statement is a UNEB exam trap?",
-              choices: ["Greenland is the largest island but not a continent", "Africa is the smallest continent", "Asia is smaller than Europe", "Antarctica is densely populated"],
+              question: "Which continent is north of Africa across the Mediterranean Sea?",
+              choices: ["Europe", "Australia", "Antarctica", "South America"],
               correct: 0,
-              explanation: "Greenland is the largest island in the world, but it is not a continent."
+              explanation: "Europe lies north of Africa across the Mediterranean Sea."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "water-bodies-africa",
         title: "3. Water bodies that surround Africa",
         modules: [
           {
-            moduleId: "water-bodies-meaning-types",
-            title: "Water Bodies That Surround Africa",
-            bigIdea: "Water bodies around Africa include oceans, seas, gulfs and channels that border the continent and connect it to world trade routes.",
+            moduleId: "oceans-around-africa",
+            title: "Oceans Around Africa",
+            bigIdea: "NCDC expects P7 learners to name the water bodies that surround Africa.",
             learnIt: [
-              "### Water Bodies That Surround Africa",
-              "<strong class=\"kw\">Water body</strong>:",
-              "Are large expanses of water such as oceans, seas, gulfs and channels that border and isolate a continental landmass.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Oceans</strong> are vast bodies of salt water that separate continents.",
-              "* <strong class=\"kw\">Seas</strong> are smaller salt-water bodies partly surrounded by land.",
-              "<strong class=\"kw\">Oceans</strong>:",
-              "Are vast bodies of salt water that cover the majority of the earth's surface and separate entire continents.",
-              "<strong class=\"kw\">Seas</strong>:",
-              "Are large bodies of salt water that are smaller than oceans and are partly surrounded by land.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Atlantic Ocean</strong> borders Africa in the west.",
-              "* <strong class=\"kw\">Indian Ocean</strong> borders Africa in the east and southeast.",
-              "* <strong class=\"kw\">Mediterranean Sea</strong> borders Africa in the north.",
-              "* <strong class=\"kw\">Red Sea</strong> borders Africa in the northeast."
+              "An ocean is a very large body of salty water. Oceans cover much of the earth's surface and separate continents from one another.",
+              "The oceans listed in the P7 Topic 1 content are the Atlantic Ocean, Pacific Ocean, Arctic Ocean and Indian Ocean.",
+              "The main oceans that directly border Africa are the Atlantic Ocean and the Indian Ocean. The Atlantic Ocean is on the western side of Africa. The Indian Ocean is on the eastern side of Africa.",
+              "The Pacific Ocean and Arctic Ocean are also part of the world-ocean list learners should know, but they do not directly surround mainland Africa in the same way as the Atlantic and Indian oceans."
             ],
             tryThis: {
-              question: "Which water body borders Africa in the west?",
-              choices: ["Atlantic Ocean", "Indian Ocean", "Red Sea", "Mediterranean Sea"],
+              question: "Which two oceans directly border Africa?",
+              choices: ["Atlantic and Indian", "Pacific and Arctic", "Arctic and Southern", "Pacific and Mediterranean"],
               correct: 0,
-              explanation: "The Atlantic Ocean borders Africa in the west."
+              explanation: "Africa is bordered mainly by the Atlantic Ocean to the west and the Indian Ocean to the east."
             }
           },
           {
-            moduleId: "water-bodies-uses-importance",
-            title: "Uses, Importances, Advantages and Disadvantages of Water Bodies",
-            bigIdea: "Water bodies support trade, fishing, energy and climate regulation, but they also create risks such as storms, piracy and salt-water limitations.",
+            moduleId: "seas-around-africa",
+            title: "Seas Around Africa",
+            bigIdea: "The Mediterranean Sea and Red Sea are the two seas named in the official P7 Topic 1 content.",
             learnIt: [
-              "### Uses, Importances, Advantages and Disadvantages",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Shipping routes</strong> support global maritime trade.",
-              "* <strong class=\"kw\">Fishing grounds</strong> support commercial marine fishing.",
-              "* <strong class=\"kw\">Offshore extraction</strong> supports oil and gas production from the seabed.",
-              "* <strong class=\"kw\">Tidal energy</strong> and wave power can generate electricity.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Coastal climate</strong> is regulated through maritime winds.",
-              "* <strong class=\"kw\">Natural barriers</strong> defend some coastal nations.",
-              "* <strong class=\"kw\">Evaporation</strong> supplies water vapor needed for rainfall formation.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Cheap transport</strong> carries heavy international cargo.",
-              "* <strong class=\"kw\">Coastal tourism</strong> grows through beaches and marine resorts.",
-              "* <strong class=\"kw\">Marine life</strong> supports food security.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Tropical cyclones</strong> and tsunamis destroy marine environments.",
-              "* <strong class=\"kw\">Saltwater</strong> cannot be used directly for irrigation without desalination.",
-              "* <strong class=\"kw\">Deep waters</strong> can hide maritime security threats like piracy."
+              "A sea is a large body of salty water that is usually smaller than an ocean and often partly enclosed by land.",
+              "The Mediterranean Sea lies to the north of Africa. It separates North Africa from Europe.",
+              "The Red Sea lies to the north-east of Africa. It separates north-eastern Africa from the Arabian Peninsula side of Asia.",
+              "In map questions, write full names clearly: Mediterranean Sea and Red Sea. Do not write only 'Mediterranean' or only 'Red' when naming the water body."
             ],
             tryThis: {
-              question: "Which process supplies water vapour for rainfall formation?",
-              choices: ["Evaporation", "Earthquake", "Mining", "Desalination"],
+              question: "Which sea lies north of Africa and separates Africa from Europe?",
+              choices: ["Mediterranean Sea", "Red Sea", "Indian Ocean", "Pacific Ocean"],
               correct: 0,
-              explanation: "Evaporation from water bodies supplies water vapour needed for rainfall formation."
+              explanation: "The Mediterranean Sea lies north of Africa, between North Africa and Europe."
             }
           },
           {
-            moduleId: "marine-gateways-channels",
-            title: "Marine Gateways and Channels",
-            bigIdea: "Marine gateways and channels connect larger water bodies and shorten trade routes around Africa.",
+            moduleId: "directions-of-water-bodies-from-africa",
+            title: "Compass Directions of Water Bodies from Africa",
+            bigIdea: "Learners should name water bodies and state their compass directions from Africa.",
             learnIt: [
-              "### Marine Gateways and Channels",
-              "<strong class=\"kw\">Marine gateway</strong>:",
-              "Is a narrow waterway consisting of straits, canals or channels that connects two larger bodies of water around Africa.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Natural straits</strong> are naturally formed narrow water passages.",
-              "* <strong class=\"kw\">Artificial canals</strong> are man-made channels dug for ships.",
-              "<strong class=\"kw\">Natural straits</strong>:",
-              "Are naturally formed, narrow water passages that connect two large seas or oceans.",
-              "<strong class=\"kw\">Artificial canals</strong>:",
-              "Are man-made water channels excavated to allow ships to pass directly between two water bodies to shorten trade routes.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Strait of Gibraltar</strong> connects the Atlantic Ocean to the Mediterranean Sea.",
-              "* <strong class=\"kw\">Suez Canal</strong> connects the Mediterranean Sea to the Red Sea.",
-              "* <strong class=\"kw\">Mozambique Channel</strong> separates Madagascar from mainland Africa.",
-              "* <strong class=\"kw\">Strait of Bab-el-Mandeb</strong> connects the Red Sea to the Gulf of Aden."
+              "NCDC assessment expects learners to identify compass directions of oceans and seas from Africa. This means you should answer with both the name and the direction.",
+              "The Atlantic Ocean is west of Africa. The Indian Ocean is east and south-east of Africa. The Mediterranean Sea is north of Africa. The Red Sea is north-east of Africa.",
+              "A good P7 answer uses a complete sentence: The Atlantic Ocean lies to the west of Africa. The Red Sea lies to the north-east of Africa.",
+              "Map practice: draw a simple outline of Africa, then label the Atlantic Ocean, Indian Ocean, Mediterranean Sea and Red Sea around it. Add compass arrows for north, south, east and west."
             ],
             tryThis: {
-              question: "Which marine gateway is man-made?",
-              choices: ["Suez Canal", "Strait of Gibraltar", "Mozambique Channel", "Strait of Bab-el-Mandeb"],
+              question: "Which water body lies north-east of Africa?",
+              choices: ["Red Sea", "Atlantic Ocean", "Pacific Ocean", "Arctic Ocean"],
               correct: 0,
-              explanation: "The Suez Canal is an artificial, man-made waterway in Egypt."
-            }
-          },
-          {
-            moduleId: "marine-gateways-uses-importance",
-            title: "Uses and Importance of Marine Gateways",
-            bigIdea: "Marine gateways are strategic routes for shipping, naval monitoring and regional trade.",
-            learnIt: [
-              "### Uses and Importance of Marine Gateways",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Shipping distance</strong> is shortened between Europe, Africa and Asia.",
-              "* <strong class=\"kw\">Naval monitoring</strong> is supported at strategic checkpoints.",
-              "* <strong class=\"kw\">Regional trade</strong> moves through localized transit routes.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Global trade volume</strong> is controlled through narrow gateways.",
-              "* <strong class=\"kw\">Transit revenue</strong> is earned through toll fees in countries like Egypt.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Fuel consumption</strong> is reduced for cargo ships.",
-              "* <strong class=\"kw\">Coastal ports</strong> grow into commercial business hubs.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Political conflicts</strong> can block shipping bottlenecks.",
-              "* <strong class=\"kw\">Congestion</strong> increases collision and blockage risks."
-            ],
-            tryThis: {
-              question: "Why is the Suez Canal important for shipping?",
-              choices: ["It shortens sea routes between Europe and East Africa or Asia", "It is the largest ocean", "It separates Africa from Europe in the northwest", "It is a fishing lake"],
-              correct: 0,
-              explanation: "The Suez Canal shortens maritime routes by linking the Mediterranean Sea to the Red Sea."
-            }
-          },
-          {
-            moduleId: "water-bodies-exam-summary",
-            title: "General Exam Summary Points",
-            bigIdea: "UNEB questions often test the direction of water bodies around Africa and the difference between natural and artificial waterways.",
-            learnIt: [
-              "### General Exam Summary Points",
-              "<strong class=\"kw\">General exam summary points</strong>:",
-              "Are key facts about water bodies surrounding Africa that learners should remember for UNEB Social Studies questions.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Mediterranean Sea</strong> borders Africa in the north and separates Africa from Europe.",
-              "* <strong class=\"kw\">Red Sea</strong> borders Africa in the northeast and separates Africa from Asia.",
-              "* <strong class=\"kw\">Indian Ocean</strong> borders Africa in the east and southeast.",
-              "* <strong class=\"kw\">Atlantic Ocean</strong> borders Africa in the west.",
-              "* <strong class=\"kw\">Suez Canal</strong> is a man-made waterway in Egypt.",
-              "* <strong class=\"kw\">Strait of Gibraltar</strong> connects the Atlantic Ocean to the Mediterranean Sea.",
-              "* <strong class=\"kw\">Strait of Bab-el-Mandeb</strong> connects the Red Sea to the Gulf of Aden.",
-              "* <strong class=\"kw\">Mozambique Channel</strong> separates Madagascar from mainland Africa.",
-              "* <strong class=\"kw\">Cape Agulhas</strong> is near where the Atlantic and Indian Oceans meet.",
-              "* <strong class=\"kw\">Gulf of Guinea</strong> is a major inlet of the Atlantic Ocean in West Africa.",
-              "* <strong class=\"kw\">Benguela Current</strong> causes dry conditions on the southwestern coast.",
-              "* <strong class=\"kw\">Mombasa</strong> is a key Kenyan port used by landlocked countries like Uganda.",
-              "<strong class=\"kw\">UNEB Exam Trap:</strong>",
-              "* <strong class=\"kw\">Suez Canal</strong> is artificial, but the Strait of Gibraltar is natural.",
-              "* <strong class=\"kw\">Dar es Salaam</strong> and Mombasa are coastal trade cities, not oceans.",
-              "* <strong class=\"kw\">Landlocked countries</strong> rely on coastal ports to access world oceans."
-            ],
-            tryThis: {
-              question: "Which statement is correct?",
-              choices: ["The Suez Canal is artificial and the Strait of Gibraltar is natural", "The Suez Canal is a natural strait", "The Red Sea borders western Africa", "The Atlantic Ocean borders eastern Africa"],
-              correct: 0,
-              explanation: "The Suez Canal is man-made, while the Strait of Gibraltar is a natural water passage."
+              explanation: "The Red Sea lies to the north-east of Africa."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "regions-africa",
         title: "4. Regions that make up Africa",
         modules: [
           {
-            moduleId: "regions-meaning-types",
-            title: "Regions That Make Up Africa",
-            bigIdea: "A region is a division of a continent made by grouping countries according to location, climate, culture or history.",
+            moduleId: "six-regions-of-africa",
+            title: "The Six Regions of Africa",
+            bigIdea: "NCDC names six regions that make up Africa for this P7 topic.",
             learnIt: [
-              "### Regions That Make Up Africa",
-              "<strong class=\"kw\">Region</strong>:",
-              "Is a geographical division of a continent consisting of countries grouped together based on their location, climate, culture or historical backgrounds.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Geographical regions</strong> group countries by compass direction or physical position.",
-              "* <strong class=\"kw\">Political regions</strong> group countries by administrative or treaty arrangements.",
-              "<strong class=\"kw\">Geographical regions</strong>:",
-              "Are divisions based strictly on the compass direction or physical boundaries where countries lie on the continent.",
-              "<strong class=\"kw\">Political regions</strong>:",
-              "Are divisions based on administrative alignments or shared regional governance and political treaties.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">North Africa</strong> is a main region of Africa.",
-              "* <strong class=\"kw\">East Africa</strong> is the region where Uganda belongs.",
-              "* <strong class=\"kw\">Central Africa</strong> includes the Congo Basin area.",
-              "* <strong class=\"kw\">West Africa</strong> lies on the western side of Africa.",
-              "* <strong class=\"kw\">South Africa</strong> or Southern Africa lies in the southern part of Africa."
+              "A region is a part or area of a larger place. Africa is divided into regions to make it easier to study countries, people, climate, resources and location.",
+              "The six regions named in the P7 Topic 1 content are West Africa, East Africa, Northern Africa, Central Africa, Southern Africa and the Horn of Africa.",
+              "When writing region names, use capital letters because they are proper names: West Africa, East Africa, Northern Africa, Central Africa, Southern Africa and Horn of Africa.",
+              "Uganda is studied as part of East Africa. The Horn of Africa is the horn-shaped part in the north-eastern/eastern side of Africa."
             ],
             tryThis: {
-              question: "Which region does Uganda belong to?",
-              choices: ["East Africa", "North Africa", "West Africa", "South America"],
+              question: "Which list contains only regions named in the P7 Topic 1 content?",
+              choices: ["West Africa, East Africa, Northern Africa", "Pacific, Atlantic, Indian", "Asia, Europe, Australia", "Nile, Congo, Zambezi"],
               correct: 0,
-              explanation: "Uganda belongs to the East African region."
+              explanation: "West Africa, East Africa and Northern Africa are regions of Africa. The other options list oceans, continents or rivers."
             }
           },
           {
-            moduleId: "regions-uses-importance",
-            title: "Uses, Importances, Advantages and Disadvantages of Regions",
-            bigIdea: "Regions make Africa easier to study, govern, trade within and coordinate across borders.",
+            moduleId: "locating-african-regions-on-map",
+            title: "Locating African Regions on a Map",
+            bigIdea: "Learners should not only name regions; they should also know where the regions are found on a map of Africa.",
             learnIt: [
-              "### Uses, Importances, Advantages and Disadvantages",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">African Union operations</strong> are organized through regions.",
-              "* <strong class=\"kw\">Regional trade networks</strong> are planned through regions.",
-              "* <strong class=\"kw\">Climate studies</strong> compare environmental patterns across regions.",
-              "* <strong class=\"kw\">Security coordination</strong> handles cross-border threats.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Regional unity</strong> grows among neighboring countries.",
-              "* <strong class=\"kw\">Geographical study</strong> becomes simpler for learners.",
-              "* <strong class=\"kw\">International aid</strong> is guided by regional needs.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Resource management</strong> becomes more efficient between neighbors.",
-              "* <strong class=\"kw\">Bargaining power</strong> strengthens in international trade.",
-              "* <strong class=\"kw\">Cultural exchange</strong> is promoted among related communities.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Uneven economic growth</strong> causes migration pressure.",
-              "* <strong class=\"kw\">Cross-border conflicts</strong> can spill into neighboring countries.",
-              "* <strong class=\"kw\">Language barriers</strong> hinder smooth regional integration."
+              "Use compass directions to remember African regions. Northern Africa is in the north of Africa. Southern Africa is in the south. West Africa is in the west. East Africa is in the east.",
+              "Central Africa is near the middle of the continent. The Horn of Africa is on the eastern side of Africa, projecting towards the Red Sea, Gulf of Aden and Indian Ocean side.",
+              "Map activity: draw a simple outline map of Africa and shade or label the six regions. Start with the easy compass regions: north, south, west and east. Then add Central Africa and the Horn of Africa.",
+              "A good answer should connect the region name with position. Example: Northern Africa is found in the northern part of Africa. West Africa is found in the western part of Africa."
             ],
             tryThis: {
-              question: "Which use of regions is connected to cross-border threats?",
-              choices: ["Coordinating regional defense and security operations", "Naming the seven continents", "Calculating longitude time", "Finding the smallest island"],
+              question: "Which region is found near the middle of Africa?",
+              choices: ["Central Africa", "Northern Africa", "Southern Africa", "West Africa"],
               correct: 0,
-              explanation: "Regions help countries coordinate defense and security against cross-border threats."
+              explanation: "Central Africa is found near the middle of the African continent."
             }
           },
           {
-            moduleId: "main-regions-exam-summary",
-            title: "General Exam Summary Points",
-            bigIdea: "Africa is commonly divided into five main geographical regions recognized for study and administration.",
+            moduleId: "regions-countries-link",
+            title: "Regions Help Us Group Countries",
+            bigIdea: "Regions prepare learners to list countries and capital cities in the next subtopic.",
             learnIt: [
-              "### General Exam Summary Points",
-              "<strong class=\"kw\">General exam summary points</strong>:",
-              "Are key facts about Africa's regions that learners should remember for UNEB Social Studies questions.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Africa</strong> has five main regions: North, East, West, Central and South Africa.",
-              "* <strong class=\"kw\">West Africa</strong> contains the highest number of countries.",
-              "* <strong class=\"kw\">North Africa</strong> is the largest region by land area.",
-              "* <strong class=\"kw\">North Africa</strong> is strongly influenced by the Sahara Desert and Arabic-speaking populations.",
-              "* <strong class=\"kw\">East Africa</strong> is famous for the Rift Valley, high mountains and Lake Victoria.",
-              "* <strong class=\"kw\">Central Africa</strong> has large equatorial rainforests and the River Congo system.",
-              "* <strong class=\"kw\">Southern Africa</strong> is rich in minerals like gold and diamonds.",
-              "* <strong class=\"kw\">Horn of Africa</strong> includes Somalia, Ethiopia, Eritrea and Djibouti.",
-              "* <strong class=\"kw\">Equatorial Guinea</strong> is geographically in Central Africa.",
-              "* <strong class=\"kw\">Seychelles, Comoros and Mauritius</strong> are grouped under East Africa for administrative mapping.",
-              "* <strong class=\"kw\">Cape Verde</strong> is clustered under West Africa.",
-              "* <strong class=\"kw\">ECOWAS</strong> is a regional economic community in West Africa.",
-              "* <strong class=\"kw\">EAC</strong> is a regional economic community in East Africa.",
-              "* <strong class=\"kw\">Sahara Desert</strong> separates North Africa from much of Sub-Saharan Africa.",
-              "* <strong class=\"kw\">Uganda</strong> belongs to East Africa and supports landlocked neighbors like South Sudan and Rwanda.",
-              "<strong class=\"kw\">UNEB Exam Trap:</strong>",
-              "* <strong class=\"kw\">South Africa</strong> can mean one country or the southern region depending on the question.",
-              "* <strong class=\"kw\">Equatorial Guinea</strong> is in Central Africa despite the word Equatorial.",
-              "* <strong class=\"kw\">Island nations</strong> may be grouped regionally for administrative mapping."
+              "NCDC asks learners to identify African regions before listing countries and capital cities. This means regions are a way of grouping countries for easier study.",
+              "For example, Uganda, Kenya and Tanzania are commonly studied under East Africa. Countries such as Nigeria, Ghana and Senegal are commonly studied under West Africa.",
+              "At this stage, focus first on naming and locating the six regions. The next subtopic will use a shorter P7 school-first list of countries and capital cities by region.",
+              "Do not mix up regions and continents. Africa is a continent. West Africa and East Africa are regions within Africa. Uganda is a country within Africa. Kampala is a capital city."
             ],
             tryThis: {
-              question: "Which region has the highest number of countries?",
-              choices: ["West Africa", "East Africa", "Southern Africa", "Central Africa"],
+              question: "What is the relationship between Africa, East Africa, Uganda and Kampala?",
+              choices: ["Continent, region, country, capital city", "Country, capital, ocean, river", "Region, continent, sea, country", "Capital, country, continent, ocean"],
               correct: 0,
-              explanation: "West Africa contains the highest number of countries of any African region."
+              explanation: "Africa is a continent, East Africa is a region, Uganda is a country and Kampala is a capital city."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "countries-capitals-africa",
         title: "5. Countries in each region and their capital cities",
         modules: [
           {
-            moduleId: "capital-cities-meaning-types",
-            title: "Countries in Each Region and Their Capital Cities",
-            bigIdea: "A capital city is the administrative centre of a country where government offices and ministries are located.",
+            moduleId: "country-capital-region-meaning",
+            title: "Countries, Regions and Capital Cities",
+            bigIdea: "NCDC expects P7 learners to list countries in African regions and name their capital cities.",
             learnIt: [
-              "### Countries in Each Region and Their Capital Cities",
-              "<strong class=\"kw\">Capital city</strong>:",
-              "Is the administrative center or seat of government of an independent country where head offices and ministries are located.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Coastal capitals</strong> are located along ocean shores.",
-              "* <strong class=\"kw\">Inland capitals</strong> are located inside the mainland away from ocean coasts.",
-              "<strong class=\"kw\">Coastal capitals</strong>:",
-              "Are capital cities located directly along the ocean shores which often serve as major maritime ports.",
-              "<strong class=\"kw\">Inland capitals</strong>:",
-              "Are capital cities located deep within the interior of the mainland away from any ocean coastlines.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Kampala</strong> is the capital city of Uganda.",
-              "* <strong class=\"kw\">Nairobi</strong> is the capital city of Kenya.",
-              "* <strong class=\"kw\">Dodoma</strong> is the capital city of Tanzania.",
-              "* <strong class=\"kw\">Cairo</strong> is the capital city of Egypt.",
-              "* <strong class=\"kw\">Abuja</strong> is the capital city of Nigeria.",
-              "* <strong class=\"kw\">Kinshasa</strong> is the capital city of DRC."
+              "A country is an independent state with its own government, people and borders. Uganda, Kenya, Ghana and Egypt are examples of countries in Africa.",
+              "A capital city is the main administrative city of a country. It is usually where important government offices are found.",
+              "A region groups countries found in the same part of Africa. In this topic, learners use regions to organise countries and capital cities more easily.",
+              "Use this order when answering: region, country, capital city. Example: East Africa — Uganda — Kampala."
             ],
             tryThis: {
-              question: "What is the capital city of Uganda?",
-              choices: ["Kampala", "Nairobi", "Dodoma", "Abuja"],
+              question: "Which pair correctly shows a country and its capital city?",
+              choices: ["Uganda — Kampala", "Africa — Kampala", "Nile — Cairo", "Indian Ocean — Nairobi"],
               correct: 0,
-              explanation: "Kampala is the capital city of Uganda."
+              explanation: "Uganda is a country and Kampala is its capital city. Africa is a continent, the Nile is a river and the Indian Ocean is an ocean."
             }
           },
           {
-            moduleId: "capital-cities-uses-importance",
-            title: "Uses, Importances, Advantages and Disadvantages of Capital Cities",
-            bigIdea: "Capital cities centralize government work, diplomacy, security and national administration.",
+            moduleId: "school-first-countries-capitals-by-region",
+            title: "School-First Countries and Capitals by Region",
+            bigIdea: "Learners should first master a smaller P7 school list before using a full reference table.",
             learnIt: [
-              "### Uses, Importances, Advantages and Disadvantages",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Embassies</strong> and diplomatic missions are hosted in capital cities.",
-              "* <strong class=\"kw\">National administration</strong> is coordinated from capital cities.",
-              "* <strong class=\"kw\">Parliamentary buildings</strong> and state houses are often located in capital cities.",
-              "* <strong class=\"kw\">Financial services</strong> and commercial activities often concentrate in capital cities.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Governance</strong> is centralized in a sovereign country.",
-              "* <strong class=\"kw\">International entry</strong> is supported through national airports.",
-              "* <strong class=\"kw\">Regional security</strong> is coordinated with neighboring states.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Communication</strong> between the head of state and ministries becomes easier.",
-              "* <strong class=\"kw\">Foreign investment</strong> and business headquarters are attracted.",
-              "* <strong class=\"kw\">Urban development</strong> and infrastructure grow at a central point.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Rural-urban migration</strong> increases due to high centralization.",
-              "* <strong class=\"kw\">Overpopulation</strong> causes traffic congestion and slum growth.",
-              "* <strong class=\"kw\">Conflict risk</strong> rises because capitals are major targets during unrest."
+              "East Africa: Uganda — Kampala; Kenya — Nairobi; Tanzania — Dodoma; Rwanda — Kigali; South Sudan — Juba.",
+              "Horn of Africa: Ethiopia — Addis Ababa; Somalia — Mogadishu; Eritrea — Asmara; Djibouti — Djibouti.",
+              "West Africa: Nigeria — Abuja; Ghana — Accra; Senegal — Dakar; Mali — Bamako; Liberia — Monrovia.",
+              "Northern Africa: Egypt — Cairo; Sudan — Khartoum; Morocco — Rabat; Libya — Tripoli; Tunisia — Tunis.",
+              "Central Africa: Democratic Republic of the Congo — Kinshasa; Cameroon — Yaoundé; Angola — Luanda; Chad — N'Djamena; Gabon — Libreville.",
+              "Southern Africa: South Africa — Pretoria; Botswana — Gaborone; Namibia — Windhoek; Zambia — Lusaka; Zimbabwe — Harare.",
+              "This is a school-first list for learning and practice. A fuller reference list can be used later for revision, but the main lesson should not overload the learner at once."
             ],
             tryThis: {
-              question: "Which institution is commonly found in a capital city?",
-              choices: ["Parliament", "Fishing net", "Coral reef", "Desert dune"],
+              question: "What is the capital city of Kenya?",
+              choices: ["Nairobi", "Kampala", "Dodoma", "Kigali"],
               correct: 0,
-              explanation: "Parliamentary buildings are often found in capital cities."
+              explanation: "Kenya is an East African country and its capital city is Nairobi."
             }
           },
           {
-            moduleId: "landlocked-coastal-countries",
-            title: "Landlocked and Coastal Countries",
-            bigIdea: "Landlocked countries have no direct ocean coast, while coastal countries have direct access to an ocean or sea.",
+            moduleId: "islands-part-of-africa-school-first",
+            title: "Islands Which Are Part of Africa",
+            bigIdea: "NCDC expects learners to name islands which are part of Africa, so learners should know common African island countries.",
             learnIt: [
-              "### Landlocked vs Coastal Countries",
-              "<strong class=\"kw\">Landlocked country</strong>:",
-              "Is a country that is completely surrounded by land and has no direct access to an ocean coast.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Landlocked nations</strong> depend on maritime neighbors for sea trade.",
-              "* <strong class=\"kw\">Coastal nations</strong> have direct shoreline access to oceans or seas.",
-              "<strong class=\"kw\">Landlocked nations</strong>:",
-              "Are countries that depend entirely on maritime neighbors to access world sea trade routes.",
-              "<strong class=\"kw\">Coastal nations</strong>:",
-              "Are countries that possess a direct shoreline boundary along an ocean or open sea.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Uganda</strong> is a landlocked country.",
-              "* <strong class=\"kw\">Ethiopia</strong> is a landlocked country.",
-              "* <strong class=\"kw\">Mombasa</strong> is a coastal port in Kenya.",
-              "* <strong class=\"kw\">Dar es Salaam</strong> is a coastal port in Tanzania.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Transport corridors</strong> are planned for imports and exports.",
-              "* <strong class=\"kw\">Customs exemptions</strong> are planned for transit cargo.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Import costs</strong> are influenced in interior countries.",
-              "* <strong class=\"kw\">Diplomatic relationships</strong> are shaped between landlocked and coastal neighbors.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Coastal countries</strong> collect transit revenue from neighbors' goods.",
-              "* <strong class=\"kw\">Coastal countries</strong> enjoy cheaper international shipping costs.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Landlocked countries</strong> suffer high transport costs.",
-              "* <strong class=\"kw\">Landlocked countries</strong> face delays at transit neighbors' ports."
+              "An island is land surrounded by water. Some African countries are island countries because they are made up of one island or a group of islands.",
+              "Common African island countries for P7 study include Madagascar, Mauritius, Seychelles, Comoros, Cabo Verde and São Tomé and Príncipe.",
+              "Useful capital pairs: Madagascar — Antananarivo; Mauritius — Port Louis; Seychelles — Victoria; Comoros — Moroni; Cabo Verde — Praia; São Tomé and Príncipe — São Tomé.",
+              "Map practice: Madagascar, Mauritius, Seychelles and Comoros are in the Indian Ocean side of Africa. Cabo Verde and São Tomé and Príncipe are in the Atlantic Ocean side of Africa."
             ],
             tryThis: {
-              question: "Which country is landlocked?",
-              choices: ["Uganda", "Kenya", "Tanzania", "Somalia"],
+              question: "Which of these is an African island country?",
+              choices: ["Madagascar", "Uganda", "Mali", "Chad"],
               correct: 0,
-              explanation: "Uganda is landlocked because it has no direct access to an ocean coast."
+              explanation: "Madagascar is an island country in the Indian Ocean side of Africa."
             }
           },
           {
-            moduleId: "countries-capitals-exam-summary",
-            title: "General Exam Summary Points",
-            bigIdea: "UNEB questions often test capital cities, changed capitals, landlocked countries and major coastal ports.",
+            moduleId: "capital-city-answer-practice",
+            title: "Answering Country and Capital City Questions",
+            bigIdea: "Good P7 answers are clear, correctly paired and grouped by region where needed.",
             learnIt: [
-              "### General Exam Summary Points",
-              "<strong class=\"kw\">General exam summary points</strong>:",
-              "Are key facts about African countries and capital cities that learners should remember for UNEB Social Studies questions.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Uganda</strong> is landlocked and its capital city is Kampala.",
-              "* <strong class=\"kw\">Mombasa</strong> is a Kenyan port used by Uganda for sea trade.",
-              "* <strong class=\"kw\">Tanzania</strong> moved its capital from Dar es Salaam to Dodoma.",
-              "* <strong class=\"kw\">Nigeria</strong> moved its capital from Lagos to Abuja.",
-              "* <strong class=\"kw\">Cairo</strong> is the capital city of Egypt.",
-              "* <strong class=\"kw\">Addis Ababa</strong> is the capital city of Ethiopia and AU headquarters.",
-              "* <strong class=\"kw\">South Sudan</strong> became independent in 2011 and its capital is Juba.",
-              "* <strong class=\"kw\">Gitega</strong> is the political capital of Burundi.",
-              "* <strong class=\"kw\">Bujumbura</strong> remains Burundi's main economic center.",
-              "* <strong class=\"kw\">Kinshasa</strong> is the capital city of DRC.",
-              "* <strong class=\"kw\">Brazzaville</strong> is the capital city of Congo Republic.",
-              "* <strong class=\"kw\">Pretoria</strong> is the administrative capital of South Africa.",
-              "* <strong class=\"kw\">Asmara</strong> is the capital city of Eritrea.",
-              "* <strong class=\"kw\">Yamoussoukro</strong> is the political capital of Ivory Coast.",
-              "* <strong class=\"kw\">Victoria</strong> is the capital city of Seychelles.",
-              "* <strong class=\"kw\">Khartoum</strong> is where the White Nile and Blue Nile meet.",
-              "* <strong class=\"kw\">Mali, Niger and Burkina Faso</strong> are landlocked West African countries.",
-              "<strong class=\"kw\">UNEB Exam Trap:</strong>",
-              "* <strong class=\"kw\">Mombasa</strong> is a port city, not the capital of Kenya.",
-              "* <strong class=\"kw\">Dar es Salaam</strong> is a major port, not the current capital of Tanzania.",
-              "* <strong class=\"kw\">Abidjan</strong> is a commercial port city, not the official political capital of Ivory Coast."
+              "When asked to name countries and capital cities, write the country first and the capital city second. Example: Uganda — Kampala.",
+              "When asked for countries in a region, do not mix regions. Example: Uganda, Kenya and Tanzania belong to East Africa; Nigeria, Ghana and Senegal belong to West Africa.",
+              "Some countries have special capital-city notes in current references. For P7 learning, follow the school-first list your teacher gives and use Tendo's reference pack for extra revision.",
+              "Quick practice: write three countries from East Africa with their capitals, then write three countries from West Africa with their capitals. Check spelling carefully."
             ],
             tryThis: {
-              question: "Which city is the current capital of Tanzania?",
-              choices: ["Dodoma", "Dar es Salaam", "Mombasa", "Nairobi"],
+              question: "Which answer is correctly grouped under West Africa?",
+              choices: ["Nigeria — Abuja", "Kenya — Nairobi", "Egypt — Cairo", "Botswana — Gaborone"],
               correct: 0,
-              explanation: "Dodoma is the current capital city of Tanzania."
+              explanation: "Nigeria is in West Africa and Abuja is its capital city."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "premium-map-answering",
-        title: "Premium Exam Practice: Map Location Answers",
+        title: "Practice: Answering Topic 1 Map Questions",
         modules: [
           {
-            moduleId: "map-location-answer-structure",
-            title: "Writing Accurate Map Location Answers",
-            bigIdea: "A strong map-location answer uses direction, nearby continents, oceans, seas and major imaginary lines.",
+            moduleId: "map-answering-read-the-task",
+            title: "Step 1: Read the Map Question Carefully",
+            bigIdea: "A good map answer starts by identifying exactly what the question is asking for.",
             learnIt: [
-              "### Premium Exam Practice: Map Location Answers",
-              "<strong class=\"kw\">Map location answer</strong>:",
-              "Is a clear sentence that describes where a place is found using direction, nearby features and important map lines.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Absolute map answer</strong> uses latitudes and longitudes.",
-              "* <strong class=\"kw\">Relative map answer</strong> uses nearby continents, oceans and seas.",
-              "* <strong class=\"kw\">Combined map answer</strong> uses both coordinates and nearby features.",
-              "<strong class=\"kw\">Absolute map answer</strong>:",
-              "Is an answer that locates a place using lines of latitude and longitude.",
-              "<strong class=\"kw\">Relative map answer</strong>:",
-              "Is an answer that locates a place using neighboring land masses and water bodies.",
-              "<strong class=\"kw\">Combined map answer</strong>:",
-              "Is an answer that uses both imaginary lines and surrounding features to describe location.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Africa</strong> lies south of Europe and southwest of Asia.",
-              "* <strong class=\"kw\">Africa</strong> is bordered by the Atlantic Ocean in the west and Indian Ocean in the east.",
-              "* <strong class=\"kw\">Africa</strong> is crossed by the Equator, the Tropics and the Prime Meridian.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Map answers</strong> help learners locate places accurately.",
-              "* <strong class=\"kw\">Map answers</strong> help learners score full marks in UNEB questions."
+              "Before answering, underline the command word. The question may ask you to name, locate, draw, show, list or identify.",
+              "If the question asks for a direction, include a compass direction such as north, south, east, west, north-east or south-west.",
+              "If the question asks for countries and capitals, write correct pairs: country first, capital city second. Example: Uganda — Kampala.",
+              "If the question asks for islands, name island countries or islands that are part of Africa, not mainland countries. Example: Madagascar is an island country; Uganda is not."
             ],
             tryThis: {
-              question: "Which answer best locates Africa?",
-              choices: ["Africa lies south of Europe and is bordered by the Atlantic and Indian Oceans.", "Africa is somewhere on the map.", "Africa is near all places.", "Africa is only in Uganda."],
+              question: "A question says: 'Identify the ocean west of Africa.' What must your answer include?",
+              choices: ["The name of the ocean and its direction", "Only a capital city", "Only a continent size", "Only a vegetation type"],
               correct: 0,
-              explanation: "The correct answer uses direction and nearby water bodies clearly."
+              explanation: "The question asks for an ocean and gives a direction clue, so the answer should name the Atlantic Ocean and connect it to west of Africa."
             }
           },
           {
-            moduleId: "map-location-worked-example",
-            title: "Worked Example: Locating Africa",
-            bigIdea: "A premium answer should combine water bodies, direction and major lines into one clear response.",
+            moduleId: "drawing-africa-regions-lines",
+            title: "Step 2: Draw Africa with Regions and Lines",
+            bigIdea: "NCDC assessment expects learners to draw Africa showing regions and major latitude/longitude lines.",
             learnIt: [
-              "### Worked Example: Locating Africa",
-              "<strong class=\"kw\">Worked map answer</strong>:",
-              "Is a model response that shows the correct steps for describing the position of a place.",
-              "<strong class=\"kw\">Steps:</strong>",
-              "* <strong class=\"kw\">Identify oceans</strong> around the continent.",
-              "* <strong class=\"kw\">Identify nearby continents</strong> using compass directions.",
-              "* <strong class=\"kw\">Identify major imaginary lines</strong> crossing the continent.",
-              "* <strong class=\"kw\">Write one clear sentence</strong> with accurate direction words.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Atlantic Ocean</strong> lies west of Africa.",
-              "* <strong class=\"kw\">Indian Ocean</strong> lies east of Africa.",
-              "* <strong class=\"kw\">Europe</strong> lies north of Africa.",
-              "* <strong class=\"kw\">Asia</strong> lies northeast of Africa.",
-              "* <strong class=\"kw\">Equator</strong> crosses Africa near the middle.",
-              "<strong class=\"kw\">UNEB Exam Trap:</strong>",
-              "* <strong class=\"kw\">Vague answers</strong> like Africa is on the map are weak.",
-              "* <strong class=\"kw\">Wrong directions</strong> make an otherwise good answer lose marks.",
-              "* <strong class=\"kw\">One clue only</strong> is weaker than two or three accurate clues."
+              "Start with a simple outline of Africa. It does not need to be a perfect artist's map, but it should be recognisable and neatly labelled.",
+              "Show the regions: West Africa, East Africa, Northern Africa, Central Africa, Southern Africa and the Horn of Africa.",
+              "Show the Equator as a latitude line and the Prime Meridian as a longitude line. If your teacher asks, also show the Tropic of Cancer and Tropic of Capricorn.",
+              "Add a simple compass or north arrow so your map can support direction questions. Labels should be clear and not crowded."
             ],
             tryThis: {
-              question: "Which detail makes a map answer stronger?",
-              choices: ["Using direction and nearby features", "Writing Africa is there", "Ignoring oceans", "Naming a random capital"],
+              question: "Which item should be included when drawing Africa for this Topic 1 assessment?",
+              choices: ["Regions and latitude/longitude lines", "Only animals", "Only rivers from Topic 2", "Only climate regions from Topic 3"],
               correct: 0,
-              explanation: "Direction and nearby features help someone locate Africa accurately."
-            },
-            workedExample: {
-              question: "Describe Africa’s location using two oceans and one major line.",
-              steps: ["Identify oceans: Atlantic Ocean to the west and Indian Ocean to the east.", "Identify a major line: the Equator crosses Africa.", "Combine the clues into one clear sentence."],
-              answer: "Africa lies between the Atlantic Ocean and the Indian Ocean, and it is crossed by the Equator."
+              explanation: "NCDC assessment mentions drawing Africa showing regions, lines of latitude and lines of longitude."
             }
           },
           {
-            moduleId: "map-location-common-mistakes",
-            title: "Common Mistakes in Map Location Answers",
-            bigIdea: "Many learners lose marks by using vague language, wrong directions or confusing oceans and seas.",
+            moduleId: "answering-direction-questions",
+            title: "Step 3: Answer Direction Questions",
+            bigIdea: "Direction answers should name the place or water body and state where it is from Africa.",
             learnIt: [
-              "### Common Mistakes in Map Location Answers",
-              "<strong class=\"kw\">Common mistake</strong>:",
-              "Is an error that makes a map-location answer unclear or incorrect.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Vague location</strong> gives no useful map clue.",
-              "* <strong class=\"kw\">Wrong direction</strong> places features on the wrong side.",
-              "* <strong class=\"kw\">Wrong water body</strong> confuses oceans and seas.",
-              "* <strong class=\"kw\">Missing map line</strong> ignores important latitudes and longitudes.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Africa is somewhere</strong> is too vague.",
-              "* <strong class=\"kw\">Indian Ocean west of Africa</strong> is a wrong direction.",
-              "* <strong class=\"kw\">Pacific Ocean around Africa</strong> is a wrong water body.",
-              "* <strong class=\"kw\">Prime Meridian as latitude</strong> is a wrong map-line description.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Error checking</strong> improves accuracy before final answers.",
-              "* <strong class=\"kw\">Direction checking</strong> protects learners from simple map mistakes.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Rushed answers</strong> easily mix up east and west.",
-              "* <strong class=\"kw\">Memorised answers</strong> fail when the map question changes."
+              "Use full direction sentences. Example: The Atlantic Ocean lies to the west of Africa.",
+              "For seas, remember: the Mediterranean Sea is north of Africa, and the Red Sea is north-east of Africa.",
+              "For continents, remember: Europe is north of Africa, Asia is north-east/east of Africa, and South America is across the Atlantic Ocean from Africa.",
+              "Avoid vague answers like 'it is near Africa'. A P7 answer should use a clear compass direction."
             ],
             tryThis: {
-              question: "Which answer is too vague?",
-              choices: ["Africa is somewhere on the map.", "Africa is west of the Indian Ocean.", "Africa is south of Europe.", "Africa is crossed by the Equator."],
+              question: "Which is the best answer to: 'Where is Europe from Africa?'",
+              choices: ["Europe is north of Africa", "Europe is inside Africa", "Europe is a sea", "Europe is the capital of Africa"],
               correct: 0,
-              explanation: "Africa is somewhere on the map gives no useful location clue."
+              explanation: "Europe lies to the north of Africa across the Mediterranean Sea."
+            }
+          },
+          {
+            moduleId: "countries-capitals-islands-practice",
+            title: "Step 4: Practise Countries, Capitals and Islands",
+            bigIdea: "Topic 1 practice should help learners pair countries with capitals and identify African island countries.",
+            learnIt: [
+              "Practise country-capital pairs by region. Say the region first, then the country and capital. Example: East Africa — Uganda — Kampala.",
+              "Start with the school-first list before using the full reference table. This prevents overload and helps you master the most useful examples first.",
+              "For island questions, remember common African island countries: Madagascar, Mauritius, Seychelles, Comoros, Cabo Verde and São Tomé and Príncipe.",
+              "Check spelling carefully. Capital-city names like Antananarivo, Ouagadougou and N'Djamena are easy to misspell, so practise them slowly when they appear in your teacher's list."
+            ],
+            tryThis: {
+              question: "Which pair is correct?",
+              choices: ["Ghana — Accra", "Egypt — Nairobi", "Uganda — Dakar", "Madagascar — Kampala"],
+              correct: 0,
+              explanation: "Ghana is a West African country and Accra is its capital city."
             }
           }
         ]
-      }
-    ],
+      },],
     quiz: [
       { q: "Which continent is the second largest in the world?", choices: ["Africa", "Europe", "Australia", "Antarctica"], correct: 0, why: "Africa is the second largest continent after Asia." },
       { q: "Which line of latitude divides the earth into northern and southern hemispheres?", choices: ["Equator", "Prime Meridian", "Tropic of Cancer only", "International Date Line"], correct: 0, why: "The Equator divides the earth into northern and southern hemispheres." },

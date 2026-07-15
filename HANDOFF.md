@@ -97,7 +97,52 @@ Topic 1 Subtopic 1 rewrite completed:
 - Audit now: 0 failures / 28 warnings.
 - Build passed: 413 static pages.
 
-Next Topic 1 target: `world-continents-sizes`. Keep it source-backed: continent names and size order first; no uses/advantages/disadvantages filler unless source-justified.
+Next Topic 1 target completed: `world-continents-sizes`.
+
+Topic 1 Subtopic 2 rewrite completed:
+
+- Updated `app/lib/social-topics.ts` → `location-of-africa` / `world-continents-sizes`.
+- Replaced 4 modules with 3 source-backed modules.
+- Removed unsupported `continents-uses-importance` filler module.
+- Build passed: 413 static pages.
+
+Next Topic 1 target completed: `water-bodies-africa`.
+
+Topic 1 Subtopic 3 rewrite completed:
+
+- Updated `app/lib/social-topics.ts` → `location-of-africa` / `water-bodies-africa`.
+- Replaced 5 modules with 3 source-backed modules.
+- Removed marine gateways/channels from the core water-bodies subtopic pending source/extension decision.
+- Build passed: 413 static pages.
+
+Next Topic 1 target completed: `regions-africa`.
+
+Topic 1 Subtopic 4 rewrite completed:
+
+- Updated `app/lib/social-topics.ts` → `location-of-africa` / `regions-africa`.
+- Replaced broad region framing with 3 source-backed modules.
+- Removed broad region uses/importance filler from the core regions subtopic.
+- Build passed: 413 static pages.
+
+Next Topic 1 target completed: `countries-capitals-africa`.
+
+Topic 1 Subtopic 5 rewrite completed:
+
+- Updated `app/lib/social-topics.ts` → `location-of-africa` / `countries-capitals-africa`.
+- Used the approved shorter P7 school-first approach in the learner flow.
+- Kept fuller countries/capitals/islands list as reference-pack support, not core learner overload.
+- Removed broad uses/importance and landlocked/coastal filler from the core subtopic.
+- Build passed: 413 static pages.
+
+Next Topic 1 target completed: `premium-map-answering`.
+
+Topic 1 application practice rewrite completed:
+
+- Updated `app/lib/social-topics.ts` → `location-of-africa` / `premium-map-answering`.
+- Rebuilt practice around NCDC Topic 1 assessment competences: drawing Africa with regions/lines, countries/capitals, islands, and compass directions.
+- Build passed: 413 static pages.
+
+Topic 1 learner-flow rewrite is now complete under the curriculum-intelligence direction. Next recommended step is real-device/readability review for Topic 1 before starting Topic 2 source-intelligence audit.
 
 
 ## 🚀 PUSH STATUS — READY

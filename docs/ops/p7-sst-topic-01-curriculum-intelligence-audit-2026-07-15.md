@@ -389,3 +389,286 @@ world-continents-sizes
 ```
 
 Rewrite rule: keep only source-backed continent names and size order unless another approved source justifies extra content.
+
+---
+
+## Update — Subtopic 2 rewritten from source-backed blueprint
+
+Updated in `app/lib/social-topics.ts`:
+
+```txt
+Topic: location-of-africa
+Subtopic: world-continents-sizes
+```
+
+Old structure:
+
+- 4 modules.
+- Included a broad `continents-uses-importance` module that was not required by the extracted NCDC Topic 1 content.
+- Mixed the required continent names/size order with less relevant uses/advantages/disadvantages framing.
+
+New structure:
+
+1. `continents-of-the-world` — Continents of the World
+2. `continents-size-order` — Continents in Order of Size
+3. `continent-map-practice` — Map Practice: Finding Continents
+
+Source basis:
+
+- NCDC Topic 1 pages 315–317 / printed pages 294–296.
+- NCDC explicitly lists the continents and their size order: Asia, Africa, North America, South America, Antarctic/Antarctica, Europe and Australia.
+- NCDC suggested activities require naming continents and locating Africa on a world map.
+
+Content decision:
+
+- Removed the unsupported `continents-uses-importance` module.
+- Kept Africa's key P7 fact: Africa is the second largest continent after Asia.
+- Added map practice using compass relationship language so learners connect continent names to Africa's position on the world map.
+- Kept every module with an inline check.
+
+Verification:
+
+```bash
+node scripts/audit-curriculum-intelligence.js
+cd app && npm run build
+```
+
+Results:
+
+```txt
+Audit: 0 failures / 28 warnings
+Build: ✓ Generating static pages (413/413)
+```
+
+Next Topic 1 rewrite target:
+
+```txt
+water-bodies-africa
+```
+
+Rewrite rule: teach NCDC-required oceans, seas and compass directions. Remove or quarantine marine gateways/channels unless a source justifies them for this topic.
+
+---
+
+## Update — Subtopic 3 rewritten from source-backed blueprint
+
+Updated in `app/lib/social-topics.ts`:
+
+```txt
+Topic: location-of-africa
+Subtopic: water-bodies-africa
+```
+
+Old structure:
+
+- 5 modules.
+- Included marine gateways/channels and uses/importance framing that is not required by the extracted NCDC Topic 1 content.
+
+New structure:
+
+1. `oceans-around-africa` — Oceans Around Africa
+2. `seas-around-africa` — Seas Around Africa
+3. `directions-of-water-bodies-from-africa` — Compass Directions of Water Bodies from Africa
+
+Source basis:
+
+- NCDC Topic 1 pages 315–317 / printed pages 294–296.
+- NCDC lists the oceans: Atlantic, Pacific, Arctic and Indian.
+- NCDC lists the seas: Mediterranean Sea and Red Sea.
+- NCDC assessment expects learners to identify compass directions of oceans, seas and other continents from Africa.
+
+Content decision:
+
+- Removed marine gateways/channels from the core subtopic pending source/extension decision.
+- Focused the learner module on naming oceans/seas and using compass directions.
+- Kept every module with an inline check.
+
+Verification:
+
+```bash
+node scripts/audit-curriculum-intelligence.js
+cd app && npm run build
+```
+
+Results:
+
+```txt
+Audit: 0 failures / 28 warnings
+Build: ✓ Generating static pages (413/413)
+```
+
+Next Topic 1 rewrite target:
+
+```txt
+regions-africa
+```
+
+Rewrite rule: teach the six NCDC-named regions and basic map-location practice. Remove broad uses/importance filler unless source-justified.
+
+---
+
+## Update — Subtopic 4 rewritten from source-backed blueprint
+
+Updated in `app/lib/social-topics.ts`:
+
+```txt
+Topic: location-of-africa
+Subtopic: regions-africa
+```
+
+Old structure:
+
+- 3 modules.
+- Included a broad uses/importance framing that was not required by the extracted NCDC Topic 1 content.
+
+New structure:
+
+1. `six-regions-of-africa` — The Six Regions of Africa
+2. `locating-african-regions-on-map` — Locating African Regions on a Map
+3. `regions-countries-link` — Regions Help Us Group Countries
+
+Source basis:
+
+- NCDC Topic 1 pages 315–317 / printed pages 294–296.
+- NCDC lists the regions: West Africa, East Africa, Northern Africa, Central Africa, Southern Africa and Horn of Africa.
+- NCDC assessment expects learners to draw a map of Africa showing regions.
+
+Content decision:
+
+- Focused the subtopic on naming the six NCDC regions, locating them using map direction language, and preparing for countries/capitals by region.
+- Removed broad uses/importance filler.
+- Kept every module with an inline check.
+
+Verification:
+
+```bash
+node scripts/audit-curriculum-intelligence.js
+cd app && npm run build
+```
+
+Results:
+
+```txt
+Audit: 0 failures / 28 warnings
+Build: ✓ Generating static pages (413/413)
+```
+
+Next Topic 1 rewrite target:
+
+```txt
+countries-capitals-africa
+```
+
+Rewrite rule: use the approved shorter P7 school-first approach in the learner flow, with the fuller reference pack kept as support/reference material.
+
+---
+
+## Update — Subtopic 5 rewritten using shorter P7 school-first approach
+
+Updated in `app/lib/social-topics.ts`:
+
+```txt
+Topic: location-of-africa
+Subtopic: countries-capitals-africa
+```
+
+Old structure:
+
+- 4 modules.
+- Included broad uses/importance and landlocked/coastal framing that was not the core NCDC requirement for this subtopic.
+
+New structure:
+
+1. `country-capital-region-meaning` — Countries, Regions and Capital Cities
+2. `school-first-countries-capitals-by-region` — School-First Countries and Capitals by Region
+3. `islands-part-of-africa-school-first` — Islands Which Are Part of Africa
+4. `capital-city-answer-practice` — Answering Country and Capital City Questions
+
+Source/policy basis:
+
+- NCDC Topic 1 requires learners to list countries in each region, capital cities, and islands which are part of Africa.
+- NCDC does not give a full country/capital/island table in the extracted Topic 1 pages.
+- A candidate reference pack exists at `content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/reference-countries-capitals-islands.json`.
+- Founder approved the shorter P7 school-first approach for the main learner flow.
+
+Content decision:
+
+- The main lesson uses a manageable school-first list instead of overwhelming learners with all 54 countries.
+- The full countries/capitals/islands pack remains support/reference material.
+- Special capital cases still need teacher/founder review before final premium status.
+- Kept every module with an inline check.
+
+Verification:
+
+```bash
+node scripts/audit-curriculum-intelligence.js
+cd app && npm run build
+```
+
+Results:
+
+```txt
+Audit: 0 failures / 28 warnings
+Build: ✓ Generating static pages (413/413)
+```
+
+Next Topic 1 target:
+
+```txt
+premium-map-answering
+```
+
+Rewrite rule: align practice to NCDC assessment competences — map of Africa with regions and lines, countries/capitals, islands, and compass directions.
+
+---
+
+## Update — Application subtopic rewritten around NCDC assessment competences
+
+Updated in `app/lib/social-topics.ts`:
+
+```txt
+Topic: location-of-africa
+Subtopic: premium-map-answering
+```
+
+Old role:
+
+- General premium map-answering practice.
+
+New structure:
+
+1. `map-answering-read-the-task` — Step 1: Read the Map Question Carefully
+2. `drawing-africa-regions-lines` — Step 2: Draw Africa with Regions and Lines
+3. `answering-direction-questions` — Step 3: Answer Direction Questions
+4. `countries-capitals-islands-practice` — Step 4: Practise Countries, Capitals and Islands
+
+Source/policy basis:
+
+- NCDC Topic 1 assessment competences require learners to draw Africa showing regions, latitudes and longitudes; name countries and capital cities; name islands which are part of Africa; and identify compass directions of oceans, seas and other continents from Africa.
+- The rewritten practice subtopic now directly rehearses those assessment tasks.
+
+Content decision:
+
+- Application practice now reinforces the core Topic 1 skills instead of adding unrelated extension content.
+- Every module has an inline check.
+- Countries/capitals practice follows the shorter P7 school-first approach while recognising the reference pack as support material.
+
+Verification:
+
+```bash
+node scripts/audit-curriculum-intelligence.js
+cd app && npm run build
+```
+
+Results:
+
+```txt
+Audit: 0 failures / 28 warnings
+Build: ✓ Generating static pages (413/413)
+```
+
+Topic 1 status:
+
+```txt
+All core Topic 1 subtopics and the application practice subtopic have now been rewritten under the curriculum-intelligence direction.
+```

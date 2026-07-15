@@ -1,5 +1,130 @@
 # CHANGELOG — Tendo
 
+## v1.8.89 — 2026-07-15 — Topic 1 application practice rewritten around NCDC assessment competences
+
+**Session theme:** Finish the P7 SST Topic 1 learner-flow rewrite by aligning the application subtopic to NCDC assessment competences.
+
+### Changed
+- Rewrote `premium-map-answering` inside `app/lib/social-topics.ts`.
+- Replaced the previous general premium practice with 4 assessment-aligned modules:
+  1. `map-answering-read-the-task`
+  2. `drawing-africa-regions-lines`
+  3. `answering-direction-questions`
+  4. `countries-capitals-islands-practice`
+- Focused practice on reading map questions, drawing Africa with regions and lines, answering compass-direction questions, and practising countries/capitals/islands.
+
+### Source/policy basis
+- NCDC Topic 1 assessment competences from P7 Set One pages 315–317 / printed pages 294–296.
+- School-first country/capital approach approved for the main learner flow.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 28 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Topic 1 status
+- All core Topic 1 official subtopics and application practice have now been rewritten under the curriculum-intelligence direction.
+
+---
+## v1.8.88 — 2026-07-15 — Topic 1 Subtopic 5 rewritten with school-first country/capital approach
+
+**Session theme:** Complete the core official subtopics under P7 SST Topic 1 using the agreed shorter P7 school-first approach for countries, capitals and islands.
+
+### Changed
+- Rewrote `countries-capitals-africa` inside `app/lib/social-topics.ts`.
+- Replaced the old broad framing with 4 learner-focused modules:
+  1. `country-capital-region-meaning`
+  2. `school-first-countries-capitals-by-region`
+  3. `islands-part-of-africa-school-first`
+  4. `capital-city-answer-practice`
+- Removed broad uses/importance and landlocked/coastal filler from the core subtopic.
+- Used a manageable P7 school-first list in the learner flow while keeping the fuller reference pack as support material.
+
+### Source/policy basis
+- NCDC P7 Set One Topic 1 pages 315–317 / printed pages 294–296.
+- Candidate reference pack: `content/curriculum-intelligence/p7-sst/topic-01-location-of-africa/reference-countries-capitals-islands.json`.
+- Founder-approved policy: shorter P7 school-first main lesson, full reference pack as support/reference.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 28 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Next
+- Rewrite `premium-map-answering` so Topic 1 practice aligns to NCDC assessment competences.
+
+---
+## v1.8.87 — 2026-07-15 — Topic 1 Subtopic 4 rewritten from source-backed blueprint
+
+**Session theme:** Continue source-backed P7 SST Topic 1 rewrite with regions of Africa.
+
+### Changed
+- Rewrote `regions-africa` inside `app/lib/social-topics.ts`.
+- Replaced the previous broad region framing with 3 source-backed modules:
+  1. `six-regions-of-africa`
+  2. `locating-african-regions-on-map`
+  3. `regions-countries-link`
+- Focused the learner content on the six NCDC-named regions, map-location practice and preparation for countries/capitals by region.
+- Removed broad uses/importance filler from the core subtopic.
+
+### Source basis
+- NCDC P7 Set One Topic 1 pages 315–317 / printed pages 294–296.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 28 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Next
+- Rewrite `countries-capitals-africa` using the approved shorter P7 school-first approach, with the fuller countries/capitals/islands reference pack kept as support material.
+
+---
+## v1.8.86 — 2026-07-15 — Topic 1 Subtopic 3 rewritten from source-backed blueprint
+
+**Session theme:** Continue source-backed P7 SST Topic 1 rewrite with water bodies around Africa.
+
+### Changed
+- Rewrote `water-bodies-africa` inside `app/lib/social-topics.ts`.
+- Reduced the subtopic from 5 modules to 3 source-backed modules:
+  1. `oceans-around-africa`
+  2. `seas-around-africa`
+  3. `directions-of-water-bodies-from-africa`
+- Removed marine gateways/channels and broad uses/importance framing from the core subtopic pending source/extension decision.
+- Focused the learner content on NCDC-required oceans, seas and compass directions.
+
+### Source basis
+- NCDC P7 Set One Topic 1 pages 315–317 / printed pages 294–296.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 28 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Next
+- Rewrite `regions-africa` from the source-backed blueprint: six NCDC-named regions and map-location practice first; no broad region uses/importance filler unless source-justified.
+
+---
+## v1.8.85 — 2026-07-15 — Topic 1 Subtopic 2 rewritten from source-backed blueprint
+
+**Session theme:** Continue the P7 SST Topic 1 rewrite one subtopic at a time under the curriculum-intelligence system.
+
+### Changed
+- Rewrote `world-continents-sizes` inside `app/lib/social-topics.ts`.
+- Reduced the subtopic from 4 modules to 3 source-backed modules:
+  1. `continents-of-the-world`
+  2. `continents-size-order`
+  3. `continent-map-practice`
+- Removed the unsupported `continents-uses-importance` module because the extracted NCDC Topic 1 pages require continent names and size order, not broad uses/advantages/disadvantages of continents.
+- Kept Africa's key P7 fact: Africa is the second largest continent after Asia.
+- Added map practice to connect continent names to Africa's position on the world map.
+
+### Source basis
+- NCDC P7 Set One Topic 1 pages 315–317 / printed pages 294–296.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 28 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Next
+- Rewrite `water-bodies-africa` from the source-backed blueprint: oceans, seas and compass directions first; remove/quarantine marine gateways/channels unless source-justified.
+
+---
 ## v1.8.84 — 2026-07-15 — Topic 1 Subtopic 1 rewritten from source-backed blueprint
 
 **Session theme:** Start rewriting P7 SST Topic 1 the right way, one subtopic at a time, using curriculum-intelligence evidence instead of ad hoc polishing.
