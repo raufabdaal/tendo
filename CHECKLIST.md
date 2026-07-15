@@ -95,8 +95,57 @@
 - [x] Rewrite Topic 1 application subtopic `premium-map-answering` around NCDC assessment competences
 - [x] Build passed after Topic 1 application subtopic rewrite (`npm run build`, 413 static pages)
 - [x] Topic 1 learner-flow rewrite complete across official subtopics and application practice under curriculum-intelligence direction
+- [x] Create vertical structural chain learner-layout pilot spec
+- [x] Convert Topic 1 `location-of-africa` to vertical structural chain layout across all subtopics
+- [x] Build passed after Topic 1 vertical chain pilot (`npm install && npm run build`, 413 static pages)
 - [ ] Review Topic 1 on-device/phone for readability and spacing
-- [ ] Decide next target: Topic 2 source-intelligence audit or Topic 1 final polish after review
+- [x] Start Topic 2 source-intelligence audit: `physical-features-of-africa`
+- [x] Create Topic 2 evidence notes, blueprint, QA checklist and audit note
+- [x] Rewrite Topic 2 Subtopic 1 `mountains-highlands` from source-backed blueprint
+- [x] Build passed after Topic 2 Subtopic 1 rewrite (`npm run build`, 413 static pages)
+- [x] Rewrite Topic 2 Subtopic 2 `rivers-africa` from source-backed blueprint
+- [x] Build passed after Topic 2 Subtopic 2 rewrite (`npm run build`, 413 static pages)
+- [x] Rewrite Topic 2 Subtopic 3 `lakes-africa` from source-backed blueprint
+- [x] Build passed after Topic 2 Subtopic 3 rewrite (`npm run build`, 413 static pages)
+- [x] Rewrite Topic 2 Subtopic 4 `plateau-rift-coastal` from source-backed blueprint
+- [x] Build passed after Topic 2 Subtopic 4 rewrite (`npm run build`, 413 static pages)
+- [x] Rewrite Topic 2 Subtopic 5 `formation-physical-features` from source-backed blueprint
+- [x] Rewrite Topic 2 application subtopic `premium-physical-features-application` around NCDC assessment competences
+- [x] Build passed after final Topic 2 rewrites (`npm run build`, 413 static pages)
+- [x] Topic 2 learner-flow rewrite complete across all subtopics under curriculum-intelligence direction
+- [ ] Review Topic 2 feature-country examples, river mouths, lake locations and formation diagrams against atlas/teacher source before premium-final status
+- [x] Start Topic 3 source-intelligence audit: `climate-of-africa`
+- [x] Create Topic 3 evidence notes, blueprint, QA checklist and audit note
+- [x] Rewrite Topic 3 Subtopic 1 `climatic-regions` from source-backed blueprint
+- [x] Rewrite Topic 3 Subtopic 2 `characteristics-climate` from source-backed blueprint
+- [x] Build passed after Topic 3 first batch rewrite (`npm run build`, 413 static pages)
+- [x] Rewrite Topic 3 Subtopic 3 `factors-climate` from source-backed blueprint
+- [x] Rewrite Topic 3 Subtopic 4 `climate-human-activities` from source-backed blueprint
+- [x] Build passed after Topic 3 second batch rewrite (`npm run build`, 413 static pages)
+- [x] Rewrite Topic 3 Subtopic 5 `human-activities-climate` from source-backed blueprint
+- [x] Rewrite Topic 3 application subtopic `premium-climate-interpretation` around NCDC assessment competences
+- [x] Build passed after final Topic 3 rewrites (`npm run build`, 413 static pages)
+- [x] Topic 3 learner-flow rewrite complete across all subtopics under curriculum-intelligence direction
+- [ ] Review Topic 3 country/climate examples against atlas/teacher source before premium-final status
+- [x] Start Topic 4 source-intelligence audit: `vegetation-of-africa`
+- [x] Create Topic 4 evidence notes, blueprint, QA checklist and audit note
+- [x] Rewrite Topic 4 Subtopic 1 `vegetation-types` from source-backed blueprint
+- [x] Rewrite Topic 4 Subtopic 2 `factors-vegetation` from source-backed blueprint
+- [x] Build passed after Topic 4 first batch rewrite (`npm run build`, 413 static pages)
+- [x] Rewrite Topic 4 Subtopic 3 `importance-vegetation` from source-backed blueprint
+- [x] Rewrite Topic 4 Subtopic 4 `game-parks-animals` from source-backed blueprint
+- [x] Build passed after Topic 4 second batch rewrite (`npm run build`, 413 static pages)
+- [x] Rewrite Topic 4 Subtopic 5 `population-vegetation` from source-backed blueprint
+- [x] Rewrite Topic 4 application subtopic `premium-vegetation-application` around NCDC assessment competences
+- [x] Build passed after final Topic 4 rewrites (`npm run build`, 413 static pages)
+- [x] Topic 4 learner-flow rewrite complete across all subtopics under curriculum-intelligence direction
+- [ ] Review Topic 4 animal/vegetation location examples against atlas/teacher source before premium-final status
+- [x] Start Topic 5 source-intelligence audit: `people-ethnic-groups-settlement`
+- [x] Create Topic 5 evidence notes, blueprint, QA checklist and audit note
+- [x] Rewrite Topic 5 Subtopic 1 `origin-ethnic-groups` from source-backed blueprint
+- [x] Rewrite Topic 5 Subtopic 2 `movements-ethnic-groups` from source-backed blueprint
+- [x] Build passed after Topic 5 first batch rewrite (`npm run build`, 413 static pages)
+- [ ] Rewrite Topic 5 Subtopic 3 `settlement-tribes` and Subtopic 4 `problems-effects-migration` from source-backed blueprint
 - [ ] Fill verified evidence notes for Topic 5: `people-ethnic-groups-settlement`
 - [ ] Start Topic 5 strict formatting: `people-ethnic-groups-settlement` only after evidence notes are ready
 - [x] Strict-format Topic 2 application subtopic: `premium-physical-features-application`

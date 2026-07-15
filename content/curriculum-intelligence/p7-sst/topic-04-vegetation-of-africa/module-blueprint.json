@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "vegetation-of-africa",
+    "topicTitle": "Vegetation of Africa",
+    "created": "2026-07-15",
+    "status": "blueprint-before-rewrite",
+    "evidenceFile": "content/curriculum-intelligence/p7-sst/topic-04-vegetation-of-africa/evidence-notes.json"
+  },
+  "rewritePrinciple": "Rewrite Topic 4 from NCDC evidence. Keep vegetation types, factors, importance, game parks/animals and population-vegetation separate. Avoid mechanical uses/advantages filler.",
+  "officialSubtopicBlueprint": [
+    {
+      "officialSubtopic": "Location and names of vegetation types of Africa",
+      "currentAppSubtopicId": "vegetation-types",
+      "status": "active-rewrite-first",
+      "recommendedModules": ["vegetation-meaning-types", "forest-vegetation-types", "grassland-shrub-vegetation-types", "vegetation-map-practice"]
+    },
+    {
+      "officialSubtopic": "Factors that influence vegetation distribution in Africa",
+      "currentAppSubtopicId": "factors-vegetation",
+      "status": "active-rewrite-second",
+      "recommendedModules": ["vegetation-factors-list", "climate-soil-relief", "human-activities-vegetation", "factor-answer-practice"]
+    },
+    {
+      "officialSubtopic": "Importance of vegetation to people and animals",
+      "currentAppSubtopicId": "importance-vegetation",
+      "status": "pending-rewrite"
+    },
+    {
+      "officialSubtopic": "Importance of game parks; animals in vegetation zones; reasons animals live in different zones",
+      "currentAppSubtopicId": "game-parks-animals",
+      "status": "pending-rewrite"
+    },
+    {
+      "officialSubtopic": "Population distribution in relation to vegetation and effects of population on vegetation",
+      "currentAppSubtopicId": "population-vegetation",
+      "status": "pending-rewrite"
+    },
+    {
+      "officialSubtopic": "Application practice for vegetation reasoning",
+      "currentAppSubtopicId": "premium-vegetation-application",
+      "status": "pending-rewrite"
+    }
+  ]
+}

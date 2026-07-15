@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "climate-of-africa",
+    "topicTitle": "Climate of Africa",
+    "created": "2026-07-15",
+    "status": "source-extracted-topic-3-started",
+    "primarySourceId": "NCDC-P7-SET-ONE-2024-PDF",
+    "sourcePages": "PDF pages 322-326",
+    "rule": "Only evidence captured here or later verified sources may be used for the Topic 3 rewrite."
+  },
+  "evidenceNotes": [
+    {
+      "id": "t3-e001-learning-outcome",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Topic 3 Learning Outcome",
+      "quoteOrSummary": "The learner appreciates the importance of climate and how it determines and supports humans, animals and plant life.",
+      "usedFor": "curriculum-map",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t3-e002-skills-values",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Life Skills / SST Skills / Values",
+      "quoteOrSummary": "Life skills: critical thinking, effective communication and problem-solving. SST skills: observing, drawing and inquiring. Values: appreciation, sharing, cooperation and caring.",
+      "usedFor": "activity",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t3-e003-official-subtopics",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Content outline",
+      "quoteOrSummary": "Official subtopics: climatic regions of Africa; characteristics of different climatic regions; factors that influence climate of Africa; influence of climate on human activities; influence of human activities on climate.",
+      "usedFor": "curriculum-map",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t3-e004-climatic-regions-list",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Content: Climatic regions",
+      "quoteOrSummary": "Climatic regions listed: Mediterranean, Temperate, Desert (hot and dry), Tropical, Equatorial and Mountane/Mountain.",
+      "usedFor": "classification",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t3-e005-weather-climate-elements",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Content: elements of weather/climate",
+      "quoteOrSummary": "Elements of weather/climate listed: wind, rainfall, sunshine, temperature and humidity.",
+      "usedFor": "definition",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t3-e006-factors-climate-list",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Content: factors that influence climate",
+      "quoteOrSummary": "Factors that influence climate listed: nearness to water bodies, winds, land mass, altitude/relief, human activities and vegetation.",
+      "usedFor": "classification",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t3-e007-human-activities-climate-zones",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Content: influence of climate on human activities",
+      "quoteOrSummary": "Hot deserts support irrigation, mining, nomadism and tourism. Mediterranean and temperate climates support trading, industry, farming and tourism. Equatorial and tropical climates support lumbering, agriculture, hunting, tourism, mining, trading, transport and livestock farming. Mountain climate supports farming, tourism, lumbering and mining.",
+      "usedFor": "examples",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t3-e008-assessment-competences",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Suggested Competences for Assessment",
+      "quoteOrSummary": "Assessment competences include identifying climatic regions and their characteristics; identifying factors that influence climate; explaining how climate influences human activities; describing how human activities affect climate; naming hot deserts; identifying seasons in Mediterranean climate; stating problems in hot deserts; and naming countries experiencing different climate types in Africa.",
+      "usedFor": "assessment",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t3-e009-hot-deserts",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Assessment competence / factual list",
+      "quoteOrSummary": "Major hot deserts of Africa include the Sahara and Namib.",
+      "usedFor": "examples",
+      "reliabilityTier": 1
+    }
+  ],
+  "sourceGaps": [
+    {
+      "gapId": "t3-gap-001-countries-by-climate",
+      "description": "NCDC assessment asks learners to name countries experiencing different climate types, but the extract does not provide a full country-by-climate table. Use atlas/teacher guide/reference before final premium status.",
+      "status": "needs-atlas-teacher-review"
+    },
+    {
+      "gapId": "t3-gap-002-mediterranean-seasons-detail",
+      "description": "Assessment asks learners to identify seasons in the Mediterranean climate in Africa. Basic hot dry summers and cool/wet winters can be taught, but country/season detail should be source-checked.",
+      "status": "candidate-basic-supported-needs-review"
+    }
+  ]
+}

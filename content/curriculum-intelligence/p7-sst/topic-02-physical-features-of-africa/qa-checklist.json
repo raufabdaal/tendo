@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "physical-features-of-africa",
+    "created": "2026-07-15",
+    "status": "audit-started"
+  },
+  "gates": [
+    {
+      "id": "source-gate",
+      "status": "partial-pass",
+      "checks": [
+        { "item": "NCDC Topic 2 pages extracted", "status": "passed" },
+        { "item": "Countries where major physical features are located", "status": "needs-atlas-reference" },
+        { "item": "Highest-to-lowest mountain/highland order", "status": "needs-reference" }
+      ]
+    },
+    {
+      "id": "relevance-gate",
+      "status": "needs-review",
+      "checks": [
+        { "item": "Each current app module maps to NCDC Topic 2 evidence", "status": "needs-review-for-uses-advantages-disadvantages-filler" }
+      ]
+    },
+    {
+      "id": "depth-gate",
+      "status": "needs-rewrite",
+      "checks": [
+        { "item": "Every NCDC physical feature group represented", "status": "passed-structurally" },
+        { "item": "Formation types represented", "status": "passed-structurally" },
+        { "item": "Location by countries/regions included", "status": "partial-needs-reference" }
+      ]
+    },
+    {
+      "id": "language-gate",
+      "status": "needs-rewrite",
+      "checks": [
+        { "item": "Reduce one-line/strict-fragment spacing", "status": "needs-fix" },
+        { "item": "Keep explanations learner-friendly and map-based", "status": "needs-fix" }
+      ]
+    },
+    {
+      "id": "assessment-gate",
+      "status": "needs-rewrite",
+      "checks": [
+        { "item": "Inline checks align to naming, locating, formation and map-drawing competences", "status": "needs-review" }
+      ]
+    }
+  ]
+}

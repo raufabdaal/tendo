@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "climate-of-africa",
+    "created": "2026-07-15",
+    "status": "audit-started"
+  },
+  "gates": [
+    {
+      "id": "source-gate",
+      "status": "partial-pass",
+      "checks": [
+        { "item": "NCDC Topic 3 source extracted", "status": "passed" },
+        { "item": "Countries experiencing climate types", "status": "needs-atlas-teacher-review" },
+        { "item": "Mediterranean seasons and examples", "status": "basic-supported-needs-review" }
+      ]
+    },
+    {
+      "id": "depth-gate",
+      "status": "needs-rewrite",
+      "checks": [
+        { "item": "All five official climate subtopics represented", "status": "passed-structurally" },
+        { "item": "Characteristics separate from region names", "status": "needs-rewrite" },
+        { "item": "Human activities and human influence on climate separated", "status": "needs-rewrite" }
+      ]
+    },
+    {
+      "id": "language-gate",
+      "status": "needs-rewrite",
+      "checks": [
+        { "item": "Remove uses/importances/advantages/disadvantages filler", "status": "needs-fix" },
+        { "item": "Keep P7 explanations short and direct", "status": "needs-fix" }
+      ]
+    },
+    {
+      "id": "assessment-gate",
+      "status": "needs-rewrite",
+      "checks": [
+        { "item": "Checks cover climate regions, characteristics, factors, human activities and human influence", "status": "needs-review" }
+      ]
+    }
+  ]
+}

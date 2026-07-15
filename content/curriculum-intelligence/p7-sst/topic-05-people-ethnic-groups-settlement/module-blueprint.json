@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "people-ethnic-groups-settlement",
+    "topicTitle": "The People of Africa, the Ethnic Groups and Settlement Patterns",
+    "created": "2026-07-15",
+    "status": "blueprint-before-rewrite",
+    "evidenceFile": "content/curriculum-intelligence/p7-sst/topic-05-people-ethnic-groups-settlement/evidence-notes.json"
+  },
+  "rewritePrinciple": "Rewrite Topic 5 from NCDC evidence with respectful language. Preserve assessable terms while avoiding outdated or insensitive wording in learner-facing explanations. Emphasise unity in diversity and respect for cultures.",
+  "officialSubtopicBlueprint": [
+    {
+      "officialSubtopic": "Origin of different ethnic groups",
+      "currentAppSubtopicId": "origin-ethnic-groups",
+      "status": "active-rewrite-first",
+      "recommendedModules": ["ethnic-group-meaning-respect", "basis-of-ethnic-identity", "major-ethnic-groups-careful-language"]
+    },
+    {
+      "officialSubtopic": "Movements of different ethnic groups into Africa",
+      "currentAppSubtopicId": "movements-ethnic-groups",
+      "status": "active-rewrite-second",
+      "recommendedModules": ["migration-origin-settlement", "tracing-movements-map-practice", "ancient-and-current-migration"]
+    },
+    {
+      "officialSubtopic": "Settlement patterns and tribes belonging to ethnic groups",
+      "currentAppSubtopicId": "settlement-tribes",
+      "status": "pending-rewrite"
+    },
+    {
+      "officialSubtopic": "Reasons, problems and effects of ethnic migrations",
+      "currentAppSubtopicId": "problems-effects-migration",
+      "status": "pending-rewrite"
+    },
+    {
+      "officialSubtopic": "Application practice for migration and settlement reasoning",
+      "currentAppSubtopicId": "premium-people-settlement-reasoning",
+      "status": "pending-rewrite"
+    }
+  ]
+}

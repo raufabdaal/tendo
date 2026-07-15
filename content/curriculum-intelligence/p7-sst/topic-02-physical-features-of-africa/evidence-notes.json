@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "physical-features-of-africa",
+    "topicTitle": "Physical Features of Africa",
+    "created": "2026-07-15",
+    "status": "source-extracted-topic-2-started",
+    "primarySourceId": "NCDC-P7-SET-ONE-2024-PDF",
+    "sourcePages": "PDF pages 318-321 / printed pages 297-300",
+    "rule": "Only evidence captured here or later verified sources may be used for the Topic 2 rewrite."
+  },
+  "evidenceNotes": [
+    {
+      "id": "t2-e001-background-definition",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 318 / printed page 297, Background",
+      "quoteOrSummary": "Physical features are landforms that exist on earth and give it its shape. Some physical features are relief features while others are drainage features.",
+      "usedFor": "definition",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t2-e002-physical-feature-types",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 318 / printed page 297, Background",
+      "quoteOrSummary": "Physical features include mountains, highlands, plateau, lowlands, rift valleys, lakes, rivers, depressions, islands and coastal plains.",
+      "usedFor": "classification",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t2-e003-relief-drainage",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 318 / printed page 297, Background",
+      "quoteOrSummary": "Relief features include mountains, highlands, plateau, lowlands, rift valleys and coastal plains. Drainage features include lakes, rivers, seas and oceans.",
+      "usedFor": "classification",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t2-e004-value-environment",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 318 / printed page 297, Background and Learning Outcome",
+      "quoteOrSummary": "Physical features are natural resources because they make up the physical environment which people depend on to earn a living. The learner explores and appreciates the value of the immediate and distant environment for harmonious living.",
+      "usedFor": "importance",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t2-e005-skills-values",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 318 / printed page 297, Life Skills / SST Skills / Values",
+      "quoteOrSummary": "Life skills: effective communication and critical thinking. SST skills: recording, observation, drawing, modelling and analysing differences in formation. Values: caring, appreciation, love and respect.",
+      "usedFor": "activity",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t2-e006-mountains-highlands-list",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 319 / printed page 298, Content",
+      "quoteOrSummary": "Mountains and highlands listed: The Atlas, The Drakensberg, The Cameroon highlands, The Jos plateau, The Ahaggar, The Tibesti, The Ethiopian highlands.",
+      "usedFor": "examples",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t2-e007-rivers-list",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 319 / printed page 298, Content",
+      "quoteOrSummary": "Rivers listed: River Congo, The Nile, The Niger, Zambezi, Orange, Limpopo, Blue Nile and The Volta.",
+      "usedFor": "examples",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t2-e008-lakes-list",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 319 / printed page 298, Content",
+      "quoteOrSummary": "Lakes listed: Lake Chad and Lake Ngami.",
+      "usedFor": "examples",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t2-e009-coastal-plains",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 319 / printed page 298, Content",
+      "quoteOrSummary": "The content mentions coastal plains in the West, North and South.",
+      "usedFor": "examples",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t2-e010-subject-competences",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 319 / printed page 298, Subject Competences",
+      "quoteOrSummary": "The learner names and locates major physical features of Africa beyond East Africa, discusses formation of major physical features in other regions of Africa, and identifies coastal plains.",
+      "usedFor": "curriculum-map",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t2-e011-suggested-activities",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 319 / printed page 298, Suggested Activities",
+      "quoteOrSummary": "Suggested activities include identifying and locating major physical features on the map of Africa, locating physical features region by region, drawing the map of Africa showing major physical features, and drawing diagrams illustrating formation.",
+      "usedFor": "activity",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t2-e012-teacher-guidance",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 320 / printed page 299, Guidance to the Teacher",
+      "quoteOrSummary": "Teacher guidance says to use the map of Africa to locate landforms, describe folded, fault-block and volcanic mountains, relate features to East Africa, show how physical features influence people and living things, handle each feature separately and in detail, and teach physical features outside East Africa region by region using textbooks, atlases, wall maps and ground maps.",
+      "usedFor": "activity",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t2-e013-assessment-competences",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 321 / printed page 300, Suggested Competences for Assessment",
+      "quoteOrSummary": "Assessment competences include naming mountains in other regions formed by folding, faulting and volcanicity; identifying oceans and seas into which major rivers flow; listing mountains and highlands of different regions starting with the highest; and mentioning countries where major physical features are located.",
+      "usedFor": "assessment",
+      "reliabilityTier": 1
+    }
+  ],
+  "sourceGaps": [
+    {
+      "gapId": "t2-gap-001-feature-countries",
+      "description": "NCDC assessment requires mentioning countries where major physical features are located, but the extracted pages do not give a complete country-location table. Use atlases/maps or verified reference support before final premium status.",
+      "status": "candidate-school-first-crosscheck-needed"
+    },
+    {
+      "gapId": "t2-gap-002-highest-order",
+      "description": "NCDC assessment mentions listing mountains/highlands starting with the highest, but the extracted pages do not provide heights/order. Need verified atlas/reference before including exact order beyond simple school-first examples.",
+      "status": "source-needed"
+    }
+  ]
+}

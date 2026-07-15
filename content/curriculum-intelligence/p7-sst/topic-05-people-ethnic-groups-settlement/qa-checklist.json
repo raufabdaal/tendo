@@ -5,83 +5,41 @@
     "subject": "Social Studies",
     "topicId": "people-ethnic-groups-settlement",
     "created": "2026-07-15",
-    "status": "not-started"
+    "status": "audit-started"
   },
   "gates": [
     {
       "id": "source-gate",
-      "status": "blocked",
+      "status": "partial-pass",
       "checks": [
-        "NCDC official topic/subtopic source is verified",
-        "Evidence notes exist for each official subtopic",
-        "Each module has sourceRefs"
+        { "item": "NCDC Topic 5 pages extracted", "status": "passed" },
+        { "item": "Specific tribe-to-ethnic-group mapping", "status": "needs-teacher-review" },
+        { "item": "Migration route maps", "status": "needs-atlas-teacher-review" }
       ]
     },
     {
-      "id": "relevance-gate",
-      "status": "blocked",
+      "id": "sensitivity-gate",
+      "status": "critical",
       "checks": [
-        "All content is P7 Social Studies",
-        "No content from P6/P5 or secondary school is imported",
-        "No unsourced advanced anthropology/history detail is added"
+        { "item": "Outdated/sensitive source terms handled respectfully", "status": "required" },
+        { "item": "Unity in diversity and respect for cultures emphasised", "status": "required" },
+        { "item": "No tribal stereotyping", "status": "required" }
       ]
     },
     {
       "id": "depth-gate",
-      "status": "blocked",
+      "status": "needs-rewrite",
       "checks": [
-        "Every official subtopic has at least one teaching module or a documented combined-module reason",
-        "Definitions, examples, reasons, problems and effects are covered where required",
-        "At least one check exists for every learner module"
+        { "item": "Origins, movement, settlement, tribes, reasons, problems, effects represented", "status": "passed-structurally" },
+        { "item": "Reasons/problems/effects separated clearly", "status": "needs-rewrite" }
       ]
     },
     {
       "id": "language-gate",
-      "status": "blocked",
+      "status": "needs-rewrite",
       "checks": [
-        "British English",
-        "Simple P7 learner wording",
-        "No curriculum meta-copy",
-        "No filler"
-      ]
-    },
-    {
-      "id": "context-gate",
-      "status": "blocked",
-      "checks": [
-        "Respectful wording about ethnic groups",
-        "No tribal stereotyping",
-        "Ugandan/African examples where useful",
-        "Sensitive conflict/migration content handled safely"
-      ]
-    },
-    {
-      "id": "assessment-gate",
-      "status": "blocked",
-      "checks": [
-        "Each inline check tests the stated subtopic skill",
-        "Correct answer index is verified",
-        "Explanation is correct and source-consistent"
-      ]
-    },
-    {
-      "id": "sne-accessibility-gate",
-      "status": "blocked",
-      "checks": [
-        "Short chunks",
-        "Clear headings",
-        "Map/visual dependency explained in text",
-        "No colour-only meaning"
-      ]
-    },
-    {
-      "id": "traceability-gate",
-      "status": "blocked",
-      "checks": [
-        "Version recorded",
-        "SourceRefs recorded",
-        "QA status recorded",
-        "Build and audit run after publish"
+        { "item": "Use respectful P7 wording", "status": "required" },
+        { "item": "Avoid presenting outdated racial labels as modern identity terms", "status": "required" }
       ]
     }
   ]

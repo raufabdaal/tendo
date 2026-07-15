@@ -206,6 +206,66 @@
         "topic-01-major-lines-support",
         "map-position-cross-check"
       ]
+    },
+    {
+      "id": "TENDO-P7-SST-TOPIC-02-EXTRACT",
+      "tier": 1,
+      "title": "P7 SST Topic 02 in-repo NCDC extract: Physical Features of Africa",
+      "issuer": "Tendo internal extract from NCDC P7 Set One PDF",
+      "url": null,
+      "localPath": "docs/ncdc-extracts/p7-sst-topic-02-physical-features-of-africa.md",
+      "classLevel": "P7",
+      "subjectsCovered": [
+        "Social Studies"
+      ],
+      "verificationStatus": "cross-checked-against-official-pdf-pages-318-321",
+      "verificationNotes": "Cross-checked on 2026-07-15 against NCDC PDF pages 318-321 / printed pages 297-300.",
+      "allowedUses": [
+        "topic-02-evidence-notes",
+        "curriculum-map",
+        "module-blueprint",
+        "assessment-alignment"
+      ]
+    },
+    {
+      "id": "TENDO-P7-SST-TOPIC-03-EXTRACT",
+      "tier": 1,
+      "title": "P7 SST Topic 03 in-repo NCDC extract: Climate of Africa",
+      "issuer": "Tendo internal extract from NCDC P7 Set One PDF",
+      "url": null,
+      "localPath": "docs/ncdc-extracts/p7-sst-topic-03-climate-of-africa.md",
+      "classLevel": "P7",
+      "subjectsCovered": [
+        "Social Studies"
+      ],
+      "verificationStatus": "in-repo-ncdc-extract-available",
+      "verificationNotes": "Used to start Topic 3 curriculum-intelligence audit. Should be cross-checked against official PDF pages 322-326 before premium-final status.",
+      "allowedUses": [
+        "topic-03-evidence-notes",
+        "curriculum-map",
+        "module-blueprint",
+        "assessment-alignment"
+      ]
+    },
+    {
+      "id": "TENDO-P7-SST-TOPIC-04-EXTRACT",
+      "tier": 1,
+      "title": "P7 SST Topic 04 in-repo NCDC extract: Vegetation of Africa",
+      "issuer": "Tendo internal extract from NCDC P7 Set One PDF",
+      "url": null,
+      "localPath": "docs/ncdc-extracts/p7-sst-topic-04-vegetation-of-africa.md",
+      "classLevel": "P7",
+      "subjectsCovered": [
+        "Social Studies"
+      ],
+      "verificationStatus": "in-repo-ncdc-extract-available",
+      "verificationNotes": "Used to start Topic 4 curriculum-intelligence audit. Should be cross-checked against official PDF pages 327-331 before premium-final status.",
+      "allowedUses": [
+        "topic-04-evidence-notes",
+        "curriculum-map",
+        "module-blueprint",
+        "assessment-alignment"
+      ]
     }
   ]
 }

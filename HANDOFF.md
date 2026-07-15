@@ -142,7 +142,199 @@ Topic 1 application practice rewrite completed:
 - Rebuilt practice around NCDC Topic 1 assessment competences: drawing Africa with regions/lines, countries/capitals, islands, and compass directions.
 - Build passed: 413 static pages.
 
-Topic 1 learner-flow rewrite is now complete under the curriculum-intelligence direction. Next recommended step is real-device/readability review for Topic 1 before starting Topic 2 source-intelligence audit.
+Topic 1 learner-flow rewrite is now complete under the curriculum-intelligence direction. Topic 2 has now started.
+
+
+## VERTICAL STRUCTURAL CHAIN LEARNER-LAYOUT PILOT
+
+Founder identified that even corrected content may still be too paragraph-heavy for children. New learner-facing layout rule:
+
+```txt
+Label: short answer point
+Label: short answer point
+Label: short answer point
+Inline check
+```
+
+Created:
+
+- `docs/spec/vertical-structural-chain-content-pilot-2026-07-15.md`
+
+Applied to Topic 1:
+
+- `app/lib/social-topics.ts` → `location-of-africa` all subtopics converted to vertical structural chain style.
+
+Important: this changes presentation, not source policy. Evidence notes and blueprints stay full. Learner screens should be short, labelled, scannable and exam-usable. Do not return to blind headings like uses/advantages everywhere; labels must match NCDC need.
+
+Build passed after `npm install && npm run build`: 413 static pages.
+
+## TOPIC 2 STARTED — PHYSICAL FEATURES OF AFRICA
+
+Created Topic 2 curriculum-intelligence files:
+
+- `content/curriculum-intelligence/p7-sst/topic-02-physical-features-of-africa/evidence-notes.json`
+- `content/curriculum-intelligence/p7-sst/topic-02-physical-features-of-africa/module-blueprint.json`
+- `content/curriculum-intelligence/p7-sst/topic-02-physical-features-of-africa/qa-checklist.json`
+- `docs/ops/p7-sst-topic-02-curriculum-intelligence-audit-2026-07-15.md`
+
+Topic 2 Subtopic 1 completed:
+
+- Updated `app/lib/social-topics.ts` → `physical-features-of-africa` / `mountains-highlands`.
+- Rewrote it into 3 source-backed modules.
+- Country-location examples are school-first support and need atlas/teacher review before premium-final.
+- Audit: 0 failures / 34 warnings.
+- Build passed: 413 static pages.
+
+Next target completed: `rivers-africa`.
+
+Topic 2 Subtopic 2 completed:
+
+- Updated `app/lib/social-topics.ts` → `physical-features-of-africa` / `rivers-africa`.
+- Rewrote it into 4 source-backed modules.
+- Focused on rivers as drainage features, NCDC-listed rivers, map location and oceans/seas into which rivers flow.
+- Audit: 0 failures / 34 warnings.
+- Build passed: 413 static pages.
+
+Next target completed: `lakes-africa`.
+
+Topic 2 Subtopic 3 completed:
+
+- Updated `app/lib/social-topics.ts` → `physical-features-of-africa` / `lakes-africa`.
+- Rewrote it into 3 source-backed modules.
+- Focused on lakes as drainage features, NCDC-listed Lake Chad and Lake Ngami, map location and value/map practice.
+- Audit: 0 failures / 34 warnings.
+- Build passed: 413 static pages.
+
+Next target completed: `plateau-rift-coastal`.
+
+Topic 2 Subtopic 4 completed:
+
+- Updated `app/lib/social-topics.ts` → `physical-features-of-africa` / `plateau-rift-coastal`.
+- Rewrote it into 3 source-backed modules.
+- Focused on plateau, rift valley and coastal plains as relief features, NCDC coastal plains in West/North/South, and model/map practice.
+- Audit: 0 failures / 34 warnings.
+- Build passed: 413 static pages.
+
+Next target completed: `formation-physical-features` plus application practice.
+
+Topic 2 final two subtopics completed:
+
+- Updated `app/lib/social-topics.ts` → `physical-features-of-africa` / `formation-physical-features`.
+- Updated `app/lib/social-topics.ts` → `physical-features-of-africa` / `premium-physical-features-application`.
+- Formation now focuses on folded, fault-block and volcanic mountains with diagram/model practice.
+- Application practice now aligns to NCDC competences: naming, locating, formation, diagrams and value answers.
+- Audit: 0 failures / 34 warnings.
+- Build passed: 413 static pages.
+
+Topic 2 learner-flow rewrite is complete. Remaining warnings are review tasks before premium-final status, especially atlas/teacher confirmation for feature-country examples, river mouths, lake locations and formation diagrams.
+
+Next recommended target started: Topic 3 `climate-of-africa`.
+
+## TOPIC 3 STARTED — CLIMATE OF AFRICA
+
+Created Topic 3 curriculum-intelligence files:
+
+- `content/curriculum-intelligence/p7-sst/topic-03-climate-of-africa/evidence-notes.json`
+- `content/curriculum-intelligence/p7-sst/topic-03-climate-of-africa/module-blueprint.json`
+- `content/curriculum-intelligence/p7-sst/topic-03-climate-of-africa/qa-checklist.json`
+- `docs/ops/p7-sst-topic-03-curriculum-intelligence-audit-2026-07-15.md`
+
+Topic 3 first batch completed:
+
+- Updated `app/lib/social-topics.ts` → `climate-of-africa` / `climatic-regions`.
+- Updated `app/lib/social-topics.ts` → `climate-of-africa` / `characteristics-climate`.
+- Removed mechanical uses/importances/advantages/disadvantages filler.
+- Audit: 0 failures / 40 warnings.
+- Build passed: 413 static pages.
+
+Next target completed: `factors-climate` and `climate-human-activities`.
+
+Topic 3 second batch completed:
+
+- Updated `app/lib/social-topics.ts` → `climate-of-africa` / `factors-climate`.
+- Updated `app/lib/social-topics.ts` → `climate-of-africa` / `climate-human-activities`.
+- Kept NCDC factor list exact.
+- Used NCDC human activity list by climate type.
+- Audit: 0 failures / 40 warnings.
+- Build passed: 413 static pages.
+
+Next target completed: `human-activities-climate` and `premium-climate-interpretation`.
+
+Topic 3 final batch completed:
+
+- Updated `app/lib/social-topics.ts` → `climate-of-africa` / `human-activities-climate`.
+- Updated `app/lib/social-topics.ts` → `climate-of-africa` / `premium-climate-interpretation`.
+- Human influence now separates harmful activities, effects and protective actions.
+- Application practice now aligns to NCDC climate assessment competences.
+- Audit: 0 failures / 40 warnings.
+- Build passed: 413 static pages.
+
+Topic 3 learner-flow rewrite is complete. Remaining warnings are review tasks before premium-final status, especially country/climate examples and atlas/teacher confirmation.
+
+Next recommended target started: Topic 4 `vegetation-of-africa`.
+
+## TOPIC 4 STARTED — VEGETATION OF AFRICA
+
+Created Topic 4 curriculum-intelligence files:
+
+- `content/curriculum-intelligence/p7-sst/topic-04-vegetation-of-africa/evidence-notes.json`
+- `content/curriculum-intelligence/p7-sst/topic-04-vegetation-of-africa/module-blueprint.json`
+- `content/curriculum-intelligence/p7-sst/topic-04-vegetation-of-africa/qa-checklist.json`
+- `docs/ops/p7-sst-topic-04-curriculum-intelligence-audit-2026-07-15.md`
+
+Topic 4 first batch completed:
+
+- Updated `app/lib/social-topics.ts` → `vegetation-of-africa` / `vegetation-types`.
+- Updated `app/lib/social-topics.ts` → `vegetation-of-africa` / `factors-vegetation`.
+- Kept NCDC vegetation type list and factor list exact.
+- Removed mechanical uses/importances/advantages/disadvantages filler.
+- Audit: 0 failures / 46 warnings.
+- Build passed: 413 static pages.
+
+Next target completed: `importance-vegetation` and `game-parks-animals`.
+
+Topic 4 second batch completed:
+
+- Updated `app/lib/social-topics.ts` → `vegetation-of-africa` / `importance-vegetation`.
+- Updated `app/lib/social-topics.ts` → `vegetation-of-africa` / `game-parks-animals`.
+- Importance now separates people, animals/environment and caring for vegetation.
+- Game parks now covers importance, animals in vegetation zones, reasons animals live in different zones, and caring for animals/birds.
+- Audit: 0 failures / 46 warnings.
+- Build passed: 413 static pages.
+
+Next target completed: `population-vegetation` and `premium-vegetation-application`.
+
+Topic 4 final batch completed:
+
+- Updated `app/lib/social-topics.ts` → `vegetation-of-africa` / `population-vegetation`.
+- Updated `app/lib/social-topics.ts` → `vegetation-of-africa` / `premium-vegetation-application`.
+- Population content now separates distribution, reasons for differences, effects of big population and protection solutions.
+- Application practice now aligns to NCDC vegetation assessment competences.
+- Audit: 0 failures / 46 warnings.
+- Build passed: 413 static pages.
+
+Topic 4 learner-flow rewrite is complete. Remaining warnings are review tasks before premium-final status, especially animal examples and vegetation-location examples.
+
+Next recommended target started: Topic 5 `people-ethnic-groups-settlement`.
+
+## TOPIC 5 STARTED — PEOPLE OF AFRICA, ETHNIC GROUPS AND SETTLEMENT
+
+Created/updated Topic 5 curriculum-intelligence files:
+
+- `content/curriculum-intelligence/p7-sst/topic-05-people-ethnic-groups-settlement/evidence-notes.json`
+- `content/curriculum-intelligence/p7-sst/topic-05-people-ethnic-groups-settlement/module-blueprint.json`
+- `content/curriculum-intelligence/p7-sst/topic-05-people-ethnic-groups-settlement/qa-checklist.json`
+- `docs/ops/p7-sst-topic-05-curriculum-intelligence-audit-2026-07-15.md`
+
+Topic 5 first batch completed:
+
+- Updated `app/lib/social-topics.ts` → `people-ethnic-groups-settlement` / `origin-ethnic-groups`.
+- Updated `app/lib/social-topics.ts` → `people-ethnic-groups-settlement` / `movements-ethnic-groups`.
+- Used respectful wording because the source includes older/sensitive ethnic terminology.
+- Audit: 0 failures / 46 warnings.
+- Build passed: 413 static pages.
+
+Next target: rewrite `settlement-tribes` and `problems-effects-migration` together if quality remains high. Handle settlement patterns, tribes/ethnic group matching, reasons, problems and effects respectfully and clearly; avoid unsourced detailed tribe mapping until teacher-reviewed.
 
 
 ## 🚀 PUSH STATUS — READY

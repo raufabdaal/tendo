@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "physical-features-of-africa",
+    "topicTitle": "Physical Features of Africa",
+    "created": "2026-07-15",
+    "status": "blueprint-before-rewrite",
+    "evidenceFile": "content/curriculum-intelligence/p7-sst/topic-02-physical-features-of-africa/evidence-notes.json"
+  },
+  "rewritePrinciple": "Rewrite Topic 2 from NCDC evidence. Handle each physical feature separately and in detail, but keep learner modules focused and P7-appropriate. Use maps/atlases for countries/locations where NCDC requires them but does not provide full tables.",
+  "officialSubtopicBlueprint": [
+    {
+      "officialSubtopic": "Mountains and highlands",
+      "currentAppSubtopicId": "mountains-highlands",
+      "status": "active-rewrite-first",
+      "recommendedModules": [
+        {
+          "moduleId": "physical-features-relief-drainage",
+          "title": "Physical Features, Relief and Drainage",
+          "evidenceRefs": ["t2-e001-background-definition", "t2-e002-physical-feature-types", "t2-e003-relief-drainage"],
+          "requiredTeachingPoints": [
+            "Meaning of physical features.",
+            "Difference between relief features and drainage features.",
+            "Mountains and highlands are relief features."
+          ],
+          "needsExtraSource": false
+        },
+        {
+          "moduleId": "major-mountains-highlands-africa",
+          "title": "Major Mountains and Highlands of Africa",
+          "evidenceRefs": ["t2-e006-mountains-highlands-list", "t2-e010-subject-competences", "t2-e013-assessment-competences"],
+          "requiredTeachingPoints": [
+            "The Atlas, Drakensberg, Cameroon highlands, Jos plateau, Ahaggar, Tibesti, Ethiopian highlands.",
+            "Locate examples region by region.",
+            "Mention countries where possible using atlas/reference support."
+          ],
+          "needsExtraSource": true,
+          "extraSourceReason": "NCDC lists feature names and requires countries where located, but does not give all countries in the extracted pages."
+        },
+        {
+          "moduleId": "mountains-highlands-value-activity",
+          "title": "Value and Map Practice for Mountains and Highlands",
+          "evidenceRefs": ["t2-e004-value-environment", "t2-e011-suggested-activities", "t2-e012-teacher-guidance"],
+          "requiredTeachingPoints": [
+            "Physical features are natural resources.",
+            "Use map work to locate mountains and highlands.",
+            "Draw/model features and discuss how they influence people's lives."
+          ],
+          "needsExtraSource": false
+        }
+      ]
+    },
+    {
+      "officialSubtopic": "Rivers",
+      "currentAppSubtopicId": "rivers-africa",
+      "status": "pending-rewrite",
+      "recommendedModules": ["rivers-list-and-location", "river-mouths-oceans-seas", "river-value-and-map-practice"]
+    },
+    {
+      "officialSubtopic": "Lakes",
+      "currentAppSubtopicId": "lakes-africa",
+      "status": "pending-rewrite",
+      "recommendedModules": ["lakes-list-and-location", "lake-value-and-map-practice"]
+    },
+    {
+      "officialSubtopic": "Plateau, rift valley and coastal plains",
+      "currentAppSubtopicId": "plateau-rift-coastal",
+      "status": "pending-rewrite",
+      "recommendedModules": ["plateau-rift-coastal-meaning", "coastal-plains-west-north-south", "map-and-model-practice"]
+    },
+    {
+      "officialSubtopic": "Formation of major physical features of Africa",
+      "currentAppSubtopicId": "formation-physical-features",
+      "status": "pending-rewrite",
+      "recommendedModules": ["folded-mountains", "fault-block-mountains", "volcanic-mountains", "formation-diagram-practice"]
+    }
+  ]
+}

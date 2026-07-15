@@ -672,3 +672,62 @@ Topic 1 status:
 ```txt
 All core Topic 1 subtopics and the application practice subtopic have now been rewritten under the curriculum-intelligence direction.
 ```
+
+---
+
+## Update — Topic 1 converted to vertical structural chain learner layout
+
+Founder review identified a new learner-facing issue: even source-aligned content can still be hard for P7 learners if it appears as paragraph-heavy explanations. The pilot direction is now **vertical structural chain layout**.
+
+New learner-facing layout principle:
+
+```txt
+Label: short answer point
+Label: short answer point
+Label: short answer point
+Inline check
+```
+
+Example:
+
+```txt
+Meaning: Africa is one of the seven continents.
+Map tools: globe, compass directions, latitudes and longitudes.
+Exam point: use directions and nearby features.
+```
+
+Applied to all Topic 1 subtopics in `app/lib/social-topics.ts`:
+
+1. `location-position-africa`
+2. `world-continents-sizes`
+3. `water-bodies-africa`
+4. `regions-africa`
+5. `countries-capitals-africa`
+6. `premium-map-answering`
+
+Documentation added:
+
+```txt
+docs/spec/vertical-structural-chain-content-pilot-2026-07-15.md
+```
+
+Verification:
+
+```bash
+node scripts/audit-curriculum-intelligence.js
+cd app && npm install && npm run build
+```
+
+Results:
+
+```txt
+Audit: 0 failures
+Build: ✓ Generating static pages (413/413)
+```
+
+Decision:
+
+- Keep the evidence notes and blueprints full.
+- Make the learner screen short, labelled and exam-usable.
+- Do not return to blind strict headings.
+- Use only labels that fit the NCDC subtopic.

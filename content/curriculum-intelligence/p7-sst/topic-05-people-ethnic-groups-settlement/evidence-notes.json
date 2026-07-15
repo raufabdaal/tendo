@@ -6,58 +6,119 @@
     "topicId": "people-ethnic-groups-settlement",
     "topicTitle": "The People of Africa, the Ethnic Groups and Settlement Patterns",
     "created": "2026-07-15",
-    "status": "source-needed",
-    "rule": "Do not publish rewritten learner content until evidence notes are verified."
+    "status": "source-extracted-topic-5-started",
+    "primarySourceId": "NCDC-P7-SET-ONE-2024-PDF",
+    "sourcePages": "PDF pages 333-336 / printed pages 312-315",
+    "rule": "Only evidence captured here or later verified sources may be used for the Topic 5 rewrite. Use respectful learner-facing language when source terminology is outdated or sensitive."
   },
-  "officialSubtopics": [
+  "evidenceNotes": [
     {
-      "id": "origin-ethnic-groups",
-      "officialSubtopic": "Origin of different ethnic groups",
-      "evidenceStatus": "source-needed",
-      "evidenceNotes": [],
-      "draftPermission": "blocked-until-evidence-exists"
+      "id": "t5-e001-background-scope",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 333 / printed page 312, Background",
+      "quoteOrSummary": "In P6, learners studied different groups of people in East Africa, their movements and where they settled. In P7, learners are introduced to different ethnic groups in Africa, their ethnicity, migrations and settlement patterns, reasons for migrations, problems met, economic activities and social setup.",
+      "usedFor": "curriculum-map",
+      "reliabilityTier": 1
     },
     {
-      "id": "movements-ethnic-groups",
-      "officialSubtopic": "Movements of different ethnic groups into Africa",
-      "evidenceStatus": "source-needed",
-      "evidenceNotes": [],
-      "draftPermission": "blocked-until-evidence-exists"
+      "id": "t5-e002-ethnic-basis",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 333 / printed page 312, Background",
+      "quoteOrSummary": "People are grouped according to ethnic settings because of factors including geographical location, language, culture, ancestry, sense of belonging, religion, values and nationality.",
+      "usedFor": "definition",
+      "reliabilityTier": 1
     },
     {
-      "id": "settlement-patterns",
-      "officialSubtopic": "Settlement patterns of different ethnic groups",
-      "evidenceStatus": "source-needed",
-      "evidenceNotes": [],
-      "draftPermission": "blocked-until-evidence-exists"
+      "id": "t5-e003-learning-outcome-values",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF pages 333-334 / printed pages 312-313, Learning Outcome / Skills / Values",
+      "quoteOrSummary": "The learner demonstrates and promotes positive values and social practices in society and shows respect for his/her own and other cultures. Life skills include creative thinking and friendship formation. SST skills include inquiry, observation, classifying and drawing. Values include cooperation, love, respect and appreciation.",
+      "usedFor": "curriculum-map",
+      "reliabilityTier": 1
     },
     {
-      "id": "tribes-ethnic-groups",
-      "officialSubtopic": "Tribes belonging to different ethnic groups",
-      "evidenceStatus": "source-needed",
-      "evidenceNotes": [],
-      "draftPermission": "blocked-until-evidence-exists"
+      "id": "t5-e004-first-content-block",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 334 / printed page 313, Content",
+      "quoteOrSummary": "The learner describes the origin of different ethnic groups in Africa, describes movements of different ethnic groups, identifies settlement patterns, and identifies tribes belonging to different ethnic groups.",
+      "usedFor": "curriculum-map",
+      "reliabilityTier": 1
     },
     {
-      "id": "reasons-migration-settlement",
-      "officialSubtopic": "Reasons for migration and settlement of ethnic groups in Africa",
-      "evidenceStatus": "source-needed",
-      "evidenceNotes": [],
-      "draftPermission": "blocked-until-evidence-exists"
+      "id": "t5-e005-key-words-1",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 334 / printed page 313, Language competences",
+      "quoteOrSummary": "Key words: origin, settlement, migration and ethnic.",
+      "usedFor": "definition",
+      "reliabilityTier": 1
     },
     {
-      "id": "problems-movement-settlement",
-      "officialSubtopic": "Problems met by ethnic groups during movement and settlement in Africa",
-      "evidenceStatus": "source-needed",
-      "evidenceNotes": [],
-      "draftPermission": "blocked-until-evidence-exists"
+      "id": "t5-e006-ethnic-groups-source-list",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 334 / printed page 313, Content",
+      "quoteOrSummary": "The source lists tribes/groups belonging to different ethnic groups using terms including Berbers, Negroes/Bantu, Cushites/Arabs, and Caucasians (Hamites and Semites). Some wording is older/sensitive and must be handled respectfully in learner-facing content.",
+      "usedFor": "examples",
+      "reliabilityTier": 1
     },
     {
-      "id": "effects-ethnic-migrations",
-      "officialSubtopic": "Effects of ethnic migrations",
-      "evidenceStatus": "source-needed",
-      "evidenceNotes": [],
-      "draftPermission": "blocked-until-evidence-exists"
+      "id": "t5-e007-activities-origin-movement-settlement",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 334 / printed page 313, Suggested Activities",
+      "quoteOrSummary": "Suggested activities include tracing the origin of different ethnic groups into Africa, discussing movements of ethnic groups, discussing settlement patterns, and matching different tribes with their ethnic groups.",
+      "usedFor": "activity",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t5-e008-reasons-migration",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 334 / printed page 313, Reasons for migration",
+      "quoteOrSummary": "Reasons for migration, movements and settlements include internal conflicts, wars, population increase, lack of enough land and water, harsh climate and expansionism.",
+      "usedFor": "examples",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t5-e009-problems-migration",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 335 / printed page 314, Problems",
+      "quoteOrSummary": "Problems met during movement and settlement include resistance from indigenous people, difficulty in movements, wild animals and diseases, difficult terrain, food and water shortage, and harsh climate.",
+      "usedFor": "examples",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t5-e010-effects-migration",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 335 / printed page 314, Effects",
+      "quoteOrSummary": "Effects of migrations listed include population increase and cultures changed.",
+      "usedFor": "examples",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t5-e011-teacher-guidance",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF pages 335-336 / printed pages 314-315, Guidance to the Teacher",
+      "quoteOrSummary": "Teacher guidance emphasises learners' cultural heritage, unity in diversity, appreciation of cultural norms of Uganda, brainstorming, storytelling, guided discovery, comparing current rural-urban/rural-rural/urban-rural migration with ancient migrations, locating migration routes and settlement patterns, relief influence on settlement, and simple research on how tribal groups came to settle where they are in Uganda.",
+      "usedFor": "activity",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t5-e012-assessment-competences",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "PDF page 336 / printed page 315, Suggested Competences for Assessment",
+      "quoteOrSummary": "Assessment competences include naming ethnic groups that settled in Africa; giving reasons why ethnic groups migrated from their cradle land; drawing a map of Africa showing settlement of different ethnic groups; identifying tribes that belong to different ethnic groups; discussing problems met during movement and settlement; and explaining effects of migrations.",
+      "usedFor": "assessment",
+      "reliabilityTier": 1
+    }
+  ],
+  "sourceGaps": [
+    {
+      "gapId": "t5-gap-001-specific-tribe-mapping",
+      "description": "The source requires identifying tribes belonging to different ethnic groups but gives only broad/older labels. A respectful, teacher-reviewed tribe-to-ethnic-group mapping is needed before premium-final status.",
+      "status": "needs-teacher-review"
+    },
+    {
+      "gapId": "t5-gap-002-migration-routes",
+      "description": "The source asks learners to locate migration routes and settlement patterns but does not provide detailed route maps in the extracted pages. Use atlas/approved source before final route maps.",
+      "status": "needs-atlas-teacher-review"
     }
   ]
 }

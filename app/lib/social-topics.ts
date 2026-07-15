@@ -112,8 +112,8 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
         "Uganda is in East Africa.",
       ],
     },
-    subtopics: [
-            {
+        subtopics: [
+      {
         subtopicId: "location-position-africa",
         title: "1. Location and position of Africa using major lines of latitudes and longitudes",
         modules: [
@@ -122,89 +122,70 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             title: "Africa on the World Map",
             bigIdea: "Africa is studied in P7 as a continent on the world map and in relation to other continents, oceans and seas.",
             learnIt: [
-              "Africa is one of the continents of the world. In P7 Social Studies, learners study Africa's position on the world map, its countries, its regions and its relationship with the rest of the world.",
-              "To locate Africa properly, use three map tools together: a world map or globe, compass directions, and major lines of latitude and longitude.",
-              "A good location answer should not only say 'Africa is on the world map'. It should explain Africa's position using nearby continents, oceans, seas and major map lines.",
-              "Examples: Europe is north of Africa. The Atlantic Ocean is west of Africa. The Indian Ocean is east of Africa. The Mediterranean Sea is north of Africa."
+              "<strong class=\"kw\">Meaning:</strong> Africa is one of the seven continents of the world.",
+              "<strong class=\"kw\">P7 focus:</strong> location, countries, regions, map lines, oceans and nearby continents.",
+              "<strong class=\"kw\">Map tools:</strong> world map/globe, compass directions, latitudes and longitudes.",
+              "<strong class=\"kw\">Example:</strong> Europe is north of Africa; the Atlantic Ocean is west of Africa.",
+              "<strong class=\"kw\">Exam point:</strong> Do not just say Africa is on the map. Use directions and nearby features."
             ],
-            tryThis: {
-              question: "Which tools help a learner locate Africa on a world map?",
-              choices: ["A globe, compass directions, latitudes and longitudes", "Only a ruler", "Only country flags", "Only rainfall figures"],
-              correct: 0,
-              explanation: "NCDC expects learners to use a globe/world map, compass directions, latitudes and longitudes to locate Africa."
-            }
+            tryThis: { question: "Which tools help a learner locate Africa on a world map?", choices: ["A globe, compass directions, latitudes and longitudes", "Only a ruler", "Only country flags", "Only rainfall figures"], correct: 0, explanation: "NCDC expects learners to use a globe/world map, compass directions, latitudes and longitudes to locate Africa." }
           },
           {
             moduleId: "latitude-longitude-position-keywords",
             title: "Latitude, Longitude and Position",
             bigIdea: "Latitude and longitude are map lines used to describe the position of places.",
             learnIt: [
-              "Position means where a place is found. In map work, position can be described using direction words, nearby features, latitude and longitude.",
-              "Lines of latitude run from west to east across a map. They help show how far north or south a place is from the Equator.",
-              "Lines of longitude run from north to south on a map. They help show how far east or west a place is from the Prime Meridian.",
-              "The Equator is the main line of latitude. The Prime Meridian is the main line of longitude. A learner should be able to tell the difference between these two types of lines."
+              "<strong class=\"kw\">Position:</strong> where a place is found on a map or globe.",
+              "<strong class=\"kw\">Latitude:</strong> imaginary lines running west to east; they show north or south of the Equator.",
+              "<strong class=\"kw\">Longitude:</strong> imaginary lines running north to south; they show east or west of the Prime Meridian.",
+              "<strong class=\"kw\">Main latitude:</strong> Equator, marked 0° latitude.",
+              "<strong class=\"kw\">Main longitude:</strong> Prime Meridian, marked 0° longitude."
             ],
-            tryThis: {
-              question: "Which statement correctly describes lines of latitude?",
-              choices: ["They help show how far north or south a place is", "They are capital cities", "They are oceans around Africa", "They are types of vegetation"],
-              correct: 0,
-              explanation: "Latitude lines help show position north or south of the Equator."
-            }
+            tryThis: { question: "Which statement correctly describes lines of latitude?", choices: ["They help show how far north or south a place is", "They are capital cities", "They are oceans around Africa", "They are types of vegetation"], correct: 0, explanation: "Latitude lines help show position north or south of the Equator." }
           },
           {
             moduleId: "equator-tropics-prime-meridian-africa",
             title: "Equator, Tropics and Prime Meridian",
             bigIdea: "Africa is crossed by important map lines that help learners describe its position accurately.",
             learnIt: [
-              "The Equator is 0° latitude. It divides the earth into the Northern Hemisphere and Southern Hemisphere, and it crosses Africa.",
-              "The Prime Meridian is 0° longitude. It divides the earth into the Eastern Hemisphere and Western Hemisphere, and it crosses western Africa.",
-              "The Tropic of Cancer is an important latitude north of the Equator. The Tropic of Capricorn is an important latitude south of the Equator. Africa lies largely within the tropical region between these two tropics.",
-              "When drawing a map for this topic, show Africa, the Equator, the Prime Meridian and, where required by the teacher, the two tropics. Label each line clearly."
+              "<strong class=\"kw\">Equator:</strong> 0° latitude; divides the earth into Northern and Southern Hemispheres.",
+              "<strong class=\"kw\">Prime Meridian:</strong> 0° longitude; divides the earth into Eastern and Western Hemispheres.",
+              "<strong class=\"kw\">Tropic of Cancer:</strong> important latitude north of the Equator; crosses North Africa.",
+              "<strong class=\"kw\">Tropic of Capricorn:</strong> important latitude south of the Equator; crosses Southern Africa.",
+              "<strong class=\"kw\">Map task:</strong> draw Africa and label the Equator and Prime Meridian clearly."
             ],
-            tryThis: {
-              question: "Which line is 0° longitude?",
-              choices: ["Prime Meridian", "Equator", "Tropic of Cancer", "Tropic of Capricorn"],
-              correct: 0,
-              explanation: "The Prime Meridian is 0° longitude. The Equator is 0° latitude."
-            }
+            tryThis: { question: "Which line is 0° longitude?", choices: ["Prime Meridian", "Equator", "Tropic of Cancer", "Tropic of Capricorn"], correct: 0, explanation: "The Prime Meridian is 0° longitude. The Equator is 0° latitude." }
           },
           {
             moduleId: "locating-africa-compass-directions",
             title: "Locating Africa Using Compass Directions",
             bigIdea: "Compass directions help learners state where other continents, oceans and seas are from Africa.",
             learnIt: [
-              "A compass direction tells where one place is from another. The four main compass directions are north, south, east and west.",
-              "From Africa, Europe is to the north, Asia is to the north-east/east, the Atlantic Ocean is to the west, and the Indian Ocean is to the east/south-east. The Mediterranean Sea is north of Africa and the Red Sea is north-east of Africa.",
-              "In P7, avoid one-word answers when explaining location. A strong answer names the place and gives its direction from Africa.",
-              "Example: The Atlantic Ocean lies to the west of Africa. The Mediterranean Sea lies to the north of Africa."
+              "<strong class=\"kw\">Compass directions:</strong> north, south, east, west, north-east, south-east, south-west and north-west.",
+              "<strong class=\"kw\">Europe:</strong> north of Africa.",
+              "<strong class=\"kw\">Asia:</strong> north-east/east of Africa.",
+              "<strong class=\"kw\">Atlantic Ocean:</strong> west of Africa.",
+              "<strong class=\"kw\">Indian Ocean:</strong> east/south-east of Africa.",
+              "<strong class=\"kw\">Exam sentence:</strong> The Atlantic Ocean lies to the west of Africa."
             ],
-            tryThis: {
-              question: "Which water body lies west of Africa?",
-              choices: ["Atlantic Ocean", "Indian Ocean", "Red Sea", "Arctic Ocean"],
-              correct: 0,
-              explanation: "The Atlantic Ocean lies to the west of Africa."
-            }
+            tryThis: { question: "Which water body lies west of Africa?", choices: ["Atlantic Ocean", "Indian Ocean", "Red Sea", "Arctic Ocean"], correct: 0, explanation: "The Atlantic Ocean lies to the west of Africa." }
           },
           {
             moduleId: "map-drawing-activity-africa-lines",
             title: "Map Drawing Activity: Africa, Regions and Lines",
             bigIdea: "NCDC expects learners to practise drawing maps and showing regions, latitudes and longitudes.",
             learnIt: [
-              "Activity 1: Draw a simple outline map of Africa. Do not worry about making it perfect; focus on correct labels and position.",
-              "Activity 2: Draw and label the Equator and Prime Meridian. If your teacher asks for them, also show the Tropic of Cancer and Tropic of Capricorn.",
-              "Activity 3: Mark the main regions of Africa: West Africa, East Africa, Northern Africa, Central Africa, Southern Africa and the Horn of Africa.",
-              "Activity 4: Use arrows to show directions of nearby water bodies and continents from Africa. For example, draw an arrow west to the Atlantic Ocean and north to Europe."
+              "<strong class=\"kw\">Step 1:</strong> draw a simple outline map of Africa.",
+              "<strong class=\"kw\">Step 2:</strong> label the Equator and Prime Meridian.",
+              "<strong class=\"kw\">Step 3:</strong> show the regions of Africa: West, East, Northern, Central, Southern and Horn of Africa.",
+              "<strong class=\"kw\">Step 4:</strong> add a north arrow or compass direction mark.",
+              "<strong class=\"kw\">Marking guide:</strong> clear labels are more important than decoration."
             ],
-            tryThis: {
-              question: "Which item should appear on a good P7 map of Africa for this topic?",
-              choices: ["Regions, latitude lines and longitude lines", "Only football teams", "Only rainfall bars", "Only animal drawings"],
-              correct: 0,
-              explanation: "The assessment competence includes drawing Africa showing regions, lines of latitude and lines of longitude."
-            }
+            tryThis: { question: "Which item should appear on a good P7 map of Africa for this topic?", choices: ["Regions, latitude lines and longitude lines", "Only football teams", "Only rainfall bars", "Only animal drawings"], correct: 0, explanation: "The assessment competence includes drawing Africa showing regions, lines of latitude and lines of longitude." }
           }
         ]
       },
-            {
+      {
         subtopicId: "world-continents-sizes",
         title: "2. World continents and their sizes",
         modules: [
@@ -213,65 +194,44 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             title: "Continents of the World",
             bigIdea: "A continent is one of the largest land masses of the world, and Africa is one of the seven continents.",
             learnIt: [
-              "A continent is a very large land mass on the earth. The world is commonly taught as having seven continents.",
-              "The seven continents are Asia, Africa, North America, South America, Antarctica, Europe and Australia.",
-              "Africa is the continent where Uganda is found. In this topic, learners compare Africa with the other continents on the world map.",
-              "When naming continents in P7, spell the names carefully. Do not confuse Australia the continent with Austria the country in Europe."
+              "<strong class=\"kw\">Continent:</strong> a very large land mass on the earth.",
+              "<strong class=\"kw\">Seven continents:</strong> Asia, Africa, North America, South America, Antarctica, Europe and Australia.",
+              "<strong class=\"kw\">Africa:</strong> the continent where Uganda is found.",
+              "<strong class=\"kw\">Spelling trap:</strong> Australia is a continent; Austria is a country in Europe.",
+              "<strong class=\"kw\">Map task:</strong> point to Africa, Europe, Asia, Australia and the Americas on a world map."
             ],
-            tryThis: {
-              question: "Which list contains only continents?",
-              choices: ["Asia, Africa, Europe", "Uganda, Kenya, Tanzania", "Nile, Congo, Niger", "Atlantic, Indian, Arctic"],
-              correct: 0,
-              explanation: "Asia, Africa and Europe are continents. Uganda, Kenya and Tanzania are countries; Nile, Congo and Niger are rivers; Atlantic, Indian and Arctic are oceans."
-            }
+            tryThis: { question: "Which list contains only continents?", choices: ["Asia, Africa, Europe", "Uganda, Kenya, Tanzania", "Nile, Congo, Niger", "Atlantic, Indian, Arctic"], correct: 0, explanation: "Asia, Africa and Europe are continents. Uganda, Kenya and Tanzania are countries; Nile, Congo and Niger are rivers; Atlantic, Indian and Arctic are oceans." }
           },
           {
             moduleId: "continents-size-order",
             title: "Continents in Order of Size",
             bigIdea: "NCDC expects P7 learners to identify the continents of the world and arrange them in order of size.",
             learnIt: [
-              "The continents in order of size from largest to smallest are: Asia, Africa, North America, South America, Antarctica, Europe and Australia.",
-              "Africa is the second largest continent in the world after Asia. This is an important P7 fact because the topic is about Africa's position on the world map.",
-              "A simple memory line is: Asia first, Africa second, then the two Americas, Antarctica, Europe and Australia.",
-              "In an exam, if you are asked for the largest continent, answer Asia. If you are asked for the second largest continent, answer Africa."
+              "<strong class=\"kw\">Largest to smallest:</strong> Asia, Africa, North America, South America, Antarctica, Europe, Australia.",
+              "<strong class=\"kw\">Largest:</strong> Asia.",
+              "<strong class=\"kw\">Second largest:</strong> Africa.",
+              "<strong class=\"kw\">Smallest:</strong> Australia.",
+              "<strong class=\"kw\">Memory chain:</strong> Asia → Africa → North America → South America → Antarctica → Europe → Australia."
             ],
-            tryThis: {
-              question: "Which continent is second largest in the world?",
-              choices: ["Africa", "Asia", "Europe", "Australia"],
-              correct: 0,
-              explanation: "The NCDC size order places Asia first and Africa second."
-            },
-            workedExample: {
-              question: "Arrange these continents from largest to smallest: Africa, Asia, Europe, North America.",
-              steps: [
-                "Start with the largest continent: Asia.",
-                "Africa comes second in the world size order.",
-                "North America is larger than Europe.",
-                "Write the final order clearly."
-              ],
-              answer: "Asia, Africa, North America, Europe."
-            }
+            tryThis: { question: "Which continent is second largest in the world?", choices: ["Africa", "Asia", "Europe", "Australia"], correct: 0, explanation: "The NCDC size order places Asia first and Africa second." },
+            workedExample: { question: "Arrange these continents from largest to smallest: Africa, Asia, Europe, North America.", steps: ["Asia is largest.", "Africa is second largest.", "North America is larger than Europe.", "Final order: Asia, Africa, North America, Europe."], answer: "Asia, Africa, North America, Europe." }
           },
           {
             moduleId: "continent-map-practice",
             title: "Map Practice: Finding Continents",
             bigIdea: "Learners understand Africa better when they locate it among other continents on a world map or globe.",
             learnIt: [
-              "Use a globe or world map to point to Africa. Then point to Europe, Asia, North America, South America, Antarctica and Australia.",
-              "Compare Africa with nearby continents. Europe is north of Africa. Asia is to the north-east/east of Africa. South America is across the Atlantic Ocean to the west/south-west of Africa.",
-              "Practise saying full map sentences: Africa is south of Europe. Africa is west of the Indian Ocean. Africa is east of the Atlantic Ocean.",
-              "This practice prepares learners for NCDC activities on locating Africa, naming continents and stating compass directions from Africa."
+              "<strong class=\"kw\">Find Africa:</strong> point to Africa on a world map or globe.",
+              "<strong class=\"kw\">North of Africa:</strong> Europe.",
+              "<strong class=\"kw\">North-east/east of Africa:</strong> Asia.",
+              "<strong class=\"kw\">Across the Atlantic:</strong> South America is to the west/south-west side of Africa.",
+              "<strong class=\"kw\">Exam sentence:</strong> Africa is south of Europe and west of the Indian Ocean."
             ],
-            tryThis: {
-              question: "Which continent is north of Africa across the Mediterranean Sea?",
-              choices: ["Europe", "Australia", "Antarctica", "South America"],
-              correct: 0,
-              explanation: "Europe lies north of Africa across the Mediterranean Sea."
-            }
+            tryThis: { question: "Which continent is north of Africa across the Mediterranean Sea?", choices: ["Europe", "Australia", "Antarctica", "South America"], correct: 0, explanation: "Europe lies north of Africa across the Mediterranean Sea." }
           }
         ]
       },
-            {
+      {
         subtopicId: "water-bodies-africa",
         title: "3. Water bodies that surround Africa",
         modules: [
@@ -280,55 +240,43 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             title: "Oceans Around Africa",
             bigIdea: "NCDC expects P7 learners to name the water bodies that surround Africa.",
             learnIt: [
-              "An ocean is a very large body of salty water. Oceans cover much of the earth's surface and separate continents from one another.",
-              "The oceans listed in the P7 Topic 1 content are the Atlantic Ocean, Pacific Ocean, Arctic Ocean and Indian Ocean.",
-              "The main oceans that directly border Africa are the Atlantic Ocean and the Indian Ocean. The Atlantic Ocean is on the western side of Africa. The Indian Ocean is on the eastern side of Africa.",
-              "The Pacific Ocean and Arctic Ocean are also part of the world-ocean list learners should know, but they do not directly surround mainland Africa in the same way as the Atlantic and Indian oceans."
+              "<strong class=\"kw\">Ocean:</strong> a very large body of salty water.",
+              "<strong class=\"kw\">World ocean list:</strong> Atlantic, Pacific, Arctic and Indian oceans.",
+              "<strong class=\"kw\">West of Africa:</strong> Atlantic Ocean.",
+              "<strong class=\"kw\">East/south-east of Africa:</strong> Indian Ocean.",
+              "<strong class=\"kw\">Exam point:</strong> Pacific and Arctic are world oceans, but they do not directly border mainland Africa like the Atlantic and Indian oceans."
             ],
-            tryThis: {
-              question: "Which two oceans directly border Africa?",
-              choices: ["Atlantic and Indian", "Pacific and Arctic", "Arctic and Southern", "Pacific and Mediterranean"],
-              correct: 0,
-              explanation: "Africa is bordered mainly by the Atlantic Ocean to the west and the Indian Ocean to the east."
-            }
+            tryThis: { question: "Which two oceans directly border Africa?", choices: ["Atlantic and Indian", "Pacific and Arctic", "Arctic and Southern", "Pacific and Mediterranean"], correct: 0, explanation: "Africa is bordered mainly by the Atlantic Ocean to the west and the Indian Ocean to the east." }
           },
           {
             moduleId: "seas-around-africa",
             title: "Seas Around Africa",
             bigIdea: "The Mediterranean Sea and Red Sea are the two seas named in the official P7 Topic 1 content.",
             learnIt: [
-              "A sea is a large body of salty water that is usually smaller than an ocean and often partly enclosed by land.",
-              "The Mediterranean Sea lies to the north of Africa. It separates North Africa from Europe.",
-              "The Red Sea lies to the north-east of Africa. It separates north-eastern Africa from the Arabian Peninsula side of Asia.",
-              "In map questions, write full names clearly: Mediterranean Sea and Red Sea. Do not write only 'Mediterranean' or only 'Red' when naming the water body."
+              "<strong class=\"kw\">Sea:</strong> a large body of salty water, usually smaller than an ocean and partly enclosed by land.",
+              "<strong class=\"kw\">North of Africa:</strong> Mediterranean Sea.",
+              "<strong class=\"kw\">North-east of Africa:</strong> Red Sea.",
+              "<strong class=\"kw\">Mediterranean Sea:</strong> separates North Africa from Europe.",
+              "<strong class=\"kw\">Writing tip:</strong> write full names: Mediterranean Sea and Red Sea."
             ],
-            tryThis: {
-              question: "Which sea lies north of Africa and separates Africa from Europe?",
-              choices: ["Mediterranean Sea", "Red Sea", "Indian Ocean", "Pacific Ocean"],
-              correct: 0,
-              explanation: "The Mediterranean Sea lies north of Africa, between North Africa and Europe."
-            }
+            tryThis: { question: "Which sea lies north of Africa and separates Africa from Europe?", choices: ["Mediterranean Sea", "Red Sea", "Indian Ocean", "Pacific Ocean"], correct: 0, explanation: "The Mediterranean Sea lies north of Africa, between North Africa and Europe." }
           },
           {
             moduleId: "directions-of-water-bodies-from-africa",
             title: "Compass Directions of Water Bodies from Africa",
             bigIdea: "Learners should name water bodies and state their compass directions from Africa.",
             learnIt: [
-              "NCDC assessment expects learners to identify compass directions of oceans and seas from Africa. This means you should answer with both the name and the direction.",
-              "The Atlantic Ocean is west of Africa. The Indian Ocean is east and south-east of Africa. The Mediterranean Sea is north of Africa. The Red Sea is north-east of Africa.",
-              "A good P7 answer uses a complete sentence: The Atlantic Ocean lies to the west of Africa. The Red Sea lies to the north-east of Africa.",
-              "Map practice: draw a simple outline of Africa, then label the Atlantic Ocean, Indian Ocean, Mediterranean Sea and Red Sea around it. Add compass arrows for north, south, east and west."
+              "<strong class=\"kw\">Atlantic Ocean:</strong> west of Africa.",
+              "<strong class=\"kw\">Indian Ocean:</strong> east and south-east of Africa.",
+              "<strong class=\"kw\">Mediterranean Sea:</strong> north of Africa.",
+              "<strong class=\"kw\">Red Sea:</strong> north-east of Africa.",
+              "<strong class=\"kw\">Exam sentence:</strong> The Red Sea lies to the north-east of Africa."
             ],
-            tryThis: {
-              question: "Which water body lies north-east of Africa?",
-              choices: ["Red Sea", "Atlantic Ocean", "Pacific Ocean", "Arctic Ocean"],
-              correct: 0,
-              explanation: "The Red Sea lies to the north-east of Africa."
-            }
+            tryThis: { question: "Which water body lies north-east of Africa?", choices: ["Red Sea", "Atlantic Ocean", "Pacific Ocean", "Arctic Ocean"], correct: 0, explanation: "The Red Sea lies to the north-east of Africa." }
           }
         ]
       },
-            {
+      {
         subtopicId: "regions-africa",
         title: "4. Regions that make up Africa",
         modules: [
@@ -337,55 +285,44 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             title: "The Six Regions of Africa",
             bigIdea: "NCDC names six regions that make up Africa for this P7 topic.",
             learnIt: [
-              "A region is a part or area of a larger place. Africa is divided into regions to make it easier to study countries, people, climate, resources and location.",
-              "The six regions named in the P7 Topic 1 content are West Africa, East Africa, Northern Africa, Central Africa, Southern Africa and the Horn of Africa.",
-              "When writing region names, use capital letters because they are proper names: West Africa, East Africa, Northern Africa, Central Africa, Southern Africa and Horn of Africa.",
-              "Uganda is studied as part of East Africa. The Horn of Africa is the horn-shaped part in the north-eastern/eastern side of Africa."
+              "<strong class=\"kw\">Region:</strong> a part or area of a larger place.",
+              "<strong class=\"kw\">Six regions:</strong> West Africa, East Africa, Northern Africa, Central Africa, Southern Africa and Horn of Africa.",
+              "<strong class=\"kw\">Uganda:</strong> studied under East Africa.",
+              "<strong class=\"kw\">Horn of Africa:</strong> horn-shaped area on the eastern side of Africa.",
+              "<strong class=\"kw\">Writing tip:</strong> use capital letters for region names."
             ],
-            tryThis: {
-              question: "Which list contains only regions named in the P7 Topic 1 content?",
-              choices: ["West Africa, East Africa, Northern Africa", "Pacific, Atlantic, Indian", "Asia, Europe, Australia", "Nile, Congo, Zambezi"],
-              correct: 0,
-              explanation: "West Africa, East Africa and Northern Africa are regions of Africa. The other options list oceans, continents or rivers."
-            }
+            tryThis: { question: "Which list contains only regions named in the P7 Topic 1 content?", choices: ["West Africa, East Africa, Northern Africa", "Pacific, Atlantic, Indian", "Asia, Europe, Australia", "Nile, Congo, Zambezi"], correct: 0, explanation: "West Africa, East Africa and Northern Africa are regions of Africa. The other options list oceans, continents or rivers." }
           },
           {
             moduleId: "locating-african-regions-on-map",
             title: "Locating African Regions on a Map",
             bigIdea: "Learners should not only name regions; they should also know where the regions are found on a map of Africa.",
             learnIt: [
-              "Use compass directions to remember African regions. Northern Africa is in the north of Africa. Southern Africa is in the south. West Africa is in the west. East Africa is in the east.",
-              "Central Africa is near the middle of the continent. The Horn of Africa is on the eastern side of Africa, projecting towards the Red Sea, Gulf of Aden and Indian Ocean side.",
-              "Map activity: draw a simple outline map of Africa and shade or label the six regions. Start with the easy compass regions: north, south, west and east. Then add Central Africa and the Horn of Africa.",
-              "A good answer should connect the region name with position. Example: Northern Africa is found in the northern part of Africa. West Africa is found in the western part of Africa."
+              "<strong class=\"kw\">Northern Africa:</strong> north of Africa.",
+              "<strong class=\"kw\">Southern Africa:</strong> south of Africa.",
+              "<strong class=\"kw\">West Africa:</strong> west of Africa.",
+              "<strong class=\"kw\">East Africa:</strong> east of Africa.",
+              "<strong class=\"kw\">Central Africa:</strong> middle part of Africa.",
+              "<strong class=\"kw\">Horn of Africa:</strong> eastern projection towards the Red Sea, Gulf of Aden and Indian Ocean side."
             ],
-            tryThis: {
-              question: "Which region is found near the middle of Africa?",
-              choices: ["Central Africa", "Northern Africa", "Southern Africa", "West Africa"],
-              correct: 0,
-              explanation: "Central Africa is found near the middle of the African continent."
-            }
+            tryThis: { question: "Which region is found near the middle of Africa?", choices: ["Central Africa", "Northern Africa", "Southern Africa", "West Africa"], correct: 0, explanation: "Central Africa is found near the middle of the African continent." }
           },
           {
             moduleId: "regions-countries-link",
             title: "Regions Help Us Group Countries",
             bigIdea: "Regions prepare learners to list countries and capital cities in the next subtopic.",
             learnIt: [
-              "NCDC asks learners to identify African regions before listing countries and capital cities. This means regions are a way of grouping countries for easier study.",
-              "For example, Uganda, Kenya and Tanzania are commonly studied under East Africa. Countries such as Nigeria, Ghana and Senegal are commonly studied under West Africa.",
-              "At this stage, focus first on naming and locating the six regions. The next subtopic will use a shorter P7 school-first list of countries and capital cities by region.",
-              "Do not mix up regions and continents. Africa is a continent. West Africa and East Africa are regions within Africa. Uganda is a country within Africa. Kampala is a capital city."
+              "<strong class=\"kw\">Continent:</strong> Africa.",
+              "<strong class=\"kw\">Region:</strong> East Africa, West Africa, Northern Africa and others.",
+              "<strong class=\"kw\">Country:</strong> Uganda, Kenya, Nigeria, Egypt and others.",
+              "<strong class=\"kw\">Capital city:</strong> Kampala, Nairobi, Abuja, Cairo and others.",
+              "<strong class=\"kw\">Exam chain:</strong> Africa → East Africa → Uganda → Kampala."
             ],
-            tryThis: {
-              question: "What is the relationship between Africa, East Africa, Uganda and Kampala?",
-              choices: ["Continent, region, country, capital city", "Country, capital, ocean, river", "Region, continent, sea, country", "Capital, country, continent, ocean"],
-              correct: 0,
-              explanation: "Africa is a continent, East Africa is a region, Uganda is a country and Kampala is a capital city."
-            }
+            tryThis: { question: "What is the relationship between Africa, East Africa, Uganda and Kampala?", choices: ["Continent, region, country, capital city", "Country, capital, ocean, river", "Region, continent, sea, country", "Capital, country, continent, ocean"], correct: 0, explanation: "Africa is a continent, East Africa is a region, Uganda is a country and Kampala is a capital city." }
           }
         ]
       },
-            {
+      {
         subtopicId: "countries-capitals-africa",
         title: "5. Countries in each region and their capital cities",
         modules: [
@@ -394,75 +331,57 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             title: "Countries, Regions and Capital Cities",
             bigIdea: "NCDC expects P7 learners to list countries in African regions and name their capital cities.",
             learnIt: [
-              "A country is an independent state with its own government, people and borders. Uganda, Kenya, Ghana and Egypt are examples of countries in Africa.",
-              "A capital city is the main administrative city of a country. It is usually where important government offices are found.",
-              "A region groups countries found in the same part of Africa. In this topic, learners use regions to organise countries and capital cities more easily.",
-              "Use this order when answering: region, country, capital city. Example: East Africa — Uganda — Kampala."
+              "<strong class=\"kw\">Country:</strong> an independent state with its own government, people and borders.",
+              "<strong class=\"kw\">Capital city:</strong> the main administrative city of a country.",
+              "<strong class=\"kw\">Region:</strong> a part of Africa used to group countries for study.",
+              "<strong class=\"kw\">Answer order:</strong> region → country → capital city.",
+              "<strong class=\"kw\">Example:</strong> East Africa → Uganda → Kampala."
             ],
-            tryThis: {
-              question: "Which pair correctly shows a country and its capital city?",
-              choices: ["Uganda — Kampala", "Africa — Kampala", "Nile — Cairo", "Indian Ocean — Nairobi"],
-              correct: 0,
-              explanation: "Uganda is a country and Kampala is its capital city. Africa is a continent, the Nile is a river and the Indian Ocean is an ocean."
-            }
+            tryThis: { question: "Which pair correctly shows a country and its capital city?", choices: ["Uganda — Kampala", "Africa — Kampala", "Nile — Cairo", "Indian Ocean — Nairobi"], correct: 0, explanation: "Uganda is a country and Kampala is its capital city. Africa is a continent, the Nile is a river and the Indian Ocean is an ocean." }
           },
           {
             moduleId: "school-first-countries-capitals-by-region",
             title: "School-First Countries and Capitals by Region",
             bigIdea: "Learners should first master a smaller P7 school list before using a full reference table.",
             learnIt: [
-              "East Africa: Uganda — Kampala; Kenya — Nairobi; Tanzania — Dodoma; Rwanda — Kigali; South Sudan — Juba.",
-              "Horn of Africa: Ethiopia — Addis Ababa; Somalia — Mogadishu; Eritrea — Asmara; Djibouti — Djibouti.",
-              "West Africa: Nigeria — Abuja; Ghana — Accra; Senegal — Dakar; Mali — Bamako; Liberia — Monrovia.",
-              "Northern Africa: Egypt — Cairo; Sudan — Khartoum; Morocco — Rabat; Libya — Tripoli; Tunisia — Tunis.",
-              "Central Africa: Democratic Republic of the Congo — Kinshasa; Cameroon — Yaoundé; Angola — Luanda; Chad — N'Djamena; Gabon — Libreville.",
-              "Southern Africa: South Africa — Pretoria; Botswana — Gaborone; Namibia — Windhoek; Zambia — Lusaka; Zimbabwe — Harare.",
-              "This is a school-first list for learning and practice. A fuller reference list can be used later for revision, but the main lesson should not overload the learner at once."
+              "<strong class=\"kw\">East Africa:</strong> Uganda—Kampala; Kenya—Nairobi; Tanzania—Dodoma; Rwanda—Kigali; South Sudan—Juba.",
+              "<strong class=\"kw\">Horn of Africa:</strong> Ethiopia—Addis Ababa; Somalia—Mogadishu; Eritrea—Asmara; Djibouti—Djibouti.",
+              "<strong class=\"kw\">West Africa:</strong> Nigeria—Abuja; Ghana—Accra; Senegal—Dakar; Mali—Bamako; Liberia—Monrovia.",
+              "<strong class=\"kw\">Northern Africa:</strong> Egypt—Cairo; Sudan—Khartoum; Morocco—Rabat; Libya—Tripoli; Tunisia—Tunis.",
+              "<strong class=\"kw\">Central Africa:</strong> D.R. Congo—Kinshasa; Cameroon—Yaoundé; Angola—Luanda; Chad—N'Djamena; Gabon—Libreville.",
+              "<strong class=\"kw\">Southern Africa:</strong> South Africa—Pretoria; Botswana—Gaborone; Namibia—Windhoek; Zambia—Lusaka; Zimbabwe—Harare."
             ],
-            tryThis: {
-              question: "What is the capital city of Kenya?",
-              choices: ["Nairobi", "Kampala", "Dodoma", "Kigali"],
-              correct: 0,
-              explanation: "Kenya is an East African country and its capital city is Nairobi."
-            }
+            tryThis: { question: "What is the capital city of Kenya?", choices: ["Nairobi", "Kampala", "Dodoma", "Kigali"], correct: 0, explanation: "Kenya is an East African country and its capital city is Nairobi." }
           },
           {
             moduleId: "islands-part-of-africa-school-first",
             title: "Islands Which Are Part of Africa",
             bigIdea: "NCDC expects learners to name islands which are part of Africa, so learners should know common African island countries.",
             learnIt: [
-              "An island is land surrounded by water. Some African countries are island countries because they are made up of one island or a group of islands.",
-              "Common African island countries for P7 study include Madagascar, Mauritius, Seychelles, Comoros, Cabo Verde and São Tomé and Príncipe.",
-              "Useful capital pairs: Madagascar — Antananarivo; Mauritius — Port Louis; Seychelles — Victoria; Comoros — Moroni; Cabo Verde — Praia; São Tomé and Príncipe — São Tomé.",
-              "Map practice: Madagascar, Mauritius, Seychelles and Comoros are in the Indian Ocean side of Africa. Cabo Verde and São Tomé and Príncipe are in the Atlantic Ocean side of Africa."
+              "<strong class=\"kw\">Island:</strong> land surrounded by water.",
+              "<strong class=\"kw\">Common African island countries:</strong> Madagascar, Mauritius, Seychelles, Comoros, Cabo Verde, São Tomé and Príncipe.",
+              "<strong class=\"kw\">Indian Ocean side:</strong> Madagascar, Mauritius, Seychelles, Comoros.",
+              "<strong class=\"kw\">Atlantic Ocean side:</strong> Cabo Verde, São Tomé and Príncipe.",
+              "<strong class=\"kw\">Capital examples:</strong> Madagascar—Antananarivo; Mauritius—Port Louis; Seychelles—Victoria."
             ],
-            tryThis: {
-              question: "Which of these is an African island country?",
-              choices: ["Madagascar", "Uganda", "Mali", "Chad"],
-              correct: 0,
-              explanation: "Madagascar is an island country in the Indian Ocean side of Africa."
-            }
+            tryThis: { question: "Which of these is an African island country?", choices: ["Madagascar", "Uganda", "Mali", "Chad"], correct: 0, explanation: "Madagascar is an island country in the Indian Ocean side of Africa." }
           },
           {
             moduleId: "capital-city-answer-practice",
             title: "Answering Country and Capital City Questions",
             bigIdea: "Good P7 answers are clear, correctly paired and grouped by region where needed.",
             learnIt: [
-              "When asked to name countries and capital cities, write the country first and the capital city second. Example: Uganda — Kampala.",
-              "When asked for countries in a region, do not mix regions. Example: Uganda, Kenya and Tanzania belong to East Africa; Nigeria, Ghana and Senegal belong to West Africa.",
-              "Some countries have special capital-city notes in current references. For P7 learning, follow the school-first list your teacher gives and use Tendo's reference pack for extra revision.",
-              "Quick practice: write three countries from East Africa with their capitals, then write three countries from West Africa with their capitals. Check spelling carefully."
+              "<strong class=\"kw\">Pair format:</strong> country — capital city.",
+              "<strong class=\"kw\">Correct:</strong> Ghana — Accra.",
+              "<strong class=\"kw\">Wrong:</strong> Ghana — Nairobi.",
+              "<strong class=\"kw\">Region check:</strong> do not mix countries from different regions when the question asks for one region.",
+              "<strong class=\"kw\">Spelling tip:</strong> practise difficult names slowly: Antananarivo, Ouagadougou, N'Djamena."
             ],
-            tryThis: {
-              question: "Which answer is correctly grouped under West Africa?",
-              choices: ["Nigeria — Abuja", "Kenya — Nairobi", "Egypt — Cairo", "Botswana — Gaborone"],
-              correct: 0,
-              explanation: "Nigeria is in West Africa and Abuja is its capital city."
-            }
+            tryThis: { question: "Which answer is correctly grouped under West Africa?", choices: ["Nigeria — Abuja", "Kenya — Nairobi", "Egypt — Cairo", "Botswana — Gaborone"], correct: 0, explanation: "Nigeria is in West Africa and Abuja is its capital city." }
           }
         ]
       },
-            {
+      {
         subtopicId: "premium-map-answering",
         title: "Practice: Answering Topic 1 Map Questions",
         modules: [
@@ -471,71 +390,56 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
             title: "Step 1: Read the Map Question Carefully",
             bigIdea: "A good map answer starts by identifying exactly what the question is asking for.",
             learnIt: [
-              "Before answering, underline the command word. The question may ask you to name, locate, draw, show, list or identify.",
-              "If the question asks for a direction, include a compass direction such as north, south, east, west, north-east or south-west.",
-              "If the question asks for countries and capitals, write correct pairs: country first, capital city second. Example: Uganda — Kampala.",
-              "If the question asks for islands, name island countries or islands that are part of Africa, not mainland countries. Example: Madagascar is an island country; Uganda is not."
+              "<strong class=\"kw\">Name:</strong> give the correct place or feature.",
+              "<strong class=\"kw\">Locate:</strong> say or show where it is found.",
+              "<strong class=\"kw\">Draw:</strong> make a simple labelled map or diagram.",
+              "<strong class=\"kw\">Identify direction:</strong> use north, south, east, west or another compass direction.",
+              "<strong class=\"kw\">Pair:</strong> country first, capital city second. Example: Uganda — Kampala."
             ],
-            tryThis: {
-              question: "A question says: 'Identify the ocean west of Africa.' What must your answer include?",
-              choices: ["The name of the ocean and its direction", "Only a capital city", "Only a continent size", "Only a vegetation type"],
-              correct: 0,
-              explanation: "The question asks for an ocean and gives a direction clue, so the answer should name the Atlantic Ocean and connect it to west of Africa."
-            }
+            tryThis: { question: "A question says: 'Identify the ocean west of Africa.' What must your answer include?", choices: ["The name of the ocean and its direction", "Only a capital city", "Only a continent size", "Only a vegetation type"], correct: 0, explanation: "The question asks for an ocean and gives a direction clue, so the answer should name the Atlantic Ocean and connect it to west of Africa." }
           },
           {
             moduleId: "drawing-africa-regions-lines",
             title: "Step 2: Draw Africa with Regions and Lines",
             bigIdea: "NCDC assessment expects learners to draw Africa showing regions and major latitude/longitude lines.",
             learnIt: [
-              "Start with a simple outline of Africa. It does not need to be a perfect artist's map, but it should be recognisable and neatly labelled.",
-              "Show the regions: West Africa, East Africa, Northern Africa, Central Africa, Southern Africa and the Horn of Africa.",
-              "Show the Equator as a latitude line and the Prime Meridian as a longitude line. If your teacher asks, also show the Tropic of Cancer and Tropic of Capricorn.",
-              "Add a simple compass or north arrow so your map can support direction questions. Labels should be clear and not crowded."
+              "<strong class=\"kw\">Map outline:</strong> draw a simple recognisable shape of Africa.",
+              "<strong class=\"kw\">Regions:</strong> label West, East, Northern, Central, Southern and Horn of Africa.",
+              "<strong class=\"kw\">Lines:</strong> show the Equator and Prime Meridian.",
+              "<strong class=\"kw\">Direction:</strong> add a north arrow or compass mark.",
+              "<strong class=\"kw\">Marking tip:</strong> neat labels score better than decoration."
             ],
-            tryThis: {
-              question: "Which item should be included when drawing Africa for this Topic 1 assessment?",
-              choices: ["Regions and latitude/longitude lines", "Only animals", "Only rivers from Topic 2", "Only climate regions from Topic 3"],
-              correct: 0,
-              explanation: "NCDC assessment mentions drawing Africa showing regions, lines of latitude and lines of longitude."
-            }
+            tryThis: { question: "Which item should be included when drawing Africa for this Topic 1 assessment?", choices: ["Regions and latitude/longitude lines", "Only animals", "Only rivers from Topic 2", "Only climate regions from Topic 3"], correct: 0, explanation: "NCDC assessment mentions drawing Africa showing regions, lines of latitude and lines of longitude." }
           },
           {
             moduleId: "answering-direction-questions",
             title: "Step 3: Answer Direction Questions",
             bigIdea: "Direction answers should name the place or water body and state where it is from Africa.",
             learnIt: [
-              "Use full direction sentences. Example: The Atlantic Ocean lies to the west of Africa.",
-              "For seas, remember: the Mediterranean Sea is north of Africa, and the Red Sea is north-east of Africa.",
-              "For continents, remember: Europe is north of Africa, Asia is north-east/east of Africa, and South America is across the Atlantic Ocean from Africa.",
-              "Avoid vague answers like 'it is near Africa'. A P7 answer should use a clear compass direction."
+              "<strong class=\"kw\">Atlantic Ocean:</strong> west of Africa.",
+              "<strong class=\"kw\">Indian Ocean:</strong> east/south-east of Africa.",
+              "<strong class=\"kw\">Mediterranean Sea:</strong> north of Africa.",
+              "<strong class=\"kw\">Red Sea:</strong> north-east of Africa.",
+              "<strong class=\"kw\">Europe:</strong> north of Africa."
             ],
-            tryThis: {
-              question: "Which is the best answer to: 'Where is Europe from Africa?'",
-              choices: ["Europe is north of Africa", "Europe is inside Africa", "Europe is a sea", "Europe is the capital of Africa"],
-              correct: 0,
-              explanation: "Europe lies to the north of Africa across the Mediterranean Sea."
-            }
+            tryThis: { question: "Which is the best answer to: 'Where is Europe from Africa?'", choices: ["Europe is north of Africa", "Europe is inside Africa", "Europe is a sea", "Europe is the capital of Africa"], correct: 0, explanation: "Europe lies to the north of Africa across the Mediterranean Sea." }
           },
           {
             moduleId: "countries-capitals-islands-practice",
             title: "Step 4: Practise Countries, Capitals and Islands",
             bigIdea: "Topic 1 practice should help learners pair countries with capitals and identify African island countries.",
             learnIt: [
-              "Practise country-capital pairs by region. Say the region first, then the country and capital. Example: East Africa — Uganda — Kampala.",
-              "Start with the school-first list before using the full reference table. This prevents overload and helps you master the most useful examples first.",
-              "For island questions, remember common African island countries: Madagascar, Mauritius, Seychelles, Comoros, Cabo Verde and São Tomé and Príncipe.",
-              "Check spelling carefully. Capital-city names like Antananarivo, Ouagadougou and N'Djamena are easy to misspell, so practise them slowly when they appear in your teacher's list."
+              "<strong class=\"kw\">Country-capital pair:</strong> Ghana — Accra.",
+              "<strong class=\"kw\">East Africa pair:</strong> Kenya — Nairobi.",
+              "<strong class=\"kw\">Island example:</strong> Madagascar.",
+              "<strong class=\"kw\">Region check:</strong> Nigeria belongs to West Africa, not East Africa.",
+              "<strong class=\"kw\">Practice task:</strong> write three East African countries and three West African countries with capitals."
             ],
-            tryThis: {
-              question: "Which pair is correct?",
-              choices: ["Ghana — Accra", "Egypt — Nairobi", "Uganda — Dakar", "Madagascar — Kampala"],
-              correct: 0,
-              explanation: "Ghana is a West African country and Accra is its capital city."
-            }
+            tryThis: { question: "Which pair is correct?", choices: ["Ghana — Accra", "Egypt — Nairobi", "Uganda — Dakar", "Madagascar — Kampala"], correct: 0, explanation: "Ghana is a West African country and Accra is its capital city." }
           }
         ]
-      },],
+      }
+    ],
     quiz: [
       { q: "Which continent is the second largest in the world?", choices: ["Africa", "Europe", "Australia", "Antarctica"], correct: 0, why: "Africa is the second largest continent after Asia." },
       { q: "Which line of latitude divides the earth into northern and southern hemispheres?", choices: ["Equator", "Prime Meridian", "Tropic of Cancer only", "International Date Line"], correct: 0, why: "The Equator divides the earth into northern and southern hemispheres." },
@@ -615,570 +519,399 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
       ],
     },
     subtopics: [
-      {
+            {
         subtopicId: "mountains-highlands",
         title: "1. Mountains and Highlands of Africa",
         modules: [
           {
-            moduleId: "mountains-meaning-types",
-            title: "Mountains and Highlands of Africa",
-            bigIdea: "Mountains are high land areas with steep sides and summits, and Africa has volcanic, block, fold and residual mountains.",
+            moduleId: "physical-features-relief-drainage",
+            title: "Physical Features, Relief and Drainage",
+            bigIdea: "Physical features are natural landforms and water features that make up the environment.",
             learnIt: [
-              "### Mountains and Highlands of Africa",
-              "<strong class=\"kw\">Mountains</strong>:",
-              "Are high land areas with very steep sides and a peak or summit rising above the surrounding land.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Volcanic mountains</strong> form from cooled lava and ash.",
-              "* <strong class=\"kw\">Block mountains</strong> form when land blocks are pushed upwards between faults.",
-              "* <strong class=\"kw\">Fold mountains</strong> form when rock layers are squeezed and crumpled.",
-              "* <strong class=\"kw\">Residual mountains</strong> form when hard rocks remain after erosion.",
-              "<strong class=\"kw\">Volcanic mountains</strong>:",
-              "Are mountains formed when molten rock or magma erupts onto the earth's surface through a vent and cools to form a cone.",
-              "<strong class=\"kw\">Block mountains</strong>:",
-              "Are mountains formed when blocks of land are pushed upwards between parallel fault lines caused by tensional or compressional forces.",
-              "<strong class=\"kw\">Fold mountains</strong>:",
-              "Are mountains formed when sedimentary rock layers are squeezed and crumpled by lateral compressional forces.",
-              "<strong class=\"kw\">Residual mountains</strong>:",
-              "Are mountains formed by prolonged erosion of hard resistant rocks after softer surrounding layers are washed away."
+              "Physical features are landforms and water features that exist on the earth and give it shape. They include mountains, highlands, plateaus, lowlands, rift valleys, lakes, rivers, depressions, islands and coastal plains.",
+              "NCDC groups physical features into relief features and drainage features. Relief features are landforms such as mountains, highlands, plateaus, lowlands, rift valleys and coastal plains.",
+              "Drainage features are water features such as lakes, rivers, seas and oceans. In this subtopic, we focus first on mountains and highlands, which are relief features.",
+              "Physical features are important because people depend on the physical environment for settlement, farming, transport, tourism, minerals and water. Learners should therefore locate them and also appreciate their value."
             ],
             tryThis: {
-              question: "Which type of mountain is formed from cooled magma or lava?",
-              choices: ["Volcanic mountain", "Block mountain", "Fold mountain", "Residual mountain"],
+              question: "Which pair contains only relief features?",
+              choices: ["Mountains and highlands", "Rivers and lakes", "Seas and oceans", "Rainfall and wind"],
               correct: 0,
-              explanation: "Volcanic mountains form when magma or lava erupts and cools."
+              explanation: "Mountains and highlands are relief features. Rivers, lakes, seas and oceans are drainage features."
             }
           },
           {
-            moduleId: "mountains-examples-africa",
-            title: "Examples of Mountains in Africa",
-            bigIdea: "Important African mountains include Kilimanjaro, Kenya, Elgon, Mfumbiro, Rwenzori, Atlas and Drakensberg.",
+            moduleId: "major-mountains-highlands-africa",
+            title: "Major Mountains and Highlands of Africa",
+            bigIdea: "P7 learners should name and locate major mountains and highlands of Africa beyond East Africa.",
             learnIt: [
-              "### Examples of Mountains in Africa",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Mount Kilimanjaro</strong> in Tanzania is the highest mountain in Africa.",
-              "* <strong class=\"kw\">Mount Kenya</strong> in Kenya is the second highest peak in Africa.",
-              "* <strong class=\"kw\">Mount Elgon</strong> is shared by Uganda and Kenya and has the largest caldera in the world.",
-              "* <strong class=\"kw\">Mount Mfumbiro</strong> is shared by Uganda, Rwanda and DRC and is a habitat for mountain gorillas.",
-              "* <strong class=\"kw\">Rwenzori Mountains</strong> are shared by Uganda and DRC and form the highest block mountain in Africa.",
-              "* <strong class=\"kw\">Atlas Mountains</strong> in Morocco, Algeria and Tunisia are young fold mountains.",
-              "* <strong class=\"kw\">Drakensberg Mountains</strong> in South Africa are residual mountains.",
-              "<strong class=\"kw\">UNEB Exam Trap:</strong>",
-              "* <strong class=\"kw\">Kilimanjaro</strong> is the highest mountain in Africa, not Mount Kenya.",
-              "* <strong class=\"kw\">Rwenzori</strong> is a block mountain, not a volcanic cone.",
-              "* <strong class=\"kw\">Atlas Mountains</strong> are fold mountains in North Africa."
+              "The major mountains and highlands listed for this topic include the Atlas, the Drakensberg, the Cameroon highlands, the Jos plateau, the Ahaggar, the Tibesti and the Ethiopian highlands.",
+              "Use regions to locate them. The Atlas Mountains are in Northern Africa. The Drakensberg is in Southern Africa. The Cameroon highlands and Jos plateau are in West/Central Africa. The Ahaggar and Tibesti are in the Sahara region of North/Central Africa. The Ethiopian highlands are in the Horn of Africa.",
+              "Use countries carefully when your teacher asks for them. School-first examples include: Atlas — Morocco/Algeria/Tunisia; Drakensberg — South Africa/Lesotho; Cameroon highlands — Cameroon; Jos plateau — Nigeria; Ahaggar — Algeria; Tibesti — Chad/Libya; Ethiopian highlands — Ethiopia.",
+              "A good map answer should name the feature and locate it by region or country. Example: The Atlas Mountains are found in Northern Africa, especially around Morocco, Algeria and Tunisia."
             ],
             tryThis: {
-              question: "Which mountain is shared by Uganda and DRC?",
-              choices: ["Rwenzori Mountains", "Atlas Mountains", "Drakensberg Mountains", "Mount Kenya"],
+              question: "Which mountain range is found in Northern Africa?",
+              choices: ["Atlas Mountains", "Drakensberg", "Jos plateau", "Cameroon highlands"],
               correct: 0,
-              explanation: "The Rwenzori Mountains are shared by Uganda and DRC."
+              explanation: "The Atlas Mountains are found in Northern Africa, especially around Morocco, Algeria and Tunisia."
             }
           },
           {
-            moduleId: "mountains-uses-importance",
-            title: "Uses, Importances, Advantages and Disadvantages of Mountains",
-            bigIdea: "Mountains support farming, tourism, water supply and forests, but they can also cause landslides, erosion and transport difficulties.",
+            moduleId: "mountains-highlands-value-map-practice",
+            title: "Value and Map Practice for Mountains and Highlands",
+            bigIdea: "Mountains and highlands should be studied with maps, models and examples of how they affect people's lives.",
             learnIt: [
-              "### Uses, Importances, Advantages and Disadvantages",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Volcanic soils</strong> support crop cultivation on mountain slopes.",
-              "* <strong class=\"kw\">Tourism</strong> brings foreign exchange to mountain countries.",
-              "* <strong class=\"kw\">Water catchments</strong> source major permanent rivers.",
-              "* <strong class=\"kw\">Cool climate</strong> supports settlement and agriculture.",
-              "* <strong class=\"kw\">Natural forests</strong> provide timber and firewood.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Relief rainfall</strong> forms on the windward side.",
-              "* <strong class=\"kw\">Political boundaries</strong> form between countries like Uganda and DRC.",
-              "* <strong class=\"kw\">Wildlife habitats</strong> protect rare species like mountain gorillas.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Tour jobs</strong> support guides and porters.",
-              "* <strong class=\"kw\">Fresh water</strong> supplies domestic use and irrigation.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Landslides</strong> bury villages during heavy rainfall.",
-              "* <strong class=\"kw\">Transport construction</strong> becomes difficult and expensive.",
-              "* <strong class=\"kw\">Rain-shadow effect</strong> causes dryness on the leeward side.",
-              "* <strong class=\"kw\">Rugged terrain</strong> may hide rebels and bandits.",
-              "* <strong class=\"kw\">Soil erosion</strong> becomes severe on cultivated steep slopes."
+              "NCDC guidance says learners should use maps, atlases, wall maps and ground maps to locate physical features. For mountains and highlands, always practise pointing to the region or country where each one is found.",
+              "Mountains and highlands can be valuable because they may provide water sources, cool climates, tourist attractions, minerals, forests and farming areas on suitable slopes.",
+              "They can also create challenges. Steep slopes may make transport difficult, cause soil erosion if misused, and make settlement harder in some places.",
+              "Activity: draw a simple map of Africa and mark at least four examples: Atlas in the north, Drakensberg in the south, Ethiopian highlands in the Horn/East, and Cameroon highlands/Jos plateau in West or Central Africa."
             ],
             tryThis: {
-              question: "Which side of a mountain usually receives relief rainfall?",
-              choices: ["Windward side", "Leeward side", "Desert side", "Shadow side only"],
+              question: "Why should learners use an atlas when studying mountains and highlands?",
+              choices: ["To locate the features by region and country", "To learn music notes", "To count rainfall drops", "To avoid drawing maps"],
               correct: 0,
-              explanation: "Moist winds rise on the windward side, cool and form relief rainfall."
+              explanation: "NCDC guidance recommends maps and atlases so learners can locate major physical features accurately."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "rivers-africa",
         title: "2. Rivers of Africa",
         modules: [
           {
-            moduleId: "rivers-meaning-types",
-            title: "Rivers of Africa",
-            bigIdea: "Rivers are natural channels of fresh water that flow into lakes, seas, oceans or other rivers.",
+            moduleId: "rivers-as-drainage-features",
+            title: "Rivers as Drainage Features",
+            bigIdea: "Rivers are drainage features because they carry water across the land into lakes, seas or oceans.",
             learnIt: [
-              "### Rivers of Africa",
-              "<strong class=\"kw\">Rivers</strong>:",
-              "Are permanent or seasonal natural streams of fresh water flowing in a definite channel into a lake, ocean, sea or another river.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Permanent rivers</strong> flow throughout the year.",
-              "* <strong class=\"kw\">Seasonal rivers</strong> flow mainly during the rainy season.",
-              "<strong class=\"kw\">Permanent rivers</strong>:",
-              "Are rivers that flow continuously throughout the year because their sources receive constant heavy rainfall or melting snow.",
-              "<strong class=\"kw\">Seasonal rivers</strong>:",
-              "Are rivers that flow only during the rainy season and dry up during the dry season due to high evaporation and unreliable rainfall."
+              "A river is a large natural stream of water flowing in a channel from a source to a mouth. The source is where a river begins. The mouth is where a river ends by flowing into another water body.",
+              "NCDC groups rivers under drainage features. Drainage features are water features such as rivers, lakes, seas and oceans.",
+              "When studying rivers of Africa, learners should name them, locate them on a map, and know the seas or oceans into which major rivers flow.",
+              "A good P7 river answer should include the river name and one useful location fact. Example: The Nile flows northwards and enters the Mediterranean Sea."
             ],
             tryThis: {
-              question: "Which type of river flows throughout the year?",
-              choices: ["Permanent river", "Seasonal river", "Dry valley", "Coastal plain"],
+              question: "Why are rivers called drainage features?",
+              choices: ["They carry water across the land", "They are mountain ranges", "They are capital cities", "They are lines of latitude"],
               correct: 0,
-              explanation: "Permanent rivers flow continuously throughout the year."
+              explanation: "Rivers are drainage features because they carry water across land towards lakes, seas or oceans."
             }
           },
           {
-            moduleId: "major-rivers-africa",
-            title: "Examples of Major Rivers in Africa",
-            bigIdea: "Major rivers of Africa include the Nile, Congo, Niger, Zambezi, Limpopo and Orange.",
+            moduleId: "major-rivers-of-africa-ncdc-list",
+            title: "Major Rivers of Africa",
+            bigIdea: "NCDC lists major African rivers that P7 learners should be able to name and locate.",
             learnIt: [
-              "### Major Rivers of Africa",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">River Nile</strong> is the longest river in the world and flows from south to north.",
-              "* <strong class=\"kw\">River Congo</strong> crosses the Equator twice and has the highest HEP potential in Africa.",
-              "* <strong class=\"kw\">River Niger</strong> forms a large oil-rich delta before entering the Atlantic Ocean.",
-              "* <strong class=\"kw\">River Zambezi</strong> is famous for Victoria Falls and Kariba Dam.",
-              "* <strong class=\"kw\">River Limpopo</strong> forms borders between South Africa, Botswana and Zimbabwe.",
-              "* <strong class=\"kw\">River Orange</strong> is used extensively for irrigation in dry areas.",
-              "<strong class=\"kw\">UNEB Exam Trap:</strong>",
-              "* <strong class=\"kw\">River Nile</strong> flows from south to north because of the gentle slope of the land.",
-              "* <strong class=\"kw\">River Congo</strong> has the largest volume of water in Africa.",
-              "* <strong class=\"kw\">River Zambezi</strong> is linked to Victoria Falls, not River Nile."
+              "The rivers listed in the P7 Topic 2 content are River Congo, the Nile, the Niger, Zambezi, Orange, Limpopo, Blue Nile and the Volta.",
+              "Use region clues when locating them. The Nile and Blue Nile are in north-eastern/northern Africa. The Congo is in Central Africa. The Niger and Volta are in West Africa. The Zambezi, Orange and Limpopo are in Southern Africa.",
+              "Map practice should come before memorising long notes. Point to each river on a map of Africa and say the region where it is found.",
+              "Do not confuse river names with countries. Niger can refer to a country, but the Niger River is a river. Congo can refer to countries, but River Congo is a river."
             ],
             tryThis: {
-              question: "Which river crosses the Equator twice?",
-              choices: ["River Congo", "River Nile", "River Orange", "River Limpopo"],
+              question: "Which river is found mainly in Central Africa?",
+              choices: ["River Congo", "River Volta", "River Orange", "River Limpopo"],
               correct: 0,
-              explanation: "River Congo crosses the Equator twice."
+              explanation: "River Congo is a major river of Central Africa."
             }
           },
           {
-            moduleId: "rivers-uses-importance",
-            title: "Uses, Importances, Advantages and Disadvantages of Rivers",
-            bigIdea: "Rivers provide power, water, fishing, transport and fertile soils, but they can also flood and spread diseases.",
+            moduleId: "river-mouths-oceans-seas",
+            title: "Where Major Rivers Flow",
+            bigIdea: "NCDC assessment expects learners to identify oceans and seas into which major African rivers flow.",
             learnIt: [
-              "### Uses, Importances, Advantages and Disadvantages",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Hydro-electric power</strong> is generated at waterfalls and rapids.",
-              "* <strong class=\"kw\">Irrigation</strong> supports projects like the Gezira Scheme in Sudan.",
-              "* <strong class=\"kw\">Water transport</strong> carries goods and people on navigable rivers.",
-              "* <strong class=\"kw\">Inland fishing</strong> supports livelihoods.",
-              "* <strong class=\"kw\">Fresh water</strong> supports domestic and industrial use.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Political boundaries</strong> separate some nations.",
-              "* <strong class=\"kw\">Alluvial soils</strong> support crop farming on floodplains.",
-              "* <strong class=\"kw\">Tourist attractions</strong> include waterfalls, gorges and riverine wildlife.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Bulk transport</strong> is cheaper than road and air transport.",
-              "* <strong class=\"kw\">Irrigation farming</strong> improves food security in dry regions.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Floods</strong> displace communities during heavy rains.",
-              "* <strong class=\"kw\">Blackflies</strong> spread river blindness.",
-              "* <strong class=\"kw\">Snails</strong> spread bilharzia.",
-              "* <strong class=\"kw\">Waterfalls and rapids</strong> restrict navigation.",
-              "* <strong class=\"kw\">Seasonal rivers</strong> limit agricultural use during dry seasons."
+              "The Nile flows northwards and enters the Mediterranean Sea. This is a key example because it connects rivers with seas around Africa.",
+              "River Congo and River Niger flow into the Atlantic Ocean. The Volta also flows towards the Atlantic Ocean side of West Africa.",
+              "The Zambezi and Limpopo flow into the Indian Ocean side of Southern Africa. The Orange River flows into the Atlantic Ocean side of Southern Africa.",
+              "When answering, write the river and the water body clearly. Example: River Congo flows into the Atlantic Ocean. The Zambezi flows into the Indian Ocean."
             ],
             tryThis: {
-              question: "Which river use is connected to waterfalls and rapids?",
-              choices: ["Generating hydro-electric power", "Growing coral reefs", "Making deserts", "Stopping rainfall"],
+              question: "Into which sea does the Nile flow?",
+              choices: ["Mediterranean Sea", "Red Sea", "Arctic Ocean", "Lake Ngami"],
               correct: 0,
-              explanation: "Waterfalls and rapids can be used to generate hydro-electric power."
+              explanation: "The Nile flows northwards and enters the Mediterranean Sea."
+            }
+          },
+          {
+            moduleId: "river-value-map-practice",
+            title: "Value and Map Practice for Rivers",
+            bigIdea: "Rivers are valuable physical features, but P7 learners must also practise locating them accurately.",
+            learnIt: [
+              "Rivers are useful because they provide water for people, animals and crops. They can also support fishing, transport in some places, hydro-electric power and tourism.",
+              "Rivers can also create challenges. They may flood, form waterfalls or rapids that make transport difficult, or become polluted when people misuse them.",
+              "Activity: draw a simple map of Africa and mark at least five rivers from the NCDC list: Nile, Congo, Niger, Zambezi and Orange. Add arrows showing the direction each river generally flows towards a sea or ocean.",
+              "Use an atlas or wall map when available. NCDC guidance expects learners to locate major physical features on the map of Africa."
+            ],
+            tryThis: {
+              question: "Which activity best helps a learner study African rivers?",
+              choices: ["Locating rivers on a map and noting where they flow", "Only copying capital cities", "Only naming vegetation zones", "Avoiding maps completely"],
+              correct: 0,
+              explanation: "Rivers should be named and located on a map, and learners should know the oceans or seas into which major rivers flow."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "lakes-africa",
         title: "3. Lakes of Africa",
         modules: [
           {
-            moduleId: "lakes-meaning-types",
-            title: "Lakes of Africa",
-            bigIdea: "Lakes are large water-filled depressions on the earth’s surface, and African lakes form in several ways.",
+            moduleId: "lakes-as-drainage-features",
+            title: "Lakes as Drainage Features",
+            bigIdea: "Lakes are drainage features because they are water bodies found in depressions on the land.",
             learnIt: [
-              "### Lakes of Africa",
-              "<strong class=\"kw\">Lakes</strong>:",
-              "Are large depressions on the earth's surface filled with water.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Down-warping lakes</strong> form in wide shallow basins.",
-              "* <strong class=\"kw\">Rift valley lakes</strong> form in long narrow rift depressions.",
-              "* <strong class=\"kw\">Volcanic crater lakes</strong> form in volcanic hollows.",
-              "* <strong class=\"kw\">Man-made lakes</strong> form behind dams built by people.",
-              "<strong class=\"kw\">Down-warping lakes</strong>:",
-              "Are lakes formed when lateral compressional forces cause the earth's crust to bend downwards, creating a wide shallow basin that fills with rain and river water.",
-              "<strong class=\"kw\">Rift valley lakes</strong>:",
-              "Are lakes formed when water fills depressions on the floor of the rift valley, resulting in long, narrow and very deep water bodies with steep sides.",
-              "<strong class=\"kw\">Volcanic crater lakes</strong>:",
-              "Are lakes formed when water fills the explosive hollow or depression left at the top of an extinct volcanic cone.",
-              "<strong class=\"kw\">Man-made lakes</strong>:",
-              "Are artificial lakes created by humans blocking a river channel with a dam to store water for hydro-electric power or irrigation."
+              "A lake is a large body of water found in a hollow or depression on the earth's surface. Some lakes are fresh-water lakes, while others may be salty or seasonal.",
+              "NCDC groups lakes under drainage features. Drainage features are water features such as lakes, rivers, seas and oceans.",
+              "When studying lakes of Africa, learners should name them, locate them on a map, and understand their value to people and other living things.",
+              "A good P7 answer should include the lake name and a location clue. Example: Lake Chad is found in the Lake Chad Basin in north-central Africa."
             ],
             tryThis: {
-              question: "Which lake type is formed behind a dam?",
-              choices: ["Man-made lake", "Rift valley lake", "Volcanic crater lake", "Down-warping lake"],
+              question: "Why are lakes called drainage features?",
+              choices: ["They are water features found on the earth's surface", "They are mountain ranges", "They are capital cities", "They are political parties"],
               correct: 0,
-              explanation: "Man-made lakes are created when people block a river channel with a dam."
+              explanation: "Lakes are drainage features because they are water bodies found on the earth's surface."
             }
           },
           {
-            moduleId: "major-lakes-africa",
-            title: "Examples of Lakes in Africa",
-            bigIdea: "Africa has down-warping lakes, rift valley lakes, crater lakes and man-made lakes.",
+            moduleId: "lake-chad-lake-ngami",
+            title: "Lake Chad and Lake Ngami",
+            bigIdea: "NCDC specifically lists Lake Chad and Lake Ngami under lakes for this topic.",
             learnIt: [
-              "### Major Lakes of Africa",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Lake Victoria</strong> is the largest fresh-water lake in Africa and is formed by down-warping.",
-              "* <strong class=\"kw\">Lake Tanganyika</strong> is the longest and deepest rift valley lake in Africa.",
-              "* <strong class=\"kw\">Lake Nyasa</strong> is a deep rift valley lake between Malawi, Tanzania and Mozambique.",
-              "* <strong class=\"kw\">Lake Albert</strong> and <strong class=\"kw\">Lake Edward</strong> are rift valley lakes shared by Uganda and DRC.",
-              "* <strong class=\"kw\">Lake Katwe</strong> in Uganda is a volcanic crater lake famous for salt mining.",
-              "* <strong class=\"kw\">Lake Nasser</strong> in Egypt and <strong class=\"kw\">Lake Volta</strong> in Ghana are man-made lakes.",
-              "* <strong class=\"kw\">Lake Chad</strong> is a shallow shrinking down-warping lake in the Sahel region.",
-              "<strong class=\"kw\">UNEB Exam Trap:</strong>",
-              "* <strong class=\"kw\">Lake Victoria</strong> is large and shallow, not a deep rift valley lake.",
-              "* <strong class=\"kw\">Lake Tanganyika</strong> is the deepest rift valley lake in Africa.",
-              "* <strong class=\"kw\">Lake Katwe</strong> is a crater lake known for salt mining."
+              "The two lakes named in the extracted NCDC Topic 2 content are Lake Chad and Lake Ngami.",
+              "Lake Chad is found in north-central Africa around the Lake Chad Basin. It is associated with countries around that basin such as Chad, Nigeria, Niger and Cameroon.",
+              "Lake Ngami is found in Southern Africa, in Botswana. It is linked to the wider Okavango area and may change in size depending on water supply.",
+              "Map practice: locate Lake Chad in the north-central part of Africa and Lake Ngami in Southern Africa. Use an atlas or wall map where available."
             ],
             tryThis: {
-              question: "Which lake is famous for salt mining in Uganda?",
-              choices: ["Lake Katwe", "Lake Victoria", "Lake Tanganyika", "Lake Nasser"],
+              question: "Which lake is specifically listed by NCDC under Topic 2?",
+              choices: ["Lake Chad", "Lake Superior", "Lake Baikal", "Lake Michigan"],
               correct: 0,
-              explanation: "Lake Katwe is a volcanic crater lake in Uganda famous for salt mining."
+              explanation: "The extracted NCDC content lists Lake Chad and Lake Ngami."
             }
           },
           {
-            moduleId: "lakes-uses-importance",
-            title: "Uses, Importances, Advantages and Disadvantages of Lakes",
-            bigIdea: "Lakes support fishing, transport, irrigation, minerals and tourism, but they can also spread disease and create hazards.",
+            moduleId: "lake-value-map-practice",
+            title: "Value and Map Practice for Lakes",
+            bigIdea: "Lakes are valuable physical features, and learners should practise locating them on maps.",
             learnIt: [
-              "### Uses, Importances, Advantages and Disadvantages",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Salt mining</strong> takes place in hyper-saline lakes.",
-              "* <strong class=\"kw\">Irrigation water</strong> supports farming in arid regions.",
-              "* <strong class=\"kw\">Inland transport</strong> carries ferries and cargo ships.",
-              "* <strong class=\"kw\">Commercial fishing</strong> provides livelihoods.",
-              "* <strong class=\"kw\">Domestic water</strong> supports households and industries.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Convectional rainfall</strong> increases through lake moisture.",
-              "* <strong class=\"kw\">National borders</strong> form between neighboring countries.",
-              "* <strong class=\"kw\">Unique ecosystems</strong> boost tourism and revenue.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Fish</strong> provide cheap high-protein food.",
-              "* <strong class=\"kw\">Lake transport</strong> lowers bulky trade costs.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Water hyacinth</strong> chokes engines and suffocates fish.",
-              "* <strong class=\"kw\">Crocodiles and hippos</strong> endanger fishermen.",
-              "* <strong class=\"kw\">Mosquitoes</strong> spread malaria around lakes.",
-              "* <strong class=\"kw\">Snails</strong> spread bilharzia.",
-              "* <strong class=\"kw\">Fishing rights</strong> can cause cross-border conflicts.",
-              "* <strong class=\"kw\">Toxic gases</strong> from deep volcanic lakes can suffocate aquatic life."
+              "Lakes can provide water for people and animals. They may also support fishing, transport, tourism, irrigation and settlement where conditions allow.",
+              "Lakes can also face problems such as drying, pollution, overfishing, flooding near shores and conflicts over water use.",
+              "NCDC guidance says learners should identify and locate physical features on the map of Africa. For lakes, practise pointing to the country or region where each lake is found.",
+              "Activity: draw a simple map of Africa and mark Lake Chad in north-central Africa and Lake Ngami in Southern Africa. Then write one sentence about why lakes are important to people."
             ],
             tryThis: {
-              question: "Which lake problem can choke boat engines?",
-              choices: ["Water hyacinth", "Relief rainfall", "Alluvial soil", "Continental drift"],
+              question: "Which activity best supports learning about lakes of Africa?",
+              choices: ["Locating Lake Chad and Lake Ngami on a map", "Only listing football clubs", "Only naming continents by size", "Avoiding atlas work"],
               correct: 0,
-              explanation: "Water hyacinth can choke boat engines and suffocate fish."
+              explanation: "NCDC expects learners to identify and locate major physical features on maps of Africa."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "plateau-rift-coastal",
         title: "4. Plateau, Rift Valley and Coastal Plains",
         modules: [
           {
-            moduleId: "plateau-rift-coastal-meaning",
-            title: "Plateau, Rift Valley and Coastal Plains",
-            bigIdea: "Plateaus, rift valleys and coastal plains are major landforms that influence settlement, transport, farming and tourism.",
+            moduleId: "plateau-rift-coastal-as-relief-features",
+            title: "Plateau, Rift Valley and Coastal Plains as Relief Features",
+            bigIdea: "Plateaus, rift valleys and coastal plains are relief features because they describe the shape and height of land.",
             learnIt: [
-              "### Plateau, Rift Valley and Coastal Plains",
-              "<strong class=\"kw\">Plateau</strong>:",
-              "Is a large, elevated area of relatively flat or level land that rises sharply above the surrounding areas.",
-              "<strong class=\"kw\">Rift valley</strong>:",
-              "Is a long, narrow trough or depression on the earth's surface formed between parallel fault lines due to tensional or compressional forces.",
-              "<strong class=\"kw\">Coastal plains</strong>:",
-              "Are low-lying, relatively flat stretches of land adjacent to the ocean or sea coast.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Continental plateaus</strong> are vast interior tablelands.",
-              "* <strong class=\"kw\">Intermontane plateaus</strong> are flat highlands enclosed by mountains.",
-              "* <strong class=\"kw\">Eastern Rift Valley branch</strong> has shallow salty lakes.",
-              "* <strong class=\"kw\">Western Rift Valley branch</strong> has deep fresh-water lakes.",
-              "<strong class=\"kw\">Continental plateaus</strong>:",
-              "Are vast, expansive tablelands that rise abruptly from coastal plains, making up the largest part of Africa's interior.",
-              "<strong class=\"kw\">Intermontane plateaus</strong>:",
-              "Are high-altitude flat lands completely surrounded or enclosed by high mountain ranges."
+              "Relief features are landforms that show the shape and height of land. NCDC lists plateau, rift valleys and coastal plains among relief features.",
+              "A plateau is a raised area of land that is fairly flat on top. Much of Africa is often described as a plateau continent because large parts of the continent are high and fairly flat.",
+              "A rift valley is a long, narrow depression formed when parts of the earth's crust sink between faults. Rift valleys may contain lakes, steep sides and flat valley floors.",
+              "A coastal plain is low, fairly flat land found near the coast. NCDC specifically mentions coastal plains in the West, North and South of Africa."
             ],
             tryThis: {
-              question: "What is a plateau?",
-              choices: ["A large elevated area of relatively flat land", "A small ocean", "A volcanic vent only", "A flowing stream"],
+              question: "Which physical feature is a raised area of land that is fairly flat on top?",
+              choices: ["Plateau", "River", "Sea", "Capital city"],
               correct: 0,
-              explanation: "A plateau is an elevated area of relatively flat land."
+              explanation: "A plateau is raised land that is fairly flat on top."
             }
           },
           {
-            moduleId: "rift-branches-examples",
-            title: "Rift Valley Branches and Examples",
-            bigIdea: "The Great Rift Valley has eastern and western branches, and Africa also has major plateaus and coastal plains.",
+            moduleId: "locating-plateau-rift-coastal-plains",
+            title: "Locating Plateau, Rift Valley and Coastal Plains",
+            bigIdea: "P7 learners should locate relief features on a map of Africa, not only define them.",
             learnIt: [
-              "### Rift Valley Branches and Examples",
-              "<strong class=\"kw\">Eastern Rift Valley branch</strong>:",
-              "Is the branch of the Great Rift Valley that runs from the Red Sea through Ethiopia, Kenya and Tanzania, characterized by shallow salty lakes.",
-              "<strong class=\"kw\">Western Rift Valley branch</strong>:",
-              "Is the branch of the Great Rift Valley that runs along the western border of Uganda, DRC, Rwanda and Burundi down to Malawi, characterized by deep fresh-water lakes.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">East African Plateau</strong> covers most of Uganda, Kenya and Tanzania.",
-              "* <strong class=\"kw\">Jos Plateau</strong> in Nigeria is famous for tin mining.",
-              "* <strong class=\"kw\">Ethiopian Highlands</strong> form the highest and most extensive plateau region in Africa.",
-              "* <strong class=\"kw\">Great Rift Valley</strong> stretches from Jordan through the Red Sea to Mozambique.",
-              "* <strong class=\"kw\">Western Rift Valley</strong> contains Lake Albert, Lake Edward and Lake George.",
-              "* <strong class=\"kw\">Mozambican Coastal Plain</strong> lies along the Indian Ocean in East-Central Africa.",
-              "<strong class=\"kw\">UNEB Exam Trap:</strong>",
-              "* <strong class=\"kw\">Western Rift Valley</strong> has deep fresh-water lakes.",
-              "* <strong class=\"kw\">Eastern Rift Valley</strong> has many shallow salty lakes.",
-              "* <strong class=\"kw\">Great Rift Valley</strong> extends beyond Africa into Asia."
+              "Use a map of Africa to identify raised plateau areas, rift valley areas and low coastal plains. NCDC guidance says learners should locate physical features region by region.",
+              "The Great Rift Valley system is an important example of a rift valley feature in Africa. It is already familiar from East Africa, but in P7 learners connect physical features to the wider African continent.",
+              "Coastal plains are found near the coast. For this topic, remember NCDC's wording: coastal plains in the West, North and South of Africa.",
+              "Map practice: shade highland/plateau areas lightly, trace a rift valley line, and mark low coastal plains near the coast. Keep labels short and clear."
             ],
             tryThis: {
-              question: "Which rift branch contains Lake Albert and Lake Edward?",
-              choices: ["Western Rift Valley branch", "Eastern Rift Valley branch", "Atlantic coastal plain", "Jos Plateau"],
+              question: "Where are coastal plains generally found?",
+              choices: ["Near the coast", "Only at mountain tops", "Only inside rivers", "Only in capital cities"],
               correct: 0,
-              explanation: "Lake Albert and Lake Edward lie in the Western Rift Valley branch."
+              explanation: "Coastal plains are low, fairly flat lands found near coastal areas."
             }
           },
           {
-            moduleId: "plateau-rift-coastal-uses",
-            title: "Uses, Importances, Advantages and Disadvantages",
-            bigIdea: "Plateaus, rift valleys and coastal plains support grazing, mining, farming, tourism, ports and settlement.",
+            moduleId: "model-and-value-practice-relief-features",
+            title: "Model and Value Practice for Relief Features",
+            bigIdea: "NCDC encourages learners to model physical features and discuss how they influence people's lives.",
             learnIt: [
-              "### Uses, Importances, Advantages and Disadvantages",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Livestock grazing</strong> takes place on plateau grasslands.",
-              "* <strong class=\"kw\">Mining</strong> extracts minerals like gold, diamonds and copper.",
-              "* <strong class=\"kw\">Cash crops</strong> like tea and coffee grow on cool high plateaus.",
-              "* <strong class=\"kw\">Tourism</strong> grows along rift valley floors, game parks and salt lakes.",
-              "* <strong class=\"kw\">Ports and harbors</strong> develop on flat coastal plains.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Settlement distribution</strong> is influenced by flat terrain.",
-              "* <strong class=\"kw\">Temperature modification</strong> makes high plateaus cooler and habitable.",
-              "* <strong class=\"kw\">Scenery</strong> attracts international tourists.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Flat land</strong> makes transport construction cheaper on plateaus and coastal plains.",
-              "* <strong class=\"kw\">Deep-water harbors</strong> support international maritime trade.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Rain-shadow drought</strong> affects deep rift valley floors.",
-              "* <strong class=\"kw\">Escarpments</strong> make road and railway engineering dangerous and expensive.",
-              "* <strong class=\"kw\">Coastal humidity</strong> creates hot oppressive conditions.",
-              "* <strong class=\"kw\">Tsetse flies</strong> live in warm wooded plateau and rift valley areas."
+              "NCDC guidance suggests modelling physical features using local materials such as stones, banana fibres, papyrus, wood, sand, clay and water.",
+              "A simple model can show a plateau as raised flat land, a rift valley as a sunken strip between higher sides, and a coastal plain as low flat land near water.",
+              "These relief features influence people's lives. Plateaus may support settlement and farming where climate and soils allow. Rift valleys may contain lakes and tourist sites. Coastal plains may support fishing, ports, farming and settlement.",
+              "They may also create challenges. Rift valley sides can be steep, some plateau areas may be dry, and coastal plains may face flooding or erosion. Keep examples simple and connected to the map."
             ],
             tryThis: {
-              question: "Which landform is best for ports and harbors?",
-              choices: ["Coastal plains", "Rift escarpments", "Volcanic cones", "Mountain summits"],
+              question: "Which model best shows a rift valley?",
+              choices: ["A sunken strip between higher sides", "A round ball only", "A capital city symbol", "A line of longitude"],
               correct: 0,
-              explanation: "Flat coastal plains support ports, harbors and coastal trading centers."
+              explanation: "A rift valley is a long depression, so a sunken strip between higher sides is a good simple model."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "formation-physical-features",
-        title: "5. Forces and Processes that Form Physical Features",
+        title: "5. Formation of Major Physical Features",
         modules: [
           {
-            moduleId: "internal-forces-meaning-types",
-            title: "Forces and Processes that Form Physical Features",
-            bigIdea: "Internal forces originate from within the earth and create features by breaking, bending, lifting or sinking the crust.",
+            moduleId: "formation-folded-mountains",
+            title: "Formation of Folded Mountains",
+            bigIdea: "NCDC guidance asks learners to describe folded mountains as one way mountains are formed.",
             learnIt: [
-              "### Forces and Processes that Form Physical Features",
-              "<strong class=\"kw\">Internal forces</strong>:",
-              "Are movements or pressures originating from within the earth's interior that alter, lift or break the crust to create physical features.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Faulting</strong> breaks the earth's crust.",
-              "* <strong class=\"kw\">Volcanicity</strong> forces molten rock into or onto the surface.",
-              "* <strong class=\"kw\">Down-warping</strong> bends or sinks the crust downwards.",
-              "* <strong class=\"kw\">Folding</strong> bends young sedimentary rocks.",
-              "<strong class=\"kw\">Faulting</strong>:",
-              "Is the fracturing, cracking or breaking of the earth's crustal rocks due to tensional or compressional forces.",
-              "<strong class=\"kw\">Volcanicity</strong>:",
-              "Is the process by which molten rocks or magma are forced from the earth's interior into or onto the earth's surface.",
-              "<strong class=\"kw\">Down-warping</strong>:",
-              "Is the gentle bending or sinking of vast areas of the earth's crust towards the center due to underground compressional pressure.",
-              "<strong class=\"kw\">Folding</strong>:",
-              "Is the bending or wrinkling of young sedimentary rock layers due to lateral compressional forces pushing from opposite sides."
+              "Folded mountains are formed when layers of rocks are pushed from opposite sides by forces inside the earth. The pressure makes the rock layers bend or fold upward.",
+              "This process happens slowly over a long time. The folded layers may rise to form long mountain ranges.",
+              "A simple P7 model can be made by pushing a sheet of paper or soft cloth from both sides. The folds that rise up represent folded mountains.",
+              "School-first example: the Atlas Mountains in Northern Africa are commonly studied as folded mountains. Use a map to locate them in North Africa."
             ],
             tryThis: {
-              question: "Which process forms fold mountains?",
-              choices: ["Folding", "Evaporation", "Fishing", "Irrigation"],
+              question: "How are folded mountains formed?",
+              choices: ["Rock layers are pushed and folded upward", "A river flows into the sea", "A lake dries up", "A capital city is built"],
               correct: 0,
-              explanation: "Folding bends or wrinkles sedimentary rock layers to form fold mountains."
+              explanation: "Folded mountains form when forces inside the earth push rock layers until they fold upward."
             }
           },
           {
-            moduleId: "internal-forces-examples",
-            title: "Examples of Internal Forces and Features",
-            bigIdea: "Tensional forces, compressional forces, crustal warping and volcanic eruptions form major physical features in Africa.",
+            moduleId: "formation-fault-block-mountains-rift-valleys",
+            title: "Faulting: Block Mountains and Rift Valleys",
+            bigIdea: "Faulting can form raised blocks of land and sunken valleys.",
             learnIt: [
-              "### Examples of Internal Forces",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Tensional forces</strong> pull crustal rocks away from each other and can form rift valleys.",
-              "* <strong class=\"kw\">Compressional forces</strong> push crustal rocks together and can form block or fold mountains.",
-              "* <strong class=\"kw\">Crustal warping</strong> created shallow basins containing Lake Victoria and Lake Kyoga.",
-              "* <strong class=\"kw\">Volcanic eruptions</strong> formed Mount Kilimanjaro, Mount Elgon and the Mfumbiro ranges.",
-              "<strong class=\"kw\">UNEB Exam Trap:</strong>",
-              "* <strong class=\"kw\">Faulting</strong> is linked to rift valleys and block mountains.",
-              "* <strong class=\"kw\">Volcanicity</strong> is linked to volcanic mountains and crater lakes.",
-              "* <strong class=\"kw\">Down-warping</strong> is linked to shallow basin lakes like Lake Victoria.",
-              "* <strong class=\"kw\">Folding</strong> is linked to fold mountains like the Atlas Mountains."
+              "Faulting happens when cracks develop in the earth's crust and blocks of land move up or down along those cracks.",
+              "A fault-block mountain forms when a block of land is pushed or left standing higher than the land around it. A rift valley forms when a long block of land sinks between faults.",
+              "A simple model can be made with three books or blocks: leave the middle block lower to show a rift valley, or raise one block to show a block mountain.",
+              "For P7, focus on the idea that faulting is caused by earth movements and can form both raised and sunken relief features."
             ],
             tryThis: {
-              question: "Which process formed Mount Kilimanjaro?",
-              choices: ["Volcanicity", "Down-warping", "River erosion only", "Coastal deposition"],
+              question: "Which feature can be formed when a long block of land sinks between faults?",
+              choices: ["Rift valley", "Capital city", "Ocean current", "Latitude line"],
               correct: 0,
-              explanation: "Mount Kilimanjaro was formed through volcanic activity."
+              explanation: "A rift valley can form when land sinks between faults."
             }
           },
           {
-            moduleId: "internal-forces-uses-importance",
-            title: "Uses, Importances, Advantages and Disadvantages of Internal Forces",
-            bigIdea: "Internal forces create useful landforms and resources, but they can also cause earthquakes, eruptions and difficult terrain.",
+            moduleId: "formation-volcanic-mountains",
+            title: "Formation of Volcanic Mountains",
+            bigIdea: "Volcanic mountains are formed when materials from inside the earth build up around a volcanic opening.",
             learnIt: [
-              "### Uses, Importances, Advantages and Disadvantages",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Minerals</strong> are brought closer to the surface during volcanic activity.",
-              "* <strong class=\"kw\">Hot springs</strong> and geysers support geothermal power and tourism.",
-              "* <strong class=\"kw\">Mountain peaks</strong> trigger cloud condensation for water supply.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Tourist attractions</strong> include escarpments, craters and geysers.",
-              "* <strong class=\"kw\">River flow direction</strong> is determined by tilted warped land basins.",
-              "* <strong class=\"kw\">Fertile volcanic soils</strong> boost agricultural production.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">High-altitude locations</strong> receive heavy relief rainfall.",
-              "* <strong class=\"kw\">Natural depressions</strong> store large volumes of fresh water.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Earthquakes</strong> destroy infrastructure along fault lines.",
-              "* <strong class=\"kw\">Volcanic eruptions</strong> emit toxic gases and bury farmland under lava.",
-              "* <strong class=\"kw\">Rugged terrain</strong> makes roads, bridges and railways difficult to build."
+              "A volcanic mountain forms when hot molten rock, ash and other materials come out through an opening in the earth's crust and build up around it.",
+              "After repeated eruptions, the materials cool and pile up to form a mountain or volcanic cone.",
+              "A simple model can be made by piling sand or clay around a small opening to show how volcanic materials build up around a vent.",
+              "School-first examples linked to Africa include volcanic mountains such as Mount Cameroon and Mount Kilimanjaro. Use an atlas or wall map to locate them."
             ],
             tryThis: {
-              question: "Which internal-force result can destroy infrastructure along fault lines?",
-              choices: ["Earthquakes", "Fishing", "Convectional rainfall", "Port trade"],
+              question: "What builds up to form a volcanic mountain?",
+              choices: ["Lava, ash and other volcanic materials", "Capital city buildings", "Only river water", "Lines of longitude"],
               correct: 0,
-              explanation: "Earthquakes can occur along fault lines and destroy infrastructure."
+              explanation: "Volcanic mountains form when lava, ash and other materials build up around a volcanic opening."
+            }
+          },
+          {
+            moduleId: "formation-diagram-practice",
+            title: "Diagram and Model Practice",
+            bigIdea: "NCDC expects learners to draw and model the formation of major physical features.",
+            learnIt: [
+              "For folded mountains, draw rock layers bending upward after being pushed from both sides. Label the folded layers and arrows showing pressure.",
+              "For faulting, draw cracks called faults. Show one block higher for a block mountain or the middle block lower for a rift valley.",
+              "For volcanic mountains, draw a cone shape with an opening called a vent. Show lava or ash building up around the vent.",
+              "Keep diagrams simple, labelled and neat. A correct simple diagram is better than a complicated drawing with no labels."
+            ],
+            tryThis: {
+              question: "What should a good formation diagram include?",
+              choices: ["Clear labels and arrows showing the process", "Only decoration", "Only country flags", "No labels at all"],
+              correct: 0,
+              explanation: "Formation diagrams should show the process clearly with labels and arrows where helpful."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "premium-physical-features-application",
-        title: "Premium Exam Practice: Feature Formation and Importance",
+        title: "Practice: Physical Features Map and Formation Questions",
         modules: [
           {
-            moduleId: "feature-formation-answer-structure",
-            title: "Explaining Relief Features Clearly",
-            bigIdea: "A strong physical-features answer names the feature, states the formation process and gives its importance or problem.",
+            moduleId: "physical-features-question-commands",
+            title: "Step 1: Read the Physical Features Question",
+            bigIdea: "A good answer depends on whether the question asks you to name, locate, explain or draw.",
             learnIt: [
-              "### Premium Exam Practice: Feature Formation and Importance",
-              "<strong class=\"kw\">Relief feature answer</strong>:",
-              "Is a clear answer that names a physical feature, explains how it formed and states its importance or problem.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Formation answer</strong> explains how the feature was made.",
-              "* <strong class=\"kw\">Importance answer</strong> explains how the feature helps people.",
-              "* <strong class=\"kw\">Problem answer</strong> explains how the feature affects people negatively.",
-              "<strong class=\"kw\">Formation answer</strong>:",
-              "Is an answer that uses process words such as faulting, folding, volcanicity, erosion, deposition or down-warping.",
-              "<strong class=\"kw\">Importance answer</strong>:",
-              "Is an answer that states useful activities such as transport, fishing, irrigation, tourism, water supply or hydro-electric power.",
-              "<strong class=\"kw\">Problem answer</strong>:",
-              "Is an answer that states hazards such as floods, disease vectors, erosion, landslides or transport barriers.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Rift valleys</strong> form through faulting.",
-              "* <strong class=\"kw\">Volcanic mountains</strong> form through volcanicity.",
-              "* <strong class=\"kw\">Lakes</strong> support fishing and transport.",
-              "* <strong class=\"kw\">Mountains</strong> may cause landslides and transport barriers."
+              "If the question says name, give the correct physical feature. Example: Name one major river of Africa — River Congo.",
+              "If the question says locate, give the region or country where the feature is found. Example: The Atlas Mountains are found in Northern Africa.",
+              "If the question says explain formation, describe the process simply. Example: Folded mountains form when rock layers are pushed and folded upward.",
+              "If the question says draw, make a neat labelled diagram or map. Do not write a long paragraph when a labelled diagram is required."
             ],
             tryThis: {
-              question: "Which process word explains the formation of a rift valley?",
-              choices: ["Faulting", "Condensation", "Pollination", "Trading"],
+              question: "Which command word asks you to show where a feature is found?",
+              choices: ["Locate", "Colour", "Whisper", "Ignore"],
               correct: 0,
-              explanation: "Rift valleys form mainly through faulting."
+              explanation: "Locate means show or state where something is found."
             }
           },
           {
-            moduleId: "physical-features-worked-examples",
-            title: "Worked Examples: Importance and Problems",
-            bigIdea: "Worked examples help learners turn short facts into complete UNEB-style answers.",
+            moduleId: "physical-features-map-practice",
+            title: "Step 2: Practise Map Location",
+            bigIdea: "NCDC expects learners to locate physical features on the map of Africa region by region.",
             learnIt: [
-              "### Worked Examples: Importance and Problems",
-              "<strong class=\"kw\">Worked example</strong>:",
-              "Is a model answer showing the steps needed to write a complete response.",
-              "<strong class=\"kw\">Steps:</strong>",
-              "* <strong class=\"kw\">Read the command word</strong> before choosing the answer type.",
-              "* <strong class=\"kw\">Name the feature</strong> before explaining it.",
-              "* <strong class=\"kw\">Use a process word</strong> for formation questions.",
-              "* <strong class=\"kw\">Use a direct benefit</strong> for importance questions.",
-              "* <strong class=\"kw\">Use a realistic effect</strong> for problem questions.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Rivers</strong> provide water for irrigation.",
-              "* <strong class=\"kw\">Rivers</strong> generate hydro-electric power at waterfalls and rapids.",
-              "* <strong class=\"kw\">Lakes</strong> support fishing and inland transport.",
-              "* <strong class=\"kw\">Mountains</strong> attract tourists and provide water catchments.",
-              "* <strong class=\"kw\">Rift escarpments</strong> make road construction difficult."
+              "Start with feature groups: mountains/highlands, rivers, lakes, plateau/rift/coastal plains. This helps you avoid mixing names.",
+              "For mountains and highlands, practise Atlas, Drakensberg, Cameroon highlands, Jos plateau, Ahaggar, Tibesti and Ethiopian highlands.",
+              "For rivers, practise Nile, Congo, Niger, Zambezi, Orange, Limpopo, Blue Nile and Volta. For lakes, practise Lake Chad and Lake Ngami.",
+              "Use an atlas or wall map. Say the feature name, the region, and one country clue where your teacher has provided it."
             ],
             tryThis: {
-              question: "Which answer states an importance of rivers?",
-              choices: ["Rivers provide water for irrigation.", "Rivers are parliamentary buildings.", "Rivers are capital cities.", "Rivers are imaginary lines."],
+              question: "Which item belongs to the rivers group?",
+              choices: ["Zambezi", "Atlas", "Lake Chad", "Drakensberg"],
               correct: 0,
-              explanation: "Providing water for irrigation is an importance of rivers."
-            },
-            workedExample: {
-              question: "State two ways rivers are important to people in Africa.",
-              steps: ["Think of direct uses of river water.", "Rivers can provide water for irrigation and domestic use.", "Some rivers can generate hydro-electric power or support fishing."],
-              answer: "Rivers provide water for irrigation and can be used to generate hydro-electric power."
+              explanation: "Zambezi is a river. Atlas and Drakensberg are mountains/highlands; Lake Chad is a lake."
             }
           },
           {
-            moduleId: "physical-features-exam-traps",
-            title: "UNEB Traps in Physical Features",
-            bigIdea: "Physical geography questions often test process words, examples and correct feature classification.",
+            moduleId: "physical-features-formation-practice",
+            title: "Step 3: Practise Formation Answers",
+            bigIdea: "Formation answers should name the process and state how the feature is formed.",
             learnIt: [
-              "### UNEB Traps in Physical Features",
-              "<strong class=\"kw\">UNEB exam trap</strong>:",
-              "Is a common mistake in physical geography that leads to a wrong answer.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Process trap</strong> confuses faulting, folding, volcanicity and down-warping.",
-              "* <strong class=\"kw\">Example trap</strong> attaches a feature to the wrong country or type.",
-              "* <strong class=\"kw\">Use trap</strong> gives a vague benefit instead of a direct use.",
-              "* <strong class=\"kw\">Problem trap</strong> gives an unrealistic effect.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Rwenzori Mountains</strong> are block mountains, not volcanic mountains.",
-              "* <strong class=\"kw\">Atlas Mountains</strong> are fold mountains.",
-              "* <strong class=\"kw\">Lake Victoria</strong> is a down-warping lake, not a rift valley lake.",
-              "* <strong class=\"kw\">Lake Tanganyika</strong> is a deep rift valley lake.",
-              "* <strong class=\"kw\">Mount Kilimanjaro</strong> is a volcanic mountain.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Trap awareness</strong> improves accuracy in UNEB answers.",
-              "* <strong class=\"kw\">Feature classification</strong> helps learners explain formation correctly.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Guessing processes</strong> causes wrong formation answers.",
-              "* <strong class=\"kw\">Memorising examples only</strong> fails when explanation is required."
+              "Folded mountain answer: rock layers are pushed from opposite sides and fold upward to form mountains.",
+              "Fault-block/rift valley answer: cracks called faults form in the earth's crust, and blocks of land move up or down.",
+              "Volcanic mountain answer: lava, ash and other materials erupt from inside the earth and build up around a vent.",
+              "Use simple process words: pushed, folded, cracked, moved, sank, rose, erupted and built up. These help your answer stay clear."
             ],
             tryThis: {
-              question: "Which statement is correct?",
-              choices: ["Lake Victoria is a down-warping lake.", "Lake Victoria is the deepest rift valley lake.", "Atlas Mountains are volcanic cones.", "Rwenzori is a coastal plain."],
+              question: "Which process is linked to volcanic mountains?",
+              choices: ["Eruption and build-up of lava/ash", "Listing capital cities", "Naming continents by size", "Writing latitude only"],
               correct: 0,
-              explanation: "Lake Victoria is a down-warping or basin lake."
+              explanation: "Volcanic mountains form when volcanic materials erupt and build up around an opening."
+            }
+          },
+          {
+            moduleId: "physical-features-value-answer-practice",
+            title: "Step 4: Explain Value Without Filler",
+            bigIdea: "Value answers should connect the feature to how people and living things use the environment.",
+            learnIt: [
+              "NCDC says physical features are natural resources because people depend on the physical environment to earn a living.",
+              "A strong value answer names the feature and gives a direct use. Example: Rivers provide water for people, animals and crops.",
+              "Avoid vague answers like 'it is important'. Say how it is important: for water, fishing, farming, transport, tourism, minerals, settlement or climate influence where appropriate.",
+              "Also be balanced when needed. Physical features can help people, but they may also create challenges such as floods, steep slopes, erosion or transport difficulties."
+            ],
+            tryThis: {
+              question: "Which answer best explains the value of a river?",
+              choices: ["A river provides water for people, animals and crops", "A river is just important", "A river is a capital city", "A river is a continent"],
+              correct: 0,
+              explanation: "The best answer names a direct value: rivers provide water for people, animals and crops."
             }
           }
         ]
-      }
-    ],
+      },],
     quiz: [
       { q: "Which is the highest mountain in Africa?", choices: ["Kilimanjaro", "Rwenzori", "Atlas", "Elgon"], correct: 0, why: "Mount Kilimanjaro in Tanzania is the highest mountain in Africa." },
       { q: "Which river is commonly known as the longest river in Africa?", choices: ["Nile", "Congo", "Niger", "Zambezi"], correct: 0, why: "The Nile is commonly taught as Africa's longest river." },
@@ -1260,563 +993,416 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
       ],
     },
     subtopics: [
-      {
+            {
         subtopicId: "climatic-regions",
         title: "1. Climatic regions of Africa",
         modules: [
           {
-            moduleId: "climate-weather-meaning",
-            title: "Climate and Weather",
-            bigIdea: "Climate is long-term average weather, while weather is the short-term state of the atmosphere.",
+            moduleId: "weather-climate-elements",
+            title: "Weather, Climate and Climate Elements",
+            bigIdea: "Climate describes the usual weather conditions of a place over a long period of time.",
             learnIt: [
-              "### Climatic Regions of Africa",
-              "<strong class=\"kw\">Climate</strong>:",
-              "Is the average weather conditions of a place recorded over a long period of time, usually 30 to 35 years.",
-              "<strong class=\"kw\">Weather</strong>:",
-              "Is the state of the atmosphere of a given place at a specific or short period of time.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Equatorial climatic region</strong> is hot and wet throughout the year.",
-              "* <strong class=\"kw\">Tropical climatic region</strong> has wet and dry seasons.",
-              "* <strong class=\"kw\">Mediterranean climatic region</strong> has hot dry summers and cool wet winters.",
-              "* <strong class=\"kw\">Desert climatic region</strong> is extremely dry.",
-              "* <strong class=\"kw\">Semi-desert climatic region</strong> is a dry transition zone.",
-              "* <strong class=\"kw\">Temperate climatic region</strong> is a high-altitude grassland climate."
+              "Weather is the condition of the atmosphere of a place over a short time, such as a day or a week. Climate is the usual weather condition of a place over a long period of time.",
+              "NCDC lists important weather and climate elements: wind, rainfall, sunshine, temperature and humidity.",
+              "These elements help learners describe climates. A place may be hot or cool, wet or dry, windy or calm, humid or less humid.",
+              "In P7, climate is important because it supports and affects human life, animals and plant life. Learners should connect climate to farming, settlement, vegetation and daily activities."
             ],
             tryThis: {
-              question: "What is climate?",
-              choices: ["Average weather over a long period", "Weather for one afternoon", "A mountain peak", "A river channel"],
+              question: "Which item is an element of weather and climate?",
+              choices: ["Rainfall", "Capital city", "Political party", "Longitude only"],
               correct: 0,
-              explanation: "Climate is the average weather conditions of a place over a long period."
+              explanation: "NCDC lists rainfall as one of the elements of weather and climate."
             }
           },
           {
-            moduleId: "climatic-regions-types",
-            title: "Types of Climatic Regions in Africa",
-            bigIdea: "Africa has several climatic regions with different rainfall, temperature and seasonal patterns.",
+            moduleId: "six-climatic-regions-africa",
+            title: "The Climatic Regions of Africa",
+            bigIdea: "NCDC names six main climatic regions of Africa for this topic.",
             learnIt: [
-              "### Types of Climatic Regions",
-              "<strong class=\"kw\">Equatorial climatic region</strong>:",
-              "Is a hot and wet climatic zone found within 5 degrees North and South of the Equator, experiencing heavy convectional rainfall throughout the year.",
-              "<strong class=\"kw\">Tropical climatic region</strong>:",
-              "Is a climatic zone flanking the equatorial region, characterized by two distinct wet seasons and one long dry season.",
-              "<strong class=\"kw\">Mediterranean climatic region</strong>:",
-              "Is a unique climatic zone found at the extreme northern and southern tips of Africa, featuring hot, dry summers and cool, wet winters.",
-              "<strong class=\"kw\">Desert climatic region</strong>:",
-              "Is a hyper-arid zone experiencing extreme temperatures, daytime heat and unreliable rainfall under 250 millimeters annually.",
-              "<strong class=\"kw\">Semi-desert climatic region</strong>:",
-              "Is a dry transition zone between the desert and savanna, experiencing low, unreliable rainfall and sparse vegetation.",
-              "<strong class=\"kw\">Temperate climatic region</strong>:",
-              "Is a high-altitude grassland zone also known as the Veld, experiencing warm summers and cold winters."
+              "The climatic regions listed for P7 are Mediterranean, Temperate, Desert, Tropical, Equatorial and Mountain or Montane climate.",
+              "A climatic region is an area that has a similar pattern of temperature, rainfall and seasons. These patterns influence plants, animals and people's activities.",
+              "Use simple map thinking: equatorial climate is near the Equator; desert climate is common in very dry areas; Mediterranean climate is found in parts of North and South Africa; mountain climate is found in highland areas.",
+              "Do not only memorise names. Connect each climate name to its main weather pattern and where it is commonly found in Africa."
             ],
             tryThis: {
-              question: "Which climatic region has hot dry summers and cool wet winters?",
-              choices: ["Mediterranean climatic region", "Equatorial climatic region", "Desert climatic region", "Tropical climatic region"],
+              question: "Which list contains only climatic regions named for this topic?",
+              choices: ["Equatorial, Tropical, Desert", "Nile, Congo, Zambezi", "Atlas, Drakensberg, Ahaggar", "Uganda, Kenya, Ghana"],
               correct: 0,
-              explanation: "Mediterranean climate has hot dry summers and cool wet winters."
+              explanation: "Equatorial, Tropical and Desert are climatic regions. The other lists contain rivers, mountains or countries."
             }
           },
           {
-            moduleId: "climatic-regions-examples",
-            title: "Examples and Uses of Climatic Regions",
-            bigIdea: "Each climatic region supports different farming, energy, livestock and tourism activities.",
+            moduleId: "climate-region-map-practice",
+            title: "Map Practice: Locating Climatic Regions",
+            bigIdea: "Learners should identify climatic regions on a map and connect them to African places.",
             learnIt: [
-              "### Examples and Uses of Climatic Regions",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">DRC</strong> lies completely within the hot and wet Equatorial belt.",
-              "* <strong class=\"kw\">Gabon</strong> and Republic of Congo form part of the forested Amazon of Africa.",
-              "* <strong class=\"kw\">Uganda</strong> and Kenya mostly experience modified Tropical savanna climate.",
-              "* <strong class=\"kw\">Sahara Desert</strong> is the largest hot desert in the world.",
-              "* <strong class=\"kw\">Kalahari</strong> and Namib Deserts lie in southwestern Africa.",
-              "* <strong class=\"kw\">Cape Town</strong> region has Mediterranean climate.",
-              "* <strong class=\"kw\">Highveld</strong> represents the temperate grassland climate.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Tropical double rainy seasons</strong> support large-scale crop farming.",
-              "* <strong class=\"kw\">Desert solar radiation</strong> supports solar energy generation.",
-              "* <strong class=\"kw\">Mediterranean weather</strong> supports citrus fruits and grapes for wine.",
-              "* <strong class=\"kw\">Highveld grasslands</strong> support sheep rearing and wool production."
+              "Use a map of Africa to locate broad climate areas. The Equatorial region is around the Equator. The Sahara and Namib are hot desert areas. Mediterranean climate is found in parts of North Africa and the south-west/southern tip of Africa.",
+              "Mountain climate occurs in highland areas where altitude affects temperature. Temperate climate is associated with parts of Southern Africa. Tropical climate covers many areas with wet and dry seasons.",
+              "NCDC assessment also asks learners to name countries experiencing different climate types. Use teacher-approved maps or atlases for country examples before treating them as final answers.",
+              "Activity: draw a simple map of Africa and shade broad areas for Equatorial, Desert, Mediterranean and Mountain climates. Add a key so the colours or patterns are easy to read."
             ],
             tryThis: {
-              question: "Which desert is the largest hot desert in the world?",
-              choices: ["Sahara Desert", "Namib Desert", "Kalahari Desert", "Gobi Desert"],
+              question: "Which desert is a major hot desert of Africa?",
+              choices: ["Sahara", "Amazon", "Arctic", "Gobi only"],
               correct: 0,
-              explanation: "The Sahara Desert in North Africa is the largest hot desert in the world."
-            }
-          },
-          {
-            moduleId: "climatic-regions-importance",
-            title: "Importances, Advantages and Disadvantages of Climatic Regions",
-            bigIdea: "Climatic regions shape farming, wildlife, disease patterns, rainfall and drought risk.",
-            learnIt: [
-              "### Importances, Advantages and Disadvantages",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Equatorial rainforests</strong> regulate the global carbon cycle.",
-              "* <strong class=\"kw\">Savanna ecosystems</strong> shape the distribution of African wildlife.",
-              "* <strong class=\"kw\">Semi-arid zones</strong> determine pastoralist migration calendars.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Equatorial regions</strong> support continuous crop growing.",
-              "* <strong class=\"kw\">Desert and semi-desert regions</strong> reduce moisture-loving disease vectors.",
-              "* <strong class=\"kw\">Temperate zones</strong> support healthy livestock through nutritious pasture.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Desert and semi-desert zones</strong> cause droughts and famine.",
-              "* <strong class=\"kw\">Equatorial regions</strong> harbor anopheles mosquitoes.",
-              "* <strong class=\"kw\">Convectional storms</strong> cause destructive lightning in the Equatorial belt.",
-              "* <strong class=\"kw\">Mediterranean zones</strong> limit agriculture because rain falls mainly in winter."
-            ],
-            tryThis: {
-              question: "Which climatic region can support continuous crop growing?",
-              choices: ["Equatorial region", "Desert region", "Semi-desert region", "Polar region"],
-              correct: 0,
-              explanation: "Equatorial regions have heat and rainfall throughout the year, supporting continuous crop growing."
+              explanation: "The Sahara is one of Africa's major hot deserts."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "characteristics-climate",
         title: "2. Characteristics of different climatic regions",
         modules: [
           {
-            moduleId: "climatic-characteristics-meaning",
-            title: "Characteristics of Different Climatic Regions",
-            bigIdea: "Climatic characteristics are measurable features such as temperature, rainfall and humidity.",
+            moduleId: "equatorial-tropical-characteristics",
+            title: "Equatorial and Tropical Climate Characteristics",
+            bigIdea: "Climate characteristics describe the temperature, rainfall and seasons of a region.",
             learnIt: [
-              "### Characteristics of Different Climatic Regions",
-              "<strong class=\"kw\">Climatic characteristics</strong>:",
-              "Are the specific measurable atmospheric conditions such as temperature, rainfall pattern and humidity that uniquely define a particular climatic zone.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Equatorial characteristics</strong> show hot wet conditions.",
-              "* <strong class=\"kw\">Tropical characteristics</strong> show alternating wet and dry seasons.",
-              "* <strong class=\"kw\">Desert characteristics</strong> show very dry and extreme conditions.",
-              "* <strong class=\"kw\">Mediterranean characteristics</strong> show dry summers and wet winters."
+              "Equatorial climate is generally hot and wet for most of the year. It is common near the Equator and supports thick vegetation in many places.",
+              "Important characteristics of equatorial climate include high temperatures, heavy rainfall and high humidity. Rain may fall in many months of the year.",
+              "Tropical climate is generally hot, but it commonly has wet and dry seasons. This climate supports savanna grasslands and many farming/livestock activities where rainfall allows.",
+              "When comparing the two, remember: equatorial climate is wetter throughout the year, while tropical climate has clearer wet and dry seasons."
             ],
             tryThis: {
-              question: "Which item is a climatic characteristic?",
-              choices: ["Rainfall pattern", "Capital city", "Country flag", "Parliament"],
+              question: "Which characteristic best fits tropical climate?",
+              choices: ["Wet and dry seasons", "Snow all year", "No sunshine", "Only polar winds"],
               correct: 0,
-              explanation: "Rainfall pattern is one of the measurable conditions used to describe climate."
+              explanation: "Tropical climate is commonly described by wet and dry seasons."
             }
           },
           {
-            moduleId: "characteristics-types-examples",
-            title: "Types and Examples of Climatic Characteristics",
-            bigIdea: "Different climatic regions have distinct temperature, rainfall and humidity patterns.",
+            moduleId: "desert-mediterranean-characteristics",
+            title: "Desert and Mediterranean Climate Characteristics",
+            bigIdea: "Desert and Mediterranean climates are tested because learners must know hot deserts and Mediterranean seasons.",
             learnIt: [
-              "### Types and Examples",
-              "<strong class=\"kw\">Equatorial characteristics</strong>:",
-              "Are atmospheric conditions featuring high temperatures throughout the year above 24°C, low temperature range about 2°C, high humidity and heavy convectional rainfall received in two peaks.",
-              "<strong class=\"kw\">Tropical characteristics</strong>:",
-              "Are atmospheric conditions featuring distinct alternating wet and dry seasons, with temperatures ranging from hot in the dry season to warm in the rainy season.",
-              "<strong class=\"kw\">Desert characteristics</strong>:",
-              "Are atmospheric conditions featuring extreme daytime temperatures, very cold nights, low humidity and unreliable rainfall below 250mm annually.",
-              "<strong class=\"kw\">Mediterranean characteristics</strong>:",
-              "Are atmospheric conditions featuring hot, completely dry summers and cool, wet winters due to prevailing westerly winds.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Congo Basin</strong> has regular afternoon thunderstorms around 4:00 PM.",
-              "* <strong class=\"kw\">March and September equinoxes</strong> trigger high rainfall peaks in Equatorial zones.",
-              "* <strong class=\"kw\">Harmattan winds</strong> cause dry dusty conditions in West Africa.",
-              "* <strong class=\"kw\">Namib temperature inversion</strong> creates coastal fog but almost no rainfall."
+              "Desert climate is hot and dry. It receives very little rainfall and has sparse vegetation. NCDC expects learners to name the hot deserts of Africa such as the Sahara and Namib.",
+              "Problems in hot deserts include shortage of water, high temperatures, limited vegetation, sandstorms and difficulty in farming without irrigation.",
+              "Mediterranean climate has hot dry summers and cool wet winters. In Africa it is associated with parts of North Africa and the south-west/southern tip of Africa.",
+              "For P7, the key Mediterranean point is the season pattern: hot dry summers and cool wet winters. Do not confuse it with equatorial climate, which is wet for much of the year."
             ],
             tryThis: {
-              question: "Which wind causes dry dusty conditions in West Africa?",
-              choices: ["Harmattan winds", "Westerlies only", "Sea breeze", "Land breeze"],
+              question: "Which pair correctly describes Mediterranean climate?",
+              choices: ["Hot dry summers and cool wet winters", "Hot wet all year", "Snowy all year", "No seasons at all"],
               correct: 0,
-              explanation: "Harmattan winds cause dry dusty conditions across the Tropical savanna of West Africa."
+              explanation: "Mediterranean climate is known for hot dry summers and cool wet winters."
             }
           },
           {
-            moduleId: "characteristics-uses-importance",
-            title: "Uses, Importances, Advantages and Disadvantages of Climatic Characteristics",
-            bigIdea: "Climatic characteristics guide crop choices, tourism, water availability and plant adaptations.",
+            moduleId: "temperate-mountain-characteristics",
+            title: "Temperate and Mountain Climate Characteristics",
+            bigIdea: "Temperate and mountain climates are cooler than many lowland tropical areas of Africa.",
             learnIt: [
-              "### Uses, Importances, Advantages and Disadvantages",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Equatorial heat and moisture</strong> support rubber and oil palm.",
-              "* <strong class=\"kw\">Tropical dry seasons</strong> support land clearing, harvesting and grain drying.",
-              "* <strong class=\"kw\">Mediterranean winter rainfall</strong> supports wheat and barley.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Desert plants</strong> develop long roots and thick stems.",
-              "* <strong class=\"kw\">Dry depressions</strong> support solar salt crystallization.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Equatorial characteristics</strong> allow farming all year round.",
-              "* <strong class=\"kw\">Tropical clear skies</strong> improve wildlife visibility for tourism.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Constant heat and humidity</strong> encourage crop pests and disease vectors.",
-              "* <strong class=\"kw\">Prolonged dry seasons</strong> restrict water for people and livestock."
+              "Temperate climate is generally milder than desert or tropical climate. It is associated with parts of Southern Africa where conditions are cooler and more moderate.",
+              "Mountain climate is found in highland and mountain areas. Temperature usually becomes cooler as altitude increases.",
+              "Mountain areas may receive more rainfall on windward slopes and less rainfall on leeward slopes. This can influence farming, vegetation and settlement.",
+              "When describing characteristics, use climate elements: temperature, rainfall, sunshine, wind and humidity. Example: mountain climate is cooler because of high altitude."
             ],
             tryThis: {
-              question: "Which climate supports rubber and oil palm cultivation?",
-              choices: ["Equatorial climate", "Desert climate", "Temperate Veld only", "Semi-desert climate"],
+              question: "Why are mountain areas usually cooler?",
+              choices: ["Because temperature decreases with altitude", "Because all mountains are deserts", "Because they are capital cities", "Because they have no rainfall"],
               correct: 0,
-              explanation: "Rubber and oil palm grow well in the hot, moist Equatorial climate."
+              explanation: "Altitude affects climate: higher places are usually cooler than lowland areas."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "factors-climate",
         title: "3. Factors that influence climate of Africa",
         modules: [
           {
-            moduleId: "climatic-factors-meaning",
-            title: "Factors that Influence Climate of Africa",
-            bigIdea: "Climatic factors are physical and environmental forces that control climate patterns.",
+            moduleId: "climate-factors-ncdc-list",
+            title: "Main Factors that Influence Climate",
+            bigIdea: "NCDC lists the main factors that help explain why different parts of Africa have different climates.",
             learnIt: [
-              "### Factors that Influence Climate of Africa",
-              "<strong class=\"kw\">Climatic factors</strong>:",
-              "Are the physical, environmental and geographical forces that determine, modify and control the weather and climate patterns of a specific region.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Latitude</strong> affects solar radiation.",
-              "* <strong class=\"kw\">Altitude</strong> affects temperature.",
-              "* <strong class=\"kw\">Distance from water bodies</strong> affects moisture.",
-              "* <strong class=\"kw\">Prevailing winds</strong> carry moisture or dry dust.",
-              "* <strong class=\"kw\">Ocean currents</strong> modify coastal temperature and moisture.",
-              "* <strong class=\"kw\">Vegetation cover</strong> affects local moisture through transpiration."
+              "A climate factor is something that affects the usual weather conditions of a place over a long period of time.",
+              "The factors listed for this P7 topic are nearness to water bodies, winds, land mass, altitude or relief, human activities and vegetation.",
+              "These factors affect climate elements such as temperature, rainfall, wind, sunshine and humidity.",
+              "When answering a P7 climate question, name the factor first, then explain how it affects temperature or rainfall."
             ],
             tryThis: {
-              question: "Which factor causes temperatures to drop as land gets higher?",
-              choices: ["Altitude", "Longitude", "Capital city", "Fishing"],
+              question: "Which one is a factor that influences climate of Africa?",
+              choices: ["Altitude or relief", "Capital city spelling", "River source only", "Country flag colour"],
               correct: 0,
-              explanation: "Altitude causes temperature to decrease as height above sea level increases."
+              explanation: "NCDC lists altitude/relief as one of the factors that influence climate."
             }
           },
           {
-            moduleId: "climate-factor-definitions",
-            title: "Definitions of Main Climate Factors",
-            bigIdea: "Latitude, altitude, water bodies, winds, ocean currents and vegetation all influence climate in Africa.",
+            moduleId: "water-bodies-winds-landmass",
+            title: "Water Bodies, Winds and Land Mass",
+            bigIdea: "Water bodies, winds and large land masses affect rainfall, temperature and humidity.",
             learnIt: [
-              "### Definitions of Main Climate Factors",
-              "<strong class=\"kw\">Latitude</strong>:",
-              "Is the angular distance north or south of the Equator that determines the intensity and angle of solar radiation a place receives.",
-              "<strong class=\"kw\">Altitude</strong>:",
-              "Is the height of land above sea level which directly causes temperatures to drop by 6.5°C for every 1000 meters ascended.",
-              "<strong class=\"kw\">Distance from water bodies</strong>:",
-              "Is the geographical proximity of a place to oceans or large lakes, dictating whether it receives moisture-laden breezes or continental dry air.",
-              "<strong class=\"kw\">Prevailing winds</strong>:",
-              "Are large-scale masses of moving air that blow from a specific direction, carrying either moisture or dry dust across continents.",
-              "<strong class=\"kw\">Ocean currents</strong>:",
-              "Are continuous directed movements of ocean water that modify temperatures and moisture content of adjacent coastal lands.",
-              "<strong class=\"kw\">Vegetation cover</strong>:",
-              "Is the thickness and distribution of plant life that influences local climate through transpiration."
+              "Nearness to water bodies affects climate because large lakes, seas and oceans add moisture to the air and may make nearby places more humid or moderate in temperature.",
+              "Winds affect climate because they move air from one place to another. Some winds bring moist air and rainfall, while others bring dry conditions.",
+              "Land mass affects climate because places far inside the continent may be drier or have more extreme temperatures than coastal places.",
+              "Example answer: Coastal places may receive moist winds from the sea, while inland desert areas may remain dry because they are far from large water bodies."
             ],
             tryThis: {
-              question: "At what rate does temperature drop with altitude in this content?",
-              choices: ["6.5°C per 1000 meters", "1°C per 10 meters", "30°C per 1 meter", "No change at all"],
+              question: "How can winds affect climate?",
+              choices: ["They can bring moist or dry air", "They create capital cities", "They are countries", "They stop all rainfall everywhere"],
               correct: 0,
-              explanation: "Temperature drops by about 6.5°C for every 1000 meters ascended."
+              explanation: "Winds can carry moist air that brings rainfall or dry air that causes dry conditions."
             }
           },
           {
-            moduleId: "climate-factor-examples",
-            title: "Examples, Uses and Importance of Climate Factors",
-            bigIdea: "Climate factors explain why different African places have different temperatures, rainfall and economic activities.",
+            moduleId: "altitude-relief-vegetation-human-activities",
+            title: "Altitude, Relief, Vegetation and Human Activities",
+            bigIdea: "Height of land, landform shape, vegetation cover and human actions can all change climate conditions.",
             learnIt: [
-              "### Examples, Uses and Importance",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Equator</strong> makes nearby regions hotter and wetter.",
-              "* <strong class=\"kw\">Mount Kilimanjaro</strong> has a snow-capped peak due to high altitude.",
-              "* <strong class=\"kw\">Lake Victoria Basin</strong> receives heavy convectional rainfall near a large water body.",
-              "* <strong class=\"kw\">Southeast Trade Winds</strong> bring moisture from the Indian Ocean into East Africa.",
-              "* <strong class=\"kw\">Benguela Current</strong> helped form the dry Namib Desert.",
-              "* <strong class=\"kw\">Mozambique Current</strong> brings warm moist conditions to southeastern Africa.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">High-altitude areas</strong> support tea and coffee estates.",
-              "* <strong class=\"kw\">Coastal breezes</strong> support tourist resorts and water sports.",
-              "* <strong class=\"kw\">Heavy rainfall zones</strong> support commercial forestry and agroforestry.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Altitude differences</strong> explain different temperatures at the same latitude.",
-              "* <strong class=\"kw\">Climatic factors</strong> influence nomadic pastoralist migration patterns."
+              "Altitude means height above sea level. Higher places are usually cooler than lowland places. This is why mountain climates are cooler.",
+              "Relief affects climate when mountains and highlands influence rainfall. Windward slopes may receive more rainfall, while leeward sides may be drier.",
+              "Vegetation affects climate because plants add moisture to the air and protect soil. Areas with thick vegetation may be cooler and more humid than bare areas.",
+              "Human activities also influence climate. Cutting forests, burning bushes, draining wetlands and polluting the air can reduce rainfall, increase heat and damage the environment."
             ],
             tryThis: {
-              question: "Which current is linked to the dry Namib Desert?",
-              choices: ["Benguela Current", "Mozambique Current", "Gulf Stream", "Equatorial Counter Current"],
+              question: "Why are highland areas often cooler?",
+              choices: ["Temperature decreases with altitude", "They are always deserts", "They have no air", "They are all near the sea"],
               correct: 0,
-              explanation: "The cold Benguela Current helps create dry conditions along the Namib coast."
+              explanation: "Higher altitude usually makes places cooler than nearby lowlands."
             }
           },
           {
-            moduleId: "climate-factor-advantages",
-            title: "Advantages and Disadvantages of Climate Factors",
-            bigIdea: "Climate factors can create habitable highlands and rainfall, but also deserts and rain-shadow zones.",
+            moduleId: "factor-answer-practice",
+            title: "Answering Factor Questions",
+            bigIdea: "A strong climate-factor answer links the factor to rainfall, temperature or humidity.",
             learnIt: [
-              "### Advantages and Disadvantages",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">High altitude</strong> creates cool habitable climates in tropical regions.",
-              "* <strong class=\"kw\">Lake breezes</strong> provide regular rainfall to lakeside communities.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Cold ocean currents</strong> cause severe coastal deserts like the Namib.",
-              "* <strong class=\"kw\">Rain-shadow zones</strong> suffer drought on the leeward side of highlands.",
-              "<strong class=\"kw\">UNEB Exam Trap:</strong>",
-              "* <strong class=\"kw\">High altitude</strong> can make equatorial places cold.",
-              "* <strong class=\"kw\">Warm currents</strong> bring moist conditions.",
-              "* <strong class=\"kw\">Cold currents</strong> often cause dry coastal conditions."
+              "Weak answer: Altitude affects climate. This is too short because it does not explain how.",
+              "Better answer: Altitude affects climate because temperatures become cooler as land becomes higher.",
+              "Weak answer: Water bodies affect climate. Better answer: Water bodies add moisture to the air and may increase rainfall near them.",
+              "Use this pattern: factor + how it affects climate + example where possible. This keeps answers clear and exam-ready."
             ],
             tryThis: {
-              question: "Which side of a highland is often dry because rain is blocked?",
-              choices: ["Leeward side", "Windward side", "Lake side only", "Equator side only"],
+              question: "Which answer best explains how vegetation affects climate?",
+              choices: ["Vegetation adds moisture and can cool the local area", "Vegetation is a capital city", "Vegetation is a longitude line", "Vegetation stops all winds permanently"],
               correct: 0,
-              explanation: "The leeward side may be dry because the highland blocks moisture-bearing winds."
+              explanation: "Vegetation can add moisture through plant processes and help cool the local environment."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "climate-human-activities",
         title: "4. Influence of climate on human activities",
         modules: [
           {
-            moduleId: "human-activities-meaning-types",
-            title: "Influence of Climate on Human Activities",
-            bigIdea: "Climate influences farming, industry, trade, transport, tourism, dressing and housing.",
+            moduleId: "climate-controls-activities",
+            title: "How Climate Influences Human Activities",
+            bigIdea: "Climate affects what people grow, where they settle, how they dress and the work they do.",
             learnIt: [
-              "### Influence of Climate on Human Activities",
-              "<strong class=\"kw\">Human activities</strong>:",
-              "Are the economic, social and cultural operations carried out by people to earn a living and adapt to their geographical surroundings.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Agricultural activities</strong> depend on rainfall and temperature.",
-              "* <strong class=\"kw\">Industrial activities</strong> depend on climate-related raw materials.",
-              "* <strong class=\"kw\">Commercial activities</strong> depend on weather stability and seasons.",
-              "* <strong class=\"kw\">Recreational activities</strong> depend on favorable weather.",
-              "<strong class=\"kw\">Agricultural activities</strong>:",
-              "Are farming operations including crop cultivation and livestock rearing that depend directly on seasonal rainfall and temperature.",
-              "<strong class=\"kw\">Industrial activities</strong>:",
-              "Are processing and manufacturing operations that rely on climate-dependent raw materials like timber, agricultural yields and water resources.",
-              "<strong class=\"kw\">Commercial activities</strong>:",
-              "Are trading, transport and service operations whose logistics fluctuate based on weather stability and seasonal changes.",
-              "<strong class=\"kw\">Recreational activities</strong>:",
-              "Are leisure and tourism operations that depend on favorable weather conditions like clear skies or sunshine."
+              "Climate influences human activities because people depend on rainfall, temperature, sunshine and seasons for many daily and economic activities.",
+              "Farming depends strongly on climate. Crops need suitable rainfall and temperature. Livestock also need water, pasture and tolerable heat conditions.",
+              "Climate can also influence tourism, transport, mining, industry, lumbering, trade and settlement. A very dry climate may limit farming, while a wet forest climate may support lumbering.",
+              "A good answer should name the climate and the activity it supports. Example: Hot desert climate may support irrigation farming where water is available."
             ],
             tryThis: {
-              question: "Which activity directly depends on seasonal rainfall and temperature?",
-              choices: ["Agriculture", "Parliament debate", "Longitude drawing", "Capital naming"],
+              question: "Which activity is strongly affected by rainfall and temperature?",
+              choices: ["Farming", "Spelling names only", "Drawing longitude lines only", "Naming capital cities only"],
               correct: 0,
-              explanation: "Agriculture depends directly on rainfall and temperature."
+              explanation: "Farming depends on rainfall and temperature, so climate strongly affects it."
             }
           },
           {
-            moduleId: "climate-human-activity-examples",
-            title: "Examples, Uses and Importance",
-            bigIdea: "Climate affects pastoralism, crop growing, terrace farming, tourism, drying crops and wind energy.",
+            moduleId: "desert-mediterranean-temperate-activities",
+            title: "Activities in Desert, Mediterranean and Temperate Climates",
+            bigIdea: "Different climate regions support different human activities.",
             learnIt: [
-              "### Examples, Uses and Importance",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Karamojong</strong> and Fulani practice pastoralism in dry regions.",
-              "* <strong class=\"kw\">Congo Basin</strong> supports double cropping due to constant heat and rainfall.",
-              "* <strong class=\"kw\">Kigezi highlands</strong> support terrace farming, vegetables and Arabica coffee.",
-              "* <strong class=\"kw\">Savanna parks</strong> support dry-season wildlife safaris.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Savanna dry seasons</strong> help sun-dry maize and beans.",
-              "* <strong class=\"kw\">Coastal and desert winds</strong> pump water and generate electricity.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Dressing habits</strong> and house designs match regional temperatures.",
-              "* <strong class=\"kw\">School calendars</strong> and transport schedules are affected by floods and downpours."
+              "In hot deserts, NCDC lists irrigation, mining, nomadism and tourism. These activities depend on scarce water, minerals, open dry land and desert scenery.",
+              "Problems in hot deserts include shortage of water, high temperatures, little vegetation and difficulty in farming without irrigation.",
+              "In Mediterranean and temperate climates, NCDC lists trading, industry, farming and tourism. Mediterranean areas are known for hot dry summers and cool wet winters.",
+              "When answering, avoid saying every activity happens everywhere. Match the activity to the climate. Example: nomadism is common in dry areas, while some farming is easier where rainfall and temperature are favourable."
             ],
             tryThis: {
-              question: "Which activity is common in dry regions with low rainfall?",
-              choices: ["Nomadic pastoralism", "Double cropping rice every month", "Deep sea fishing inland", "Snow skiing in deserts"],
+              question: "Which activity is listed by NCDC for hot deserts?",
+              choices: ["Nomadism", "Deep-sea fishing only", "Snow skiing everywhere", "Rice growing without irrigation"],
               correct: 0,
-              explanation: "Dry regions often favor livestock keeping such as nomadic pastoralism over crop farming."
+              explanation: "NCDC lists nomadism as one of the activities in hot desert areas."
             }
           },
           {
-            moduleId: "climate-human-activity-effects",
-            title: "Advantages and Disadvantages of Climate on Human Activities",
-            bigIdea: "Reliable climate can support food and tourism, while droughts, floods and pests can damage livelihoods.",
+            moduleId: "equatorial-tropical-mountain-activities",
+            title: "Activities in Equatorial, Tropical and Mountain Climates",
+            bigIdea: "Wet, seasonal and highland climates support different activities in Africa.",
             learnIt: [
-              "### Advantages and Disadvantages",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Reliable bimodal rainfall</strong> supports multiple harvests per year.",
-              "* <strong class=\"kw\">Sunny tropical climates</strong> attract holidaymakers and boost tourism revenue.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Severe droughts</strong> cause crop failure and livestock deaths.",
-              "* <strong class=\"kw\">Heavy storms</strong> flood roads and sweep away bridges.",
-              "* <strong class=\"kw\">Weather-dependent pests</strong> like desert locusts destroy vegetation.",
-              "<strong class=\"kw\">UNEB Exam Trap:</strong>",
-              "* <strong class=\"kw\">Climate</strong> affects both economic and social activities.",
-              "* <strong class=\"kw\">Dry seasons</strong> can help harvesting but can also cause drought.",
-              "* <strong class=\"kw\">Rainy seasons</strong> can support crops but can also disrupt transport."
+              "In equatorial and tropical climates, NCDC lists lumbering, agriculture, hunting, tourism, mining, trading, transport and livestock farming.",
+              "Equatorial areas may support thick forests and lumbering because they receive heavy rainfall. Tropical areas with wet and dry seasons may support crop farming and livestock where conditions allow.",
+              "In mountain climate, NCDC lists farming, tourism, lumbering and mining. Highland areas may be cooler and may receive rainfall on windward slopes.",
+              "A strong answer should connect the climate to the activity. Example: Mountain climate can support tourism because highlands and mountains attract visitors."
             ],
             tryThis: {
-              question: "Which climate problem can paralyze rural transport?",
-              choices: ["Flooding roads and sweeping away bridges", "Clear skies for tourism", "Sun-drying maize", "Reliable rainfall"],
+              question: "Which activity is listed by NCDC for mountain climate?",
+              choices: ["Tourism", "Calendar date change", "Capital city voting", "Only desert nomadism"],
               correct: 0,
-              explanation: "Heavy storms can flood roads and sweep away bridges, disrupting transport."
+              explanation: "NCDC lists tourism as one of the activities in mountain climate areas."
+            }
+          },
+          {
+            moduleId: "climate-activity-answer-practice",
+            title: "Answering Climate and Activity Questions",
+            bigIdea: "A good answer links climate type, climate characteristics and the human activity.",
+            learnIt: [
+              "Use this answer pattern: climate type + characteristic + supported activity. Example: Equatorial climate has heavy rainfall, so it supports forests and lumbering in some places.",
+              "For deserts, mention dry conditions and water shortage before explaining irrigation, mining, nomadism or tourism.",
+              "For Mediterranean climate, mention hot dry summers and cool wet winters before discussing farming, tourism, trading or industry.",
+              "For mountain climate, mention high altitude and cooler temperatures before discussing farming, tourism, lumbering or mining."
+            ],
+            tryThis: {
+              question: "Which is the best answer?",
+              choices: ["Desert climate is dry, so irrigation may be used where water is available", "Desert climate is wet all year", "Climate does not affect farming", "Mountain climate is a capital city"],
+              correct: 0,
+              explanation: "The best answer links the climate characteristic to the human activity."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "human-activities-climate",
         title: "5. Influence of human activities on climate",
         modules: [
           {
-            moduleId: "climate-change-meaning-types",
-            title: "Influence of Human Activities on Climate",
-            bigIdea: "Human activities can change climate through global warming and local micro-climate modification.",
+            moduleId: "human-activities-that-harm-climate",
+            title: "Human Activities that Harm Climate",
+            bigIdea: "Some human activities change the local environment and can make climate conditions worse.",
             learnIt: [
-              "### Influence of Human Activities on Climate",
-              "<strong class=\"kw\">Climate change</strong>:",
-              "Is the long-term alteration or variation in global or regional climate patterns, primarily driven by human actions that disrupt the atmosphere.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Global warming</strong> increases the overall temperature of the atmosphere.",
-              "* <strong class=\"kw\">Micro-climate modification</strong> changes weather conditions in a small local area.",
-              "<strong class=\"kw\">Global warming</strong>:",
-              "Is the gradual increase in the overall temperature of the earth's atmosphere caused by the greenhouse effect and increased carbon dioxide emissions.",
-              "<strong class=\"kw\">Micro-climate modification</strong>:",
-              "Is the localized change in weather conditions within a small specific area resulting from immediate changes in the surrounding environment."
+              "Human activities can influence climate when people change vegetation, wetlands, soil and air quality.",
+              "Harmful activities include cutting down forests, burning bushes, draining wetlands, overgrazing, poor farming methods and polluting the air.",
+              "Deforestation reduces tree cover. This can reduce moisture in the air, increase heat and reduce protection of soil and water sources.",
+              "Bush burning and air pollution add smoke and harmful gases to the air. Overgrazing and poor farming can leave soil bare, making the land hotter and drier."
             ],
             tryThis: {
-              question: "What is global warming?",
-              choices: ["Gradual increase in the earth’s atmospheric temperature", "A short rainy afternoon", "A capital city changing location", "A river changing its name"],
+              question: "Which human activity can reduce tree cover and affect climate?",
+              choices: ["Deforestation", "Map reading", "Naming continents", "Drawing a compass"],
               correct: 0,
-              explanation: "Global warming is the gradual increase in the overall temperature of the earth’s atmosphere."
+              explanation: "Deforestation means cutting down forests, which reduces vegetation cover and can affect local climate."
             }
           },
           {
-            moduleId: "human-activities-climate-examples",
-            title: "Examples, Uses and Importance",
-            bigIdea: "Deforestation, swamp reclamation, smoke emissions and overgrazing can damage climate, while trees and agroforestry can restore it.",
+            moduleId: "effects-of-human-activities-on-climate",
+            title: "Effects of Human Activities on Climate",
+            bigIdea: "Human activities can change rainfall, temperature and environmental conditions.",
             learnIt: [
-              "### Examples, Uses and Importance",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Mabira deforestation</strong> reduces local convectional rainfall.",
-              "* <strong class=\"kw\">Swamp reclamation</strong> lowers humidity and dries local water sources.",
-              "* <strong class=\"kw\">Factory smoke</strong> in Kampala and Jinja traps heat and raises urban temperatures.",
-              "* <strong class=\"kw\">Overgrazing</strong> in Uganda’s cattle corridor removes vegetation and accelerates desertification.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Afforestation</strong> restores degraded forest cover.",
-              "* <strong class=\"kw\">Reforestation</strong> helps stabilize unreliable rainfall.",
-              "* <strong class=\"kw\">Smart agroforestry</strong> preserves soil moisture and cools crop farms.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Environmental planning</strong> helps design towns with less heat and pollution.",
-              "* <strong class=\"kw\">Conservation laws</strong> protect water catchment areas from destruction."
+              "When vegetation is removed, an area may become hotter because there is less shade and less moisture from plants.",
+              "When wetlands are drained, the area may lose natural water storage and moisture. This can affect local rainfall, farming and water supply.",
+              "Air pollution and uncontrolled burning can make the air dirty and may contribute to warming and unhealthy living conditions.",
+              "A strong P7 answer should show cause and effect. Example: Cutting down trees reduces vegetation cover, which may reduce moisture and increase heat in an area."
             ],
             tryThis: {
-              question: "Which activity can reduce local rainfall when forests are removed?",
-              choices: ["Deforestation", "Afforestation", "Agroforestry", "Tree belt planting"],
+              question: "Which answer shows cause and effect correctly?",
+              choices: ["Cutting trees reduces vegetation cover and may make an area hotter", "Cutting trees creates oceans", "Wetlands are capital cities", "Smoke improves all rainfall"],
               correct: 0,
-              explanation: "Deforestation removes forest cover and can reduce local convectional rainfall."
+              explanation: "The correct answer links the activity to a climate/environment effect."
             }
           },
           {
-            moduleId: "human-activities-climate-effects",
-            title: "Advantages and Disadvantages of Human Influence on Climate",
-            bigIdea: "People can improve climate by planting trees, but they can also cause droughts, floods, desertification and water insecurity.",
+            moduleId: "protecting-climate-environment",
+            title: "Protecting Climate and the Environment",
+            bigIdea: "People can reduce harmful climate effects by caring for vegetation, wetlands and soil.",
             learnIt: [
-              "### Advantages and Disadvantages",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Tree belts</strong> create windbreaks and cool hot concrete environments.",
-              "* <strong class=\"kw\">Artificial forest reserves</strong> act as carbon sinks.",
-              "* <strong class=\"kw\">Carbon sinks</strong> absorb dangerous greenhouse gases.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Destroyed ecosystems</strong> cause prolonged droughts and flash floods.",
-              "* <strong class=\"kw\">Desertification</strong> turns productive farmland into dry wasteland.",
-              "* <strong class=\"kw\">Lowered water tables</strong> dry permanent streams and reduce water security.",
-              "<strong class=\"kw\">UNEB Exam Trap:</strong>",
-              "* <strong class=\"kw\">Afforestation</strong> improves climate conditions.",
-              "* <strong class=\"kw\">Deforestation</strong> worsens climate conditions.",
-              "* <strong class=\"kw\">Wetland destruction</strong> reduces humidity and local water supply."
+              "Good human activities can protect the environment and support better climate conditions. These include planting trees, protecting forests, conserving wetlands and using better farming methods.",
+              "Tree planting and forest protection help restore vegetation cover. Vegetation adds moisture, gives shade, protects soil and supports living things.",
+              "Wetland protection helps conserve water and supports plants and animals. Soil conservation reduces erosion and keeps land useful for farming.",
+              "Controlled use of fire, proper waste management and reducing pollution also help protect the local environment."
             ],
             tryThis: {
-              question: "Which human activity can act as a carbon sink?",
-              choices: ["Creating forest reserves", "Burning forests", "Draining swamps", "Overgrazing grasslands"],
+              question: "Which activity helps protect climate and the environment?",
+              choices: ["Planting trees", "Burning all forests", "Draining every wetland", "Overgrazing land"],
               correct: 0,
-              explanation: "Forest reserves absorb carbon dioxide and act as carbon sinks."
+              explanation: "Planting trees helps restore vegetation cover and protect the environment."
+            }
+          },
+          {
+            moduleId: "human-influence-answer-practice",
+            title: "Answering Human Influence Questions",
+            bigIdea: "Good answers separate harmful activities, effects and solutions.",
+            learnIt: [
+              "If asked how human activities affect climate, name the activity first. Example: deforestation, bush burning, wetland drainage or pollution.",
+              "Then state the effect. Example: deforestation reduces tree cover and may increase heat or reduce moisture in the area.",
+              "If asked for solutions, give protective actions: plant trees, protect wetlands, control bush burning, conserve soil and reduce pollution.",
+              "Use this pattern: human activity + effect on climate/environment + solution where needed. This keeps the answer clear and complete."
+            ],
+            tryThis: {
+              question: "Which is the best solution to deforestation?",
+              choices: ["Planting and protecting trees", "Cutting more forests", "Burning bushes", "Draining wetlands"],
+              correct: 0,
+              explanation: "Planting and protecting trees helps restore vegetation cover after deforestation."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "premium-climate-interpretation",
-        title: "Premium Exam Practice: Climate Interpretation",
+        title: "Practice: Climate Interpretation Questions",
         modules: [
           {
-            moduleId: "climate-graph-answering",
-            title: "Premium Climate Interpretation Answers",
-            bigIdea: "Strong climate answers connect rainfall, temperature, seasons and human activities.",
+            moduleId: "climate-question-commands",
+            title: "Step 1: Read the Climate Question",
+            bigIdea: "Climate questions may ask you to identify, describe, explain, name or state problems.",
             learnIt: [
-              "### Premium Exam Practice: Climate Interpretation",
-              "<strong class=\"kw\">Climate interpretation answer</strong>:",
-              "Is a clear answer that uses rainfall, temperature, seasons and examples to explain climate or human activity.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Climate-region answer</strong> identifies the climatic zone.",
-              "* <strong class=\"kw\">Climate-factor answer</strong> explains the cause of climate conditions.",
-              "* <strong class=\"kw\">Human-activity answer</strong> links climate to work and settlement.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Equatorial climate</strong> supports all-year farming.",
-              "* <strong class=\"kw\">Desert climate</strong> supports solar energy but limits crop farming.",
-              "* <strong class=\"kw\">Altitude</strong> makes highland areas cooler.",
-              "* <strong class=\"kw\">Cold ocean currents</strong> create dry coastal conditions."
+              "If the question says identify, name the climate region, factor or activity. Example: Identify one hot desert of Africa — Sahara Desert.",
+              "If the question says describe, give characteristics such as temperature, rainfall, seasons, humidity or winds.",
+              "If the question says explain, give a reason. Example: Mountain areas are cooler because temperature decreases with altitude.",
+              "If the question asks for problems, give clear problems linked to that climate. Example: hot deserts have water shortage, high temperatures and little vegetation."
             ],
             tryThis: {
-              question: "Which factor makes highland areas cooler?",
-              choices: ["Altitude", "Longitude", "Capital city", "Population"],
+              question: "Which command word asks you to give reasons?",
+              choices: ["Explain", "List only", "Copy", "Colour"],
               correct: 0,
-              explanation: "Altitude lowers temperature as height increases."
+              explanation: "Explain means give reasons or show how something happens."
             }
           },
           {
-            moduleId: "climate-worked-example",
-            title: "Worked Example: Climate and Farming",
-            bigIdea: "A complete climate answer should name the climate, describe rainfall or temperature and link it to the human activity.",
+            moduleId: "climate-region-characteristic-practice",
+            title: "Step 2: Practise Climate Regions and Characteristics",
+            bigIdea: "Learners should match each climatic region with its main characteristics.",
             learnIt: [
-              "### Worked Example: Climate and Farming",
-              "<strong class=\"kw\">Worked climate answer</strong>:",
-              "Is a model answer showing how climate affects human activities.",
-              "<strong class=\"kw\">Steps:</strong>",
-              "* <strong class=\"kw\">Name the climate</strong> in the region.",
-              "* <strong class=\"kw\">State rainfall and temperature</strong> clearly.",
-              "* <strong class=\"kw\">Link climate to farming</strong> or another activity.",
-              "* <strong class=\"kw\">Add one example</strong> from Africa.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Equatorial climate</strong> has constant heat and rainfall.",
-              "* <strong class=\"kw\">Tropical climate</strong> has wet and dry seasons.",
-              "* <strong class=\"kw\">Dry climate</strong> favors pastoralism more than crop farming."
+              "Equatorial: hot and wet for much of the year, with high humidity. Tropical: hot with wet and dry seasons.",
+              "Desert: hot and dry with very little rainfall. Mediterranean: hot dry summers and cool wet winters.",
+              "Temperate: milder and cooler than many tropical lowlands. Mountain: cooler because of high altitude.",
+              "Practice by making pairs: climate region + rainfall/temperature/seasons. Example: Mediterranean climate — hot dry summers and cool wet winters."
             ],
             tryThis: {
-              question: "Which answer best links climate to farming?",
-              choices: ["Equatorial climate has rainfall throughout the year, so it supports continuous crop growing.", "Climate is a capital city.", "Weather never affects crops.", "Desert climate gives heavy rainfall all year."],
+              question: "Which climate has hot dry summers and cool wet winters?",
+              choices: ["Mediterranean", "Equatorial", "Desert", "Mountain"],
               correct: 0,
-              explanation: "This answer names the climate, states rainfall and links it to crop growing."
-            },
-            workedExample: {
-              question: "Explain why equatorial regions can support continuous crop growing.",
-              steps: ["Identify the climate: equatorial.", "State the key conditions: constant heat and rainfall.", "Link the conditions to farming throughout the year."],
-              answer: "Equatorial regions can support continuous crop growing because they have constant heat and rainfall throughout the year."
+              explanation: "Mediterranean climate is known for hot dry summers and cool wet winters."
             }
           },
           {
-            moduleId: "climate-exam-traps",
-            title: "UNEB Traps in Climate Questions",
-            bigIdea: "Climate questions often test weather versus climate, altitude, ocean currents and human influence.",
+            moduleId: "climate-factors-activities-practice",
+            title: "Step 3: Practise Factors and Human Activities",
+            bigIdea: "Strong answers connect climate factors and climate regions to human activities.",
             learnIt: [
-              "### UNEB Traps in Climate Questions",
-              "<strong class=\"kw\">UNEB exam trap</strong>:",
-              "Is a common climate mistake that causes learners to lose marks.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Weather-climate trap</strong> confuses short-term and long-term conditions.",
-              "* <strong class=\"kw\">Altitude trap</strong> ignores cooling with height.",
-              "* <strong class=\"kw\">Ocean-current trap</strong> confuses warm and cold currents.",
-              "* <strong class=\"kw\">Human-influence trap</strong> ignores deforestation and pollution.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Weather</strong> is short-term atmospheric condition.",
-              "* <strong class=\"kw\">Climate</strong> is long-term average weather.",
-              "* <strong class=\"kw\">Benguela Current</strong> is cold and creates dry coastal conditions.",
-              "* <strong class=\"kw\">Mozambique Current</strong> is warm and brings moist conditions.",
-              "* <strong class=\"kw\">Deforestation</strong> reduces local rainfall.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Trap awareness</strong> improves climate reasoning answers.",
-              "* <strong class=\"kw\">Keyword checking</strong> helps learners answer command words correctly."
+              "Factor answer: Altitude affects climate because higher places are cooler than lowlands.",
+              "Activity answer: Hot desert climate supports nomadism, mining, tourism and irrigation where water is available.",
+              "Cause-effect answer: Deforestation reduces vegetation cover, which may increase heat and reduce moisture in an area.",
+              "Always connect your answer to rainfall, temperature, season, altitude, vegetation or human activity. Avoid vague statements like 'climate is important' without explanation."
             ],
             tryThis: {
-              question: "Which statement is correct?",
-              choices: ["Weather is short-term; climate is long-term average weather.", "Weather and climate mean exactly the same thing.", "Climate is one afternoon only.", "Weather is always 35 years long."],
+              question: "Which answer best links climate to human activity?",
+              choices: ["Desert climate is dry, so irrigation may be used where water is available", "Climate is just there", "A mountain is a capital", "Rainfall is a continent"],
               correct: 0,
-              explanation: "Weather is short-term, while climate is the long-term average weather condition."
+              explanation: "The correct answer links a climate characteristic to a human activity."
+            }
+          },
+          {
+            moduleId: "climate-protection-practice",
+            title: "Step 4: Practise Climate Protection Answers",
+            bigIdea: "Climate protection answers should name the harmful activity and give a practical solution.",
+            learnIt: [
+              "Harmful activity: deforestation. Solution: plant trees and protect forests.",
+              "Harmful activity: wetland drainage. Solution: conserve wetlands and use them wisely.",
+              "Harmful activity: bush burning or air pollution. Solution: control burning, manage waste properly and reduce pollution.",
+              "A complete answer can have three parts: problem, effect and solution. Example: Deforestation reduces tree cover and may increase heat, so people should plant and protect trees."
+            ],
+            tryThis: {
+              question: "Which answer gives a problem and a solution?",
+              choices: ["Deforestation reduces trees, so people should plant and protect trees", "Deforestation means all climates disappear", "Wetlands are mountains", "Pollution is a capital city"],
+              correct: 0,
+              explanation: "The best answer names the problem and gives a practical solution."
             }
           }
         ]
-      }
-    ],
+      },],
     quiz: [
       { q: "Which instrument measures wind speed?", choices: ["Anemometer", "Wind vane", "Barometer", "Thermometer"], correct: 0, why: "An anemometer measures wind speed." },
       { q: "Climate is best described as:", choices: ["Average weather over many years", "Today's rainfall", "Wind direction", "A type of vegetation"], correct: 0, why: "Climate is the average weather conditions over a long period (30+ years)." },
@@ -1845,430 +1431,433 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
       recap: ["Vegetation depends mainly on rainfall.", "Africa has forests, savanna, desert, Mediterranean, and mountain vegetation.", "Vegetation supports animals, people, tourism, and the environment."],
     },
     subtopics: [
-      {
+            {
         subtopicId: "vegetation-types",
-        title: "1. Vegetation types of Africa",
+        title: "1. Location and names of vegetation types of Africa",
         modules: [
           {
-            moduleId: "vegetation-types-meaning",
-            title: "Vegetation Types of Africa",
-            bigIdea: "Vegetation is the plant cover of an area and Africa has forests, savanna, desert, mountain, Mediterranean and mangrove vegetation.",
+            moduleId: "vegetation-meaning-types",
+            title: "Meaning and Types of Vegetation",
+            bigIdea: "Vegetation is the plant cover of an area, and Africa has different vegetation types in different regions.",
             learnIt: [
-              "### Vegetation Types of Africa",
-              "<strong class=\"kw\">Vegetation</strong>:",
-              "Is the general plant life or cover of an area, which can grow naturally or be planted by human beings.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Equatorial rainforests</strong> are dense evergreen forests in hot wet areas.",
-              "* <strong class=\"kw\">Savanna vegetation</strong> is tropical grassland with scattered trees.",
-              "* <strong class=\"kw\">Mediterranean vegetation</strong> has short trees with thick bark and leathery leaves.",
-              "* <strong class=\"kw\">Desert and semi-desert vegetation</strong> has drought-resistant plants.",
-              "* <strong class=\"kw\">Mountain vegetation</strong> changes with altitude.",
-              "* <strong class=\"kw\">Mangrove forests</strong> grow in salty coastal waters and mudflats.",
-              "<strong class=\"kw\">Equatorial rainforests</strong>:",
-              "Are dense, evergreen forests found in the hot, wet equatorial belt, characterized by tall trees forming multiple layers or canopies.",
-              "<strong class=\"kw\">Savanna vegetation</strong>:",
-              "Is a vast tropical grassland region divided into wet savanna and dry savanna, characterized by scattered trees and tall grasses.",
-              "<strong class=\"kw\">Mediterranean vegetation</strong>:",
-              "Is a specialized plant zone found at the extreme northern and southern tips of Africa, consisting of short trees with thick bark and leathery leaves to survive dry summers."
+              "Vegetation means the plant cover of an area. It includes trees, grasses, shrubs and other plants growing naturally or planted by people.",
+              "NCDC expects learners to locate and name the types of vegetation in Africa. This means learners should know both the names and where they are broadly found on a map.",
+              "The vegetation types listed for this topic are Equatorial forests, Mangrove forests, Montane vegetation, Temperate grasslands or velds, Savannah vegetation and Mediterranean vegetation.",
+              "Vegetation is important because people and animals depend on it for food, shelter, medicine, fuel, grazing, timber, rainfall support and habitats."
             ],
             tryThis: {
               question: "What is vegetation?",
-              choices: ["The general plant life or cover of an area", "The daily state of the atmosphere", "A capital city", "A marine gateway"],
+              choices: ["Plant cover of an area", "A capital city", "A line of longitude", "A river mouth"],
               correct: 0,
-              explanation: "Vegetation is the general plant life or cover of an area."
+              explanation: "Vegetation means the plant cover of an area."
             }
           },
           {
-            moduleId: "vegetation-types-definitions-examples",
-            title: "Vegetation Type Definitions and Examples",
-            bigIdea: "Different vegetation types are identified by rainfall, temperature, altitude, soil and coastal conditions.",
+            moduleId: "forest-vegetation-types",
+            title: "Forest Vegetation Types",
+            bigIdea: "Some vegetation types in Africa are mainly forest vegetation.",
             learnIt: [
-              "### Vegetation Type Definitions and Examples",
-              "<strong class=\"kw\">Desert and semi-desert vegetation</strong>:",
-              "Is a sparse plant zone consisting of drought-resistant scrub, thorny bushes and cacti adapted to hyper-arid conditions.",
-              "<strong class=\"kw\">Mountain vegetation</strong>:",
-              "Is a layered plant community that changes systematically with increasing altitude, ranging from dense forest to bamboo, heath and alpine moorland.",
-              "<strong class=\"kw\">Mangrove forests</strong>:",
-              "Are water-resistant forests with tangled aerial roots found growing in salty coastal waters and mudflats along ocean margins.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Congo Basin Forest</strong> is the largest continuous equatorial rainforest in Africa.",
-              "* <strong class=\"kw\">Mabira Forest</strong> and Budongo Forest are major tropical rainforests in Uganda.",
-              "* <strong class=\"kw\">Miombo Woodlands</strong> cover parts of Tanzania, Zambia and Malawi.",
-              "* <strong class=\"kw\">Baobab</strong> and Acacia trees are drought-resistant savanna trees.",
-              "* <strong class=\"kw\">Okoume</strong> and Mahogany are valuable equatorial hardwoods.",
-              "* <strong class=\"kw\">Olive</strong>, Cork Oak and Citrus trees dominate Mediterranean vegetation.",
-              "* <strong class=\"kw\">Lobelia</strong> and Senecio are Afro-alpine plants at high mountain altitudes."
+              "Equatorial forests are thick forests found in hot and wet equatorial areas. They usually have many tall trees and dense plant growth.",
+              "Mangrove forests grow in muddy and salty coastal areas, especially around sheltered tropical coasts and river mouths.",
+              "Montane vegetation is found in mountain and highland areas. It changes with altitude because temperature and rainfall change as land becomes higher.",
+              "Map practice: locate equatorial forest areas near the Equator, mangrove areas near coasts, and montane vegetation in highland or mountain areas."
             ],
             tryThis: {
-              question: "Which forest is the largest continuous equatorial rainforest in Africa?",
-              choices: ["Congo Basin Forest", "Mabira Forest", "Mangrove forest", "Mediterranean forest"],
+              question: "Which vegetation type grows in muddy salty coastal areas?",
+              choices: ["Mangrove forests", "Temperate grasslands", "Desert shrubs only", "Mediterranean scrub"],
               correct: 0,
-              explanation: "The Congo Basin Forest is the largest continuous equatorial rainforest in Africa."
+              explanation: "Mangrove forests grow in muddy and salty coastal areas."
             }
           },
           {
-            moduleId: "vegetation-uses-importance",
-            title: "Uses, Importances, Advantages and Disadvantages of Vegetation",
-            bigIdea: "Vegetation provides timber, medicine, fuel, pasture, climate regulation and tourism, but it can also harbor pests and obstruct transport.",
+            moduleId: "grassland-shrub-vegetation-types",
+            title: "Grassland and Shrub Vegetation Types",
+            bigIdea: "Other African vegetation types include grasslands, savannah and Mediterranean vegetation.",
             learnIt: [
-              "### Uses, Importances, Advantages and Disadvantages",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Hardwood timber</strong> supports furniture making and export.",
-              "* <strong class=\"kw\">Medicinal herbs</strong> support local and modern pharmaceuticals.",
-              "* <strong class=\"kw\">Firewood and charcoal</strong> provide cooking energy.",
-              "* <strong class=\"kw\">Latex and sap</strong> support industrial rubber processing.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Wildlife habitats</strong> preserve biodiversity.",
-              "* <strong class=\"kw\">Carbon sinks</strong> absorb carbon dioxide and release oxygen.",
-              "* <strong class=\"kw\">Plant roots</strong> hold soil particles and reduce erosion.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Savanna pasture</strong> feeds wild herbivores and livestock.",
-              "* <strong class=\"kw\">Eco-tourism</strong> earns national revenue from forest reserves.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Tsetse flies</strong> in savanna woodlands limit settlement.",
-              "* <strong class=\"kw\">Forest undergrowth</strong> makes road construction difficult.",
-              "* <strong class=\"kw\">Predators and reptiles</strong> threaten nearby communities."
+              "Savannah vegetation is mainly grassland with scattered trees and shrubs. It is common in many parts of tropical Africa and supports many wild animals.",
+              "Temperate grasslands, also called velds, are open grassland areas associated especially with parts of Southern Africa.",
+              "Mediterranean vegetation grows in areas with Mediterranean climate. The NCDC extract links it to South Africa, Tunisia, Algeria, Morocco and Libya.",
+              "These vegetation types are not identical. Savannah has grasses with scattered trees; velds are temperate grasslands; Mediterranean vegetation is adapted to hot dry summers and cool wet winters."
             ],
             tryThis: {
-              question: "Which vegetation use is linked to mahogany and ebony?",
-              choices: ["Hardwood timber", "Solar energy", "Longitude calculation", "Port construction"],
+              question: "Which vegetation is mainly grassland with scattered trees?",
+              choices: ["Savannah vegetation", "Mangrove forest", "Equatorial forest", "Montane forest only"],
               correct: 0,
-              explanation: "Mahogany and ebony are hardwood timber resources."
+              explanation: "Savannah vegetation is mainly grassland with scattered trees and shrubs."
+            }
+          },
+          {
+            moduleId: "vegetation-map-practice",
+            title: "Map Practice: Locating Vegetation Types",
+            bigIdea: "Learners should connect each vegetation type to broad African map areas.",
+            learnIt: [
+              "Use a map of Africa to shade vegetation areas. Put equatorial forests near the Equator, savannah across broad tropical grassland areas, and Mediterranean vegetation in the north and south-west/southern tip areas where Mediterranean climate occurs.",
+              "Mark mangrove forests along suitable coastal areas and montane vegetation in highland/mountain areas.",
+              "Keep the map simple. Use a key to show each vegetation type, and write labels neatly so the map is easy to read.",
+              "Do not memorise vegetation types as isolated words. Always connect the vegetation type to climate, relief, soils and human activities because these factors influence distribution."
+            ],
+            tryThis: {
+              question: "Why should a vegetation map have a key?",
+              choices: ["To explain what each colour or pattern means", "To hide the labels", "To replace all vegetation names", "To show only capital cities"],
+              correct: 0,
+              explanation: "A key helps the reader understand what each colour or pattern on a map represents."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "factors-vegetation",
         title: "2. Factors that influence vegetation distribution",
         modules: [
           {
-            moduleId: "vegetation-distribution-meaning",
-            title: "Factors that Influence Vegetation Distribution",
-            bigIdea: "Vegetation distribution is the spread and density of plant life across different regions.",
+            moduleId: "vegetation-factors-ncdc-list",
+            title: "Main Factors that Influence Vegetation Distribution",
+            bigIdea: "NCDC lists four main factors that influence where different vegetation types grow in Africa.",
             learnIt: [
-              "### Factors that Influence Vegetation Distribution",
-              "<strong class=\"kw\">Vegetation distribution</strong>:",
-              "Is the geographical arrangement, spread or density of plant life across different regions of the continent.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Climatic factors</strong> include rainfall and temperature.",
-              "* <strong class=\"kw\">Edaphic factors</strong> are soil factors.",
-              "* <strong class=\"kw\">Physiographic factors</strong> are relief and landform factors.",
-              "* <strong class=\"kw\">Biotic factors</strong> are human and animal influences.",
-              "<strong class=\"kw\">Climatic factors</strong>:",
-              "Are atmospheric elements, primarily rainfall and temperature, that determine water availability and plant growth cycles.",
-              "<strong class=\"kw\">Edaphic factors</strong>:",
-              "Are the physical and chemical properties of soil, including depth, texture and fertility, that dictate what plant species can grow there.",
-              "<strong class=\"kw\">Physiographic factors</strong>:",
-              "Are structural landforms, altitude and slope angle that modify local weather and water drainage.",
-              "<strong class=\"kw\">Biotic factors</strong>:",
-              "Are living organisms whose interactions, grazing habits or destructive activities alter natural plant cover."
+              "Vegetation distribution means the way different vegetation types are spread over an area.",
+              "The factors listed for this topic are climate, types of soil, human activities and relief or altitude.",
+              "These factors explain why one area may have thick forest while another has savannah, grassland, Mediterranean vegetation or sparse plant cover.",
+              "When answering, name the factor first and then explain how it affects vegetation. Do not only list factors without explanation."
             ],
             tryThis: {
-              question: "Which vegetation factor refers to soil?",
-              choices: ["Edaphic factor", "Climatic factor", "Political factor", "Marine factor"],
+              question: "Which factor influences vegetation distribution?",
+              choices: ["Climate", "Country anthem", "Capital city spelling", "Longitude time only"],
               correct: 0,
-              explanation: "Edaphic factors are soil factors such as soil depth, texture and fertility."
+              explanation: "NCDC lists climate as one of the factors that influence vegetation distribution."
             }
           },
           {
-            moduleId: "vegetation-distribution-examples",
-            title: "Examples, Uses, Importances and Effects",
-            bigIdea: "Rainfall, soil, altitude and human activity explain why vegetation changes from place to place.",
+            moduleId: "climate-soil-relief-vegetation",
+            title: "Climate, Soil and Relief/Altitude",
+            bigIdea: "Natural factors affect the type and amount of vegetation in an area.",
             learnIt: [
-              "### Examples, Uses, Importances and Effects",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Congo Basin rainfall</strong> supports dense evergreen rainforest.",
-              "* <strong class=\"kw\">Sahara rainfall below 250mm</strong> limits plants to cacti and thorny shrubs.",
-              "* <strong class=\"kw\">Mount Elgon volcanic soils</strong> support montane forests and crops.",
-              "* <strong class=\"kw\">Sandy coastal soils</strong> support specialized mangrove forests.",
-              "* <strong class=\"kw\">High altitude</strong> changes forests into bamboo and alpine moorland.",
-              "* <strong class=\"kw\">Bush burning</strong> changes woodlands into open savanna grasslands.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Soil and rainfall analysis</strong> guides timber plantation locations.",
-              "* <strong class=\"kw\">Heavy rainfall zones</strong> guide forest reserve protection.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Vegetation distribution</strong> explains forest-to-grassland change away from the Equator.",
-              "* <strong class=\"kw\">Risk prediction</strong> helps conservationists identify desertification areas.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">High rainfall</strong> allows natural vegetation regeneration.",
-              "* <strong class=\"kw\">Mountain vegetation layers</strong> support distinct wildlife zones.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Semi-arid zones</strong> limit tall hardwood growth.",
-              "* <strong class=\"kw\">Overpopulation</strong> accelerates natural plant destruction."
+              "Climate affects vegetation through rainfall, temperature, sunshine, wind and humidity. Areas with heavy rainfall may support forests, while dry areas support sparse vegetation or drought-resistant plants.",
+              "Soil affects vegetation because plants need soil for support, water and nutrients. Fertile soils can support thicker plant growth than poor or shallow soils.",
+              "Relief and altitude affect vegetation because highland areas are usually cooler and may have different rainfall patterns from lowland areas.",
+              "Example answer: Equatorial areas receive heavy rainfall and high temperatures, so they can support thick forests. Dry desert areas receive little rainfall, so they have little vegetation."
             ],
             tryThis: {
-              question: "Which area supports dense evergreen rainforest due to heavy rainfall?",
-              choices: ["Congo Basin", "Sahara Desert", "Namib Desert", "Kalahari Desert"],
+              question: "How does rainfall affect vegetation?",
+              choices: ["High rainfall can support thicker plant growth", "Rainfall is a capital city", "Rainfall stops all plants", "Rainfall is a mountain range"],
               correct: 0,
-              explanation: "Heavy rainfall in the Congo Basin supports dense evergreen rainforest."
+              explanation: "Rainfall supplies water needed by plants, so areas with more rainfall often support thicker vegetation."
+            }
+          },
+          {
+            moduleId: "human-activities-vegetation",
+            title: "Human Activities and Vegetation",
+            bigIdea: "Human activities can destroy vegetation or help restore it.",
+            learnIt: [
+              "Human activities influence vegetation distribution. Some activities reduce vegetation, while others protect or restore it.",
+              "Activities that reduce vegetation include deforestation, bush burning, overgrazing, poor farming methods, settlement expansion and charcoal burning.",
+              "Activities that restore or protect vegetation include afforestation, re-afforestation, controlled grazing, soil conservation and protecting forests or game parks.",
+              "A strong P7 answer should show direction: deforestation reduces vegetation, while afforestation increases or restores vegetation cover."
+            ],
+            tryThis: {
+              question: "Which human activity can restore vegetation cover?",
+              choices: ["Afforestation", "Deforestation", "Bush burning", "Overgrazing"],
+              correct: 0,
+              explanation: "Afforestation means planting trees where there were few or no trees, so it can restore vegetation cover."
+            }
+          },
+          {
+            moduleId: "vegetation-factor-answer-practice",
+            title: "Answering Vegetation Factor Questions",
+            bigIdea: "Good answers explain how the factor affects vegetation, not just name the factor.",
+            learnIt: [
+              "Weak answer: Climate affects vegetation. Better answer: Climate affects vegetation because rainfall and temperature determine the type and amount of plants that can grow.",
+              "Weak answer: Soil affects vegetation. Better answer: Fertile soil supports thick vegetation because plants get enough nutrients and water from it.",
+              "Weak answer: People affect vegetation. Better answer: Bush burning destroys grass and young trees, reducing vegetation cover.",
+              "Use this pattern: factor + how it affects plants + example. This makes your answer complete and easier to mark."
+            ],
+            tryThis: {
+              question: "Which answer best explains how soil affects vegetation?",
+              choices: ["Fertile soil supports better plant growth", "Soil is a country", "Soil is a sea", "Soil stops all rainfall"],
+              correct: 0,
+              explanation: "Fertile soil gives plants nutrients and supports better growth."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "importance-vegetation",
         title: "3. Importance of vegetation",
         modules: [
           {
-            moduleId: "natural-resource-meaning",
-            title: "Importance of Vegetation as a Natural Resource",
-            bigIdea: "Vegetation is a natural resource because people use plants and forests to meet needs and generate wealth.",
+            moduleId: "vegetation-importance-people",
+            title: "Importance of Vegetation to People",
+            bigIdea: "Vegetation is valuable because people use plants and plant-covered areas in many daily and economic activities.",
             learnIt: [
-              "### Importance of Vegetation",
-              "<strong class=\"kw\">Natural resource</strong>:",
-              "Is any material found in nature that humans can use to satisfy their needs and generate economic wealth.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Renewable vegetation resources</strong> can grow back when managed sustainably.",
-              "* <strong class=\"kw\">Non-renewable vegetation resources</strong> cannot be replaced once extracted and consumed.",
-              "<strong class=\"kw\">Renewable vegetation resources</strong>:",
-              "Are plant covers and forests that have the capacity to regenerate, grow back or multiply naturally after being harvested, provided they are managed sustainably.",
-              "<strong class=\"kw\">Non-renewable vegetation resources</strong>:",
-              "Are ancient fossilized plant matters like coal beds trapped deep underground that cannot be replaced once extracted and consumed.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Mabira Forest</strong> regulates rainfall for Central Uganda.",
-              "* <strong class=\"kw\">Budongo Forest</strong> contains valuable mahogany.",
-              "* <strong class=\"kw\">Savannah Grasslands</strong> graze Africa’s herbivore herds.",
-              "* <strong class=\"kw\">Mangrove Swamps</strong> filter pollutants and reduce wave erosion."
+              "Vegetation is important to people because it provides useful materials and supports livelihoods.",
+              "People get food, fruits, medicine, timber, poles, firewood, charcoal, fibres, grass for thatching and materials for crafts from vegetation.",
+              "Vegetation also supports farming, bee keeping, tourism and rainfall/moisture conditions where plant cover is protected.",
+              "A strong answer should name the use clearly. Example: Vegetation provides timber for building and furniture."
             ],
             tryThis: {
-              question: "Which vegetation resource can grow back if managed well?",
-              choices: ["Renewable vegetation resource", "Non-renewable vegetation resource", "Coal bed only", "Petroleum field"],
+              question: "Which is an importance of vegetation to people?",
+              choices: ["It provides timber and medicine", "It is a longitude line", "It is a capital city", "It stops all farming"],
               correct: 0,
-              explanation: "Renewable vegetation resources can regenerate if managed sustainably."
+              explanation: "Vegetation provides useful materials such as timber, medicine, firewood and food."
             }
           },
           {
-            moduleId: "vegetation-importance-uses",
-            title: "Uses, Importances, Advantages and Disadvantages of Vegetation Resources",
-            bigIdea: "Vegetation supports construction, medicine, fuel, food industries, rainfall, rivers, oxygen and soil protection.",
+            moduleId: "vegetation-importance-animals-environment",
+            title: "Importance of Vegetation to Animals and the Environment",
+            bigIdea: "Vegetation provides habitats and food for animals and helps protect the environment.",
             learnIt: [
-              "### Uses, Importances, Advantages and Disadvantages",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Hardwood timber</strong> supports construction, furniture and export trade.",
-              "* <strong class=\"kw\">Barks, leaves and roots</strong> provide traditional and modern medicines.",
-              "* <strong class=\"kw\">Wood fuel</strong> and charcoal supply cooking energy.",
-              "* <strong class=\"kw\">Wild fruits, nuts and sap</strong> supply food and chemical industries.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Transpiration</strong> releases moisture for convectional rainfall.",
-              "* <strong class=\"kw\">Water catchments</strong> purify runoff and feed permanent rivers.",
-              "* <strong class=\"kw\">Carbon sinks</strong> absorb carbon dioxide and release oxygen.",
-              "* <strong class=\"kw\">Root networks</strong> prevent destructive soil erosion.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Natural pasture</strong> feeds wild herbivores and livestock.",
-              "* <strong class=\"kw\">Eco-tourism</strong> earns foreign exchange in forest reserves.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Tsetse flies</strong> cause nagana and sleeping sickness.",
-              "* <strong class=\"kw\">Predators and poisonous reptiles</strong> threaten nearby communities.",
-              "* <strong class=\"kw\">Dense vegetation</strong> obstructs roads and railways."
+              "Vegetation is important to animals because it provides food, shelter, nesting places and protection from enemies or strong sunshine.",
+              "Grasslands provide pasture for grazing animals. Forests provide fruits, leaves, insects, shade and homes for birds, monkeys and many other animals.",
+              "Vegetation protects soil from erosion because roots hold soil particles together and plant cover reduces the force of rain and wind on bare soil.",
+              "Vegetation also helps conserve water and supports rainfall/moisture conditions. Destroying vegetation can harm both people and animals."
             ],
             tryThis: {
-              question: "Which process releases moisture from plants into the atmosphere?",
-              choices: ["Transpiration", "Faulting", "Desalination", "Longitude"],
+              question: "How does vegetation help animals?",
+              choices: ["It provides food and shelter", "It names capital cities", "It draws longitude lines", "It removes all habitats"],
               correct: 0,
-              explanation: "Transpiration releases moisture from plants into the atmosphere."
+              explanation: "Animals depend on vegetation for food, shelter, nesting places and protection."
+            }
+          },
+          {
+            moduleId: "caring-for-vegetation",
+            title: "Caring for Vegetation",
+            bigIdea: "NCDC expects learners to appreciate vegetation and practise how to care for it.",
+            learnIt: [
+              "People can care for vegetation by planting trees, protecting forests, avoiding unnecessary bush burning and using land carefully.",
+              "Afforestation means planting trees where there were few or no trees. Re-afforestation means planting trees again where forests were cut down.",
+              "Controlled grazing, soil conservation, agroforestry and protection of wetlands also help vegetation to recover and remain useful.",
+              "A complete answer should include both the problem and care action. Example: Deforestation reduces vegetation, so people should plant and protect trees."
+            ],
+            tryThis: {
+              question: "Which action helps care for vegetation?",
+              choices: ["Planting and protecting trees", "Burning forests carelessly", "Overgrazing", "Cutting all trees"],
+              correct: 0,
+              explanation: "Planting and protecting trees helps restore and conserve vegetation."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "game-parks-animals",
         title: "4. Game parks and animals",
         modules: [
           {
-            moduleId: "game-parks-meaning-types",
-            title: "Game Parks and Animals",
-            bigIdea: "Game parks and reserves protect wild animals, birds and natural vegetation.",
+            moduleId: "importance-of-game-parks",
+            title: "Importance of Game Parks",
+            bigIdea: "Game parks protect wild animals and their habitats, which is part of caring for vegetation and wildlife.",
             learnIt: [
-              "### Game Parks and Animals",
-              "<strong class=\"kw\">National game park</strong>:",
-              "Is a large area of land set aside and protected by the government for the preservation of wild animals, birds and natural vegetation.",
-              "<strong class=\"kw\">Game reserve</strong>:",
-              "Is an area of land protected by the government where wild animals are preserved, but controlled hunting or limited resource extraction may be permitted under special licenses.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Savanna game parks</strong> protect wildlife in open grasslands.",
-              "* <strong class=\"kw\">Forest game parks</strong> protect primates and rare birds in dense forests.",
-              "* <strong class=\"kw\">Marine game parks</strong> protect aquatic wildlife and coastal waters.",
-              "<strong class=\"kw\">Savanna game parks</strong>:",
-              "Are wildlife conservation areas located in open grasslands, dominated by large herbivores and carnivores.",
-              "<strong class=\"kw\">Forest game parks</strong>:",
-              "Are conservation areas located in dense mountain or equatorial forests, primarily protecting primates and rare bird species.",
-              "<strong class=\"kw\">Marine game parks</strong>:",
-              "Are protected ocean or lake coastal waters designed to preserve aquatic wildlife, coral reefs and water birds."
+              "A game park is a protected area where wild animals, birds and their habitats are conserved.",
+              "Game parks are important because they protect wild animals from poaching and habitat destruction. They also protect vegetation zones where animals live.",
+              "Game parks support tourism, create jobs, earn income for countries and help learners study animals, birds and vegetation in their natural environment.",
+              "NCDC also connects this topic to caring for wild animals through protection, feeding, treatment, love, preserving habitats and security by game wardens or rangers."
             ],
             tryThis: {
-              question: "What is a national game park?",
-              choices: ["A protected area for wild animals, birds and vegetation", "A capital city", "A coastal port", "A desert climate"],
+              question: "Why are game parks important?",
+              choices: ["They protect wild animals and habitats", "They destroy all vegetation", "They are lines of latitude", "They stop all tourism"],
               correct: 0,
-              explanation: "A national game park is protected by government for wildlife and vegetation preservation."
+              explanation: "Game parks protect animals, birds and the vegetation habitats where they live."
             }
           },
           {
-            moduleId: "game-parks-examples-importance",
-            title: "Examples, Uses, Importances, Advantages and Disadvantages of Game Parks",
-            bigIdea: "Game parks protect wildlife and earn tourism income but may also create human-wildlife conflicts.",
+            moduleId: "animals-in-vegetation-zones",
+            title: "Animals in Different Vegetation Zones",
+            bigIdea: "Different animals live in different vegetation zones because zones provide different food, water, shelter and climate conditions.",
             learnIt: [
-              "### Examples, Uses, Importances, Advantages and Disadvantages",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Kidepo Valley National Park</strong> is famous for ostriches and cheetahs.",
-              "* <strong class=\"kw\">Murchison Falls National Park</strong> is Uganda’s largest national park.",
-              "* <strong class=\"kw\">Queen Elizabeth National Park</strong> is famous for tree-climbing lions and Kazinga Channel.",
-              "* <strong class=\"kw\">Serengeti National Park</strong> is famous for wildebeest migration.",
-              "* <strong class=\"kw\">Kruger National Park</strong> is known for the Big Five.",
-              "* <strong class=\"kw\">Bwindi Impenetrable National Park</strong> protects mountain gorillas.",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Safe habitats</strong> allow animals to breed, graze and hunt naturally.",
-              "* <strong class=\"kw\">Scientific research</strong> supports field studies and education.",
-              "* <strong class=\"kw\">Safari lodges</strong> support tourism.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Foreign exchange</strong> is earned through tourism.",
-              "* <strong class=\"kw\">Employment</strong> is created for guides, rangers and hotel workers.",
-              "* <strong class=\"kw\">Endangered species</strong> are preserved from extinction.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Infrastructure</strong> improves through roads, hotels and airstrips.",
-              "* <strong class=\"kw\">Local markets</strong> grow for crafts, souvenirs and food.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Human-wildlife conflict</strong> destroys crops and lives.",
-              "* <strong class=\"kw\">Poaching</strong> kills animals for ivory, skins and bushmeat.",
-              "* <strong class=\"kw\">Protected land</strong> reduces land available for farming and settlement."
+              "NCDC expects learners to identify animals found in different vegetation zones, especially Equatorial forests, Savannah and Temperate grasslands.",
+              "Equatorial forests may support animals such as monkeys, gorillas, forest birds, insects and other forest animals because forests provide fruits, leaves, shade and shelter.",
+              "Savannah vegetation supports many grazing and hunting animals because it has grass, scattered trees and open land. Examples include elephants, zebras, antelopes, buffaloes, giraffes, lions and cheetahs where found.",
+              "Temperate grasslands/velds support grassland animals and livestock where conditions allow. Specific animal examples should be checked with a teacher or atlas before premium-final status."
             ],
             tryThis: {
-              question: "Which Ugandan park protects mountain gorillas?",
-              choices: ["Bwindi Impenetrable National Park", "Murchison Falls National Park", "Kidepo Valley National Park", "Serengeti National Park"],
+              question: "Which vegetation zone commonly supports many grazing animals?",
+              choices: ["Savannah", "Mangrove swamp only", "Mediterranean city centre", "Bare rock only"],
               correct: 0,
-              explanation: "Bwindi Impenetrable National Park protects mountain gorillas."
+              explanation: "Savannah grasslands provide grass and open land for many grazing animals."
+            }
+          },
+          {
+            moduleId: "why-animals-live-in-different-zones",
+            title: "Why Animals Live in Different Vegetation Zones",
+            bigIdea: "Animals live where vegetation gives them the food, water, shelter and protection they need.",
+            learnIt: [
+              "Animals are found in different vegetation zones because each zone provides different living conditions.",
+              "Food is one reason. Grazing animals need grasses, browsers need leaves and fruits, and predators need prey animals.",
+              "Shelter and protection are also important. Forest animals may need trees and shade, while savannah animals may use tall grass, scattered trees and open spaces for movement.",
+              "Climate and water also matter. Animals survive better where temperature, rainfall and water supply suit their bodies and feeding habits."
+            ],
+            tryThis: {
+              question: "Why do different animals live in different vegetation zones?",
+              choices: ["Zones provide different food, water and shelter", "All animals need capital cities", "Vegetation zones are oceans", "Animals only follow longitude lines"],
+              correct: 0,
+              explanation: "Animals live in zones that provide suitable food, water, shelter, climate and protection."
+            }
+          },
+          {
+            moduleId: "caring-for-animals-birds",
+            title: "Caring for Animals and Birds",
+            bigIdea: "Caring for animals and birds means protecting them and the vegetation habitats they depend on.",
+            learnIt: [
+              "NCDC expects learners to write down the importance of caring for animals and birds. Caring for them helps conserve wildlife for the future.",
+              "Ways of caring include protecting animals from poachers, preserving habitats, treating sick or injured animals, feeding animals where necessary, and providing security through game wardens or rangers.",
+              "People should also avoid destroying vegetation because animals and birds need plants for food, shelter and nesting places.",
+              "A strong answer connects animals to habitat. Example: We should protect forests because many birds and animals use trees for food, shelter and nesting."
+            ],
+            tryThis: {
+              question: "Which action helps care for wild animals?",
+              choices: ["Protecting their habitats", "Destroying game parks", "Poaching", "Burning all vegetation"],
+              correct: 0,
+              explanation: "Protecting habitats helps wild animals and birds survive."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "population-vegetation",
         title: "5. Population and vegetation",
         modules: [
           {
-            moduleId: "population-pressure-meaning",
-            title: "Population and Vegetation",
-            bigIdea: "Population pressure affects vegetation by increasing demand for land, fuel, building materials and settlement space.",
+            moduleId: "population-distribution-and-vegetation",
+            title: "Population Distribution and Vegetation",
+            bigIdea: "Population distribution is related to vegetation because vegetation affects settlement, farming, grazing and livelihoods.",
             learnIt: [
-              "### Population and Vegetation",
-              "<strong class=\"kw\">Population pressure</strong>:",
-              "Is a situation where the number of people living in a specific geographical area exceeds the available natural resources, including land and vegetation.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Overpopulation</strong> means too many people for available resources.",
-              "* <strong class=\"kw\">Underpopulation</strong> means too few people to fully use available resources.",
-              "<strong class=\"kw\">Overpopulation</strong>:",
-              "Is when the number of people in an area is too large for the available resources to support them sustainably.",
-              "<strong class=\"kw\">Underpopulation</strong>:",
-              "Is when the number of people in an area is too small to fully utilize and develop the available natural resources.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Kigezi highlands</strong> have severe farmland fragmentation and hillside vegetation destruction.",
-              "* <strong class=\"kw\">Lake Victoria crescent</strong> has lost wetlands and forests to housing and industry.",
-              "* <strong class=\"kw\">Karamoja</strong> has sparse populations that allow dry savanna vegetation to remain.",
-              "* <strong class=\"kw\">Congo Basin interior</strong> has low human density that preserves rainforest."
+              "Population distribution means the way people are spread over an area. Some places have many people, while others have few people.",
+              "Vegetation can influence where people settle. Areas with useful vegetation, water, pasture, fertile soils and farming opportunities may attract more people.",
+              "NCDC links population distribution to vegetation zones such as Equatorial, Desert, Savannah, Mediterranean and Mountain areas.",
+              "A good answer should connect vegetation to settlement. Example: Savannah areas may support livestock and farming where rainfall is suitable, so people may settle there."
             ],
             tryThis: {
-              question: "What is overpopulation?",
-              choices: ["Too many people for available resources", "Too few people to use resources", "A type of tree", "A game park"],
+              question: "What does population distribution mean?",
+              choices: ["The way people are spread over an area", "The height of a mountain", "The source of a river", "The capital of a country"],
               correct: 0,
-              explanation: "Overpopulation occurs when people are too many for the available resources."
+              explanation: "Population distribution is the way people are spread over an area."
             }
           },
           {
-            moduleId: "population-vegetation-effects",
-            title: "Uses, Importances, Advantages and Disadvantages of Population Pressure",
-            bigIdea: "Population can support tree planting and environmental funding, but it can also cause deforestation, swamp reclamation and land degradation.",
+            moduleId: "reasons-population-differs-vegetation-zones",
+            title: "Why Population Differs in Vegetation Zones",
+            bigIdea: "Different vegetation zones support people differently, so population is not evenly spread.",
             learnIt: [
-              "### Uses, Importances, Advantages and Disadvantages",
-              "<strong class=\"kw\">Uses:</strong>",
-              "* <strong class=\"kw\">Dense labor forces</strong> can support afforestation and reforestation.",
-              "* <strong class=\"kw\">Forest products</strong> meet construction, building and fuel needs.",
-              "<strong class=\"kw\">Importances:</strong>",
-              "* <strong class=\"kw\">Balanced settlement</strong> prevents depletion of forests and catchments.",
-              "* <strong class=\"kw\">Environmental laws</strong> protect forests from illegal encroachment.",
-              "<strong class=\"kw\">Advantages:</strong>",
-              "* <strong class=\"kw\">Community labor</strong> supports agroforestry and tree planting.",
-              "* <strong class=\"kw\">Tax revenue</strong> funds environmental bodies like NEMA.",
-              "<strong class=\"kw\">Disadvantages:</strong>",
-              "* <strong class=\"kw\">Deforestation</strong> increases as people seek land for food and settlement.",
-              "* <strong class=\"kw\">Swamp reclamation</strong> lowers humidity and destroys fish breeding grounds.",
-              "* <strong class=\"kw\">Land degradation</strong> increases through overcultivation and overgrazing."
+              "Some vegetation zones attract more people because they support farming, grazing, trade, transport, tourism or forest products.",
+              "Desert vegetation zones often have fewer people because water is scarce, vegetation is sparse and farming is difficult without irrigation.",
+              "Equatorial forest areas may have valuable forests, but thick vegetation, diseases, poor transport and difficult clearing can limit dense settlement in some places.",
+              "Mountain and Mediterranean areas may attract people where climate, soils, tourism or farming conditions are favourable. Always explain the reason, not only the population pattern."
             ],
             tryThis: {
-              question: "Which problem is caused by expanding populations clearing land?",
-              choices: ["Deforestation", "Afforestation", "Eco-tourism", "Carbon sink growth"],
+              question: "Why do hot desert areas often have fewer people?",
+              choices: ["Water is scarce and vegetation is sparse", "They have too many capital cities", "They are all oceans", "They have no sunshine"],
               correct: 0,
-              explanation: "Expanding populations may clear forests for farming and settlement, causing deforestation."
+              explanation: "Hot desert areas often have fewer people because water is scarce and vegetation is sparse."
+            }
+          },
+          {
+            moduleId: "effects-of-big-population-on-vegetation",
+            title: "Effects of Big Population on Vegetation",
+            bigIdea: "A large population can put pressure on vegetation when people need more land, fuel and resources.",
+            learnIt: [
+              "A big population may increase demand for land for settlement, farming, grazing, roads and buildings. This can lead to clearing of vegetation.",
+              "High demand for firewood, charcoal, timber and farmland can cause deforestation and reduction of natural vegetation cover.",
+              "Too many animals on limited land can cause overgrazing. Overgrazing removes grass cover and may lead to soil erosion.",
+              "Other effects include bush burning, habitat destruction, loss of wildlife, reduced rainfall/moisture in some areas and land degradation."
+            ],
+            tryThis: {
+              question: "Which is an effect of a big population on vegetation?",
+              choices: ["Deforestation", "More Prime Meridians", "More oceans", "Less need for land"],
+              correct: 0,
+              explanation: "A big population can increase demand for land and fuel, leading to deforestation."
+            }
+          },
+          {
+            moduleId: "protecting-vegetation-from-population-pressure",
+            title: "Protecting Vegetation from Population Pressure",
+            bigIdea: "People can reduce damage to vegetation by using land and plant resources carefully.",
+            learnIt: [
+              "Vegetation can be protected even where population is growing if people use better land-management methods.",
+              "Helpful actions include planting trees, using fuel-saving stoves, controlled grazing, agroforestry, soil conservation, protecting wetlands and avoiding careless bush burning.",
+              "Communities can also protect forests, game parks and reserves so that plants, animals and birds continue to survive.",
+              "A complete answer should include the problem and solution. Example: Overgrazing destroys grass cover, so farmers should control the number of animals grazing in one area."
+            ],
+            tryThis: {
+              question: "Which action can reduce overgrazing?",
+              choices: ["Controlled grazing", "Keeping too many animals on little land", "Burning all grass", "Cutting all trees"],
+              correct: 0,
+              explanation: "Controlled grazing helps prevent animals from destroying vegetation cover in one area."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "premium-vegetation-application",
-        title: "Premium Exam Practice: Vegetation Reasoning",
+        title: "Practice: Vegetation Reasoning Questions",
         modules: [
           {
-            moduleId: "vegetation-exam-traps",
-            title: "Premium Exam Practice: Vegetation Reasoning",
-            bigIdea: "Strong vegetation answers define the vegetation type, give examples and connect it to climate, soil, wildlife or human use.",
+            moduleId: "vegetation-question-commands",
+            title: "Step 1: Read the Vegetation Question",
+            bigIdea: "Vegetation questions may ask you to name, locate, describe, explain, relate or outline effects.",
             learnIt: [
-              "### Premium Exam Practice: Vegetation Reasoning",
-              "<strong class=\"kw\">Vegetation reasoning answer</strong>:",
-              "Is a clear answer that links plant cover to climate, soil, altitude, wildlife or human activity.",
-              "<strong class=\"kw\">Types:</strong>",
-              "* <strong class=\"kw\">Type answer</strong> identifies the vegetation zone.",
-              "* <strong class=\"kw\">Factor answer</strong> explains why vegetation grows there.",
-              "* <strong class=\"kw\">Importance answer</strong> states how vegetation helps people or the environment.",
-              "* <strong class=\"kw\">Problem answer</strong> states how vegetation or population pressure causes difficulty.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Equatorial rainforest</strong> grows where rainfall is heavy and reliable.",
-              "* <strong class=\"kw\">Desert vegetation</strong> survives with little rainfall.",
-              "* <strong class=\"kw\">Mangroves</strong> grow in salty coastal waters.",
-              "* <strong class=\"kw\">Montane vegetation</strong> changes with altitude.",
-              "<strong class=\"kw\">UNEB Exam Trap:</strong>",
-              "* <strong class=\"kw\">Vegetation</strong> is plant cover, not climate itself.",
-              "* <strong class=\"kw\">Savanna</strong> is grassland with scattered trees.",
-              "* <strong class=\"kw\">Mangroves</strong> are coastal forests, not desert plants."
+              "If the question says name, give the correct vegetation type. Example: Name one vegetation type of Africa — Savannah vegetation.",
+              "If the question says locate, state where the vegetation is found broadly on a map. Example: Equatorial forests are found near the Equator.",
+              "If the question says explain, give a reason. Example: Animals live in savannah because it provides grass, water and prey animals.",
+              "If the question says outline effects, give clear results. Example: A big population may lead to deforestation and overgrazing."
             ],
             tryThis: {
-              question: "Which vegetation grows in salty coastal waters?",
-              choices: ["Mangrove forests", "Equatorial rainforest", "Mediterranean vegetation", "Alpine moorland"],
+              question: "Which command asks you to give reasons?",
+              choices: ["Explain", "Copy", "Colour only", "Ignore"],
               correct: 0,
-              explanation: "Mangrove forests grow in salty coastal waters and mudflats."
+              explanation: "Explain means give reasons or show why something happens."
             }
           },
           {
-            moduleId: "vegetation-worked-example",
-            title: "Worked Example: Vegetation Importance",
-            bigIdea: "A complete vegetation answer should name the vegetation and state a clear use or importance.",
+            moduleId: "vegetation-types-factors-practice",
+            title: "Step 2: Practise Vegetation Types and Factors",
+            bigIdea: "Good vegetation answers connect vegetation types to the factors that influence their distribution.",
             learnIt: [
-              "### Worked Example: Vegetation Importance",
-              "<strong class=\"kw\">Worked vegetation answer</strong>:",
-              "Is a model answer showing how to explain the importance of plant cover.",
-              "<strong class=\"kw\">Steps:</strong>",
-              "* <strong class=\"kw\">Name the vegetation</strong> before explaining it.",
-              "* <strong class=\"kw\">State a direct use</strong> such as timber, pasture or medicine.",
-              "* <strong class=\"kw\">State an environmental importance</strong> such as rainfall, oxygen or soil protection.",
-              "* <strong class=\"kw\">Use a real example</strong> where possible.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Mabira Forest</strong> helps regulate rainfall.",
-              "* <strong class=\"kw\">Savanna grasslands</strong> provide pasture for animals.",
-              "* <strong class=\"kw\">Mangroves</strong> reduce coastal erosion."
+              "Vegetation types to practise: Equatorial forests, Mangrove forests, Montane vegetation, Temperate grasslands, Savannah vegetation and Mediterranean vegetation.",
+              "Factors to practise: climate, types of soil, human activities and relief/altitude.",
+              "A strong answer connects the factor to vegetation. Example: Heavy rainfall and high temperatures support thick equatorial forests.",
+              "Avoid vague answers like 'climate affects vegetation' without explaining how rainfall or temperature affects plant growth."
             ],
             tryThis: {
-              question: "Which answer best explains an importance of vegetation?",
-              choices: ["Vegetation protects soil from erosion by holding soil particles with roots.", "Vegetation is a country capital.", "Vegetation is a longitude line.", "Vegetation stops all rainfall."],
+              question: "Which factor best explains why dry areas have little vegetation?",
+              choices: ["Low rainfall", "Too many capital cities", "Longitude only", "Ocean names"],
               correct: 0,
-              explanation: "Plant roots hold soil particles and reduce soil erosion."
-            },
-            workedExample: {
-              question: "State two ways vegetation is important to people and the environment.",
-              steps: ["Think of a direct human use such as timber, medicine or pasture.", "Think of an environmental role such as rainfall, oxygen or soil protection.", "Write two clear points with vegetation keywords."],
-              answer: "Vegetation provides timber and medicine, and it protects soil from erosion by holding soil particles with roots."
+              explanation: "Low rainfall limits plant growth, so dry areas often have less vegetation."
+            }
+          },
+          {
+            moduleId: "animals-game-parks-practice",
+            title: "Step 3: Practise Animals and Game Parks",
+            bigIdea: "Animals live in vegetation zones that provide suitable food, water, shelter and protection.",
+            learnIt: [
+              "When asked about animals in vegetation zones, name the zone and give suitable animal examples from teacher-approved notes.",
+              "When asked why animals live in different zones, mention food, water, shelter, climate and protection from enemies.",
+              "When asked about game parks, explain that they protect animals, birds and habitats and also support tourism, jobs and learning.",
+              "When asked how to care for animals and birds, mention protecting habitats, preventing poaching, treating sick animals and providing security through wardens or rangers."
+            ],
+            tryThis: {
+              question: "Why do animals live in different vegetation zones?",
+              choices: ["Because zones provide different food, water and shelter", "Because animals are capital cities", "Because all zones are oceans", "Because vegetation has no effect"],
+              correct: 0,
+              explanation: "Animals live where they can find suitable food, water, shelter, climate and protection."
+            }
+          },
+          {
+            moduleId: "population-vegetation-practice",
+            title: "Step 4: Practise Population and Vegetation Answers",
+            bigIdea: "Population questions should connect settlement, land use and vegetation change.",
+            learnIt: [
+              "When asked about population distribution, explain how vegetation zones influence where people live and work.",
+              "When asked why population differs, mention water, farming opportunities, pasture, forest resources, climate, diseases, transport and land availability where relevant.",
+              "When asked effects of population on vegetation, mention deforestation, overgrazing, bush burning, soil erosion, habitat destruction and conservation solutions.",
+              "Use complete reasoning: A big population needs more land for farming and settlement, so vegetation may be cleared, causing deforestation."
+            ],
+            tryThis: {
+              question: "Which answer best explains an effect of population on vegetation?",
+              choices: ["More people may clear vegetation for farming and settlement", "More people create new oceans", "Population is a longitude line", "Vegetation never changes"],
+              correct: 0,
+              explanation: "Population growth can increase demand for land, leading to clearing of vegetation."
             }
           }
         ]
-      }
-    ],
+      },],
     quiz: [
       { q: "Vegetation means:", choices: ["Plant cover of an area", "Capital city", "All rivers", "Only wild animals"], correct: 0, why: "Vegetation is the natural plant cover of an area." },
       { q: "Which vegetation type is common near the Equator?", choices: ["Equatorial rainforest", "Desert vegetation", "Mediterranean scrub", "Tundra"], correct: 0, why: "Heavy rainfall near the Equator supports equatorial rainforest." },
@@ -2297,66 +1886,116 @@ const SOCIAL_TOPICS_DATA: Topic[] = [
       recap: ["Africa has many ethnic groups.", "Migration has push and pull reasons.", "Settlement patterns vary with environment."],
     },
     subtopics: [
-      {
+            {
         subtopicId: "origin-ethnic-groups",
         title: "1. Origin of different ethnic groups",
         modules: [
           {
-            moduleId: "ethnic-group-meaning",
-            title: "What is an ethnic group?",
-            bigIdea: "Ethnic groups share culture, language, origin or history, and all groups deserve respect.",
+            moduleId: "ethnic-group-meaning-respect",
+            title: "Meaning of an Ethnic Group",
+            bigIdea: "An ethnic group is a group of people who share identity, culture or history, and all cultures deserve respect.",
             learnIt: [
-              "### Origin of Different Ethnic Groups",
-              "<strong class=\"kw\">Ethnic group</strong>:",
-              "Is a group of people who share culture, language, origin or history.",
-              "<strong class=\"kw\">Examples:</strong>",
-              "* <strong class=\"kw\">Bantu</strong> are one major ethnic group in Africa.",
-              "* <strong class=\"kw\">Nilotes</strong> are one major ethnic group in Africa.",
-              "* <strong class=\"kw\">Cushites</strong> are one major ethnic group in Africa.",
-              "* <strong class=\"kw\">Semites</strong> are one major ethnic group in Africa.",
-              "* <strong class=\"kw\">Berbers</strong> are found mainly in North Africa.",
-              "* <strong class=\"kw\">Khoisan</strong> are associated with Southern Africa.",
-              "<strong class=\"kw\">UNEB Exam Trap:</strong>",
-              "* <strong class=\"kw\">Ethnic group</strong> does not mean race superiority.",
-              "* <strong class=\"kw\">Culture and language</strong> are key identifiers of ethnic groups."
+              "An ethnic group is a group of people who share things such as language, culture, ancestry, values, religion, place of origin or a sense of belonging.",
+              "NCDC expects learners to show respect for their own culture and other cultures. This means we study ethnic groups to understand people, not to rank or insult them.",
+              "Africa has many ethnic groups because people have different histories, languages, migrations and settlement patterns.",
+              "A good P7 answer should be respectful. Avoid words that make one group seem better or worse than another. The key value is unity in diversity."
             ],
             tryThis: {
-              question: "An ethnic group commonly shares:",
-              choices: ["Culture and origin", "Only shoe size", "Only rainfall", "Only road signs"],
+              question: "Which statement best describes an ethnic group?",
+              choices: ["People who share culture, language or origin", "A river in Africa", "A climate region only", "A capital city"],
               correct: 0,
-              explanation: "Ethnic groups share culture, language, origin or history."
+              explanation: "An ethnic group may share culture, language, origin, history, values or a sense of belonging."
+            }
+          },
+          {
+            moduleId: "basis-of-ethnic-identity",
+            title: "How Ethnic Groups are Identified",
+            bigIdea: "Ethnic identity may be connected to language, culture, ancestry, values, religion, nationality and place.",
+            learnIt: [
+              "The NCDC background explains that people may be grouped by geographical location, language, culture, ancestry, sense of belonging, religion, values and nationality.",
+              "Language is one common way people identify ethnic groups. Culture is another: it includes ways of dressing, food, music, marriage customs, ceremonies and beliefs.",
+              "Ancestry and origin also matter because people may trace where their ancestors came from and where they later settled.",
+              "Do not assume everyone in an ethnic group is exactly the same. People can share identity but still have different personal experiences, religions, occupations and ways of life."
+            ],
+            tryThis: {
+              question: "Which factor can help identify an ethnic group?",
+              choices: ["Language", "Longitude time only", "Ocean current only", "A mountain height only"],
+              correct: 0,
+              explanation: "Language is one of the factors that can identify an ethnic group."
+            }
+          },
+          {
+            moduleId: "major-ethnic-groups-careful-language",
+            title: "Major Ethnic Group Terms in the Source",
+            bigIdea: "Some older source terms need careful and respectful explanation for modern learners.",
+            learnIt: [
+              "The NCDC source names groups such as Berbers, Bantu, Cushites, Arabs, Hamites and Semites. Some older textbooks also used broad racial terms that should be handled carefully and respectfully.",
+              "For learner use, focus on respectful ethnic and cultural terms. Bantu, Cushites, Arabs/Semites and Berbers are examples learners may meet in P7 Social Studies notes.",
+              "The main learning point is that Africa's people have different origins, languages, cultures and settlement histories. These differences should be appreciated, not used for discrimination.",
+              "Teacher review is still needed before premium-final status for detailed tribe-to-ethnic-group matching because some source terms are old and sensitive."
+            ],
+            tryThis: {
+              question: "What value should guide our study of ethnic groups?",
+              choices: ["Respect for all cultures", "Mocking other groups", "Ignoring unity", "Saying one group is better"],
+              correct: 0,
+              explanation: "NCDC emphasises respect, appreciation, love and cooperation when studying cultures."
             }
           }
         ]
       },
-      {
+            {
         subtopicId: "movements-ethnic-groups",
         title: "2. Movements of different ethnic groups into Africa",
         modules: [
           {
-            moduleId: "migration-meaning-reasons",
-            title: "Migration of ethnic groups",
-            bigIdea: "Migration explains how different groups moved and settled in different parts of Africa.",
+            moduleId: "migration-origin-settlement",
+            title: "Migration, Origin and Settlement",
+            bigIdea: "Migration explains how people moved from places of origin and later settled in new areas.",
             learnIt: [
-              "### Movements of Different Ethnic Groups into Africa",
-              "<strong class=\"kw\">Migration</strong>:",
-              "Is the movement of people from one place to another for settlement.",
-              "<strong class=\"kw\">Reasons:</strong>",
-              "* <strong class=\"kw\">Search for land</strong> encouraged people to move.",
-              "* <strong class=\"kw\">Search for pasture</strong> encouraged pastoral groups to move.",
-              "* <strong class=\"kw\">War and insecurity</strong> forced people away.",
-              "* <strong class=\"kw\">Drought and famine</strong> pushed people to better areas.",
-              "* <strong class=\"kw\">Trade</strong> attracted people to new places.",
-              "<strong class=\"kw\">Effects:</strong>",
-              "* <strong class=\"kw\">Population increase</strong> occurred in settlement areas.",
-              "* <strong class=\"kw\">Cultural exchange</strong> happened between groups.",
-              "* <strong class=\"kw\">Intermarriage</strong> created mixed communities."
+              "Migration is the movement of people from one place to another. In this topic, learners study movements of different ethnic groups and where they eventually settled.",
+              "Origin means where a group is believed to have come from. Settlement means the place or pattern where people finally live after movement.",
+              "A migration answer should separate three ideas: origin, movement and settlement. Example: people came from an origin, moved along routes, and settled in new areas.",
+              "NCDC also asks learners to compare ancient migrations with current rural-urban, rural-rural and urban-rural migration. This helps learners see that people still move today."
             ],
             tryThis: {
-              question: "Migration means:",
-              choices: ["Movement of people from one place to another", "Growth of grass", "Building a dam", "Drawing a map only"],
+              question: "What does migration mean?",
+              choices: ["Movement of people from one place to another", "Growth of vegetation only", "A mountain formation process", "A capital city"],
               correct: 0,
-              explanation: "Migration is movement of people from one place to another."
+              explanation: "Migration means movement of people from one place to another."
+            }
+          },
+          {
+            moduleId: "tracing-movements-map-practice",
+            title: "Tracing Movements on a Map",
+            bigIdea: "NCDC expects learners to locate migration routes and settlement patterns of peoples of Africa.",
+            learnIt: [
+              "To trace movement, use arrows on a map. The arrow should show the direction from the origin towards the settlement area.",
+              "Do not invent exact routes if your source or teacher has not given them. Use teacher-approved maps, wall maps or atlases when drawing migration routes.",
+              "When describing movement, use simple direction words such as north, south, east, west, north-east or south-west.",
+              "A good migration map should have a title, arrows, labelled groups and settlement areas. Keep it simple and readable."
+            ],
+            tryThis: {
+              question: "What should arrows on a migration map show?",
+              choices: ["Direction of movement", "Only rainfall", "Only capital cities", "Only ocean names"],
+              correct: 0,
+              explanation: "Arrows on a migration map show the direction people moved."
+            }
+          },
+          {
+            moduleId: "ancient-and-current-migration",
+            title: "Ancient and Current Migration",
+            bigIdea: "People migrated in the past and still migrate today, but reasons and routes may differ.",
+            learnIt: [
+              "Ancient migrations involved ethnic groups moving from their origins and settling in new areas over long periods of time.",
+              "Current migration may be rural-urban, rural-rural or urban-rural. Rural-urban migration means people move from villages to towns. Rural-rural means movement from one rural area to another. Urban-rural means movement from towns to rural areas.",
+              "Comparing ancient and current migration helps learners understand continuity and change: people move because of land, work, security, climate, family and opportunities.",
+              "In this subtopic, do not yet list all reasons in detail. The next subtopic will handle reasons for migration and settlement more fully."
+            ],
+            tryThis: {
+              question: "What is rural-urban migration?",
+              choices: ["Movement from villages to towns", "Movement from a river to a lake", "Movement of clouds only", "Movement of longitude lines"],
+              correct: 0,
+              explanation: "Rural-urban migration is movement of people from rural areas to towns or cities."
             }
           }
         ]

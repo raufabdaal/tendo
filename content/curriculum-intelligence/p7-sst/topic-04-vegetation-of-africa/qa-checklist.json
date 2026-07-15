@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "vegetation-of-africa",
+    "created": "2026-07-15",
+    "status": "audit-started"
+  },
+  "gates": [
+    {
+      "id": "source-gate",
+      "status": "partial-pass",
+      "checks": [
+        { "item": "NCDC Topic 4 source extract exists", "status": "passed" },
+        { "item": "Detailed animal examples by vegetation zone", "status": "needs-teacher-review" },
+        { "item": "Full location examples for each vegetation type", "status": "needs-atlas-review" }
+      ]
+    },
+    {
+      "id": "depth-gate",
+      "status": "needs-rewrite",
+      "checks": [
+        { "item": "All official vegetation subtopics represented", "status": "passed-structurally" },
+        { "item": "Factors explain how they influence vegetation", "status": "needs-rewrite" },
+        { "item": "Population and vegetation effects clearly separated", "status": "needs-rewrite" }
+      ]
+    },
+    {
+      "id": "language-gate",
+      "status": "needs-rewrite",
+      "checks": [
+        { "item": "Remove uses/importances/advantages/disadvantages filler where not needed", "status": "needs-fix" },
+        { "item": "Keep explanations source-backed and P7-friendly", "status": "needs-fix" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "climate-of-africa",
+    "topicTitle": "Climate of Africa",
+    "created": "2026-07-15",
+    "status": "blueprint-before-rewrite",
+    "evidenceFile": "content/curriculum-intelligence/p7-sst/topic-03-climate-of-africa/evidence-notes.json"
+  },
+  "rewritePrinciple": "Rewrite Topic 3 from NCDC evidence. Keep climatic regions, characteristics, factors, climate influence on activities, and human influence on climate separate because NCDC separates them. Remove mechanical uses/advantages filler.",
+  "officialSubtopicBlueprint": [
+    {
+      "officialSubtopic": "Climatic regions of Africa",
+      "currentAppSubtopicId": "climatic-regions",
+      "status": "active-rewrite-first",
+      "recommendedModules": [
+        "weather-climate-elements",
+        "six-climatic-regions-africa",
+        "climate-map-practice"
+      ]
+    },
+    {
+      "officialSubtopic": "Characteristics of different climatic regions",
+      "currentAppSubtopicId": "characteristics-climate",
+      "status": "active-rewrite-second",
+      "recommendedModules": [
+        "equatorial-tropical-characteristics",
+        "desert-mediterranean-characteristics",
+        "temperate-mountain-characteristics"
+      ]
+    },
+    {
+      "officialSubtopic": "Factors that influence climate of Africa",
+      "currentAppSubtopicId": "factors-climate",
+      "status": "pending-rewrite",
+      "recommendedModules": ["climate-factors-list", "how-factors-affect-climate", "factor-map-practice"]
+    },
+    {
+      "officialSubtopic": "Influence of climate on human activities",
+      "currentAppSubtopicId": "climate-human-activities",
+      "status": "pending-rewrite",
+      "recommendedModules": ["desert-human-activities", "mediterranean-temperate-mountain-activities", "equatorial-tropical-activities"]
+    },
+    {
+      "officialSubtopic": "Influence of human activities on climate",
+      "currentAppSubtopicId": "human-activities-climate",
+      "status": "pending-rewrite",
+      "recommendedModules": ["harmful-human-activities", "protecting-climate", "cause-effect-practice"]
+    },
+    {
+      "officialSubtopic": "Application practice for climate interpretation",
+      "currentAppSubtopicId": "premium-climate-interpretation",
+      "status": "pending-rewrite",
+      "recommendedModules": ["climate-question-commands", "climate-region-practice", "human-activity-practice", "climate-protection-practice"]
+    }
+  ]
+}

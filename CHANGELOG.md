@@ -1,5 +1,344 @@
 # CHANGELOG — Tendo
 
+## v1.8.102 — 2026-07-15 — Topic 1 vertical structural chain learner-layout pilot
+
+**Session theme:** Improve learner-facing readability after founder noticed paragraph-style content may still be too hard for primary learners.
+
+### Added
+- `docs/spec/vertical-structural-chain-content-pilot-2026-07-15.md` — documents the new learner-facing presentation rule.
+
+### Changed
+- Converted all `location-of-africa` learner modules in `app/lib/social-topics.ts` to vertical structural chain style.
+- Applied to all Topic 1 subtopics:
+  - `location-position-africa`
+  - `world-continents-sizes`
+  - `water-bodies-africa`
+  - `regions-africa`
+  - `countries-capitals-africa`
+  - `premium-map-answering`
+- Learner content now uses short labelled chains such as `Meaning`, `Map tools`, `Example`, `Exam point`, `Step`, `Region check`, etc.
+
+### Principle
+- Evidence notes and blueprints stay full.
+- Learner screen becomes short, labelled, scannable and exam-usable.
+- This is not a return to blind strict headings; labels must match the NCDC subtopic.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures.
+- `cd app && npm install && npm run build` → `✓ Generating static pages (413/413)`.
+
+---
+## v1.8.101 — 2026-07-15 — Topic 5 audit started and first two people/ethnic-group subtopics rewritten
+
+**Session theme:** Start P7 SST Topic 5, the previously thin People of Africa topic, under curriculum intelligence with extra sensitivity around ethnic/cultural wording.
+
+### Added
+- `content/curriculum-intelligence/p7-sst/topic-05-people-ethnic-groups-settlement/evidence-notes.json`
+- `content/curriculum-intelligence/p7-sst/topic-05-people-ethnic-groups-settlement/module-blueprint.json`
+- `content/curriculum-intelligence/p7-sst/topic-05-people-ethnic-groups-settlement/qa-checklist.json`
+- `docs/ops/p7-sst-topic-05-curriculum-intelligence-audit-2026-07-15.md`
+
+### Changed
+- Updated `content/curriculum-intelligence/p7-sst/source-registry.json` and `manifest.json` for Topic 5.
+- Rewrote `origin-ethnic-groups` into 3 modules: ethnic group meaning/respect, basis of ethnic identity, and careful handling of major group terms.
+- Rewrote `movements-ethnic-groups` into 3 modules: migration/origin/settlement, tracing movements on a map, and ancient/current migration.
+- Used respectful learner-facing wording because the source includes older/sensitive terminology.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 46 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Next
+- Rewrite `settlement-tribes` and `problems-effects-migration` together if quality remains high.
+
+---
+## v1.8.100 — 2026-07-15 — Topic 4 final two subtopics rewritten
+
+**Session theme:** Complete P7 SST Topic 4 learner-flow rewrite under curriculum intelligence.
+
+### Changed
+- Rewrote `population-vegetation` with 4 modules:
+  1. `population-distribution-and-vegetation`
+  2. `reasons-population-differs-vegetation-zones`
+  3. `effects-of-big-population-on-vegetation`
+  4. `protecting-vegetation-from-population-pressure`
+- Rewrote `premium-vegetation-application` with 4 modules:
+  1. `vegetation-question-commands`
+  2. `vegetation-types-factors-practice`
+  3. `animals-game-parks-practice`
+  4. `population-vegetation-practice`
+- Population content now separates distribution, reasons, effects and protection solutions.
+- Application practice now aligns to NCDC vegetation assessment competences.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 46 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Topic 4 status
+- All Topic 4 learner-facing subtopics have now been rewritten under the curriculum-intelligence direction.
+
+---
+## v1.8.99 — 2026-07-15 — Topic 4 Importance and Game Parks subtopics rewritten
+
+**Session theme:** Continue P7 SST Topic 4 Vegetation of Africa by rewriting two subtopics together while preserving source alignment.
+
+### Changed
+- Rewrote `importance-vegetation` with 3 modules:
+  1. `vegetation-importance-people`
+  2. `vegetation-importance-animals-environment`
+  3. `caring-for-vegetation`
+- Rewrote `game-parks-animals` with 4 modules:
+  1. `importance-of-game-parks`
+  2. `animals-in-vegetation-zones`
+  3. `why-animals-live-in-different-zones`
+  4. `caring-for-animals-birds`
+- Removed broad uses/importances/advantages/disadvantages filler.
+- Kept content aligned to NCDC requirements: importance of vegetation, game parks, animals in zones, reasons animals live in zones, and caring for animals/birds.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 46 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Next
+- Rewrite `population-vegetation` and `premium-vegetation-application` together if quality remains high.
+
+---
+## v1.8.98 — 2026-07-15 — Topic 4 audit started and first two vegetation subtopics rewritten
+
+**Session theme:** Start P7 SST Topic 4 Vegetation of Africa under curriculum intelligence and rewrite two subtopics together.
+
+### Added
+- `content/curriculum-intelligence/p7-sst/topic-04-vegetation-of-africa/evidence-notes.json`
+- `content/curriculum-intelligence/p7-sst/topic-04-vegetation-of-africa/module-blueprint.json`
+- `content/curriculum-intelligence/p7-sst/topic-04-vegetation-of-africa/qa-checklist.json`
+- `docs/ops/p7-sst-topic-04-curriculum-intelligence-audit-2026-07-15.md`
+
+### Changed
+- Updated `content/curriculum-intelligence/p7-sst/source-registry.json` and `manifest.json` for Topic 4.
+- Rewrote `vegetation-types` into 4 modules: meaning/types, forest vegetation, grassland/shrub vegetation and map practice.
+- Rewrote `factors-vegetation` into 4 modules: NCDC factor list, climate/soil/relief, human activities and factor-answer practice.
+- Removed mechanical uses/importances/advantages/disadvantages filler.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 46 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Next
+- Rewrite `importance-vegetation` and `game-parks-animals` together if quality remains high.
+
+---
+## v1.8.97 — 2026-07-15 — Topic 3 final two subtopics rewritten
+
+**Session theme:** Complete P7 SST Topic 3 learner-flow rewrite under curriculum intelligence.
+
+### Changed
+- Rewrote `human-activities-climate` with 4 modules:
+  1. `human-activities-that-harm-climate`
+  2. `effects-of-human-activities-on-climate`
+  3. `protecting-climate-environment`
+  4. `human-influence-answer-practice`
+- Rewrote `premium-climate-interpretation` with 4 modules:
+  1. `climate-question-commands`
+  2. `climate-region-characteristic-practice`
+  3. `climate-factors-activities-practice`
+  4. `climate-protection-practice`
+- Human influence content now separates harmful activities, effects and protective actions.
+- Application practice now aligns to NCDC climate assessment competences.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 40 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Topic 3 status
+- All Topic 3 learner-facing subtopics have now been rewritten under the curriculum-intelligence direction.
+
+---
+## v1.8.96 — 2026-07-15 — Topic 3 Factors and Human Activities rewritten
+
+**Session theme:** Continue P7 SST Topic 3 Climate of Africa by rewriting two subtopics together while staying source-aligned.
+
+### Changed
+- Rewrote `factors-climate` with 4 modules:
+  1. `climate-factors-ncdc-list`
+  2. `water-bodies-winds-landmass`
+  3. `altitude-relief-vegetation-human-activities`
+  4. `factor-answer-practice`
+- Rewrote `climate-human-activities` with 4 modules:
+  1. `climate-controls-activities`
+  2. `desert-mediterranean-temperate-activities`
+  3. `equatorial-tropical-mountain-activities`
+  4. `climate-activity-answer-practice`
+- Kept the NCDC factor list exact.
+- Used the NCDC activity list by climate type instead of generic uses/advantages filler.
+
+### Source basis
+- NCDC P7 Set One Topic 3 extract / pages 322–326.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 40 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Next
+- Rewrite `human-activities-climate` and `premium-climate-interpretation` together if quality remains high.
+
+---
+## v1.8.95 — 2026-07-15 — Topic 3 audit started and first two climate subtopics rewritten
+
+**Session theme:** Start P7 SST Topic 3 Climate of Africa under curriculum intelligence and rewrite two subtopics together while preserving quality.
+
+### Added
+- `content/curriculum-intelligence/p7-sst/topic-03-climate-of-africa/evidence-notes.json`
+- `content/curriculum-intelligence/p7-sst/topic-03-climate-of-africa/module-blueprint.json`
+- `content/curriculum-intelligence/p7-sst/topic-03-climate-of-africa/qa-checklist.json`
+- `docs/ops/p7-sst-topic-03-curriculum-intelligence-audit-2026-07-15.md`
+
+### Changed
+- Updated `content/curriculum-intelligence/p7-sst/source-registry.json` and `manifest.json` for Topic 3.
+- Rewrote `climatic-regions` into 3 modules: weather/climate elements, six climatic regions, and map practice.
+- Rewrote `characteristics-climate` into 3 modules: equatorial/tropical, desert/Mediterranean, and temperate/mountain characteristics.
+- Removed mechanical uses/importances/advantages/disadvantages filler.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 40 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Next
+- Rewrite `factors-climate` and `climate-human-activities` together if quality remains high.
+
+---
+## v1.8.94 — 2026-07-15 — Topic 2 final two subtopics rewritten
+
+**Session theme:** Move faster by rewriting two subtopics together while preserving curriculum-intelligence consistency and quality.
+
+### Changed
+- Rewrote `formation-physical-features` inside `app/lib/social-topics.ts` with 4 source-backed modules:
+  1. `formation-folded-mountains`
+  2. `formation-fault-block-mountains-rift-valleys`
+  3. `formation-volcanic-mountains`
+  4. `formation-diagram-practice`
+- Rewrote `premium-physical-features-application` with 4 assessment-aligned modules:
+  1. `physical-features-question-commands`
+  2. `physical-features-map-practice`
+  3. `physical-features-formation-practice`
+  4. `physical-features-value-answer-practice`
+- Focused formation content on folded, fault-block and volcanic mountains because NCDC guidance explicitly names them.
+- Focused application practice on NCDC competences: naming, locating, formation, diagrams and value answers.
+
+### Source basis
+- NCDC P7 Set One Topic 2 pages 318–321 / printed pages 297–300.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 34 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Topic 2 status
+- All Topic 2 learner-facing subtopics have now been rewritten under the curriculum-intelligence direction.
+- Remaining warnings mark atlas/teacher review needs before premium-final status, not structure/build failures.
+
+---
+## v1.8.93 — 2026-07-15 — Topic 2 Plateau/Rift/Coastal Plains rewritten
+
+**Session theme:** Continue P7 SST Topic 2 rewrite under curriculum intelligence.
+
+### Changed
+- Rewrote `plateau-rift-coastal` inside `app/lib/social-topics.ts`.
+- Replaced the previous broad structure with 3 source-backed modules:
+  1. `plateau-rift-coastal-as-relief-features`
+  2. `locating-plateau-rift-coastal-plains`
+  3. `model-and-value-practice-relief-features`
+- Focused content on plateau, rift valley and coastal plains as relief features, NCDC coastal plains in the West/North/South, and modelling/map practice.
+- Avoided mechanical uses/importances/advantages/disadvantages filler.
+
+### Source basis
+- NCDC P7 Set One Topic 2 pages 318–321 / printed pages 297–300.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 34 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Next
+- Rewrite `formation-physical-features`: folded, fault-block and volcanic mountains first, with simple diagram/model language.
+
+---
+## v1.8.92 — 2026-07-15 — Topic 2 Lakes of Africa rewritten
+
+**Session theme:** Continue P7 SST Topic 2 rewrite under curriculum intelligence.
+
+### Changed
+- Rewrote `lakes-africa` inside `app/lib/social-topics.ts`.
+- Replaced the previous lakes structure with 3 source-backed modules:
+  1. `lakes-as-drainage-features`
+  2. `lake-chad-lake-ngami`
+  3. `lake-value-map-practice`
+- Focused content on lakes as drainage features, NCDC-listed Lake Chad and Lake Ngami, map location and value/map practice.
+- Avoided mechanical uses/importances/advantages/disadvantages filler.
+
+### Source basis
+- NCDC P7 Set One Topic 2 pages 318–321 / printed pages 297–300.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 34 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Next
+- Rewrite `plateau-rift-coastal`: plateau, rift valley and coastal plains as relief features, with map/model practice.
+
+---
+## v1.8.91 — 2026-07-15 — Topic 2 Rivers of Africa rewritten
+
+**Session theme:** Continue P7 SST Topic 2 rewrite under curriculum intelligence.
+
+### Changed
+- Rewrote `rivers-africa` inside `app/lib/social-topics.ts`.
+- Replaced the previous generic rivers structure with 4 source-backed modules:
+  1. `rivers-as-drainage-features`
+  2. `major-rivers-of-africa-ncdc-list`
+  3. `river-mouths-oceans-seas`
+  4. `river-value-map-practice`
+- Focused content on rivers as drainage features, the NCDC-listed rivers, map location, and oceans/seas into which major rivers flow.
+- Avoided mechanical uses/importances/advantages/disadvantages filler.
+
+### Source basis
+- NCDC P7 Set One Topic 2 pages 318–321 / printed pages 297–300.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 34 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Next
+- Rewrite `lakes-africa`: Lake Chad and Lake Ngami, lakes as drainage features, map location and value/map practice.
+
+---
+## v1.8.90 — 2026-07-15 — Topic 2 intelligence audit started and Mountains/Highlands rewritten
+
+**Session theme:** Continue from Topic 1 into P7 SST Topic 2 using the same curriculum-intelligence direction.
+
+### Added
+- `content/curriculum-intelligence/p7-sst/topic-02-physical-features-of-africa/evidence-notes.json`
+- `content/curriculum-intelligence/p7-sst/topic-02-physical-features-of-africa/module-blueprint.json`
+- `content/curriculum-intelligence/p7-sst/topic-02-physical-features-of-africa/qa-checklist.json`
+- `docs/ops/p7-sst-topic-02-curriculum-intelligence-audit-2026-07-15.md`
+
+### Changed
+- Updated `content/curriculum-intelligence/p7-sst/source-registry.json` with the Topic 2 extract source.
+- Updated `content/curriculum-intelligence/p7-sst/manifest.json` with Topic 2 evidence/blueprint/QA mappings.
+- Rewrote `mountains-highlands` inside `app/lib/social-topics.ts` with 3 source-backed modules:
+  1. `physical-features-relief-drainage`
+  2. `major-mountains-highlands-africa`
+  3. `mountains-highlands-value-map-practice`
+- Replaced mechanical uses/advantages/disadvantages framing with focused NCDC-aligned naming, locating, value and map practice.
+
+### Source basis
+- NCDC P7 Set One Topic 2 pages 318–321 / printed pages 297–300.
+
+### Verified
+- `node scripts/audit-curriculum-intelligence.js` → 0 failures / 34 warnings.
+- `cd app && npm run build` → `✓ Generating static pages (413/413)`.
+
+### Next
+- Rewrite `rivers-africa`: NCDC-listed rivers, map location, and oceans/seas into which major rivers flow.
+
+---
 ## v1.8.89 — 2026-07-15 — Topic 1 application practice rewritten around NCDC assessment competences
 
 **Session theme:** Finish the P7 SST Topic 1 learner-flow rewrite by aligning the application subtopic to NCDC assessment competences.

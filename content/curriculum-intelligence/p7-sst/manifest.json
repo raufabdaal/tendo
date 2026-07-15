@@ -111,37 +111,230 @@
     },
     {
       "topicId": "physical-features-of-africa",
-      "status": "existing-strict-format-needs-traceability-backfill",
+      "status": "topic-intelligence-audit-started",
       "sourceRefs": [
-        "TENDO-P7-SST-CURRICULUM-JSON",
-        "NCDC-P7-SET-ONE-2024-PDF"
+        "NCDC-P7-SET-ONE-2024-PDF",
+        "TENDO-P7-SST-TOPIC-02-EXTRACT",
+        "TENDO-P7-SST-CURRICULUM-JSON"
       ],
-      "notes": "Already strict-formatted in app. Needs evidence-note backfill under curriculum intelligence system."
+      "officialTitle": "Physical Features of Africa",
+      "appTitle": "Physical features of Africa",
+      "evidenceFile": "content/curriculum-intelligence/p7-sst/topic-02-physical-features-of-africa/evidence-notes.json",
+      "blueprintFile": "content/curriculum-intelligence/p7-sst/topic-02-physical-features-of-africa/module-blueprint.json",
+      "qaFile": "content/curriculum-intelligence/p7-sst/topic-02-physical-features-of-africa/qa-checklist.json",
+      "requiredAppSubtopicIds": [
+        "mountains-highlands",
+        "rivers-africa",
+        "lakes-africa",
+        "plateau-rift-coastal",
+        "formation-physical-features",
+        "premium-physical-features-application"
+      ],
+      "officialSubtopicMappings": [
+        {
+          "officialSubtopic": "Mountains and highlands",
+          "appSubtopicIds": [
+            "mountains-highlands"
+          ],
+          "evidenceStatus": "rewritten-source-backed-needs-atlas-review-for-country-examples",
+          "notes": "Subtopic rewritten from NCDC evidence. Feature-country examples included as school-first map support and still need atlas/teacher review before premium-final status."
+        },
+        {
+          "officialSubtopic": "Rivers",
+          "appSubtopicIds": [
+            "rivers-africa"
+          ],
+          "evidenceStatus": "rewritten-source-backed-needs-atlas-review-for-river-mouths",
+          "notes": "Subtopic rewritten from NCDC river list and assessment requirement about oceans/seas into which major rivers flow. River-mouth details included as school-first support and need atlas/teacher review before premium-final status."
+        },
+        {
+          "officialSubtopic": "Lakes",
+          "appSubtopicIds": [
+            "lakes-africa"
+          ],
+          "evidenceStatus": "rewritten-source-backed-needs-atlas-review-for-lake-locations",
+          "notes": "Subtopic rewritten from NCDC lake list. Lake-location notes included as school-first map support and need atlas/teacher review before premium-final status."
+        },
+        {
+          "officialSubtopic": "Plateau, rift valley and coastal plains",
+          "appSubtopicIds": [
+            "plateau-rift-coastal"
+          ],
+          "evidenceStatus": "rewritten-source-backed-needs-map-atlas-review",
+          "notes": "Subtopic rewritten from NCDC evidence. Location examples kept broad and map-based; detailed locations need atlas/teacher review before premium-final status."
+        },
+        {
+          "officialSubtopic": "Formation of major physical features of Africa",
+          "appSubtopicIds": [
+            "formation-physical-features"
+          ],
+          "evidenceStatus": "rewritten-source-backed-needs-teacher-diagram-review",
+          "notes": "Rewritten around folded, fault-block and volcanic mountain formation plus diagram/model practice. Needs teacher/atlas review before premium-final."
+        },
+        {
+          "officialSubtopic": "Application practice for physical features",
+          "appSubtopicIds": [
+            "premium-physical-features-application"
+          ],
+          "evidenceStatus": "rewritten-source-backed-application-practice",
+          "notes": "Application practice now aligns to NCDC assessment competences: naming, locating, formation, diagrams and value answers."
+        }
+      ],
+      "qaStatus": "audit-started-not-approved-for-final"
     },
     {
       "topicId": "climate-of-africa",
-      "status": "existing-strict-format-needs-traceability-backfill",
+      "status": "topic-intelligence-audit-started",
       "sourceRefs": [
-        "TENDO-P7-SST-CURRICULUM-JSON",
-        "NCDC-P7-SET-ONE-2024-PDF"
+        "NCDC-P7-SET-ONE-2024-PDF",
+        "TENDO-P7-SST-TOPIC-03-EXTRACT",
+        "TENDO-P7-SST-CURRICULUM-JSON"
       ],
-      "notes": "Already strict-formatted in app. Needs evidence-note backfill under curriculum intelligence system."
+      "officialTitle": "Climate of Africa",
+      "appTitle": "Climate of Africa",
+      "evidenceFile": "content/curriculum-intelligence/p7-sst/topic-03-climate-of-africa/evidence-notes.json",
+      "blueprintFile": "content/curriculum-intelligence/p7-sst/topic-03-climate-of-africa/module-blueprint.json",
+      "qaFile": "content/curriculum-intelligence/p7-sst/topic-03-climate-of-africa/qa-checklist.json",
+      "requiredAppSubtopicIds": [
+        "climatic-regions",
+        "characteristics-climate",
+        "factors-climate",
+        "climate-human-activities",
+        "human-activities-climate",
+        "premium-climate-interpretation"
+      ],
+      "officialSubtopicMappings": [
+        {
+          "officialSubtopic": "Climatic regions of Africa",
+          "appSubtopicIds": [
+            "climatic-regions"
+          ],
+          "evidenceStatus": "rewritten-source-backed-needs-country-climate-atlas-review",
+          "notes": "Rewritten from NCDC climate region list; country examples/map areas need atlas/teacher review before premium-final."
+        },
+        {
+          "officialSubtopic": "Characteristics of different climatic regions",
+          "appSubtopicIds": [
+            "characteristics-climate"
+          ],
+          "evidenceStatus": "rewritten-source-backed-needs-country-climate-atlas-review",
+          "notes": "Rewritten around characteristics of equatorial, tropical, desert, Mediterranean, temperate and mountain climates. Country examples need atlas/teacher review."
+        },
+        {
+          "officialSubtopic": "Factors that influence climate of Africa",
+          "appSubtopicIds": [
+            "factors-climate"
+          ],
+          "evidenceStatus": "rewritten-source-backed-needs-atlas-teacher-review",
+          "notes": "Rewritten from NCDC factor list. Examples are school-first and need atlas/teacher review before premium-final."
+        },
+        {
+          "officialSubtopic": "Influence of climate on human activities",
+          "appSubtopicIds": [
+            "climate-human-activities"
+          ],
+          "evidenceStatus": "rewritten-source-backed-needs-atlas-teacher-review",
+          "notes": "Rewritten from NCDC activity list by climate type. Examples need atlas/teacher review before premium-final."
+        },
+        {
+          "officialSubtopic": "Influence of human activities on climate",
+          "appSubtopicIds": [
+            "human-activities-climate"
+          ],
+          "evidenceStatus": "rewritten-source-backed-needs-teacher-review",
+          "notes": "Rewritten around harmful human activities, effects and protection actions. Needs teacher review before premium-final."
+        },
+        {
+          "officialSubtopic": "Application practice for climate interpretation",
+          "appSubtopicIds": [
+            "premium-climate-interpretation"
+          ],
+          "evidenceStatus": "rewritten-source-backed-application-practice",
+          "notes": "Application practice aligns to NCDC climate assessment competences: regions, characteristics, factors, activities, human influence and protection."
+        }
+      ],
+      "qaStatus": "audit-started-not-approved-for-final"
     },
     {
       "topicId": "vegetation-of-africa",
-      "status": "existing-strict-format-needs-traceability-backfill",
+      "status": "topic-intelligence-audit-started",
       "sourceRefs": [
-        "TENDO-P7-SST-CURRICULUM-JSON",
-        "NCDC-P7-SET-ONE-2024-PDF"
+        "NCDC-P7-SET-ONE-2024-PDF",
+        "TENDO-P7-SST-TOPIC-04-EXTRACT",
+        "TENDO-P7-SST-CURRICULUM-JSON"
       ],
-      "notes": "Already strict-formatted in app. Needs evidence-note backfill under curriculum intelligence system."
+      "officialTitle": "Vegetation of Africa",
+      "appTitle": "Vegetation of Africa",
+      "evidenceFile": "content/curriculum-intelligence/p7-sst/topic-04-vegetation-of-africa/evidence-notes.json",
+      "blueprintFile": "content/curriculum-intelligence/p7-sst/topic-04-vegetation-of-africa/module-blueprint.json",
+      "qaFile": "content/curriculum-intelligence/p7-sst/topic-04-vegetation-of-africa/qa-checklist.json",
+      "requiredAppSubtopicIds": [
+        "vegetation-types",
+        "factors-vegetation",
+        "importance-vegetation",
+        "game-parks-animals",
+        "population-vegetation",
+        "premium-vegetation-application"
+      ],
+      "officialSubtopicMappings": [
+        {
+          "officialSubtopic": "Location and names of vegetation types of Africa",
+          "appSubtopicIds": [
+            "vegetation-types"
+          ],
+          "evidenceStatus": "rewritten-source-backed-needs-atlas-review",
+          "notes": "Rewritten from NCDC vegetation type list. Broad location examples need atlas/teacher review before premium-final status."
+        },
+        {
+          "officialSubtopic": "Factors that influence vegetation distribution in Africa",
+          "appSubtopicIds": [
+            "factors-vegetation"
+          ],
+          "evidenceStatus": "rewritten-source-backed-needs-teacher-review",
+          "notes": "Rewritten from NCDC factor list: climate, soil, human activities, relief/altitude. Examples need teacher review before premium-final status."
+        },
+        {
+          "officialSubtopic": "Importance of vegetation to people and animals",
+          "appSubtopicIds": [
+            "importance-vegetation"
+          ],
+          "evidenceStatus": "rewritten-source-backed-needs-teacher-review",
+          "notes": "Rewritten around importance to people, animals/environment, and caring for vegetation. Needs teacher review before premium-final."
+        },
+        {
+          "officialSubtopic": "Game parks and animals in vegetation zones",
+          "appSubtopicIds": [
+            "game-parks-animals"
+          ],
+          "evidenceStatus": "rewritten-source-backed-needs-teacher-review",
+          "notes": "Rewritten around importance of game parks, animals in zones, reasons animals live in zones and caring for animals/birds. Animal examples need teacher review."
+        },
+        {
+          "officialSubtopic": "Population distribution in relation to vegetation and effects of population on vegetation",
+          "appSubtopicIds": [
+            "population-vegetation"
+          ],
+          "evidenceStatus": "rewritten-source-backed-needs-teacher-review",
+          "notes": "Rewritten around population distribution, reasons for differences, effects of big population and protection solutions. Needs teacher review before premium-final."
+        },
+        {
+          "officialSubtopic": "Application practice for vegetation reasoning",
+          "appSubtopicIds": [
+            "premium-vegetation-application"
+          ],
+          "evidenceStatus": "rewritten-source-backed-application-practice",
+          "notes": "Application practice aligns to NCDC vegetation assessment competences: types, factors, importance, animals/game parks and population effects."
+        }
+      ],
+      "qaStatus": "audit-started-not-approved-for-final"
     },
     {
       "topicId": "people-ethnic-groups-settlement",
-      "status": "pilot-topic-source-mapping-started",
+      "status": "topic-intelligence-audit-started",
       "sourceRefs": [
-        "TENDO-P7-SST-CURRICULUM-JSON",
-        "NCDC-P7-SET-ONE-2024-PDF"
+        "NCDC-P7-SET-ONE-2024-PDF",
+        "TENDO-P7-SST-TOPIC-05-EXTRACT",
+        "TENDO-P7-SST-CURRICULUM-JSON"
       ],
       "officialTitle": "The People of Africa, the Ethnic Groups and Settlement Patterns",
       "appTitle": "People of Africa, ethnic groups and settlement",
@@ -158,34 +351,36 @@
           "appSubtopicIds": [
             "origin-ethnic-groups"
           ],
-          "evidenceStatus": "source-needed",
+          "evidenceStatus": "rewritten-source-backed-needs-sensitive-teacher-review",
           "requiredKnowledgeBlocks": [
             "definition",
             "major ethnic groups",
             "origin notes",
             "examples",
             "respectful cultural framing"
-          ]
+          ],
+          "notes": "Rewritten respectfully from NCDC evidence. Sensitive older group terms handled carefully and need teacher review before premium-final."
         },
         {
           "officialSubtopic": "Movements of different ethnic groups into Africa",
           "appSubtopicIds": [
             "movements-ethnic-groups"
           ],
-          "evidenceStatus": "source-needed",
+          "evidenceStatus": "rewritten-source-backed-needs-migration-map-review",
           "requiredKnowledgeBlocks": [
             "meaning of migration",
             "movement routes or direction where sourced",
             "reasons for movement",
             "examples"
-          ]
+          ],
+          "notes": "Rewritten from NCDC movement/migration guidance. Exact routes need atlas/teacher review before premium-final."
         },
         {
           "officialSubtopic": "Settlement patterns of different ethnic groups",
           "appSubtopicIds": [
             "settlement-tribes"
           ],
-          "evidenceStatus": "source-needed",
+          "evidenceStatus": "source-extracted-needs-rewrite",
           "requiredKnowledgeBlocks": [
             "meaning of settlement pattern",
             "types of settlement patterns",
@@ -198,7 +393,7 @@
           "appSubtopicIds": [
             "settlement-tribes"
           ],
-          "evidenceStatus": "source-needed",
+          "evidenceStatus": "source-extracted-needs-rewrite",
           "requiredKnowledgeBlocks": [
             "ethnic group to tribe examples",
             "safe wording",
@@ -211,7 +406,7 @@
             "movements-ethnic-groups",
             "premium-people-settlement-reasoning"
           ],
-          "evidenceStatus": "source-needed",
+          "evidenceStatus": "source-extracted-needs-rewrite",
           "requiredKnowledgeBlocks": [
             "push factors",
             "pull factors",
@@ -225,7 +420,7 @@
           "appSubtopicIds": [
             "problems-effects-migration"
           ],
-          "evidenceStatus": "source-needed",
+          "evidenceStatus": "source-extracted-needs-rewrite",
           "requiredKnowledgeBlocks": [
             "problems during movement",
             "problems during settlement",
@@ -239,7 +434,7 @@
             "problems-effects-migration",
             "premium-people-settlement-reasoning"
           ],
-          "evidenceStatus": "source-needed",
+          "evidenceStatus": "source-extracted-needs-rewrite",
           "requiredKnowledgeBlocks": [
             "positive effects",
             "negative effects",
@@ -261,7 +456,10 @@
           "qaStatus"
         ]
       },
-      "qaStatus": "not-started"
+      "qaStatus": "audit-started-not-approved-for-final",
+      "evidenceFile": "content/curriculum-intelligence/p7-sst/topic-05-people-ethnic-groups-settlement/evidence-notes.json",
+      "blueprintFile": "content/curriculum-intelligence/p7-sst/topic-05-people-ethnic-groups-settlement/module-blueprint.json",
+      "qaFile": "content/curriculum-intelligence/p7-sst/topic-05-people-ethnic-groups-settlement/qa-checklist.json"
     },
     {
       "topicId": "foreign-influence-africa",

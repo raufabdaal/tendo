@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "system": "Tendo Curriculum Intelligence",
+    "classLevel": "P7",
+    "subject": "Social Studies",
+    "topicId": "vegetation-of-africa",
+    "topicTitle": "Vegetation of Africa",
+    "created": "2026-07-15",
+    "status": "source-extracted-topic-4-started",
+    "primarySourceId": "NCDC-P7-SET-ONE-2024-PDF",
+    "sourcePages": "PDF pages 327-331",
+    "rule": "Only evidence captured here or later verified sources may be used for the Topic 4 rewrite."
+  },
+  "evidenceNotes": [
+    {
+      "id": "t4-e001-learning-outcome",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Topic 4 Learning Outcome",
+      "quoteOrSummary": "The learner appreciates the value of the vegetation and practises how to care for it for better and harmonious living.",
+      "usedFor": "curriculum-map",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t4-e002-official-subtopics",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Topic 4 content outline",
+      "quoteOrSummary": "Official subtopics include location and names of vegetation types of Africa; factors that influence vegetation distribution; importance of vegetation to people and animals; importance of game parks; animals in different vegetation zones; reasons why animals live in different vegetation zones; population distribution in relation to vegetation; reasons for differences in population distribution; and effects of population on vegetation.",
+      "usedFor": "curriculum-map",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t4-e003-vegetation-types-list",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Vegetation types factual list",
+      "quoteOrSummary": "Vegetation types listed: Equatorial forests, Mangrove forests, Montane vegetation, Temperate grasslands (velds), Savannah vegetation, and Mediterranean vegetation in South Africa, Tunisia, Algeria, Morocco and Libya.",
+      "usedFor": "classification",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t4-e004-factors-list",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Factors influencing vegetation distribution",
+      "quoteOrSummary": "Factors that influence vegetation distribution listed: climate, types of soil, human activities and relief/altitude.",
+      "usedFor": "classification",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t4-e005-importance-scope",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Importance of vegetation",
+      "quoteOrSummary": "NCDC includes importance of vegetation to people and animals and the importance of game parks. It also includes caring for wild animals through protection, feeding, treatment, love, preserving habitat and provision of security by game wardens/rangers.",
+      "usedFor": "importance",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t4-e006-animals-zones",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Animals in vegetation zones",
+      "quoteOrSummary": "NCDC includes animals in Equatorial forests, animals in Savannah and animals in Temperate grasslands.",
+      "usedFor": "examples",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t4-e007-population-vegetation",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Population and vegetation",
+      "quoteOrSummary": "NCDC includes population distribution in relation to vegetation for Equatorial, Desert, Savannah, Mediterranean and Mountain areas; reasons for differences in population distribution; and effects of population on vegetation for big population and small population.",
+      "usedFor": "curriculum-map",
+      "reliabilityTier": 1
+    },
+    {
+      "id": "t4-e008-assessment-competences",
+      "sourceId": "NCDC-P7-SET-ONE-2024-PDF",
+      "pageOrSection": "Suggested competences for assessment",
+      "quoteOrSummary": "Assessment competences include locating and naming vegetation types; describing factors influencing vegetation distribution; explaining how each factor influences vegetation; explaining the importance of vegetation; listing birds and animals in the learner's area; identifying animals in different vegetation zones; explaining why animals live in different zones; writing down the importance of caring for animals and birds; relating population distribution to vegetation; explaining reasons for differences in population distribution; and outlining effects of population on vegetation.",
+      "usedFor": "assessment",
+      "reliabilityTier": 1
+    }
+  ],
+  "sourceGaps": [
+    {
+      "gapId": "t4-gap-001-specific-animal-examples",
+      "description": "The extract identifies vegetation zones for animals but does not provide all animal examples. Use source/teacher review before final animal-zone examples are treated as premium-final.",
+      "status": "needs-teacher-atlas-review"
+    },
+    {
+      "gapId": "t4-gap-002-location-specific-vegetation",
+      "description": "The extract gives Mediterranean countries but does not give full country/location lists for every vegetation type. Use map/atlas support before final location examples.",
+      "status": "needs-atlas-review"
+    }
+  ]
+}
